@@ -109,8 +109,8 @@ Habilita_A <= Sinais_Controle(4);
 Operacao_ULA <= Sinais_Controle(3 downto 2);
 
 -- sinais controle memoria
-ramWe <= Sinais_Controle(1);
-ramRe <= Sinais_Controle(0);
+ramWe <= Sinais_Controle(0);
+ramRe <= Sinais_Controle(1);
 
 -- sinais memoria
 

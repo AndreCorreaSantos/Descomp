@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity decoderInstru is
   port ( opcode : in std_logic_vector(3 downto 0);
-         saida : out std_logic_vector(5 downto 0)
+         saida : out std_logic_vector(6 downto 0)
   );
 end entity;
 
@@ -15,12 +15,14 @@ architecture comportamento of decoderInstru is
   constant SUB  : std_logic_vector(3 downto 0) := "0011";
   constant LDI : std_logic_vector(3 downto 0) := "0100";
   constant STA : std_logic_vector(3 downto 0) := "0101";
+  constant JMP : std_logic_vector(3 downto 0) := "0110";
 
   begin
-saida <= "000001" when opcode = STA else
-         "011010" when opcode = LDA else 
-         "110100" when opcode = SOMA else
-         "110000" when opcode = SUB else
-         "111000" when opcode = LDI else
-         "000000";  -- NOP para todo outro caso
+saida <= "0000001" when opcode = STA else
+         "0011010" when opcode = LDA else 
+         "0110100" when opcode = SOMA else
+         "0110000" when opcode = SUB else
+         "0111000" when opcode = LDI else
+         "1000000" when opcode = JMP else
+         "0000000";  -- NOP para todo outro caso
 end architecture;

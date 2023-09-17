@@ -5,7 +5,7 @@ entity aula05 is
   -- Total de bits das entradas e saidas
   generic ( larguraDados : natural := 8;
         larguraInstrucao : natural := 13;
-        larguraEnderecoROM : natural := 3;
+        larguraEnderecoROM : natural := 9;
         larguraEnderecoRAM : natural := 8;
         simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
   );
@@ -13,9 +13,7 @@ entity aula05 is
     CLOCK_50 : in std_logic;
     KEY: in std_logic_vector(3 downto 0);
     PC_OUT: out std_logic_vector(larguraEnderecoROM-1 downto 0);
-    LEDR  : out std_logic_vector(9 downto 0);
-    Entrada_ULA_B : out std_logic_vector(7 downto 0);
-    SinaisControleOut : out std_logic_vector(5 downto 0)
+    SinaisControleOut : out std_logic_vector(6 downto 0)
   );
 end entity;
 
@@ -29,10 +27,10 @@ architecture arquitetura of aula05 is
   signal REG1_ULA_A : std_logic_vector (larguraDados-1 downto 0);
   signal Saida_ULA : std_logic_vector (larguraDados-1 downto 0);
 
-  signal Sinais_Controle : std_logic_vector (5 downto 0); 
+  signal Sinais_Controle : std_logic_vector (6 downto 0); 
   signal instrucao : std_logic_vector (12 downto 0);
-  signal Endereco_Instrucao : std_logic_vector (2 downto 0); --endereco da memoria de enderecos, sai do program counter
-  signal proxPC : std_logic_vector (2 downto 0);
+  signal Endereco_Instrucao : std_logic_vector (8 downto 0); --endereco da memoria de enderecos, sai do program counter
+  signal proxPC : std_logic_vector (8 downto 0);
 
 
   --sinais de controle
@@ -42,6 +40,7 @@ architecture arquitetura of aula05 is
   signal Habilita_A : std_logic;
   signal Reset_A : std_logic; --nao sei o que aconteceu com ele
   signal Operacao_ULA : std_logic_vector(1 downto 0);
+  signal jmp : std_logic;
 
     --sinais da memoria
   signal ramWe : std_logic;
@@ -53,8 +52,13 @@ architecture arquitetura of aula05 is
 
   -- sinal entrada decoder
   signal Opcode : std_logic_vector(3 downto 0);
-  -- sinal mux
+  -- sinal mux_ula
   signal imediato_valor : std_logic_vector(7 downto 0);
+
+  --sinal mux_pc
+  signal entradaB_mux_jmp : std_logic_vector(8 downto 0);
+
+  signal saida_mux_jmp : std_logic_vector(8 downto 0);
 begin
 
 -- Instanciando os componentes:
@@ -68,11 +72,17 @@ detectorSub0: work.edgeDetector(bordaSubida)
 end generate;
 
 -- O port map completo do MUX.
-MUX1 :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
+MUX_ULA :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
         port map(entradaA_MUX => saida_dados_RAM, --saida de dados da memoria 
                  entradaB_MUX =>  imediato_valor, -- imediato 7 ~ 0
                  seletor_MUX => SelMUX,
                  saida_MUX => MUX_REG1);
+
+MUX_PC : entity work.muxGenerico2x1 generic map (larguraDados => larguraEnderecoROM)
+        port map(entradaA_MUX => proxPC,
+                  entradaB_MUX => entradaB_mux_jmp,
+                  seletor_MUX => jmp,
+                  saida_MUX => saida_mux_jmp);
 
 -- O port map completo do Acumulador.
 REGA : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
@@ -80,7 +90,7 @@ REGA : entity work.registradorGenerico   generic map (larguraDados => larguraDad
 
 -- O port map completo do Program Counter.
 PC : entity work.registradorGenerico   generic map (larguraDados => larguraEnderecoROM)
-          port map (DIN => proxPC, DOUT => Endereco_Instrucao, ENABLE => '1', CLK => CLK, RST => '0');
+          port map (DIN => saida_mux_jmp, DOUT => Endereco_Instrucao, ENABLE => '1', CLK => CLK, RST => '0');
 
 incrementaPC :  entity work.somaConstante  generic map (larguraDados => larguraEnderecoROM, constante => 1)
         port map( entrada => Endereco_Instrucao, saida => proxPC);
@@ -102,15 +112,16 @@ RAM1: entity work.memoriaRAM generic map(dataWidth => larguraDados, addrWidth =>
 
 
 
-
+jmp <= Sinais_Controle(6);
 selMUX <= Sinais_Controle(5);
 Habilita_A <= Sinais_Controle(4);
 -- Reset_A <= Sinais_Controle(1); nao sei o que aconteceu com o reset A
 Operacao_ULA <= Sinais_Controle(3 downto 2);
 
 -- sinais controle memoria
-ramWe <= Sinais_Controle(1);
-ramRe <= Sinais_Controle(0);
+ramRe <= Sinais_Controle(1);
+ramWe <= Sinais_Controle(0);
+
 
 -- sinais memoria
 
@@ -124,16 +135,14 @@ imediato_valor <= instrucao(7 downto 0);
 -- sinal entrada decoder
 Opcode <= instrucao(12 downto 9);
 
+-- sinal mux_jmp
+entradaB_mux_jmp <= instrucao(8 downto 0);
 -- -- I/O
 -- chavesY_MUX_A <= SW(3 downto 0);
 -- chavesX_ULA_B <= SW(9 downto 6);
 
--- A ligacao dos LEDs:
-LEDR (9) <= Operacao_ULA(1);
-LEDR (8) <= Operacao_ULA(0);
-LEDR (7 downto 0) <= REG1_ULA_A;
+
 SinaisControleOut <= Sinais_Controle;
-Entrada_ULA_B <= MUX_REG1;
 
 PC_OUT <= Endereco_Instrucao;
 

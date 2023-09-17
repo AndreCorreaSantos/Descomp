@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aula05
-Thu Sep 14 21:39:06 2023
+Sun Sep 17 12:27:26 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,9 +14,9 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |aula05
- 11. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX1
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |aula05
+ 10. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_ULA
+ 11. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_PC
  12. Parameter Settings for User Entity Instance: registradorGenerico:REGA
  13. Parameter Settings for User Entity Instance: registradorGenerico:PC
  14. Parameter Settings for User Entity Instance: somaConstante:incrementaPC
@@ -54,14 +54,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Sep 14 21:39:06 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sun Sep 17 12:27:26 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula05                                      ;
 ; Top-level Entity Name           ; aula05                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 11                                          ;
-; Total pins                      ; 32                                          ;
+; Total registers                 ; 9                                           ;
+; Total pins                      ; 21                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -195,45 +195,43 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+-------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                  ;
-+---------------------------------------------+--------------------------------+
-; Resource                                    ; Usage                          ;
-+---------------------------------------------+--------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 11                             ;
-;                                             ;                                ;
-; Combinational ALUT usage for logic          ; 21                             ;
-;     -- 7 input functions                    ; 0                              ;
-;     -- 6 input functions                    ; 0                              ;
-;     -- 5 input functions                    ; 1                              ;
-;     -- 4 input functions                    ; 2                              ;
-;     -- <=3 input functions                  ; 18                             ;
-;                                             ;                                ;
-; Dedicated logic registers                   ; 11                             ;
-;                                             ;                                ;
-; I/O pins                                    ; 32                             ;
-;                                             ;                                ;
-; Total DSP Blocks                            ; 0                              ;
-;                                             ;                                ;
-; Maximum fan-out node                        ; registradorGenerico:PC|DOUT[1] ;
-; Maximum fan-out                             ; 18                             ;
-; Total fan-out                               ; 163                            ;
-; Average fan-out                             ; 1.70                           ;
-+---------------------------------------------+--------------------------------+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 9                        ;
+;                                             ;                          ;
+; Combinational ALUT usage for logic          ; 16                       ;
+;     -- 7 input functions                    ; 0                        ;
+;     -- 6 input functions                    ; 1                        ;
+;     -- 5 input functions                    ; 5                        ;
+;     -- 4 input functions                    ; 0                        ;
+;     -- <=3 input functions                  ; 10                       ;
+;                                             ;                          ;
+; Dedicated logic registers                   ; 9                        ;
+;                                             ;                          ;
+; I/O pins                                    ; 21                       ;
+;                                             ;                          ;
+; Total DSP Blocks                            ; 0                        ;
+;                                             ;                          ;
+; Maximum fan-out node                        ; memoriaROM:ROM1|memROM~1 ;
+; Maximum fan-out                             ; 10                       ;
+; Total fan-out                               ; 115                      ;
+; Average fan-out                             ; 1.72                     ;
++---------------------------------------------+--------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                            ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name         ; Library Name ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+---------------------+--------------+
-; |aula05                       ; 21 (1)              ; 11 (0)                    ; 0                 ; 0          ; 32   ; 0            ; |aula05                          ; aula05              ; work         ;
-;    |ULASomaSub:ULA1|          ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aula05|ULASomaSub:ULA1          ; ULASomaSub          ; work         ;
-;    |decoderInstru:DECODER1|   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aula05|decoderInstru:DECODER1   ; decoderInstru       ; work         ;
-;    |memoriaROM:ROM1|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aula05|memoriaROM:ROM1          ; memoriaROM          ; work         ;
-;    |registradorGenerico:PC|   ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |aula05|registradorGenerico:PC   ; registradorGenerico ; work         ;
-;    |registradorGenerico:REGA| ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |aula05|registradorGenerico:REGA ; registradorGenerico ; work         ;
-+-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+---------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Entity Name         ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+---------------------+--------------+
+; |aula05                         ; 16 (1)              ; 9 (0)                     ; 0                 ; 0          ; 21   ; 0            ; |aula05                            ; aula05              ; work         ;
+;    |memoriaROM:ROM1|            ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aula05|memoriaROM:ROM1            ; memoriaROM          ; work         ;
+;    |registradorGenerico:PC|     ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |aula05|registradorGenerico:PC     ; registradorGenerico ; work         ;
+;    |somaConstante:incrementaPC| ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |aula05|somaConstante:incrementaPC ; somaConstante       ; work         ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -242,23 +240,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 11    ;
+; Total registers                              ; 9     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Synchronous Load   ; 9     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |aula05|decoderInstru:DECODER1|saida[2] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
 +------------------------------------------------------------------------+
@@ -268,20 +257,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-------+-------------------------------------------+
 ; larguraDados       ; 8     ; Signed Integer                            ;
 ; larguraInstrucao   ; 13    ; Signed Integer                            ;
-; larguraEnderecoROM ; 3     ; Signed Integer                            ;
+; larguraEnderecoROM ; 9     ; Signed Integer                            ;
 ; larguraEnderecoRAM ; 8     ; Signed Integer                            ;
 ; simulacao          ; true  ; Enumerated                                ;
 +--------------------+-------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: muxGenerico2x1:MUX1 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; larguradados   ; 8     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_ULA ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_PC ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; larguradados   ; 9     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -300,7 +299,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------+
 ; Parameter Name ; Value ; Type                                       ;
 +----------------+-------+--------------------------------------------+
-; larguradados   ; 3     ; Signed Integer                             ;
+; larguradados   ; 9     ; Signed Integer                             ;
 +----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -310,7 +309,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+------------------------------------------------+
 ; Parameter Name ; Value ; Type                                           ;
 +----------------+-------+------------------------------------------------+
-; larguradados   ; 3     ; Signed Integer                                 ;
+; larguradados   ; 9     ; Signed Integer                                 ;
 ; constante      ; 1     ; Signed Integer                                 ;
 +----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
@@ -332,7 +331,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value ; Type                                ;
 +----------------+-------+-------------------------------------+
 ; datawidth      ; 13    ; Signed Integer                      ;
-; addrwidth      ; 3     ; Signed Integer                      ;
+; addrwidth      ; 9     ; Signed Integer                      ;
 +----------------+-------+-------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -372,24 +371,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 11                          ;
-;     ENA SLD           ; 8                           ;
-;     plain             ; 3                           ;
-; arriav_lcell_comb     ; 21                          ;
+; arriav_ff             ; 9                           ;
+;     SLD               ; 9                           ;
+; arriav_lcell_comb     ; 16                          ;
 ;     arith             ; 9                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 2                           ;
-;         5 data inputs ; 1                           ;
-;     normal            ; 12                          ;
+;         1 data inputs ; 9                           ;
+;     normal            ; 7                           ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 5                           ;
-; boundary_port         ; 32                          ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 1                           ;
+; boundary_port         ; 21                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.70                        ;
-; Average LUT depth     ; 1.86                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.66                        ;
 +-----------------------+-----------------------------+
 
 
@@ -408,7 +402,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Sep 14 21:38:59 2023
+    Info: Processing started: Sun Sep 17 12:27:17 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula05 -c aula05
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -438,36 +432,25 @@ Info (12021): Found 2 design units, including 1 entities, in source file decoder
     Info (12022): Found design unit 1: decoderInstru-comportamento File: C:/Descomp/aula05/decoderInstru.vhd Line: 10
     Info (12023): Found entity 1: decoderInstru File: C:/Descomp/aula05/decoderInstru.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file aula05.vhd
-    Info (12022): Found design unit 1: aula05-arquitetura File: C:/Descomp/aula05/aula05.vhd Line: 23
+    Info (12022): Found design unit 1: aula05-arquitetura File: C:/Descomp/aula05/aula05.vhd Line: 21
     Info (12023): Found entity 1: aula05 File: C:/Descomp/aula05/aula05.vhd Line: 4
 Info (12127): Elaborating entity "aula05" for the top level hierarchy
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX1" File: C:/Descomp/aula05/aula05.vhd Line: 71
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REGA" File: C:/Descomp/aula05/aula05.vhd Line: 78
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: C:/Descomp/aula05/aula05.vhd Line: 82
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Descomp/aula05/aula05.vhd Line: 85
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "ULASomaSub:ULA1" File: C:/Descomp/aula05/aula05.vhd Line: 90
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM1" File: C:/Descomp/aula05/aula05.vhd Line: 94
-Info (12128): Elaborating entity "decoderInstru" for hierarchy "decoderInstru:DECODER1" File: C:/Descomp/aula05/aula05.vhd Line: 97
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM1" File: C:/Descomp/aula05/aula05.vhd Line: 100
-Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "memoriaRAM:RAM1|ram" is uninferred due to asynchronous read logic File: C:/Descomp/aula05/memoriaRAM.vhd Line: 27
-    Info (276004): RAM logic "memoriaROM:ROM1|memROM" is uninferred due to inappropriate RAM size File: C:/Descomp/aula05/memoriaROM.vhd Line: 45
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "memoriaRAM:RAM1|dado_out[0]" feeding internal logic into a wire File: C:/Descomp/aula05/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:RAM1|dado_out[1]" feeding internal logic into a wire File: C:/Descomp/aula05/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:RAM1|dado_out[2]" feeding internal logic into a wire File: C:/Descomp/aula05/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:RAM1|dado_out[3]" feeding internal logic into a wire File: C:/Descomp/aula05/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:RAM1|dado_out[4]" feeding internal logic into a wire File: C:/Descomp/aula05/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:RAM1|dado_out[5]" feeding internal logic into a wire File: C:/Descomp/aula05/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:RAM1|dado_out[6]" feeding internal logic into a wire File: C:/Descomp/aula05/memoriaRAM.vhd Line: 17
-    Warning (13049): Converted tri-state buffer "memoriaRAM:RAM1|dado_out[7]" feeding internal logic into a wire File: C:/Descomp/aula05/memoriaRAM.vhd Line: 17
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_ULA" File: C:/Descomp/aula05/aula05.vhd Line: 75
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUX_PC" File: C:/Descomp/aula05/aula05.vhd Line: 81
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:REGA" File: C:/Descomp/aula05/aula05.vhd Line: 88
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC" File: C:/Descomp/aula05/aula05.vhd Line: 92
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:incrementaPC" File: C:/Descomp/aula05/aula05.vhd Line: 95
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "ULASomaSub:ULA1" File: C:/Descomp/aula05/aula05.vhd Line: 100
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "memoriaROM:ROM1" File: C:/Descomp/aula05/aula05.vhd Line: 104
+Info (12128): Elaborating entity "decoderInstru" for hierarchy "decoderInstru:DECODER1" File: C:/Descomp/aula05/aula05.vhd Line: 107
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM1" File: C:/Descomp/aula05/aula05.vhd Line: 110
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Entrada_ULA_B[3]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 17
-    Warning (13410): Pin "Entrada_ULA_B[4]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 17
-    Warning (13410): Pin "Entrada_ULA_B[5]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 17
-    Warning (13410): Pin "Entrada_ULA_B[6]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 17
-    Warning (13410): Pin "Entrada_ULA_B[7]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 17
-    Warning (13410): Pin "SinaisControleOut[1]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 18
+    Warning (13410): Pin "SinaisControleOut[0]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 16
+    Warning (13410): Pin "SinaisControleOut[1]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 16
+    Warning (13410): Pin "SinaisControleOut[2]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 16
+    Warning (13410): Pin "SinaisControleOut[3]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 16
+    Warning (13410): Pin "SinaisControleOut[4]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 16
+    Warning (13410): Pin "SinaisControleOut[5]" is stuck at GND File: C:/Descomp/aula05/aula05.vhd Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -476,14 +459,14 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Descomp/aula05/aula05.vhd Line: 14
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Descomp/aula05/aula05.vhd Line: 14
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Descomp/aula05/aula05.vhd Line: 14
-Info (21057): Implemented 53 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 21 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 4893 megabytes
-    Info: Processing ended: Thu Sep 14 21:39:06 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:09
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 16 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4879 megabytes
+    Info: Processing ended: Sun Sep 17 12:27:26 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:11
 
 

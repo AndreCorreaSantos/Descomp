@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity logicaDesvio is
+  port ( jmpSinais : in std_logic_vector(2 downto 0);
+         saida : out std_logic;
+  );
+end entity;
+
+architecture comportamento of logicaDesvio is
+  
+  begin
+saida <= jmpFlags(2) Or (jmpFlags(1) AND jmpFlags(0));
+end architecture;

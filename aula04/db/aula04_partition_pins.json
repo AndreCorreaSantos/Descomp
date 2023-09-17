@@ -68,7 +68,31 @@
 					"strict" : false
 				},
 				{
+					"name" : "Entrada_ULA_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada_ULA_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada_ULA_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada_ULA_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada_ULA_B[7]",
+					"strict" : false
+				},
+				{
 					"name" : "SinaisControleOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SinaisControleOut[1]",
 					"strict" : false
 				},
 				{

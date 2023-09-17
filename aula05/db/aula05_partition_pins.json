@@ -16,75 +16,31 @@
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[0]",
+					"name" : "PC_OUT[3]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[1]",
+					"name" : "PC_OUT[4]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[2]",
+					"name" : "PC_OUT[5]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[3]",
+					"name" : "PC_OUT[6]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[4]",
+					"name" : "PC_OUT[7]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[5]",
+					"name" : "PC_OUT[8]",
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[6]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[7]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[8]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[9]",
-					"strict" : false
-				},
-				{
-					"name" : "Entrada_ULA_B[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Entrada_ULA_B[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Entrada_ULA_B[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SinaisControleOut[0]",
-					"strict" : false
-				},
-				{
-					"name" : "SinaisControleOut[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SinaisControleOut[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SinaisControleOut[4]",
-					"strict" : false
-				},
-				{
-					"name" : "SinaisControleOut[5]",
+					"name" : "SinaisControleOut[6]",
 					"strict" : false
 				},
 				{

@@ -19,8 +19,8 @@ architecture comportamento of decoderInstru is
   begin
 saida <= "000001" when opcode = STA else
          "011010" when opcode = LDA else 
-         "110100" when opcode = SOMA else
-         "110000" when opcode = SUB else
+         "010110" when opcode = SOMA else
+         "010010" when opcode = SUB else
          "111000" when opcode = LDI else
          "000000";  -- NOP para todo outro caso
 end architecture;
