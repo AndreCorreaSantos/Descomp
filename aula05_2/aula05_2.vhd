@@ -68,8 +68,7 @@ architecture arquitetura of aula05_2 is
   signal HabFlagZero : std_logic;
 
   --sinais logica de desvio
-  signal entrada_jmp : std_logic;
-  signal entrada_jeq : std_logic;
+  signal entrada_jmps : std_logic_vector(1 downto 0);
   signal seletor_MUX_PC : std_logic;
   
 begin
@@ -112,7 +111,6 @@ PC : entity work.registradorGenerico   generic map (larguraDados => larguraEnder
 incrementaPC :  entity work.somaConstante  generic map (larguraDados => larguraEnderecoROM, constante => 1)
         port map( entrada => Endereco_Instrucao, saida => proxPC);
 
-
 -- O port map completo da ULA:
 ULA1 : entity work.ULASomaSub  generic map(larguraDados => larguraDados)
           port map (entradaA => REG1_ULA_A, entradaB => MUX_REG1, saida => Saida_ULA, seletor => Operacao_ULA,zf => saidaULAFlag);
@@ -126,13 +124,12 @@ UC1: entity work.unidadeControle
 
 -- port map da logica de desvio
 LOGDESVIO : entity work.logicaDesvio
-              port map (jmp => entrada_jmp,jeq=>entrada_jeq,zf => zeroFlag,saida => seletor_MUX_PC);
+              port map (jmps => entrada_jmps,zf => zeroFlag,saida => seletor_MUX_PC);
 --port map da memoria de dados
 RAM1: entity work.memoriaRAM generic map(dataWidth => larguraDados, addrWidth => larguraEnderecoRAM)
         port map(addr => ramAddr,we => ramWe,re => ramRe,habilita => ramHabilita,clk => CLK, dado_in => entrada_dados_RAM, dado_out => saida_dados_RAM);
 
-entrada_jmp <= Sinais_Controle(8);
-entrada_jeq <= Sinais_Controle(7);
+entrada_jmps <= Sinais_Controle(8 downto 7);
 selMUX <= Sinais_Controle(6);
 Habilita_A <= Sinais_Controle(5);
 

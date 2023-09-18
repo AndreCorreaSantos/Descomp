@@ -7,42 +7,42 @@ KEY[0] => memoriaram:RAM1.clk
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
-PC_OUT[0] << registradorgenerico:PC.DOUT[0]
-PC_OUT[1] << registradorgenerico:PC.DOUT[1]
-PC_OUT[2] << registradorgenerico:PC.DOUT[2]
-PC_OUT[3] << registradorgenerico:PC.DOUT[3]
-PC_OUT[4] << registradorgenerico:PC.DOUT[4]
-PC_OUT[5] << registradorgenerico:PC.DOUT[5]
-PC_OUT[6] << registradorgenerico:PC.DOUT[6]
-PC_OUT[7] << registradorgenerico:PC.DOUT[7]
-PC_OUT[8] << registradorgenerico:PC.DOUT[8]
-OpULA[0] << unidadecontrole:UC1.saida[3]
-OpULA[1] << unidadecontrole:UC1.saida[4]
-SinaisControleOut[0] << unidadecontrole:UC1.saida[0]
-SinaisControleOut[1] << unidadecontrole:UC1.saida[1]
-SinaisControleOut[2] << unidadecontrole:UC1.saida[2]
-SinaisControleOut[3] << unidadecontrole:UC1.saida[3]
-SinaisControleOut[4] << unidadecontrole:UC1.saida[4]
-SinaisControleOut[5] << unidadecontrole:UC1.saida[5]
-SinaisControleOut[6] << unidadecontrole:UC1.saida[6]
-SinaisControleOut[7] << unidadecontrole:UC1.saida[7]
-SinaisControleOut[8] << unidadecontrole:UC1.saida[8]
-EntradaB_ULA[0] << muxgenerico2x1:MUX_ULA.saida_MUX[0]
-EntradaB_ULA[1] << muxgenerico2x1:MUX_ULA.saida_MUX[1]
-EntradaB_ULA[2] << muxgenerico2x1:MUX_ULA.saida_MUX[2]
-EntradaB_ULA[3] << muxgenerico2x1:MUX_ULA.saida_MUX[3]
-EntradaB_ULA[4] << muxgenerico2x1:MUX_ULA.saida_MUX[4]
-EntradaB_ULA[5] << muxgenerico2x1:MUX_ULA.saida_MUX[5]
-EntradaB_ULA[6] << muxgenerico2x1:MUX_ULA.saida_MUX[6]
-EntradaB_ULA[7] << muxgenerico2x1:MUX_ULA.saida_MUX[7]
-RegistradorA[0] << registradorgenerico:REGA.DOUT[0]
-RegistradorA[1] << registradorgenerico:REGA.DOUT[1]
-RegistradorA[2] << registradorgenerico:REGA.DOUT[2]
-RegistradorA[3] << registradorgenerico:REGA.DOUT[3]
-RegistradorA[4] << registradorgenerico:REGA.DOUT[4]
-RegistradorA[5] << registradorgenerico:REGA.DOUT[5]
-RegistradorA[6] << registradorgenerico:REGA.DOUT[6]
-RegistradorA[7] << registradorgenerico:REGA.DOUT[7]
+PC_OUT[0] <= registradorgenerico:PC.DOUT[0]
+PC_OUT[1] <= registradorgenerico:PC.DOUT[1]
+PC_OUT[2] <= registradorgenerico:PC.DOUT[2]
+PC_OUT[3] <= registradorgenerico:PC.DOUT[3]
+PC_OUT[4] <= registradorgenerico:PC.DOUT[4]
+PC_OUT[5] <= registradorgenerico:PC.DOUT[5]
+PC_OUT[6] <= registradorgenerico:PC.DOUT[6]
+PC_OUT[7] <= registradorgenerico:PC.DOUT[7]
+PC_OUT[8] <= registradorgenerico:PC.DOUT[8]
+OpULA[0] <= unidadecontrole:UC1.saida[3]
+OpULA[1] <= unidadecontrole:UC1.saida[4]
+SinaisControleOut[0] <= unidadecontrole:UC1.saida[0]
+SinaisControleOut[1] <= unidadecontrole:UC1.saida[1]
+SinaisControleOut[2] <= unidadecontrole:UC1.saida[2]
+SinaisControleOut[3] <= unidadecontrole:UC1.saida[3]
+SinaisControleOut[4] <= unidadecontrole:UC1.saida[4]
+SinaisControleOut[5] <= unidadecontrole:UC1.saida[5]
+SinaisControleOut[6] <= unidadecontrole:UC1.saida[6]
+SinaisControleOut[7] <= unidadecontrole:UC1.saida[7]
+SinaisControleOut[8] <= unidadecontrole:UC1.saida[8]
+EntradaB_ULA[0] <= muxgenerico2x1:MUX_ULA.saida_MUX[0]
+EntradaB_ULA[1] <= muxgenerico2x1:MUX_ULA.saida_MUX[1]
+EntradaB_ULA[2] <= muxgenerico2x1:MUX_ULA.saida_MUX[2]
+EntradaB_ULA[3] <= muxgenerico2x1:MUX_ULA.saida_MUX[3]
+EntradaB_ULA[4] <= muxgenerico2x1:MUX_ULA.saida_MUX[4]
+EntradaB_ULA[5] <= muxgenerico2x1:MUX_ULA.saida_MUX[5]
+EntradaB_ULA[6] <= muxgenerico2x1:MUX_ULA.saida_MUX[6]
+EntradaB_ULA[7] <= muxgenerico2x1:MUX_ULA.saida_MUX[7]
+RegistradorA[0] <= registradorgenerico:REGA.DOUT[0]
+RegistradorA[1] <= registradorgenerico:REGA.DOUT[1]
+RegistradorA[2] <= registradorgenerico:REGA.DOUT[2]
+RegistradorA[3] <= registradorgenerico:REGA.DOUT[3]
+RegistradorA[4] <= registradorgenerico:REGA.DOUT[4]
+RegistradorA[5] <= registradorgenerico:REGA.DOUT[5]
+RegistradorA[6] <= registradorgenerico:REGA.DOUT[6]
+RegistradorA[7] <= registradorgenerico:REGA.DOUT[7]
 
 
 |aula05_2|muxGenerico2x1:MUX_ULA
@@ -365,8 +365,8 @@ saida[8] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |aula05_2|logicaDesvio:LOGDESVIO
-jeq => saida.IN0
-jmp => saida.IN1
+jmps[0] => saida.IN0
+jmps[1] => saida.IN1
 zf => saida.IN1
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 

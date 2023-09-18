@@ -24,19 +24,29 @@ architecture assincrona of memoriaROM is
     constant LDI : std_logic_vector(3 downto 0) := "0100";
     constant STA : std_logic_vector(3 downto 0) := "0101";
     constant JMP : std_logic_vector(3 downto 0) := "0110";
+    constant JEQ : std_logic_vector(3 downto 0) := "0111";
+    constant CEQ : std_logic_vector(3 downto 0) := "1001";
+    constant JSR : std_logic_vector(3 downto 0) := "1000";
+    constant RET : std_logic_vector(3 downto 0) := "1010";
     
   function initMemory
         return blocoMemoria is variable tmp : blocoMemoria := (others => (others => '0'));
   begin
       -- Palavra de Controle = SelMUX, Habilita_A, Reset_A, Operacao_ULA
       -- Inicializa os endereços:
-        tmp(0) := JMP & "000000100";
-        tmp(1) := JMP & "000000101";
-        tmp(2) := NOP & "000000000";
-        tmp(3) := NOP & "000000000";
-        tmp(4) := JMP & "000000001";
-        tmp(5) := NOP & "000000000";
-        tmp(6) := JMP & "000000110";
+        tmp(0) := JMP & '0' & x"04";
+        tmp(1) := JEQ & '0' & x"09";
+        tmp(2) := NOP & '0' & x"00";
+        tmp(3) := NOP & '0' & x"00";
+        tmp(4) := LDI & '0' & x"05";
+        tmp(5) := STA & '1' & x"00";
+        tmp(6) := CEQ & '1' & x"00";
+        tmp(7) := JMP & '0' & x"01";
+        tmp(8) := NOP & '0' & x"00";
+        tmp(9) := LDI & '0' & x"04";
+        tmp(10) := CEQ & '1' & x"00";
+        tmp(11) := JEQ & '0' & x"03";
+        tmp(12) := JMP & '0' & x"0c";
 
         return tmp;
     end initMemory;
