@@ -164,7 +164,9 @@ imediato_valor <= instrucao(7 downto 0);
 Opcode <= instrucao(12 downto 9);
 
 -- sinal mux_jmp
+
 entradaB_mux_jmp <= instrucao(8 downto 0);
+
 -- -- I/O
 -- chavesY_MUX_A <= SW(3 downto 0);
 -- chavesX_ULA_B <= SW(9 downto 6);

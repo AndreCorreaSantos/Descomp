@@ -67,15 +67,15 @@ saida_MUX[7] <= saida_MUX.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |aula05_3|muxPC:MUX_PC
-entradaA_MUX[0] => saida_MUX.DATAA
-entradaA_MUX[1] => saida_MUX.DATAA
-entradaA_MUX[2] => saida_MUX.DATAA
-entradaA_MUX[3] => saida_MUX.DATAA
-entradaA_MUX[4] => saida_MUX.DATAA
-entradaA_MUX[5] => saida_MUX.DATAA
-entradaA_MUX[6] => saida_MUX.DATAA
-entradaA_MUX[7] => saida_MUX.DATAA
-entradaA_MUX[8] => saida_MUX.DATAA
+entradaA_MUX[0] => saida_MUX.DATAB
+entradaA_MUX[1] => saida_MUX.DATAB
+entradaA_MUX[2] => saida_MUX.DATAB
+entradaA_MUX[3] => saida_MUX.DATAB
+entradaA_MUX[4] => saida_MUX.DATAB
+entradaA_MUX[5] => saida_MUX.DATAB
+entradaA_MUX[6] => saida_MUX.DATAB
+entradaA_MUX[7] => saida_MUX.DATAB
+entradaA_MUX[8] => saida_MUX.DATAB
 entradaB_MUX[0] => saida_MUX.DATAB
 entradaB_MUX[1] => saida_MUX.DATAB
 entradaB_MUX[2] => saida_MUX.DATAB
@@ -96,8 +96,10 @@ entradaC_MUX[7] => saida_MUX.DATAB
 entradaC_MUX[8] => saida_MUX.DATAB
 seletor_MUX[0] => Equal0.IN0
 seletor_MUX[0] => Equal1.IN1
+seletor_MUX[0] => Equal2.IN1
 seletor_MUX[1] => Equal0.IN1
 seletor_MUX[1] => Equal1.IN0
+seletor_MUX[1] => Equal2.IN0
 saida_MUX[0] <= saida_MUX.DB_MAX_OUTPUT_PORT_TYPE
 saida_MUX[1] <= saida_MUX.DB_MAX_OUTPUT_PORT_TYPE
 saida_MUX[2] <= saida_MUX.DB_MAX_OUTPUT_PORT_TYPE
