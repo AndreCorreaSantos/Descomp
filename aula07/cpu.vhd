@@ -10,7 +10,7 @@ entity cpu is
   port ( 
          CLK : in std_logic;
          leituraRAM : in std_logic_vector(7 downto 0);
-         escritaRAM : out std_logic_vector(7 downto 0);
+         saidaDados : out std_logic_vector(7 downto 0);
          instrucao : in std_logic_vector(12 downto 0); -- o endereço que vem da rom
          saidaEndROM : out std_logic_vector(8 downto 0); -- o endereço que sai para a rom
          saidaEnds : out std_logic_vector(8 downto 0);
@@ -86,7 +86,7 @@ REGA : entity work.registradorGenerico   generic map (larguraDados => larguraDad
 
 -- O port map completo do registrador de zero flag
 ZF1 : entity work.registradorFlag
-          port map (DIN => saidaULAFlag, DOUT => zeroFlag, ENABLE => HabFlagZero, CLK => CLK, RST => '0');
+        port map (DIN => saidaULAFlag, DOUT => zeroFlag, ENABLE => HabFlagZero, CLK => CLK, RST => '0');
 
 -- O port map completo do registrador de endereço
 REGRET : entity work.registradorGenerico   generic map(larguraDados => 9)
@@ -127,7 +127,7 @@ WE <= Sinais_Controle(0);
 -- sinais memoria
 
 saidaEnds <=  instrucao(8 downto 0);
-escritaRAM <= REG1_ULA_A;
+saidaDados <= REG1_ULA_A;
 
 --sinal mux entrada B
 imediato_valor <= instrucao(7 downto 0);

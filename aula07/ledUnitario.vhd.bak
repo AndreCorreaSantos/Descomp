@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ledUnitario is
+    generic ( larguraDados : natural := 1
+);
+  port ( habilita : in std_logic;
+         dadoIN : in std_logic;
+         CLK => CLK
+			);
+end entity;
+
+architecture comportamento of ledUnitario is
+    signal saidaREG : std_logic;
+    begin
+
+REG1 : entity work.registradorGenerico   generic map (larguraDados => larguraDados)
+    port map (DIN => dadoIN, DOUT => saidaREG, ENABLE => hhabilita, CLK => CLK, RST => '0');
+end architecture;
