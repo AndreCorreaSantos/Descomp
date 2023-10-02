@@ -1,12 +1,6 @@
 |aula07
-CLOCK_50 => ~NO_FANOUT~
-KEY[0] => cpu:CPU.CLK
-KEY[0] => memoriaram:RAM1.clk
-KEY[0] => decoderenderecos:DECODER.CLK
-KEY[0] => registradorgenerico:LED8.CLK
-KEY[0] => registradorflag:LED1.CLK
-KEY[0] => registradorflag:LED2.CLK
-KEY[0] => hexdisplay:HEX.CLK
+CLOCK_50 => edgedetector:gravar:detectorSub0.clk
+KEY[0] => edgedetector:gravar:detectorSub0.entrada
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
@@ -100,6 +94,13 @@ OUTMEM[4] <= OUTMEM[4].DB_MAX_OUTPUT_PORT_TYPE
 OUTMEM[5] <= OUTMEM[5].DB_MAX_OUTPUT_PORT_TYPE
 OUTMEM[6] <= OUTMEM[6].DB_MAX_OUTPUT_PORT_TYPE
 OUTMEM[7] <= OUTMEM[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula07|edgeDetector:\gravar:detectorSub0
+clk => saidaQ.CLK
+entrada => saida.IN1
+entrada => saidaQ.DATAIN
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |aula07|cpu:CPU

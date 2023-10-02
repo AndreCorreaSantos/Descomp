@@ -7,7 +7,7 @@ entity aula07 is
         larguraInstrucao : natural := 13;
         larguraEnderecoROM : natural := 9;
         larguraEnderecoRAM : natural := 6;
-        simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
+        simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
   );
   port   (
     CLOCK_50 : in std_logic;
