@@ -1,6 +1,12 @@
 |aula07
-CLOCK_50 => edgedetector:gravar:detectorSub0.clk
-KEY[0] => edgedetector:gravar:detectorSub0.entrada
+CLOCK_50 => ~NO_FANOUT~
+KEY[0] => cpu:CPU.CLK
+KEY[0] => memoriaram:RAM1.clk
+KEY[0] => decoderenderecos:DECODER.CLK
+KEY[0] => registradorgenerico:LED8.CLK
+KEY[0] => registradorflag:LED1.CLK
+KEY[0] => registradorflag:LED2.CLK
+KEY[0] => hexdisplay:HEX.CLK
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
@@ -55,23 +61,45 @@ HEX0[3] <= hexdisplay:HEX.saida0[3]
 HEX0[4] <= hexdisplay:HEX.saida0[4]
 HEX0[5] <= hexdisplay:HEX.saida0[5]
 HEX0[6] <= hexdisplay:HEX.saida0[6]
-LEDR[0] <= registradorgenerico:LED8.DOUT[0]
-LEDR[1] <= registradorgenerico:LED8.DOUT[1]
-LEDR[2] <= registradorgenerico:LED8.DOUT[2]
-LEDR[3] <= registradorgenerico:LED8.DOUT[3]
-LEDR[4] <= registradorgenerico:LED8.DOUT[4]
-LEDR[5] <= registradorgenerico:LED8.DOUT[5]
-LEDR[6] <= registradorgenerico:LED8.DOUT[6]
-LEDR[7] <= registradorgenerico:LED8.DOUT[7]
-LEDR[8] <= registradorflag:LED2.DOUT
-LEDR[9] <= registradorflag:LED1.DOUT
-
-
-|aula07|edgeDetector:\gravar:detectorSub0
-clk => saidaQ.CLK
-entrada => saida.IN1
-entrada => saidaQ.DATAIN
-saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[0] <= registradorflag:LED1.DOUT
+LEDR[1] <= registradorflag:LED2.DOUT
+LEDR[2] <= registradorgenerico:LED8.DOUT[0]
+LEDR[3] <= registradorgenerico:LED8.DOUT[1]
+LEDR[4] <= registradorgenerico:LED8.DOUT[2]
+LEDR[5] <= registradorgenerico:LED8.DOUT[3]
+LEDR[6] <= registradorgenerico:LED8.DOUT[4]
+LEDR[7] <= registradorgenerico:LED8.DOUT[5]
+LEDR[8] <= registradorgenerico:LED8.DOUT[6]
+LEDR[9] <= registradorgenerico:LED8.DOUT[7]
+SW7[0] => buffer_3_state_8portas:SW_7.entrada[0]
+SW7[1] => buffer_3_state_8portas:SW_7.entrada[1]
+SW7[2] => buffer_3_state_8portas:SW_7.entrada[2]
+SW7[3] => buffer_3_state_8portas:SW_7.entrada[3]
+SW7[4] => buffer_3_state_8portas:SW_7.entrada[4]
+SW7[5] => buffer_3_state_8portas:SW_7.entrada[5]
+SW7[6] => buffer_3_state_8portas:SW_7.entrada[6]
+SW7[7] => buffer_3_state_8portas:SW_7.entrada[7]
+SW8 => buffer_3_state:SW_8.entrada
+SW9 => buffer_3_state:SW_9.entrada
+KEY0 => buffer_3_state:KEY_0.entrada
+KEY1 => buffer_3_state:KEY_1.entrada
+KEY2 => buffer_3_state:KEY_2.entrada
+KEY3 => buffer_3_state:KEY_3.entrada
+FPGA_RESET => buffer_3_state:RESET.entrada
+ADDRMEM[0] <= ADDRMEM[0].DB_MAX_OUTPUT_PORT_TYPE
+ADDRMEM[1] <= ADDRMEM[1].DB_MAX_OUTPUT_PORT_TYPE
+ADDRMEM[2] <= ADDRMEM[2].DB_MAX_OUTPUT_PORT_TYPE
+ADDRMEM[3] <= ADDRMEM[3].DB_MAX_OUTPUT_PORT_TYPE
+ADDRMEM[4] <= ADDRMEM[4].DB_MAX_OUTPUT_PORT_TYPE
+ADDRMEM[5] <= ADDRMEM[5].DB_MAX_OUTPUT_PORT_TYPE
+OUTMEM[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+OUTMEM[1] <= OUTMEM[1].DB_MAX_OUTPUT_PORT_TYPE
+OUTMEM[2] <= OUTMEM[2].DB_MAX_OUTPUT_PORT_TYPE
+OUTMEM[3] <= OUTMEM[3].DB_MAX_OUTPUT_PORT_TYPE
+OUTMEM[4] <= OUTMEM[4].DB_MAX_OUTPUT_PORT_TYPE
+OUTMEM[5] <= OUTMEM[5].DB_MAX_OUTPUT_PORT_TYPE
+OUTMEM[6] <= OUTMEM[6].DB_MAX_OUTPUT_PORT_TYPE
+OUTMEM[7] <= OUTMEM[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |aula07|cpu:CPU
@@ -79,14 +107,14 @@ CLK => registradorgenerico:REGA.CLK
 CLK => registradorflag:ZF1.CLK
 CLK => registradorgenerico:REGRET.CLK
 CLK => registradorgenerico:PC.CLK
-leituraRAM[0] => muxgenerico2x1:MUX_ULA.entradaA_MUX[0]
-leituraRAM[1] => muxgenerico2x1:MUX_ULA.entradaA_MUX[1]
-leituraRAM[2] => muxgenerico2x1:MUX_ULA.entradaA_MUX[2]
-leituraRAM[3] => muxgenerico2x1:MUX_ULA.entradaA_MUX[3]
-leituraRAM[4] => muxgenerico2x1:MUX_ULA.entradaA_MUX[4]
-leituraRAM[5] => muxgenerico2x1:MUX_ULA.entradaA_MUX[5]
-leituraRAM[6] => muxgenerico2x1:MUX_ULA.entradaA_MUX[6]
-leituraRAM[7] => muxgenerico2x1:MUX_ULA.entradaA_MUX[7]
+leituraDados[0] => muxgenerico2x1:MUX_ULA.entradaA_MUX[0]
+leituraDados[1] => muxgenerico2x1:MUX_ULA.entradaA_MUX[1]
+leituraDados[2] => muxgenerico2x1:MUX_ULA.entradaA_MUX[2]
+leituraDados[3] => muxgenerico2x1:MUX_ULA.entradaA_MUX[3]
+leituraDados[4] => muxgenerico2x1:MUX_ULA.entradaA_MUX[4]
+leituraDados[5] => muxgenerico2x1:MUX_ULA.entradaA_MUX[5]
+leituraDados[6] => muxgenerico2x1:MUX_ULA.entradaA_MUX[6]
+leituraDados[7] => muxgenerico2x1:MUX_ULA.entradaA_MUX[7]
 saidaDados[0] <= registradorgenerico:REGA.DOUT[0]
 saidaDados[1] <= registradorgenerico:REGA.DOUT[1]
 saidaDados[2] <= registradorgenerico:REGA.DOUT[2]
@@ -624,12 +652,14 @@ Enderecos[1] => decoder3x8:DECINT.entrada[1]
 Enderecos[2] => decoder3x8:DECINT.entrada[2]
 Enderecos[3] => ~NO_FANOUT~
 Enderecos[4] => ~NO_FANOUT~
+Enderecos[5] => habilitaKEY0.IN0
 Enderecos[5] => habilitaHEX.IN1
 Enderecos[5] => habilitaHEX.IN1
 Enderecos[5] => habilitaHEX.IN1
 Enderecos[5] => habilitaHEX.IN1
 Enderecos[5] => habilitaHEX.IN1
 Enderecos[5] => habilitaHEX.IN1
+Enderecos[5] => habilitaSW7.IN0
 Enderecos[6] => decoder3x8:DECBLOCOS.entrada[0]
 Enderecos[7] => decoder3x8:DECBLOCOS.entrada[1]
 Enderecos[8] => decoder3x8:DECBLOCOS.entrada[2]
@@ -643,6 +673,14 @@ habilitaHEX[2] <= habilitaHEX.DB_MAX_OUTPUT_PORT_TYPE
 habilitaHEX[3] <= habilitaHEX.DB_MAX_OUTPUT_PORT_TYPE
 habilitaHEX[4] <= habilitaHEX.DB_MAX_OUTPUT_PORT_TYPE
 habilitaHEX[5] <= habilitaHEX.DB_MAX_OUTPUT_PORT_TYPE
+habilitaSW7 <= habilitaSW7.DB_MAX_OUTPUT_PORT_TYPE
+habilitaSW8 <= habilitaSW8.DB_MAX_OUTPUT_PORT_TYPE
+habilitaSW9 <= habilitaSW9.DB_MAX_OUTPUT_PORT_TYPE
+habilitaKEY0 <= habilitaKEY0.DB_MAX_OUTPUT_PORT_TYPE
+habilitaKEY1 <= habilitaKEY1.DB_MAX_OUTPUT_PORT_TYPE
+habilitaKEY2 <= habilitaKEY2.DB_MAX_OUTPUT_PORT_TYPE
+habilitaKEY3 <= habilitaKEY3.DB_MAX_OUTPUT_PORT_TYPE
+habilitaRESET <= habilitaRESET.DB_MAX_OUTPUT_PORT_TYPE
 CLK => ~NO_FANOUT~
 WE => habilitaLED8.IN1
 WE => habilitaLED1.IN1
@@ -650,6 +688,8 @@ WE => habilitaLED2.IN1
 WE => habilitaHEX.IN1
 WE => habilitaHEX.IN1
 WE => habilitaHEX.IN1
+RD => habilitaSW7.IN1
+RD => habilitaKEY0.IN1
 
 
 |aula07|decoderEnderecos:DECODER|decoder3x8:DECBLOCOS
@@ -1604,5 +1644,74 @@ saida7seg[3] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 saida7seg[4] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 saida7seg[5] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
 saida7seg[6] <= saida7seg.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula07|buffer_3_state_8portas:SW_7
+entrada[0] => saida[0].DATAIN
+entrada[1] => saida[1].DATAIN
+entrada[2] => saida[2].DATAIN
+entrada[3] => saida[3].DATAIN
+entrada[4] => saida[4].DATAIN
+entrada[5] => saida[5].DATAIN
+entrada[6] => saida[6].DATAIN
+entrada[7] => saida[7].DATAIN
+habilita => saida[0].OE
+habilita => saida[1].OE
+habilita => saida[2].OE
+habilita => saida[3].OE
+habilita => saida[4].OE
+habilita => saida[5].OE
+habilita => saida[6].OE
+habilita => saida[7].OE
+saida[0] <= saida[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida[2].DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida[3].DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= saida[4].DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= saida[5].DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= saida[6].DB_MAX_OUTPUT_PORT_TYPE
+saida[7] <= saida[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula07|buffer_3_state:SW_8
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula07|buffer_3_state:SW_9
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula07|buffer_3_state:KEY_0
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula07|buffer_3_state:KEY_1
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula07|buffer_3_state:KEY_2
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula07|buffer_3_state:KEY_3
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula07|buffer_3_state:RESET
+entrada => saida.DATAIN
+habilita => saida.OE
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 

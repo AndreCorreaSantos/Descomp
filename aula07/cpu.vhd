@@ -9,7 +9,7 @@ entity cpu is
   );
   port ( 
          CLK : in std_logic;
-         leituraRAM : in std_logic_vector(7 downto 0);
+         leituraDados : in std_logic_vector(7 downto 0);
          saidaDados : out std_logic_vector(7 downto 0);
          instrucao : in std_logic_vector(12 downto 0); -- o endereço que vem da rom
          saidaEndROM : out std_logic_vector(8 downto 0); -- o endereço que sai para a rom
@@ -68,7 +68,7 @@ architecture comportamento of cpu is
 
 -- O port map completo do MUX.
 MUX_ULA :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
-        port map(entradaA_MUX => leituraRAM, --saida de dados da memoria 
+        port map(entradaA_MUX => leituraDados, --saida de dados da memoria 
                  entradaB_MUX =>  imediato_valor, -- imediato 7 ~ 0
                  seletor_MUX => SelMUX,
                  saida_MUX => MUX_REG1);

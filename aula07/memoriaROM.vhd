@@ -44,8 +44,8 @@ architecture assincrona of memoriaROM is
       tmp(7) := LDI & '0' & x"55";
       tmp(8) := STA & '1' & x"00";
       tmp(9) := LDI & '0' & x"aa";
-      tmp(10) := STA & '0' & x"ff";
-      tmp(11) := JMP & '1' & x"00";
+      tmp(10) := STA & '1' & x"00";
+      tmp(11) := JMP & '0' & x"0b";
       return tmp;
 
     end initMemory;
