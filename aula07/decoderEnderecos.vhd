@@ -55,16 +55,16 @@ begin
 
     -- saidas
 habilitaRAM <= saidaDecoderBlocos(0);
-habilitaLED8 <= saidaDecoderBlocos(4) and saidaDecoderInt(0) and WE;
-habilitaLED1 <= saidaDecoderBlocos(4) and saidaDecoderInt(1) and WE;
-habilitaLED2 <= saidaDecoderBlocos(4) and saidaDecoderInt(2) and WE;
+habilitaLED8 <= saidaDecoderBlocos(4) and saidaDecoderInt(0) and WE and (not Enderecos(5));
+habilitaLED1 <= saidaDecoderBlocos(4) and saidaDecoderInt(1) and WE and (not Enderecos(5));
+habilitaLED2 <= saidaDecoderBlocos(4) and saidaDecoderInt(2) and WE and (not Enderecos(5));
 
-habilitaHEX(0) <= saidaDecoderBlocos(4) and saidaDecoderInt(0) and WE and (not Enderecos(5));
-habilitaHEX(1) <= saidaDecoderBlocos(4) and saidaDecoderInt(1) and WE and (not Enderecos(5));
-habilitaHEX(2) <= saidaDecoderBlocos(4) and saidaDecoderInt(2) and WE and (not Enderecos(5));
-habilitaHEX(3) <= saidaDecoderBlocos(4) and saidaDecoderInt(3) and WE and (not Enderecos(5));
-habilitaHEX(4) <= saidaDecoderBlocos(4) and saidaDecoderInt(4) and WE and (not Enderecos(5));
-habilitaHEX(5) <= saidaDecoderBlocos(4) and saidaDecoderInt(5) and WE and (not Enderecos(5));
+habilitaHEX(0) <= saidaDecoderBlocos(4) and saidaDecoderInt(0) and WE and Enderecos(5);
+habilitaHEX(1) <= saidaDecoderBlocos(4) and saidaDecoderInt(1) and WE and Enderecos(5);
+habilitaHEX(2) <= saidaDecoderBlocos(4) and saidaDecoderInt(2) and WE and Enderecos(5);
+habilitaHEX(3) <= saidaDecoderBlocos(4) and saidaDecoderInt(3) and WE and Enderecos(5);
+habilitaHEX(4) <= saidaDecoderBlocos(4) and saidaDecoderInt(4) and WE and Enderecos(5);
+habilitaHEX(5) <= saidaDecoderBlocos(4) and saidaDecoderInt(5) and WE and Enderecos(5);
 
 habilitaSW7 <= RD and ( not Enderecos(5)) and saidaDecoderInt(0) and saidaDecoderBlocos(5);
 habilitaSW8 <= RD and ( not Enderecos(5)) and saidaDecoderInt(1) and saidaDecoderBlocos(5);
