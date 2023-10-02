@@ -4,6 +4,9 @@ use ieee.std_logic_1164.all;
 entity decoderEnderecos is
     port (
         Enderecos    : in  std_logic_vector(8 downto 0);
+        CLK          : in  std_logic;
+        WE           : in std_logic;
+        RD           : in std_logic;
         habilitaRAM  : out std_logic;
         habilitaLED8 : out std_logic;
         habilitaLED1 : out std_logic;
@@ -17,9 +20,7 @@ entity decoderEnderecos is
         habilitaKEY2 : out std_logic;
         habilitaKEY3 : out std_logic;
         habilitaRESET : out std_logic;
-        CLK          : in  std_logic;
-        WE           : in std_logic;
-        RD           : in std_logic
+        limpaLeitura : out std_logic
     );
 end entity;
 
@@ -75,5 +76,7 @@ habilitaKEY1 <= RD and Enderecos(5) and saidaDecoderInt(1) and saidaDecoderBloco
 habilitaKEY2 <= RD and Enderecos(5) and saidaDecoderInt(2) and saidaDecoderBlocos(5);
 habilitaKEY3 <= RD and Enderecos(5) and saidaDecoderInt(3) and saidaDecoderBlocos(5);
 habilitaRESET <= RD and Enderecos(5) and saidaDecoderInt(4) and saidaDecoderBlocos(5);
+
+limpaLeitura <= Enderecos(8) and Enderecos(7) and Enderecos(6) and Enderecos(5) and Enderecos(4) and Enderecos(3) and Enderecos(2) and Enderecos(1) and Enderecos(0) and WE;
 
 end architecture;

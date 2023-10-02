@@ -75,7 +75,7 @@ SW7[6] => buffer_3_state_8portas:SW_7.entrada[6]
 SW7[7] => buffer_3_state_8portas:SW_7.entrada[7]
 SW8 => buffer_3_state:SW_8.entrada
 SW9 => buffer_3_state:SW_9.entrada
-KEY0 => buffer_3_state:KEY_0.entrada
+KEY0 => edgekey:REG_KEY0.entrada
 KEY1 => buffer_3_state:KEY_1.entrada
 KEY2 => buffer_3_state:KEY_2.entrada
 KEY3 => buffer_3_state:KEY_3.entrada
@@ -649,10 +649,13 @@ dado_out[7] <= dado_out[7].DB_MAX_OUTPUT_PORT_TYPE
 
 |aula07|decoderEnderecos:DECODER
 Enderecos[0] => decoder3x8:DECINT.entrada[0]
+Enderecos[0] => limpaLeitura.IN1
 Enderecos[1] => decoder3x8:DECINT.entrada[1]
+Enderecos[1] => limpaLeitura.IN1
 Enderecos[2] => decoder3x8:DECINT.entrada[2]
-Enderecos[3] => ~NO_FANOUT~
-Enderecos[4] => ~NO_FANOUT~
+Enderecos[2] => limpaLeitura.IN1
+Enderecos[3] => limpaLeitura.IN1
+Enderecos[4] => limpaLeitura.IN1
 Enderecos[5] => habilitaHEX.IN1
 Enderecos[5] => habilitaHEX.IN1
 Enderecos[5] => habilitaHEX.IN1
@@ -660,13 +663,27 @@ Enderecos[5] => habilitaHEX.IN1
 Enderecos[5] => habilitaHEX.IN1
 Enderecos[5] => habilitaHEX.IN1
 Enderecos[5] => habilitaKEY0.IN0
+Enderecos[5] => limpaLeitura.IN1
 Enderecos[5] => habilitaLED8.IN1
 Enderecos[5] => habilitaLED1.IN1
 Enderecos[5] => habilitaLED2.IN1
 Enderecos[5] => habilitaSW7.IN0
 Enderecos[6] => decoder3x8:DECBLOCOS.entrada[0]
+Enderecos[6] => limpaLeitura.IN1
 Enderecos[7] => decoder3x8:DECBLOCOS.entrada[1]
+Enderecos[7] => limpaLeitura.IN0
 Enderecos[8] => decoder3x8:DECBLOCOS.entrada[2]
+Enderecos[8] => limpaLeitura.IN1
+CLK => ~NO_FANOUT~
+WE => habilitaLED8.IN1
+WE => habilitaLED1.IN1
+WE => habilitaLED2.IN1
+WE => habilitaHEX.IN1
+WE => habilitaHEX.IN1
+WE => habilitaHEX.IN1
+WE => limpaLeitura.IN1
+RD => habilitaSW7.IN1
+RD => habilitaKEY0.IN1
 habilitaRAM <= decoder3x8:DECBLOCOS.saida[0]
 habilitaLED8 <= habilitaLED8.DB_MAX_OUTPUT_PORT_TYPE
 habilitaLED1 <= habilitaLED1.DB_MAX_OUTPUT_PORT_TYPE
@@ -685,15 +702,7 @@ habilitaKEY1 <= habilitaKEY1.DB_MAX_OUTPUT_PORT_TYPE
 habilitaKEY2 <= habilitaKEY2.DB_MAX_OUTPUT_PORT_TYPE
 habilitaKEY3 <= habilitaKEY3.DB_MAX_OUTPUT_PORT_TYPE
 habilitaRESET <= habilitaRESET.DB_MAX_OUTPUT_PORT_TYPE
-CLK => ~NO_FANOUT~
-WE => habilitaLED8.IN1
-WE => habilitaLED1.IN1
-WE => habilitaLED2.IN1
-WE => habilitaHEX.IN1
-WE => habilitaHEX.IN1
-WE => habilitaHEX.IN1
-RD => habilitaSW7.IN1
-RD => habilitaKEY0.IN1
+limpaLeitura <= limpaLeitura.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |aula07|decoderEnderecos:DECODER|decoder3x8:DECBLOCOS
@@ -1687,6 +1696,29 @@ saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula07|edgeKey:REG_KEY0
+entrada => edgedetector:EDGE_KEY0.entrada
+entrada => saidaEdgeAND.IN1
+CLK => edgedetector:EDGE_KEY0.clk
+limpaLeitura => registradorflag:REG_KEY0.RST
+saida <= registradorflag:REG_KEY0.DOUT
+
+
+|aula07|edgeKey:REG_KEY0|edgeDetector:EDGE_KEY0
+clk => saidaQ.CLK
+entrada => saida.IN1
+entrada => saidaQ.DATAIN
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula07|edgeKey:REG_KEY0|registradorFlag:REG_KEY0
+DIN => DOUT~reg0.DATAIN
+DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ENABLE => DOUT~reg0.ENA
+CLK => DOUT~reg0.CLK
+RST => DOUT~reg0.ACLR
 
 
 |aula07|buffer_3_state:KEY_0

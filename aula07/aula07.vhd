@@ -75,7 +75,8 @@ architecture arquitetura of aula07 is
   signal habilitaKEY3 : std_logic;
   signal habilitaRESET : std_logic;
 
-
+  signal saidaRegK0 : std_logic;
+  signal limpaLeitura: std_logic;
 begin
 
 -- Instanciando os componentes:
@@ -116,6 +117,7 @@ DECODER : entity work.decoderEnderecos
                   habilitaSW9 => habilitaSW9,habilitaKEY0 => habilitaKEY0,
                   habilitaKEY1 => habilitaKEY1,habilitaKEY2 => habilitaKEY2,
                   habilitaKEY3 => habilitaKEY3,habilitaRESET => habilitaRESET,
+                  limpaLeitura=>limpaLeitura,
                   CLK => CLK,WE => ramWe,RD => ramRe
                   );
 
@@ -141,8 +143,11 @@ SW_8: entity work.buffer_3_state
 SW_9: entity work.buffer_3_state
         port map(entrada => SW9,habilita => habilitaSW9, saida => leituraDados(0));
 
+REG_KEY0: entity work.edgeKey
+        port map(entrada => KEY0, CLK => CLK, limpaLeitura => limpaLeitura, saida => saidaRegK0);
+
 KEY_0: entity work.buffer_3_state
-        port map(entrada => KEY0,habilita => habilitaKEY0, saida => leituraDados(0));
+        port map(entrada => saidaRegK0,habilita => habilitaKEY0, saida => leituraDados(0));
 
 KEY_1: entity work.buffer_3_state
         port map(entrada => KEY1,habilita => habilitaKEY1, saida => leituraDados(0));
