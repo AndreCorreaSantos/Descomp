@@ -31,7 +31,7 @@ entity aula07 is
     KEY1 : in std_logic;
     KEY2 : in std_logic;
     KEY3 : in std_logic;
-    FPGA_RESET : in std_logic;
+    FPGA_RESET_N : in std_logic;
 
     ADDRMEM : out std_logic_vector(5 downto 0);
     OUTMEM : out std_logic_vector( 7 downto 0)
@@ -82,12 +82,12 @@ begin
 -- Instanciando os componentes:
 
 -- Para simular, fica mais simples tirar o edgeDetector
-gravar:  if simulacao generate
-CLK <= KEY(0);
-else generate
-detectorSub0: work.edgeDetector(bordaSubida)
-        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
-end generate;
+-- gravar:  if simulacao generate
+CLK <= CLOCK_50;
+-- else generate
+-- detectorSub0: work.edgeDetector(bordaSubida)
+--         port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
+-- end generate;
 
 CPU : entity work.cpu
         port map (CLK => CLK,  
@@ -159,7 +159,7 @@ KEY_3: entity work.buffer_3_state
         port map(entrada => KEY3,habilita => habilitaKEY3, saida => leituraDados(0));
 
 RESET : entity work.buffer_3_state
-        port map(entrada => FPGA_RESET,habilita => habilitaRESET, saida => leituraDados(0));
+        port map(entrada => FPGA_RESET_N,habilita => habilitaRESET, saida => leituraDados(0));
 
 enderecoRAM <= enderecos(5 downto 0);
 entrada_dados_RAM <= dOUT;

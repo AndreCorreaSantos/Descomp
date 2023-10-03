@@ -1,6 +1,13 @@
 |aula07
-CLOCK_50 => edgedetector:gravar:detectorSub0.clk
-KEY[0] => edgedetector:gravar:detectorSub0.entrada
+CLOCK_50 => cpu:CPU.CLK
+CLOCK_50 => memoriaram:RAM1.clk
+CLOCK_50 => decoderenderecos:DECODER.CLK
+CLOCK_50 => registradorgenerico:LED8.CLK
+CLOCK_50 => registradorflag:LED1.CLK
+CLOCK_50 => registradorflag:LED2.CLK
+CLOCK_50 => hexdisplay:HEX.CLK
+CLOCK_50 => edgekey:REG_KEY0.CLK
+KEY[0] => ~NO_FANOUT~
 KEY[1] => ~NO_FANOUT~
 KEY[2] => ~NO_FANOUT~
 KEY[3] => ~NO_FANOUT~
@@ -79,7 +86,7 @@ KEY0 => edgekey:REG_KEY0.entrada
 KEY1 => buffer_3_state:KEY_1.entrada
 KEY2 => buffer_3_state:KEY_2.entrada
 KEY3 => buffer_3_state:KEY_3.entrada
-FPGA_RESET => buffer_3_state:RESET.entrada
+FPGA_RESET_N => buffer_3_state:RESET.entrada
 ADDRMEM[0] <= ADDRMEM[0].DB_MAX_OUTPUT_PORT_TYPE
 ADDRMEM[1] <= ADDRMEM[1].DB_MAX_OUTPUT_PORT_TYPE
 ADDRMEM[2] <= ADDRMEM[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -94,13 +101,6 @@ OUTMEM[4] <= OUTMEM[4].DB_MAX_OUTPUT_PORT_TYPE
 OUTMEM[5] <= OUTMEM[5].DB_MAX_OUTPUT_PORT_TYPE
 OUTMEM[6] <= OUTMEM[6].DB_MAX_OUTPUT_PORT_TYPE
 OUTMEM[7] <= OUTMEM[7].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|aula07|edgeDetector:\gravar:detectorSub0
-clk => saidaQ.CLK
-entrada => saida.IN1
-entrada => saidaQ.DATAIN
-saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |aula07|cpu:CPU

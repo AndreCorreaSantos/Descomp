@@ -25,8 +25,8 @@ architecture assincrona of memoriaROM is
     constant STA : std_logic_vector(3 downto 0) := "0101";
     constant JMP : std_logic_vector(3 downto 0) := "0110";
     constant JEQ : std_logic_vector(3 downto 0) := "0111";
-    constant CEQ : std_logic_vector(3 downto 0) := "1001";
-    constant JSR : std_logic_vector(3 downto 0) := "1000";
+    constant JSR : std_logic_vector(3 downto 0) := "1001";
+    constant CEQ : std_logic_vector(3 downto 0) := "1000";
     constant RET : std_logic_vector(3 downto 0) := "1010";
     
   function initMemory
