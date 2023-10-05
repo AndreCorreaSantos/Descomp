@@ -23,14 +23,11 @@ entity aula07 is
 
     LEDR : out std_logic_vector(9 downto 0);
 
-    SW7 : in std_logic_vector(7 downto 0);
-    SW8 : in std_logic;
-    SW9 : in std_logic;
+    SW : in std_logic_vector(9 downto 0);
+--     SW8 : in std_logic;
+--     SW9 : in std_logic;
 
-    KEY0 : in std_logic;
-    KEY1 : in std_logic;
-    KEY2 : in std_logic;
-    KEY3 : in std_logic;
+
     FPGA_RESET_N : in std_logic;
 
     ADDRMEM : out std_logic_vector(5 downto 0);
@@ -77,6 +74,16 @@ architecture arquitetura of aula07 is
 
   signal saidaRegK0 : std_logic;
   signal limpaLeitura: std_logic;
+
+  signal RESET: std_logic;
+  signal KEY0 : std_logic;
+  signal KEY1 : std_logic;
+  signal KEY2 : std_logic;
+  signal KEY3 : std_logic;
+
+  signal SW7 : std_logic_vector(7 downto 0);
+  signal SW8 : std_logic;
+  signal SW9 : std_logic;
 begin
 
 -- Instanciando os componentes:
@@ -101,7 +108,7 @@ CPU : entity work.cpu
         );
 
 -- port map da memoria de instrucoes
-ROM1 : entity work.memoriaROM   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM)
+ROM1 : entity work.romMIF   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM)
           port map (Endereco => Endereco_Instrucao, Dado => instrucao);
 -- port map da unidade de controle
 
@@ -147,25 +154,35 @@ REG_KEY0: entity work.edgeKey
         port map(entrada => KEY0, CLK => CLK, limpaLeitura => limpaLeitura, saida => saidaRegK0);
 
 KEY_0: entity work.buffer_3_state
-        port map(entrada => saidaRegK0,habilita => habilitaKEY0, saida => leituraDados(0));
+        port map(entrada => KEY0,habilita => habilitaKEY0, saida => leituraDados(0)); --LEMBRAR DE VOLTAR COM SAIDAREGK0
 
 KEY_1: entity work.buffer_3_state
-        port map(entrada => KEY1,habilita => habilitaKEY1, saida => leituraDados(0));
+        port map(entrada => KEY1,habilita => habilitaKEY1, saida =>  leituraDados(0));
 
 KEY_2: entity work.buffer_3_state
-        port map(entrada => KEY2,habilita => habilitaKEY2, saida => leituraDados(0));
+        port map(entrada => KEY2,habilita => habilitaKEY2, saida =>  leituraDados(0));
 
 KEY_3: entity work.buffer_3_state
-        port map(entrada => KEY3,habilita => habilitaKEY3, saida => leituraDados(0));
+        port map(entrada => KEY3,habilita => habilitaKEY3, saida =>  leituraDados(0));
 
-RESET : entity work.buffer_3_state
-        port map(entrada => FPGA_RESET_N,habilita => habilitaRESET, saida => leituraDados(0));
+RESETBUF : entity work.buffer_3_state
+        port map(entrada => RESET,habilita => habilitaRESET, saida =>  leituraDados(0));
 
 enderecoRAM <= enderecos(5 downto 0);
 entrada_dados_RAM <= dOUT;
 PC_OUT <= Endereco_Instrucao;
 LEDR <=  saidaLED8 & saidaLED2 & saidaLED1;
 
+
+KEY0 <= not KEY(0);
+KEY1 <= not KEY(1);
+KEY2 <= not KEY(2);
+KEY3 <= not KEY(3);
+RESET <= not FPGA_RESET_N;
+SW7 <= SW(7 downto 0);
+SW8 <= SW(8);
+SW9 <= SW(9);
+-- CLK <= RESET;
 -- ADDRMEM <= enderecoRAM;
 -- OUTMEM <= saida_dados_RAM;
 

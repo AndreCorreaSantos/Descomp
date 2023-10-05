@@ -7,10 +7,11 @@ CLOCK_50 => registradorflag:LED1.CLK
 CLOCK_50 => registradorflag:LED2.CLK
 CLOCK_50 => hexdisplay:HEX.CLK
 CLOCK_50 => edgekey:REG_KEY0.CLK
-KEY[0] => ~NO_FANOUT~
-KEY[1] => ~NO_FANOUT~
-KEY[2] => ~NO_FANOUT~
-KEY[3] => ~NO_FANOUT~
+KEY[0] => edgekey:REG_KEY0.entrada
+KEY[0] => buffer_3_state:KEY_0.entrada
+KEY[1] => buffer_3_state:KEY_1.entrada
+KEY[2] => buffer_3_state:KEY_2.entrada
+KEY[3] => buffer_3_state:KEY_3.entrada
 PC_OUT[0] <= cpu:CPU.saidaEndROM[0]
 PC_OUT[1] <= cpu:CPU.saidaEndROM[1]
 PC_OUT[2] <= cpu:CPU.saidaEndROM[2]
@@ -72,21 +73,17 @@ LEDR[6] <= registradorgenerico:LED8.DOUT[4]
 LEDR[7] <= registradorgenerico:LED8.DOUT[5]
 LEDR[8] <= registradorgenerico:LED8.DOUT[6]
 LEDR[9] <= registradorgenerico:LED8.DOUT[7]
-SW7[0] => buffer_3_state_8portas:SW_7.entrada[0]
-SW7[1] => buffer_3_state_8portas:SW_7.entrada[1]
-SW7[2] => buffer_3_state_8portas:SW_7.entrada[2]
-SW7[3] => buffer_3_state_8portas:SW_7.entrada[3]
-SW7[4] => buffer_3_state_8portas:SW_7.entrada[4]
-SW7[5] => buffer_3_state_8portas:SW_7.entrada[5]
-SW7[6] => buffer_3_state_8portas:SW_7.entrada[6]
-SW7[7] => buffer_3_state_8portas:SW_7.entrada[7]
-SW8 => buffer_3_state:SW_8.entrada
-SW9 => buffer_3_state:SW_9.entrada
-KEY0 => edgekey:REG_KEY0.entrada
-KEY1 => buffer_3_state:KEY_1.entrada
-KEY2 => buffer_3_state:KEY_2.entrada
-KEY3 => buffer_3_state:KEY_3.entrada
-FPGA_RESET_N => buffer_3_state:RESET.entrada
+SW[0] => buffer_3_state_8portas:SW_7.entrada[0]
+SW[1] => buffer_3_state_8portas:SW_7.entrada[1]
+SW[2] => buffer_3_state_8portas:SW_7.entrada[2]
+SW[3] => buffer_3_state_8portas:SW_7.entrada[3]
+SW[4] => buffer_3_state_8portas:SW_7.entrada[4]
+SW[5] => buffer_3_state_8portas:SW_7.entrada[5]
+SW[6] => buffer_3_state_8portas:SW_7.entrada[6]
+SW[7] => buffer_3_state_8portas:SW_7.entrada[7]
+SW[8] => buffer_3_state:SW_8.entrada
+SW[9] => buffer_3_state:SW_9.entrada
+FPGA_RESET_N => buffer_3_state:RESETBUF.entrada
 ADDRMEM[0] <= ADDRMEM[0].DB_MAX_OUTPUT_PORT_TYPE
 ADDRMEM[1] <= ADDRMEM[1].DB_MAX_OUTPUT_PORT_TYPE
 ADDRMEM[2] <= ADDRMEM[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -481,9 +478,9 @@ zf <= zf.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |aula07|cpu:CPU|unidadeControle:UC1
-opcode[0] => Equal0.IN3
+opcode[0] => Equal0.IN2
 opcode[0] => Equal1.IN1
-opcode[0] => Equal2.IN2
+opcode[0] => Equal2.IN3
 opcode[0] => Equal3.IN3
 opcode[0] => Equal4.IN1
 opcode[0] => Equal5.IN3
@@ -511,9 +508,9 @@ opcode[2] => Equal6.IN3
 opcode[2] => Equal7.IN1
 opcode[2] => Equal8.IN1
 opcode[2] => Equal9.IN1
-opcode[3] => Equal0.IN2
+opcode[3] => Equal0.IN3
 opcode[3] => Equal1.IN2
-opcode[3] => Equal2.IN3
+opcode[3] => Equal2.IN2
 opcode[3] => Equal3.IN0
 opcode[3] => Equal4.IN0
 opcode[3] => Equal5.IN0
@@ -557,29 +554,29 @@ saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aula07|memoriaROM:ROM1
-Endereco[0] => memROM.RADDR
-Endereco[1] => memROM.RADDR1
-Endereco[2] => memROM.RADDR2
-Endereco[3] => memROM.RADDR3
-Endereco[4] => memROM.RADDR4
-Endereco[5] => memROM.RADDR5
-Endereco[6] => memROM.RADDR6
-Endereco[7] => memROM.RADDR7
-Endereco[8] => memROM.RADDR8
-Dado[0] <= memROM.DATAOUT
-Dado[1] <= memROM.DATAOUT1
-Dado[2] <= memROM.DATAOUT2
-Dado[3] <= memROM.DATAOUT3
-Dado[4] <= memROM.DATAOUT4
-Dado[5] <= memROM.DATAOUT5
-Dado[6] <= memROM.DATAOUT6
-Dado[7] <= memROM.DATAOUT7
-Dado[8] <= memROM.DATAOUT8
-Dado[9] <= memROM.DATAOUT9
-Dado[10] <= memROM.DATAOUT10
-Dado[11] <= memROM.DATAOUT11
-Dado[12] <= memROM.DATAOUT12
+|aula07|romMif:ROM1
+Endereco[0] => content.RADDR
+Endereco[1] => content.RADDR1
+Endereco[2] => content.RADDR2
+Endereco[3] => content.RADDR3
+Endereco[4] => content.RADDR4
+Endereco[5] => content.RADDR5
+Endereco[6] => content.RADDR6
+Endereco[7] => content.RADDR7
+Endereco[8] => content.RADDR8
+Dado[0] <= content.DATAOUT
+Dado[1] <= content.DATAOUT1
+Dado[2] <= content.DATAOUT2
+Dado[3] <= content.DATAOUT3
+Dado[4] <= content.DATAOUT4
+Dado[5] <= content.DATAOUT5
+Dado[6] <= content.DATAOUT6
+Dado[7] <= content.DATAOUT7
+Dado[8] <= content.DATAOUT8
+Dado[9] <= content.DATAOUT9
+Dado[10] <= content.DATAOUT10
+Dado[11] <= content.DATAOUT11
+Dado[12] <= content.DATAOUT12
 
 
 |aula07|memoriaRAM:RAM1
@@ -1745,7 +1742,7 @@ habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aula07|buffer_3_state:RESET
+|aula07|buffer_3_state:RESETBUF
 entrada => saida.DATAIN
 habilita => saida.OE
 saida <= saida.DB_MAX_OUTPUT_PORT_TYPE

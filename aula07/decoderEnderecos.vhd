@@ -27,10 +27,6 @@ end entity;
 architecture comportamento of decoderEnderecos is
     signal entradaDecoderInt     : std_logic_vector(2 downto 0);
     signal saidaDecoderInt       : std_logic_vector(7 downto 0);
-    signal ledHabilita           : std_logic;
-    signal end0LED               : std_logic;
-    signal end1LED               : std_logic;
-    signal end2LED               : std_logic;
     signal entradaDecoderBlocos  : std_logic_vector(2 downto 0);
     signal saidaDecoderBlocos    : std_logic_vector(7 downto 0);
 begin
@@ -49,10 +45,6 @@ begin
 
     entradaDecoderBlocos <= Enderecos(8 downto 6);
     entradaDecoderInt <= Enderecos(2 downto 0);
-    ledHabilita <= saidaDecoderBlocos(4);
-    end0LED <= saidaDecoderInt(0);
-    end1LED <= saidaDecoderInt(1);
-    end2LED <= saidaDecoderInt(2);
 
     -- saidas
 habilitaRAM <= saidaDecoderBlocos(0);
@@ -67,7 +59,7 @@ habilitaHEX(3) <= saidaDecoderBlocos(4) and saidaDecoderInt(3) and WE and Endere
 habilitaHEX(4) <= saidaDecoderBlocos(4) and saidaDecoderInt(4) and WE and Enderecos(5);
 habilitaHEX(5) <= saidaDecoderBlocos(4) and saidaDecoderInt(5) and WE and Enderecos(5);
 
-habilitaSW7 <= RD and ( not Enderecos(5)) and saidaDecoderInt(0) and saidaDecoderBlocos(5);
+habilitaSW7 <= RD and ( not Enderecos(5)) and saidaDecoderInt(0) and saidaDecoderBlocos(5); -- NOT A5 
 habilitaSW8 <= RD and ( not Enderecos(5)) and saidaDecoderInt(1) and saidaDecoderBlocos(5);
 habilitaSW9 <= RD and ( not Enderecos(5)) and saidaDecoderInt(2) and saidaDecoderBlocos(5);
 

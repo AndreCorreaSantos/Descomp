@@ -47,10 +47,10 @@ def parseMnemonic(line):
     line = line.split(' ')
     m = line[0]
     line[0] = mne[line[0]]
-    if m == "NOP" or m == "RET" or m == "JSR":
-        line = " ".join(line)+" "+'000000000'+'\n'
+    if m == "NOP" or m == "RET":
+        line = " ".join(line)+" "+'000000000'+';\n'
     else:
-        line = " ".join(line)+'\n'
+        line = " ".join(line)+';\n'
     return line
 
 

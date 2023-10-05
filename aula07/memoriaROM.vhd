@@ -34,21 +34,45 @@ architecture assincrona of memoriaROM is
   begin
       -- Palavra de Controle = SelMUX, Habilita_A, Reset_A, Operacao_ULA
       -- Inicializa os endereços:
-      tmp(0) := LDI & '0' & x"01";
-      tmp(1) := STA & '0' & x"00";
-      tmp(2) := SOMA & '0' & x"00";
-      tmp(3) := STA & '1' & x"20";
-      tmp(4) := SOMA & '0' & x"00";
-      tmp(5) := STA & '1' & x"21";
-      tmp(6) := SOMA & '0' & x"00";
-      tmp(7) := STA & '1' & x"22";
-      tmp(8) := SOMA & '0' & x"00";
-      tmp(9) := STA & '1' & x"23";
-      tmp(10) := SOMA & '0' & x"00";
-      tmp(11) := STA & '1' & x"24";
-      tmp(12) := SOMA & '0' & x"00";
-      tmp(13) := STA & '1' & x"25";
-      tmp(14) := JMP & '0' & x"02";          
+      tmp(0) := x"5" & '1' & x"FF";	-- STA  @511
+      tmp(1) := x"5" & '1' & x"FE";	-- STA  @510
+      tmp(2) := x"1" & '1' & x"40";	-- LDA  @320
+      tmp(3) := x"5" & '1' & x"20";	-- STA  @288
+      tmp(4) := x"1" & '1' & x"41";	-- LDA  @321
+      tmp(5) := x"B" & '0' & x"01";	-- ANDi $1
+      tmp(6) := x"5" & '1' & x"21";	-- STA  @289
+      tmp(7) := x"1" & '1' & x"42";	-- LDA  @322
+      tmp(8) := x"B" & '0' & x"01";	-- ANDi $1
+      tmp(9) := x"5" & '1' & x"22";	-- STA  @290
+      tmp(10) := x"1" & '1' & x"60";	-- LDA  @352
+      tmp(11) := x"5" & '1' & x"23";	-- STA  @291
+      tmp(12) := x"1" & '1' & x"61";	-- LDA  @353
+      tmp(13) := x"5" & '1' & x"24";	-- STA  @292
+      tmp(14) := x"1" & '1' & x"62";	-- LDA  @354
+      tmp(15) := x"5" & '1' & x"25";	-- STA  @293
+      tmp(16) := x"1" & '1' & x"63";	-- LDA  @355
+      tmp(17) := x"5" & '1' & x"01";	-- STA  @257
+      tmp(18) := x"1" & '1' & x"64";	-- LDA  @356
+      tmp(19) := x"5" & '1' & x"02";	-- STA  @258
+      tmp(20) := x"6" & '0' & x"02";	-- JMP  @INICIO
+
+
+      -- tmp(0) := LDI &'0'&x"01";
+      -- tmp(1) := STA &'0'&x"00";
+      -- tmp(2) := SOMA &'0'&x"00";
+      -- tmp(3) := STA &'1'&x"20";
+      -- tmp(4) := SOMA &'0'&x"00";
+      -- tmp(5) := STA &'1'&x"21";
+      -- tmp(6) := SOMA &'0'&x"00";
+      -- tmp(7) := STA &'1'&x"22";
+      -- tmp(8) := SOMA &'0'&x"00";
+      -- tmp(9) := STA &'1'&x"23";
+      -- tmp(10) := SOMA &'0'&x"00";
+      -- tmp(11) := STA &'1'&x"24";
+      -- tmp(12) := SOMA &'0'&x"00";
+      -- tmp(13) := STA &'1'&x"25";
+      -- tmp(14) := JMP &'0'&x"02";
+
       return tmp;
 
     end initMemory;
