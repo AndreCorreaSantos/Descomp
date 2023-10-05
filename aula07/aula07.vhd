@@ -90,7 +90,7 @@ begin
 
 -- Para simular, fica mais simples tirar o edgeDetector
 -- gravar:  if simulacao generate
-CLK <= CLOCK_50;
+-- CLK <= CLOCK_50;
 -- else generate
 -- detectorSub0: work.edgeDetector(bordaSubida)
 --         port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
@@ -182,7 +182,7 @@ RESET <= not FPGA_RESET_N;
 SW7 <= SW(7 downto 0);
 SW8 <= SW(8);
 SW9 <= SW(9);
--- CLK <= RESET;
+CLK <= RESET;
 -- ADDRMEM <= enderecoRAM;
 -- OUTMEM <= saida_dados_RAM;
 
