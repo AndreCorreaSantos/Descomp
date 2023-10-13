@@ -1,0 +1,59 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ex1 is
+  -- Total de bits das entradas e saidas
+  generic ( larguraDados : natural := 32;
+  );
+  port   (
+  CLOCK_50 : in std_logic;
+  instrucoes : in std_logic_vector(4 downto 0);
+  entrada : in std_logic_vector(31 downto 0);
+  saida : out std_logic_vector(31 downto 0)
+  );
+end entity;
+
+
+architecture arquitetura of ex1 is
+  --fios do circuito
+signal saidaReg1 : std_logic_vector(31 downto 0);
+signal saidaMux : std_logic_vector(31 downto 0);
+signal saidaULA : std_logic_vector(31 downto 0);
+signal saidaReg2 : std_logic_vector(31 downto 0);
+
+--instrucoes
+signal hReg1 : std_logic;
+signal seletor : std_logic;
+signal opULA : std_logic_vector(1 downto 0);
+signal hReg2 : std_logic;
+
+CLK <= CLOCK_50;
+
+begin
+
+REG1: entity work.registradorGenerico generic map(dataWidth => larguraDados)
+        port map (DIN => entrada, DOUT => saidaReg1, ENABLE => hReg1, CLK => CLK, RST => '0');
+
+MUX_ULA :  entity work.muxGenerico2x1  generic map (larguraDados => larguraDados)
+port map(entradaA_MUX => saidaReg2, 
+          entradaB_MUX => saidaReg1,
+          seletor_MUX => seletor,
+          saida_MUX => saidaMux);
+
+
+
+REG2: entity work.registradorGenerico generic map(dataWidth => larguraDados)
+port map (DIN => saidaULA, DOUT => saidaReg2, ENABLE => hReg2, CLK => CLK, RST => '0');
+
+-- O port map completo da ULA:
+ULA1 : entity work.ULASomaSub  generic map(larguraDados => larguraDados)
+          port map (entradaA => saidaMux, entradaB => saidaReg1, saida => SaidaULA, seletor => opULA);
+
+  
+hReg1 <= instrucoes(4);
+seletor <= instrucoes(3);
+opULA <= instrucoes(2 downto 1); 
+hReg2 <= instrucoes(0);
+
+saida <= saidaReg2;
+end architecture;

@@ -1,12 +1,5 @@
 |aula07
-CLOCK_50 => cpu:CPU.CLK
-CLOCK_50 => memoriaram:RAM1.clk
-CLOCK_50 => decoderenderecos:DECODER.CLK
-CLOCK_50 => registradorgenerico:LED8.CLK
-CLOCK_50 => registradorflag:LED1.CLK
-CLOCK_50 => registradorflag:LED2.CLK
-CLOCK_50 => hexdisplay:HEX.CLK
-CLOCK_50 => edgekey:REG_KEY0.CLK
+CLOCK_50 => ~NO_FANOUT~
 KEY[0] => edgekey:REG_KEY0.entrada
 KEY[0] => buffer_3_state:KEY_0.entrada
 KEY[1] => buffer_3_state:KEY_1.entrada
@@ -83,6 +76,14 @@ SW[6] => buffer_3_state_8portas:SW_7.entrada[6]
 SW[7] => buffer_3_state_8portas:SW_7.entrada[7]
 SW[8] => buffer_3_state:SW_8.entrada
 SW[9] => buffer_3_state:SW_9.entrada
+FPGA_RESET_N => cpu:CPU.CLK
+FPGA_RESET_N => memoriaram:RAM1.clk
+FPGA_RESET_N => decoderenderecos:DECODER.CLK
+FPGA_RESET_N => registradorgenerico:LED8.CLK
+FPGA_RESET_N => registradorflag:LED1.CLK
+FPGA_RESET_N => registradorflag:LED2.CLK
+FPGA_RESET_N => hexdisplay:HEX.CLK
+FPGA_RESET_N => edgekey:REG_KEY0.CLK
 FPGA_RESET_N => buffer_3_state:RESETBUF.entrada
 ADDRMEM[0] <= ADDRMEM[0].DB_MAX_OUTPUT_PORT_TYPE
 ADDRMEM[1] <= ADDRMEM[1].DB_MAX_OUTPUT_PORT_TYPE
@@ -554,29 +555,29 @@ saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|aula07|romMif:ROM1
-Endereco[0] => content.RADDR
-Endereco[1] => content.RADDR1
-Endereco[2] => content.RADDR2
-Endereco[3] => content.RADDR3
-Endereco[4] => content.RADDR4
-Endereco[5] => content.RADDR5
-Endereco[6] => content.RADDR6
-Endereco[7] => content.RADDR7
-Endereco[8] => content.RADDR8
-Dado[0] <= content.DATAOUT
-Dado[1] <= content.DATAOUT1
-Dado[2] <= content.DATAOUT2
-Dado[3] <= content.DATAOUT3
-Dado[4] <= content.DATAOUT4
-Dado[5] <= content.DATAOUT5
-Dado[6] <= content.DATAOUT6
-Dado[7] <= content.DATAOUT7
-Dado[8] <= content.DATAOUT8
-Dado[9] <= content.DATAOUT9
-Dado[10] <= content.DATAOUT10
-Dado[11] <= content.DATAOUT11
-Dado[12] <= content.DATAOUT12
+|aula07|memoriaROM:ROM1
+Endereco[0] => memROM.RADDR
+Endereco[1] => memROM.RADDR1
+Endereco[2] => memROM.RADDR2
+Endereco[3] => memROM.RADDR3
+Endereco[4] => memROM.RADDR4
+Endereco[5] => memROM.RADDR5
+Endereco[6] => memROM.RADDR6
+Endereco[7] => memROM.RADDR7
+Endereco[8] => memROM.RADDR8
+Dado[0] <= memROM.DATAOUT
+Dado[1] <= memROM.DATAOUT1
+Dado[2] <= memROM.DATAOUT2
+Dado[3] <= memROM.DATAOUT3
+Dado[4] <= memROM.DATAOUT4
+Dado[5] <= memROM.DATAOUT5
+Dado[6] <= memROM.DATAOUT6
+Dado[7] <= memROM.DATAOUT7
+Dado[8] <= memROM.DATAOUT8
+Dado[9] <= memROM.DATAOUT9
+Dado[10] <= memROM.DATAOUT10
+Dado[11] <= memROM.DATAOUT11
+Dado[12] <= memROM.DATAOUT12
 
 
 |aula07|memoriaRAM:RAM1

@@ -108,7 +108,7 @@ CPU : entity work.cpu
         );
 
 -- port map da memoria de instrucoes
-ROM1 : entity work.romMIF   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM)
+ROM1 : entity work.memoriaROM   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM)
           port map (Endereco => Endereco_Instrucao, Dado => instrucao);
 -- port map da unidade de controle
 
@@ -154,7 +154,7 @@ REG_KEY0: entity work.edgeKey
         port map(entrada => KEY0, CLK => CLK, limpaLeitura => limpaLeitura, saida => saidaRegK0);
 
 KEY_0: entity work.buffer_3_state
-        port map(entrada => KEY0,habilita => habilitaKEY0, saida => leituraDados(0)); --LEMBRAR DE VOLTAR COM SAIDAREGK0
+        port map(entrada => saidaRegK0,habilita => habilitaKEY0, saida => leituraDados(0)); 
 
 KEY_1: entity work.buffer_3_state
         port map(entrada => KEY1,habilita => habilitaKEY1, saida =>  leituraDados(0));
