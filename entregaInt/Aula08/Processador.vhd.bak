@@ -23,7 +23,7 @@ architecture arquitetura of Processador is
   signal Opcode: std_logic_vector (3 downto 0);
   signal Imediate: std_logic_vector (7 downto 0);
 
-  signal saida_dec: std_logic_vector(14 downto 0);
+  signal saida_dec: std_logic_vector(11 downto 0);
 
   signal habEscritaRetorno : std_logic;
   signal jmp : std_logic;
@@ -92,7 +92,7 @@ ULA1 : entity work.ULASomaSub  generic map(larguraDados => 8)
 						  entradaB => saida_MUX, 
 						  saida => saida_ULA, 
 						  seletor => opULA, 
-						  zf => saida_zf_ULA,
+						  zf => saida_zf_ULA
               le => saida_le_ULA);
 			 
 FlagZero :  entity work.FlipFLop

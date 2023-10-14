@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity logicaDesvio is
   port ( 
-			entrada_zf,entrada_le, entrada_jeq, entrada_jmp, entrada_jsr,entrada_ret,entrada_jle: in std_logic;
+			entrada_zf,entrada_le, entrada_jeq, entrada_jmp, entrada_jsr,entrada_ret: in std_logic;
 			saida: out std_logic_vector(1 downto 0)
   );
 end entity;
