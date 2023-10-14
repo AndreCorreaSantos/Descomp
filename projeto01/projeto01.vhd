@@ -19,6 +19,8 @@ entity projeto01 is
 	 HEX0,HEX1,HEX2,HEX3,HEX4,HEX5: out std_logic_vector(6 downto 0);
 	 -- Switchs
 	 SW: in std_logic_vector(9 downto 0)
+
+	 LimpaLeitura: out std_logic_vector(2 downto 0);
   );
 end entity;
 

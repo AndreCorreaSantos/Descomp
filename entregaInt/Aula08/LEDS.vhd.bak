@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity LEDS is
+  port ( 
+			entrada, saida_dec1, saida_dec2: in std_logic_vector(2 downto 0);
+			CLK,Wr: in std_logic;
+			saida_reg8, saida_reg9: out std_logic;
+			saida_regs: out std_logic_vector(7 downto 0)
+  );
+end entity;
+
+architecture comportamento of LEDS is
+  begin
+REG_LEDS : entity work.registradorGenerico   generic map (larguraDados => 8)
+port map (DIN => entrada, DOUT => saida_regs, ENABLE => (saida_dec1(4) AND saida_dec2(0) AND Wr) , CLK => CLK, RST => '0');
+
+LED8 :  entity work.FlipFLop
+        port map( DIN => entrada(0),
+                 DOUT => saida_reg8 ,
+                 CLK => CLK ,
+                 ENABLE => (saida_dec1(4) AND saida_dec2(1) AND Wr),
+					  RST => '0');
+					  
+		
+LED9 :  entity work.FlipFLop
+        port map( DIN => entrada(0),
+                 DOUT => saida_reg9 ,
+                 CLK => CLK ,
+                 ENABLE => (saida_dec1(4) AND saida_dec2(2) AND WR),
+					  RST => '0');
+
+end architecture;

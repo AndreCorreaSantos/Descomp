@@ -20,6 +20,7 @@ architecture comportamento of unidadeControle is
   constant JSR : std_logic_vector(3 downto 0) := "1001";
   constant CEQ : std_logic_vector(3 downto 0) := "1000";
   constant RET : std_logic_vector(3 downto 0) := "1010";
+  constant OP_AND : std_logic_vector(3 downto 0) := "1011";
 
 
   begin
@@ -35,6 +36,7 @@ saida <= "000000110010" when opcode = LDA else
          "100100000000" when opcode = JSR else
          "001000000000" when opcode = RET else
          "000000000110" when opcode = CEQ else
+         "000000111010" when opcode = OP_AND else
          "000000000000"; -- Default nop para indef
 
 end architecture;

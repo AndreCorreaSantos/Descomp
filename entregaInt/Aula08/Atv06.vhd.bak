@@ -1,0 +1,105 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Atv06 is
+  -- Total de bits das entradas e saidas
+  generic ( 
+        simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
+  );
+  port   (
+    CLOCK_50 : in std_logic;
+	 KEY: in std_logic_vector(3 downto 0);
+	 LEDR  : out std_logic_vector(9 downto 0)
+  );
+end entity;
+
+architecture arquitetura of Atv06 is
+  signal CLK : std_logic;
+  signal endereco_ROM: std_logic_vector(8 downto 0);
+  signal entrada_instrucao: std_logic_vector(12 downto 0);
+  signal entrada_DATA: std_logic_vector(7 downto 0);
+  signal saida_DATA: std_logic_vector(7 downto 0);
+  signal endereco_RAM: std_logic_vector(8 downto 0);
+  signal WR: std_logic;
+  signal RD: std_logic;
+  signal saida_dec1: std_logic_vector(7 downto 0);
+  signal saida_dec2: std_logic_vector(7 downto 0);
+  signal saida_reg_leds: std_logic_vector(7 downto 0);
+  signal saida_reg_led8: std_logic;
+  signal saida_reg_led9: std_logic;
+  
+begin
+
+
+-- Para simular, fica mais simples tirar o edgeDetector
+gravar:  if simulacao generate
+CLK <= KEY(0);
+else generate
+detectorSub0: work.edgedetector(bordaSubida)
+        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
+end generate;
+
+
+
+Processor: entity work.Processador
+	port map(
+		CLK => CLK,
+		ROM_Address => endereco_ROM,
+		Instruction_IN => entrada_instrucao,
+		Data_IN => entrada_DATA,
+		Data_OUT => saida_DATA,
+		Data_Address => endereco_RAM,
+		Wr => WR,
+		Rd => RD
+	);
+	
+ROM1: entity work.memoriaROM
+	port map(
+		Endereco => endereco_ROM,
+		Dado => entrada_instrucao
+);
+
+RAM1: entity work.memoriaRAM
+	port map(
+		addr => endereco_RAM	(5 downto 0),
+		we => WR,
+		re => RD,
+		habilita => saida_dec1(0),
+		clk => CLK,
+		dado_in =>saida_DATA,
+		dado_out => entrada_DATA
+);
+
+DECODER1: entity work.decoder3x8
+	port map(
+		entrada => endereco_RAM(8 downto 6),
+		saida => saida_dec1
+	);
+	
+DECODER2: entity work.decoder3x8
+	port map(
+		entrada => endereco_RAM(2 downto 0),
+		saida => saida_dec2
+	);
+
+REG_LEDS : entity work.registradorGenerico   generic map (larguraDados => 8)
+port map (DIN => saida_DATA, DOUT => saida_reg_leds, ENABLE => (saida_dec1(4) AND saida_dec2(0) AND WR) , CLK => CLK, RST => '0');
+
+LED8 :  entity work.FlipFLop
+        port map( DIN => saida_DATA(0),
+                 DOUT => saida_reg_led8 ,
+                 CLK => CLK ,
+                 ENABLE => (saida_dec1(4) AND saida_dec2(1) AND WR),
+					  RST => '0');
+					  
+LED9 :  entity work.FlipFLop
+        port map( DIN => saida_DATA(0),
+                 DOUT => saida_reg_led9 ,
+                 CLK => CLK ,
+                 ENABLE => (saida_dec1(4) AND saida_dec2(2) AND WR),
+					  RST => '0');
+
+LEDR(7 downto 0) <= saida_reg_leds;
+LEDR(8) <= saida_reg_led8;
+LEDR(9) <= saida_reg_led9;
+end architecture;

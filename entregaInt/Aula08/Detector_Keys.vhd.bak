@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Detector_Key0 is
+  port ( 
+			Key0,Clock, Limpa: in std_logic;
+			saida: out std_logic;
+  );
+end entity;
+
+architecture comportamento of Detector_Key0 is
+  begin
+
+end architecture;

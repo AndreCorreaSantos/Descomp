@@ -73,7 +73,12 @@ architecture arquitetura of projeto1 is
   signal habilitaRESET : std_logic;
 
   signal saidaRegK0 : std_logic;
-  signal limpaLeitura: std_logic;
+  signal saidaRegK1 : std_logic;
+  signal saidaRegRESET : std_logic;
+  signal limpaLeituraKEY0: std_logic;
+  signal limpaLeituraKEY1: std_logic;
+  signal limpaLeituraRESET: std_logic;
+
 
   signal RESET: std_logic;
   signal KEY0 : std_logic;
@@ -108,7 +113,7 @@ CPU : entity work.cpu
         );
 
 -- port map da memoria de instrucoes
-ROM1 : entity work.memoriaROM   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM)
+ROM1 : entity work.romMIF   generic map (dataWidth => larguraInstrucao, addrWidth => larguraEnderecoROM)
           port map (Endereco => Endereco_Instrucao, Dado => instrucao);
 -- port map da unidade de controle
 
@@ -124,7 +129,9 @@ DECODER : entity work.decoderEnderecos
                   habilitaSW9 => habilitaSW9,habilitaKEY0 => habilitaKEY0,
                   habilitaKEY1 => habilitaKEY1,habilitaKEY2 => habilitaKEY2,
                   habilitaKEY3 => habilitaKEY3,habilitaRESET => habilitaRESET,
-                  limpaLeitura=>limpaLeitura,
+                  limpaLeituraKEY0=>limpaLeituraKEY0,
+                  limpaLeituraKEY1=>limpaLeituraKEY1,
+                  limpaLeituraRESET=>limpaLeituraRESET,
                   CLK => CLK,WE => ramWe,RD => ramRe
                   );
 
@@ -150,24 +157,34 @@ SW_8: entity work.buffer_3_state
 SW_9: entity work.buffer_3_state
         port map(entrada => SW9,habilita => habilitaSW9, saida => leituraDados(0));
 
+        --edge detector k0
+
 REG_KEY0: entity work.edgeKey
-        port map(entrada => KEY0, CLK => CLK, limpaLeitura => limpaLeitura, saida => saidaRegK0);
+        port map(entrada => KEY0, CLK => CLK, limpaLeitura => limpaLeituraKEY0, saida => saidaRegK0);
 
 KEY_0: entity work.buffer_3_state
         port map(entrada => saidaRegK0,habilita => habilitaKEY0, saida => leituraDados(0)); 
 
-KEY_1: entity work.buffer_3_state
-        port map(entrada => KEY1,habilita => habilitaKEY1, saida =>  leituraDados(0));
+        -- edge detector k1
+REG_KEY1: entity work.edgeKey
+port map(entrada => KEY0, CLK => CLK, limpaLeitura => limpaLeituraKEY1, saida => saidaRegK1);
 
+KEY_1: entity work.buffer_3_state
+        port map(entrada => saidaRegK1,habilita => habilitaKEY1, saida =>  leituraDados(0));
+-----------------------------------------
 KEY_2: entity work.buffer_3_state
         port map(entrada => KEY2,habilita => habilitaKEY2, saida =>  leituraDados(0));
 
 KEY_3: entity work.buffer_3_state
         port map(entrada => KEY3,habilita => habilitaKEY3, saida =>  leituraDados(0));
 
-RESETBUF : entity work.buffer_3_state
-        port map(entrada => RESET,habilita => habilitaRESET, saida =>  leituraDados(0));
+        --edge detector fpga reset
+REG_RESET: entity work.edgeKey
+port map(entrada => RESET, CLK => CLK, limpaLeitura => limpaLeituraRESET, saida => saidaRegRESET);
 
+RESETBUF : entity work.buffer_3_state
+        port map(entrada => saidaRegRESET,habilita => habilitaRESET, saida =>  leituraDados(0));
+------------------------------
 enderecoRAM <= enderecos(5 downto 0);
 entrada_dados_RAM <= dOUT;
 PC_OUT <= Endereco_Instrucao;

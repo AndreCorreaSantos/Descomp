@@ -20,7 +20,10 @@ entity decoderEnderecos is
         habilitaKEY2 : out std_logic;
         habilitaKEY3 : out std_logic;
         habilitaRESET : out std_logic;
-        limpaLeitura : out std_logic
+        limpaLeituraKEY0 : out std_logic;
+        limpaLeituraKEY1 : out std_logic;
+        limpaLeituraRESET : out std_logic
+        
     );
 end entity;
 
@@ -69,6 +72,7 @@ habilitaKEY2 <= RD and Enderecos(5) and saidaDecoderInt(2) and saidaDecoderBloco
 habilitaKEY3 <= RD and Enderecos(5) and saidaDecoderInt(3) and saidaDecoderBlocos(5);
 habilitaRESET <= RD and Enderecos(5) and saidaDecoderInt(4) and saidaDecoderBlocos(5);
 
-limpaLeitura <= Enderecos(8) and Enderecos(7) and Enderecos(6) and Enderecos(5) and Enderecos(4) and Enderecos(3) and Enderecos(2) and Enderecos(1) and Enderecos(0) and WE;
-
+limpaLeituraKEY0 <= Enderecos(8) and Enderecos(7) and Enderecos(6) and Enderecos(5) and Enderecos(4) and Enderecos(3) and Enderecos(2) and Enderecos(1) and Enderecos(0) and WE;
+limpaLeituraKEY1 <= Enderecos(8) and Enderecos(7) and Enderecos(6) and Enderecos(5) and Enderecos(4) and Enderecos(3) and Enderecos(2) and Enderecos(1) and (not Enderecos(0)) and WE;
+limpaLeituraRESET <= Enderecos(8) and Enderecos(7) and Enderecos(6) and Enderecos(5) and Enderecos(4) and Enderecos(3) and Enderecos(2) and (not Enderecos(1)) and Enderecos(0) and WE;
 end architecture;

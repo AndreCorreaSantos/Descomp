@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity KEYS is
+  port ( 
+     entrada_switches: in std_logic_vector(9 downto 0);
+	  habilita_KEY0,habilita_KEY1,habilita_KEY2: out std_logic;
+	  habilita_KEY3,habilita_FPGA_RESET: out std_logic;
+	  saida: out std_logic
+  );
+end entity;
+
+architecture comportamento of KEYS is
+  begin
+  
+end architecture;
