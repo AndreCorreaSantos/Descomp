@@ -3,12 +3,13 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;    -- Biblioteca IEEE para funções aritméticas
 
 entity ULASomaSub is
-    generic ( larguraDados : natural := 4 );
+    generic ( larguraDados : natural := 8 );
     port (
       entradaA, entradaB:  in STD_LOGIC_VECTOR((larguraDados-1) downto 0);
       seletor:  in STD_LOGIC_VECTOR (1 downto 0);
       saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0);
-		saida_flag: out std_logic
+		zf: out std_logic;
+      le : out std_logic
     );
 end entity;
 
@@ -26,5 +27,6 @@ architecture comportamento of ULASomaSub is
 					subtracao when (seletor = "00") else
 					passa when (seletor = "01") else
 					mascara when (seletor = "11");
-		saida_flag <= not (saida(7) or saida(6) or saida(5) or saida(4) or saida(3) or saida(2) or saida(1) or saida(0));
+		zf <= not (saida(7) or saida(6) or saida(5) or saida(4) or saida(3) or saida(2) or saida(1) or saida(0));
+      le <= zf OR saida(larguraDados-1) ='1'; -- checar se esta correto
 end architecture;
