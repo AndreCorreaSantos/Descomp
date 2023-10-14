@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Atv06
-Sat Oct 14 05:56:01 2023
+Sat Oct 14 06:03:20 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -51,13 +51,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  43. Port Connectivity Checks: "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER2"
  44. Port Connectivity Checks: "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER1"
  45. Port Connectivity Checks: "Processador:Processor|registradorGenerico:Reg_Retorno"
- 46. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagZero"
- 47. Port Connectivity Checks: "Processador:Processor|muxGenerico4x1:MUXProxPC"
- 48. Port Connectivity Checks: "Processador:Processor|registradorGenerico:REGA"
- 49. Port Connectivity Checks: "Processador:Processor|registradorGenerico:PC"
- 50. Post-Synthesis Netlist Statistics for Top Partition
- 51. Elapsed Time Per Partition
- 52. Analysis & Synthesis Messages
+ 46. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagLE"
+ 47. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagZero"
+ 48. Port Connectivity Checks: "Processador:Processor|muxGenerico4x1:MUXProxPC"
+ 49. Port Connectivity Checks: "Processador:Processor|registradorGenerico:REGA"
+ 50. Port Connectivity Checks: "Processador:Processor|registradorGenerico:PC"
+ 51. Post-Synthesis Netlist Statistics for Top Partition
+ 52. Elapsed Time Per Partition
+ 53. Analysis & Synthesis Messages
 
 
 
@@ -84,7 +85,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Oct 14 05:56:01 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sat Oct 14 06:03:20 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Atv06                                       ;
 ; Top-level Entity Name           ; Atv06                                       ;
@@ -705,6 +706,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+---------------------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagLE"                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; dout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rst  ; Input  ; Info     ; Stuck at GND                                                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +---------------------------------------------------------------------+
 ; Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagZero" ;
 +------+-------+----------+-------------------------------------------+
@@ -787,7 +798,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 14 05:55:53 2023
+    Info: Processing started: Sat Oct 14 06:03:12 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Atv06 -c Atv06
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -870,13 +881,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file detecto
 Info (12127): Elaborating entity "Atv06" for the top level hierarchy
 Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 61
 Info (12128): Elaborating entity "Processador" for hierarchy "Processador:Processor" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 68
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:PC" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 42
-Info (12128): Elaborating entity "somaConstante" for hierarchy "Processador:Processor|somaConstante:incrementaPC" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 45
-Info (12128): Elaborating entity "decoderInstru" for hierarchy "Processador:Processor|decoderInstru:DECODER" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 48
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:REGA" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 52
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Processador:Processor|muxGenerico2x1:MUX1" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 55
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "Processador:Processor|muxGenerico4x1:MUXProxPC" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 61
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "Processador:Processor|ULASomaSub:ULA1" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 70
+Warning (10541): VHDL Signal Declaration warning at Processador.vhd(34): used implicit default value for signal "saida_le_ULA" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 34
+Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(35): object "saida_le" assigned a value but never read File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 35
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:PC" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 47
+Info (12128): Elaborating entity "somaConstante" for hierarchy "Processador:Processor|somaConstante:incrementaPC" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 50
+Info (12128): Elaborating entity "decoderInstru" for hierarchy "Processador:Processor|decoderInstru:DECODER" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 53
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:REGA" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 57
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Processador:Processor|muxGenerico2x1:MUX1" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 60
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "Processador:Processor|muxGenerico4x1:MUXProxPC" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 66
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "Processador:Processor|ULASomaSub:ULA1" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 75
 Info (10041): Inferred latch for "saida[0]" at ULASomaSub.vhd(25) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 25
 Info (10041): Inferred latch for "saida[1]" at ULASomaSub.vhd(25) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 25
 Info (10041): Inferred latch for "saida[2]" at ULASomaSub.vhd(25) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 25
@@ -885,8 +898,8 @@ Info (10041): Inferred latch for "saida[4]" at ULASomaSub.vhd(25) File: C:/Desco
 Info (10041): Inferred latch for "saida[5]" at ULASomaSub.vhd(25) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 25
 Info (10041): Inferred latch for "saida[6]" at ULASomaSub.vhd(25) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 25
 Info (10041): Inferred latch for "saida[7]" at ULASomaSub.vhd(25) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 25
-Info (12128): Elaborating entity "FlipFlop" for hierarchy "Processador:Processor|FlipFlop:FlagZero" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 77
-Info (12128): Elaborating entity "logicaDesvio" for hierarchy "Processador:Processor|logicaDesvio:logicaDesvio1" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 84
+Info (12128): Elaborating entity "FlipFlop" for hierarchy "Processador:Processor|FlipFlop:FlagZero" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 82
+Info (12128): Elaborating entity "logicaDesvio" for hierarchy "Processador:Processor|logicaDesvio:logicaDesvio1" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 96
 Info (12128): Elaborating entity "romMif" for hierarchy "romMif:ROM1" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 81
 Warning (10541): VHDL Signal Declaration warning at romMIF.vhd(22): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/Descomp/entregaInt/Aula08/romMIF.vhd Line: 22
 Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM1" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 88
@@ -937,9 +950,9 @@ Info (21057): Implemented 1117 device resources after synthesis - the final reso
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 52 output pins
     Info (21061): Implemented 1049 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Sat Oct 14 05:56:01 2023
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Sat Oct 14 06:03:20 2023
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:17
 
