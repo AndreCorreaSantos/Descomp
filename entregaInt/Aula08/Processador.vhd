@@ -27,8 +27,13 @@ architecture arquitetura of Processador is
   signal saida_ULA: std_logic_vector(7 downto 0);
   signal saida_MUX: std_logic_vector(7 downto 0);
   signal saida_MUX_PC: std_logic_vector(8 downto 0);
-  signal saida_flag_ULA: std_logic;
-  signal saida_flag: std_logic;
+
+  signal saida_zf_ULA: std_logic;
+  signal saida_zf: std_logic;
+  
+  signal saida_le_ULA:std_logic;
+  signal saida_le : std_logic;
+
   signal saida_desvio: std_logic_vector(1 downto 0);
   signal saida_reg_retorno: std_logic_vector(8 downto 0);
 begin
@@ -72,17 +77,25 @@ ULA1 : entity work.ULASomaSub  generic map(larguraDados => 8)
 						  entradaB => saida_MUX, 
 						  saida => saida_ULA, 
 						  seletor => saida_dec(4 downto 3), 
-						  saida_flag => saida_flag_ULA);
+						  zf => saida_zf_ULA
+              le => saida_le_ULA);
 			 
 FlagZero :  entity work.FlipFLop
-        port map( DIN => saida_flag_ULA,
-                 DOUT => saida_flag ,
+        port map( DIN => saida_zf_ULA,
+                 DOUT => saida_zf ,
                  CLK => CLK ,
                  ENABLE => saida_dec(2),
 					  RST => '0');
+
+FlagLE :  entity work.FlipFLop
+port map( DIN => saida_le_ULA,
+          DOUT => saida_le ,
+          CLK => CLK ,
+          ENABLE => saida_dec(2), --mudar o enable
+    RST => '0');
 					  
 logicaDesvio1: entity work.logicaDesvio
-        port map( entrada_flag => saida_flag,
+        port map( entrada_flag => saida_zf,
                  entrada_jeq => saida_dec(7),
                  entrada_jmp => saida_dec(10),
 					  entrada_jsr => saida_dec(8),

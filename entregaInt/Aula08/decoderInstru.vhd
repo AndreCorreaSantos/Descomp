@@ -21,6 +21,8 @@ architecture comportamento of decoderInstru is
   constant JSR : std_logic_vector(3 downto 0) := "1001";
   constant RET : std_logic_vector(3 downto 0) := "1010";
   constant OP_AND : std_logic_vector(3 downto 0) := "1011";
+  constant CLE : std_logic_vector(3 downto 0) := "1100";
+  constant JLE : std_logic_vector(3 downto 0) := "1101";
 
   begin
 saida <= "000000000000" when opcode = NOP else
