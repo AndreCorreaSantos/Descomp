@@ -1,5 +1,5 @@
 Timing Analyzer report for Atv06
-Sun Oct 15 02:18:54 2023
+Sun Oct 15 07:47:48 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -102,14 +102,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.26        ;
+; Average used               ; 1.31        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   8.7%      ;
-;     Processor 3            ;   8.6%      ;
-;     Processor 4            ;   8.5%      ;
+;     Processor 2            ;  10.3%      ;
+;     Processor 3            ;  10.2%      ;
+;     Processor 4            ;  10.1%      ;
 +----------------------------+-------------+
 
 
@@ -130,7 +130,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------+-----------------+------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
 +-----------+-----------------+------------+------+
-; 81.27 MHz ; 81.27 MHz       ; CLOCK_50   ;      ;
+; 81.72 MHz ; 81.72 MHz       ; CLOCK_50   ;      ;
 +-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -146,7 +146,7 @@ HTML report is unavailable in plain text report export.
 +----------+---------+----------------+
 ; Clock    ; Slack   ; End Point TNS  ;
 +----------+---------+----------------+
-; CLOCK_50 ; -11.304 ; -4460.802      ;
+; CLOCK_50 ; -11.237 ; -4695.821      ;
 +----------+---------+----------------+
 
 
@@ -155,7 +155,7 @@ HTML report is unavailable in plain text report export.
 +----------+-------+-----------------+
 ; Clock    ; Slack ; End Point TNS   ;
 +----------+-------+-----------------+
-; CLOCK_50 ; 0.529 ; 0.000           ;
+; CLOCK_50 ; 0.698 ; 0.000           ;
 +----------+-------+-----------------+
 
 
@@ -164,9 +164,9 @@ HTML report is unavailable in plain text report export.
 +--------------+--------+----------------+
 ; Clock        ; Slack  ; End Point TNS  ;
 +--------------+--------+----------------+
-; FPGA_RESET_N ; -5.726 ; -5.726         ;
-; KEY[1]       ; -5.580 ; -5.580         ;
-; KEY[0]       ; -5.263 ; -5.263         ;
+; KEY[1]       ; -6.413 ; -6.413         ;
+; KEY[0]       ; -6.386 ; -6.386         ;
+; FPGA_RESET_N ; -6.238 ; -6.238         ;
 +--------------+--------+----------------+
 
 
@@ -175,9 +175,9 @@ HTML report is unavailable in plain text report export.
 +--------------+-------+----------------+
 ; Clock        ; Slack ; End Point TNS  ;
 +--------------+-------+----------------+
-; KEY[0]       ; 1.198 ; 0.000          ;
-; FPGA_RESET_N ; 1.397 ; 0.000          ;
-; KEY[1]       ; 1.495 ; 0.000          ;
+; FPGA_RESET_N ; 1.617 ; 0.000          ;
+; KEY[1]       ; 2.146 ; 0.000          ;
+; KEY[0]       ; 2.191 ; 0.000          ;
 +--------------+-------+----------------+
 
 
@@ -186,10 +186,10 @@ HTML report is unavailable in plain text report export.
 +--------------+--------+---------------------------+
 ; Clock        ; Slack  ; End Point TNS             ;
 +--------------+--------+---------------------------+
-; CLOCK_50     ; -0.905 ; -827.366                  ;
-; KEY[0]       ; -0.855 ; -1.503                    ;
-; FPGA_RESET_N ; -0.779 ; -1.341                    ;
-; KEY[1]       ; -0.703 ; -1.241                    ;
+; CLOCK_50     ; -1.059 ; -898.510                  ;
+; FPGA_RESET_N ; -0.859 ; -1.500                    ;
+; KEY[1]       ; -0.735 ; -1.273                    ;
+; KEY[0]       ; -0.660 ; -1.198                    ;
 +--------------+--------+---------------------------+
 
 
@@ -204,7 +204,7 @@ No synchronizer chains to report.
 +-----------+-----------------+------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
 +-----------+-----------------+------------+------+
-; 81.31 MHz ; 81.31 MHz       ; CLOCK_50   ;      ;
+; 81.33 MHz ; 81.33 MHz       ; CLOCK_50   ;      ;
 +-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -214,7 +214,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+---------+---------------+
 ; Clock    ; Slack   ; End Point TNS ;
 +----------+---------+---------------+
-; CLOCK_50 ; -11.299 ; -4364.590     ;
+; CLOCK_50 ; -11.295 ; -4514.216     ;
 +----------+---------+---------------+
 
 
@@ -223,7 +223,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
-; CLOCK_50 ; 0.517 ; 0.000          ;
+; CLOCK_50 ; 0.584 ; 0.000          ;
 +----------+-------+----------------+
 
 
@@ -232,9 +232,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------+--------+---------------+
 ; Clock        ; Slack  ; End Point TNS ;
 +--------------+--------+---------------+
-; FPGA_RESET_N ; -5.904 ; -5.904        ;
-; KEY[1]       ; -5.784 ; -5.784        ;
-; KEY[0]       ; -5.376 ; -5.376        ;
+; KEY[1]       ; -6.383 ; -6.383        ;
+; KEY[0]       ; -6.209 ; -6.209        ;
+; FPGA_RESET_N ; -6.183 ; -6.183        ;
 +--------------+--------+---------------+
 
 
@@ -243,9 +243,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
-; KEY[0]       ; 1.282 ; 0.000         ;
-; FPGA_RESET_N ; 1.448 ; 0.000         ;
-; KEY[1]       ; 1.565 ; 0.000         ;
+; FPGA_RESET_N ; 1.543 ; 0.000         ;
+; KEY[0]       ; 2.084 ; 0.000         ;
+; KEY[1]       ; 2.111 ; 0.000         ;
 +--------------+-------+---------------+
 
 
@@ -254,10 +254,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------+--------+--------------------------+
 ; Clock        ; Slack  ; End Point TNS            ;
 +--------------+--------+--------------------------+
-; CLOCK_50     ; -0.965 ; -896.429                 ;
-; KEY[0]       ; -0.944 ; -1.803                   ;
-; FPGA_RESET_N ; -0.888 ; -1.706                   ;
-; KEY[1]       ; -0.767 ; -1.358                   ;
+; CLOCK_50     ; -1.061 ; -930.676                 ;
+; FPGA_RESET_N ; -0.955 ; -1.800                   ;
+; KEY[1]       ; -0.762 ; -1.378                   ;
+; KEY[0]       ; -0.725 ; -1.278                   ;
 +--------------+--------+--------------------------+
 
 
@@ -272,7 +272,7 @@ No synchronizer chains to report.
 +----------+--------+-----------------+
 ; Clock    ; Slack  ; End Point TNS   ;
 +----------+--------+-----------------+
-; CLOCK_50 ; -5.226 ; -2107.806       ;
+; CLOCK_50 ; -5.363 ; -2319.370       ;
 +----------+--------+-----------------+
 
 
@@ -281,7 +281,7 @@ No synchronizer chains to report.
 +----------+-------+-----------------+
 ; Clock    ; Slack ; End Point TNS   ;
 +----------+-------+-----------------+
-; CLOCK_50 ; 0.207 ; 0.000           ;
+; CLOCK_50 ; 0.276 ; 0.000           ;
 +----------+-------+-----------------+
 
 
@@ -290,9 +290,9 @@ No synchronizer chains to report.
 +--------------+--------+----------------+
 ; Clock        ; Slack  ; End Point TNS  ;
 +--------------+--------+----------------+
-; FPGA_RESET_N ; -2.533 ; -2.533         ;
-; KEY[1]       ; -2.443 ; -2.443         ;
-; KEY[0]       ; -2.272 ; -2.272         ;
+; KEY[1]       ; -2.925 ; -2.925         ;
+; KEY[0]       ; -2.921 ; -2.921         ;
+; FPGA_RESET_N ; -2.834 ; -2.834         ;
 +--------------+--------+----------------+
 
 
@@ -301,9 +301,9 @@ No synchronizer chains to report.
 +--------------+-------+----------------+
 ; Clock        ; Slack ; End Point TNS  ;
 +--------------+-------+----------------+
-; KEY[0]       ; 0.273 ; 0.000          ;
-; FPGA_RESET_N ; 0.341 ; 0.000          ;
-; KEY[1]       ; 0.345 ; 0.000          ;
+; FPGA_RESET_N ; 0.515 ; 0.000          ;
+; KEY[1]       ; 0.732 ; 0.000          ;
+; KEY[0]       ; 0.784 ; 0.000          ;
 +--------------+-------+----------------+
 
 
@@ -312,10 +312,10 @@ No synchronizer chains to report.
 +--------------+--------+---------------------------+
 ; Clock        ; Slack  ; End Point TNS             ;
 +--------------+--------+---------------------------+
-; CLOCK_50     ; -0.964 ; -825.267                  ;
-; KEY[0]       ; -0.925 ; -2.402                    ;
-; FPGA_RESET_N ; -0.862 ; -2.271                    ;
-; KEY[1]       ; -0.853 ; -2.207                    ;
+; CLOCK_50     ; -1.074 ; -870.512                  ;
+; FPGA_RESET_N ; -0.901 ; -2.282                    ;
+; KEY[1]       ; -0.829 ; -2.194                    ;
+; KEY[0]       ; -0.790 ; -2.069                    ;
 +--------------+--------+---------------------------+
 
 
@@ -330,7 +330,7 @@ No synchronizer chains to report.
 +----------+--------+----------------+
 ; Clock    ; Slack  ; End Point TNS  ;
 +----------+--------+----------------+
-; CLOCK_50 ; -4.713 ; -1857.772      ;
+; CLOCK_50 ; -4.775 ; -2013.770      ;
 +----------+--------+----------------+
 
 
@@ -339,7 +339,7 @@ No synchronizer chains to report.
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
-; CLOCK_50 ; 0.161 ; 0.000          ;
+; CLOCK_50 ; 0.246 ; 0.000          ;
 +----------+-------+----------------+
 
 
@@ -348,9 +348,9 @@ No synchronizer chains to report.
 +--------------+--------+---------------+
 ; Clock        ; Slack  ; End Point TNS ;
 +--------------+--------+---------------+
-; FPGA_RESET_N ; -2.246 ; -2.246        ;
-; KEY[1]       ; -2.170 ; -2.170        ;
-; KEY[0]       ; -1.992 ; -1.992        ;
+; KEY[0]       ; -2.591 ; -2.591        ;
+; KEY[1]       ; -2.577 ; -2.577        ;
+; FPGA_RESET_N ; -2.528 ; -2.528        ;
 +--------------+--------+---------------+
 
 
@@ -359,9 +359,9 @@ No synchronizer chains to report.
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
-; KEY[0]       ; 0.228 ; 0.000         ;
-; KEY[1]       ; 0.303 ; 0.000         ;
-; FPGA_RESET_N ; 0.309 ; 0.000         ;
+; FPGA_RESET_N ; 0.436 ; 0.000         ;
+; KEY[1]       ; 0.628 ; 0.000         ;
+; KEY[0]       ; 0.693 ; 0.000         ;
 +--------------+-------+---------------+
 
 
@@ -370,10 +370,10 @@ No synchronizer chains to report.
 +--------------+--------+--------------------------+
 ; Clock        ; Slack  ; End Point TNS            ;
 +--------------+--------+--------------------------+
-; CLOCK_50     ; -0.949 ; -832.945                 ;
-; KEY[0]       ; -0.937 ; -2.562                   ;
-; FPGA_RESET_N ; -0.883 ; -2.481                   ;
-; KEY[1]       ; -0.868 ; -2.415                   ;
+; CLOCK_50     ; -1.027 ; -862.634                 ;
+; FPGA_RESET_N ; -0.919 ; -2.500                   ;
+; KEY[1]       ; -0.830 ; -2.299                   ;
+; KEY[0]       ; -0.816 ; -2.256                   ;
 +--------------+--------+--------------------------+
 
 
@@ -388,16 +388,16 @@ No synchronizer chains to report.
 +------------------+-----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -11.304   ; 0.161 ; -5.904   ; 0.228   ; -0.965              ;
-;  CLOCK_50        ; -11.304   ; 0.161 ; N/A      ; N/A     ; -0.965              ;
-;  FPGA_RESET_N    ; N/A       ; N/A   ; -5.904   ; 0.309   ; -0.888              ;
-;  KEY[0]          ; N/A       ; N/A   ; -5.376   ; 0.228   ; -0.944              ;
-;  KEY[1]          ; N/A       ; N/A   ; -5.784   ; 0.303   ; -0.868              ;
-; Design-wide TNS  ; -4460.802 ; 0.0   ; -17.064  ; 0.0     ; -901.296            ;
-;  CLOCK_50        ; -4460.802 ; 0.000 ; N/A      ; N/A     ; -896.429            ;
-;  FPGA_RESET_N    ; N/A       ; N/A   ; -5.904   ; 0.000   ; -2.481              ;
-;  KEY[0]          ; N/A       ; N/A   ; -5.376   ; 0.000   ; -2.562              ;
-;  KEY[1]          ; N/A       ; N/A   ; -5.784   ; 0.000   ; -2.415              ;
+; Worst-case Slack ; -11.295   ; 0.246 ; -6.413   ; 0.436   ; -1.074              ;
+;  CLOCK_50        ; -11.295   ; 0.246 ; N/A      ; N/A     ; -1.074              ;
+;  FPGA_RESET_N    ; N/A       ; N/A   ; -6.238   ; 0.436   ; -0.955              ;
+;  KEY[0]          ; N/A       ; N/A   ; -6.386   ; 0.693   ; -0.816              ;
+;  KEY[1]          ; N/A       ; N/A   ; -6.413   ; 0.628   ; -0.830              ;
+; Design-wide TNS  ; -4695.821 ; 0.0   ; -19.037  ; 0.0     ; -935.132            ;
+;  CLOCK_50        ; -4695.821 ; 0.000 ; N/A      ; N/A     ; -930.676            ;
+;  FPGA_RESET_N    ; N/A       ; N/A   ; -6.238   ; 0.000   ; -2.500              ;
+;  KEY[0]          ; N/A       ; N/A   ; -6.386   ; 0.000   ; -2.256              ;
+;  KEY[1]          ; N/A       ; N/A   ; -6.413   ; 0.000   ; -2.299              ;
 +------------------+-----------+-------+----------+---------+---------------------+
 
 
@@ -730,7 +730,7 @@ No synchronizer chains to report.
 +--------------+----------+----------+----------+----------+----------+
 ; From Clock   ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------+----------+----------+----------+----------+----------+
-; CLOCK_50     ; CLOCK_50 ; 624239   ; 1        ; 0        ; 0        ;
+; CLOCK_50     ; CLOCK_50 ; 657117   ; 1        ; 0        ; 0        ;
 ; FPGA_RESET_N ; CLOCK_50 ; 28       ; 1        ; 0        ; 0        ;
 ; KEY[0]       ; CLOCK_50 ; 28       ; 1        ; 0        ; 0        ;
 ; KEY[1]       ; CLOCK_50 ; 28       ; 1        ; 0        ; 0        ;
@@ -743,7 +743,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------+----------+----------+----------+----------+----------+
 ; From Clock   ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------+----------+----------+----------+----------+----------+
-; CLOCK_50     ; CLOCK_50 ; 624239   ; 1        ; 0        ; 0        ;
+; CLOCK_50     ; CLOCK_50 ; 657117   ; 1        ; 0        ; 0        ;
 ; FPGA_RESET_N ; CLOCK_50 ; 28       ; 1        ; 0        ; 0        ;
 ; KEY[0]       ; CLOCK_50 ; 28       ; 1        ; 0        ; 0        ;
 ; KEY[1]       ; CLOCK_50 ; 28       ; 1        ; 0        ; 0        ;
@@ -756,9 +756,9 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+--------------+----------+----------+----------+----------+
 ; From Clock ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+--------------+----------+----------+----------+----------+
-; CLOCK_50   ; FPGA_RESET_N ; 482      ; 0        ; 0        ; 0        ;
-; CLOCK_50   ; KEY[0]       ; 482      ; 0        ; 0        ; 0        ;
-; CLOCK_50   ; KEY[1]       ; 482      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; FPGA_RESET_N ; 477      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[0]       ; 477      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[1]       ; 477      ; 0        ; 0        ; 0        ;
 +------------+--------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -768,9 +768,9 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+--------------+----------+----------+----------+----------+
 ; From Clock ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+--------------+----------+----------+----------+----------+
-; CLOCK_50   ; FPGA_RESET_N ; 482      ; 0        ; 0        ; 0        ;
-; CLOCK_50   ; KEY[0]       ; 482      ; 0        ; 0        ; 0        ;
-; CLOCK_50   ; KEY[1]       ; 482      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; FPGA_RESET_N ; 477      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[0]       ; 477      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[1]       ; 477      ; 0        ; 0        ; 0        ;
 +------------+--------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -979,7 +979,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 15 02:18:44 2023
+    Info: Processing started: Sun Oct 15 07:47:36 2023
 Info: Command: quartus_sta Atv06 -c Atv06
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -991,144 +991,144 @@ Info (332142): No user constrained base clocks found in the design. Calling "der
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name CLOCK_50 CLOCK_50
     Info (332105): create_clock -period 1.000 -name FPGA_RESET_N FPGA_RESET_N
-    Info (332105): create_clock -period 1.000 -name KEY[1] KEY[1]
     Info (332105): create_clock -period 1.000 -name KEY[0] KEY[0]
+    Info (332105): create_clock -period 1.000 -name KEY[1] KEY[1]
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -11.304
+Info (332146): Worst-case setup slack is -11.237
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -11.304           -4460.802 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.529
+    Info (332119):   -11.237           -4695.821 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.698
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.529               0.000 CLOCK_50 
-Info (332146): Worst-case recovery slack is -5.726
+    Info (332119):     0.698               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is -6.413
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.726              -5.726 FPGA_RESET_N 
-    Info (332119):    -5.580              -5.580 KEY[1] 
-    Info (332119):    -5.263              -5.263 KEY[0] 
-Info (332146): Worst-case removal slack is 1.198
+    Info (332119):    -6.413              -6.413 KEY[1] 
+    Info (332119):    -6.386              -6.386 KEY[0] 
+    Info (332119):    -6.238              -6.238 FPGA_RESET_N 
+Info (332146): Worst-case removal slack is 1.617
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.198               0.000 KEY[0] 
-    Info (332119):     1.397               0.000 FPGA_RESET_N 
-    Info (332119):     1.495               0.000 KEY[1] 
-Info (332146): Worst-case minimum pulse width slack is -0.905
+    Info (332119):     1.617               0.000 FPGA_RESET_N 
+    Info (332119):     2.146               0.000 KEY[1] 
+    Info (332119):     2.191               0.000 KEY[0] 
+Info (332146): Worst-case minimum pulse width slack is -1.059
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.905            -827.366 CLOCK_50 
-    Info (332119):    -0.855              -1.503 KEY[0] 
-    Info (332119):    -0.779              -1.341 FPGA_RESET_N 
-    Info (332119):    -0.703              -1.241 KEY[1] 
+    Info (332119):    -1.059            -898.510 CLOCK_50 
+    Info (332119):    -0.859              -1.500 FPGA_RESET_N 
+    Info (332119):    -0.735              -1.273 KEY[1] 
+    Info (332119):    -0.660              -1.198 KEY[0] 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -11.299
+Info (332146): Worst-case setup slack is -11.295
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -11.299           -4364.590 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.517
+    Info (332119):   -11.295           -4514.216 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.584
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.517               0.000 CLOCK_50 
-Info (332146): Worst-case recovery slack is -5.904
+    Info (332119):     0.584               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is -6.383
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.904              -5.904 FPGA_RESET_N 
-    Info (332119):    -5.784              -5.784 KEY[1] 
-    Info (332119):    -5.376              -5.376 KEY[0] 
-Info (332146): Worst-case removal slack is 1.282
+    Info (332119):    -6.383              -6.383 KEY[1] 
+    Info (332119):    -6.209              -6.209 KEY[0] 
+    Info (332119):    -6.183              -6.183 FPGA_RESET_N 
+Info (332146): Worst-case removal slack is 1.543
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.282               0.000 KEY[0] 
-    Info (332119):     1.448               0.000 FPGA_RESET_N 
-    Info (332119):     1.565               0.000 KEY[1] 
-Info (332146): Worst-case minimum pulse width slack is -0.965
+    Info (332119):     1.543               0.000 FPGA_RESET_N 
+    Info (332119):     2.084               0.000 KEY[0] 
+    Info (332119):     2.111               0.000 KEY[1] 
+Info (332146): Worst-case minimum pulse width slack is -1.061
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.965            -896.429 CLOCK_50 
-    Info (332119):    -0.944              -1.803 KEY[0] 
-    Info (332119):    -0.888              -1.706 FPGA_RESET_N 
-    Info (332119):    -0.767              -1.358 KEY[1] 
+    Info (332119):    -1.061            -930.676 CLOCK_50 
+    Info (332119):    -0.955              -1.800 FPGA_RESET_N 
+    Info (332119):    -0.762              -1.378 KEY[1] 
+    Info (332119):    -0.725              -1.278 KEY[0] 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.226
+Info (332146): Worst-case setup slack is -5.363
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.226           -2107.806 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.207
+    Info (332119):    -5.363           -2319.370 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.276
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.207               0.000 CLOCK_50 
-Info (332146): Worst-case recovery slack is -2.533
+    Info (332119):     0.276               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is -2.925
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.533              -2.533 FPGA_RESET_N 
-    Info (332119):    -2.443              -2.443 KEY[1] 
-    Info (332119):    -2.272              -2.272 KEY[0] 
-Info (332146): Worst-case removal slack is 0.273
+    Info (332119):    -2.925              -2.925 KEY[1] 
+    Info (332119):    -2.921              -2.921 KEY[0] 
+    Info (332119):    -2.834              -2.834 FPGA_RESET_N 
+Info (332146): Worst-case removal slack is 0.515
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.273               0.000 KEY[0] 
-    Info (332119):     0.341               0.000 FPGA_RESET_N 
-    Info (332119):     0.345               0.000 KEY[1] 
-Info (332146): Worst-case minimum pulse width slack is -0.964
+    Info (332119):     0.515               0.000 FPGA_RESET_N 
+    Info (332119):     0.732               0.000 KEY[1] 
+    Info (332119):     0.784               0.000 KEY[0] 
+Info (332146): Worst-case minimum pulse width slack is -1.074
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.964            -825.267 CLOCK_50 
-    Info (332119):    -0.925              -2.402 KEY[0] 
-    Info (332119):    -0.862              -2.271 FPGA_RESET_N 
-    Info (332119):    -0.853              -2.207 KEY[1] 
+    Info (332119):    -1.074            -870.512 CLOCK_50 
+    Info (332119):    -0.901              -2.282 FPGA_RESET_N 
+    Info (332119):    -0.829              -2.194 KEY[1] 
+    Info (332119):    -0.790              -2.069 KEY[0] 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.713
+Info (332146): Worst-case setup slack is -4.775
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.713           -1857.772 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.161
+    Info (332119):    -4.775           -2013.770 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.246
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.161               0.000 CLOCK_50 
-Info (332146): Worst-case recovery slack is -2.246
+    Info (332119):     0.246               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is -2.591
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.246              -2.246 FPGA_RESET_N 
-    Info (332119):    -2.170              -2.170 KEY[1] 
-    Info (332119):    -1.992              -1.992 KEY[0] 
-Info (332146): Worst-case removal slack is 0.228
+    Info (332119):    -2.591              -2.591 KEY[0] 
+    Info (332119):    -2.577              -2.577 KEY[1] 
+    Info (332119):    -2.528              -2.528 FPGA_RESET_N 
+Info (332146): Worst-case removal slack is 0.436
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.228               0.000 KEY[0] 
-    Info (332119):     0.303               0.000 KEY[1] 
-    Info (332119):     0.309               0.000 FPGA_RESET_N 
-Info (332146): Worst-case minimum pulse width slack is -0.949
+    Info (332119):     0.436               0.000 FPGA_RESET_N 
+    Info (332119):     0.628               0.000 KEY[1] 
+    Info (332119):     0.693               0.000 KEY[0] 
+Info (332146): Worst-case minimum pulse width slack is -1.027
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.949            -832.945 CLOCK_50 
-    Info (332119):    -0.937              -2.562 KEY[0] 
-    Info (332119):    -0.883              -2.481 FPGA_RESET_N 
-    Info (332119):    -0.868              -2.415 KEY[1] 
+    Info (332119):    -1.027            -862.634 CLOCK_50 
+    Info (332119):    -0.919              -2.500 FPGA_RESET_N 
+    Info (332119):    -0.830              -2.299 KEY[1] 
+    Info (332119):    -0.816              -2.256 KEY[0] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5083 megabytes
-    Info: Processing ended: Sun Oct 15 02:18:54 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 5080 megabytes
+    Info: Processing ended: Sun Oct 15 07:47:48 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:15
 
 

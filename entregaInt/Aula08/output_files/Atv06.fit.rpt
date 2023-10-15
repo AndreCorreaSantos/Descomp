@@ -1,5 +1,5 @@
 Fitter report for Atv06
-Sun Oct 15 02:18:39 2023
+Sun Oct 15 07:47:30 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -62,15 +62,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sun Oct 15 02:18:39 2023       ;
+; Fitter Status                   ; Successful - Sun Oct 15 07:47:30 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Atv06                                       ;
 ; Top-level Entity Name           ; Atv06                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 405 / 18,480 ( 2 % )                        ;
-; Total registers                 ; 592                                         ;
+; Logic utilization (in ALMs)     ; 406 / 18,480 ( 2 % )                        ;
+; Total registers                 ; 590                                         ;
 ; Total pins                      ; 68 / 224 ( 30 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
@@ -152,34 +152,32 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.10        ;
+; Average used               ; 1.13        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.7%      ;
-;     Processor 3            ;   3.1%      ;
-;     Processor 4            ;   3.0%      ;
+;     Processor 2            ;   4.7%      ;
+;     Processor 3            ;   4.2%      ;
+;     Processor 4            ;   4.1%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Netlist Optimizations                                                                                                                                                                                                                                                                                  ;
-+----------------------------------------------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+--------------------------------------------------------------------------+------------------+-----------------------+
-; Node                                                           ; Action     ; Operation                                         ; Reason                   ; Node Port ; Node Port Name ; Destination Node                                                         ; Destination Port ; Destination Port Name ;
-+----------------------------------------------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+--------------------------------------------------------------------------+------------------+-----------------------+
-; HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1|DOUT[2] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1|DOUT[2]~DUPLICATE ;                  ;                       ;
-; HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2|DOUT[2] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2|DOUT[2]~DUPLICATE ;                  ;                       ;
-; Processador:Processor|registradorGenerico:PC|DOUT[0]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[0]~DUPLICATE           ;                  ;                       ;
-; Processador:Processor|registradorGenerico:PC|DOUT[1]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[1]~DUPLICATE           ;                  ;                       ;
-; Processador:Processor|registradorGenerico:PC|DOUT[2]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[2]~DUPLICATE           ;                  ;                       ;
-; Processador:Processor|registradorGenerico:PC|DOUT[3]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[3]~DUPLICATE           ;                  ;                       ;
-; Processador:Processor|registradorGenerico:PC|DOUT[4]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[4]~DUPLICATE           ;                  ;                       ;
-; Processador:Processor|registradorGenerico:PC|DOUT[5]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[5]~DUPLICATE           ;                  ;                       ;
-; Processador:Processor|registradorGenerico:PC|DOUT[6]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[6]~DUPLICATE           ;                  ;                       ;
-; Processador:Processor|registradorGenerico:PC|DOUT[7]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[7]~DUPLICATE           ;                  ;                       ;
-; Processador:Processor|registradorGenerico:PC|DOUT[8]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[8]~DUPLICATE           ;                  ;                       ;
-+----------------------------------------------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+--------------------------------------------------------------------------+------------------+-----------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Netlist Optimizations                                                                                                                                                                                                                                                              ;
++------------------------------------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+----------------------------------------------------------------+------------------+-----------------------+
+; Node                                                 ; Action     ; Operation                                         ; Reason                   ; Node Port ; Node Port Name ; Destination Node                                               ; Destination Port ; Destination Port Name ;
++------------------------------------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+----------------------------------------------------------------+------------------+-----------------------+
+; Processador:Processor|registradorGenerico:PC|DOUT[0] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[0]~DUPLICATE ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[1] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[1]~DUPLICATE ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[2] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[2]~DUPLICATE ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[3] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[3]~DUPLICATE ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[4] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[4]~DUPLICATE ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[5] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[5]~DUPLICATE ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[6] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[6]~DUPLICATE ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[7] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[7]~DUPLICATE ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[8] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[8]~DUPLICATE ;                  ;                       ;
++------------------------------------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+----------------------------------------------------------------+------------------+-----------------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -188,8 +186,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 1248 ) ; 0.00 % ( 0 / 1248 )        ; 0.00 % ( 0 / 1248 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 1248 ) ; 0.00 % ( 0 / 1248 )        ; 0.00 % ( 0 / 1248 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 1256 ) ; 0.00 % ( 0 / 1256 )        ; 0.00 % ( 0 / 1256 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 1256 ) ; 0.00 % ( 0 / 1256 )        ; 0.00 % ( 0 / 1256 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -212,7 +210,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 1248 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 1256 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -228,41 +226,41 @@ The pin-out file can be found in C:/Descomp/Descomp/entregaInt/Aula08/output_fil
 +-------------------------------------------------------------+-----------------------+-------+
 ; Resource                                                    ; Usage                 ; %     ;
 +-------------------------------------------------------------+-----------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 405 / 18,480          ; 2 %   ;
-; ALMs needed [=A-B+C]                                        ; 405                   ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 546 / 18,480          ; 3 %   ;
-;         [a] ALMs used for LUT logic and registers           ; 80                    ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 406 / 18,480          ; 2 %   ;
+; ALMs needed [=A-B+C]                                        ; 406                   ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 547 / 18,480          ; 3 %   ;
+;         [a] ALMs used for LUT logic and registers           ; 92                    ;       ;
 ;         [b] ALMs used for LUT logic                         ; 258                   ;       ;
-;         [c] ALMs used for registers                         ; 208                   ;       ;
+;         [c] ALMs used for registers                         ; 197                   ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 144 / 18,480          ; < 1 % ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 3 / 18,480            ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 142 / 18,480          ; < 1 % ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 1 / 18,480            ; < 1 % ;
 ;         [a] Due to location constrained logic               ; 0                     ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 1                     ;       ;
-;         [c] Due to LAB input limits                         ; 2                     ;       ;
+;         [c] Due to LAB input limits                         ; 0                     ;       ;
 ;         [d] Due to virtual I/Os                             ; 0                     ;       ;
 ;                                                             ;                       ;       ;
 ; Difficulty packing design                                   ; Low                   ;       ;
 ;                                                             ;                       ;       ;
-; Total LABs:  partially or completely used                   ; 70 / 1,848            ; 4 %   ;
-;     -- Logic LABs                                           ; 70                    ;       ;
+; Total LABs:  partially or completely used                   ; 75 / 1,848            ; 4 %   ;
+;     -- Logic LABs                                           ; 75                    ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ;       ;
 ;                                                             ;                       ;       ;
-; Combinational ALUT usage for logic                          ; 534                   ;       ;
-;     -- 7 input functions                                    ; 4                     ;       ;
-;     -- 6 input functions                                    ; 316                   ;       ;
-;     -- 5 input functions                                    ; 47                    ;       ;
-;     -- 4 input functions                                    ; 63                    ;       ;
-;     -- <=3 input functions                                  ; 104                   ;       ;
-; Combinational ALUT usage for route-throughs                 ; 91                    ;       ;
+; Combinational ALUT usage for logic                          ; 542                   ;       ;
+;     -- 7 input functions                                    ; 1                     ;       ;
+;     -- 6 input functions                                    ; 321                   ;       ;
+;     -- 5 input functions                                    ; 46                    ;       ;
+;     -- 4 input functions                                    ; 69                    ;       ;
+;     -- <=3 input functions                                  ; 105                   ;       ;
+; Combinational ALUT usage for route-throughs                 ; 102                   ;       ;
 ;                                                             ;                       ;       ;
-; Dedicated logic registers                                   ; 592                   ;       ;
+; Dedicated logic registers                                   ; 590                   ;       ;
 ;     -- By type:                                             ;                       ;       ;
-;         -- Primary logic registers                          ; 575 / 36,960          ; 2 %   ;
-;         -- Secondary logic registers                        ; 17 / 36,960           ; < 1 % ;
+;         -- Primary logic registers                          ; 577 / 36,960          ; 2 %   ;
+;         -- Secondary logic registers                        ; 13 / 36,960           ; < 1 % ;
 ;     -- By function:                                         ;                       ;       ;
 ;         -- Design implementation registers                  ; 581                   ;       ;
-;         -- Routing optimization registers                   ; 11                    ;       ;
+;         -- Routing optimization registers                   ; 9                     ;       ;
 ;                                                             ;                       ;       ;
 ; Virtual pins                                                ; 0                     ;       ;
 ; I/O pins                                                    ; 68 / 224              ; 30 %  ;
@@ -289,11 +287,11 @@ The pin-out file can be found in C:/Descomp/Descomp/entregaInt/Aula08/output_fil
 ; Oscillator blocks                                           ; 0 / 1                 ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3                 ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 1.2% / 1.2% / 1.2%    ;       ;
-; Peak interconnect usage (total/H/V)                         ; 19.5% / 20.0% / 17.8% ;       ;
-; Maximum fan-out                                             ; 588                   ;       ;
-; Highest non-global fan-out                                  ; 588                   ;       ;
-; Total fan-out                                               ; 4596                  ;       ;
-; Average fan-out                                             ; 3.40                  ;       ;
+; Peak interconnect usage (total/H/V)                         ; 14.4% / 15.3% / 11.7% ;       ;
+; Maximum fan-out                                             ; 586                   ;       ;
+; Highest non-global fan-out                                  ; 586                   ;       ;
+; Total fan-out                                               ; 4631                  ;       ;
+; Average fan-out                                             ; 3.38                  ;       ;
 +-------------------------------------------------------------+-----------------------+-------+
 
 
@@ -302,44 +300,44 @@ The pin-out file can be found in C:/Descomp/Descomp/entregaInt/Aula08/output_fil
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 ; Statistic                                                   ; Top                   ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+-----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 405 / 18480 ( 2 % )   ; 0 / 18480 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 405                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 546 / 18480 ( 3 % )   ; 0 / 18480 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 80                    ; 0                              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 406 / 18480 ( 2 % )   ; 0 / 18480 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 406                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 547 / 18480 ( 3 % )   ; 0 / 18480 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 92                    ; 0                              ;
 ;         [b] ALMs used for LUT logic                         ; 258                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 208                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 197                   ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 144 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 3 / 18480 ( < 1 % )   ; 0 / 18480 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 142 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 1 / 18480 ( < 1 % )   ; 0 / 18480 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 1                     ; 0                              ;
-;         [c] Due to LAB input limits                         ; 2                     ; 0                              ;
+;         [c] Due to LAB input limits                         ; 0                     ; 0                              ;
 ;         [d] Due to virtual I/Os                             ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 70 / 1848 ( 4 % )     ; 0 / 1848 ( 0 % )               ;
-;     -- Logic LABs                                           ; 70                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 75 / 1848 ( 4 % )     ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 75                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
-; Combinational ALUT usage for logic                          ; 534                   ; 0                              ;
-;     -- 7 input functions                                    ; 4                     ; 0                              ;
-;     -- 6 input functions                                    ; 316                   ; 0                              ;
-;     -- 5 input functions                                    ; 47                    ; 0                              ;
-;     -- 4 input functions                                    ; 63                    ; 0                              ;
-;     -- <=3 input functions                                  ; 104                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 91                    ; 0                              ;
+; Combinational ALUT usage for logic                          ; 542                   ; 0                              ;
+;     -- 7 input functions                                    ; 1                     ; 0                              ;
+;     -- 6 input functions                                    ; 321                   ; 0                              ;
+;     -- 5 input functions                                    ; 46                    ; 0                              ;
+;     -- 4 input functions                                    ; 69                    ; 0                              ;
+;     -- <=3 input functions                                  ; 105                   ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 102                   ; 0                              ;
 ; Memory ALUT usage                                           ; 0                     ; 0                              ;
 ;     -- 64-address deep                                      ; 0                     ; 0                              ;
 ;     -- 32-address deep                                      ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Dedicated logic registers                                   ; 0                     ; 0                              ;
 ;     -- By type:                                             ;                       ;                                ;
-;         -- Primary logic registers                          ; 575 / 36960 ( 2 % )   ; 0 / 36960 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 17 / 36960 ( < 1 % )  ; 0 / 36960 ( 0 % )              ;
+;         -- Primary logic registers                          ; 577 / 36960 ( 2 % )   ; 0 / 36960 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 13 / 36960 ( < 1 % )  ; 0 / 36960 ( 0 % )              ;
 ;     -- By function:                                         ;                       ;                                ;
 ;         -- Design implementation registers                  ; 581                   ; 0                              ;
-;         -- Routing optimization registers                   ; 11                    ; 0                              ;
+;         -- Routing optimization registers                   ; 9                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ;                                                             ;                       ;                                ;
 ; Virtual pins                                                ; 0                     ; 0                              ;
@@ -355,8 +353,8 @@ The pin-out file can be found in C:/Descomp/Descomp/entregaInt/Aula08/output_fil
 ;     -- Registered Output Connections                        ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Internal Connections                                        ;                       ;                                ;
-;     -- Total Connections                                    ; 4597                  ; 0                              ;
-;     -- Registered Connections                               ; 1745                  ; 0                              ;
+;     -- Total Connections                                    ; 4631                  ; 0                              ;
+;     -- Registered Connections                               ; 1746                  ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; External Connections                                        ;                       ;                                ;
 ;     -- Top                                                  ; 0                     ; 0                              ;
@@ -981,49 +979,49 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Entity Name         ; Library Name ;
 +----------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
-; |Atv06                                       ; 405.0 (4.8)          ; 545.0 (4.8)                      ; 142.0 (0.0)                                       ; 2.0 (0.0)                        ; 0.0 (0.0)            ; 534 (6)             ; 592 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 68   ; 0            ; |Atv06                                                        ; Atv06               ; work         ;
-;    |Detector_Keys:Detect_KEY0|               ; 0.5 (0.0)            ; 1.7 (0.0)                        ; 1.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 2 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0                              ; Detector_Keys       ; work         ;
-;       |FlipFlop:Flip_Flop_Key0|              ; 0.0 (0.0)            ; 0.7 (0.7)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0      ; FlipFlop            ; work         ;
+; |Atv06                                       ; 405.5 (5.5)          ; 546.5 (5.5)                      ; 141.5 (0.0)                                       ; 0.5 (0.0)                        ; 0.0 (0.0)            ; 542 (7)             ; 590 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 68   ; 0            ; |Atv06                                                        ; Atv06               ; work         ;
+;    |Detector_Keys:Detect_KEY0|               ; 0.3 (0.0)            ; 1.3 (0.0)                        ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 2 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0                              ; Detector_Keys       ; work         ;
+;       |FlipFlop:Flip_Flop_Key0|              ; -0.2 (-0.2)          ; 0.3 (0.3)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0      ; FlipFlop            ; work         ;
 ;       |edgeDetector:detectorKey0|            ; 0.5 (0.5)            ; 1.0 (1.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0    ; edgeDetector        ; work         ;
-;    |Detector_Keys:Detect_KEY1|               ; 0.5 (0.0)            ; 1.7 (0.0)                        ; 1.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 2 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY1                              ; Detector_Keys       ; work         ;
-;       |FlipFlop:Flip_Flop_Key0|              ; 0.0 (0.0)            ; 0.7 (0.7)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY1|FlipFlop:Flip_Flop_Key0      ; FlipFlop            ; work         ;
+;    |Detector_Keys:Detect_KEY1|               ; 0.5 (0.0)            ; 1.5 (0.0)                        ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 2 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY1                              ; Detector_Keys       ; work         ;
+;       |FlipFlop:Flip_Flop_Key0|              ; 0.0 (0.0)            ; 0.5 (0.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY1|FlipFlop:Flip_Flop_Key0      ; FlipFlop            ; work         ;
 ;       |edgeDetector:detectorKey0|            ; 0.5 (0.5)            ; 1.0 (1.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0    ; edgeDetector        ; work         ;
-;    |Detector_Keys:Detect_RESET|              ; 0.7 (0.0)            ; 1.7 (0.0)                        ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 2 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_RESET                             ; Detector_Keys       ; work         ;
-;       |FlipFlop:Flip_Flop_Key0|              ; 0.0 (0.0)            ; 0.7 (0.7)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0     ; FlipFlop            ; work         ;
-;       |edgeDetector:detectorKey0|            ; 0.7 (0.7)            ; 1.0 (1.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_RESET|edgeDetector:detectorKey0   ; edgeDetector        ; work         ;
-;    |HEXES:Hexes_Unity|                       ; 21.2 (0.0)           ; 28.8 (0.0)                       ; 7.6 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 42 (0)              ; 26 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity                                      ; HEXES               ; work         ;
-;       |conversorHex7Seg:Conversor0|          ; 2.5 (2.5)            ; 3.3 (3.3)                        ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor0          ; conversorHex7Seg    ; work         ;
-;       |conversorHex7Seg:Conversor1|          ; 2.3 (2.3)            ; 3.3 (3.3)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor1          ; conversorHex7Seg    ; work         ;
-;       |conversorHex7Seg:Conversor2|          ; 2.5 (2.5)            ; 2.7 (2.7)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor2          ; conversorHex7Seg    ; work         ;
-;       |conversorHex7Seg:Conversor3|          ; 2.5 (2.5)            ; 3.3 (3.3)                        ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor3          ; conversorHex7Seg    ; work         ;
-;       |conversorHex7Seg:Conversor4|          ; 2.5 (2.5)            ; 2.8 (2.8)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor4          ; conversorHex7Seg    ; work         ;
+;    |Detector_Keys:Detect_RESET|              ; 0.5 (0.0)            ; 1.1 (0.0)                        ; 0.6 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 2 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_RESET                             ; Detector_Keys       ; work         ;
+;       |FlipFlop:Flip_Flop_Key0|              ; -0.2 (-0.2)          ; 0.3 (0.3)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0     ; FlipFlop            ; work         ;
+;       |edgeDetector:detectorKey0|            ; 0.7 (0.7)            ; 0.8 (0.8)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_RESET|edgeDetector:detectorKey0   ; edgeDetector        ; work         ;
+;    |HEXES:Hexes_Unity|                       ; 21.2 (0.0)           ; 23.7 (0.0)                       ; 2.6 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 42 (0)              ; 24 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity                                      ; HEXES               ; work         ;
+;       |conversorHex7Seg:Conversor0|          ; 2.5 (2.5)            ; 3.0 (3.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor0          ; conversorHex7Seg    ; work         ;
+;       |conversorHex7Seg:Conversor1|          ; 2.5 (2.5)            ; 3.0 (3.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor1          ; conversorHex7Seg    ; work         ;
+;       |conversorHex7Seg:Conversor2|          ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor2          ; conversorHex7Seg    ; work         ;
+;       |conversorHex7Seg:Conversor3|          ; 2.3 (2.3)            ; 2.3 (2.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor3          ; conversorHex7Seg    ; work         ;
+;       |conversorHex7Seg:Conversor4|          ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor4          ; conversorHex7Seg    ; work         ;
 ;       |conversorHex7Seg:Conversor5|          ; 2.5 (2.5)            ; 3.5 (3.5)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor5          ; conversorHex7Seg    ; work         ;
-;       |registradorGenerico:REGISTRADOR_HEX0| ; 1.0 (1.0)            ; 1.8 (1.8)                        ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0 ; registradorGenerico ; work         ;
-;       |registradorGenerico:REGISTRADOR_HEX1| ; 1.0 (1.0)            ; 1.7 (1.7)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 5 (5)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1 ; registradorGenerico ; work         ;
-;       |registradorGenerico:REGISTRADOR_HEX2| ; 1.2 (1.2)            ; 1.5 (1.5)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 5 (5)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2 ; registradorGenerico ; work         ;
-;       |registradorGenerico:REGISTRADOR_HEX3| ; 1.0 (1.0)            ; 1.7 (1.7)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3 ; registradorGenerico ; work         ;
-;       |registradorGenerico:REGISTRADOR_HEX4| ; 1.2 (1.2)            ; 1.3 (1.3)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4 ; registradorGenerico ; work         ;
-;       |registradorGenerico:REGISTRADOR_HEX5| ; 1.0 (1.0)            ; 1.8 (1.8)                        ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5 ; registradorGenerico ; work         ;
-;    |LEDS:LED_UNITY|                          ; 5.0 (0.0)            ; 5.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 10 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY                                         ; LEDS                ; work         ;
-;       |FlipFlop:LED8|                        ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|FlipFlop:LED8                           ; FlipFlop            ; work         ;
-;       |FlipFlop:LED9|                        ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|FlipFlop:LED9                           ; FlipFlop            ; work         ;
-;       |registradorGenerico:REG_LEDS|         ; 2.7 (2.7)            ; 3.0 (3.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|registradorGenerico:REG_LEDS            ; registradorGenerico ; work         ;
-;    |Processador:Processor|                   ; 36.0 (0.0)           ; 36.8 (0.0)                       ; 1.7 (0.0)                                         ; 0.9 (0.0)                        ; 0.0 (0.0)            ; 62 (0)              ; 37 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor                                  ; Processador         ; work         ;
-;       |FlipFlop:FlagLE|                      ; 1.1 (1.1)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|FlipFlop:FlagLE                  ; FlipFlop            ; work         ;
-;       |FlipFlop:FlagZero|                    ; 0.9 (0.9)            ; 1.0 (1.0)                        ; 0.1 (0.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|FlipFlop:FlagZero                ; FlipFlop            ; work         ;
-;       |ULASomaSub:ULA1|                      ; 14.0 (14.0)          ; 13.7 (13.7)                      ; 0.2 (0.2)                                         ; 0.5 (0.5)                        ; 0.0 (0.0)            ; 25 (25)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|ULASomaSub:ULA1                  ; ULASomaSub          ; work         ;
-;       |decoderInstru:DECODER|                ; 4.5 (4.5)            ; 5.3 (5.3)                        ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|decoderInstru:DECODER            ; decoderInstru       ; work         ;
-;       |logicaDesvio:logicaDesvio1|           ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|logicaDesvio:logicaDesvio1       ; logicaDesvio        ; work         ;
-;       |muxGenerico2x1:MUX1|                  ; 3.3 (3.3)            ; 3.9 (3.9)                        ; 0.9 (0.9)                                         ; 0.3 (0.3)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|muxGenerico2x1:MUX1              ; muxGenerico2x1      ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX0| ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0 ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX1| ; 1.0 (1.0)            ; 1.2 (1.2)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1 ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX2| ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2 ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX3| ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3 ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX4| ; 1.2 (1.2)            ; 1.2 (1.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4 ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX5| ; 1.0 (1.0)            ; 1.7 (1.7)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5 ; registradorGenerico ; work         ;
+;    |LEDS:LED_UNITY|                          ; 4.7 (0.0)            ; 5.8 (0.0)                        ; 1.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 10 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY                                         ; LEDS                ; work         ;
+;       |FlipFlop:LED8|                        ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|FlipFlop:LED8                           ; FlipFlop            ; work         ;
+;       |FlipFlop:LED9|                        ; 1.3 (1.3)            ; 1.3 (1.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|FlipFlop:LED9                           ; FlipFlop            ; work         ;
+;       |registradorGenerico:REG_LEDS|         ; 2.0 (2.0)            ; 3.2 (3.2)                        ; 1.2 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|registradorGenerico:REG_LEDS            ; registradorGenerico ; work         ;
+;    |Processador:Processor|                   ; 35.5 (0.0)           ; 37.9 (0.0)                       ; 2.4 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 63 (0)              ; 37 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor                                  ; Processador         ; work         ;
+;       |FlipFlop:FlagLE|                      ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|FlipFlop:FlagLE                  ; FlipFlop            ; work         ;
+;       |FlipFlop:FlagZero|                    ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|FlipFlop:FlagZero                ; FlipFlop            ; work         ;
+;       |ULASomaSub:ULA1|                      ; 14.7 (14.7)          ; 15.2 (15.2)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 25 (25)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|ULASomaSub:ULA1                  ; ULASomaSub          ; work         ;
+;       |decoderInstru:DECODER|                ; 4.8 (4.8)            ; 6.0 (6.0)                        ; 1.2 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|decoderInstru:DECODER            ; decoderInstru       ; work         ;
+;       |logicaDesvio:logicaDesvio1|           ; 0.7 (0.7)            ; 0.7 (0.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|logicaDesvio:logicaDesvio1       ; logicaDesvio        ; work         ;
+;       |muxGenerico2x1:MUX1|                  ; 1.7 (1.7)            ; 2.7 (2.7)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|muxGenerico2x1:MUX1              ; muxGenerico2x1      ; work         ;
 ;       |muxGenerico4x1:MUXProxPC|             ; 1.6 (1.6)            ; 1.6 (1.6)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|muxGenerico4x1:MUXProxPC         ; muxGenerico4x1      ; work         ;
 ;       |registradorGenerico:PC|               ; 2.3 (2.3)            ; 3.2 (3.2)                        ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 18 (18)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|registradorGenerico:PC           ; registradorGenerico ; work         ;
-;       |registradorGenerico:REGA|             ; 2.2 (2.2)            ; 2.2 (2.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|registradorGenerico:REGA         ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGA|             ; 2.2 (2.2)            ; 2.3 (2.3)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|registradorGenerico:REGA         ; registradorGenerico ; work         ;
 ;       |registradorGenerico:Reg_Retorno|      ; 2.3 (2.3)            ; 2.3 (2.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 9 (9)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|registradorGenerico:Reg_Retorno  ; registradorGenerico ; work         ;
 ;       |somaConstante:incrementaPC|           ; 2.3 (2.3)            ; 2.3 (2.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|somaConstante:incrementaPC       ; somaConstante       ; work         ;
-;    |decoderToHabilita:DECODIFICADOR|         ; 10.9 (10.9)          ; 10.9 (10.9)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (20)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|decoderToHabilita:DECODIFICADOR                        ; decoderToHabilita   ; work         ;
-;    |edgeDetector:\gravar:detectorSub0|       ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|edgeDetector:\gravar:detectorSub0                      ; edgeDetector        ; work         ;
-;    |memoriaRAM:RAM1|                         ; 257.8 (257.8)        ; 386.3 (386.3)                    ; 129.7 (129.7)                                     ; 1.1 (1.1)                        ; 0.0 (0.0)            ; 297 (297)           ; 512 (512)                 ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|memoriaRAM:RAM1                                        ; memoriaRAM          ; work         ;
-;    |romMif:ROM1|                             ; 66.8 (66.8)          ; 67.1 (67.1)                      ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 98 (98)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|romMif:ROM1                                            ; romMif              ; work         ;
+;    |decoderToHabilita:DECODIFICADOR|         ; 11.3 (11.3)          ; 11.9 (11.9)                      ; 0.6 (0.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 21 (21)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|decoderToHabilita:DECODIFICADOR                        ; decoderToHabilita   ; work         ;
+;    |edgeDetector:\gravar:detectorSub0|       ; 0.7 (0.7)            ; 0.8 (0.8)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|edgeDetector:\gravar:detectorSub0                      ; edgeDetector        ; work         ;
+;    |memoriaRAM:RAM1|                         ; 256.8 (256.8)        ; 386.1 (386.1)                    ; 129.7 (129.7)                                     ; 0.5 (0.5)                        ; 0.0 (0.0)            ; 298 (298)           ; 512 (512)                 ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|memoriaRAM:RAM1                                        ; memoriaRAM          ; work         ;
+;    |romMif:ROM1|                             ; 68.5 (68.5)          ; 70.7 (70.7)                      ; 2.3 (2.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 102 (102)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|romMif:ROM1                                            ; romMif              ; work         ;
 +----------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1088,13 +1086,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLOCK_50     ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; KEY[2]       ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; KEY[3]       ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[8]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[8]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[9]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[0]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[1]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[0]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[1]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[2]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[3]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[4]        ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[4]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[5]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[6]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[7]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1104,53 +1102,53 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                          ;
-+---------------------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                                       ; Pad To Core Index ; Setting ;
-+---------------------------------------------------------------------------+-------------------+---------+
-; CLOCK_50                                                                  ;                   ;         ;
-;      - edgeDetector:\gravar:detectorSub0|saidaQ                           ; 0                 ; 0       ;
-;      - edgeDetector:\gravar:detectorSub0|saidaQ                           ; 1                 ; 0       ;
-;      - edgeDetector:\gravar:detectorSub0|saida                            ; 1                 ; 0       ;
-; KEY[2]                                                                    ;                   ;         ;
-;      - entrada_DATA[0]~4                                                  ; 0                 ; 0       ;
-; KEY[3]                                                                    ;                   ;         ;
-;      - entrada_DATA[0]~4                                                  ; 1                 ; 0       ;
-; SW[8]                                                                     ;                   ;         ;
-;      - entrada_DATA[0]~1                                                  ; 1                 ; 0       ;
-; SW[9]                                                                     ;                   ;         ;
-;      - entrada_DATA[0]~1                                                  ; 0                 ; 0       ;
-; SW[0]                                                                     ;                   ;         ;
-;      - entrada_DATA[0]~2                                                  ; 0                 ; 0       ;
-; SW[1]                                                                     ;                   ;         ;
-;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[1]~0           ; 1                 ; 0       ;
-; SW[2]                                                                     ;                   ;         ;
-;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[2]~1           ; 0                 ; 0       ;
-; SW[3]                                                                     ;                   ;         ;
-;      - Processador:Processor|ULASomaSub:ULA1|saida[3]~2                   ; 0                 ; 0       ;
-;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[3]~3           ; 0                 ; 0       ;
-; SW[4]                                                                     ;                   ;         ;
-;      - Processador:Processor|ULASomaSub:ULA1|saida[4]~4                   ; 1                 ; 0       ;
-;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[4]~4           ; 0                 ; 0       ;
-; SW[5]                                                                     ;                   ;         ;
-;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[5]~2           ; 0                 ; 0       ;
-; SW[6]                                                                     ;                   ;         ;
-;      - Processador:Processor|ULASomaSub:ULA1|saida[6]~7                   ; 0                 ; 0       ;
-;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[6]~5           ; 0                 ; 0       ;
-; SW[7]                                                                     ;                   ;         ;
-;      - Processador:Processor|ULASomaSub:ULA1|saida[7]~9                   ; 0                 ; 0       ;
-;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[7]~6           ; 0                 ; 0       ;
-; KEY[0]                                                                    ;                   ;         ;
-;      - Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saida          ; 1                 ; 0       ;
-;      - Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saidaQ~feeder  ; 1                 ; 0       ;
-; KEY[1]                                                                    ;                   ;         ;
-;      - Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saida          ; 0                 ; 0       ;
-;      - Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saidaQ~feeder  ; 0                 ; 0       ;
-; FPGA_RESET_N                                                              ;                   ;         ;
-;      - Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saida         ; 0                 ; 0       ;
-;      - Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saidaQ~feeder ; 1                 ; 0       ;
-+---------------------------------------------------------------------------+-------------------+---------+
++--------------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                         ;
++--------------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                      ; Pad To Core Index ; Setting ;
++--------------------------------------------------------------------------+-------------------+---------+
+; CLOCK_50                                                                 ;                   ;         ;
+;      - edgeDetector:\gravar:detectorSub0|saidaQ                          ; 1                 ; 0       ;
+;      - edgeDetector:\gravar:detectorSub0|saida                           ; 1                 ; 0       ;
+;      - edgeDetector:\gravar:detectorSub0|saidaQ~feeder                   ; 0                 ; 0       ;
+; KEY[2]                                                                   ;                   ;         ;
+;      - entrada_DATA[0]~1                                                 ; 0                 ; 0       ;
+; KEY[3]                                                                   ;                   ;         ;
+;      - entrada_DATA[0]~1                                                 ; 1                 ; 0       ;
+; SW[8]                                                                    ;                   ;         ;
+;      - entrada_DATA[0]~3                                                 ; 0                 ; 0       ;
+; SW[9]                                                                    ;                   ;         ;
+;      - entrada_DATA[0]~3                                                 ; 0                 ; 0       ;
+; SW[0]                                                                    ;                   ;         ;
+;      - entrada_DATA[0]~4                                                 ; 1                 ; 0       ;
+; SW[1]                                                                    ;                   ;         ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[1]~0          ; 0                 ; 0       ;
+; SW[2]                                                                    ;                   ;         ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[2]~1          ; 0                 ; 0       ;
+; SW[3]                                                                    ;                   ;         ;
+;      - Processador:Processor|ULASomaSub:ULA1|saida[3]~3                  ; 0                 ; 0       ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[3]~3          ; 0                 ; 0       ;
+; SW[4]                                                                    ;                   ;         ;
+;      - Processador:Processor|ULASomaSub:ULA1|saida[4]~5                  ; 0                 ; 0       ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[4]~4          ; 0                 ; 0       ;
+; SW[5]                                                                    ;                   ;         ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[5]~2          ; 0                 ; 0       ;
+; SW[6]                                                                    ;                   ;         ;
+;      - Processador:Processor|ULASomaSub:ULA1|saida[6]~8                  ; 0                 ; 0       ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[6]~5          ; 0                 ; 0       ;
+; SW[7]                                                                    ;                   ;         ;
+;      - Processador:Processor|ULASomaSub:ULA1|saida[7]~10                 ; 0                 ; 0       ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[7]~6          ; 0                 ; 0       ;
+; KEY[0]                                                                   ;                   ;         ;
+;      - Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saida         ; 1                 ; 0       ;
+;      - Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saidaQ~feeder ; 1                 ; 0       ;
+; KEY[1]                                                                   ;                   ;         ;
+;      - Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saida         ; 0                 ; 0       ;
+;      - Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saidaQ~feeder ; 0                 ; 0       ;
+; FPGA_RESET_N                                                             ;                   ;         ;
+;      - Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saidaQ       ; 1                 ; 0       ;
+;      - Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saida        ; 0                 ; 0       ;
++--------------------------------------------------------------------------+-------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1159,86 +1157,86 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                       ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; CLOCK_50                                                   ; PIN_M9              ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saida  ; LABCELL_X25_Y4_N51  ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saida  ; LABCELL_X29_Y4_N12  ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saida ; MLABCELL_X42_Y9_N51 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; Processador:Processor|decoderInstru:DECODER|saida[11]~4    ; LABCELL_X32_Y8_N30  ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:Processor|decoderInstru:DECODER|saida[7]~5     ; LABCELL_X35_Y9_N24  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decoderToHabilita:DECODIFICADOR|Limpa_Key1~1               ; LABCELL_X36_Y8_N57  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; decoderToHabilita:DECODIFICADOR|Limpa_Key1~2               ; LABCELL_X36_Y8_N54  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; decoderToHabilita:DECODIFICADOR|Limpa_Key1~3               ; LABCELL_X36_Y8_N0   ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; decoderToHabilita:DECODIFICADOR|habilita_HEX0~2            ; MLABCELL_X42_Y4_N33 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decoderToHabilita:DECODIFICADOR|habilita_HEX1~0            ; MLABCELL_X37_Y2_N15 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decoderToHabilita:DECODIFICADOR|habilita_HEX2~0            ; MLABCELL_X37_Y2_N57 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decoderToHabilita:DECODIFICADOR|habilita_HEX3~0            ; LABCELL_X29_Y7_N21  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decoderToHabilita:DECODIFICADOR|habilita_HEX4~0            ; MLABCELL_X42_Y4_N39 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decoderToHabilita:DECODIFICADOR|habilita_HEX5              ; LABCELL_X40_Y9_N0   ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decoderToHabilita:DECODIFICADOR|habilita_LEDS~2            ; LABCELL_X31_Y7_N12  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; edgeDetector:\gravar:detectorSub0|saida                    ; LABCELL_X36_Y7_N0   ; 588     ; Clock        ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~696                                    ; LABCELL_X35_Y10_N15 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~698                                    ; MLABCELL_X34_Y9_N57 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~700                                    ; LABCELL_X35_Y10_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~702                                    ; MLABCELL_X37_Y6_N57 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~704                                    ; LABCELL_X35_Y10_N39 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~706                                    ; LABCELL_X35_Y3_N30  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~708                                    ; LABCELL_X35_Y3_N54  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~710                                    ; LABCELL_X40_Y8_N12  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~712                                    ; LABCELL_X31_Y5_N54  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~714                                    ; MLABCELL_X37_Y6_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~716                                    ; LABCELL_X35_Y6_N45  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~718                                    ; MLABCELL_X37_Y6_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~720                                    ; MLABCELL_X42_Y5_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~722                                    ; LABCELL_X39_Y6_N27  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~724                                    ; MLABCELL_X34_Y9_N54 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~726                                    ; LABCELL_X39_Y6_N48  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~728                                    ; MLABCELL_X34_Y5_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~730                                    ; LABCELL_X41_Y8_N45  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~732                                    ; LABCELL_X31_Y5_N33  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~734                                    ; LABCELL_X40_Y8_N30  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~736                                    ; MLABCELL_X34_Y5_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~738                                    ; LABCELL_X39_Y5_N39  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~740                                    ; LABCELL_X41_Y5_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~742                                    ; LABCELL_X31_Y8_N57  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~744                                    ; MLABCELL_X37_Y3_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~746                                    ; MLABCELL_X37_Y3_N57 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~748                                    ; LABCELL_X31_Y5_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~750                                    ; LABCELL_X39_Y5_N48  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~752                                    ; MLABCELL_X34_Y5_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~754                                    ; LABCELL_X40_Y5_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~756                                    ; LABCELL_X41_Y5_N15  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~758                                    ; LABCELL_X39_Y6_N36  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~760                                    ; LABCELL_X35_Y3_N42  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~762                                    ; MLABCELL_X34_Y9_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~764                                    ; MLABCELL_X34_Y9_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~766                                    ; LABCELL_X40_Y7_N42  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~768                                    ; LABCELL_X39_Y7_N54  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~770                                    ; MLABCELL_X34_Y9_N24 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~772                                    ; LABCELL_X40_Y8_N21  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~774                                    ; LABCELL_X40_Y8_N42  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~776                                    ; LABCELL_X41_Y7_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~778                                    ; MLABCELL_X34_Y3_N45 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~780                                    ; LABCELL_X40_Y6_N18  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~782                                    ; LABCELL_X40_Y6_N48  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~784                                    ; LABCELL_X35_Y6_N42  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~786                                    ; LABCELL_X39_Y7_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~788                                    ; MLABCELL_X37_Y9_N57 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~790                                    ; MLABCELL_X37_Y9_N9  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~792                                    ; LABCELL_X32_Y8_N36  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~794                                    ; LABCELL_X40_Y7_N27  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~796                                    ; LABCELL_X32_Y5_N21  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~798                                    ; LABCELL_X32_Y5_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~800                                    ; LABCELL_X40_Y7_N12  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~802                                    ; LABCELL_X31_Y8_N45  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~804                                    ; MLABCELL_X34_Y5_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~806                                    ; MLABCELL_X34_Y6_N54 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~808                                    ; LABCELL_X32_Y8_N57  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~810                                    ; LABCELL_X31_Y7_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~812                                    ; LABCELL_X32_Y8_N21  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~814                                    ; LABCELL_X31_Y8_N27  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~816                                    ; LABCELL_X32_Y6_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~818                                    ; LABCELL_X29_Y7_N12  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~820                                    ; LABCELL_X35_Y5_N42  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; memoriaRAM:RAM1|ram~822                                    ; LABCELL_X40_Y5_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saida  ; LABCELL_X16_Y4_N54  ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saida  ; LABCELL_X12_Y3_N48  ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saida ; LABCELL_X41_Y4_N42  ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; Processador:Processor|decoderInstru:DECODER|saida[11]~6    ; LABCELL_X31_Y7_N42  ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:Processor|decoderInstru:DECODER|saida[7]~2     ; MLABCELL_X34_Y2_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|Limpa_Key1~1               ; LABCELL_X31_Y5_N12  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|Limpa_Key1~2               ; LABCELL_X29_Y5_N57  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|Limpa_Key1~3               ; LABCELL_X31_Y5_N18  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX0~2            ; LABCELL_X41_Y4_N33  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX1~0            ; LABCELL_X40_Y4_N15  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX2~0            ; LABCELL_X40_Y4_N54  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX3~0            ; LABCELL_X40_Y4_N51  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX4~0            ; LABCELL_X41_Y4_N39  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX5              ; LABCELL_X29_Y6_N27  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_LEDS~1            ; LABCELL_X31_Y3_N30  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; edgeDetector:\gravar:detectorSub0|saida                    ; LABCELL_X32_Y6_N48  ; 586     ; Clock        ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~696                                    ; MLABCELL_X34_Y6_N48 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~698                                    ; LABCELL_X32_Y7_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~700                                    ; LABCELL_X32_Y7_N39  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~702                                    ; LABCELL_X32_Y1_N36  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~704                                    ; LABCELL_X36_Y4_N27  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~706                                    ; MLABCELL_X34_Y4_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~708                                    ; LABCELL_X36_Y4_N39  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~710                                    ; MLABCELL_X37_Y6_N33 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~712                                    ; LABCELL_X32_Y7_N30  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~714                                    ; LABCELL_X29_Y3_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~716                                    ; LABCELL_X32_Y8_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~718                                    ; LABCELL_X32_Y8_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~720                                    ; MLABCELL_X34_Y7_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~722                                    ; MLABCELL_X28_Y5_N48 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~724                                    ; MLABCELL_X34_Y7_N33 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~726                                    ; MLABCELL_X37_Y6_N39 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~728                                    ; MLABCELL_X37_Y5_N36 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~730                                    ; MLABCELL_X37_Y4_N51 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~732                                    ; LABCELL_X26_Y6_N39  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~734                                    ; LABCELL_X29_Y5_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~736                                    ; MLABCELL_X37_Y5_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~738                                    ; LABCELL_X35_Y3_N39  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~740                                    ; LABCELL_X29_Y3_N18  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~742                                    ; LABCELL_X32_Y1_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~744                                    ; MLABCELL_X28_Y6_N42 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~746                                    ; LABCELL_X31_Y1_N24  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~748                                    ; MLABCELL_X37_Y1_N42 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~750                                    ; MLABCELL_X34_Y5_N15 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~752                                    ; LABCELL_X41_Y5_N12  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~754                                    ; MLABCELL_X37_Y7_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~756                                    ; LABCELL_X36_Y6_N33  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~758                                    ; MLABCELL_X37_Y6_N30 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~760                                    ; LABCELL_X40_Y5_N24  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~762                                    ; LABCELL_X36_Y7_N27  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~764                                    ; MLABCELL_X34_Y6_N45 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~766                                    ; LABCELL_X40_Y3_N39  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~768                                    ; MLABCELL_X37_Y4_N54 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~770                                    ; LABCELL_X40_Y3_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~772                                    ; MLABCELL_X34_Y4_N54 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~774                                    ; LABCELL_X35_Y6_N33  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~776                                    ; LABCELL_X32_Y7_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~778                                    ; LABCELL_X39_Y2_N24  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~780                                    ; LABCELL_X39_Y2_N54  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~782                                    ; MLABCELL_X34_Y4_N57 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~784                                    ; LABCELL_X36_Y3_N30  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~786                                    ; LABCELL_X29_Y5_N48  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~788                                    ; MLABCELL_X37_Y6_N57 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~790                                    ; LABCELL_X35_Y4_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~792                                    ; LABCELL_X40_Y5_N36  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~794                                    ; MLABCELL_X34_Y8_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~796                                    ; LABCELL_X35_Y5_N33  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~798                                    ; LABCELL_X35_Y4_N21  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~800                                    ; MLABCELL_X34_Y5_N21 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~802                                    ; LABCELL_X35_Y5_N15  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~804                                    ; LABCELL_X35_Y5_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~806                                    ; LABCELL_X32_Y1_N42  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~808                                    ; MLABCELL_X34_Y6_N33 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~810                                    ; MLABCELL_X37_Y3_N36 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~812                                    ; LABCELL_X35_Y3_N24  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~814                                    ; MLABCELL_X34_Y4_N21 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~816                                    ; LABCELL_X36_Y6_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~818                                    ; LABCELL_X36_Y3_N39  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~820                                    ; LABCELL_X39_Y5_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~822                                    ; LABCELL_X39_Y3_N15  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1247,7 +1245,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+---------+
 ; Name                                    ; Fan-Out ;
 +-----------------------------------------+---------+
-; edgeDetector:\gravar:detectorSub0|saida ; 588     ;
+; edgeDetector:\gravar:detectorSub0|saida ; 586     ;
 +-----------------------------------------+---------+
 
 
@@ -1256,21 +1254,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+---------------------------+
 ; Routing Resource Type        ; Usage                     ;
 +------------------------------+---------------------------+
-; Block interconnects          ; 1,919 / 140,056 ( 1 % )   ;
-; C12 interconnects            ; 36 / 6,048 ( < 1 % )      ;
-; C2 interconnects             ; 678 / 54,648 ( 1 % )      ;
-; C4 interconnects             ; 368 / 25,920 ( 1 % )      ;
+; Block interconnects          ; 1,967 / 140,056 ( 1 % )   ;
+; C12 interconnects            ; 24 / 6,048 ( < 1 % )      ;
+; C2 interconnects             ; 685 / 54,648 ( 1 % )      ;
+; C4 interconnects             ; 391 / 25,920 ( 2 % )      ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )            ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )            ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )            ;
-; Direct links                 ; 112 / 140,056 ( < 1 % )   ;
+; Direct links                 ; 93 / 140,056 ( < 1 % )    ;
 ; Global clocks                ; 0 / 16 ( 0 % )            ;
-; Local interconnects          ; 324 / 36,960 ( < 1 % )    ;
+; Local interconnects          ; 328 / 36,960 ( < 1 % )    ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )            ;
-; R14 interconnects            ; 106 / 5,984 ( 2 % )       ;
-; R14/C12 interconnect drivers ; 123 / 9,504 ( 1 % )       ;
-; R3 interconnects             ; 822 / 60,192 ( 1 % )      ;
-; R6 interconnects             ; 1,095 / 127,072 ( < 1 % ) ;
+; R14 interconnects            ; 88 / 5,984 ( 1 % )        ;
+; R14/C12 interconnect drivers ; 103 / 9,504 ( 1 % )       ;
+; R3 interconnects             ; 817 / 60,192 ( 1 % )      ;
+; R6 interconnects             ; 1,109 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 0 / 120 ( 0 % )           ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )         ;
 +------------------------------+---------------------------+
@@ -1448,16 +1446,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                                     ;
-+-----------------------------------------+-------------------------------------+-------------------+
-; Source Clock(s)                         ; Destination Clock(s)                ; Delay Added in ns ;
-+-----------------------------------------+-------------------------------------+-------------------+
-; CLOCK_50                                ; CLOCK_50                            ; 103.7             ;
-; CLOCK_50                                ; CLOCK_50,FPGA_RESET_N,KEY[1],KEY[0] ; 88.8              ;
-; I/O                                     ; CLOCK_50                            ; 18.3              ;
-; CLOCK_50,FPGA_RESET_N,KEY[1],KEY[0],I/O ; CLOCK_50                            ; 4.6               ;
-+-----------------------------------------+-------------------------------------+-------------------+
++---------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                             ;
++-----------------+-------------------------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s)                ; Delay Added in ns ;
++-----------------+-------------------------------------+-------------------+
+; CLOCK_50        ; CLOCK_50,FPGA_RESET_N,KEY[1],KEY[0] ; 189.8             ;
+; CLOCK_50        ; CLOCK_50                            ; 53.6              ;
+; I/O             ; CLOCK_50                            ; 18.4              ;
+; CLOCK_50,I/O    ; CLOCK_50                            ; 11.8              ;
++-----------------+-------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
@@ -1467,106 +1465,106 @@ This will disable optimization of problematic paths and expose them for further 
 +---------------------------------------------------------+-------------------------------------------------------------+-------------------+
 ; Source Register                                         ; Destination Register                                        ; Delay Added in ns ;
 +---------------------------------------------------------+-------------------------------------------------------------+-------------------+
-; KEY[0]                                                  ; Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saidaQ  ; 5.679             ;
-; KEY[1]                                                  ; Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saidaQ  ; 5.204             ;
-; FPGA_RESET_N                                            ; Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saidaQ ; 4.910             ;
-; CLOCK_50                                                ; edgeDetector:\gravar:detectorSub0|saidaQ                    ; 2.512             ;
-; Processador:Processor|registradorGenerico:PC|DOUT[4]    ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 2.362             ;
-; Processador:Processor|registradorGenerico:PC|DOUT[8]    ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 2.338             ;
-; Processador:Processor|registradorGenerico:PC|DOUT[0]    ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 2.185             ;
-; Processador:Processor|registradorGenerico:PC|DOUT[2]    ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 2.156             ;
-; Processador:Processor|registradorGenerico:PC|DOUT[3]    ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 2.130             ;
-; Processador:Processor|registradorGenerico:PC|DOUT[5]    ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 2.047             ;
-; Processador:Processor|registradorGenerico:PC|DOUT[7]    ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 2.015             ;
-; Processador:Processor|registradorGenerico:PC|DOUT[1]    ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 2.007             ;
-; Processador:Processor|registradorGenerico:PC|DOUT[6]    ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.985             ;
-; memoriaRAM:RAM1|ram~15                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~23                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~271                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~279                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~143                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~151                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~399                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~407                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~79                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~87                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~335                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~343                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~207                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~215                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~463                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~471                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~31                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~159                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~95                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~223                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~39                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~167                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~103                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~231                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~287                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~415                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~351                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~479                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~295                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~423                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~359                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~487                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~47                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~55                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~303                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~311                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~175                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~183                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~431                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~439                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~111                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~119                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~367                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~375                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~239                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~247                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~495                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~503                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~63                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~191                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~127                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~255                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~71                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~199                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~135                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~263                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~319                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~447                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~383                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~511                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~327                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~455                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~391                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; memoriaRAM:RAM1|ram~519                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; KEY[2]                                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0|DOUT  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; KEY[3]                                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; Detector_Keys:Detect_KEY1|FlipFlop:Flip_Flop_Key0|DOUT  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; SW[8]                                                   ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; SW[9]                                                   ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; SW[0]                                                   ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0|DOUT ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.279             ;
-; Processador:Processor|registradorGenerico:REGA|DOUT[3]  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.011             ;
-; Processador:Processor|registradorGenerico:REGA|DOUT[4]  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.924             ;
-; Processador:Processor|registradorGenerico:REGA|DOUT[0]  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 0.882             ;
-; Processador:Processor|registradorGenerico:REGA|DOUT[2]  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 0.873             ;
-; Processador:Processor|registradorGenerico:REGA|DOUT[1]  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 0.861             ;
-; memoriaRAM:RAM1|ram~316                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.822             ;
-; memoriaRAM:RAM1|ram~345                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 0.796             ;
-; memoriaRAM:RAM1|ram~242                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.795             ;
-; memoriaRAM:RAM1|ram~337                                 ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 0.795             ;
-; memoriaRAM:RAM1|ram~81                                  ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 0.779             ;
-; Processador:Processor|registradorGenerico:REGA|DOUT[6]  ; memoriaRAM:RAM1|ram~101                                     ; 0.768             ;
-; Processador:Processor|registradorGenerico:REGA|DOUT[7]  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.753             ;
-; memoriaRAM:RAM1|ram~396                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.738             ;
-; memoriaRAM:RAM1|ram~140                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.728             ;
-; memoriaRAM:RAM1|ram~91                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.669             ;
+; KEY[1]                                                  ; Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saidaQ  ; 5.939             ;
+; KEY[0]                                                  ; Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saidaQ  ; 5.346             ;
+; FPGA_RESET_N                                            ; Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saidaQ ; 4.652             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[8]    ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 2.836             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[1]    ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 2.515             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[4]    ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 2.507             ;
+; CLOCK_50                                                ; edgeDetector:\gravar:detectorSub0|saidaQ                    ; 2.506             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[2]    ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 2.488             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[6]    ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 2.477             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[3]    ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 2.470             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[5]    ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 2.406             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[7]    ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 2.230             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[0]    ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 2.194             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[6]  ; Processador:Processor|registradorGenerico:REGA|DOUT[6]      ; 1.200             ;
+; memoriaRAM:RAM1|ram~15                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~23                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~271                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~279                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~143                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~151                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~399                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~407                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~79                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~87                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~335                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~343                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~207                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~215                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~463                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~471                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~31                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~159                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~95                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~223                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~39                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~167                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~103                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~231                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~287                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~415                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~351                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~479                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~295                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~423                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~359                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~487                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~47                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~55                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~303                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~311                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~175                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~183                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~431                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~439                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~111                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~119                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~367                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~375                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~239                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~247                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~495                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~503                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~63                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~191                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~127                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~255                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~71                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~199                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~135                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~263                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~319                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~447                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~383                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~511                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~327                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~455                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~391                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; memoriaRAM:RAM1|ram~519                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0|DOUT  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; Detector_Keys:Detect_KEY1|FlipFlop:Flip_Flop_Key0|DOUT  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; KEY[2]                                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; KEY[3]                                                  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; SW[8]                                                   ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; SW[9]                                                   ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; SW[0]                                                   ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0|DOUT ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.140             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[7]  ; Processador:Processor|registradorGenerico:REGA|DOUT[7]      ; 1.080             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[0]  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 1.037             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[2]  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.910             ;
+; memoriaRAM:RAM1|ram~309                                 ; Processador:Processor|registradorGenerico:REGA|DOUT[6]      ; 0.858             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[4]  ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.857             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[3]  ; memoriaRAM:RAM1|ram~314                                     ; 0.846             ;
+; memoriaRAM:RAM1|ram~390                                 ; Processador:Processor|registradorGenerico:REGA|DOUT[7]      ; 0.839             ;
+; memoriaRAM:RAM1|ram~314                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.821             ;
+; memoriaRAM:RAM1|ram~426                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.818             ;
+; memoriaRAM:RAM1|ram~61                                  ; Processador:Processor|registradorGenerico:REGA|DOUT[6]      ; 0.777             ;
+; memoriaRAM:RAM1|ram~137                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.770             ;
+; memoriaRAM:RAM1|ram~378                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.768             ;
+; memoriaRAM:RAM1|ram~250                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.763             ;
+; memoriaRAM:RAM1|ram~434                                 ; Processador:Processor|FlipFlop:FlagLE|DOUT                  ; 0.759             ;
 +---------------------------------------------------------+-------------------------------------------------------------+-------------------+
 Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
@@ -1591,7 +1589,7 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:04
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:03
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:05
@@ -1600,22 +1598,22 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 14% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
+    Info (170196): Router estimated peak interconnect usage is 10% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:11
-Info (11888): Total time spent on timing analysis during the Fitter is 2.29 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:12
+Info (11888): Total time spent on timing analysis during the Fitter is 2.50 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:07
 Info (144001): Generated suppressed messages file C:/Descomp/Descomp/entregaInt/Aula08/output_files/Atv06.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 6263 megabytes
-    Info: Processing ended: Sun Oct 15 02:18:39 2023
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:01:19
+    Info: Peak virtual memory: 6258 megabytes
+    Info: Processing ended: Sun Oct 15 07:47:30 2023
+    Info: Elapsed time: 00:00:41
+    Info: Total CPU time (on all processors): 00:01:21
 
 
 +----------------------------+
