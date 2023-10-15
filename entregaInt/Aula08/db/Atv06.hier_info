@@ -81,7 +81,7 @@ saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 CLK => registradorgenerico:PC.CLK
 CLK => registradorgenerico:REGA.CLK
 CLK => flipflop:FlagZero.CLK
-CLK => flipflop:FlagLE.CLK
+CLK => flipflop:FlagNEG.CLK
 CLK => registradorgenerico:Reg_Retorno.CLK
 ROM_Address[0] <= registradorgenerico:PC.DOUT[0]
 ROM_Address[1] <= registradorgenerico:PC.DOUT[1]
@@ -523,7 +523,7 @@ saida[5] <= saida[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
 saida[6] <= saida[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
 saida[7] <= saida[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 zf <= zf.DB_MAX_OUTPUT_PORT_TYPE
-le <= le.DB_MAX_OUTPUT_PORT_TYPE
+neg <= saida[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Atv06|Processador:Processor|FlipFlop:FlagZero
@@ -534,7 +534,7 @@ CLK => DOUT~reg0.CLK
 RST => DOUT~reg0.ACLR
 
 
-|Atv06|Processador:Processor|FlipFlop:FlagLE
+|Atv06|Processador:Processor|FlipFlop:FlagNEG
 DIN => DOUT~reg0.DATAIN
 DOUT <= DOUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ENABLE => DOUT~reg0.ENA
@@ -544,7 +544,8 @@ RST => DOUT~reg0.ACLR
 
 |Atv06|Processador:Processor|logicaDesvio:logicaDesvio1
 entrada_zf => saida.IN0
-entrada_le => saida.IN0
+entrada_zf => saida.IN0
+entrada_neg => saida.IN1
 entrada_jeq => saida.IN1
 entrada_jmp => saida.IN1
 entrada_jsr => saida.IN1

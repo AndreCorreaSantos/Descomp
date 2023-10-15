@@ -35,7 +35,7 @@ architecture arquitetura of Processador is
   signal habilitaA : std_logic;
   signal opULA : std_logic_vector(2 downto 0);
   signal habZF : std_logic;
-  signal habLE : std_logic;
+  signal habNEG : std_logic;
 
 
   signal saida_regA: std_logic_vector(7 downto 0);
@@ -46,8 +46,8 @@ architecture arquitetura of Processador is
   signal saida_zf_ULA: std_logic;
   signal saida_zf: std_logic;
   
-  signal saida_le_ULA:std_logic;
-  signal saida_le : std_logic;
+  signal saida_neg_ULA:std_logic;
+  signal saida_neg : std_logic;
 
   signal saida_desvio: std_logic_vector(1 downto 0);
   signal saida_reg_retorno: std_logic_vector(8 downto 0);
@@ -93,7 +93,7 @@ ULA1 : entity work.ULASomaSub  generic map(larguraDados => 8)
 						  saida => saida_ULA, 
 						  seletor => opULA, 
 						  zf => saida_zf_ULA,
-              le => saida_le_ULA);
+              neg => saida_neg_ULA);
 			 
 FlagZero :  entity work.FlipFLop
         port map( DIN => saida_zf_ULA,
@@ -102,16 +102,16 @@ FlagZero :  entity work.FlipFLop
                  ENABLE => habZF,
 					  RST => '0');
 
-FlagLE :  entity work.FlipFLop
-port map( DIN => saida_le_ULA,
-          DOUT => saida_le ,
+FlagNEG :  entity work.FlipFLop
+port map( DIN => saida_neg_ULA,
+          DOUT => saida_neg ,
           CLK => CLK ,
-          ENABLE => habLE,
+          ENABLE => habNEG,
     RST => '0');
 					  
 logicaDesvio1: entity work.logicaDesvio
         port map( entrada_zf => saida_zf,
-                 entrada_le => saida_le,
+                 entrada_neg => saida_neg,
                  entrada_jeq => jeq,
                  entrada_jmp =>jmp,
                  entrada_jsr => jsr,
@@ -138,7 +138,7 @@ selMUX <= saida_dec(8);
 habilitaA <= saida_dec(7);
 opULA <= saida_dec(6 downto 4);
 habZF <= saida_dec(3);
-habLE <= saida_dec(2);
+habNEG <= saida_dec(2);
 Rd <= saida_dec(1);
 Wr <= saida_dec(0);
 

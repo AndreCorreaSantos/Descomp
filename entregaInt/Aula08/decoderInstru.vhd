@@ -37,7 +37,7 @@ saida <= "000000000000000" when opcode = NOP else
          "100100000000000" when opcode = JSR else
          "001000000000000" when opcode = RET else
          "000000010110010" when opcode = OP_AND else
-         "000000001000110" when opcode = CLE else
+         "000000001001110" when opcode = CLE else
          "000001000000000" when opcode = JLE else
          "000000000000000";  -- NOP para os opcodes Indefinidos
 end architecture;

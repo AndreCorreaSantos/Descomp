@@ -1,6 +1,6 @@
 LDI $10
 STA @0
-LDI $9
+LDI $11
 CLE @0
 JLE @6
 JMP @5

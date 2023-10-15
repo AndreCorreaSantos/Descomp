@@ -9,7 +9,7 @@ entity ULASomaSub is
       seletor:  in STD_LOGIC_VECTOR (2 downto 0);
       saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0);
 		zf: out std_logic;
-      le : out std_logic
+      neg : out std_logic
     );
 end entity;
 
@@ -31,5 +31,5 @@ architecture comportamento of ULASomaSub is
 					mascara when (seletor = "011") else
                signedSub when (seletor = "100");
 		zf <= not (saida(7) or saida(6) or saida(5) or saida(4) or saida(3) or saida(2) or saida(1) or saida(0));
-      le <= zf OR saida(larguraDados-1); -- checar se esta correto
+      neg <= saida(larguraDados-1); -- checar se esta correto
 end architecture;
