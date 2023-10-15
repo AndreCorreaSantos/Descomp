@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sat Oct 14 06:03:56 2023
+Fitter Status : Successful - Sat Oct 14 22:06:36 2023
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Atv06
 Top-level Entity Name : Atv06
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 375 / 18,480 ( 2 % )
+Logic utilization (in ALMs) : 366 / 18,480 ( 2 % )
 Total registers : 589
 Total pins : 68 / 224 ( 30 % )
 Total virtual pins : 0

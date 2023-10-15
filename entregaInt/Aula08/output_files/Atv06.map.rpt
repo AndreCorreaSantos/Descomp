@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Atv06
-Sat Oct 14 06:03:20 2023
+Sat Oct 14 22:06:04 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -85,7 +85,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Oct 14 06:03:20 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sat Oct 14 22:06:04 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Atv06                                       ;
 ; Top-level Entity Name           ; Atv06                                       ;
@@ -248,14 +248,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------+
 ; Resource                                    ; Usage                                   ;
 +---------------------------------------------+-----------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 472                                     ;
+; Estimate of Logic utilization (ALMs needed) ; 469                                     ;
 ;                                             ;                                         ;
-; Combinational ALUT usage for logic          ; 481                                     ;
-;     -- 7 input functions                    ; 7                                       ;
-;     -- 6 input functions                    ; 271                                     ;
-;     -- 5 input functions                    ; 50                                      ;
-;     -- 4 input functions                    ; 60                                      ;
-;     -- <=3 input functions                  ; 93                                      ;
+; Combinational ALUT usage for logic          ; 483                                     ;
+;     -- 7 input functions                    ; 6                                       ;
+;     -- 6 input functions                    ; 260                                     ;
+;     -- 5 input functions                    ; 53                                      ;
+;     -- 4 input functions                    ; 65                                      ;
+;     -- <=3 input functions                  ; 99                                      ;
 ;                                             ;                                         ;
 ; Dedicated logic registers                   ; 580                                     ;
 ;                                             ;                                         ;
@@ -265,8 +265,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                         ;
 ; Maximum fan-out node                        ; edgeDetector:\gravar:detectorSub0|saida ;
 ; Maximum fan-out                             ; 576                                     ;
-; Total fan-out                               ; 4220                                    ;
-; Average fan-out                             ; 3.53                                    ;
+; Total fan-out                               ; 4202                                    ;
+; Average fan-out                             ; 3.50                                    ;
 +---------------------------------------------+-----------------------------------------+
 
 
@@ -275,7 +275,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Entity Name         ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
-; |Atv06                                       ; 481 (9)             ; 580 (0)                   ; 0                 ; 0          ; 68   ; 0            ; |Atv06                                                        ; Atv06               ; work         ;
+; |Atv06                                       ; 483 (9)             ; 580 (0)                   ; 0                 ; 0          ; 68   ; 0            ; |Atv06                                                        ; Atv06               ; work         ;
 ;    |Detector_Keys:Detect_KEY0|               ; 1 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0                              ; Detector_Keys       ; work         ;
 ;       |FlipFlop:Flip_Flop_Key0|              ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0      ; FlipFlop            ; work         ;
 ;       |edgeDetector:detectorKey0|            ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0    ; edgeDetector        ; work         ;
@@ -302,10 +302,10 @@ https://fpgasoftware.intel.com/eula.
 ;       |FlipFlop:LED8|                        ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|FlipFlop:LED8                           ; FlipFlop            ; work         ;
 ;       |FlipFlop:LED9|                        ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|FlipFlop:LED9                           ; FlipFlop            ; work         ;
 ;       |registradorGenerico:REG_LEDS|         ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|registradorGenerico:REG_LEDS            ; registradorGenerico ; work         ;
-;    |Processador:Processor|                   ; 62 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor                                  ; Processador         ; work         ;
+;    |Processador:Processor|                   ; 63 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor                                  ; Processador         ; work         ;
 ;       |FlipFlop:FlagZero|                    ; 4 (4)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|FlipFlop:FlagZero                ; FlipFlop            ; work         ;
 ;       |ULASomaSub:ULA1|                      ; 20 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|ULASomaSub:ULA1                  ; ULASomaSub          ; work         ;
-;       |decoderInstru:DECODER|                ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|decoderInstru:DECODER            ; decoderInstru       ; work         ;
+;       |decoderInstru:DECODER|                ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|decoderInstru:DECODER            ; decoderInstru       ; work         ;
 ;       |logicaDesvio:logicaDesvio1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|logicaDesvio:logicaDesvio1       ; logicaDesvio        ; work         ;
 ;       |muxGenerico2x1:MUX1|                  ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|muxGenerico2x1:MUX1              ; muxGenerico2x1      ; work         ;
 ;       |muxGenerico4x1:MUXProxPC|             ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|muxGenerico4x1:MUXProxPC         ; muxGenerico4x1      ; work         ;
@@ -313,10 +313,10 @@ https://fpgasoftware.intel.com/eula.
 ;       |registradorGenerico:REGA|             ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|registradorGenerico:REGA         ; registradorGenerico ; work         ;
 ;       |registradorGenerico:Reg_Retorno|      ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|registradorGenerico:Reg_Retorno  ; registradorGenerico ; work         ;
 ;       |somaConstante:incrementaPC|           ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|somaConstante:incrementaPC       ; somaConstante       ; work         ;
-;    |decoderToHabilita:DECODIFICADOR|         ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|decoderToHabilita:DECODIFICADOR                        ; decoderToHabilita   ; work         ;
+;    |decoderToHabilita:DECODIFICADOR|         ; 20 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|decoderToHabilita:DECODIFICADOR                        ; decoderToHabilita   ; work         ;
 ;    |edgeDetector:\gravar:detectorSub0|       ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|edgeDetector:\gravar:detectorSub0                      ; edgeDetector        ; work         ;
-;    |memoriaRAM:RAM1|                         ; 298 (298)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Atv06|memoriaRAM:RAM1                                        ; memoriaRAM          ; work         ;
-;    |romMif:ROM1|                             ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|romMif:ROM1                                            ; romMif              ; work         ;
+;    |memoriaRAM:RAM1|                         ; 297 (297)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Atv06|memoriaRAM:RAM1                                        ; memoriaRAM          ; work         ;
+;    |romMif:ROM1|                             ; 46 (46)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|romMif:ROM1                                            ; romMif              ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -763,23 +763,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 553                         ;
 ;     ENA SLD           ; 8                           ;
 ;     plain             ; 16                          ;
-; arriav_lcell_comb     ; 481                         ;
+; arriav_lcell_comb     ; 483                         ;
 ;     arith             ; 18                          ;
 ;         1 data inputs ; 9                           ;
 ;         4 data inputs ; 1                           ;
 ;         5 data inputs ; 8                           ;
-;     extend            ; 7                           ;
-;         7 data inputs ; 7                           ;
-;     normal            ; 456                         ;
-;         2 data inputs ; 78                          ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 59                          ;
-;         5 data inputs ; 42                          ;
-;         6 data inputs ; 271                         ;
+;     extend            ; 6                           ;
+;         7 data inputs ; 6                           ;
+;     normal            ; 459                         ;
+;         2 data inputs ; 76                          ;
+;         3 data inputs ; 14                          ;
+;         4 data inputs ; 64                          ;
+;         5 data inputs ; 45                          ;
+;         6 data inputs ; 260                         ;
 ; boundary_port         ; 68                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.20                       ;
-; Average LUT depth     ; 6.40                        ;
+; Average LUT depth     ; 6.37                        ;
 +-----------------------+-----------------------------+
 
 
@@ -798,7 +798,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 14 06:03:12 2023
+    Info: Processing started: Sat Oct 14 22:05:56 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Atv06 -c Atv06
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -924,8 +924,8 @@ Info (12128): Elaborating entity "registradorGenerico" for hierarchy "HEXES:Hexe
 Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "HEXES:Hexes_Unity|conversorHex7Seg:Conversor0" File: C:/Descomp/Descomp/entregaInt/Aula08/HEXES.vhd Line: 27
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "memoriaRAM:RAM1|ram" is uninferred due to asynchronous read logic File: C:/Descomp/Descomp/entregaInt/Aula08/memoriaRAM.vhd Line: 27
-Warning (113028): 392 out of 512 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Descomp/Descomp/entregaInt/Aula08/rom.mif Line: 1
-    Warning (113027): Addresses ranging from 120 to 511 are not initialized File: C:/Descomp/Descomp/entregaInt/Aula08/rom.mif Line: 1
+Warning (113028): 410 out of 512 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Descomp/Descomp/entregaInt/Aula08/rom.mif Line: 1
+    Warning (113027): Addresses ranging from 102 to 511 are not initialized File: C:/Descomp/Descomp/entregaInt/Aula08/rom.mif Line: 1
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "entrada_DATA[7]" into a selector File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
     Warning (13048): Converted tri-state node "entrada_DATA[6]" into a selector File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
@@ -946,13 +946,13 @@ Warning (14026): LATCH primitive "Processador:Processor|ULASomaSub:ULA1|saida[7]
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1117 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1119 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 1049 logic cells
+    Info (21061): Implemented 1051 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4853 megabytes
-    Info: Processing ended: Sat Oct 14 06:03:20 2023
+    Info: Peak virtual memory: 4850 megabytes
+    Info: Processing ended: Sat Oct 14 22:06:04 2023
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:17
 
