@@ -44,13 +44,14 @@ def readAddr(line):
             
 def parseMnemonic(line):
     line = line.replace("\n", "")
+    line = line.strip()
     line = line.split(' ')
     m = line[0]
     line[0] = mne[line[0]]
     if m == "NOP" or m == "RET":
-        line = " ".join(line)+" "+'000000000'+';\n'
+        line = " ".join(line)+" "+'0000000000'
     else:
-        line = " ".join(line)+';\n'
+        line = " ".join(line)
     return line
 
 
@@ -89,11 +90,10 @@ for i, line in enumerate(parsed_lines):
     for j, e in enumerate(elements):
         e = e.strip()
         if e in labels.keys():
-            elements[j] = str(labels[e])+'\n'
+            elements[j] = str(labels[e])
     parsed_lines[i] = ' '.join(elements)
     # Removing empty lines
     parsed_lines[i] = parsed_lines[i].replace(" ","")
-
 #remove last line
 parsed_lines[-1] = parsed_lines[-1][0:-1]
 
@@ -117,8 +117,7 @@ with open(output_name, 'w') as file:
     # Iterate through the list and write each string
     for i, line in enumerate(parsed_lines):
         # Write memory address in hex, followed by binary data
-        file.write(f'{i:03d} : {line}')  # Using 3 digits for the address (up to 512 addresses)
-    file.write('\n')
+        file.write(f'{i:03d} : {line+";\n"}')  # Using 3 digits for the address (up to 512 addresses)
     file.write(mif_footer)
 
 
