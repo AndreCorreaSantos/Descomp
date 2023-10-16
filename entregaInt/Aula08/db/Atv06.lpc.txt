@@ -45,8 +45,13 @@
 ; RAM1                         ; 18    ; 0              ; 0            ; 0              ; 8      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; ROM1                         ; 9     ; 0              ; 0            ; 0              ; 13     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; Processor|Reg_Retorno        ; 12    ; 1              ; 0            ; 1              ; 9      ; 1               ; 1             ; 1               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
+<<<<<<< HEAD
 ; Processor|logicaDesvio1      ; 7     ; 0              ; 0            ; 0              ; 2      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; Processor|FlagNEG            ; 4     ; 1              ; 0            ; 1              ; 1      ; 1               ; 1             ; 1               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
+=======
+; Processor|logicaDesvio1      ; 5     ; 0              ; 0            ; 0              ; 2      ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
+; Processor|FlagLE             ; 4     ; 2              ; 0            ; 2              ; 1      ; 2               ; 2             ; 2               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 ; Processor|FlagZero           ; 4     ; 1              ; 0            ; 1              ; 1      ; 1               ; 1             ; 1               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; Processor|ULA1               ; 19    ; 0              ; 0            ; 0              ; 10     ; 0               ; 0             ; 0               ; 0     ; 0              ; 0            ; 0                ; 0                 ;
 ; Processor|MUXProxPC          ; 38    ; 9              ; 0            ; 9              ; 9      ; 9               ; 9             ; 9               ; 0     ; 0              ; 0            ; 0                ; 0                 ;

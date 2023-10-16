@@ -1,5 +1,9 @@
 Fitter report for Atv06
+<<<<<<< HEAD
 Sat Oct 14 21:10:05 2023
+=======
+Sat Oct 14 06:03:56 2023
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -25,16 +29,17 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  17. Delay Chain Summary
  18. Pad To Core Delay Chain Fanout
  19. Control Signals
- 20. Routing Usage Summary
- 21. I/O Rules Summary
- 22. I/O Rules Details
- 23. I/O Rules Matrix
- 24. Fitter Device Options
- 25. Operating Settings and Conditions
- 26. Estimated Delay Added for Hold Timing Summary
- 27. Estimated Delay Added for Hold Timing Details
- 28. Fitter Messages
- 29. Fitter Suppressed Messages
+ 20. Non-Global High Fan-Out Signals
+ 21. Routing Usage Summary
+ 22. I/O Rules Summary
+ 23. I/O Rules Details
+ 24. I/O Rules Matrix
+ 25. Fitter Device Options
+ 26. Operating Settings and Conditions
+ 27. Estimated Delay Added for Hold Timing Summary
+ 28. Estimated Delay Added for Hold Timing Details
+ 29. Fitter Messages
+ 30. Fitter Suppressed Messages
 
 
 
@@ -61,15 +66,24 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Fitter Status                   ; Successful - Sat Oct 14 21:10:05 2023       ;
+=======
+; Fitter Status                   ; Successful - Sat Oct 14 06:03:56 2023       ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Atv06                                       ;
 ; Top-level Entity Name           ; Atv06                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
+<<<<<<< HEAD
 ; Logic utilization (in ALMs)     ; 55 / 18,480 ( < 1 % )                       ;
 ; Total registers                 ; 59                                          ;
+=======
+; Logic utilization (in ALMs)     ; 375 / 18,480 ( 2 % )                        ;
+; Total registers                 ; 589                                         ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 ; Total pins                      ; 68 / 224 ( 30 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
@@ -148,9 +162,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
+<<<<<<< HEAD
 ; Average used               ; 1.03        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
@@ -203,6 +218,49 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
 ;     -- Achieved     ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
 +---------------------+--------------------+----------------------------+--------------------------+
+=======
+; Average used               ; 1.11        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   4.0%      ;
+;     Processor 3            ;   3.5%      ;
+;     Processor 4            ;   3.4%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Netlist Optimizations                                                                                                                                                                                                                                                                                  ;
++----------------------------------------------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+--------------------------------------------------------------------------+------------------+-----------------------+
+; Node                                                           ; Action     ; Operation                                         ; Reason                   ; Node Port ; Node Port Name ; Destination Node                                                         ; Destination Port ; Destination Port Name ;
++----------------------------------------------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+--------------------------------------------------------------------------+------------------+-----------------------+
+; HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4|DOUT[0] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4|DOUT[0]~DUPLICATE ;                  ;                       ;
+; HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5|DOUT[1] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5|DOUT[1]~DUPLICATE ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[0]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[0]~DUPLICATE           ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[1]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[1]~DUPLICATE           ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[2]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[2]~DUPLICATE           ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[3]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[3]~DUPLICATE           ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[4]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[4]~DUPLICATE           ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[5]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[5]~DUPLICATE           ;                  ;                       ;
+; Processador:Processor|registradorGenerico:PC|DOUT[6]           ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization ;           ;                ; Processador:Processor|registradorGenerico:PC|DOUT[6]~DUPLICATE           ;                  ;                       ;
++----------------------------------------------------------------+------------+---------------------------------------------------+--------------------------+-----------+----------------+--------------------------------------------------------------------------+------------------+-----------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Incremental Compilation Preservation Summary                                                      ;
++---------------------+---------------------+----------------------------+--------------------------+
+; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
++---------------------+---------------------+----------------------------+--------------------------+
+; Placement (by node) ;                     ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 1198 ) ; 0.00 % ( 0 / 1198 )        ; 0.00 % ( 0 / 1198 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 1198 ) ; 0.00 % ( 0 / 1198 )        ; 0.00 % ( 0 / 1198 )      ;
+;                     ;                     ;                            ;                          ;
+; Routing (by net)    ;                     ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
+;     -- Achieved     ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
++---------------------+---------------------+----------------------------+--------------------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -220,7 +278,11 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
+<<<<<<< HEAD
 ; Top                            ; 0.00 % ( 0 / 279 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+=======
+; Top                            ; 0.00 % ( 0 / 1198 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -228,6 +290,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
+<<<<<<< HEAD
 The pin-out file can be found in C:/Descomp/entregaInt/Aula08/output_files/Atv06.pin.
 
 
@@ -389,6 +452,169 @@ The pin-out file can be found in C:/Descomp/entregaInt/Aula08/output_files/Atv06
 ;     -- Input Ports with no Fanout                           ; 0                    ; 0                              ;
 ;     -- Output Ports with no Fanout                          ; 0                    ; 0                              ;
 +-------------------------------------------------------------+----------------------+--------------------------------+
+=======
+The pin-out file can be found in C:/Descomp/Descomp/entregaInt/Aula08/output_files/Atv06.pin.
+
+
++---------------------------------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                                               ;
++-------------------------------------------------------------+-----------------------+-------+
+; Resource                                                    ; Usage                 ; %     ;
++-------------------------------------------------------------+-----------------------+-------+
+; Logic utilization (ALMs needed / total ALMs on device)      ; 375 / 18,480          ; 2 %   ;
+; ALMs needed [=A-B+C]                                        ; 375                   ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 500 / 18,480          ; 3 %   ;
+;         [a] ALMs used for LUT logic and registers           ; 96                    ;       ;
+;         [b] ALMs used for LUT logic                         ; 214                   ;       ;
+;         [c] ALMs used for registers                         ; 190                   ;       ;
+;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ;       ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 125 / 18,480          ; < 1 % ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18,480            ; 0 %   ;
+;         [a] Due to location constrained logic               ; 0                     ;       ;
+;         [b] Due to LAB-wide signal conflicts                ; 0                     ;       ;
+;         [c] Due to LAB input limits                         ; 0                     ;       ;
+;         [d] Due to virtual I/Os                             ; 0                     ;       ;
+;                                                             ;                       ;       ;
+; Difficulty packing design                                   ; Low                   ;       ;
+;                                                             ;                       ;       ;
+; Total LABs:  partially or completely used                   ; 62 / 1,848            ; 3 %   ;
+;     -- Logic LABs                                           ; 62                    ;       ;
+;     -- Memory LABs (up to half of total LABs)               ; 0                     ;       ;
+;                                                             ;                       ;       ;
+; Combinational ALUT usage for logic                          ; 485                   ;       ;
+;     -- 7 input functions                                    ; 7                     ;       ;
+;     -- 6 input functions                                    ; 271                   ;       ;
+;     -- 5 input functions                                    ; 50                    ;       ;
+;     -- 4 input functions                                    ; 60                    ;       ;
+;     -- <=3 input functions                                  ; 97                    ;       ;
+; Combinational ALUT usage for route-throughs                 ; 96                    ;       ;
+;                                                             ;                       ;       ;
+; Dedicated logic registers                                   ; 589                   ;       ;
+;     -- By type:                                             ;                       ;       ;
+;         -- Primary logic registers                          ; 570 / 36,960          ; 2 %   ;
+;         -- Secondary logic registers                        ; 19 / 36,960           ; < 1 % ;
+;     -- By function:                                         ;                       ;       ;
+;         -- Design implementation registers                  ; 580                   ;       ;
+;         -- Routing optimization registers                   ; 9                     ;       ;
+;                                                             ;                       ;       ;
+; Virtual pins                                                ; 0                     ;       ;
+; I/O pins                                                    ; 68 / 224              ; 30 %  ;
+;     -- Clock pins                                           ; 4 / 9                 ; 44 %  ;
+;     -- Dedicated input pins                                 ; 0 / 11                ; 0 %   ;
+;                                                             ;                       ;       ;
+; M10K blocks                                                 ; 0 / 308               ; 0 %   ;
+; Total MLAB memory bits                                      ; 0                     ;       ;
+; Total block memory bits                                     ; 0 / 3,153,920         ; 0 %   ;
+; Total block memory implementation bits                      ; 0 / 3,153,920         ; 0 %   ;
+;                                                             ;                       ;       ;
+; Total DSP Blocks                                            ; 0 / 66                ; 0 %   ;
+;                                                             ;                       ;       ;
+; Fractional PLLs                                             ; 0 / 4                 ; 0 %   ;
+; Global signals                                              ; 0                     ;       ;
+;     -- Global clocks                                        ; 0 / 16                ; 0 %   ;
+;     -- Quadrant clocks                                      ; 0 / 88                ; 0 %   ;
+; SERDES Transmitters                                         ; 0 / 68                ; 0 %   ;
+; SERDES Receivers                                            ; 0 / 68                ; 0 %   ;
+; JTAGs                                                       ; 0 / 1                 ; 0 %   ;
+; ASMI blocks                                                 ; 0 / 1                 ; 0 %   ;
+; CRC blocks                                                  ; 0 / 1                 ; 0 %   ;
+; Remote update blocks                                        ; 0 / 1                 ; 0 %   ;
+; Oscillator blocks                                           ; 0 / 1                 ; 0 %   ;
+; Impedance control blocks                                    ; 0 / 3                 ; 0 %   ;
+; Average interconnect usage (total/H/V)                      ; 1.2% / 1.2% / 1.1%    ;       ;
+; Peak interconnect usage (total/H/V)                         ; 16.2% / 16.1% / 16.2% ;       ;
+; Maximum fan-out                                             ; 585                   ;       ;
+; Highest non-global fan-out                                  ; 585                   ;       ;
+; Total fan-out                                               ; 4339                  ;       ;
+; Average fan-out                                             ; 3.32                  ;       ;
++-------------------------------------------------------------+-----------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Fitter Partition Statistics                                                                                          ;
++-------------------------------------------------------------+-----------------------+--------------------------------+
+; Statistic                                                   ; Top                   ; hard_block:auto_generated_inst ;
++-------------------------------------------------------------+-----------------------+--------------------------------+
+; Logic utilization (ALMs needed / total ALMs on device)      ; 375 / 18480 ( 2 % )   ; 0 / 18480 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 375                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 500 / 18480 ( 3 % )   ; 0 / 18480 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 96                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 214                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 190                   ; 0                              ;
+;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 125 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18480 ( 0 % )     ; 0 / 18480 ( 0 % )              ;
+;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
+;         [b] Due to LAB-wide signal conflicts                ; 0                     ; 0                              ;
+;         [c] Due to LAB input limits                         ; 0                     ; 0                              ;
+;         [d] Due to virtual I/Os                             ; 0                     ; 0                              ;
+;                                                             ;                       ;                                ;
+; Difficulty packing design                                   ; Low                   ; Low                            ;
+;                                                             ;                       ;                                ;
+; Total LABs:  partially or completely used                   ; 62 / 1848 ( 3 % )     ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 62                    ; 0                              ;
+;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
+;                                                             ;                       ;                                ;
+; Combinational ALUT usage for logic                          ; 485                   ; 0                              ;
+;     -- 7 input functions                                    ; 7                     ; 0                              ;
+;     -- 6 input functions                                    ; 271                   ; 0                              ;
+;     -- 5 input functions                                    ; 50                    ; 0                              ;
+;     -- 4 input functions                                    ; 60                    ; 0                              ;
+;     -- <=3 input functions                                  ; 97                    ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 96                    ; 0                              ;
+; Memory ALUT usage                                           ; 0                     ; 0                              ;
+;     -- 64-address deep                                      ; 0                     ; 0                              ;
+;     -- 32-address deep                                      ; 0                     ; 0                              ;
+;                                                             ;                       ;                                ;
+; Dedicated logic registers                                   ; 0                     ; 0                              ;
+;     -- By type:                                             ;                       ;                                ;
+;         -- Primary logic registers                          ; 570 / 36960 ( 2 % )   ; 0 / 36960 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 19 / 36960 ( < 1 % )  ; 0 / 36960 ( 0 % )              ;
+;     -- By function:                                         ;                       ;                                ;
+;         -- Design implementation registers                  ; 580                   ; 0                              ;
+;         -- Routing optimization registers                   ; 9                     ; 0                              ;
+;                                                             ;                       ;                                ;
+;                                                             ;                       ;                                ;
+; Virtual pins                                                ; 0                     ; 0                              ;
+; I/O pins                                                    ; 68                    ; 0                              ;
+; I/O registers                                               ; 0                     ; 0                              ;
+; Total block memory bits                                     ; 0                     ; 0                              ;
+; Total block memory implementation bits                      ; 0                     ; 0                              ;
+;                                                             ;                       ;                                ;
+; Connections                                                 ;                       ;                                ;
+;     -- Input Connections                                    ; 0                     ; 0                              ;
+;     -- Registered Input Connections                         ; 0                     ; 0                              ;
+;     -- Output Connections                                   ; 0                     ; 0                              ;
+;     -- Registered Output Connections                        ; 0                     ; 0                              ;
+;                                                             ;                       ;                                ;
+; Internal Connections                                        ;                       ;                                ;
+;     -- Total Connections                                    ; 4340                  ; 0                              ;
+;     -- Registered Connections                               ; 1456                  ; 0                              ;
+;                                                             ;                       ;                                ;
+; External Connections                                        ;                       ;                                ;
+;     -- Top                                                  ; 0                     ; 0                              ;
+;     -- hard_block:auto_generated_inst                       ; 0                     ; 0                              ;
+;                                                             ;                       ;                                ;
+; Partition Interface                                         ;                       ;                                ;
+;     -- Input Ports                                          ; 16                    ; 0                              ;
+;     -- Output Ports                                         ; 52                    ; 0                              ;
+;     -- Bidir Ports                                          ; 0                     ; 0                              ;
+;                                                             ;                       ;                                ;
+; Registered Ports                                            ;                       ;                                ;
+;     -- Registered Input Ports                               ; 0                     ; 0                              ;
+;     -- Registered Output Ports                              ; 0                     ; 0                              ;
+;                                                             ;                       ;                                ;
+; Port Connectivity                                           ;                       ;                                ;
+;     -- Input Ports driven by GND                            ; 0                     ; 0                              ;
+;     -- Output Ports driven by GND                           ; 0                     ; 0                              ;
+;     -- Input Ports driven by VCC                            ; 0                     ; 0                              ;
+;     -- Output Ports driven by VCC                           ; 0                     ; 0                              ;
+;     -- Input Ports with no Source                           ; 0                     ; 0                              ;
+;     -- Output Ports with no Source                          ; 0                     ; 0                              ;
+;     -- Input Ports with no Fanout                           ; 0                     ; 0                              ;
+;     -- Output Ports with no Fanout                          ; 0                     ; 0                              ;
++-------------------------------------------------------------+-----------------------+--------------------------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -397,6 +623,7 @@ The pin-out file can be found in C:/Descomp/entregaInt/Aula08/output_files/Atv06
 ; Name         ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; CLOCK_50     ; M9    ; 3B       ; 22           ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+<<<<<<< HEAD
 ; FPGA_RESET_N ; P22   ; 5A       ; 54           ; 16           ; 54           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; KEY[0]       ; U7    ; 3A       ; 10           ; 0            ; 91           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; KEY[1]       ; W9    ; 3A       ; 11           ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
@@ -412,6 +639,23 @@ The pin-out file can be found in C:/Descomp/entregaInt/Aula08/output_files/Atv06
 ; SW[7]        ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; SW[8]        ; AB13  ; 4A       ; 33           ; 0            ; 91           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; SW[9]        ; AB12  ; 4A       ; 33           ; 0            ; 74           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+=======
+; FPGA_RESET_N ; P22   ; 5A       ; 54           ; 16           ; 54           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; KEY[0]       ; U7    ; 3A       ; 10           ; 0            ; 91           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; KEY[1]       ; W9    ; 3A       ; 11           ; 0            ; 34           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; KEY[2]       ; M7    ; 3A       ; 14           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; KEY[3]       ; M6    ; 3A       ; 14           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[0]        ; U13   ; 4A       ; 33           ; 0            ; 40           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[1]        ; V13   ; 4A       ; 33           ; 0            ; 57           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[2]        ; T13   ; 4A       ; 34           ; 0            ; 0            ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[3]        ; T12   ; 4A       ; 34           ; 0            ; 17           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[4]        ; AA15  ; 4A       ; 36           ; 0            ; 34           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[5]        ; AB15  ; 4A       ; 36           ; 0            ; 51           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[6]        ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[7]        ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[8]        ; AB13  ; 4A       ; 33           ; 0            ; 91           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; SW[9]        ; AB12  ; 4A       ; 33           ; 0            ; 74           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +--------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -984,6 +1228,7 @@ The pin-out file can be found in C:/Descomp/entregaInt/Aula08/output_files/Atv06
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
+<<<<<<< HEAD
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                ;
 +-----------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------+---------------------+--------------+
@@ -1011,6 +1256,56 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |memoriaRAM:RAM1|                    ; 8.5 (8.5)            ; 10.3 (10.3)                      ; 1.8 (1.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 18 (18)             ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|memoriaRAM:RAM1                                       ; memoriaRAM          ; work         ;
 ;    |romMif:ROM1|                        ; 6.3 (6.3)            ; 6.3 (6.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 15 (15)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|romMif:ROM1                                           ; romMif              ; work         ;
 +-----------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------+---------------------+--------------+
+=======
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                                      ;
++----------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                   ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Entity Name         ; Library Name ;
++----------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
+; |Atv06                                       ; 374.5 (7.2)          ; 498.5 (7.2)                      ; 124.0 (0.0)                                       ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 485 (10)            ; 589 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 68   ; 0            ; |Atv06                                                        ; Atv06               ; work         ;
+;    |Detector_Keys:Detect_KEY0|               ; 0.5 (0.0)            ; 1.3 (0.0)                        ; 0.8 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 2 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0                              ; Detector_Keys       ; work         ;
+;       |FlipFlop:Flip_Flop_Key0|              ; 0.0 (0.0)            ; 0.3 (0.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0      ; FlipFlop            ; work         ;
+;       |edgeDetector:detectorKey0|            ; 0.5 (0.5)            ; 1.0 (1.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0    ; edgeDetector        ; work         ;
+;    |Detector_Keys:Detect_KEY1|               ; 0.5 (0.0)            ; 1.5 (0.0)                        ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 2 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY1                              ; Detector_Keys       ; work         ;
+;       |FlipFlop:Flip_Flop_Key0|              ; 0.0 (0.0)            ; 0.5 (0.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY1|FlipFlop:Flip_Flop_Key0      ; FlipFlop            ; work         ;
+;       |edgeDetector:detectorKey0|            ; 0.5 (0.5)            ; 1.0 (1.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0    ; edgeDetector        ; work         ;
+;    |Detector_Keys:Detect_RESET|              ; 0.8 (0.0)            ; 1.3 (0.0)                        ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 2 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_RESET                             ; Detector_Keys       ; work         ;
+;       |FlipFlop:Flip_Flop_Key0|              ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0     ; FlipFlop            ; work         ;
+;       |edgeDetector:detectorKey0|            ; 0.3 (0.3)            ; 1.0 (1.0)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_RESET|edgeDetector:detectorKey0   ; edgeDetector        ; work         ;
+;    |HEXES:Hexes_Unity|                       ; 21.0 (0.0)           ; 25.1 (0.0)                       ; 4.1 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 42 (0)              ; 26 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity                                      ; HEXES               ; work         ;
+;       |conversorHex7Seg:Conversor0|          ; 2.3 (2.3)            ; 2.3 (2.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor0          ; conversorHex7Seg    ; work         ;
+;       |conversorHex7Seg:Conversor1|          ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor1          ; conversorHex7Seg    ; work         ;
+;       |conversorHex7Seg:Conversor2|          ; 2.5 (2.5)            ; 3.5 (3.5)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor2          ; conversorHex7Seg    ; work         ;
+;       |conversorHex7Seg:Conversor3|          ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor3          ; conversorHex7Seg    ; work         ;
+;       |conversorHex7Seg:Conversor4|          ; 2.3 (2.3)            ; 2.8 (2.8)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor4          ; conversorHex7Seg    ; work         ;
+;       |conversorHex7Seg:Conversor5|          ; 2.5 (2.5)            ; 3.5 (3.5)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|conversorHex7Seg:Conversor5          ; conversorHex7Seg    ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX0| ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0 ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX1| ; 1.2 (1.2)            ; 1.2 (1.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1 ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX2| ; 1.2 (1.2)            ; 2.0 (2.0)                        ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2 ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX3| ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3 ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX4| ; 1.0 (1.0)            ; 1.3 (1.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 5 (5)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4 ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX5| ; 1.0 (1.0)            ; 1.6 (1.6)                        ; 0.6 (0.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 5 (5)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5 ; registradorGenerico ; work         ;
+;    |LEDS:LED_UNITY|                          ; 3.3 (0.0)            ; 6.2 (0.0)                        ; 2.8 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 10 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY                                         ; LEDS                ; work         ;
+;       |FlipFlop:LED8|                        ; 1.0 (1.0)            ; 1.3 (1.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|FlipFlop:LED8                           ; FlipFlop            ; work         ;
+;       |FlipFlop:LED9|                        ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|FlipFlop:LED9                           ; FlipFlop            ; work         ;
+;       |registradorGenerico:REG_LEDS|         ; 1.3 (1.3)            ; 4.0 (4.0)                        ; 2.7 (2.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|registradorGenerico:REG_LEDS            ; registradorGenerico ; work         ;
+;    |Processador:Processor|                   ; 40.4 (0.0)           ; 40.4 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 62 (0)              ; 34 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor                                  ; Processador         ; work         ;
+;       |FlipFlop:FlagZero|                    ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|FlipFlop:FlagZero                ; FlipFlop            ; work         ;
+;       |ULASomaSub:ULA1|                      ; 13.0 (13.0)          ; 13.0 (13.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (20)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|ULASomaSub:ULA1                  ; ULASomaSub          ; work         ;
+;       |decoderInstru:DECODER|                ; 6.2 (6.2)            ; 6.7 (6.7)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (11)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|decoderInstru:DECODER            ; decoderInstru       ; work         ;
+;       |logicaDesvio:logicaDesvio1|           ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|logicaDesvio:logicaDesvio1       ; logicaDesvio        ; work         ;
+;       |muxGenerico2x1:MUX1|                  ; 5.2 (5.2)            ; 5.3 (5.3)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (8)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|muxGenerico2x1:MUX1              ; muxGenerico2x1      ; work         ;
+;       |muxGenerico4x1:MUXProxPC|             ; 1.8 (1.8)            ; 1.8 (1.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|muxGenerico4x1:MUXProxPC         ; muxGenerico4x1      ; work         ;
+;       |registradorGenerico:PC|               ; 2.3 (2.3)            ; 3.0 (3.0)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|registradorGenerico:PC           ; registradorGenerico ; work         ;
+;       |registradorGenerico:REGA|             ; 3.2 (3.2)            ; 3.2 (3.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|registradorGenerico:REGA         ; registradorGenerico ; work         ;
+;       |registradorGenerico:Reg_Retorno|      ; 2.3 (2.3)            ; 2.3 (2.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 9 (9)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|registradorGenerico:Reg_Retorno  ; registradorGenerico ; work         ;
+;       |somaConstante:incrementaPC|           ; 2.3 (2.3)            ; 2.3 (2.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|somaConstante:incrementaPC       ; somaConstante       ; work         ;
+;    |decoderToHabilita:DECODIFICADOR|         ; 10.6 (10.6)          ; 10.6 (10.6)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 19 (19)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|decoderToHabilita:DECODIFICADOR                        ; decoderToHabilita   ; work         ;
+;    |edgeDetector:\gravar:detectorSub0|       ; 0.7 (0.7)            ; 0.7 (0.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|edgeDetector:\gravar:detectorSub0                      ; edgeDetector        ; work         ;
+;    |memoriaRAM:RAM1|                         ; 260.8 (260.8)        ; 376.4 (376.4)                    ; 115.6 (115.6)                                     ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 298 (298)           ; 512 (512)                 ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|memoriaRAM:RAM1                                        ; memoriaRAM          ; work         ;
+;    |romMif:ROM1|                             ; 27.8 (27.8)          ; 27.8 (27.8)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 45 (45)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Atv06|romMif:ROM1                                            ; romMif              ; work         ;
++----------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1076,6 +1371,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX5[4]      ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; HEX5[5]      ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; HEX5[6]      ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+<<<<<<< HEAD
 ; SW[0]        ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[1]        ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[2]        ; Input    ; -- ; --   ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1115,10 +1411,83 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - edgeDetector:\gravar:detectorSub0|saida         ; 1                 ; 0       ;
 ;      - edgeDetector:\gravar:detectorSub0|saidaQ~feeder ; 0                 ; 0       ;
 +--------------------------------------------------------+-------------------+---------+
+=======
+; KEY[2]       ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[3]       ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[8]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[9]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[0]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; CLOCK_50     ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[1]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[2]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[3]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[4]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[5]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[6]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[7]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[0]       ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[1]       ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; FPGA_RESET_N ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
++--------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                          ;
++---------------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                       ; Pad To Core Index ; Setting ;
++---------------------------------------------------------------------------+-------------------+---------+
+; KEY[2]                                                                    ;                   ;         ;
+;      - entrada_DATA[0]~1                                                  ; 0                 ; 0       ;
+; KEY[3]                                                                    ;                   ;         ;
+;      - entrada_DATA[0]~1                                                  ; 0                 ; 0       ;
+; SW[8]                                                                     ;                   ;         ;
+;      - entrada_DATA[0]~2                                                  ; 0                 ; 0       ;
+; SW[9]                                                                     ;                   ;         ;
+;      - entrada_DATA[0]~2                                                  ; 0                 ; 0       ;
+; SW[0]                                                                     ;                   ;         ;
+;      - entrada_DATA[0]~4                                                  ; 0                 ; 0       ;
+;      - entrada_DATA[0]~8                                                  ; 0                 ; 0       ;
+; CLOCK_50                                                                  ;                   ;         ;
+;      - edgeDetector:\gravar:detectorSub0|saidaQ                           ; 0                 ; 0       ;
+;      - edgeDetector:\gravar:detectorSub0|saidaQ                           ; 1                 ; 0       ;
+;      - edgeDetector:\gravar:detectorSub0|saida                            ; 1                 ; 0       ;
+; SW[1]                                                                     ;                   ;         ;
+;      - Processador:Processor|ULASomaSub:ULA1|saida[1]~3                   ; 1                 ; 0       ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[1]~1           ; 1                 ; 0       ;
+; SW[2]                                                                     ;                   ;         ;
+;      - Processador:Processor|ULASomaSub:ULA1|saida[2]~5                   ; 0                 ; 0       ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[2]~2           ; 0                 ; 0       ;
+; SW[3]                                                                     ;                   ;         ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[3]~3           ; 0                 ; 0       ;
+;      - Processador:Processor|ULASomaSub:ULA1|saida[3]~22                  ; 0                 ; 0       ;
+; SW[4]                                                                     ;                   ;         ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[4]~4           ; 0                 ; 0       ;
+;      - Processador:Processor|ULASomaSub:ULA1|saida[4]~18                  ; 0                 ; 0       ;
+; SW[5]                                                                     ;                   ;         ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[5]~5           ; 1                 ; 0       ;
+;      - Processador:Processor|ULASomaSub:ULA1|saida[5]~14                  ; 1                 ; 0       ;
+; SW[6]                                                                     ;                   ;         ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[6]~6           ; 0                 ; 0       ;
+;      - Processador:Processor|ULASomaSub:ULA1|saida[6]~10                  ; 0                 ; 0       ;
+; SW[7]                                                                     ;                   ;         ;
+;      - Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[7]~7           ; 0                 ; 0       ;
+;      - Processador:Processor|ULASomaSub:ULA1|saida[7]~6                   ; 0                 ; 0       ;
+; KEY[0]                                                                    ;                   ;         ;
+;      - Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saida          ; 1                 ; 0       ;
+;      - Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saidaQ~feeder  ; 1                 ; 0       ;
+; KEY[1]                                                                    ;                   ;         ;
+;      - Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saida          ; 1                 ; 0       ;
+;      - Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saidaQ~feeder  ; 0                 ; 0       ;
+; FPGA_RESET_N                                                              ;                   ;         ;
+;      - Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saida         ; 0                 ; 0       ;
+;      - Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saidaQ~feeder ; 1                 ; 0       ;
++---------------------------------------------------------------------------+-------------------+---------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Control Signals                                                                                                                                                                           ;
+<<<<<<< HEAD
 +--------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                         ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
@@ -1131,6 +1500,103 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; edgeDetector:\gravar:detectorSub0|saida                      ; LABCELL_X6_Y8_N21  ; 58      ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; memoriaRAM:RAM1|ram~160                                      ; LABCELL_X5_Y9_N15  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +--------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+=======
++------------------------------------------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                       ; Location             ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------------------------------------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLOCK_50                                                   ; PIN_M9               ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saida  ; MLABCELL_X18_Y4_N42  ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saida  ; LABCELL_X19_Y4_N57   ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saida ; MLABCELL_X28_Y12_N24 ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; Processador:Processor|decoderInstru:DECODER|Equal11~3      ; MLABCELL_X23_Y4_N18  ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:Processor|decoderInstru:DECODER|saida[3]~3     ; MLABCELL_X23_Y3_N6   ; 8       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; Processador:Processor|decoderInstru:DECODER|saida[5]~4     ; LABCELL_X26_Y3_N6    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|Limpa_Key1~1               ; LABCELL_X25_Y4_N6    ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|Limpa_Key1~2               ; LABCELL_X25_Y4_N54   ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|Limpa_Key1~3               ; LABCELL_X25_Y4_N57   ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX0~1            ; LABCELL_X24_Y6_N39   ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX1~0            ; LABCELL_X25_Y1_N6    ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX2~0            ; LABCELL_X25_Y1_N24   ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX3~0            ; LABCELL_X24_Y2_N0    ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX4~0            ; LABCELL_X25_Y4_N36   ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_HEX5              ; LABCELL_X25_Y1_N36   ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decoderToHabilita:DECODIFICADOR|habilita_LEDS~2            ; LABCELL_X26_Y4_N21   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; edgeDetector:\gravar:detectorSub0|saida                    ; LABCELL_X26_Y5_N24   ; 585     ; Clock        ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~696                                    ; MLABCELL_X23_Y4_N30  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~698                                    ; MLABCELL_X28_Y7_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~700                                    ; MLABCELL_X28_Y7_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~702                                    ; LABCELL_X26_Y6_N9    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~704                                    ; LABCELL_X25_Y8_N6    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~706                                    ; LABCELL_X26_Y7_N21   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~708                                    ; MLABCELL_X23_Y4_N33  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~710                                    ; LABCELL_X20_Y4_N36   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~712                                    ; LABCELL_X31_Y5_N24   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~714                                    ; LABCELL_X31_Y5_N48   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~716                                    ; LABCELL_X26_Y8_N21   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~718                                    ; LABCELL_X26_Y6_N6    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~720                                    ; LABCELL_X31_Y5_N57   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~722                                    ; LABCELL_X29_Y5_N42   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~724                                    ; MLABCELL_X28_Y6_N48  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~726                                    ; MLABCELL_X28_Y4_N27  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~728                                    ; LABCELL_X26_Y1_N36   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~730                                    ; LABCELL_X20_Y5_N54   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~732                                    ; LABCELL_X29_Y5_N36   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~734                                    ; LABCELL_X29_Y5_N0    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~736                                    ; LABCELL_X21_Y7_N6    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~738                                    ; LABCELL_X20_Y6_N36   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~740                                    ; LABCELL_X20_Y6_N33   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~742                                    ; MLABCELL_X28_Y7_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~744                                    ; LABCELL_X29_Y6_N33   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~746                                    ; LABCELL_X21_Y5_N0    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~748                                    ; LABCELL_X20_Y3_N0    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~750                                    ; MLABCELL_X23_Y2_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~752                                    ; LABCELL_X25_Y2_N6    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~754                                    ; LABCELL_X21_Y5_N12   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~756                                    ; LABCELL_X26_Y8_N0    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~758                                    ; MLABCELL_X23_Y6_N51  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~760                                    ; LABCELL_X26_Y1_N9    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~762                                    ; LABCELL_X26_Y4_N6    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~764                                    ; LABCELL_X26_Y2_N36   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~766                                    ; LABCELL_X26_Y2_N15   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~768                                    ; LABCELL_X26_Y2_N39   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~770                                    ; LABCELL_X26_Y7_N57   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~772                                    ; MLABCELL_X23_Y7_N21  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~774                                    ; LABCELL_X25_Y6_N36   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~776                                    ; LABCELL_X31_Y4_N51   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~778                                    ; MLABCELL_X28_Y7_N12  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~780                                    ; LABCELL_X21_Y2_N27   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~782                                    ; LABCELL_X26_Y8_N6    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~784                                    ; MLABCELL_X28_Y8_N48  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~786                                    ; LABCELL_X20_Y4_N54   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~788                                    ; LABCELL_X24_Y8_N57   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~790                                    ; MLABCELL_X28_Y4_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~792                                    ; LABCELL_X21_Y4_N57   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~794                                    ; LABCELL_X20_Y5_N6    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~796                                    ; MLABCELL_X28_Y3_N12  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~798                                    ; MLABCELL_X28_Y5_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~800                                    ; LABCELL_X21_Y7_N48   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~802                                    ; LABCELL_X26_Y7_N51   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~804                                    ; MLABCELL_X23_Y6_N45  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~806                                    ; LABCELL_X24_Y7_N15   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~808                                    ; LABCELL_X29_Y6_N39   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~810                                    ; MLABCELL_X23_Y7_N57  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~812                                    ; LABCELL_X20_Y3_N57   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~814                                    ; LABCELL_X21_Y6_N21   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~816                                    ; LABCELL_X26_Y3_N0    ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~818                                    ; LABCELL_X29_Y4_N42   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~820                                    ; MLABCELL_X23_Y4_N36  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; memoriaRAM:RAM1|ram~822                                    ; LABCELL_X31_Y4_N48   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
++------------------------------------------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+
+
++---------------------------------------------------+
+; Non-Global High Fan-Out Signals                   ;
++-----------------------------------------+---------+
+; Name                                    ; Fan-Out ;
++-----------------------------------------+---------+
+; edgeDetector:\gravar:detectorSub0|saida ; 585     ;
++-----------------------------------------+---------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +--------------------------------------------------------+
@@ -1138,6 +1604,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+-------------------------+
 ; Routing Resource Type        ; Usage                   ;
 +------------------------------+-------------------------+
+<<<<<<< HEAD
 ; Block interconnects          ; 222 / 140,056 ( < 1 % ) ;
 ; C12 interconnects            ; 4 / 6,048 ( < 1 % )     ;
 ; C2 interconnects             ; 115 / 54,648 ( < 1 % )  ;
@@ -1153,6 +1620,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; R14/C12 interconnect drivers ; 17 / 9,504 ( < 1 % )    ;
 ; R3 interconnects             ; 133 / 60,192 ( < 1 % )  ;
 ; R6 interconnects             ; 105 / 127,072 ( < 1 % ) ;
+=======
+; Block interconnects          ; 1,791 / 140,056 ( 1 % ) ;
+; C12 interconnects            ; 19 / 6,048 ( < 1 % )    ;
+; C2 interconnects             ; 670 / 54,648 ( 1 % )    ;
+; C4 interconnects             ; 370 / 25,920 ( 1 % )    ;
+; DQS bus muxes                ; 0 / 17 ( 0 % )          ;
+; DQS-18 I/O buses             ; 0 / 17 ( 0 % )          ;
+; DQS-9 I/O buses              ; 0 / 17 ( 0 % )          ;
+; Direct links                 ; 105 / 140,056 ( < 1 % ) ;
+; Global clocks                ; 0 / 16 ( 0 % )          ;
+; Local interconnects          ; 301 / 36,960 ( < 1 % )  ;
+; Quadrant clocks              ; 0 / 88 ( 0 % )          ;
+; R14 interconnects            ; 111 / 5,984 ( 2 % )     ;
+; R14/C12 interconnect drivers ; 123 / 9,504 ( 1 % )     ;
+; R3 interconnects             ; 774 / 60,192 ( 1 % )    ;
+; R6 interconnects             ; 1,502 / 127,072 ( 1 % ) ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 ; Spine clocks                 ; 0 / 120 ( 0 % )         ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )       ;
 +------------------------------+-------------------------+
@@ -1273,7 +1757,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX5[4]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; HEX5[5]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; HEX5[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+<<<<<<< HEAD
 ; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+=======
+; KEY[2]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; KEY[3]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 ; SW[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; SW[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; SW[3]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
@@ -1281,9 +1774,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+<<<<<<< HEAD
 ; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+=======
+; KEY[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; KEY[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; FPGA_RESET_N       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 
@@ -1330,6 +1829,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
+<<<<<<< HEAD
 +------------------------------------------------------------+
 ; Estimated Delay Added for Hold Timing Summary              ;
 +-----------------+----------------------+-------------------+
@@ -1338,10 +1838,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLOCK_50        ; CLOCK_50             ; 39.6              ;
 ; I/O             ; CLOCK_50             ; 2.7               ;
 +-----------------+----------------------+-------------------+
+=======
++---------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                                     ;
++-----------------------------------------+-------------------------------------+-------------------+
+; Source Clock(s)                         ; Destination Clock(s)                ; Delay Added in ns ;
++-----------------------------------------+-------------------------------------+-------------------+
+; CLOCK_50                                ; CLOCK_50                            ; 137.0             ;
+; CLOCK_50                                ; CLOCK_50,FPGA_RESET_N,KEY[1],KEY[0] ; 86.6              ;
+; I/O                                     ; CLOCK_50                            ; 17.3              ;
+; CLOCK_50,FPGA_RESET_N,KEY[1],KEY[0],I/O ; CLOCK_50                            ; 7.5               ;
++-----------------------------------------+-------------------------------------+-------------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
+<<<<<<< HEAD
 +--------------------------------------------------------------------------------------------------------------------------------------------+
 ; Estimated Delay Added for Hold Timing Details                                                                                              ;
 +---------------------------------------------------------------+--------------------------------------------------------+-------------------+
@@ -1388,13 +1901,122 @@ This will disable optimization of problematic paths and expose them for further 
 ; Processador:Processor|FlipFlop:FlagNEG|DOUT                   ; Processador:Processor|registradorGenerico:PC|DOUT[8]   ; 0.056             ;
 +---------------------------------------------------------------+--------------------------------------------------------+-------------------+
 Note: This table only shows the top 39 path(s) that have the largest delay added for hold.
+=======
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                   ;
++---------------------------------------------------------------+-------------------------------------------------------------+-------------------+
+; Source Register                                               ; Destination Register                                        ; Delay Added in ns ;
++---------------------------------------------------------------+-------------------------------------------------------------+-------------------+
+; KEY[1]                                                        ; Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saidaQ  ; 5.030             ;
+; KEY[0]                                                        ; Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saidaQ  ; 4.953             ;
+; FPGA_RESET_N                                                  ; Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saidaQ ; 4.918             ;
+; CLOCK_50                                                      ; edgeDetector:\gravar:detectorSub0|saidaQ                    ; 2.446             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[1]          ; Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0|DOUT     ; 2.399             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[7]          ; Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0|DOUT     ; 2.382             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[8]          ; Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0|DOUT     ; 2.369             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[6]          ; Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0|DOUT     ; 2.366             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[2]          ; Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0|DOUT     ; 2.361             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[3]          ; Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0|DOUT     ; 2.306             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[5]          ; Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0|DOUT     ; 2.278             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[4]          ; Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0|DOUT     ; 2.243             ;
+; Processador:Processor|registradorGenerico:PC|DOUT[0]          ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 2.157             ;
+; Detector_Keys:Detect_KEY1|FlipFlop:Flip_Flop_Key0|DOUT        ; Processador:Processor|registradorGenerico:REGA|DOUT[0]      ; 1.623             ;
+; Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0|DOUT        ; Processador:Processor|registradorGenerico:REGA|DOUT[0]      ; 1.618             ;
+; KEY[2]                                                        ; Processador:Processor|registradorGenerico:REGA|DOUT[0]      ; 1.502             ;
+; KEY[3]                                                        ; Processador:Processor|registradorGenerico:REGA|DOUT[0]      ; 1.502             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[4]        ; Processador:Processor|registradorGenerico:REGA|DOUT[6]      ; 1.478             ;
+; SW[8]                                                         ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.130             ;
+; SW[9]                                                         ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.130             ;
+; Processador:Processor|registradorGenerico:Reg_Retorno|DOUT[7] ; Processador:Processor|registradorGenerico:PC|DOUT[7]        ; 1.118             ;
+; Processador:Processor|registradorGenerico:Reg_Retorno|DOUT[5] ; Processador:Processor|registradorGenerico:PC|DOUT[5]        ; 1.108             ;
+; Processador:Processor|registradorGenerico:Reg_Retorno|DOUT[3] ; Processador:Processor|registradorGenerico:PC|DOUT[3]        ; 1.097             ;
+; Processador:Processor|registradorGenerico:Reg_Retorno|DOUT[1] ; Processador:Processor|registradorGenerico:PC|DOUT[1]        ; 1.093             ;
+; Processador:Processor|registradorGenerico:Reg_Retorno|DOUT[0] ; Processador:Processor|registradorGenerico:PC|DOUT[0]        ; 1.086             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[2]        ; Processador:Processor|registradorGenerico:REGA|DOUT[3]      ; 1.082             ;
+; Processador:Processor|registradorGenerico:Reg_Retorno|DOUT[6] ; Processador:Processor|registradorGenerico:PC|DOUT[6]        ; 1.077             ;
+; memoriaRAM:RAM1|ram~15                                        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~23                                        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~271                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~279                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~143                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~151                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~399                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~407                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~79                                        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~87                                        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~335                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~343                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~207                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~215                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~463                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~471                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~31                                        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~159                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~95                                        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~223                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~39                                        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~167                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~103                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~231                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~287                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~415                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~351                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~479                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~295                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~423                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~359                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~487                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~47                                        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~55                                        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~303                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~311                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~175                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~183                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~431                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~439                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~111                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~119                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~367                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~375                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~239                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~247                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~495                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~503                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~63                                        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~191                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~127                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~255                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~71                                        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~199                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~135                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~263                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~319                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~447                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~383                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~511                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~327                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~455                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~391                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; memoriaRAM:RAM1|ram~519                                       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; SW[0]                                                         ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0|DOUT       ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 1.038             ;
+; Processador:Processor|registradorGenerico:Reg_Retorno|DOUT[4] ; Processador:Processor|registradorGenerico:PC|DOUT[4]        ; 1.024             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[6]        ; Processador:Processor|registradorGenerico:REGA|DOUT[6]      ; 1.009             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[1]        ; Processador:Processor|registradorGenerico:REGA|DOUT[3]      ; 0.959             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[0]        ; Processador:Processor|FlipFlop:FlagZero|DOUT                ; 0.946             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[5]        ; Processador:Processor|registradorGenerico:REGA|DOUT[6]      ; 0.945             ;
+; Processador:Processor|registradorGenerico:Reg_Retorno|DOUT[2] ; Processador:Processor|registradorGenerico:PC|DOUT[2]        ; 0.882             ;
+; Processador:Processor|registradorGenerico:REGA|DOUT[3]        ; memoriaRAM:RAM1|ram~146                                     ; 0.862             ;
++---------------------------------------------------------------+-------------------------------------------------------------+-------------------+
+Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device 5CEBA4F23C7 for design "Atv06"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1410,36 +2032,55 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:04
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:03
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
+<<<<<<< HEAD
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:11
+=======
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:05
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+<<<<<<< HEAD
     Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X0_Y0 to location X10_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
 Info (11888): Total time spent on timing analysis during the Fitter is 0.57 seconds.
+=======
+    Info (170196): Router estimated peak interconnect usage is 13% of the available device resources in the region that extends from location X22_Y0 to location X32_Y10
+Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+    Info (170201): Optimizations that may affect the design's routability were skipped
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:09
+Info (11888): Total time spent on timing analysis during the Fitter is 1.81 seconds.
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
-Info (144001): Generated suppressed messages file C:/Descomp/entregaInt/Aula08/output_files/Atv06.fit.smsg
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (144001): Generated suppressed messages file C:/Descomp/Descomp/entregaInt/Aula08/output_files/Atv06.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
+<<<<<<< HEAD
     Info: Peak virtual memory: 7550 megabytes
     Info: Processing ended: Sat Oct 14 21:10:06 2023
     Info: Elapsed time: 00:00:36
     Info: Total CPU time (on all processors): 00:01:12
+=======
+    Info: Peak virtual memory: 6256 megabytes
+    Info: Processing ended: Sat Oct 14 06:03:56 2023
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:01:14
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Descomp/entregaInt/Aula08/output_files/Atv06.fit.smsg.
+The suppressed messages can be found in C:/Descomp/Descomp/entregaInt/Aula08/output_files/Atv06.fit.smsg.
 
 

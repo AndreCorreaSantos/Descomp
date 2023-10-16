@@ -91,9 +91,14 @@ ULA1 : entity work.ULASomaSub  generic map(larguraDados => 8)
           port map (entradaA => saida_regA, 
 						  entradaB => saida_MUX, 
 						  saida => saida_ULA, 
+<<<<<<< HEAD
 						  seletor => opULA, 
 						  zf => saida_zf_ULA,
               neg => saida_neg_ULA);
+=======
+						  seletor => saida_dec(4 downto 3), 
+						  zf => saida_zf_ULA);
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 			 
 FlagZero :  entity work.FlipFLop
         port map( DIN => saida_zf_ULA,

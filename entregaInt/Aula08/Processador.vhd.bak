@@ -22,6 +22,7 @@ architecture arquitetura of Processador is
   signal Addr: std_logic_vector (8 downto 0);
   signal Opcode: std_logic_vector (3 downto 0);
   signal Imediate: std_logic_vector (7 downto 0);
+<<<<<<< HEAD
 
   signal saida_dec: std_logic_vector(11 downto 0);
 
@@ -38,6 +39,9 @@ architecture arquitetura of Processador is
   signal habLE : std_logic;
 
 
+=======
+  signal saida_dec: std_logic_vector(11 downto 0);
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
   signal saida_regA: std_logic_vector(7 downto 0);
   signal saida_ULA: std_logic_vector(7 downto 0);
   signal saida_MUX: std_logic_vector(7 downto 0);
@@ -70,12 +74,20 @@ port map(opcode => Opcode, saida => saida_dec);
 
 
 REGA: entity work.registradorGenerico   generic map (larguraDados => 8)
+<<<<<<< HEAD
 port map (DIN => saida_ULA, DOUT => saida_regA, ENABLE => habilitaA, CLK => CLK, RST => '0');
+=======
+port map (DIN => saida_ULA, DOUT => saida_regA, ENABLE => saida_dec(5), CLK => CLK, RST => '0');
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 MUX1 :  entity work.muxGenerico2x1  generic map (larguraDados => 8)
         port map( entradaA_MUX => Data_IN,
                  entradaB_MUX =>  Imediate,
+<<<<<<< HEAD
                  seletor_MUX => selMUX,
+=======
+                 seletor_MUX => saida_dec(6),
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
                  saida_MUX => saida_MUX);
 
 MUXProxPC :  entity work.muxGenerico4x1  generic map (larguraDados => 9)
@@ -91,7 +103,11 @@ ULA1 : entity work.ULASomaSub  generic map(larguraDados => 8)
           port map (entradaA => saida_regA, 
 						  entradaB => saida_MUX, 
 						  saida => saida_ULA, 
+<<<<<<< HEAD
 						  seletor => opULA, 
+=======
+						  seletor => saida_dec(4 downto 3), 
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 						  zf => saida_zf_ULA
               le => saida_le_ULA);
 			 
@@ -99,13 +115,18 @@ FlagZero :  entity work.FlipFLop
         port map( DIN => saida_zf_ULA,
                  DOUT => saida_zf ,
                  CLK => CLK ,
+<<<<<<< HEAD
                  ENABLE => habZF,
+=======
+                 ENABLE => saida_dec(2),
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 					  RST => '0');
 
 FlagLE :  entity work.FlipFLop
 port map( DIN => saida_le_ULA,
           DOUT => saida_le ,
           CLK => CLK ,
+<<<<<<< HEAD
           ENABLE => habLE,
     RST => '0');
 					  
@@ -117,6 +138,17 @@ logicaDesvio1: entity work.logicaDesvio
                  entrada_jsr => jsr,
                  entrada_ret => ret,
                  entrada_jle => jle,
+=======
+          ENABLE => saida_dec(2), --mudar o enable
+    RST => '0');
+					  
+logicaDesvio1: entity work.logicaDesvio
+        port map( entrada_flag => saida_zf,
+                 entrada_jeq => saida_dec(7),
+                 entrada_jmp => saida_dec(10),
+					  entrada_jsr => saida_dec(8),
+					  entrada_ret => saida_dec(9),
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
                  saida => saida_desvio);
 					  
 Reg_Retorno: entity work.registradorGenerico   generic map (larguraDados => 9)
@@ -125,6 +157,7 @@ port map (DIN => proxPC, DOUT => saida_reg_retorno, ENABLE => saida_dec(11), CLK
 ROM_Address <= Endereco;
 Data_OUT <= saida_regA;
 Data_Address <= Addr;
+<<<<<<< HEAD
 
 
 
@@ -142,5 +175,9 @@ habLE <= saida_dec(2);
 Rd <= saida_dec(1);
 Wr <= saida_dec(0);
 
+=======
+Wr <= saida_dec(0);
+Rd <= saida_dec(1);
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 end architecture;

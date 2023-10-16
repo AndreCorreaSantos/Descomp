@@ -1,5 +1,9 @@
 Timing Analyzer report for Atv06
+<<<<<<< HEAD
 Sat Oct 14 21:10:16 2023
+=======
+Sat Oct 14 06:04:12 2023
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -95,9 +99,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
+<<<<<<< HEAD
 ; Average used               ; 1.27        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
@@ -124,6 +129,29 @@ https://fpgasoftware.intel.com/eula.
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
 ; CLOCK_50   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 } ;
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+=======
+; Average used               ; 1.26        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   8.9%      ;
+;     Processor 3            ;   8.7%      ;
+;     Processor 4            ;   8.7%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                     ;
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
+; Clock Name   ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets          ;
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
+; CLOCK_50     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 }     ;
+; FPGA_RESET_N ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { FPGA_RESET_N } ;
+; KEY[0]       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { KEY[0] }       ;
+; KEY[1]       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { KEY[1] }       ;
++--------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +--------------------------------------------------+
@@ -131,7 +159,11 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
+<<<<<<< HEAD
 ; 122.64 MHz ; 122.64 MHz      ; CLOCK_50   ;      ;
+=======
+; 106.88 MHz ; 106.88 MHz      ; CLOCK_50   ;      ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -147,7 +179,11 @@ HTML report is unavailable in plain text report export.
 +----------+--------+-----------------+
 ; Clock    ; Slack  ; End Point TNS   ;
 +----------+--------+-----------------+
+<<<<<<< HEAD
 ; CLOCK_50 ; -5.715 ; -254.653        ;
+=======
+; CLOCK_50 ; -8.356 ; -3371.368       ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +----------+--------+-----------------+
 
 
@@ -156,29 +192,64 @@ HTML report is unavailable in plain text report export.
 +----------+-------+-----------------+
 ; Clock    ; Slack ; End Point TNS   ;
 +----------+-------+-----------------+
+<<<<<<< HEAD
 ; CLOCK_50 ; 0.364 ; 0.000           ;
+=======
+; CLOCK_50 ; 0.769 ; 0.000           ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +----------+-------+-----------------+
 
 
 ------------------------------------------
 ; Slow 1100mV 85C Model Recovery Summary ;
+<<<<<<< HEAD
 ------------------------------------------
 No paths to report.
+=======
++--------------+--------+----------------+
+; Clock        ; Slack  ; End Point TNS  ;
++--------------+--------+----------------+
+; KEY[1]       ; -5.126 ; -5.126         ;
+; KEY[0]       ; -4.717 ; -4.717         ;
+; FPGA_RESET_N ; -4.627 ; -4.627         ;
++--------------+--------+----------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 -----------------------------------------
 ; Slow 1100mV 85C Model Removal Summary ;
+<<<<<<< HEAD
 -----------------------------------------
 No paths to report.
+=======
++--------------+-------+----------------+
+; Clock        ; Slack ; End Point TNS  ;
++--------------+-------+----------------+
+; FPGA_RESET_N ; 0.991 ; 0.000          ;
+; KEY[0]       ; 1.496 ; 0.000          ;
+; KEY[1]       ; 1.530 ; 0.000          ;
++--------------+-------+----------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +---------------------------------------------------+
 ; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
+<<<<<<< HEAD
 +----------+--------+-------------------------------+
 ; Clock    ; Slack  ; End Point TNS                 ;
 +----------+--------+-------------------------------+
 ; CLOCK_50 ; -0.790 ; -75.085                       ;
 +----------+--------+-------------------------------+
+=======
++--------------+--------+---------------------------+
+; Clock        ; Slack  ; End Point TNS             ;
++--------------+--------+---------------------------+
+; CLOCK_50     ; -1.031 ; -822.186                  ;
+; FPGA_RESET_N ; -0.807 ; -1.412                    ;
+; KEY[1]       ; -0.726 ; -1.264                    ;
+; KEY[0]       ; -0.579 ; -1.117                    ;
++--------------+--------+---------------------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 -----------------------------------------------
@@ -187,6 +258,7 @@ No paths to report.
 No synchronizer chains to report.
 
 
+<<<<<<< HEAD
 +--------------------------------------------------+
 ; Slow 1100mV 0C Model Fmax Summary                ;
 +------------+-----------------+------------+------+
@@ -194,6 +266,15 @@ No synchronizer chains to report.
 +------------+-----------------+------------+------+
 ; 122.43 MHz ; 122.43 MHz      ; CLOCK_50   ;      ;
 +------------+-----------------+------------+------+
+=======
++-------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary               ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 106.0 MHz ; 106.0 MHz       ; CLOCK_50   ;      ;
++-----------+-----------------+------------+------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -202,7 +283,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+--------+----------------+
 ; Clock    ; Slack  ; End Point TNS  ;
 +----------+--------+----------------+
+<<<<<<< HEAD
 ; CLOCK_50 ; -5.761 ; -255.911       ;
+=======
+; CLOCK_50 ; -8.434 ; -3264.595      ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +----------+--------+----------------+
 
 
@@ -211,29 +296,64 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
+<<<<<<< HEAD
 ; CLOCK_50 ; 0.338 ; 0.000          ;
+=======
+; CLOCK_50 ; 0.701 ; 0.000          ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +----------+-------+----------------+
 
 
 -----------------------------------------
 ; Slow 1100mV 0C Model Recovery Summary ;
+<<<<<<< HEAD
 -----------------------------------------
 No paths to report.
+=======
++--------------+--------+---------------+
+; Clock        ; Slack  ; End Point TNS ;
++--------------+--------+---------------+
+; KEY[1]       ; -5.290 ; -5.290        ;
+; FPGA_RESET_N ; -4.813 ; -4.813        ;
+; KEY[0]       ; -4.742 ; -4.742        ;
++--------------+--------+---------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 ----------------------------------------
 ; Slow 1100mV 0C Model Removal Summary ;
+<<<<<<< HEAD
 ----------------------------------------
 No paths to report.
+=======
++--------------+-------+---------------+
+; Clock        ; Slack ; End Point TNS ;
++--------------+-------+---------------+
+; FPGA_RESET_N ; 1.012 ; 0.000         ;
+; KEY[1]       ; 1.443 ; 0.000         ;
+; KEY[0]       ; 1.534 ; 0.000         ;
++--------------+-------+---------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +--------------------------------------------------+
 ; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
+<<<<<<< HEAD
 +----------+--------+------------------------------+
 ; Clock    ; Slack  ; End Point TNS                ;
 +----------+--------+------------------------------+
 ; CLOCK_50 ; -0.859 ; -83.748                      ;
 +----------+--------+------------------------------+
+=======
++--------------+--------+--------------------------+
+; Clock        ; Slack  ; End Point TNS            ;
++--------------+--------+--------------------------+
+; CLOCK_50     ; -1.037 ; -860.977                 ;
+; FPGA_RESET_N ; -0.893 ; -1.659                   ;
+; KEY[1]       ; -0.809 ; -1.470                   ;
+; KEY[0]       ; -0.628 ; -1.166                   ;
++--------------+--------+--------------------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 ----------------------------------------------
@@ -247,7 +367,11 @@ No synchronizer chains to report.
 +----------+--------+-----------------+
 ; Clock    ; Slack  ; End Point TNS   ;
 +----------+--------+-----------------+
+<<<<<<< HEAD
 ; CLOCK_50 ; -2.704 ; -101.495        ;
+=======
+; CLOCK_50 ; -4.083 ; -1598.449       ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +----------+--------+-----------------+
 
 
@@ -256,29 +380,64 @@ No synchronizer chains to report.
 +----------+-------+-----------------+
 ; Clock    ; Slack ; End Point TNS   ;
 +----------+-------+-----------------+
+<<<<<<< HEAD
 ; CLOCK_50 ; 0.125 ; 0.000           ;
+=======
+; CLOCK_50 ; 0.297 ; 0.000           ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +----------+-------+-----------------+
 
 
 ------------------------------------------
 ; Fast 1100mV 85C Model Recovery Summary ;
+<<<<<<< HEAD
 ------------------------------------------
 No paths to report.
+=======
++--------------+--------+----------------+
+; Clock        ; Slack  ; End Point TNS  ;
++--------------+--------+----------------+
+; KEY[1]       ; -2.104 ; -2.104         ;
+; KEY[0]       ; -1.926 ; -1.926         ;
+; FPGA_RESET_N ; -1.788 ; -1.788         ;
++--------------+--------+----------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 -----------------------------------------
 ; Fast 1100mV 85C Model Removal Summary ;
+<<<<<<< HEAD
 -----------------------------------------
 No paths to report.
+=======
++--------------+-------+----------------+
+; Clock        ; Slack ; End Point TNS  ;
++--------------+-------+----------------+
+; FPGA_RESET_N ; 0.074 ; 0.000          ;
+; KEY[0]       ; 0.393 ; 0.000          ;
+; KEY[1]       ; 0.505 ; 0.000          ;
++--------------+-------+----------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +---------------------------------------------------+
 ; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
+<<<<<<< HEAD
 +----------+--------+-------------------------------+
 ; Clock    ; Slack  ; End Point TNS                 ;
 +----------+--------+-------------------------------+
 ; CLOCK_50 ; -0.879 ; -76.606                       ;
 +----------+--------+-------------------------------+
+=======
++--------------+--------+---------------------------+
+; Clock        ; Slack  ; End Point TNS             ;
++--------------+--------+---------------------------+
+; CLOCK_50     ; -1.067 ; -809.924                  ;
+; FPGA_RESET_N ; -0.906 ; -2.345                    ;
+; KEY[1]       ; -0.812 ; -2.069                    ;
+; KEY[0]       ; -0.714 ; -1.889                    ;
++--------------+--------+---------------------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 -----------------------------------------------
@@ -292,7 +451,11 @@ No synchronizer chains to report.
 +----------+--------+----------------+
 ; Clock    ; Slack  ; End Point TNS  ;
 +----------+--------+----------------+
+<<<<<<< HEAD
 ; CLOCK_50 ; -2.518 ; -90.408        ;
+=======
+; CLOCK_50 ; -3.652 ; -1380.211      ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +----------+--------+----------------+
 
 
@@ -301,29 +464,64 @@ No synchronizer chains to report.
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
+<<<<<<< HEAD
 ; CLOCK_50 ; 0.097 ; 0.000          ;
+=======
+; CLOCK_50 ; 0.278 ; 0.000          ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +----------+-------+----------------+
 
 
 -----------------------------------------
 ; Fast 1100mV 0C Model Recovery Summary ;
+<<<<<<< HEAD
 -----------------------------------------
 No paths to report.
+=======
++--------------+--------+---------------+
+; Clock        ; Slack  ; End Point TNS ;
++--------------+--------+---------------+
+; KEY[1]       ; -1.848 ; -1.848        ;
+; KEY[0]       ; -1.724 ; -1.724        ;
+; FPGA_RESET_N ; -1.563 ; -1.563        ;
++--------------+--------+---------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 ----------------------------------------
 ; Fast 1100mV 0C Model Removal Summary ;
+<<<<<<< HEAD
 ----------------------------------------
 No paths to report.
+=======
++--------------+-------+---------------+
+; Clock        ; Slack ; End Point TNS ;
++--------------+-------+---------------+
+; FPGA_RESET_N ; 0.039 ; 0.000         ;
+; KEY[0]       ; 0.347 ; 0.000         ;
+; KEY[1]       ; 0.413 ; 0.000         ;
++--------------+-------+---------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +--------------------------------------------------+
 ; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
+<<<<<<< HEAD
 +----------+--------+------------------------------+
 ; Clock    ; Slack  ; End Point TNS                ;
 +----------+--------+------------------------------+
 ; CLOCK_50 ; -0.884 ; -78.984                      ;
 +----------+--------+------------------------------+
+=======
++--------------+--------+--------------------------+
+; Clock        ; Slack  ; End Point TNS            ;
++--------------+--------+--------------------------+
+; CLOCK_50     ; -1.018 ; -808.390                 ;
+; FPGA_RESET_N ; -0.922 ; -2.540                   ;
+; KEY[1]       ; -0.836 ; -2.286                   ;
+; KEY[0]       ; -0.744 ; -2.097                   ;
++--------------+--------+--------------------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 ----------------------------------------------
@@ -332,6 +530,7 @@ No paths to report.
 No synchronizer chains to report.
 
 
+<<<<<<< HEAD
 +--------------------------------------------------------------------------------+
 ; Multicorner Timing Analysis Summary                                            ;
 +------------------+----------+-------+----------+---------+---------------------+
@@ -342,6 +541,24 @@ No synchronizer chains to report.
 ; Design-wide TNS  ; -255.911 ; 0.0   ; 0.0      ; 0.0     ; -83.748             ;
 ;  CLOCK_50        ; -255.911 ; 0.000 ; N/A      ; N/A     ; -83.748             ;
 +------------------+----------+-------+----------+---------+---------------------+
+=======
++---------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                             ;
++------------------+-----------+-------+----------+---------+---------------------+
+; Clock            ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -8.434    ; 0.278 ; -5.290   ; 0.039   ; -1.067              ;
+;  CLOCK_50        ; -8.434    ; 0.278 ; N/A      ; N/A     ; -1.067              ;
+;  FPGA_RESET_N    ; N/A       ; N/A   ; -4.813   ; 0.039   ; -0.922              ;
+;  KEY[0]          ; N/A       ; N/A   ; -4.742   ; 0.347   ; -0.744              ;
+;  KEY[1]          ; N/A       ; N/A   ; -5.290   ; 0.413   ; -0.836              ;
+; Design-wide TNS  ; -3371.368 ; 0.0   ; -14.845  ; 0.0     ; -865.272            ;
+;  CLOCK_50        ; -3371.368 ; 0.000 ; N/A      ; N/A     ; -860.977            ;
+;  FPGA_RESET_N    ; N/A       ; N/A   ; -4.813   ; 0.000   ; -2.540              ;
+;  KEY[0]          ; N/A       ; N/A   ; -4.742   ; 0.000   ; -2.097              ;
+;  KEY[1]          ; N/A       ; N/A   ; -5.290   ; 0.000   ; -2.286              ;
++------------------+-----------+-------+----------+---------+---------------------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -409,12 +626,21 @@ No synchronizer chains to report.
 +--------------+--------------+-----------------+-----------------+
 ; Pin          ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +--------------+--------------+-----------------+-----------------+
+<<<<<<< HEAD
 ; KEY[0]       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; KEY[1]       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; KEY[2]       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; KEY[3]       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; FPGA_RESET_N ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[0]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+=======
+; KEY[2]       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; KEY[3]       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[8]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[9]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[0]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; CLOCK_50     ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 ; SW[1]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[2]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[3]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
@@ -422,9 +648,15 @@ No synchronizer chains to report.
 ; SW[5]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[6]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[7]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+<<<<<<< HEAD
 ; SW[8]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[9]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; CLOCK_50     ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+=======
+; KEY[0]       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; KEY[1]       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; FPGA_RESET_N ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +--------------+--------------+-----------------+-----------------+
 
 
@@ -668,6 +900,7 @@ No synchronizer chains to report.
 +---------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
+<<<<<<< HEAD
 +-------------------------------------------------------------------+
 ; Setup Transfers                                                   ;
 +------------+----------+----------+----------+----------+----------+
@@ -685,6 +918,55 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; CLOCK_50   ; CLOCK_50 ; 18928    ; 1        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
+=======
++---------------------------------------------------------------------+
+; Setup Transfers                                                     ;
++--------------+----------+----------+----------+----------+----------+
+; From Clock   ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------+----------+----------+----------+----------+----------+
+; CLOCK_50     ; CLOCK_50 ; 221743   ; 1        ; 0        ; 0        ;
+; FPGA_RESET_N ; CLOCK_50 ; 18       ; 1        ; 0        ; 0        ;
+; KEY[0]       ; CLOCK_50 ; 18       ; 1        ; 0        ; 0        ;
+; KEY[1]       ; CLOCK_50 ; 18       ; 1        ; 0        ; 0        ;
++--------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------+
+; Hold Transfers                                                      ;
++--------------+----------+----------+----------+----------+----------+
+; From Clock   ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------+----------+----------+----------+----------+----------+
+; CLOCK_50     ; CLOCK_50 ; 221743   ; 1        ; 0        ; 0        ;
+; FPGA_RESET_N ; CLOCK_50 ; 18       ; 1        ; 0        ; 0        ;
+; KEY[0]       ; CLOCK_50 ; 18       ; 1        ; 0        ; 0        ;
+; KEY[1]       ; CLOCK_50 ; 18       ; 1        ; 0        ; 0        ;
++--------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------+
+; Recovery Transfers                                                    ;
++------------+--------------+----------+----------+----------+----------+
+; From Clock ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+--------------+----------+----------+----------+----------+
+; CLOCK_50   ; FPGA_RESET_N ; 202      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[0]       ; 202      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[1]       ; 202      ; 0        ; 0        ; 0        ;
++------------+--------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------+
+; Removal Transfers                                                     ;
++------------+--------------+----------+----------+----------+----------+
+; From Clock ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+--------------+----------+----------+----------+----------+
+; CLOCK_50   ; FPGA_RESET_N ; 202      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[0]       ; 202      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[1]       ; 202      ; 0        ; 0        ; 0        ;
++------------+--------------+----------+----------+----------+----------+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -707,6 +989,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
+<<<<<<< HEAD
 ; Unconstrained Input Ports       ; 0     ; 0    ;
 ; Unconstrained Input Port Paths  ; 0     ; 0    ;
 ; Unconstrained Output Ports      ; 10    ; 10   ;
@@ -723,11 +1006,97 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +----------+----------+------+-------------+
 
 
+=======
+; Unconstrained Input Ports       ; 12    ; 12   ;
+; Unconstrained Input Port Paths  ; 80    ; 80   ;
+; Unconstrained Output Ports      ; 52    ; 52   ;
+; Unconstrained Output Port Paths ; 178   ; 178  ;
++---------------------------------+-------+------+
+
+
++--------------------------------------------------+
+; Clock Status Summary                             ;
++--------------+--------------+------+-------------+
+; Target       ; Clock        ; Type ; Status      ;
++--------------+--------------+------+-------------+
+; CLOCK_50     ; CLOCK_50     ; Base ; Constrained ;
+; FPGA_RESET_N ; FPGA_RESET_N ; Base ; Constrained ;
+; KEY[0]       ; KEY[0]       ; Base ; Constrained ;
+; KEY[1]       ; KEY[1]       ; Base ; Constrained ;
++--------------+--------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; KEY[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; KEY[3]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[3]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[7]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[8]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[9]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +-----------------------------------------------------------------------------------------------------+
 ; Unconstrained Output Ports                                                                          ;
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+<<<<<<< HEAD
+=======
+; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -741,11 +1110,79 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 
 
+<<<<<<< HEAD
+=======
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; KEY[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; KEY[3]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[3]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[7]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[8]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[9]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 +-----------------------------------------------------------------------------------------------------+
 ; Unconstrained Output Ports                                                                          ;
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
+<<<<<<< HEAD
+=======
+; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX1[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX2[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX3[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX4[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX5[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -765,23 +1202,34 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Sat Oct 14 21:10:11 2023
+=======
+    Info: Processing started: Sat Oct 14 06:04:01 2023
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Info: Command: quartus_sta Atv06 -c Atv06
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Atv06.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name CLOCK_50 CLOCK_50
+<<<<<<< HEAD
+=======
+    Info (332105): create_clock -period 1.000 -name FPGA_RESET_N FPGA_RESET_N
+    Info (332105): create_clock -period 1.000 -name KEY[1] KEY[1]
+    Info (332105): create_clock -period 1.000 -name KEY[0] KEY[0]
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+<<<<<<< HEAD
 Info (332146): Worst-case setup slack is -5.715
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -796,12 +1244,42 @@ Info (332146): Worst-case minimum pulse width slack is -0.790
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -0.790             -75.085 CLOCK_50 
+=======
+Info (332146): Worst-case setup slack is -8.356
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -8.356           -3371.368 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.769
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.769               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is -5.126
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -5.126              -5.126 KEY[1] 
+    Info (332119):    -4.717              -4.717 KEY[0] 
+    Info (332119):    -4.627              -4.627 FPGA_RESET_N 
+Info (332146): Worst-case removal slack is 0.991
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.991               0.000 FPGA_RESET_N 
+    Info (332119):     1.496               0.000 KEY[0] 
+    Info (332119):     1.530               0.000 KEY[1] 
+Info (332146): Worst-case minimum pulse width slack is -1.031
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.031            -822.186 CLOCK_50 
+    Info (332119):    -0.807              -1.412 FPGA_RESET_N 
+    Info (332119):    -0.726              -1.264 KEY[1] 
+    Info (332119):    -0.579              -1.117 KEY[0] 
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+<<<<<<< HEAD
 Info (332146): Worst-case setup slack is -5.761
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -816,12 +1294,42 @@ Info (332146): Worst-case minimum pulse width slack is -0.859
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -0.859             -83.748 CLOCK_50 
+=======
+Info (332146): Worst-case setup slack is -8.434
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -8.434           -3264.595 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.701
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.701               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is -5.290
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -5.290              -5.290 KEY[1] 
+    Info (332119):    -4.813              -4.813 FPGA_RESET_N 
+    Info (332119):    -4.742              -4.742 KEY[0] 
+Info (332146): Worst-case removal slack is 1.012
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.012               0.000 FPGA_RESET_N 
+    Info (332119):     1.443               0.000 KEY[1] 
+    Info (332119):     1.534               0.000 KEY[0] 
+Info (332146): Worst-case minimum pulse width slack is -1.037
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.037            -860.977 CLOCK_50 
+    Info (332119):    -0.893              -1.659 FPGA_RESET_N 
+    Info (332119):    -0.809              -1.470 KEY[1] 
+    Info (332119):    -0.628              -1.166 KEY[0] 
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+<<<<<<< HEAD
 Info (332146): Worst-case setup slack is -2.704
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -836,10 +1344,40 @@ Info (332146): Worst-case minimum pulse width slack is -0.879
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -0.879             -76.606 CLOCK_50 
+=======
+Info (332146): Worst-case setup slack is -4.083
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.083           -1598.449 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.297
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.297               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is -2.104
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.104              -2.104 KEY[1] 
+    Info (332119):    -1.926              -1.926 KEY[0] 
+    Info (332119):    -1.788              -1.788 FPGA_RESET_N 
+Info (332146): Worst-case removal slack is 0.074
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.074               0.000 FPGA_RESET_N 
+    Info (332119):     0.393               0.000 KEY[0] 
+    Info (332119):     0.505               0.000 KEY[1] 
+Info (332146): Worst-case minimum pulse width slack is -1.067
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.067            -809.924 CLOCK_50 
+    Info (332119):    -0.906              -2.345 FPGA_RESET_N 
+    Info (332119):    -0.812              -2.069 KEY[1] 
+    Info (332119):    -0.714              -1.889 KEY[0] 
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+<<<<<<< HEAD
 Info (332146): Worst-case setup slack is -2.518
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -861,5 +1399,41 @@ Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
     Info: Processing ended: Sat Oct 14 21:10:16 2023
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:04
+=======
+Info (332146): Worst-case setup slack is -3.652
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.652           -1380.211 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.278
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.278               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is -1.848
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.848              -1.848 KEY[1] 
+    Info (332119):    -1.724              -1.724 KEY[0] 
+    Info (332119):    -1.563              -1.563 FPGA_RESET_N 
+Info (332146): Worst-case removal slack is 0.039
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.039               0.000 FPGA_RESET_N 
+    Info (332119):     0.347               0.000 KEY[0] 
+    Info (332119):     0.413               0.000 KEY[1] 
+Info (332146): Worst-case minimum pulse width slack is -1.018
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.018            -808.390 CLOCK_50 
+    Info (332119):    -0.922              -2.540 FPGA_RESET_N 
+    Info (332119):    -0.836              -2.286 KEY[1] 
+    Info (332119):    -0.744              -2.097 KEY[0] 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 5080 megabytes
+    Info: Processing ended: Sat Oct 14 06:04:12 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:13
+>>>>>>> 77db001fd1786aa808d628cf9270c75f5f01dc42
 
 
