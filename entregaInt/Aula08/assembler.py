@@ -116,5 +116,6 @@ with open(output_name, 'w') as file:
     # Iterate through the list and write each string
     for i, line in enumerate(parsed_lines):
         # Write memory address in hex, followed by binary data
-        file.write(f'{i:03d} : {line+";\n"}')  # Using 3 digits for the address (up to 512 addresses)
+        line = line+";\n"
+        file.write(f'{i:03d} : {line}')  # Using 3 digits for the address (up to 512 addresses)
     file.write(mif_footer)
