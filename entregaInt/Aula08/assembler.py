@@ -94,8 +94,7 @@ for i, line in enumerate(parsed_lines):
     parsed_lines[i] = ' '.join(elements)
     # Removing empty lines
     parsed_lines[i] = parsed_lines[i].replace(" ","")
-#remove last line
-# parsed_lines[-1] = parsed_lines[-1][0:-1]
+
 
 memory_width = 13
 memory_depth = 512  # Updated to 512
