@@ -1,0 +1,81 @@
+|teste
+entradaCircuito[0] => mux4x1:MUX1.seletor[0]
+entradaCircuito[0] => mux4x1:MUX2.seletor[0]
+entradaCircuito[0] => mux4x1:MUX3.seletor[0]
+entradaCircuito[0] => mux4x1:MUX4.seletor[0]
+entradaCircuito[1] => mux4x1:MUX1.seletor[1]
+entradaCircuito[1] => mux4x1:MUX2.seletor[1]
+entradaCircuito[1] => mux4x1:MUX3.seletor[1]
+entradaCircuito[1] => mux4x1:MUX4.seletor[1]
+entradaCircuito[2] => mux4x1:MUX1.entradaD
+entradaCircuito[2] => mux4x1:MUX2.entradaC
+entradaCircuito[2] => mux4x1:MUX3.entradaB
+entradaCircuito[2] => mux4x1:MUX4.entradaA
+entradaCircuito[3] => mux4x1:MUX1.entradaC
+entradaCircuito[3] => mux4x1:MUX2.entradaB
+entradaCircuito[3] => mux4x1:MUX3.entradaA
+entradaCircuito[4] => mux4x1:MUX1.entradaB
+entradaCircuito[4] => mux4x1:MUX2.entradaA
+entradaCircuito[5] => mux4x1:MUX1.entradaA
+saidaCircuito[0] <= mux4x1:MUX4.saida
+saidaCircuito[1] <= mux4x1:MUX3.saida
+saidaCircuito[2] <= mux4x1:MUX2.saida
+saidaCircuito[3] <= mux4x1:MUX1.saida
+
+
+|teste|Mux4x1:MUX1
+entradaA => saida.DATAB
+entradaB => saida.DATAB
+entradaC => saida.DATAB
+entradaD => saida.DATAA
+seletor[0] => Equal0.IN0
+seletor[0] => Equal1.IN1
+seletor[0] => Equal2.IN1
+seletor[1] => Equal0.IN1
+seletor[1] => Equal1.IN0
+seletor[1] => Equal2.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|teste|Mux4x1:MUX2
+entradaA => saida.DATAB
+entradaB => saida.DATAB
+entradaC => saida.DATAB
+entradaD => saida.DATAA
+seletor[0] => Equal0.IN0
+seletor[0] => Equal1.IN1
+seletor[0] => Equal2.IN1
+seletor[1] => Equal0.IN1
+seletor[1] => Equal1.IN0
+seletor[1] => Equal2.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|teste|Mux4x1:MUX3
+entradaA => saida.DATAB
+entradaB => saida.DATAB
+entradaC => saida.DATAB
+entradaD => saida.DATAA
+seletor[0] => Equal0.IN0
+seletor[0] => Equal1.IN1
+seletor[0] => Equal2.IN1
+seletor[1] => Equal0.IN1
+seletor[1] => Equal1.IN0
+seletor[1] => Equal2.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|teste|Mux4x1:MUX4
+entradaA => saida.DATAB
+entradaB => saida.DATAB
+entradaC => saida.DATAB
+entradaD => saida.DATAA
+seletor[0] => Equal0.IN0
+seletor[0] => Equal1.IN1
+seletor[0] => Equal2.IN1
+seletor[1] => Equal0.IN1
+seletor[1] => Equal1.IN0
+seletor[1] => Equal2.IN0
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

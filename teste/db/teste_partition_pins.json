@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "saidaCircuito[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaCircuito[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaCircuito[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaCircuito[3]",
+					"strict" : false
+				},
+				{
+					"name" : "entradaCircuito[1]",
+					"strict" : false
+				},
+				{
+					"name" : "entradaCircuito[0]",
+					"strict" : false
+				},
+				{
+					"name" : "entradaCircuito[2]",
+					"strict" : false
+				},
+				{
+					"name" : "entradaCircuito[3]",
+					"strict" : false
+				},
+				{
+					"name" : "entradaCircuito[4]",
+					"strict" : false
+				},
+				{
+					"name" : "entradaCircuito[5]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
