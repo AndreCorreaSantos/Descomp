@@ -1,5 +1,5 @@
 Flow report for Atv06
-Mon Oct 16 21:47:10 2023
+Mon Oct 16 21:55:26 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Oct 16 21:47:00 2023       ;
+; Flow Status                     ; Successful - Mon Oct 16 21:55:16 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Atv06                                       ;
 ; Top-level Entity Name           ; Atv06                                       ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/16/2023 21:44:16 ;
+; Start date & time ; 10/16/2023 21:52:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Atv06               ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 264086605098131.169750345524512        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 264086605098131.169750397105884        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -98,11 +98,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4925 MB             ; 00:00:14                           ;
-; Fitter               ; 00:02:16     ; 1.1                     ; 7482 MB             ; 00:05:23                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4825 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:09     ; 1.7                     ; 5232 MB             ; 00:00:12                           ;
-; Total                ; 00:02:51     ; --                      ; --                  ; 00:05:52                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4930 MB             ; 00:00:15                           ;
+; Fitter               ; 00:02:09     ; 1.1                     ; 7479 MB             ; 00:05:18                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4825 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:09     ; 1.7                     ; 5237 MB             ; 00:00:11                           ;
+; Total                ; 00:02:33     ; --                      ; --                  ; 00:05:47                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

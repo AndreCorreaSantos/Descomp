@@ -38,6 +38,7 @@ NOP
 NOP
 NOP
 NOP
+MAIN:
 LDA @352; Checa se KEY0 foi pressionado, caso verdade pula para a sub-rotina de incremento		
 AND @8
 CEQ @8				
@@ -66,7 +67,7 @@ AND @8
 CEQ @8				
 JEQ @170; Pula para a sub-rotina de Verificação de Limite			
 JMP @246; Volta para o começo da Main
-JMP @40; Sub-rotina de Troca de Limite 
+JMP MAIN; Sub-rotina de Troca de Limite 
 NOP
 NOP
 NOP
@@ -178,7 +179,7 @@ STA @4
 STA @5
 STA @258; Reseta a Flag de Inibir contagem e volta para Main
 STA @6
-JMP @40; Sub-rotina de Incremento
+JMP MAIN; Sub-rotina de Incremento
 NOP
 NOP
 NOP
@@ -195,7 +196,7 @@ SOMA @8
 CEQ @9
 JEQ @199
 STA @0
-JMP @40
+JMP MAIN
 NOP
 LDI $0;  Incrementa Dezenas caso overflow pula para as centenas, caso contrário salva o valor incrementado na memória (Dezenas) e volta pra Main
 STA @0
@@ -204,7 +205,7 @@ SOMA @8
 CEQ @9
 JEQ @208
 STA @1
-JMP @40
+JMP MAIN
 NOP
 LDI $0; Incrementa Centenas caso overflow pula para os Milhares, caso contrário salva o valor incrementado na memória (Centenas) e volta pra Main
 STA @1
@@ -213,7 +214,7 @@ SOMA @8
 CEQ @9
 JEQ @217
 STA @2
-JMP @40
+JMP MAIN
 NOP
 LDI $0; Incrementa Milhares caso overflow pula para as Dezenas de Milhares, caso contrário salva o valor incrementado na memória (Milhares) e volta pra Main
 STA @2
@@ -222,7 +223,7 @@ SOMA @8
 CEQ @9
 JEQ @226
 STA @3
-JMP @40
+JMP MAIN
 NOP
 LDI $0; Incrementa Dezenas Milhares caso overflow pula para as Centenas de Milhares, caso contrário salva o valor incrementado na memória (Dezenas de Milhares) e volta pra Main
 STA @3
@@ -231,14 +232,14 @@ SOMA @8
 CEQ @9
 JEQ @235
 STA @4
-JMP @40
+JMP MAIN
 NOP
 LDI $0; Incrementa Centenas de Milhares, salva o valor incrementado na memória (Centenas de Milhares) e volta pra Main
 STA @4
 LDA @5
 SOMA @8
 STA @5
-JMP @40; Sub-rotina de Verificação de Limite
+JMP MAIN; Sub-rotina de Verificação de Limite
 NOP
 NOP
 NOP
