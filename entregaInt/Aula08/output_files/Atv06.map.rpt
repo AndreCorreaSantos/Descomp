@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Atv06
-Sun Oct 15 07:46:48 2023
+Mon Oct 16 21:44:37 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,54 +13,53 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |Atv06
- 12. Parameter Settings for User Entity Instance: Processador:Processor|registradorGenerico:PC
- 13. Parameter Settings for User Entity Instance: Processador:Processor|somaConstante:incrementaPC
- 14. Parameter Settings for User Entity Instance: Processador:Processor|registradorGenerico:REGA
- 15. Parameter Settings for User Entity Instance: Processador:Processor|muxGenerico2x1:MUX1
- 16. Parameter Settings for User Entity Instance: Processador:Processor|muxGenerico4x1:MUXProxPC
- 17. Parameter Settings for User Entity Instance: Processador:Processor|ULASomaSub:ULA1
- 18. Parameter Settings for User Entity Instance: Processador:Processor|registradorGenerico:Reg_Retorno
- 19. Parameter Settings for User Entity Instance: romMif:ROM1
- 20. Parameter Settings for User Entity Instance: memoriaRAM:RAM1
- 21. Parameter Settings for User Entity Instance: LEDS:LED_UNITY|registradorGenerico:REG_LEDS
- 22. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0
- 23. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1
- 24. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2
- 25. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3
- 26. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4
- 27. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5
- 28. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor5"
- 29. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5"
- 30. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor4"
- 31. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4"
- 32. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor3"
- 33. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3"
- 34. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor2"
- 35. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2"
- 36. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor1"
- 37. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1"
- 38. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor0"
- 39. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0"
- 40. Port Connectivity Checks: "Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0"
- 41. Port Connectivity Checks: "LEDS:LED_UNITY|FlipFlop:LED9"
- 42. Port Connectivity Checks: "LEDS:LED_UNITY|FlipFlop:LED8"
- 43. Port Connectivity Checks: "LEDS:LED_UNITY|registradorGenerico:REG_LEDS"
- 44. Port Connectivity Checks: "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER2"
- 45. Port Connectivity Checks: "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER1"
- 46. Port Connectivity Checks: "Processador:Processor|registradorGenerico:Reg_Retorno"
- 47. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagLE"
- 48. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagZero"
- 49. Port Connectivity Checks: "Processador:Processor|muxGenerico4x1:MUXProxPC"
- 50. Port Connectivity Checks: "Processador:Processor|registradorGenerico:REGA"
- 51. Port Connectivity Checks: "Processador:Processor|decoderInstru:DECODER"
- 52. Port Connectivity Checks: "Processador:Processor|registradorGenerico:PC"
- 53. Post-Synthesis Netlist Statistics for Top Partition
- 54. Elapsed Time Per Partition
- 55. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |Atv06
+ 11. Parameter Settings for User Entity Instance: Processador:Processor|registradorGenerico:PC
+ 12. Parameter Settings for User Entity Instance: Processador:Processor|somaConstante:incrementaPC
+ 13. Parameter Settings for User Entity Instance: Processador:Processor|registradorGenerico:REGA
+ 14. Parameter Settings for User Entity Instance: Processador:Processor|muxGenerico2x1:MUX1
+ 15. Parameter Settings for User Entity Instance: Processador:Processor|muxGenerico4x1:MUXProxPC
+ 16. Parameter Settings for User Entity Instance: Processador:Processor|ULASomaSub:ULA1
+ 17. Parameter Settings for User Entity Instance: Processador:Processor|registradorGenerico:Reg_Retorno
+ 18. Parameter Settings for User Entity Instance: romMif:ROM1
+ 19. Parameter Settings for User Entity Instance: memoriaRAM:RAM1
+ 20. Parameter Settings for User Entity Instance: LEDS:LED_UNITY|registradorGenerico:REG_LEDS
+ 21. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0
+ 22. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1
+ 23. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2
+ 24. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3
+ 25. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4
+ 26. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5
+ 27. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor5"
+ 28. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5"
+ 29. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor4"
+ 30. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4"
+ 31. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor3"
+ 32. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3"
+ 33. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor2"
+ 34. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2"
+ 35. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor1"
+ 36. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1"
+ 37. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor0"
+ 38. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0"
+ 39. Port Connectivity Checks: "Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0"
+ 40. Port Connectivity Checks: "LEDS:LED_UNITY|FlipFlop:LED9"
+ 41. Port Connectivity Checks: "LEDS:LED_UNITY|FlipFlop:LED8"
+ 42. Port Connectivity Checks: "LEDS:LED_UNITY|registradorGenerico:REG_LEDS"
+ 43. Port Connectivity Checks: "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER2"
+ 44. Port Connectivity Checks: "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER1"
+ 45. Port Connectivity Checks: "Processador:Processor|registradorGenerico:Reg_Retorno"
+ 46. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagLE"
+ 47. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagZero"
+ 48. Port Connectivity Checks: "Processador:Processor|muxGenerico4x1:MUXProxPC"
+ 49. Port Connectivity Checks: "Processador:Processor|registradorGenerico:REGA"
+ 50. Port Connectivity Checks: "Processador:Processor|decoderInstru:DECODER"
+ 51. Port Connectivity Checks: "Processador:Processor|registradorGenerico:PC"
+ 52. Post-Synthesis Netlist Statistics for Top Partition
+ 53. Elapsed Time Per Partition
+ 54. Analysis & Synthesis Messages
 
 
 
@@ -87,7 +86,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 15 07:46:48 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 16 21:44:37 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Atv06                                       ;
 ; Top-level Entity Name           ; Atv06                                       ;
@@ -200,49 +199,54 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                     ;
-+------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path   ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
-+------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; romMIF.vhd                         ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/romMIF.vhd                         ;         ;
-; Atv06.vhd                          ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd                          ;         ;
-; ULASomaSub.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd                     ;         ;
-; somaConstante.vhd                  ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/somaConstante.vhd                  ;         ;
-; registradorGenerico.vhd            ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/registradorGenerico.vhd            ;         ;
-; muxGenerico4x1.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico4x1.vhd                 ;         ;
-; muxGenerico2x1.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd                 ;         ;
-; logicaDesvio.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/logicaDesvio.vhd                   ;         ;
-; edgeDetector.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/edgeDetector.vhd                   ;         ;
-; decoderInstru.vhd                  ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/decoderInstru.vhd                  ;         ;
-; Processador.vhd                    ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd                    ;         ;
-; FlipFlop.vhd                       ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/FlipFlop.vhd                       ;         ;
-; memoriaRAM.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/memoriaRAM.vhd                     ;         ;
-; decoder3x8.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/decoder3x8.vhd                     ;         ;
-; LEDS.vhd                           ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/LEDS.vhd                           ;         ;
-; output_files/decoderToHabilita.vhd ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/output_files/decoderToHabilita.vhd ;         ;
-; HEXES.vhd                          ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/HEXES.vhd                          ;         ;
-; conversorHex7Seg.vhd               ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/conversorHex7Seg.vhd               ;         ;
-; buffer_3_state_8portas.vhd         ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/buffer_3_state_8portas.vhd         ;         ;
-; buffer_3_state_1porta.vhd          ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/buffer_3_state_1porta.vhd          ;         ;
-; SWITCHES.vhd                       ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/SWITCHES.vhd                       ;         ;
-; KEYS.vhd                           ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/KEYS.vhd                           ;         ;
-; Detector_Keys.vhd                  ; yes             ; User VHDL File  ; C:/Descomp/Descomp/entregaInt/Aula08/Detector_Keys.vhd                  ;         ;
-+------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++------------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type       ; File Name with Absolute Path                                    ; Library ;
++------------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
+; romMIF.vhd                         ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/romMIF.vhd                         ;         ;
+; Atv06.vhd                          ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/Atv06.vhd                          ;         ;
+; ULASomaSub.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/ULASomaSub.vhd                     ;         ;
+; somaConstante.vhd                  ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/somaConstante.vhd                  ;         ;
+; registradorGenerico.vhd            ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/registradorGenerico.vhd            ;         ;
+; muxGenerico4x1.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/muxGenerico4x1.vhd                 ;         ;
+; muxGenerico2x1.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd                 ;         ;
+; logicaDesvio.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/logicaDesvio.vhd                   ;         ;
+; edgeDetector.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/edgeDetector.vhd                   ;         ;
+; decoderInstru.vhd                  ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/decoderInstru.vhd                  ;         ;
+; Processador.vhd                    ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/Processador.vhd                    ;         ;
+; FlipFlop.vhd                       ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/FlipFlop.vhd                       ;         ;
+; memoriaRAM.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/memoriaRAM.vhd                     ;         ;
+; decoder3x8.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/decoder3x8.vhd                     ;         ;
+; LEDS.vhd                           ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/LEDS.vhd                           ;         ;
+; output_files/decoderToHabilita.vhd ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/output_files/decoderToHabilita.vhd ;         ;
+; HEXES.vhd                          ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/HEXES.vhd                          ;         ;
+; conversorHex7Seg.vhd               ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/conversorHex7Seg.vhd               ;         ;
+; buffer_3_state_8portas.vhd         ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/buffer_3_state_8portas.vhd         ;         ;
+; buffer_3_state_1porta.vhd          ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/buffer_3_state_1porta.vhd          ;         ;
+; SWITCHES.vhd                       ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/SWITCHES.vhd                       ;         ;
+; KEYS.vhd                           ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/KEYS.vhd                           ;         ;
+; Detector_Keys.vhd                  ; yes             ; User VHDL File  ; C:/Descomp/entregaInt/Aula08/Detector_Keys.vhd                  ;         ;
++------------------------------------+-----------------+-----------------+-----------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------------+
@@ -250,14 +254,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------+
 ; Resource                                    ; Usage                                   ;
 +---------------------------------------------+-----------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 492                                     ;
+; Estimate of Logic utilization (ALMs needed) ; 497                                     ;
 ;                                             ;                                         ;
-; Combinational ALUT usage for logic          ; 538                                     ;
-;     -- 7 input functions                    ; 1                                       ;
-;     -- 6 input functions                    ; 321                                     ;
-;     -- 5 input functions                    ; 46                                      ;
-;     -- 4 input functions                    ; 69                                      ;
-;     -- <=3 input functions                  ; 101                                     ;
+; Combinational ALUT usage for logic          ; 553                                     ;
+;     -- 7 input functions                    ; 0                                       ;
+;     -- 6 input functions                    ; 334                                     ;
+;     -- 5 input functions                    ; 43                                      ;
+;     -- 4 input functions                    ; 71                                      ;
+;     -- <=3 input functions                  ; 105                                     ;
 ;                                             ;                                         ;
 ; Dedicated logic registers                   ; 581                                     ;
 ;                                             ;                                         ;
@@ -267,8 +271,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                         ;
 ; Maximum fan-out node                        ; edgeDetector:\gravar:detectorSub0|saida ;
 ; Maximum fan-out                             ; 577                                     ;
-; Total fan-out                               ; 4507                                    ;
-; Average fan-out                             ; 3.59                                    ;
+; Total fan-out                               ; 4590                                    ;
+; Average fan-out                             ; 3.61                                    ;
 +---------------------------------------------+-----------------------------------------+
 
 
@@ -277,7 +281,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Entity Name         ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
-; |Atv06                                       ; 538 (6)             ; 581 (0)                   ; 0                 ; 0          ; 68   ; 0            ; |Atv06                                                        ; Atv06               ; work         ;
+; |Atv06                                       ; 553 (9)             ; 581 (0)                   ; 0                 ; 0          ; 68   ; 0            ; |Atv06                                                        ; Atv06               ; work         ;
 ;    |Detector_Keys:Detect_KEY0|               ; 1 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0                              ; Detector_Keys       ; work         ;
 ;       |FlipFlop:Flip_Flop_Key0|              ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0      ; FlipFlop            ; work         ;
 ;       |edgeDetector:detectorKey0|            ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0    ; edgeDetector        ; work         ;
@@ -304,13 +308,13 @@ https://fpgasoftware.intel.com/eula.
 ;       |FlipFlop:LED8|                        ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|FlipFlop:LED8                           ; FlipFlop            ; work         ;
 ;       |FlipFlop:LED9|                        ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|FlipFlop:LED9                           ; FlipFlop            ; work         ;
 ;       |registradorGenerico:REG_LEDS|         ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|LEDS:LED_UNITY|registradorGenerico:REG_LEDS            ; registradorGenerico ; work         ;
-;    |Processador:Processor|                   ; 63 (0)              ; 28 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor                                  ; Processador         ; work         ;
+;    |Processador:Processor|                   ; 74 (0)              ; 28 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor                                  ; Processador         ; work         ;
 ;       |FlipFlop:FlagLE|                      ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|FlipFlop:FlagLE                  ; FlipFlop            ; work         ;
-;       |FlipFlop:FlagZero|                    ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|FlipFlop:FlagZero                ; FlipFlop            ; work         ;
-;       |ULASomaSub:ULA1|                      ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|ULASomaSub:ULA1                  ; ULASomaSub          ; work         ;
-;       |decoderInstru:DECODER|                ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|decoderInstru:DECODER            ; decoderInstru       ; work         ;
+;       |FlipFlop:FlagZero|                    ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|FlipFlop:FlagZero                ; FlipFlop            ; work         ;
+;       |ULASomaSub:ULA1|                      ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|ULASomaSub:ULA1                  ; ULASomaSub          ; work         ;
+;       |decoderInstru:DECODER|                ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|decoderInstru:DECODER            ; decoderInstru       ; work         ;
 ;       |logicaDesvio:logicaDesvio1|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|logicaDesvio:logicaDesvio1       ; logicaDesvio        ; work         ;
-;       |muxGenerico2x1:MUX1|                  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|muxGenerico2x1:MUX1              ; muxGenerico2x1      ; work         ;
+;       |muxGenerico2x1:MUX1|                  ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|muxGenerico2x1:MUX1              ; muxGenerico2x1      ; work         ;
 ;       |muxGenerico4x1:MUXProxPC|             ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|muxGenerico4x1:MUXProxPC         ; muxGenerico4x1      ; work         ;
 ;       |registradorGenerico:PC|               ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|registradorGenerico:PC           ; registradorGenerico ; work         ;
 ;       |registradorGenerico:REGA|             ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|Processador:Processor|registradorGenerico:REGA         ; registradorGenerico ; work         ;
@@ -319,27 +323,9 @@ https://fpgasoftware.intel.com/eula.
 ;    |decoderToHabilita:DECODIFICADOR|         ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|decoderToHabilita:DECODIFICADOR                        ; decoderToHabilita   ; work         ;
 ;    |edgeDetector:\gravar:detectorSub0|       ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|edgeDetector:\gravar:detectorSub0                      ; edgeDetector        ; work         ;
 ;    |memoriaRAM:RAM1|                         ; 298 (298)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Atv06|memoriaRAM:RAM1                                        ; memoriaRAM          ; work         ;
-;    |romMif:ROM1|                             ; 102 (102)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|romMif:ROM1                                            ; romMif              ; work         ;
+;    |romMif:ROM1|                             ; 103 (103)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Atv06|romMif:ROM1                                            ; romMif              ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                          ;
-+----------------------------------------------------+------------------------------------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal                            ; Free of Timing Hazards ;
-+----------------------------------------------------+------------------------------------------------+------------------------+
-; Processador:Processor|ULASomaSub:ULA1|saida[0]     ; Processador:Processor|ULASomaSub:ULA1|saida[7] ; yes                    ;
-; Processador:Processor|ULASomaSub:ULA1|saida[1]     ; Processador:Processor|ULASomaSub:ULA1|saida[7] ; yes                    ;
-; Processador:Processor|ULASomaSub:ULA1|saida[2]     ; Processador:Processor|ULASomaSub:ULA1|saida[7] ; yes                    ;
-; Processador:Processor|ULASomaSub:ULA1|saida[3]     ; Processador:Processor|ULASomaSub:ULA1|saida[7] ; yes                    ;
-; Processador:Processor|ULASomaSub:ULA1|saida[4]     ; Processador:Processor|ULASomaSub:ULA1|saida[7] ; yes                    ;
-; Processador:Processor|ULASomaSub:ULA1|saida[5]     ; Processador:Processor|ULASomaSub:ULA1|saida[7] ; yes                    ;
-; Processador:Processor|ULASomaSub:ULA1|saida[6]     ; Processador:Processor|ULASomaSub:ULA1|saida[7] ; yes                    ;
-; Processador:Processor|ULASomaSub:ULA1|saida[7]     ; Processador:Processor|ULASomaSub:ULA1|saida[7] ; yes                    ;
-; Number of user-specified and inferred latches = 8  ;                                                ;                        ;
-+----------------------------------------------------+------------------------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -364,7 +350,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 ; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Atv06|Processador:Processor|registradorGenerico:PC|DOUT[3]   ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Atv06|Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[6] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Atv06|Processador:Processor|ULASomaSub:ULA1|saida[1]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Atv06|Processador:Processor|ULASomaSub:ULA1|saida[2]         ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Atv06|Processador:Processor|decoderInstru:DECODER|saida[7]   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 
@@ -791,23 +777,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR               ; 3                           ;
 ;     ENA               ; 561                         ;
 ;     plain             ; 17                          ;
-; arriav_lcell_comb     ; 538                         ;
-;     arith             ; 18                          ;
-;         1 data inputs ; 10                          ;
-;         3 data inputs ; 3                           ;
-;         5 data inputs ; 5                           ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 519                         ;
-;         2 data inputs ; 73                          ;
-;         3 data inputs ; 15                          ;
-;         4 data inputs ; 69                          ;
-;         5 data inputs ; 41                          ;
-;         6 data inputs ; 321                         ;
+; arriav_lcell_comb     ; 553                         ;
+;     arith             ; 27                          ;
+;         1 data inputs ; 11                          ;
+;         3 data inputs ; 6                           ;
+;         5 data inputs ; 10                          ;
+;     normal            ; 526                         ;
+;         2 data inputs ; 72                          ;
+;         3 data inputs ; 16                          ;
+;         4 data inputs ; 71                          ;
+;         5 data inputs ; 33                          ;
+;         6 data inputs ; 334                         ;
 ; boundary_port         ; 68                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.70                       ;
-; Average LUT depth     ; 7.99                        ;
+; Max LUT depth         ; 11.40                       ;
+; Average LUT depth     ; 7.65                        ;
 +-----------------------+-----------------------------+
 
 
@@ -816,7 +800,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -826,177 +810,145 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 15 07:46:38 2023
+    Info: Processing started: Mon Oct 16 21:44:14 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Atv06 -c Atv06
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file rommif.vhd
-    Info (12022): Found design unit 1: romMif-initFileROM File: C:/Descomp/Descomp/entregaInt/Aula08/romMIF.vhd Line: 19
-    Info (12023): Found entity 1: romMif File: C:/Descomp/Descomp/entregaInt/Aula08/romMIF.vhd Line: 5
+    Info (12022): Found design unit 1: romMif-initFileROM File: C:/Descomp/entregaInt/Aula08/romMIF.vhd Line: 19
+    Info (12023): Found entity 1: romMif File: C:/Descomp/entregaInt/Aula08/romMIF.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file detector_key0.vhd
-    Info (12022): Found design unit 1: Detector_Key0-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/Detector_Key0.vhd Line: 11
-    Info (12023): Found entity 1: Detector_Key0 File: C:/Descomp/Descomp/entregaInt/Aula08/Detector_Key0.vhd Line: 4
+    Info (12022): Found design unit 1: Detector_Key0-comportamento File: C:/Descomp/entregaInt/Aula08/Detector_Key0.vhd Line: 11
+    Info (12023): Found entity 1: Detector_Key0 File: C:/Descomp/entregaInt/Aula08/Detector_Key0.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file atv06.vhd
-    Info (12022): Found design unit 1: Atv06-arquitetura File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 25
-    Info (12023): Found entity 1: Atv06 File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 4
+    Info (12022): Found design unit 1: Atv06-arquitetura File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 25
+    Info (12023): Found entity 1: Atv06 File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 16
-    Info (12023): Found entity 1: ULASomaSub File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 5
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 16
+    Info (12023): Found entity 1: ULASomaSub File: C:/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Descomp/Descomp/entregaInt/Aula08/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Descomp/entregaInt/Aula08/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Descomp/entregaInt/Aula08/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/Descomp/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
-    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico4x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico4x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Descomp/entregaInt/Aula08/muxGenerico4x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Descomp/entregaInt/Aula08/muxGenerico4x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoriarom.vhd
-    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Descomp/Descomp/entregaInt/Aula08/memoriaROM.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROM File: C:/Descomp/Descomp/entregaInt/Aula08/memoriaROM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Descomp/entregaInt/Aula08/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: C:/Descomp/entregaInt/Aula08/memoriaROM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file logicadesvio.vhd
-    Info (12022): Found design unit 1: logicaDesvio-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/logicaDesvio.vhd Line: 11
-    Info (12023): Found entity 1: logicaDesvio File: C:/Descomp/Descomp/entregaInt/Aula08/logicaDesvio.vhd Line: 4
+    Info (12022): Found design unit 1: logicaDesvio-comportamento File: C:/Descomp/entregaInt/Aula08/logicaDesvio.vhd Line: 11
+    Info (12023): Found entity 1: logicaDesvio File: C:/Descomp/entregaInt/Aula08/logicaDesvio.vhd Line: 4
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Descomp/Descomp/entregaInt/Aula08/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Descomp/Descomp/entregaInt/Aula08/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/Descomp/Descomp/entregaInt/Aula08/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Descomp/entregaInt/Aula08/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Descomp/entregaInt/Aula08/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/Descomp/entregaInt/Aula08/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decoderinstru.vhd
-    Info (12022): Found design unit 1: decoderInstru-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/decoderInstru.vhd Line: 10
-    Info (12023): Found entity 1: decoderInstru File: C:/Descomp/Descomp/entregaInt/Aula08/decoderInstru.vhd Line: 4
+    Info (12022): Found design unit 1: decoderInstru-comportamento File: C:/Descomp/entregaInt/Aula08/decoderInstru.vhd Line: 10
+    Info (12023): Found entity 1: decoderInstru File: C:/Descomp/entregaInt/Aula08/decoderInstru.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
-    Info (12022): Found design unit 1: Processador-arquitetura File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 19
-    Info (12023): Found entity 1: Processador File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 4
+    Info (12022): Found design unit 1: Processador-arquitetura File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 19
+    Info (12023): Found entity 1: Processador File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file flipflop.vhd
-    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/FlipFlop.vhd Line: 12
-    Info (12023): Found entity 1: FlipFlop File: C:/Descomp/Descomp/entregaInt/Aula08/FlipFlop.vhd Line: 4
+    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/Descomp/entregaInt/Aula08/FlipFlop.vhd Line: 12
+    Info (12023): Found entity 1: FlipFlop File: C:/Descomp/entregaInt/Aula08/FlipFlop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Descomp/Descomp/entregaInt/Aula08/memoriaRAM.vhd Line: 21
-    Info (12023): Found entity 1: memoriaRAM File: C:/Descomp/Descomp/entregaInt/Aula08/memoriaRAM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Descomp/entregaInt/Aula08/memoriaRAM.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM File: C:/Descomp/entregaInt/Aula08/memoriaRAM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file decoder3x8.vhd
-    Info (12022): Found design unit 1: decoder3x8-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 11
-    Info (12023): Found entity 1: decoder3x8 File: C:/Descomp/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 4
+    Info (12022): Found design unit 1: decoder3x8-comportamento File: C:/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 11
+    Info (12023): Found entity 1: decoder3x8 File: C:/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file leds.vhd
-    Info (12022): Found design unit 1: LEDS-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/LEDS.vhd Line: 13
-    Info (12023): Found entity 1: LEDS File: C:/Descomp/Descomp/entregaInt/Aula08/LEDS.vhd Line: 4
+    Info (12022): Found design unit 1: LEDS-comportamento File: C:/Descomp/entregaInt/Aula08/LEDS.vhd Line: 13
+    Info (12023): Found entity 1: LEDS File: C:/Descomp/entregaInt/Aula08/LEDS.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file output_files/decodertohabilita.vhd
-    Info (12022): Found design unit 1: decoderToHabilita-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/output_files/decoderToHabilita.vhd Line: 21
-    Info (12023): Found entity 1: decoderToHabilita File: C:/Descomp/Descomp/entregaInt/Aula08/output_files/decoderToHabilita.vhd Line: 4
+    Info (12022): Found design unit 1: decoderToHabilita-comportamento File: C:/Descomp/entregaInt/Aula08/output_files/decoderToHabilita.vhd Line: 21
+    Info (12023): Found entity 1: decoderToHabilita File: C:/Descomp/entregaInt/Aula08/output_files/decoderToHabilita.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file hexes.vhd
-    Info (12022): Found design unit 1: HEXES-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/HEXES.vhd Line: 15
-    Info (12023): Found entity 1: HEXES File: C:/Descomp/Descomp/entregaInt/Aula08/HEXES.vhd Line: 4
+    Info (12022): Found design unit 1: HEXES-comportamento File: C:/Descomp/entregaInt/Aula08/HEXES.vhd Line: 15
+    Info (12023): Found entity 1: HEXES File: C:/Descomp/entregaInt/Aula08/HEXES.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/Descomp/Descomp/entregaInt/Aula08/conversorHex7Seg.vhd Line: 4
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Descomp/entregaInt/Aula08/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/Descomp/entregaInt/Aula08/conversorHex7Seg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buffer_3_state_8portas.vhd
-    Info (12022): Found design unit 1: buffer_3_state_8portas-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/buffer_3_state_8portas.vhd Line: 11
-    Info (12023): Found entity 1: buffer_3_state_8portas File: C:/Descomp/Descomp/entregaInt/Aula08/buffer_3_state_8portas.vhd Line: 4
+    Info (12022): Found design unit 1: buffer_3_state_8portas-comportamento File: C:/Descomp/entregaInt/Aula08/buffer_3_state_8portas.vhd Line: 11
+    Info (12023): Found entity 1: buffer_3_state_8portas File: C:/Descomp/entregaInt/Aula08/buffer_3_state_8portas.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buffer_3_state_1porta.vhd
-    Info (12022): Found design unit 1: buffer_3_state_1porta-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/buffer_3_state_1porta.vhd Line: 12
-    Info (12023): Found entity 1: buffer_3_state_1porta File: C:/Descomp/Descomp/entregaInt/Aula08/buffer_3_state_1porta.vhd Line: 4
+    Info (12022): Found design unit 1: buffer_3_state_1porta-comportamento File: C:/Descomp/entregaInt/Aula08/buffer_3_state_1porta.vhd Line: 12
+    Info (12023): Found entity 1: buffer_3_state_1porta File: C:/Descomp/entregaInt/Aula08/buffer_3_state_1porta.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file switches.vhd
-    Info (12022): Found design unit 1: SWITCHES-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/SWITCHES.vhd Line: 12
-    Info (12023): Found entity 1: SWITCHES File: C:/Descomp/Descomp/entregaInt/Aula08/SWITCHES.vhd Line: 4
+    Info (12022): Found design unit 1: SWITCHES-comportamento File: C:/Descomp/entregaInt/Aula08/SWITCHES.vhd Line: 12
+    Info (12023): Found entity 1: SWITCHES File: C:/Descomp/entregaInt/Aula08/SWITCHES.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file keys.vhd
-    Info (12022): Found design unit 1: KEYS-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/KEYS.vhd Line: 16
-    Info (12023): Found entity 1: KEYS File: C:/Descomp/Descomp/entregaInt/Aula08/KEYS.vhd Line: 4
+    Info (12022): Found design unit 1: KEYS-comportamento File: C:/Descomp/entregaInt/Aula08/KEYS.vhd Line: 16
+    Info (12023): Found entity 1: KEYS File: C:/Descomp/entregaInt/Aula08/KEYS.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file detector_keys.vhd
-    Info (12022): Found design unit 1: Detector_Keys-comportamento File: C:/Descomp/Descomp/entregaInt/Aula08/Detector_Keys.vhd Line: 12
-    Info (12023): Found entity 1: Detector_Keys File: C:/Descomp/Descomp/entregaInt/Aula08/Detector_Keys.vhd Line: 4
+    Info (12022): Found design unit 1: Detector_Keys-comportamento File: C:/Descomp/entregaInt/Aula08/Detector_Keys.vhd Line: 12
+    Info (12023): Found entity 1: Detector_Keys File: C:/Descomp/entregaInt/Aula08/Detector_Keys.vhd Line: 4
 Info (12127): Elaborating entity "Atv06" for the top level hierarchy
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 61
-Info (12128): Elaborating entity "Processador" for hierarchy "Processador:Processor" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 68
-Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(28): object "habEscritaRetorno" assigned a value but never read File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 28
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:PC" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 62
-Info (12128): Elaborating entity "somaConstante" for hierarchy "Processador:Processor|somaConstante:incrementaPC" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 65
-Info (12128): Elaborating entity "decoderInstru" for hierarchy "Processador:Processor|decoderInstru:DECODER" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 68
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:REGA" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 72
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Processador:Processor|muxGenerico2x1:MUX1" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 75
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "Processador:Processor|muxGenerico4x1:MUXProxPC" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 81
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "Processador:Processor|ULASomaSub:ULA1" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 90
-Info (10041): Inferred latch for "saida[0]" at ULASomaSub.vhd(28) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Info (10041): Inferred latch for "saida[1]" at ULASomaSub.vhd(28) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Info (10041): Inferred latch for "saida[2]" at ULASomaSub.vhd(28) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Info (10041): Inferred latch for "saida[3]" at ULASomaSub.vhd(28) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Info (10041): Inferred latch for "saida[4]" at ULASomaSub.vhd(28) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Info (10041): Inferred latch for "saida[5]" at ULASomaSub.vhd(28) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Info (10041): Inferred latch for "saida[6]" at ULASomaSub.vhd(28) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Info (10041): Inferred latch for "saida[7]" at ULASomaSub.vhd(28) File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Info (12128): Elaborating entity "FlipFlop" for hierarchy "Processador:Processor|FlipFlop:FlagZero" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 98
-Info (12128): Elaborating entity "logicaDesvio" for hierarchy "Processador:Processor|logicaDesvio:logicaDesvio1" File: C:/Descomp/Descomp/entregaInt/Aula08/Processador.vhd Line: 112
-Info (12128): Elaborating entity "romMif" for hierarchy "romMif:ROM1" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 81
-Warning (10541): VHDL Signal Declaration warning at romMIF.vhd(22): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/Descomp/entregaInt/Aula08/romMIF.vhd Line: 22
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM1" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 88
-Info (12128): Elaborating entity "decoderToHabilita" for hierarchy "decoderToHabilita:DECODIFICADOR" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 100
-Info (12128): Elaborating entity "decoder3x8" for hierarchy "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER1" File: C:/Descomp/Descomp/entregaInt/Aula08/output_files/decoderToHabilita.vhd Line: 27
-Info (10041): Inferred latch for "saida[0]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[1]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[2]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[3]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[4]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[5]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[6]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[7]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
-Info (12128): Elaborating entity "LEDS" for hierarchy "LEDS:LED_UNITY" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 129
-Info (12128): Elaborating entity "SWITCHES" for hierarchy "SWITCHES:Switch_Unity" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 142
-Info (12128): Elaborating entity "buffer_3_state_8portas" for hierarchy "SWITCHES:Switch_Unity|buffer_3_state_8portas:tri_state_8_1" File: C:/Descomp/Descomp/entregaInt/Aula08/SWITCHES.vhd Line: 15
-Info (12128): Elaborating entity "buffer_3_state_1porta" for hierarchy "SWITCHES:Switch_Unity|buffer_3_state_1porta:tri_state_1_1" File: C:/Descomp/Descomp/entregaInt/Aula08/SWITCHES.vhd Line: 22
-Info (12128): Elaborating entity "KEYS" for hierarchy "KEYS:Keys_Unity" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 152
-Info (12128): Elaborating entity "Detector_Keys" for hierarchy "Detector_Keys:Detect_KEY0" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 167
-Info (12128): Elaborating entity "HEXES" for hierarchy "HEXES:Hexes_Unity" File: C:/Descomp/Descomp/entregaInt/Aula08/Atv06.vhd Line: 194
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0" File: C:/Descomp/Descomp/entregaInt/Aula08/HEXES.vhd Line: 19
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "HEXES:Hexes_Unity|conversorHex7Seg:Conversor0" File: C:/Descomp/Descomp/entregaInt/Aula08/HEXES.vhd Line: 27
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 61
+Info (12128): Elaborating entity "Processador" for hierarchy "Processador:Processor" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 68
+Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(28): object "habEscritaRetorno" assigned a value but never read File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 28
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:PC" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 62
+Info (12128): Elaborating entity "somaConstante" for hierarchy "Processador:Processor|somaConstante:incrementaPC" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 65
+Info (12128): Elaborating entity "decoderInstru" for hierarchy "Processador:Processor|decoderInstru:DECODER" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 68
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:REGA" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 72
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Processador:Processor|muxGenerico2x1:MUX1" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 75
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "Processador:Processor|muxGenerico4x1:MUXProxPC" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 81
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "Processador:Processor|ULASomaSub:ULA1" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 90
+Info (12128): Elaborating entity "FlipFlop" for hierarchy "Processador:Processor|FlipFlop:FlagZero" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 98
+Info (12128): Elaborating entity "logicaDesvio" for hierarchy "Processador:Processor|logicaDesvio:logicaDesvio1" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 112
+Info (12128): Elaborating entity "romMif" for hierarchy "romMif:ROM1" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 81
+Warning (10541): VHDL Signal Declaration warning at romMIF.vhd(22): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/entregaInt/Aula08/romMIF.vhd Line: 22
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM1" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 88
+Info (12128): Elaborating entity "decoderToHabilita" for hierarchy "decoderToHabilita:DECODIFICADOR" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 100
+Info (12128): Elaborating entity "decoder3x8" for hierarchy "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER1" File: C:/Descomp/entregaInt/Aula08/output_files/decoderToHabilita.vhd Line: 27
+Info (10041): Inferred latch for "saida[0]" at decoder3x8.vhd(13) File: C:/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[1]" at decoder3x8.vhd(13) File: C:/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[2]" at decoder3x8.vhd(13) File: C:/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[3]" at decoder3x8.vhd(13) File: C:/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[4]" at decoder3x8.vhd(13) File: C:/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[5]" at decoder3x8.vhd(13) File: C:/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[6]" at decoder3x8.vhd(13) File: C:/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[7]" at decoder3x8.vhd(13) File: C:/Descomp/entregaInt/Aula08/decoder3x8.vhd Line: 13
+Info (12128): Elaborating entity "LEDS" for hierarchy "LEDS:LED_UNITY" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 129
+Info (12128): Elaborating entity "SWITCHES" for hierarchy "SWITCHES:Switch_Unity" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 142
+Info (12128): Elaborating entity "buffer_3_state_8portas" for hierarchy "SWITCHES:Switch_Unity|buffer_3_state_8portas:tri_state_8_1" File: C:/Descomp/entregaInt/Aula08/SWITCHES.vhd Line: 15
+Info (12128): Elaborating entity "buffer_3_state_1porta" for hierarchy "SWITCHES:Switch_Unity|buffer_3_state_1porta:tri_state_1_1" File: C:/Descomp/entregaInt/Aula08/SWITCHES.vhd Line: 22
+Info (12128): Elaborating entity "KEYS" for hierarchy "KEYS:Keys_Unity" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 152
+Info (12128): Elaborating entity "Detector_Keys" for hierarchy "Detector_Keys:Detect_KEY0" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 167
+Info (12128): Elaborating entity "HEXES" for hierarchy "HEXES:Hexes_Unity" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 194
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0" File: C:/Descomp/entregaInt/Aula08/HEXES.vhd Line: 19
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "HEXES:Hexes_Unity|conversorHex7Seg:Conversor0" File: C:/Descomp/entregaInt/Aula08/HEXES.vhd Line: 27
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "memoriaRAM:RAM1|ram" is uninferred due to asynchronous read logic File: C:/Descomp/Descomp/entregaInt/Aula08/memoriaRAM.vhd Line: 27
-Warning (113028): 215 out of 512 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Descomp/Descomp/entregaInt/Aula08/rom.mif Line: 1
-    Warning (113027): Addresses ranging from 297 to 511 are not initialized File: C:/Descomp/Descomp/entregaInt/Aula08/rom.mif Line: 1
+    Info (276007): RAM logic "memoriaRAM:RAM1|ram" is uninferred due to asynchronous read logic File: C:/Descomp/entregaInt/Aula08/memoriaRAM.vhd Line: 27
+Warning (113028): 215 out of 512 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Descomp/entregaInt/Aula08/romteste.mif Line: 1
+    Warning (113027): Addresses ranging from 297 to 511 are not initialized File: C:/Descomp/entregaInt/Aula08/romteste.mif Line: 1
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "entrada_DATA[7]" into a selector File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[6]" into a selector File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[5]" into a selector File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[4]" into a selector File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[3]" into a selector File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[2]" into a selector File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[1]" into a selector File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[0]" into a selector File: C:/Descomp/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
-Warning (13012): Latch Processador:Processor|ULASomaSub:ULA1|saida[0] has unsafe behavior File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processador:Processor|registradorGenerico:PC|DOUT[8] File: C:/Descomp/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 30
-Warning (13012): Latch Processador:Processor|ULASomaSub:ULA1|saida[1] has unsafe behavior File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processador:Processor|registradorGenerico:PC|DOUT[8] File: C:/Descomp/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 30
-Warning (13012): Latch Processador:Processor|ULASomaSub:ULA1|saida[2] has unsafe behavior File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processador:Processor|registradorGenerico:PC|DOUT[8] File: C:/Descomp/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 30
-Warning (13012): Latch Processador:Processor|ULASomaSub:ULA1|saida[3] has unsafe behavior File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processador:Processor|registradorGenerico:PC|DOUT[8] File: C:/Descomp/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 30
-Warning (13012): Latch Processador:Processor|ULASomaSub:ULA1|saida[4] has unsafe behavior File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processador:Processor|registradorGenerico:PC|DOUT[8] File: C:/Descomp/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 30
-Warning (13012): Latch Processador:Processor|ULASomaSub:ULA1|saida[5] has unsafe behavior File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processador:Processor|registradorGenerico:PC|DOUT[8] File: C:/Descomp/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 30
-Warning (13012): Latch Processador:Processor|ULASomaSub:ULA1|saida[6] has unsafe behavior File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processador:Processor|registradorGenerico:PC|DOUT[8] File: C:/Descomp/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 30
-Warning (13012): Latch Processador:Processor|ULASomaSub:ULA1|saida[7] has unsafe behavior File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal Processador:Processor|registradorGenerico:PC|DOUT[8] File: C:/Descomp/Descomp/entregaInt/Aula08/registradorGenerico.vhd Line: 30
+    Warning (13048): Converted tri-state node "entrada_DATA[7]" into a selector File: C:/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[6]" into a selector File: C:/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[5]" into a selector File: C:/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[4]" into a selector File: C:/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[3]" into a selector File: C:/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[2]" into a selector File: C:/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[1]" into a selector File: C:/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[0]" into a selector File: C:/Descomp/entregaInt/Aula08/muxGenerico2x1.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
-Warning (14026): LATCH primitive "Processador:Processor|ULASomaSub:ULA1|saida[0]" is permanently enabled File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Warning (14026): LATCH primitive "Processador:Processor|ULASomaSub:ULA1|saida[1]" is permanently enabled File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Warning (14026): LATCH primitive "Processador:Processor|ULASomaSub:ULA1|saida[2]" is permanently enabled File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Warning (14026): LATCH primitive "Processador:Processor|ULASomaSub:ULA1|saida[3]" is permanently enabled File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Warning (14026): LATCH primitive "Processador:Processor|ULASomaSub:ULA1|saida[4]" is permanently enabled File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Warning (14026): LATCH primitive "Processador:Processor|ULASomaSub:ULA1|saida[5]" is permanently enabled File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Warning (14026): LATCH primitive "Processador:Processor|ULASomaSub:ULA1|saida[6]" is permanently enabled File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
-Warning (14026): LATCH primitive "Processador:Processor|ULASomaSub:ULA1|saida[7]" is permanently enabled File: C:/Descomp/Descomp/entregaInt/Aula08/ULASomaSub.vhd Line: 28
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1174 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1189 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 1106 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Sun Oct 15 07:46:48 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+    Info (21061): Implemented 1121 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4925 megabytes
+    Info: Processing ended: Mon Oct 16 21:44:37 2023
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:14
 
 

@@ -29,7 +29,8 @@ architecture comportamento of ULASomaSub is
 					subtracao when (seletor = "000") else
 					passa when (seletor = "001") else
 					mascara when (seletor = "011") else
-               signedSub when (seletor = "100");
+               signedSub when (seletor = "100") else
+					soma; -- SOMA QUANDO INDEFINIDO
 		zf <= not (saida(7) or saida(6) or saida(5) or saida(4) or saida(3) or saida(2) or saida(1) or saida(0));
       le <= zf OR saida(larguraDados-1); -- checar se esta correto
 end architecture;
