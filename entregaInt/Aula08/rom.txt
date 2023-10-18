@@ -1,49 +1,50 @@
 LDI $0	
-STA @511			
-STA @510			
+STA @511; Reinicia Botoes
+STA @510
 STA @509
-STA @288						
+STA @288; Reinicia 7segs			
 STA @289			
 STA @290			
 STA @291			
 STA @292							
 STA @293			
-STA @256
+STA @256; Reinicia LEDS
 STA @257
 STA @258
-STA @0	
+STA @0; Comeca o contador em 0	
 STA @1
 STA @2
 STA @3
 STA @4
 STA @5
-STA @6
-STA @7
-LDI $1
+STA @6; Comeca flag de inibir Contagem em 0
+STA @7; salva constante 0
+LDI $1; salva constante 1
 STA @8
-LDI $10
+LDI $10; salva constante 10
 STA @9
-LDI $9
+LDI $9; Começa o Limite em 999.999
 STA @10
 STA @11
 STA @12
 STA @13
 STA @14
 STA @15
-STA @16
-LDI $15
+STA @16; Salva constante 9
+LDI $15; Salva constante 15
 STA @17
+NOP; Main
 NOP
 NOP
 NOP
 NOP
-NOP
-LDA @352		
+MAIN:
+LDA @352; Checa se KEY0 foi pressionado, caso verdade pula para a sub-rotina de incremento		
 AND @8
 CEQ @8				
 JEQ @186
 NOP
-LDA @0
+LDA @0; Atualiza o display dos 7segs com o valor atual do contador
 STA @288
 LDA @1
 STA @289
@@ -56,23 +57,23 @@ STA @292
 LDA @5
 STA @293
 NOP
-LDA @353		
+LDA @353; Checa se KEY1 foi pressionado, caso verdade pula para a sub-rotina de troca de limite		
 AND @8
 CEQ @8				
 JEQ @74
 NOP
-LDA @356			
+LDA @356; Checa se FPGA_RESET foi pressionado, caso verdade para a sub-rotina de reinício de contagem
 AND @8				
 CEQ @8				
-JEQ @170				
-JMP @246
-JMP @40
+JEQ @170; Pula para a sub-rotina de Verificação de Limite			
+JMP @246; Volta para o começo da Main
+JMP MAIN; Sub-rotina de Troca de Limite 
 NOP
 NOP
 NOP
 NOP
 NOP
-LDI $0
+LDI $0; Reseta display 7segs
 STA @288						
 STA @289			
 STA @290			
@@ -80,7 +81,7 @@ STA @291
 STA @292							
 STA @293
 NOP
-STA @510
+STA @510; Guarda o valor das chaves na memória (Limite Unidades) HEX0 e espera o aperto de KEY1 para ir para as dezenas
 LDA @320
 AND @17
 CLE @16
@@ -94,7 +95,7 @@ CEQ @8
 JEQ @96
 JMP @83
 NOP
-STA @510
+STA @510; Guarda o valor das chaves na memória (Limite Dezenas) HEX1 e espera o aperto de KEY1 para ir para as centenas
 LDA @320
 AND @17
 CLE @16
@@ -108,7 +109,7 @@ CEQ @8
 JEQ @110
 JMP @97
 NOP
-STA @510
+STA @510; Guarda o valor das chaves na memória (Limite Centenas) e HEX2 e espera o aperto de KEY1 para ir para os milhares
 LDA @320
 AND @17
 CLE @16
@@ -122,7 +123,7 @@ CEQ @8
 JEQ @124
 JMP @111
 NOP
-STA @510
+STA @510; Guarda o valor das chaves na memória (Limite Milhares) e HEX3 e espera o aperto de KEY1 para ir para as dezenas de milhares
 LDA @320
 AND @17
 CLE @16
@@ -136,7 +137,7 @@ CEQ @8
 JEQ @138
 JMP @125
 NOP
-STA @510
+STA @510; Guarda o valor das chaves na memória (Limite Dezenas de Milhares) e HEX4 e espera o aperto de KEY1 para ir para as centenas de milhares
 LDA @320
 AND @17
 CLE @16
@@ -150,7 +151,7 @@ CEQ @8
 JEQ @152
 JMP @139
 NOP
-STA @510
+STA @510; Guarda o valor das chaves na memória (Limite Centenas de Milhares) e HEX5, além de esperar o aperto de KEY1 para ir para sub-rotina de verificação de limite
 LDA @320
 AND @17
 CLE @16
@@ -162,13 +163,13 @@ LDA @353
 AND @8
 CEQ @8				
 JEQ @67
-JMP @153
+JMP @153; Sub-rotina de Reinício de Contagem
 NOP
 NOP
 NOP
 NOP
 NOP
-STA @509
+STA @509; Limpa o Contador
 LDI $0
 STA @0
 STA @1
@@ -176,75 +177,75 @@ STA @2
 STA @3
 STA @4
 STA @5
-STA @258
+STA @258; Reseta a Flag de Inibir contagem e volta para Main
 STA @6
-JMP @40
+JMP MAIN; Sub-rotina de Incremento
 NOP
 NOP
 NOP
 NOP
 NOP
-STA @511
+STA @511; Checa a Flag de Inibir Contagem, caso verdadeira volta para Main
 LDA @6
 AND @8
 CEQ @8
 JEQ @40
-NOP
+NOP;  Incrementa Unidades caso overflow pula para as dezenas, caso contrário salva o valor incrementado na memória (Unidades) e volta pra Main
 LDA @0
 SOMA @8
 CEQ @9
 JEQ @199
 STA @0
-JMP @40
+JMP MAIN
 NOP
-LDI $0
+LDI $0;  Incrementa Dezenas caso overflow pula para as centenas, caso contrário salva o valor incrementado na memória (Dezenas) e volta pra Main
 STA @0
 LDA @1
 SOMA @8
 CEQ @9
 JEQ @208
 STA @1
-JMP @40
+JMP MAIN
 NOP
-LDI $0
+LDI $0; Incrementa Centenas caso overflow pula para os Milhares, caso contrário salva o valor incrementado na memória (Centenas) e volta pra Main
 STA @1
 LDA @2
 SOMA @8
 CEQ @9
 JEQ @217
 STA @2
-JMP @40
+JMP MAIN
 NOP
-LDI $0
+LDI $0; Incrementa Milhares caso overflow pula para as Dezenas de Milhares, caso contrário salva o valor incrementado na memória (Milhares) e volta pra Main
 STA @2
 LDA @3
 SOMA @8
 CEQ @9
 JEQ @226
 STA @3
-JMP @40
+JMP MAIN
 NOP
-LDI $0
+LDI $0; Incrementa Dezenas Milhares caso overflow pula para as Centenas de Milhares, caso contrário salva o valor incrementado na memória (Dezenas de Milhares) e volta pra Main
 STA @3
 LDA @4
 SOMA @8
 CEQ @9
 JEQ @235
 STA @4
-JMP @40
+JMP MAIN
 NOP
-LDI $0
+LDI $0; Incrementa Centenas de Milhares, salva o valor incrementado na memória (Centenas de Milhares) e volta pra Main
 STA @4
 LDA @5
 SOMA @8
 STA @5
-JMP @40
+JMP MAIN; Sub-rotina de Verificação de Limite
 NOP
 NOP
 NOP
 NOP
 NOP
-STA @510
+STA @510; Caso Centenas de Milhares for menor que a mesma casa no Limite, pula para apagar o Led e desabilitar a Flag, caso igual pula para as Dezenas de Milhares, caso maior pula para acender o Led e habilitar a Flag
 LDA @5
 CEQ @15
 JEQ @254
@@ -252,46 +253,46 @@ CLE @15
 JLE @293
 JMP @288
 NOP
-LDA @4
+LDA @4; Caso Dezenas de Milhares for menor que a mesma casa no Limite, pula para apagar o Led e desabilitar a Flag, caso igual pula para os Milhares, caso maior pula para acender o Led e habilitar a Flag
 CEQ @14
 JEQ @261
 CLE @14
 JLE @293
 JMP @288
 NOP
-LDA @3
+LDA @3; Caso Milhares for menor que a mesma casa no Limite, pula para apagar o Led e desabilitar a Flag, caso igual pula para as Centenas, caso maior pula para acender o Led e habilitar a Flag
 CEQ @13
 JEQ @268
 CLE @13
 JLE @293
 JMP @288
 NOP
-LDA @2
+LDA @2; Caso Centenas for menor que a mesma casa no Limite, pula para apagar o Led e desabilitar a Flag, caso igual pula para as Dezenas, caso maior pula para acender o Led e habilitar a Flag
 CEQ @12
 JEQ @275
 CLE @12
 JLE @293
 JMP @288
 NOP
-LDA @1
+LDA @1; -Caso Dezenas for menor que a mesma casa no Limite, pula para apagar o Led e desabilitar a Flag, caso igual pula para as unidades, caso maior pula para acender o Led e habilitar a Flag
 CEQ @11
 JEQ @282
 CLE @11
 JLE @293
 JMP @288
 NOP
-LDA @0
+LDA @0; Caso Unidades for menor que a mesma casa no Limite, pula para apagar o Led e desabilitar a Flag, caso maior ou igual pula para acender o Led e habilitar a Flag
 CEQ @10
 JEQ @288
 CLE @10
 JLE @293
 NOP
-LDI $1
+LDI $1; Acende o LED9 e habilita a Flag de inibir contagem
 STA @6
 STA @258
 JMP @68
 NOP
-LDI $0
+LDI $0; Apaga o LED9 e desabilita a Flag de inibir contagem
 STA @6
 STA @258
 JMP @68
