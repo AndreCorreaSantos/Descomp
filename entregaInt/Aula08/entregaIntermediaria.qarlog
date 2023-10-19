@@ -1,7 +1,7 @@
-Quartus Prime Archive log --	C:/Descomp/entregaInt/Aula08/Atv06.qarlog
+Quartus Prime Archive log --	C:/Descomp/entregaInt/Aula08/entregaIntermediaria.qarlog
 
-Archive:	C:/Descomp/entregaInt/Aula08/Atv06.qar
-Date:		Wed Oct 18 14:24:53 2023
+Archive:	C:/Descomp/entregaInt/Aula08/entregaIntermediaria.qar
+Date:		Wed Oct 18 14:41:19 2023
 Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 	=========== Files Selected: ===========
@@ -34,8 +34,6 @@ C:/Descomp/entregaInt/Aula08/output_files/decoderToHabilita.vhd
 C:/Descomp/entregaInt/Aula08/registradorGenerico.vhd
 C:/Descomp/entregaInt/Aula08/romMIF.vhd
 C:/Descomp/entregaInt/Aula08/somaConstante.vhd
-C:/Descomp/entregaInt/Aula08/assembler.py
-C:/Descomp/entregaInt/Aula08/rom.mif
 	======= Total: 29 files to archive =======
 
 	================ Status: ===============

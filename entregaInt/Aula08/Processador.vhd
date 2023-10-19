@@ -120,7 +120,7 @@ logicaDesvio1: entity work.logicaDesvio
                  saida => saida_desvio);
 					  
 Reg_Retorno: entity work.registradorGenerico   generic map (larguraDados => 9)
-port map (DIN => proxPC, DOUT => saida_reg_retorno, ENABLE => saida_dec(11), CLK => CLK, RST => '0');
+port map (DIN => proxPC, DOUT => saida_reg_retorno, ENABLE => habEscritaRetorno, CLK => CLK, RST => '0');
 
 ROM_Address <= Endereco;
 Data_OUT <= saida_regA;

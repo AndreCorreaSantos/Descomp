@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Atv06
-Tue Oct 17 21:31:03 2023
+Wed Oct 18 21:39:58 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -55,11 +55,10 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  47. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagZero"
  48. Port Connectivity Checks: "Processador:Processor|muxGenerico4x1:MUXProxPC"
  49. Port Connectivity Checks: "Processador:Processor|registradorGenerico:REGA"
- 50. Port Connectivity Checks: "Processador:Processor|decoderInstru:DECODER"
- 51. Port Connectivity Checks: "Processador:Processor|registradorGenerico:PC"
- 52. Post-Synthesis Netlist Statistics for Top Partition
- 53. Elapsed Time Per Partition
- 54. Analysis & Synthesis Messages
+ 50. Port Connectivity Checks: "Processador:Processor|registradorGenerico:PC"
+ 51. Post-Synthesis Netlist Statistics for Top Partition
+ 52. Elapsed Time Per Partition
+ 53. Analysis & Synthesis Messages
 
 
 
@@ -86,7 +85,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 17 21:31:03 2023       ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 18 21:39:58 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Atv06                                       ;
 ; Top-level Entity Name           ; Atv06                                       ;
@@ -349,8 +348,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 ; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Atv06|Processador:Processor|registradorGenerico:PC|DOUT[3]   ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Atv06|Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[6] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Atv06|Processador:Processor|ULASomaSub:ULA1|saida[2]         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Atv06|Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[2] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Atv06|Processador:Processor|ULASomaSub:ULA1|saida[4]         ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Atv06|Processador:Processor|decoderInstru:DECODER|saida[7]   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 
@@ -749,15 +748,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+--------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Processador:Processor|decoderInstru:DECODER"                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; saida[14] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +--------------------------------------------------------------------------+
 ; Port Connectivity Checks: "Processador:Processor|registradorGenerico:PC" ;
 +--------+-------+----------+----------------------------------------------+
@@ -810,7 +800,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Oct 17 21:30:48 2023
+    Info: Processing started: Wed Oct 18 21:39:44 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Atv06 -c Atv06
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -893,7 +883,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file detecto
 Info (12127): Elaborating entity "Atv06" for the top level hierarchy
 Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:\gravar:detectorSub0" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 61
 Info (12128): Elaborating entity "Processador" for hierarchy "Processador:Processor" File: C:/Descomp/entregaInt/Aula08/Atv06.vhd Line: 68
-Warning (10036): Verilog HDL or VHDL warning at Processador.vhd(28): object "habEscritaRetorno" assigned a value but never read File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 28
 Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:PC" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 62
 Info (12128): Elaborating entity "somaConstante" for hierarchy "Processador:Processor|somaConstante:incrementaPC" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 65
 Info (12128): Elaborating entity "decoderInstru" for hierarchy "Processador:Processor|decoderInstru:DECODER" File: C:/Descomp/entregaInt/Aula08/Processador.vhd Line: 68
@@ -945,10 +934,10 @@ Info (21057): Implemented 1189 device resources after synthesis - the final reso
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 52 output pins
     Info (21061): Implemented 1121 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4929 megabytes
-    Info: Processing ended: Tue Oct 17 21:31:03 2023
-    Info: Elapsed time: 00:00:15
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4932 megabytes
+    Info: Processing ended: Wed Oct 18 21:39:58 2023
+    Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:14
 
 

@@ -92,14 +92,12 @@ for i, line in enumerate(parsed_lines):
         if e in labels.keys():
             elements[j] = str(labels[e])
     parsed_lines[i] = ' '.join(elements)
-    # Removing empty lines
     parsed_lines[i] = parsed_lines[i].replace(" ","")
 
 
 memory_width = 13
-memory_depth = 512  # Updated to 512
+memory_depth = 512 
 
-# Generate the header for the .mif file
 mif_header = f'''WIDTH={memory_width};
 DEPTH={memory_depth};
 ADDRESS_RADIX=DEC;
@@ -113,9 +111,7 @@ mif_footer = 'END;'
 output_name = file_name[0:file_name.find('.')]+'.mif'
 with open(output_name, 'w') as file:
     file.write(mif_header)
-    # Iterate through the list and write each string
     for i, line in enumerate(parsed_lines):
-        # Write memory address in hex, followed by binary data
         line = line+";\n"
-        file.write(f'{i:03d} : {line}')  # Using 3 digits for the address (up to 512 addresses)
+        file.write(f'{i:03d} : {line}')
     file.write(mif_footer)

@@ -1,5 +1,5 @@
 Fitter report for Atv06
-Tue Oct 17 21:33:30 2023
+Wed Oct 18 21:42:17 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -62,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Tue Oct 17 21:33:30 2023       ;
+; Fitter Status                   ; Successful - Wed Oct 18 21:42:17 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Atv06                                       ;
 ; Top-level Entity Name           ; Atv06                                       ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 3            ;   0.6%      ;
 ;     Processor 4            ;   0.6%      ;
 ;     Processor 5            ;   0.5%      ;
-;     Processor 6            ;   0.5%      ;
+;     Processor 6            ;   0.4%      ;
 ;     Processor 7            ;   0.4%      ;
 ;     Processor 8            ;   0.4%      ;
 ;     Processor 9            ;   0.4%      ;
@@ -1179,8 +1179,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0|saida  ; LABCELL_X14_Y3_N0   ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0|saida  ; LABCELL_X16_Y4_N54  ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; Detector_Keys:Detect_RESET|edgeDetector:detectorKey0|saida ; LABCELL_X41_Y7_N6   ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; Processador:Processor|decoderInstru:DECODER|saida[11]~6    ; LABCELL_X26_Y5_N54  ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:Processor|decoderInstru:DECODER|saida[7]~3     ; LABCELL_X32_Y3_N15  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:Processor|decoderInstru:DECODER|Equal13~3      ; LABCELL_X26_Y5_N54  ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:Processor|decoderInstru:DECODER|saida[7]~2     ; LABCELL_X32_Y3_N15  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; decoderToHabilita:DECODIFICADOR|Limpa_Key1~1               ; LABCELL_X29_Y7_N30  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
 ; decoderToHabilita:DECODIFICADOR|Limpa_Key1~2               ; LABCELL_X29_Y7_N15  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
 ; decoderToHabilita:DECODIFICADOR|Limpa_Key1~3               ; LABCELL_X29_Y7_N54  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
@@ -1608,10 +1608,10 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:04
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:05
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:55
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:53
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
@@ -1620,19 +1620,19 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 11% of the available device resources in the region that extends from location X22_Y0 to location X32_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:14
-Info (11888): Total time spent on timing analysis during the Fitter is 2.98 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:13
+Info (11888): Total time spent on timing analysis during the Fitter is 2.81 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:07
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
 Info (144001): Generated suppressed messages file C:/Descomp/entregaInt/Aula08/output_files/Atv06.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 7485 megabytes
-    Info: Processing ended: Tue Oct 17 21:33:30 2023
-    Info: Elapsed time: 00:02:26
-    Info: Total CPU time (on all processors): 00:02:43
+    Info: Peak virtual memory: 7483 megabytes
+    Info: Processing ended: Wed Oct 18 21:42:17 2023
+    Info: Elapsed time: 00:02:18
+    Info: Total CPU time (on all processors): 00:02:07
 
 
 +----------------------------+
