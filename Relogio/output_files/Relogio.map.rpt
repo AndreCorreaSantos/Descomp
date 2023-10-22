@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Relogio
-Sat Oct 21 03:01:42 2023
+Sun Oct 22 10:52:33 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,48 +10,56 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Parameter Settings for User Entity Instance: Top-level Entity: |Relogio
-  6. Parameter Settings for User Entity Instance: Processador:Processor|registradorGenerico:PC
-  7. Parameter Settings for User Entity Instance: Processador:Processor|somaConstante:incrementaPC
-  8. Parameter Settings for User Entity Instance: Processador:Processor|bancoRegistradoresArqRegMem:REGS
-  9. Parameter Settings for User Entity Instance: Processador:Processor|muxGenerico2x1:MUX1
- 10. Parameter Settings for User Entity Instance: Processador:Processor|muxGenerico4x1:MUXProxPC
- 11. Parameter Settings for User Entity Instance: Processador:Processor|ULASomaSub:ULA1
- 12. Parameter Settings for User Entity Instance: Processador:Processor|registradorGenerico:Reg_Retorno
- 13. Parameter Settings for User Entity Instance: romMif:ROM1
- 14. Parameter Settings for User Entity Instance: memoriaRAM:RAM1
- 15. Parameter Settings for User Entity Instance: LEDS:LED_UNITY|registradorGenerico:REG_LEDS
- 16. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0
- 17. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1
- 18. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2
- 19. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3
- 20. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4
- 21. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5
- 22. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor5"
- 23. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5"
- 24. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor4"
- 25. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4"
- 26. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor3"
- 27. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3"
- 28. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor2"
- 29. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2"
- 30. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor1"
- 31. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1"
- 32. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor0"
- 33. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0"
- 34. Port Connectivity Checks: "Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0"
- 35. Port Connectivity Checks: "LEDS:LED_UNITY|FlipFlop:LED9"
- 36. Port Connectivity Checks: "LEDS:LED_UNITY|FlipFlop:LED8"
- 37. Port Connectivity Checks: "LEDS:LED_UNITY|registradorGenerico:REG_LEDS"
- 38. Port Connectivity Checks: "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER2"
- 39. Port Connectivity Checks: "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER1"
- 40. Port Connectivity Checks: "Processador:Processor|registradorGenerico:Reg_Retorno"
- 41. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagLT"
- 42. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagZero"
- 43. Port Connectivity Checks: "Processador:Processor|muxGenerico4x1:MUXProxPC"
- 44. Port Connectivity Checks: "Processador:Processor|registradorGenerico:PC"
- 45. Elapsed Time Per Partition
- 46. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |Relogio
+ 11. Parameter Settings for User Entity Instance: Processador:Processor|registradorGenerico:PC
+ 12. Parameter Settings for User Entity Instance: Processador:Processor|somaConstante:incrementaPC
+ 13. Parameter Settings for User Entity Instance: Processador:Processor|bancoRegistradoresArqRegMem:REGS
+ 14. Parameter Settings for User Entity Instance: Processador:Processor|muxGenerico2x1:MUX1
+ 15. Parameter Settings for User Entity Instance: Processador:Processor|muxGenerico4x1:MUXProxPC
+ 16. Parameter Settings for User Entity Instance: Processador:Processor|ULASomaSub:ULA1
+ 17. Parameter Settings for User Entity Instance: Processador:Processor|registradorGenerico:Reg_Retorno
+ 18. Parameter Settings for User Entity Instance: romMif:ROM1
+ 19. Parameter Settings for User Entity Instance: memoriaRAM:RAM1
+ 20. Parameter Settings for User Entity Instance: LEDS:LED_UNITY|registradorGenerico:REG_LEDS
+ 21. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo
+ 22. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0
+ 23. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1
+ 24. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2
+ 25. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3
+ 26. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4
+ 27. Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5
+ 28. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor5"
+ 29. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5"
+ 30. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor4"
+ 31. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4"
+ 32. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor3"
+ 33. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3"
+ 34. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor2"
+ 35. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2"
+ 36. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor1"
+ 37. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1"
+ 38. Port Connectivity Checks: "HEXES:Hexes_Unity|conversorHex7Seg:Conversor0"
+ 39. Port Connectivity Checks: "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0"
+ 40. Port Connectivity Checks: "Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0"
+ 41. Port Connectivity Checks: "divisorGenerico_e_Interface:interfaceBaseTempo|FlipFlop:registraUmSegundo"
+ 42. Port Connectivity Checks: "LEDS:LED_UNITY|FlipFlop:LED9"
+ 43. Port Connectivity Checks: "LEDS:LED_UNITY|FlipFlop:LED8"
+ 44. Port Connectivity Checks: "LEDS:LED_UNITY|registradorGenerico:REG_LEDS"
+ 45. Port Connectivity Checks: "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER2"
+ 46. Port Connectivity Checks: "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER1"
+ 47. Port Connectivity Checks: "Processador:Processor|registradorGenerico:Reg_Retorno"
+ 48. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagLT"
+ 49. Port Connectivity Checks: "Processador:Processor|FlipFlop:FlagZero"
+ 50. Port Connectivity Checks: "Processador:Processor|muxGenerico4x1:MUXProxPC"
+ 51. Port Connectivity Checks: "Processador:Processor|registradorGenerico:PC"
+ 52. Post-Synthesis Netlist Statistics for Top Partition
+ 53. Elapsed Time Per Partition
+ 54. Analysis & Synthesis Messages
 
 
 
@@ -75,22 +83,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sat Oct 21 03:01:41 2023           ;
-; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name               ; Relogio                                     ;
-; Top-level Entity Name       ; Relogio                                     ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Oct 22 10:52:33 2023       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; Relogio                                     ;
+; Top-level Entity Name           ; Relogio                                     ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 638                                         ;
+; Total pins                      ; 68                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -190,11 +203,169 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+; Relogio.vhd                      ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/Relogio.vhd                     ;         ;
+; romMIF.vhd                       ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/romMIF.vhd                      ;         ;
+; Processador.vhd                  ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/Processador.vhd                 ;         ;
+; decoderInstru.vhd                ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/decoderInstru.vhd               ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/registradorGenerico.vhd         ;         ;
+; bancoRegistradoresArqRegMem.vhd  ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/bancoRegistradoresArqRegMem.vhd ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/somaConstante.vhd               ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/muxGenerico2x1.vhd              ;         ;
+; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/muxGenerico4x1.vhd              ;         ;
+; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/ULASomaSub.vhd                  ;         ;
+; FlipFlop.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/FlipFlop.vhd                    ;         ;
+; edgeDetector.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/edgeDetector.vhd                ;         ;
+; logicaDesvio.vhd                 ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/logicaDesvio.vhd                ;         ;
+; memoriaRAM.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/memoriaRAM.vhd                  ;         ;
+; decoderToHabilita.vhd            ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/decoderToHabilita.vhd           ;         ;
+; decoder3x8.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/decoder3x8.vhd                  ;         ;
+; LEDS.vhd                         ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/LEDS.vhd                        ;         ;
+; SWITCHES.vhd                     ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/SWITCHES.vhd                    ;         ;
+; buffer_3_state_1porta.vhd        ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/buffer_3_state_1porta.vhd       ;         ;
+; buffer_3_state_8portas.vhd       ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/buffer_3_state_8portas.vhd      ;         ;
+; KEYS.vhd                         ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/KEYS.vhd                        ;         ;
+; Detector_Keys.vhd                ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/Detector_Keys.vhd               ;         ;
+; HEXES.vhd                        ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/HEXES.vhd                       ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/conversorHex7Seg.vhd            ;         ;
+; divisorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/divisorGenerico.vhd             ;         ;
+; divisorGenerico_e_Interface.vhd  ; yes             ; User VHDL File  ; C:/Descomp/Descomp/Relogio/divisorGenerico_e_Interface.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                   ;
++---------------------------------------------+---------------------------------+
+; Resource                                    ; Usage                           ;
++---------------------------------------------+---------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 543                             ;
+;                                             ;                                 ;
+; Combinational ALUT usage for logic          ; 581                             ;
+;     -- 7 input functions                    ; 3                               ;
+;     -- 6 input functions                    ; 351                             ;
+;     -- 5 input functions                    ; 82                              ;
+;     -- 4 input functions                    ; 12                              ;
+;     -- <=3 input functions                  ; 133                             ;
+;                                             ;                                 ;
+; Dedicated logic registers                   ; 638                             ;
+;                                             ;                                 ;
+; I/O pins                                    ; 68                              ;
+;                                             ;                                 ;
+; Total DSP Blocks                            ; 0                               ;
+;                                             ;                                 ;
+; Maximum fan-out node                        ; edgeDetector:detectorSub0|saida ;
+; Maximum fan-out                             ; 633                             ;
+; Total fan-out                               ; 4890                            ;
+; Average fan-out                             ; 3.61                            ;
++---------------------------------------------+---------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
++-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------+-----------------------------+--------------+
+; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                ; Entity Name                 ; Library Name ;
++-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------+-----------------------------+--------------+
+; |Relogio                                            ; 581 (10)            ; 638 (0)                   ; 0                 ; 0          ; 68   ; 0            ; |Relogio                                                                           ; Relogio                     ; work         ;
+;    |Detector_Keys:Detect_KEY0|                      ; 1 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Detector_Keys:Detect_KEY0                                                 ; Detector_Keys               ; work         ;
+;       |FlipFlop:Flip_Flop_Key0|                     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Detector_Keys:Detect_KEY0|FlipFlop:Flip_Flop_Key0                         ; FlipFlop                    ; work         ;
+;       |edgeDetector:detectorKey0|                   ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Detector_Keys:Detect_KEY0|edgeDetector:detectorKey0                       ; edgeDetector                ; work         ;
+;    |Detector_Keys:Detect_KEY1|                      ; 1 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Detector_Keys:Detect_KEY1                                                 ; Detector_Keys               ; work         ;
+;       |FlipFlop:Flip_Flop_Key0|                     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Detector_Keys:Detect_KEY1|FlipFlop:Flip_Flop_Key0                         ; FlipFlop                    ; work         ;
+;       |edgeDetector:detectorKey0|                   ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Detector_Keys:Detect_KEY1|edgeDetector:detectorKey0                       ; edgeDetector                ; work         ;
+;    |Detector_Keys:Detect_RESET|                     ; 1 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Detector_Keys:Detect_RESET                                                ; Detector_Keys               ; work         ;
+;       |FlipFlop:Flip_Flop_Key0|                     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Detector_Keys:Detect_RESET|FlipFlop:Flip_Flop_Key0                        ; FlipFlop                    ; work         ;
+;       |edgeDetector:detectorKey0|                   ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Detector_Keys:Detect_RESET|edgeDetector:detectorKey0                      ; edgeDetector                ; work         ;
+;    |HEXES:Hexes_Unity|                              ; 42 (0)              ; 30 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity                                                         ; HEXES                       ; work         ;
+;       |conversorHex7Seg:Conversor0|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor0                             ; conversorHex7Seg            ; work         ;
+;       |conversorHex7Seg:Conversor1|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor1                             ; conversorHex7Seg            ; work         ;
+;       |conversorHex7Seg:Conversor2|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor2                             ; conversorHex7Seg            ; work         ;
+;       |conversorHex7Seg:Conversor3|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor3                             ; conversorHex7Seg            ; work         ;
+;       |conversorHex7Seg:Conversor4|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor4                             ; conversorHex7Seg            ; work         ;
+;       |conversorHex7Seg:Conversor5|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor5                             ; conversorHex7Seg            ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX0|        ; 0 (0)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0                    ; registradorGenerico         ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX1|        ; 0 (0)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX1                    ; registradorGenerico         ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX2|        ; 0 (0)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX2                    ; registradorGenerico         ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX3|        ; 0 (0)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX3                    ; registradorGenerico         ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX4|        ; 0 (0)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX4                    ; registradorGenerico         ; work         ;
+;       |registradorGenerico:REGISTRADOR_HEX5|        ; 0 (0)               ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX5                    ; registradorGenerico         ; work         ;
+;    |LEDS:LED_UNITY|                                 ; 2 (0)               ; 10 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Relogio|LEDS:LED_UNITY                                                            ; LEDS                        ; work         ;
+;       |FlipFlop:LED8|                               ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|LEDS:LED_UNITY|FlipFlop:LED8                                              ; FlipFlop                    ; work         ;
+;       |FlipFlop:LED9|                               ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|LEDS:LED_UNITY|FlipFlop:LED9                                              ; FlipFlop                    ; work         ;
+;       |registradorGenerico:REG_LEDS|                ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|LEDS:LED_UNITY|registradorGenerico:REG_LEDS                               ; registradorGenerico         ; work         ;
+;    |Processador:Processor|                          ; 92 (0)              ; 52 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor                                                     ; Processador                 ; work         ;
+;       |FlipFlop:FlagLT|                             ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor|FlipFlop:FlagLT                                     ; FlipFlop                    ; work         ;
+;       |FlipFlop:FlagZero|                           ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor|FlipFlop:FlagZero                                   ; FlipFlop                    ; work         ;
+;       |ULASomaSub:ULA1|                             ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor|ULASomaSub:ULA1                                     ; ULASomaSub                  ; work         ;
+;       |bancoRegistradoresArqRegMem:REGS|            ; 13 (13)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor|bancoRegistradoresArqRegMem:REGS                    ; bancoRegistradoresArqRegMem ; work         ;
+;       |decoderInstru:DECODER|                       ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor|decoderInstru:DECODER                               ; decoderInstru               ; work         ;
+;       |logicaDesvio:logicaDesvio1|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor|logicaDesvio:logicaDesvio1                          ; logicaDesvio                ; work         ;
+;       |muxGenerico2x1:MUX1|                         ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor|muxGenerico2x1:MUX1                                 ; muxGenerico2x1              ; work         ;
+;       |muxGenerico4x1:MUXProxPC|                    ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor|muxGenerico4x1:MUXProxPC                            ; muxGenerico4x1              ; work         ;
+;       |registradorGenerico:PC|                      ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor|registradorGenerico:PC                              ; registradorGenerico         ; work         ;
+;       |registradorGenerico:Reg_Retorno|             ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor|registradorGenerico:Reg_Retorno                     ; registradorGenerico         ; work         ;
+;       |somaConstante:incrementaPC|                  ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:Processor|somaConstante:incrementaPC                          ; somaConstante               ; work         ;
+;    |decoderToHabilita:DECODIFICADOR|                ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|decoderToHabilita:DECODIFICADOR                                           ; decoderToHabilita           ; work         ;
+;    |divisorGenerico_e_Interface:interfaceBaseTempo| ; 32 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface:interfaceBaseTempo                            ; divisorGenerico_e_Interface ; work         ;
+;       |FlipFlop:registraUmSegundo|                  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface:interfaceBaseTempo|FlipFlop:registraUmSegundo ; FlipFlop                    ; work         ;
+;       |divisorGenerico:baseTempo|                   ; 32 (32)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo  ; divisorGenerico             ; work         ;
+;    |edgeDetector:detectorSub0|                      ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|edgeDetector:detectorSub0                                                 ; edgeDetector                ; work         ;
+;    |memoriaRAM:RAM1|                                ; 298 (298)           ; 512 (512)                 ; 0                 ; 0          ; 0    ; 0            ; |Relogio|memoriaRAM:RAM1                                                           ; memoriaRAM                  ; work         ;
+;    |romMif:ROM1|                                    ; 82 (82)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|romMif:ROM1                                                               ; romMif                      ; work         ;
++-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------+-----------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 638   ;
+; Number of registers using Synchronous Clear  ; 25    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 591   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Relogio|Processador:Processor|registradorGenerico:PC|DOUT[8]           ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[7]         ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:Processor|ULASomaSub:ULA1|saida[4]                 ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Relogio|Processador:Processor|decoderInstru:DECODER|saida[4]           ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor0|rascSaida7seg[1] ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor1|rascSaida7seg[0] ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor2|rascSaida7seg[0] ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor3|rascSaida7seg[2] ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor4|rascSaida7seg[1] ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor5|rascSaida7seg[5] ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor0|rascSaida7seg[6] ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor1|rascSaida7seg[4] ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor2|rascSaida7seg[4] ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor3|rascSaida7seg[6] ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor4|rascSaida7seg[6] ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor5|rascSaida7seg[6] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------+
@@ -311,12 +482,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo ;
++----------------+----------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                                                      ;
++----------------+----------+-------------------------------------------------------------------------------------------+
+; divisor        ; 25000000 ; Signed Integer                                                                            ;
++----------------+----------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0 ;
 +----------------+-------+----------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                       ;
 +----------------+-------+----------------------------------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                                             ;
+; larguradados   ; 5     ; Signed Integer                                                             ;
 +----------------+-------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -326,7 +507,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                       ;
 +----------------+-------+----------------------------------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                                             ;
+; larguradados   ; 5     ; Signed Integer                                                             ;
 +----------------+-------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -336,7 +517,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                       ;
 +----------------+-------+----------------------------------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                                             ;
+; larguradados   ; 5     ; Signed Integer                                                             ;
 +----------------+-------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -346,7 +527,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                       ;
 +----------------+-------+----------------------------------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                                             ;
+; larguradados   ; 5     ; Signed Integer                                                             ;
 +----------------+-------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -356,7 +537,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                       ;
 +----------------+-------+----------------------------------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                                             ;
+; larguradados   ; 5     ; Signed Integer                                                             ;
 +----------------+-------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -366,7 +547,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                       ;
 +----------------+-------+----------------------------------------------------------------------------+
-; larguradados   ; 4     ; Signed Integer                                                             ;
+; larguradados   ; 5     ; Signed Integer                                                             ;
 +----------------+-------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -501,6 +682,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+---------------------------------------------------+
 
 
++-------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "divisorGenerico_e_Interface:interfaceBaseTempo|FlipFlop:registraUmSegundo" ;
++--------+-------+----------+---------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                   ;
++--------+-------+----------+---------------------------------------------------------------------------+
+; din    ; Input ; Info     ; Stuck at VCC                                                              ;
+; enable ; Input ; Info     ; Stuck at VCC                                                              ;
++--------+-------+----------+---------------------------------------------------------------------------+
+
+
 +----------------------------------------------------------+
 ; Port Connectivity Checks: "LEDS:LED_UNITY|FlipFlop:LED9" ;
 +------+-------+----------+--------------------------------+
@@ -593,12 +784,42 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+----------------------------------------------+
 
 
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 638                         ;
+;     CLR               ; 4                           ;
+;     ENA               ; 591                         ;
+;     SCLR              ; 25                          ;
+;     plain             ; 18                          ;
+; arriav_lcell_comb     ; 581                         ;
+;     arith             ; 52                          ;
+;         1 data inputs ; 36                          ;
+;         3 data inputs ; 6                           ;
+;         5 data inputs ; 10                          ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 526                         ;
+;         2 data inputs ; 81                          ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 12                          ;
+;         5 data inputs ; 72                          ;
+;         6 data inputs ; 351                         ;
+; boundary_port         ; 68                          ;
+;                       ;                             ;
+; Max LUT depth         ; 11.30                       ;
+; Average LUT depth     ; 7.08                        ;
++-----------------------+-----------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -608,7 +829,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 21 03:01:34 2023
+    Info: Processing started: Sun Oct 22 10:52:25 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Relogio -c Relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -656,7 +877,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file memoria
     Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Descomp/Descomp/Relogio/memoriaRAM.vhd Line: 21
     Info (12023): Found entity 1: memoriaRAM File: C:/Descomp/Descomp/Relogio/memoriaRAM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file decodertohabilita.vhd
-    Info (12022): Found design unit 1: decoderToHabilita-comportamento File: C:/Descomp/Descomp/Relogio/decoderToHabilita.vhd Line: 21
+    Info (12022): Found design unit 1: decoderToHabilita-comportamento File: C:/Descomp/Descomp/Relogio/decoderToHabilita.vhd Line: 22
     Info (12023): Found entity 1: decoderToHabilita File: C:/Descomp/Descomp/Relogio/decoderToHabilita.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decoder3x8.vhd
     Info (12022): Found design unit 1: decoder3x8-comportamento File: C:/Descomp/Descomp/Relogio/decoder3x8.vhd Line: 11
@@ -685,9 +906,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file hexes.v
 Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
     Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Descomp/Descomp/Relogio/conversorHex7Seg.vhd Line: 17
     Info (12023): Found entity 1: conversorHex7Seg File: C:/Descomp/Descomp/Relogio/conversorHex7Seg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file divisorgenerico.vhd
+    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: C:/Descomp/Descomp/Relogio/divisorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: divisorGenerico File: C:/Descomp/Descomp/Relogio/divisorGenerico.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file divisorgenerico_e_interface.vhd
+    Info (12022): Found design unit 1: divisorGenerico_e_Interface-interface File: C:/Descomp/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 13
+    Info (12023): Found entity 1: divisorGenerico_e_Interface File: C:/Descomp/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 5
 Info (12127): Elaborating entity "Relogio" for the top level hierarchy
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 58
-Info (12128): Elaborating entity "Processador" for hierarchy "Processador:Processor" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 64
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 60
+Info (12128): Elaborating entity "Processador" for hierarchy "Processador:Processor" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 66
 Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:PC" File: C:/Descomp/Descomp/Relogio/Processador.vhd Line: 65
 Info (12128): Elaborating entity "somaConstante" for hierarchy "Processador:Processor|somaConstante:incrementaPC" File: C:/Descomp/Descomp/Relogio/Processador.vhd Line: 68
 Info (12128): Elaborating entity "decoderInstru" for hierarchy "Processador:Processor|decoderInstru:DECODER" File: C:/Descomp/Descomp/Relogio/Processador.vhd Line: 72
@@ -697,11 +924,11 @@ Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "Processador:Pro
 Info (12128): Elaborating entity "ULASomaSub" for hierarchy "Processador:Processor|ULASomaSub:ULA1" File: C:/Descomp/Descomp/Relogio/Processador.vhd Line: 98
 Info (12128): Elaborating entity "FlipFlop" for hierarchy "Processador:Processor|FlipFlop:FlagZero" File: C:/Descomp/Descomp/Relogio/Processador.vhd Line: 106
 Info (12128): Elaborating entity "logicaDesvio" for hierarchy "Processador:Processor|logicaDesvio:logicaDesvio1" File: C:/Descomp/Descomp/Relogio/Processador.vhd Line: 120
-Info (12128): Elaborating entity "romMif" for hierarchy "romMif:ROM1" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 77
+Info (12128): Elaborating entity "romMif" for hierarchy "romMif:ROM1" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 79
 Warning (10541): VHDL Signal Declaration warning at romMIF.vhd(22): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/Descomp/Relogio/romMIF.vhd Line: 22
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM1" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 84
-Info (12128): Elaborating entity "decoderToHabilita" for hierarchy "decoderToHabilita:DECODIFICADOR" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 96
-Info (12128): Elaborating entity "decoder3x8" for hierarchy "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER1" File: C:/Descomp/Descomp/Relogio/decoderToHabilita.vhd Line: 27
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM1" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 86
+Info (12128): Elaborating entity "decoderToHabilita" for hierarchy "decoderToHabilita:DECODIFICADOR" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 98
+Info (12128): Elaborating entity "decoder3x8" for hierarchy "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER1" File: C:/Descomp/Descomp/Relogio/decoderToHabilita.vhd Line: 28
 Info (10041): Inferred latch for "saida[0]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/Relogio/decoder3x8.vhd Line: 13
 Info (10041): Inferred latch for "saida[1]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/Relogio/decoder3x8.vhd Line: 13
 Info (10041): Inferred latch for "saida[2]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/Relogio/decoder3x8.vhd Line: 13
@@ -710,21 +937,23 @@ Info (10041): Inferred latch for "saida[4]" at decoder3x8.vhd(13) File: C:/Desco
 Info (10041): Inferred latch for "saida[5]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/Relogio/decoder3x8.vhd Line: 13
 Info (10041): Inferred latch for "saida[6]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/Relogio/decoder3x8.vhd Line: 13
 Info (10041): Inferred latch for "saida[7]" at decoder3x8.vhd(13) File: C:/Descomp/Descomp/Relogio/decoder3x8.vhd Line: 13
-Info (12128): Elaborating entity "LEDS" for hierarchy "LEDS:LED_UNITY" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 125
+Info (12128): Elaborating entity "LEDS" for hierarchy "LEDS:LED_UNITY" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 129
 Info (12128): Elaborating entity "registradorGenerico" for hierarchy "LEDS:LED_UNITY|registradorGenerico:REG_LEDS" File: C:/Descomp/Descomp/Relogio/LEDS.vhd Line: 15
-Info (12128): Elaborating entity "SWITCHES" for hierarchy "SWITCHES:Switch_Unity" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 138
+Info (12128): Elaborating entity "SWITCHES" for hierarchy "SWITCHES:Switch_Unity" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 142
 Info (12128): Elaborating entity "buffer_3_state_8portas" for hierarchy "SWITCHES:Switch_Unity|buffer_3_state_8portas:tri_state_8_1" File: C:/Descomp/Descomp/Relogio/SWITCHES.vhd Line: 15
 Info (12128): Elaborating entity "buffer_3_state_1porta" for hierarchy "SWITCHES:Switch_Unity|buffer_3_state_1porta:tri_state_1_1" File: C:/Descomp/Descomp/Relogio/SWITCHES.vhd Line: 22
-Info (12128): Elaborating entity "KEYS" for hierarchy "KEYS:Keys_Unity" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 148
-Info (12128): Elaborating entity "Detector_Keys" for hierarchy "Detector_Keys:Detect_KEY0" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 163
-Info (12128): Elaborating entity "HEXES" for hierarchy "HEXES:Hexes_Unity" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 190
+Info (12128): Elaborating entity "KEYS" for hierarchy "KEYS:Keys_Unity" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 152
+Info (12128): Elaborating entity "divisorGenerico_e_Interface" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 167
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo" File: C:/Descomp/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 18
+Info (12128): Elaborating entity "Detector_Keys" for hierarchy "Detector_Keys:Detect_KEY0" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 174
+Info (12128): Elaborating entity "HEXES" for hierarchy "HEXES:Hexes_Unity" File: C:/Descomp/Descomp/Relogio/Relogio.vhd Line: 201
 Info (12128): Elaborating entity "registradorGenerico" for hierarchy "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0" File: C:/Descomp/Descomp/Relogio/HEXES.vhd Line: 19
 Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "HEXES:Hexes_Unity|conversorHex7Seg:Conversor0" File: C:/Descomp/Descomp/Relogio/HEXES.vhd Line: 27
 Info (276014): Found 2 instances of uninferred RAM logic
     Info (276007): RAM logic "memoriaRAM:RAM1|ram" is uninferred due to asynchronous read logic File: C:/Descomp/Descomp/Relogio/memoriaRAM.vhd Line: 27
     Info (276004): RAM logic "Processador:Processor|bancoRegistradoresArqRegMem:REGS|registrador" is uninferred due to inappropriate RAM size File: C:/Descomp/Descomp/Relogio/bancoRegistradoresArqRegMem.vhd Line: 29
-Critical Warning (127003): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File C:/Descomp/Descomp/Relogio/rom.mif -- setting all initial values to 0
-Error (286034): Cannot find Memory Initialization File or Hexadecimal (Intel-Format) File rom.mif for ROM instance romMif:ROM1|content File: C:/Descomp/Descomp/Relogio/romMIF.vhd Line: 22
+Warning (113028): 268 out of 512 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Descomp/Descomp/Relogio/rom.mif Line: 1
+    Warning (113027): Addresses ranging from 244 to 511 are not initialized File: C:/Descomp/Descomp/Relogio/rom.mif Line: 1
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "entrada_DATA[7]" into a selector File: C:/Descomp/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
     Warning (13048): Converted tri-state node "entrada_DATA[6]" into a selector File: C:/Descomp/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
@@ -734,10 +963,17 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "entrada_DATA[2]" into a selector File: C:/Descomp/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
     Warning (13048): Converted tri-state node "entrada_DATA[1]" into a selector File: C:/Descomp/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
     Warning (13048): Converted tri-state node "entrada_DATA[0]" into a selector File: C:/Descomp/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 12 warnings
-    Error: Peak virtual memory: 4849 megabytes
-    Error: Processing ended: Sat Oct 21 03:01:42 2023
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:19
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1248 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 1180 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4855 megabytes
+    Info: Processing ended: Sun Oct 22 10:52:33 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 

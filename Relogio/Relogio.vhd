@@ -25,6 +25,7 @@ end entity;
 architecture arquitetura of Relogio is
 
   signal CLK : std_logic;
+  signal saidaclk_reg1seg: std_logic;
   signal endereco_ROM: std_logic_vector(8 downto 0);
   signal entrada_instrucao: std_logic_vector(14 downto 0);
   signal entrada_DATA: std_logic_vector(7 downto 0);
@@ -45,11 +46,12 @@ architecture arquitetura of Relogio is
   signal valor_HEX3,valor_HEX4,valor_HEX5: std_logic_vector(6 downto 0);
   signal hab_Switchs,hab_Switch8, hab_Switch9: std_logic;
   signal hab_KEY0,hab_KEY1,hab_KEY2: std_logic;
+  signal hab_TEMP: std_logic;
   signal hab_KEY3,hab_FPGA_RESET: std_logic;
   signal saida_key0: std_logic;
   signal saida_key1: std_logic;
   signal saida_RESET: std_logic;
-  signal Limpeza_KEY0,Limpeza_KEY1,Limpeza_RESET : std_logic;
+  signal Limpeza_KEY0,Limpeza_KEY1,Limpeza_RESET,Limpeza_TEMP : std_logic;
   
 begin
 
@@ -111,11 +113,13 @@ DECODIFICADOR: entity work.decoderToHabilita
 		habilita_Switchs => hab_Switchs,
 		habilita_Switch8 => hab_Switch8, 
 		habilita_Switch9 => hab_Switch9,
+		habilita_temp => hab_TEMP,
 		habilita_KEY0 => hab_KEY0, 
 		habilita_KEY1 => hab_KEY1,
 		habilita_KEY2 => hab_KEY2,
 		habilita_KEY3 => hab_KEY3,
 		habilita_FPGA_RESET => hab_FPGA_RESET,
+		Limpa_TEMP => Limpeza_TEMP,
 		Limpa_Key0 => Limpeza_KEY0,
 		Limpa_Key1 => Limpeza_KEY1,
 		Limpa_RESET => Limpeza_RESET
@@ -151,7 +155,7 @@ Keys_Unity: entity work.KEYS
 		entrada_key1 => saida_key1,
 		entrada_keys => KEY(3 downto 2),
 		entrada_RESET => saida_RESET, 
-	   habilita_KEY0 => hab_KEY0, 
+		habilita_KEY0 => hab_KEY0,	
 		habilita_KEY1 => hab_KEY1,
 		habilita_KEY2 => hab_KEY2,
 		habilita_KEY3 => hab_KEY3,
@@ -159,15 +163,22 @@ Keys_Unity: entity work.KEYS
 		saida => entrada_DATA(0)
 );
 
--- Unidade CHAVES
+
+interfaceBaseTempo : entity work.divisorGenerico_e_Interface
+              port map (clk => CLK,
+              habilitaLeitura => hab_TEMP,
+              limpaLeitura => LIMPEZA_TEMP,
+              leituraUmSegundo => entrada_DATA(0));
+	
+-- Unidade CHAVES	
 Detect_KEY0: entity work.Detector_Keys
 	port map(
-		Key	=> KEY(0),
+		Key 	=> KEY(0),
 		Clock => CLK,
 		Limpa => Limpeza_KEY0,
 		saida => saida_key0
-);
-
+);	
+	
 -- Unidade CHAVES
 Detect_KEY1: entity work.Detector_Keys
 	port map(

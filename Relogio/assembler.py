@@ -54,6 +54,20 @@ def parseMnemonic(line):
         line = " ".join(line)
     return line
 
+def readREG(line):
+    
+    if 'REG' not in line:
+        #find first space
+        index1 = line.find(' ')
+        line = line[0:index1] + ' 00' + line[index1:]
+        return line
+    index1 = line.find('REG')
+    address = bin(int(line[index1+3]))[2:].zfill(2)
+    line = line.replace('REG'+line[index1+3], address)
+
+    return line
+
+
 
 #first pass 
 parsed_lines = []
@@ -71,6 +85,10 @@ for i, line in enumerate(lines):
         line = line.split(':')[1].strip() 
         labels[label] = bin(int(l))[2:].zfill(9) 
 
+    #eliminating commas
+    if ',' in line:
+        line = line.replace(',', ' ')
+
     
     if '$' in line:
         line = readConst(line)
@@ -81,6 +99,8 @@ for i, line in enumerate(lines):
     
     if len(line) > 1:
         line = parseMnemonic(line)
+        line = readREG(line)
+        print(line)
         parsed_lines.append(line)
         l+= 1
 
@@ -95,7 +115,7 @@ for i, line in enumerate(parsed_lines):
     parsed_lines[i] = parsed_lines[i].replace(" ","")
 
 
-memory_width = 13
+memory_width = 15
 memory_depth = 512 
 
 mif_header = f'''WIDTH={memory_width};

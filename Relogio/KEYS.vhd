@@ -15,7 +15,6 @@ end entity;
 
 architecture comportamento of KEYS is
   begin
-  
   tri_state_1_1 : entity work.buffer_3_state_1porta
 	port map(
 		entrada => entrada_key0,

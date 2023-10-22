@@ -13,11 +13,11 @@ entity HEXES is
 end entity;
 
 architecture comportamento of HEXES is
-  signal reg_HEX0,reg_HEX1,reg_HEX2:  std_logic_vector(3 downto 0);
-  signal reg_HEX3,reg_HEX4,reg_HEX5:  std_logic_vector(3 downto 0);
+  signal reg_HEX0,reg_HEX1,reg_HEX2:  std_logic_vector(4 downto 0);
+  signal reg_HEX3,reg_HEX4,reg_HEX5:  std_logic_vector(4 downto 0);
   begin
-REGISTRADOR_HEX0 : entity work.registradorGenerico   generic map (larguraDados => 4)
-port map (DIN => entrada(3 downto 0), 
+REGISTRADOR_HEX0 : entity work.registradorGenerico   generic map (larguraDados => 5)
+port map (DIN => entrada(4 downto 0), 
 			 DOUT => reg_HEX0, 
 			 ENABLE => habilita_HEX0 , 
 			 CLK => CLK, 
@@ -30,8 +30,8 @@ port map (
 			 saida7seg => saida_HEX0
 );
 
-REGISTRADOR_HEX1 : entity work.registradorGenerico   generic map (larguraDados => 4)
-port map (DIN => entrada(3 downto 0), 
+REGISTRADOR_HEX1 : entity work.registradorGenerico   generic map (larguraDados => 5)
+port map (DIN => entrada(4 downto 0), 
 			 DOUT => reg_HEX1, 
 			 ENABLE => habilita_HEX1 , 
 			 CLK => CLK, 
@@ -44,8 +44,8 @@ port map (
 			 saida7seg => saida_HEX1
 );
 
-REGISTRADOR_HEX2 : entity work.registradorGenerico   generic map (larguraDados => 4)
-port map (DIN => entrada(3 downto 0), 
+REGISTRADOR_HEX2 : entity work.registradorGenerico   generic map (larguraDados => 5)
+port map (DIN => entrada(4 downto 0), 
 			 DOUT => reg_HEX2, 
 			 ENABLE => habilita_HEX2 , 
 			 CLK => CLK, 
@@ -58,8 +58,8 @@ port map (
 			 saida7seg => saida_HEX2
 );
 
-REGISTRADOR_HEX3 : entity work.registradorGenerico   generic map (larguraDados => 4)
-port map (DIN => entrada(3 downto 0), 
+REGISTRADOR_HEX3 : entity work.registradorGenerico   generic map (larguraDados => 5)
+port map (DIN => entrada(4 downto 0), 
 			 DOUT => reg_HEX3, 
 			 ENABLE => habilita_HEX3 , 
 			 CLK => CLK, 
@@ -72,8 +72,8 @@ port map (
 			 saida7seg => saida_HEX3
 );
 
-REGISTRADOR_HEX4 : entity work.registradorGenerico   generic map (larguraDados => 4)
-port map (DIN => entrada(3 downto 0), 
+REGISTRADOR_HEX4 : entity work.registradorGenerico   generic map (larguraDados => 5)
+port map (DIN => entrada(4 downto 0), 
 			 DOUT => reg_HEX4, 
 			 ENABLE => habilita_HEX4 , 
 			 CLK => CLK, 
@@ -86,8 +86,8 @@ port map (
 			 saida7seg => saida_HEX4
 );
 
-REGISTRADOR_HEX5 : entity work.registradorGenerico   generic map (larguraDados => 4)
-port map (DIN => entrada(3 downto 0), 
+REGISTRADOR_HEX5 : entity work.registradorGenerico   generic map (larguraDados => 5)
+port map (DIN => entrada(4 downto 0), 
 			 DOUT => reg_HEX5, 
 			 ENABLE => habilita_HEX5 , 
 			 CLK => CLK, 
