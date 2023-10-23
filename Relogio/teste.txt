@@ -1,0 +1,2 @@
+LDI REG3,$0
+ADDI REG2,$1

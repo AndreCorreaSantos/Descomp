@@ -23,12 +23,16 @@ architecture comportamento of decoderInstru is
   constant OP_AND : std_logic_vector(3 downto 0) := "1011";
   constant CLT : std_logic_vector(3 downto 0) := "1100";
   constant JLT : std_logic_vector(3 downto 0) := "1101";
+  constant ADDI : std_logic_vector(3 downto 0) := "1110";
+  constant SUBI : std_logic_vector(3 downto 0) := "1111";
 
   begin
 saida <= "000000000000000" when opcode = NOP else
          "000000010010010" when opcode = LDA else
          "000000010100010" when opcode = SOMA else
          "000000010000010" when opcode = SUB else
+         "000000110100010" when opcode = ADDI else
+         "000000110000010" when opcode = SUBI else
          "000000110010000" when opcode = LDI else
          "000000000000001" when opcode = STA else
          "010000000000000" when opcode = JMP else

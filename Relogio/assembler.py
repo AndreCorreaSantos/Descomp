@@ -14,7 +14,7 @@ else:
 
 
 
-mne = {"NOP":'0000',"LDA":"0001","SOMA":"0010","SUB":"0011","LDI":"0100","STA":"0101","JMP":"0110","JEQ":"0111","CEQ":"1000","JSR":"1001","RET":"1010","AND": "1011","CLT":"1100","JLT":"1101"}
+mne = {"NOP":'0000',"LDA":"0001","SOMA":"0010","SUB":"0011","LDI":"0100","STA":"0101","JMP":"0110","JEQ":"0111","CEQ":"1000","JSR":"1001","RET":"1010","AND": "1011","CLT":"1100","JLT":"1101","ADDI":"1110","SUBI":"1111"}
 
 # first pass
 
@@ -55,16 +55,9 @@ def parseMnemonic(line):
     return line
 
 def readREG(line):
-    
-    if 'REG' not in line:
-        #find first space
-        index1 = line.find(' ')
-        line = line[0:index1] + ' 00' + line[index1:]
-        return line
     index1 = line.find('REG')
     address = bin(int(line[index1+3]))[2:].zfill(2)
     line = line.replace('REG'+line[index1+3], address)
-
     return line
 
 
@@ -96,11 +89,12 @@ for i, line in enumerate(lines):
     if '@' in line:
         line = readAddr(line)
 
+    if 'REG' in line:
+        line = readREG(line)
     
     if len(line) > 1:
         line = parseMnemonic(line)
         line = readREG(line)
-        print(line)
         parsed_lines.append(line)
         l+= 1
 
