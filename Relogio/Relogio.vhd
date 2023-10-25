@@ -52,6 +52,7 @@ architecture arquitetura of Relogio is
   signal saida_key1: std_logic;
   signal saida_RESET: std_logic;
   signal Limpeza_KEY0,Limpeza_KEY1,Limpeza_RESET,Limpeza_TEMP : std_logic;
+  signal saida_sw9: std_logic;
   
 begin
 
@@ -168,6 +169,7 @@ interfaceBaseTempo : entity work.divisorGenerico_e_Interface
               port map (clk => CLK,
               habilitaLeitura => hab_TEMP,
               limpaLeitura => LIMPEZA_TEMP,
+				  saida_sw9 => SW(9),
               leituraUmSegundo => entrada_DATA(0));
 	
 -- Unidade CHAVES	
@@ -187,6 +189,7 @@ Detect_KEY1: entity work.Detector_Keys
 		Limpa => Limpeza_KEY1,
 		saida => saida_key1
 );
+
 
 -- Unidade CHAVES
 Detect_RESET: entity work.Detector_Keys

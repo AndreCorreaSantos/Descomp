@@ -68,6 +68,7 @@ SW[6] => switches:Switch_Unity.entrada_switches[6]
 SW[7] => switches:Switch_Unity.entrada_switches[7]
 SW[8] => switches:Switch_Unity.entrada_switches[8]
 SW[9] => switches:Switch_Unity.entrada_switches[9]
+SW[9] => divisorgenerico_e_interface:interfaceBaseTempo.saida_sw9
 
 
 |Relogio|edgeDetector:detectorSub0
@@ -1059,8 +1060,10 @@ saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
 
 |Relogio|divisorGenerico_e_Interface:interfaceBaseTempo
 clk => divisorgenerico:baseTempo.clk
+clk => divisorgenerico:baseTempo2.clk
 habilitaLeitura => leituraUmSegundo.OE
 limpaLeitura => flipflop:registraUmSegundo.RST
+saida_sw9 => muxgenerico2x1_simples:MUX4.seletor_MUX
 leituraUmSegundo <= leituraUmSegundo.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -1092,6 +1095,32 @@ clk => contador[22].CLK
 clk => contador[23].CLK
 clk => contador[24].CLK
 saida_clk <= tick.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Relogio|divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo2
+clk => tick.CLK
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+clk => contador[6].CLK
+clk => contador[7].CLK
+clk => contador[8].CLK
+clk => contador[9].CLK
+clk => contador[10].CLK
+clk => contador[11].CLK
+clk => contador[12].CLK
+clk => contador[13].CLK
+saida_clk <= tick.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Relogio|divisorGenerico_e_Interface:interfaceBaseTempo|muxGenerico2x1_simples:MUX4
+entradaA_MUX => saida_MUX.DATAA
+entradaB_MUX => saida_MUX.DATAB
+seletor_MUX => saida_MUX.OUTPUTSELECT
+saida_MUX <= saida_MUX.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Relogio|divisorGenerico_e_Interface:interfaceBaseTempo|FlipFlop:registraUmSegundo
