@@ -9,16 +9,22 @@ entity Relogio is
   port   (
     -- CLOCK 50 MHZ
     CLOCK_50 : in std_logic;
-	 -- CHAVES
-	 KEY: in std_logic_vector(3 downto 0);
-	 -- FPGA_RESET
-	 FPGA_RESET_N: in std_logic;
-	 -- LEDS
-	 LEDR  : out std_logic_vector(9 downto 0);
-	 -- 7Segs
-	 HEX0,HEX1,HEX2,HEX3,HEX4,HEX5: out std_logic_vector(6 downto 0);
-	 -- Switchs
-	 SW: in std_logic_vector(9 downto 0)
+	-- CHAVES
+	KEY: in std_logic_vector(3 downto 0);
+	-- FPGA_RESET
+	FPGA_RESET_N: in std_logic;
+	-- LEDS
+	LEDR  : out std_logic_vector(9 downto 0);
+	-- 7Segs
+	HEX0,HEX1,HEX2,HEX3,HEX4,HEX5: out std_logic_vector(6 downto 0);
+	-- Switchs
+	SW: in std_logic_vector(9 downto 0);
+
+	VGA_HS		:	out	std_logic;								--horiztonal sync pulse
+	VGA_VS		:	out	std_logic;								--vertical sync pulse
+	VGA_R			:	out	std_logic_vector(3 DOWNTO 0);
+	VGA_G			:	out	std_logic_vector(3 DOWNTO 0);
+	VGA_B			:	out	std_logic_vector(3 DOWNTO 0)
   );
 end entity;
 
@@ -30,7 +36,7 @@ architecture arquitetura of Relogio is
   signal entrada_instrucao: std_logic_vector(14 downto 0);
   signal entrada_DATA: std_logic_vector(7 downto 0);
   signal saida_DATA: std_logic_vector(7 downto 0);
-  signal endereco_RAM: std_logic_vector(8 downto 0);
+  signal addresses: std_logic_vector(8 downto 0);
   signal WR: std_logic;
   signal RD: std_logic;
   signal hab_RAM: std_logic;
@@ -53,6 +59,9 @@ architecture arquitetura of Relogio is
   signal saida_RESET: std_logic;
   signal Limpeza_KEY0,Limpeza_KEY1,Limpeza_RESET,Limpeza_TEMP : std_logic;
   signal saida_sw9: std_logic;
+
+  signal SIG_HAB_LIN_VGA, SIG_HAB_COL_VGA, SIG_HAB_DATA_VGA, SIG_HAB_WRITE_VGA, SIG_HAB_WRITE_VGA_OUT : std_logic;
+  signal SIG_LIN_VGA, 		SIG_COL_VGA , SIG_DATA_VGA : std_logic_vector(7 downto 0);
   
 begin
 
@@ -71,7 +80,7 @@ Processor: entity work.Processador
 		Instruction_IN => entrada_instrucao,
 		Data_IN => entrada_DATA,
 		Data_OUT => saida_DATA,
-		Data_Address => endereco_RAM,
+		Data_Address => addresses,
 		Wr => WR,
 		Rd => RD
 );
@@ -86,7 +95,7 @@ ROM1: entity work.romMIF generic map(dataWidth => 15)
 -- RAM
 RAM1: entity work.memoriaRAM
 	port map(
-		addr => endereco_RAM	(5 downto 0),
+		addr => addresses	(5 downto 0),
 		we => WR,
 		re => RD,
 		habilita => hab_RAM,
@@ -98,7 +107,7 @@ RAM1: entity work.memoriaRAM
 -- Decodifica o endereço Ram e tranforma nos sinais de habilita
 DECODIFICADOR: entity work.decoderToHabilita
 	port map(
-		enderecos => endereco_RAM,
+		enderecos => addresses,
 		Wr => WR,
 		Rd => RD,
 		habilita_RAM => hab_RAM,
@@ -219,6 +228,106 @@ Hexes_Unity: entity work.HEXES
 		saida_HEX5 => valor_HEX5
 		
 );
+
+
+
+-- VGA -----------------------------------------------------------------------------------
+
+--Endereço 128
+SIG_HAB_LIN_VGA <= WR AND
+							(NOT addresses(8)) AND
+							addresses(7) AND
+						 (NOT addresses(6)) AND
+						 (NOT addresses(5)) AND
+						 (NOT addresses(4)) AND
+						 (NOT addresses(3)) AND
+						 (NOT addresses(2)) AND
+						 (NOT addresses(1)) AND
+						 (NOT addresses(0));
+						 
+REG_LIN_VGA : entity work.registradorGenerico generic map (larguraDados => 8)
+			port map(
+				DIN => saida_DATA,
+				DOUT => SIG_LIN_VGA,
+				ENABLE => SIG_HAB_LIN_VGA,
+				CLK => CLK,
+				RST => '0'
+			);
+			
+			
+--Endereço 129
+SIG_HAB_COL_VGA <= WR AND
+							(NOT addresses(8)) AND
+							addresses(7) AND
+						 (NOT addresses(6)) AND
+						 (NOT addresses(5)) AND
+						 (NOT addresses(4)) AND
+						 (NOT addresses(3)) AND
+						 (NOT addresses(2)) AND
+						 (NOT addresses(1)) AND
+						 (addresses(0));
+						 
+REG_COL_VGA : entity work.registradorGenerico generic map (larguraDados => 8)
+			port map(
+				DIN => saida_DATA,
+				DOUT => SIG_COL_VGA,
+				ENABLE => SIG_HAB_COL_VGA,
+				CLK => CLK,
+				RST => '0'
+			);
+			
+	
+--Endereço 130
+SIG_HAB_DATA_VGA <= WR AND
+							(NOT addresses(8)) AND
+							addresses(7) AND
+						 (NOT addresses(6)) AND
+						 (NOT addresses(5)) AND
+						 (NOT addresses(4)) AND
+						 (NOT addresses(3)) AND
+						 (NOT addresses(2)) AND
+						 (addresses(1)) AND
+						 (NOT addresses(0));
+						 
+REG_DATA_VGA : entity work.registradorGenerico generic map (larguraDados => 8)
+			port map(
+				DIN => "111" & saida_DATA(4 downto 0), -- ALTEREI A ENTRADA TESTANDO!! SE DER MERDA VOLTAR PARA 111 & SAIDA_DATA 4 DOWNTO 0
+				DOUT => SIG_DATA_VGA,
+				ENABLE => SIG_HAB_DATA_VGA,
+				CLK => CLK,
+				RST => '0'
+			);
+						
+--Endereço 131
+SIG_HAB_WRITE_VGA_OUT <= WR AND
+							(NOT addresses(8)) AND
+							addresses(7) AND
+						 (NOT addresses(6)) AND
+						 (NOT addresses(5)) AND
+						 (NOT addresses(4)) AND
+						 (NOT addresses(3)) AND
+						 (NOT addresses(2)) AND
+						 (addresses(1)) AND
+						 (addresses(0));
+						 
+				 
+
+				
+	driverVGA: entity work.driverVGA  
+	port map (CLOCK_50    => CLOCK_50,								--clock 50 MHz
+		--FPGA_RESET_N:	IN		std_logic;								--active low asycnchronous reset
+		VGA_HS		=> 	 VGA_HS,							--horiztonal sync pulse
+		VGA_VS		=> 	 VGA_VS,										--vertical sync pulse
+		VGA_R			=> 	 VGA_R,		
+		VGA_G			=> 	 VGA_G,		
+		VGA_B			=> 	 VGA_B,		
+		posLin => 	SIG_LIN_VGA,	
+		posCol =>  SIG_COL_VGA,
+		dadoIN => SIG_DATA_VGA, 
+		VideoRAMWREnable => SIG_HAB_WRITE_VGA_OUT
+		);			
+
+--------------------------------------------------------------------------------------------------------
 
 HEX0 <=valor_HEX0;
 HEX1 <=valor_HEX1;

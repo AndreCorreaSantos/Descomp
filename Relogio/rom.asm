@@ -53,6 +53,8 @@ JSR TRATA_KEY1
 NOP
 JSR TRATA_KEY0
 NOP
+JSR ATUALIZA_VGA
+NOP
 JMP MAIN
 
 TRATA_KEY0:
@@ -314,4 +316,80 @@ JMP Continua_Incremento
 OVERFLOW:
 STA REG0, @4
 STA REG0, @5
+RET
+
+ATUALIZA_VGA:
+LDI $5 # Carregando 3 no acumulador
+STA @128 # Carregando 3 na LINHA
+LDI $11 # Carregando 9 no acumulador
+STA @129 # Carregando 9 na COLUNA
+
+LDI REG2, $16 ; ATUALIZA UNIDADE 0 SEGUNDOS
+ADD REG2, @0
+STA REG2, @130
+STA REG2, @131
+
+
+LDI $10 # Carregando 9 no acumulador
+STA @129 # Carregando 9 na COLUNA
+
+LDI REG2, $16 ; ATUALIZA UNIDADE 1 SEGUNDOS
+ADD REG2, @1
+STA REG2, @130
+STA REG2, @131
+
+
+LDI $9 # Carregando 9 no acumulador
+STA @129 # Carregando 9 na COLUNA
+
+LDI REG2, $26 ; ESCREVE :
+STA REG2, @130
+STA REG2, @131
+
+
+LDI $8 # Carregando 9 no acumulador
+STA @129 # Carregando 9 na COLUNA
+
+LDI REG2, $16; ATUALIZA UNIDADE 0 MINUTOS
+ADD REG2, @2
+STA REG2, @130
+STA REG2, @131
+
+
+LDI $7 # Carregando 9 no acumulador
+STA @129 # Carregando 9 na COLUNA
+
+LDI REG2, $16; ATUALIZA UNIDADE 1 MINUTOS
+ADD REG2, @3
+STA REG2, @130
+STA REG2, @131
+
+;DOIS PONTOS
+
+LDI $6 # Carregando 9 no acumulador
+STA @129 # Carregando 9 na COLUNA
+
+LDI REG2, $26; ESCREVE :
+STA REG2, @130
+STA REG2, @131
+
+
+LDI $5 # Carregando 9 no acumulador
+STA @129 # Carregando 9 na COLUNA
+
+LDI REG2, $16 ; ATUALIZA UNIDADE 0 HORAS
+ADD REG2, @4
+STA REG2, @130
+STA REG2, @131
+
+
+LDI $4 # Carregando 9 no acumulador
+STA @129 # Carregando 9 na COLUNA
+
+LDI REG2, $16; ATUALIZA UNIDADE 1 HORAS
+ADD REG2, @5
+STA REG2, @130
+STA REG2, @131
+
+
 RET

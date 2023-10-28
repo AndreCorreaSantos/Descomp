@@ -6,7 +6,7 @@ argv = sys.argv[1:]
 
 if argc >= 1:
     file_name = argv[0]
-    with open(file_name, 'r') as f:
+    with open(file_name, 'r',encoding='utf-8') as f:
         lines = f.readlines()
 else:
     print("Enter a valid file name")
