@@ -1,5 +1,5 @@
 Timing Analyzer report for Relogio
-Sat Oct 28 22:47:16 2023
+Sat Oct 28 23:00:01 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -102,26 +102,26 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.61        ;
+; Average used               ; 1.74        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.1%      ;
-;     Processor 3            ;   4.9%      ;
-;     Processor 4            ;   4.9%      ;
-;     Processor 5            ;   3.9%      ;
-;     Processor 6            ;   3.8%      ;
-;     Processor 7            ;   3.8%      ;
-;     Processor 8            ;   3.8%      ;
-;     Processor 9            ;   3.8%      ;
-;     Processor 10           ;   3.8%      ;
-;     Processor 11           ;   3.8%      ;
-;     Processor 12           ;   3.8%      ;
-;     Processor 13           ;   3.8%      ;
-;     Processor 14           ;   3.8%      ;
-;     Processor 15           ;   3.8%      ;
-;     Processor 16           ;   3.8%      ;
+;     Processor 2            ;   6.2%      ;
+;     Processor 3            ;   6.2%      ;
+;     Processor 4            ;   6.2%      ;
+;     Processor 5            ;   4.6%      ;
+;     Processor 6            ;   4.6%      ;
+;     Processor 7            ;   4.6%      ;
+;     Processor 8            ;   4.6%      ;
+;     Processor 9            ;   4.6%      ;
+;     Processor 10           ;   4.6%      ;
+;     Processor 11           ;   4.6%      ;
+;     Processor 12           ;   4.6%      ;
+;     Processor 13           ;   4.6%      ;
+;     Processor 14           ;   4.6%      ;
+;     Processor 15           ;   4.6%      ;
+;     Processor 16           ;   4.6%      ;
 +----------------------------+-------------+
 
 
@@ -144,8 +144,8 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+-------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                    ; Note ;
 +------------+-----------------+-------------------------------+------+
-; 75.22 MHz  ; 75.22 MHz       ; CLOCK_50                      ;      ;
-; 116.47 MHz ; 116.47 MHz      ; driverVGA:driverVGA|pixel_clk ;      ;
+; 74.65 MHz  ; 74.65 MHz       ; CLOCK_50                      ;      ;
+; 119.09 MHz ; 119.09 MHz      ; driverVGA:driverVGA|pixel_clk ;      ;
 +------------+-----------------+-------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -161,8 +161,8 @@ HTML report is unavailable in plain text report export.
 +-------------------------------+---------+---------------+
 ; Clock                         ; Slack   ; End Point TNS ;
 +-------------------------------+---------+---------------+
-; CLOCK_50                      ; -12.294 ; -5285.282     ;
-; driverVGA:driverVGA|pixel_clk ; -7.586  ; -359.759      ;
+; CLOCK_50                      ; -12.396 ; -5298.123     ;
+; driverVGA:driverVGA|pixel_clk ; -7.397  ; -378.229      ;
 +-------------------------------+---------+---------------+
 
 
@@ -171,8 +171,8 @@ HTML report is unavailable in plain text report export.
 +-------------------------------+-------+---------------+
 ; Clock                         ; Slack ; End Point TNS ;
 +-------------------------------+-------+---------------+
-; CLOCK_50                      ; 0.367 ; 0.000         ;
-; driverVGA:driverVGA|pixel_clk ; 0.467 ; 0.000         ;
+; CLOCK_50                      ; 0.362 ; 0.000         ;
+; driverVGA:driverVGA|pixel_clk ; 0.392 ; 0.000         ;
 +-------------------------------+-------+---------------+
 
 
@@ -181,10 +181,10 @@ HTML report is unavailable in plain text report export.
 +--------------+--------+----------------+
 ; Clock        ; Slack  ; End Point TNS  ;
 +--------------+--------+----------------+
-; KEY[0]       ; -5.500 ; -5.500         ;
-; SW[9]        ; -5.432 ; -10.861        ;
-; KEY[1]       ; -5.057 ; -5.057         ;
-; FPGA_RESET_N ; -4.730 ; -9.456         ;
+; SW[9]        ; -6.586 ; -6.586         ;
+; KEY[1]       ; -5.876 ; -5.876         ;
+; FPGA_RESET_N ; -5.727 ; -5.727         ;
+; KEY[0]       ; -5.676 ; -5.676         ;
 +--------------+--------+----------------+
 
 
@@ -193,10 +193,10 @@ HTML report is unavailable in plain text report export.
 +--------------+-------+----------------+
 ; Clock        ; Slack ; End Point TNS  ;
 +--------------+-------+----------------+
-; FPGA_RESET_N ; 1.155 ; 0.000          ;
-; KEY[1]       ; 1.193 ; 0.000          ;
-; KEY[0]       ; 1.727 ; 0.000          ;
-; SW[9]        ; 1.753 ; 0.000          ;
+; FPGA_RESET_N ; 1.355 ; 0.000          ;
+; KEY[1]       ; 1.430 ; 0.000          ;
+; KEY[0]       ; 1.618 ; 0.000          ;
+; SW[9]        ; 2.238 ; 0.000          ;
 +--------------+-------+----------------+
 
 
@@ -205,12 +205,12 @@ HTML report is unavailable in plain text report export.
 +-------------------------------+--------+---------------+
 ; Clock                         ; Slack  ; End Point TNS ;
 +-------------------------------+--------+---------------+
-; CLOCK_50                      ; -2.636 ; -929.369      ;
-; driverVGA:driverVGA|pixel_clk ; -2.636 ; -102.212      ;
-; KEY[1]                        ; -0.949 ; -1.776        ;
-; KEY[0]                        ; -0.829 ; -1.519        ;
-; FPGA_RESET_N                  ; -0.747 ; -2.571        ;
-; SW[9]                         ; -0.682 ; -2.436        ;
+; CLOCK_50                      ; -2.636 ; -1021.532     ;
+; driverVGA:driverVGA|pixel_clk ; -2.636 ; -98.986       ;
+; KEY[1]                        ; -0.974 ; -1.988        ;
+; KEY[0]                        ; -0.812 ; -1.422        ;
+; SW[9]                         ; -0.711 ; -1.249        ;
+; FPGA_RESET_N                  ; -0.619 ; -1.157        ;
 +-------------------------------+--------+---------------+
 
 
@@ -225,8 +225,8 @@ No synchronizer chains to report.
 +------------+-----------------+-------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                    ; Note ;
 +------------+-----------------+-------------------------------+------+
-; 75.64 MHz  ; 75.64 MHz       ; CLOCK_50                      ;      ;
-; 113.96 MHz ; 113.96 MHz      ; driverVGA:driverVGA|pixel_clk ;      ;
+; 75.54 MHz  ; 75.54 MHz       ; CLOCK_50                      ;      ;
+; 116.09 MHz ; 116.09 MHz      ; driverVGA:driverVGA|pixel_clk ;      ;
 +------------+-----------------+-------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -236,8 +236,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------+---------+---------------+
 ; Clock                         ; Slack   ; End Point TNS ;
 +-------------------------------+---------+---------------+
-; CLOCK_50                      ; -12.221 ; -5126.611     ;
-; driverVGA:driverVGA|pixel_clk ; -7.775  ; -362.490      ;
+; CLOCK_50                      ; -12.238 ; -5172.143     ;
+; driverVGA:driverVGA|pixel_clk ; -7.614  ; -377.561      ;
 +-------------------------------+---------+---------------+
 
 
@@ -246,8 +246,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------+-------+---------------+
 ; Clock                         ; Slack ; End Point TNS ;
 +-------------------------------+-------+---------------+
-; CLOCK_50                      ; 0.372 ; 0.000         ;
-; driverVGA:driverVGA|pixel_clk ; 0.432 ; 0.000         ;
+; driverVGA:driverVGA|pixel_clk ; 0.360 ; 0.000         ;
+; CLOCK_50                      ; 0.368 ; 0.000         ;
 +-------------------------------+-------+---------------+
 
 
@@ -256,10 +256,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------+--------+---------------+
 ; Clock        ; Slack  ; End Point TNS ;
 +--------------+--------+---------------+
-; KEY[0]       ; -5.575 ; -5.575        ;
-; SW[9]        ; -5.533 ; -11.062       ;
-; KEY[1]       ; -5.211 ; -5.211        ;
-; FPGA_RESET_N ; -4.950 ; -9.894        ;
+; SW[9]        ; -6.595 ; -6.595        ;
+; KEY[1]       ; -5.929 ; -5.929        ;
+; FPGA_RESET_N ; -5.832 ; -5.832        ;
+; KEY[0]       ; -5.686 ; -5.686        ;
 +--------------+--------+---------------+
 
 
@@ -268,10 +268,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
-; FPGA_RESET_N ; 1.155 ; 0.000         ;
-; KEY[1]       ; 1.200 ; 0.000         ;
-; SW[9]        ; 1.659 ; 0.000         ;
-; KEY[0]       ; 1.698 ; 0.000         ;
+; FPGA_RESET_N ; 1.278 ; 0.000         ;
+; KEY[1]       ; 1.337 ; 0.000         ;
+; KEY[0]       ; 1.559 ; 0.000         ;
+; SW[9]        ; 2.193 ; 0.000         ;
 +--------------+-------+---------------+
 
 
@@ -280,12 +280,12 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------+--------+---------------+
 ; Clock                         ; Slack  ; End Point TNS ;
 +-------------------------------+--------+---------------+
-; CLOCK_50                      ; -2.636 ; -963.978      ;
-; driverVGA:driverVGA|pixel_clk ; -2.636 ; -101.540      ;
-; KEY[1]                        ; -0.992 ; -2.000        ;
-; FPGA_RESET_N                  ; -0.848 ; -3.151        ;
-; KEY[0]                        ; -0.841 ; -1.634        ;
-; SW[9]                         ; -0.734 ; -2.595        ;
+; CLOCK_50                      ; -2.636 ; -1033.950     ;
+; driverVGA:driverVGA|pixel_clk ; -2.636 ; -98.285       ;
+; KEY[1]                        ; -1.024 ; -2.206        ;
+; KEY[0]                        ; -0.853 ; -1.611        ;
+; SW[9]                         ; -0.773 ; -1.370        ;
+; FPGA_RESET_N                  ; -0.719 ; -1.270        ;
 +-------------------------------+--------+---------------+
 
 
@@ -300,8 +300,8 @@ No synchronizer chains to report.
 +-------------------------------+--------+---------------+
 ; Clock                         ; Slack  ; End Point TNS ;
 +-------------------------------+--------+---------------+
-; CLOCK_50                      ; -6.069 ; -2605.700     ;
-; driverVGA:driverVGA|pixel_clk ; -3.594 ; -149.233      ;
+; CLOCK_50                      ; -6.279 ; -2527.488     ;
+; driverVGA:driverVGA|pixel_clk ; -3.421 ; -159.627      ;
 +-------------------------------+--------+---------------+
 
 
@@ -310,8 +310,8 @@ No synchronizer chains to report.
 +-------------------------------+-------+---------------+
 ; Clock                         ; Slack ; End Point TNS ;
 +-------------------------------+-------+---------------+
-; CLOCK_50                      ; 0.102 ; 0.000         ;
-; driverVGA:driverVGA|pixel_clk ; 0.166 ; 0.000         ;
+; CLOCK_50                      ; 0.100 ; 0.000         ;
+; driverVGA:driverVGA|pixel_clk ; 0.143 ; 0.000         ;
 +-------------------------------+-------+---------------+
 
 
@@ -320,10 +320,10 @@ No synchronizer chains to report.
 +--------------+--------+----------------+
 ; Clock        ; Slack  ; End Point TNS  ;
 +--------------+--------+----------------+
-; SW[9]        ; -2.200 ; -4.400         ;
-; KEY[0]       ; -2.182 ; -2.182         ;
-; KEY[1]       ; -1.994 ; -1.994         ;
-; FPGA_RESET_N ; -1.874 ; -3.747         ;
+; SW[9]        ; -3.029 ; -3.029         ;
+; FPGA_RESET_N ; -2.523 ; -2.523         ;
+; KEY[0]       ; -2.471 ; -2.471         ;
+; KEY[1]       ; -2.431 ; -2.431         ;
 +--------------+--------+----------------+
 
 
@@ -332,10 +332,10 @@ No synchronizer chains to report.
 +--------------+-------+----------------+
 ; Clock        ; Slack ; End Point TNS  ;
 +--------------+-------+----------------+
-; FPGA_RESET_N ; 0.243 ; 0.000          ;
-; KEY[1]       ; 0.269 ; 0.000          ;
-; KEY[0]       ; 0.446 ; 0.000          ;
-; SW[9]        ; 0.618 ; 0.000          ;
+; KEY[1]       ; 0.331 ; 0.000          ;
+; FPGA_RESET_N ; 0.416 ; 0.000          ;
+; KEY[0]       ; 0.461 ; 0.000          ;
+; SW[9]        ; 0.828 ; 0.000          ;
 +--------------+-------+----------------+
 
 
@@ -344,12 +344,12 @@ No synchronizer chains to report.
 +-------------------------------+--------+---------------+
 ; Clock                         ; Slack  ; End Point TNS ;
 +-------------------------------+--------+---------------+
-; CLOCK_50                      ; -2.174 ; -888.855      ;
-; driverVGA:driverVGA|pixel_clk ; -2.174 ; -35.262       ;
-; KEY[1]                        ; -0.968 ; -2.586        ;
-; KEY[0]                        ; -0.892 ; -2.428        ;
-; FPGA_RESET_N                  ; -0.854 ; -3.644        ;
-; SW[9]                         ; -0.761 ; -3.060        ;
+; CLOCK_50                      ; -2.174 ; -935.771      ;
+; driverVGA:driverVGA|pixel_clk ; -2.174 ; -34.041       ;
+; KEY[1]                        ; -0.968 ; -2.680        ;
+; KEY[0]                        ; -0.826 ; -2.141        ;
+; SW[9]                         ; -0.808 ; -1.998        ;
+; FPGA_RESET_N                  ; -0.766 ; -1.982        ;
 +-------------------------------+--------+---------------+
 
 
@@ -364,8 +364,8 @@ No synchronizer chains to report.
 +-------------------------------+--------+---------------+
 ; Clock                         ; Slack  ; End Point TNS ;
 +-------------------------------+--------+---------------+
-; CLOCK_50                      ; -5.441 ; -2269.893     ;
-; driverVGA:driverVGA|pixel_clk ; -3.332 ; -134.241      ;
+; CLOCK_50                      ; -5.611 ; -2221.910     ;
+; driverVGA:driverVGA|pixel_clk ; -3.209 ; -143.139      ;
 +-------------------------------+--------+---------------+
 
 
@@ -374,8 +374,8 @@ No synchronizer chains to report.
 +-------------------------------+-------+---------------+
 ; Clock                         ; Slack ; End Point TNS ;
 +-------------------------------+-------+---------------+
-; CLOCK_50                      ; 0.087 ; 0.000         ;
-; driverVGA:driverVGA|pixel_clk ; 0.139 ; 0.000         ;
+; CLOCK_50                      ; 0.085 ; 0.000         ;
+; driverVGA:driverVGA|pixel_clk ; 0.116 ; 0.000         ;
 +-------------------------------+-------+---------------+
 
 
@@ -384,10 +384,10 @@ No synchronizer chains to report.
 +--------------+--------+---------------+
 ; Clock        ; Slack  ; End Point TNS ;
 +--------------+--------+---------------+
-; SW[9]        ; -1.966 ; -3.932        ;
-; KEY[0]       ; -1.936 ; -1.936        ;
-; KEY[1]       ; -1.760 ; -1.760        ;
-; FPGA_RESET_N ; -1.725 ; -3.450        ;
+; SW[9]        ; -2.663 ; -2.663        ;
+; FPGA_RESET_N ; -2.280 ; -2.280        ;
+; KEY[0]       ; -2.165 ; -2.165        ;
+; KEY[1]       ; -2.146 ; -2.146        ;
 +--------------+--------+---------------+
 
 
@@ -396,10 +396,10 @@ No synchronizer chains to report.
 +--------------+-------+---------------+
 ; Clock        ; Slack ; End Point TNS ;
 +--------------+-------+---------------+
-; KEY[1]       ; 0.202 ; 0.000         ;
-; FPGA_RESET_N ; 0.243 ; 0.000         ;
-; KEY[0]       ; 0.366 ; 0.000         ;
-; SW[9]        ; 0.530 ; 0.000         ;
+; KEY[1]       ; 0.234 ; 0.000         ;
+; FPGA_RESET_N ; 0.335 ; 0.000         ;
+; KEY[0]       ; 0.374 ; 0.000         ;
+; SW[9]        ; 0.692 ; 0.000         ;
 +--------------+-------+---------------+
 
 
@@ -408,12 +408,12 @@ No synchronizer chains to report.
 +-------------------------------+--------+---------------+
 ; Clock                         ; Slack  ; End Point TNS ;
 +-------------------------------+--------+---------------+
-; CLOCK_50                      ; -2.174 ; -915.821      ;
-; driverVGA:driverVGA|pixel_clk ; -2.174 ; -34.143       ;
-; KEY[1]                        ; -0.937 ; -2.609        ;
-; FPGA_RESET_N                  ; -0.892 ; -3.969        ;
-; KEY[0]                        ; -0.869 ; -2.457        ;
-; SW[9]                         ; -0.788 ; -3.324        ;
+; CLOCK_50                      ; -2.174 ; -958.202      ;
+; driverVGA:driverVGA|pixel_clk ; -2.174 ; -33.935       ;
+; KEY[1]                        ; -0.935 ; -2.675        ;
+; KEY[0]                        ; -0.841 ; -2.324        ;
+; FPGA_RESET_N                  ; -0.820 ; -2.269        ;
+; SW[9]                         ; -0.813 ; -2.144        ;
 +-------------------------------+--------+---------------+
 
 
@@ -428,20 +428,20 @@ No synchronizer chains to report.
 +--------------------------------+-----------+-------+----------+---------+---------------------+
 ; Clock                          ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +--------------------------------+-----------+-------+----------+---------+---------------------+
-; Worst-case Slack               ; -12.294   ; 0.087 ; -5.575   ; 0.202   ; -2.636              ;
-;  CLOCK_50                      ; -12.294   ; 0.087 ; N/A      ; N/A     ; -2.636              ;
-;  FPGA_RESET_N                  ; N/A       ; N/A   ; -4.950   ; 0.243   ; -0.892              ;
-;  KEY[0]                        ; N/A       ; N/A   ; -5.575   ; 0.366   ; -0.892              ;
-;  KEY[1]                        ; N/A       ; N/A   ; -5.211   ; 0.202   ; -0.992              ;
-;  SW[9]                         ; N/A       ; N/A   ; -5.533   ; 0.530   ; -0.788              ;
-;  driverVGA:driverVGA|pixel_clk ; -7.775    ; 0.139 ; N/A      ; N/A     ; -2.636              ;
-; Design-wide TNS                ; -5645.041 ; 0.0   ; -31.742  ; 0.0     ; -1074.898           ;
-;  CLOCK_50                      ; -5285.282 ; 0.000 ; N/A      ; N/A     ; -963.978            ;
-;  FPGA_RESET_N                  ; N/A       ; N/A   ; -9.894   ; 0.000   ; -3.969              ;
-;  KEY[0]                        ; N/A       ; N/A   ; -5.575   ; 0.000   ; -2.457              ;
-;  KEY[1]                        ; N/A       ; N/A   ; -5.211   ; 0.000   ; -2.609              ;
-;  SW[9]                         ; N/A       ; N/A   ; -11.062  ; 0.000   ; -3.324              ;
-;  driverVGA:driverVGA|pixel_clk ; -362.490  ; 0.000 ; N/A      ; N/A     ; -102.212            ;
+; Worst-case Slack               ; -12.396   ; 0.085 ; -6.595   ; 0.234   ; -2.636              ;
+;  CLOCK_50                      ; -12.396   ; 0.085 ; N/A      ; N/A     ; -2.636              ;
+;  FPGA_RESET_N                  ; N/A       ; N/A   ; -5.832   ; 0.335   ; -0.820              ;
+;  KEY[0]                        ; N/A       ; N/A   ; -5.686   ; 0.374   ; -0.853              ;
+;  KEY[1]                        ; N/A       ; N/A   ; -5.929   ; 0.234   ; -1.024              ;
+;  SW[9]                         ; N/A       ; N/A   ; -6.595   ; 0.692   ; -0.813              ;
+;  driverVGA:driverVGA|pixel_clk ; -7.614    ; 0.116 ; N/A      ; N/A     ; -2.636              ;
+; Design-wide TNS                ; -5676.352 ; 0.0   ; -24.042  ; 0.0     ; -1138.692           ;
+;  CLOCK_50                      ; -5298.123 ; 0.000 ; N/A      ; N/A     ; -1033.950           ;
+;  FPGA_RESET_N                  ; N/A       ; N/A   ; -5.832   ; 0.000   ; -2.269              ;
+;  KEY[0]                        ; N/A       ; N/A   ; -5.686   ; 0.000   ; -2.324              ;
+;  KEY[1]                        ; N/A       ; N/A   ; -5.929   ; 0.000   ; -2.680              ;
+;  SW[9]                         ; N/A       ; N/A   ; -6.595   ; 0.000   ; -2.144              ;
+;  driverVGA:driverVGA|pixel_clk ; -378.229  ; 0.000 ; N/A      ; N/A     ; -98.986             ;
 +--------------------------------+-----------+-------+----------+---------+---------------------+
 
 
@@ -526,9 +526,9 @@ No synchronizer chains to report.
 +--------------+--------------+-----------------+-----------------+
 ; KEY[2]       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; KEY[3]       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
-; SW[0]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[8]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[9]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; SW[0]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; CLOCK_50     ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[1]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
 ; SW[2]        ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
@@ -844,13 +844,13 @@ No synchronizer chains to report.
 +-------------------------------+-------------------------------+----------+----------+----------+----------+
 ; From Clock                    ; To Clock                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------+-------------------------------+----------+----------+----------+----------+
-; CLOCK_50                      ; CLOCK_50                      ; 1488291  ; 1        ; 0        ; 0        ;
+; CLOCK_50                      ; CLOCK_50                      ; 1550837  ; 1        ; 0        ; 0        ;
 ; driverVGA:driverVGA|pixel_clk ; CLOCK_50                      ; 1        ; 1        ; 0        ; 0        ;
 ; FPGA_RESET_N                  ; CLOCK_50                      ; 88       ; 1        ; 0        ; 0        ;
 ; KEY[0]                        ; CLOCK_50                      ; 88       ; 1        ; 0        ; 0        ;
 ; KEY[1]                        ; CLOCK_50                      ; 88       ; 1        ; 0        ; 0        ;
 ; SW[9]                         ; CLOCK_50                      ; 174      ; 87       ; 0        ; 0        ;
-; driverVGA:driverVGA|pixel_clk ; driverVGA:driverVGA|pixel_clk ; 27156    ; 0        ; 0        ; 0        ;
+; driverVGA:driverVGA|pixel_clk ; driverVGA:driverVGA|pixel_clk ; 26771    ; 0        ; 0        ; 0        ;
 +-------------------------------+-------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -860,13 +860,13 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------------------------+-------------------------------+----------+----------+----------+----------+
 ; From Clock                    ; To Clock                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------+-------------------------------+----------+----------+----------+----------+
-; CLOCK_50                      ; CLOCK_50                      ; 1488291  ; 1        ; 0        ; 0        ;
+; CLOCK_50                      ; CLOCK_50                      ; 1550837  ; 1        ; 0        ; 0        ;
 ; driverVGA:driverVGA|pixel_clk ; CLOCK_50                      ; 1        ; 1        ; 0        ; 0        ;
 ; FPGA_RESET_N                  ; CLOCK_50                      ; 88       ; 1        ; 0        ; 0        ;
 ; KEY[0]                        ; CLOCK_50                      ; 88       ; 1        ; 0        ; 0        ;
 ; KEY[1]                        ; CLOCK_50                      ; 88       ; 1        ; 0        ; 0        ;
 ; SW[9]                         ; CLOCK_50                      ; 174      ; 87       ; 0        ; 0        ;
-; driverVGA:driverVGA|pixel_clk ; driverVGA:driverVGA|pixel_clk ; 27156    ; 0        ; 0        ; 0        ;
+; driverVGA:driverVGA|pixel_clk ; driverVGA:driverVGA|pixel_clk ; 26771    ; 0        ; 0        ; 0        ;
 +-------------------------------+-------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -876,10 +876,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+--------------+----------+----------+----------+----------+
 ; From Clock ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+--------------+----------+----------+----------+----------+
-; CLOCK_50   ; FPGA_RESET_N ; 906      ; 0        ; 0        ; 0        ;
-; CLOCK_50   ; KEY[0]       ; 453      ; 0        ; 0        ; 0        ;
-; CLOCK_50   ; KEY[1]       ; 453      ; 0        ; 0        ; 0        ;
-; CLOCK_50   ; SW[9]        ; 906      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; FPGA_RESET_N ; 454      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[0]       ; 454      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[1]       ; 454      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; SW[9]        ; 454      ; 0        ; 0        ; 0        ;
 +------------+--------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -889,10 +889,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+--------------+----------+----------+----------+----------+
 ; From Clock ; To Clock     ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+--------------+----------+----------+----------+----------+
-; CLOCK_50   ; FPGA_RESET_N ; 906      ; 0        ; 0        ; 0        ;
-; CLOCK_50   ; KEY[0]       ; 453      ; 0        ; 0        ; 0        ;
-; CLOCK_50   ; KEY[1]       ; 453      ; 0        ; 0        ; 0        ;
-; CLOCK_50   ; SW[9]        ; 906      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; FPGA_RESET_N ; 454      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[0]       ; 454      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; KEY[1]       ; 454      ; 0        ; 0        ; 0        ;
+; CLOCK_50   ; SW[9]        ; 454      ; 0        ; 0        ; 0        ;
 +------------+--------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1129,7 +1129,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 28 22:47:01 2023
+    Info: Processing started: Sat Oct 28 22:59:47 2023
 Info: Command: quartus_sta Relogio -c Relogio
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1141,178 +1141,178 @@ Info (332142): No user constrained base clocks found in the design. Calling "der
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name CLOCK_50 CLOCK_50
     Info (332105): create_clock -period 1.000 -name FPGA_RESET_N FPGA_RESET_N
+    Info (332105): create_clock -period 1.000 -name SW[9] SW[9]
     Info (332105): create_clock -period 1.000 -name KEY[1] KEY[1]
     Info (332105): create_clock -period 1.000 -name KEY[0] KEY[0]
-    Info (332105): create_clock -period 1.000 -name SW[9] SW[9]
     Info (332105): create_clock -period 1.000 -name driverVGA:driverVGA|pixel_clk driverVGA:driverVGA|pixel_clk
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: interfaceBaseTempo|MUX4|saida_MUX  from: datac  to: combout
+    Info (332098): Cell: interfaceBaseTempo|MUX4|saida_MUX  from: dataf  to: combout
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -12.294
+Info (332146): Worst-case setup slack is -12.396
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -12.294           -5285.282 CLOCK_50 
-    Info (332119):    -7.586            -359.759 driverVGA:driverVGA|pixel_clk 
-Info (332146): Worst-case hold slack is 0.367
+    Info (332119):   -12.396           -5298.123 CLOCK_50 
+    Info (332119):    -7.397            -378.229 driverVGA:driverVGA|pixel_clk 
+Info (332146): Worst-case hold slack is 0.362
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.367               0.000 CLOCK_50 
-    Info (332119):     0.467               0.000 driverVGA:driverVGA|pixel_clk 
-Info (332146): Worst-case recovery slack is -5.500
+    Info (332119):     0.362               0.000 CLOCK_50 
+    Info (332119):     0.392               0.000 driverVGA:driverVGA|pixel_clk 
+Info (332146): Worst-case recovery slack is -6.586
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.500              -5.500 KEY[0] 
-    Info (332119):    -5.432             -10.861 SW[9] 
-    Info (332119):    -5.057              -5.057 KEY[1] 
-    Info (332119):    -4.730              -9.456 FPGA_RESET_N 
-Info (332146): Worst-case removal slack is 1.155
+    Info (332119):    -6.586              -6.586 SW[9] 
+    Info (332119):    -5.876              -5.876 KEY[1] 
+    Info (332119):    -5.727              -5.727 FPGA_RESET_N 
+    Info (332119):    -5.676              -5.676 KEY[0] 
+Info (332146): Worst-case removal slack is 1.355
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.155               0.000 FPGA_RESET_N 
-    Info (332119):     1.193               0.000 KEY[1] 
-    Info (332119):     1.727               0.000 KEY[0] 
-    Info (332119):     1.753               0.000 SW[9] 
+    Info (332119):     1.355               0.000 FPGA_RESET_N 
+    Info (332119):     1.430               0.000 KEY[1] 
+    Info (332119):     1.618               0.000 KEY[0] 
+    Info (332119):     2.238               0.000 SW[9] 
 Info (332146): Worst-case minimum pulse width slack is -2.636
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.636            -929.369 CLOCK_50 
-    Info (332119):    -2.636            -102.212 driverVGA:driverVGA|pixel_clk 
-    Info (332119):    -0.949              -1.776 KEY[1] 
-    Info (332119):    -0.829              -1.519 KEY[0] 
-    Info (332119):    -0.747              -2.571 FPGA_RESET_N 
-    Info (332119):    -0.682              -2.436 SW[9] 
+    Info (332119):    -2.636           -1021.532 CLOCK_50 
+    Info (332119):    -2.636             -98.986 driverVGA:driverVGA|pixel_clk 
+    Info (332119):    -0.974              -1.988 KEY[1] 
+    Info (332119):    -0.812              -1.422 KEY[0] 
+    Info (332119):    -0.711              -1.249 SW[9] 
+    Info (332119):    -0.619              -1.157 FPGA_RESET_N 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: interfaceBaseTempo|MUX4|saida_MUX  from: datac  to: combout
+    Info (332098): Cell: interfaceBaseTempo|MUX4|saida_MUX  from: dataf  to: combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -12.221
+Info (332146): Worst-case setup slack is -12.238
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -12.221           -5126.611 CLOCK_50 
-    Info (332119):    -7.775            -362.490 driverVGA:driverVGA|pixel_clk 
-Info (332146): Worst-case hold slack is 0.372
+    Info (332119):   -12.238           -5172.143 CLOCK_50 
+    Info (332119):    -7.614            -377.561 driverVGA:driverVGA|pixel_clk 
+Info (332146): Worst-case hold slack is 0.360
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.372               0.000 CLOCK_50 
-    Info (332119):     0.432               0.000 driverVGA:driverVGA|pixel_clk 
-Info (332146): Worst-case recovery slack is -5.575
+    Info (332119):     0.360               0.000 driverVGA:driverVGA|pixel_clk 
+    Info (332119):     0.368               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is -6.595
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.575              -5.575 KEY[0] 
-    Info (332119):    -5.533             -11.062 SW[9] 
-    Info (332119):    -5.211              -5.211 KEY[1] 
-    Info (332119):    -4.950              -9.894 FPGA_RESET_N 
-Info (332146): Worst-case removal slack is 1.155
+    Info (332119):    -6.595              -6.595 SW[9] 
+    Info (332119):    -5.929              -5.929 KEY[1] 
+    Info (332119):    -5.832              -5.832 FPGA_RESET_N 
+    Info (332119):    -5.686              -5.686 KEY[0] 
+Info (332146): Worst-case removal slack is 1.278
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.155               0.000 FPGA_RESET_N 
-    Info (332119):     1.200               0.000 KEY[1] 
-    Info (332119):     1.659               0.000 SW[9] 
-    Info (332119):     1.698               0.000 KEY[0] 
+    Info (332119):     1.278               0.000 FPGA_RESET_N 
+    Info (332119):     1.337               0.000 KEY[1] 
+    Info (332119):     1.559               0.000 KEY[0] 
+    Info (332119):     2.193               0.000 SW[9] 
 Info (332146): Worst-case minimum pulse width slack is -2.636
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.636            -963.978 CLOCK_50 
-    Info (332119):    -2.636            -101.540 driverVGA:driverVGA|pixel_clk 
-    Info (332119):    -0.992              -2.000 KEY[1] 
-    Info (332119):    -0.848              -3.151 FPGA_RESET_N 
-    Info (332119):    -0.841              -1.634 KEY[0] 
-    Info (332119):    -0.734              -2.595 SW[9] 
+    Info (332119):    -2.636           -1033.950 CLOCK_50 
+    Info (332119):    -2.636             -98.285 driverVGA:driverVGA|pixel_clk 
+    Info (332119):    -1.024              -2.206 KEY[1] 
+    Info (332119):    -0.853              -1.611 KEY[0] 
+    Info (332119):    -0.773              -1.370 SW[9] 
+    Info (332119):    -0.719              -1.270 FPGA_RESET_N 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: interfaceBaseTempo|MUX4|saida_MUX  from: datac  to: combout
+    Info (332098): Cell: interfaceBaseTempo|MUX4|saida_MUX  from: dataf  to: combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.069
+Info (332146): Worst-case setup slack is -6.279
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.069           -2605.700 CLOCK_50 
-    Info (332119):    -3.594            -149.233 driverVGA:driverVGA|pixel_clk 
-Info (332146): Worst-case hold slack is 0.102
+    Info (332119):    -6.279           -2527.488 CLOCK_50 
+    Info (332119):    -3.421            -159.627 driverVGA:driverVGA|pixel_clk 
+Info (332146): Worst-case hold slack is 0.100
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.102               0.000 CLOCK_50 
-    Info (332119):     0.166               0.000 driverVGA:driverVGA|pixel_clk 
-Info (332146): Worst-case recovery slack is -2.200
+    Info (332119):     0.100               0.000 CLOCK_50 
+    Info (332119):     0.143               0.000 driverVGA:driverVGA|pixel_clk 
+Info (332146): Worst-case recovery slack is -3.029
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.200              -4.400 SW[9] 
-    Info (332119):    -2.182              -2.182 KEY[0] 
-    Info (332119):    -1.994              -1.994 KEY[1] 
-    Info (332119):    -1.874              -3.747 FPGA_RESET_N 
-Info (332146): Worst-case removal slack is 0.243
+    Info (332119):    -3.029              -3.029 SW[9] 
+    Info (332119):    -2.523              -2.523 FPGA_RESET_N 
+    Info (332119):    -2.471              -2.471 KEY[0] 
+    Info (332119):    -2.431              -2.431 KEY[1] 
+Info (332146): Worst-case removal slack is 0.331
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.243               0.000 FPGA_RESET_N 
-    Info (332119):     0.269               0.000 KEY[1] 
-    Info (332119):     0.446               0.000 KEY[0] 
-    Info (332119):     0.618               0.000 SW[9] 
+    Info (332119):     0.331               0.000 KEY[1] 
+    Info (332119):     0.416               0.000 FPGA_RESET_N 
+    Info (332119):     0.461               0.000 KEY[0] 
+    Info (332119):     0.828               0.000 SW[9] 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -888.855 CLOCK_50 
-    Info (332119):    -2.174             -35.262 driverVGA:driverVGA|pixel_clk 
-    Info (332119):    -0.968              -2.586 KEY[1] 
-    Info (332119):    -0.892              -2.428 KEY[0] 
-    Info (332119):    -0.854              -3.644 FPGA_RESET_N 
-    Info (332119):    -0.761              -3.060 SW[9] 
+    Info (332119):    -2.174            -935.771 CLOCK_50 
+    Info (332119):    -2.174             -34.041 driverVGA:driverVGA|pixel_clk 
+    Info (332119):    -0.968              -2.680 KEY[1] 
+    Info (332119):    -0.826              -2.141 KEY[0] 
+    Info (332119):    -0.808              -1.998 SW[9] 
+    Info (332119):    -0.766              -1.982 FPGA_RESET_N 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: interfaceBaseTempo|MUX4|saida_MUX  from: datac  to: combout
+    Info (332098): Cell: interfaceBaseTempo|MUX4|saida_MUX  from: dataf  to: combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -5.441
+Info (332146): Worst-case setup slack is -5.611
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.441           -2269.893 CLOCK_50 
-    Info (332119):    -3.332            -134.241 driverVGA:driverVGA|pixel_clk 
-Info (332146): Worst-case hold slack is 0.087
+    Info (332119):    -5.611           -2221.910 CLOCK_50 
+    Info (332119):    -3.209            -143.139 driverVGA:driverVGA|pixel_clk 
+Info (332146): Worst-case hold slack is 0.085
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.087               0.000 CLOCK_50 
-    Info (332119):     0.139               0.000 driverVGA:driverVGA|pixel_clk 
-Info (332146): Worst-case recovery slack is -1.966
+    Info (332119):     0.085               0.000 CLOCK_50 
+    Info (332119):     0.116               0.000 driverVGA:driverVGA|pixel_clk 
+Info (332146): Worst-case recovery slack is -2.663
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.966              -3.932 SW[9] 
-    Info (332119):    -1.936              -1.936 KEY[0] 
-    Info (332119):    -1.760              -1.760 KEY[1] 
-    Info (332119):    -1.725              -3.450 FPGA_RESET_N 
-Info (332146): Worst-case removal slack is 0.202
+    Info (332119):    -2.663              -2.663 SW[9] 
+    Info (332119):    -2.280              -2.280 FPGA_RESET_N 
+    Info (332119):    -2.165              -2.165 KEY[0] 
+    Info (332119):    -2.146              -2.146 KEY[1] 
+Info (332146): Worst-case removal slack is 0.234
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.202               0.000 KEY[1] 
-    Info (332119):     0.243               0.000 FPGA_RESET_N 
-    Info (332119):     0.366               0.000 KEY[0] 
-    Info (332119):     0.530               0.000 SW[9] 
+    Info (332119):     0.234               0.000 KEY[1] 
+    Info (332119):     0.335               0.000 FPGA_RESET_N 
+    Info (332119):     0.374               0.000 KEY[0] 
+    Info (332119):     0.692               0.000 SW[9] 
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -915.821 CLOCK_50 
-    Info (332119):    -2.174             -34.143 driverVGA:driverVGA|pixel_clk 
-    Info (332119):    -0.937              -2.609 KEY[1] 
-    Info (332119):    -0.892              -3.969 FPGA_RESET_N 
-    Info (332119):    -0.869              -2.457 KEY[0] 
-    Info (332119):    -0.788              -3.324 SW[9] 
+    Info (332119):    -2.174            -958.202 CLOCK_50 
+    Info (332119):    -2.174             -33.935 driverVGA:driverVGA|pixel_clk 
+    Info (332119):    -0.935              -2.675 KEY[1] 
+    Info (332119):    -0.841              -2.324 KEY[0] 
+    Info (332119):    -0.820              -2.269 FPGA_RESET_N 
+    Info (332119):    -0.813              -2.144 SW[9] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5270 megabytes
-    Info: Processing ended: Sat Oct 28 22:47:16 2023
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 5271 megabytes
+    Info: Processing ended: Sat Oct 28 23:00:01 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:18
 
 
