@@ -1,27 +1,27 @@
 SETUP:
 LDI REG0, $0; REG0 IRÁ guardar somente a váriavel 0
 STA REG0, @511; Reinicia Botoes
-STA REG0, @510
-STA REG0, @509
+STA REG0, @510;
+STA REG0, @509;
+STA REG0, @508;
 STA REG0, @288; Reinicia 7segs			
-STA REG0, @289			
-STA REG0, @290			
-STA REG0, @291			
-STA REG0, @292							
-STA REG0, @293			
+STA REG0, @289;			
+STA REG0, @290;			
+STA REG0, @291;			
+STA REG0, @292;							
+STA REG0, @293;			
 STA REG0, @256; Reinicia LEDS
-STA REG0, @257
-STA REG0, @258
+STA REG0, @257;
+STA REG0, @258;
 STA REG0, @0; Começa o Relogio em 00:00:00
 STA REG0, @1;
 STA REG0, @2;
 STA REG0, @3;
 STA REG0, @4;
 STA REG0, @5;
-STA REG0, @6;
 STA REG0, @14;
 LDI REG1, $1; REG1 IRÁ guardar somente a váriavel 1
-STA REG1, @10	
+STA REG1, @10;	
 LDI REG2, $10; 
 STA REG2, @7;
 LDI REG2, $6;
@@ -32,14 +32,10 @@ LDI REG2, $4;
 STA REG2, @11;
 LDI REG2, $2;
 STA REG2, @12;
-LDI REG2, $9;
-STA REG2, @13;
 LDI REG3, $3
 STA REG3, @15;
 LDI REG2, $7
 STA REG2, @16;
-LDI REG2, $5
-STA REG2, @17;
 
 
 MAIN:
