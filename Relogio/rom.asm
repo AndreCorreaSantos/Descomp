@@ -73,6 +73,8 @@ STA REG0, @291;
 STA REG0, @290;
 STA REG0, @289;
 STA REG0, @288;
+STA REG0, @0;
+STA REG0, @1;
 
 Troca_Horario_Minuto_Unidade_1:
 LDA REG2, @320;
