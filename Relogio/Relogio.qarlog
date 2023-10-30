@@ -1,7 +1,7 @@
 Quartus Prime Archive log --	C:/Descomp/Relogio/Relogio.qarlog
 
 Archive:	C:/Descomp/Relogio/Relogio.qar
-Date:		Sun Oct 29 17:52:27 2023
+Date:		Mon Oct 30 16:58:28 2023
 Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 	=========== Files Selected: ===========
@@ -30,6 +30,7 @@ C:/Descomp/Relogio/ULASomaSub.vhd
 C:/Descomp/Relogio/bancoRegistradoresArqRegMem.vhd
 C:/Descomp/Relogio/buffer_3_state_1porta.vhd
 C:/Descomp/Relogio/buffer_3_state_8portas.vhd
+C:/Descomp/Relogio/charMapROM_32x32_2K-RelogioDesComp.mif
 C:/Descomp/Relogio/conversorHex7Seg.vhd
 C:/Descomp/Relogio/decoder3x8.vhd
 C:/Descomp/Relogio/decoderInstru.vhd
@@ -44,11 +45,12 @@ C:/Descomp/Relogio/muxGenerico2x1.vhd
 C:/Descomp/Relogio/muxGenerico2x1_simples.vhd
 C:/Descomp/Relogio/muxGenerico4x1.vhd
 C:/Descomp/Relogio/registradorGenerico.vhd
+C:/Descomp/Relogio/rom.mif
 C:/Descomp/Relogio/romMIF.vhd
 C:/Descomp/Relogio/simple_dual_port_ram_dual_clock.vhd
 C:/Descomp/Relogio/somaConstante.vhd
 c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
-	======= Total: 43 files to archive =======
+	======= Total: 45 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.
