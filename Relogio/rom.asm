@@ -42,7 +42,7 @@ LDI REG2, $5
 STA REG2, @17;
 
 
-MAIN:
+MAIN: ; loop principal do codigo responsavel por chamar as sub-rotinas de atualizacao dos perifericos, de incremento do relogio e de tratamento de botoes
 JSR TRATA_Temporizador
 NOP
 JSR ATUALIZA_DISPLAY
@@ -65,8 +65,8 @@ JEQ Troca_Horario
 RET
 
 Troca_Horario:
-STA @511
-LDI REG2, $18;
+STA @511 ; limpa leitura key 0
+LDI REG2, $18; 
 STA REG2, @293;
 STA REG2, @292;
 STA REG0, @291;
@@ -92,7 +92,7 @@ JEQ Troca_Horario_Minuto_Unidade_2
 JMP Troca_Horario_Minuto_Unidade_1
 
 Troca_Horario_Minuto_Unidade_2:
-STA @511
+STA @511 ; limpa leitura key 0
 Troca_Horario_Minuto_Unidade_22:
 LDA REG2, @320;
 AND REG2, @16;
@@ -109,7 +109,7 @@ JEQ Troca_Horario_Hora_Unidade_1
 JMP Troca_Horario_Minuto_Unidade_22
 
 Troca_Horario_Hora_Unidade_1:
-STA @511
+STA @511 ; limpa leitura key 0
 Troca_Horario_Hora_Unidade_11:
 LDA REG2, @320;
 AND REG2, @9;
@@ -126,7 +126,7 @@ JEQ Troca_Horario_Hora_Unidade_2
 JMP Troca_Horario_Hora_Unidade_11
 
 Troca_Horario_Hora_Unidade_2:
-STA @511
+STA @511 ; limpa leitura key 0
 Troca_Horario_Hora_Unidade_22:
 LDA REG2, @4
 CLT REG2, @11;
@@ -156,7 +156,7 @@ CEQ REG2, @10
 JEQ FINAL_Altera
 JMP Troca_Horario_Hora_Unidade_22
 FINAL_Altera:
-STA @511;
+STA @511 ; limpa leitura key 0;
 RET
 
 
@@ -246,14 +246,14 @@ RET
 
 
 INCREMENTO_Seg_Uni_1:
-STA REG0, @508
+STA REG0, @508 ; limpa leitura base de tempo
 NOP
-LDA REG2, @0
-ADDI REG2, $1
-CEQ REG2, @7
-JEQ INCREMENTO_Seg_Uni_2
-STA REG2, @0
-RET
+LDA REG2, @0 ; guarda valor da unidade 0 de segundos em REG2
+ADDI REG2, $1 ; incrementa valor da unidade 0 de segundos
+CEQ REG2, @7 ; verifica se valor da unidade 0 de segundos é igual a 10
+JEQ INCREMENTO_Seg_Uni_2 ; caso seja igual a 10 pula para a sub-rotina de incremento da unidade 1 de segundos
+STA REG2, @0 ; nao sei o que faz
+RET ; volta para 
 
 INCREMENTO_Seg_Uni_2:  
 STA REG0, @0
