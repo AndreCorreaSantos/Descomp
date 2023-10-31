@@ -193,7 +193,7 @@ JEQ Base_Hora_Minuto
 JMP Base_Hora
 
 Base_Normal:
-LDA REG2, @0
+LDA REG2, @0; Salva H:M:S nos 7segs
 STA REG2, @288
 LDA REG2, @1
 STA REG2, @289
@@ -208,7 +208,7 @@ STA REG2, @293
 RET
 
 Base_Hora_Minuto:
-LDA REG2, @2
+LDA REG2, @2; Salva H:M nos 7segs
 STA REG2, @288
 LDA REG2, @3
 STA REG2, @289
@@ -222,7 +222,7 @@ STA REG2, @293
 RET
 
 Base_Hora:
-LDA REG2, @4
+LDA REG2, @4; ; Salva H nos 7segs
 STA REG2, @288
 LDA REG2, @5
 STA REG2, @289
