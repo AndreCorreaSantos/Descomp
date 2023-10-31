@@ -186,9 +186,9 @@ JEQ SETUP
 RET
 
 ATUALIZA_DISPLAY:
-CEQ REG0, @14
+CEQ REG0, @14; Checa se a flag é zero
 JEQ Base_Normal
-CEQ REG1, @14
+CEQ REG1, @14; Checa se a flag é um
 JEQ Base_Hora_Minuto
 JMP Base_Hora
 
@@ -216,7 +216,7 @@ LDA REG2, @4
 STA REG2, @290
 LDA REG2, @5
 STA REG2, @291
-LDI REG2, $18
+LDI REG2, $18; Apaga Leds Restantes
 STA REG2, @292
 STA REG2, @293
 RET
@@ -226,7 +226,7 @@ LDA REG2, @4
 STA REG2, @288
 LDA REG2, @5
 STA REG2, @289
-LDI REG2, $18
+LDI REG2, $18; Apaga Leds Restantes
 STA REG2, @290
 STA REG2, @291
 STA REG2, @292
