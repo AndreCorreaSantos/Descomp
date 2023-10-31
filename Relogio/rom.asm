@@ -252,47 +252,47 @@ LDA REG2, @0 ; guarda valor da unidade 0 de segundos em REG2
 ADDI REG2, $1 ; incrementa valor da unidade 0 de segundos
 CEQ REG2, @7 ; verifica se valor da unidade 0 de segundos é igual a 10
 JEQ INCREMENTO_Seg_Uni_2 ; caso seja igual a 10 pula para a sub-rotina de incremento da unidade 1 de segundos
-STA REG2, @0 ; nao sei o que faz
-RET ; volta para 
+STA REG2, @0 ; caso nao pulou guarda o incremento e retorna
+RET ; 
 
 INCREMENTO_Seg_Uni_2:  
-STA REG0, @0
-LDA REG2, @1
-ADDI REG2, $1
-CEQ REG2, @8
-JEQ INCREMENTO_Min_Uni_1
-STA REG2, @1
+STA REG0, @0 ; limpa endereco que guarda o valor da unidade 0 de segundos
+LDA REG2, @1 ; guarda valor da unidade 1 de segundos em REG2
+ADDI REG2, $1 ; incrementa valor da unidade 1 de segundos
+CEQ REG2, @8 ; verifica se valor da unidade 1 de segundos é igual a 6
+JEQ INCREMENTO_Min_Uni_1 ; caso seja igual a 6 pula para a sub-rotina de incremento da unidade 0 de minutos
+STA REG2, @1 ; caso nao pulou guarda o incremento e retorna
 RET
 
 INCREMENTO_Min_Uni_1:  
-STA REG0, @1
-LDA REG2, @2
-ADDI REG2, $1
-CEQ REG2, @7
-JEQ INCREMENTO_Min_Uni_2
-STA REG2, @2
-RET
+STA REG0, @1 ; limpa endereco que guarda o valor da unidade 1 de segundos
+LDA REG2, @2 ; guarda valor da unidade 0 de minutos em REG2
+ADDI REG2, $1 ; incrementa valor da unidade 0 de minutos
+CEQ REG2, @7 ; verifica se valor da unidade 0 de minutos é igual a 10
+JEQ INCREMENTO_Min_Uni_2 ; caso seja igual a 10 pula para a sub-rotina de incremento da unidade 1 de minutos
+STA REG2, @2 ; caso nao pulou guarda o incremento e retorna
+RET ;
 
 INCREMENTO_Min_Uni_2:  
-STA REG0, @2
-LDA REG2, @3
-ADDI REG2, $1
-CEQ REG2, @8
-JEQ INCREMENTO_Hora_Uni_1
-STA REG2, @3
+STA REG0, @2 ; limpa endereco que guarda o valor da unidade 0 de minutos
+LDA REG2, @3 ; guarda valor da unidade 1 de minutos em REG2
+ADDI REG2, $1 ; incrementa valor da unidade 1 de minutos
+CEQ REG2, @8 ; verifica se valor da unidade 1 de minutos é igual a 6
+JEQ INCREMENTO_Hora_Uni_1 ; caso seja igual a 6 pula para a sub-rotina de incremento da unidade 0 de horas
+STA REG2, @3; caso nao pulou guarda o incremento e retorna
 RET
 
 
 INCREMENTO_Hora_Uni_1:  
-STA REG0, @3
-LDA REG2, @4
-ADDI REG2, $1
-CEQ REG2, @11
-JEQ TESTE_OVERFLOW
-CEQ REG2, @7
-JEQ INCREMENTO_Hora_Uni_2
-STA REG2, @4
-RET
+STA REG0, @3 ; limpa endereco que guarda o valor da unidade 1 de minutos
+LDA REG2, @4 ; guarda valor da unidade 0 de horas em REG2
+ADDI REG2, $1 ; incrementa valor da unidade 0 de horas
+CEQ REG2, @11 ; verifica se valor da unidade 0 de horas é igual a 10
+JEQ TESTE_OVERFLOW ; caso seja igual a 10 pula para a sub-rotina de incremento da unidade 1 de horas
+CEQ REG2, @7 ; verifica se valor da unidade 0 de horas é igual a 10
+JEQ INCREMENTO_Hora_Uni_2 ; caso seja igual a 10 pula para a sub-rotina de incremento da unidade 1 de horas
+STA REG2, @4 ; caso nao pulou guarda o incremento e retorna 
+RET ;
 
 Continua_Incremento:
 LDA REG2, @4
@@ -303,10 +303,10 @@ STA REG2, @4
 RET
 
 INCREMENTO_Hora_Uni_2:  
-STA REG0, @4
-LDA REG2, @5
-ADDI REG2, $1
-STA REG2, @5
+STA REG0, @4 ; limpa endereco que guarda o valor da unidade 0 de horas
+LDA REG2, @5 ; guarda valor da unidade 1 de horas em REG2
+ADDI REG2, $1 ; incrementa valor da unidade 1 de horas
+STA REG2, @5 ; guarda o incremento e retorna
 RET
 
 TESTE_OVERFLOW:
