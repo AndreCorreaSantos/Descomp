@@ -19,10 +19,10 @@ STA REG0, @3;
 STA REG0, @4;
 STA REG0, @5;
 STA REG0, @6;
-STA REG0, @14;
+STA REG0, @14; Flag Alterar o Display
 LDI REG1, $1; REG1 IRÁ guardar somente a váriavel 1
 STA REG1, @10	
-LDI REG2, $10; 
+LDI REG2, $10; Guarda Resto das Váriaveis
 STA REG2, @7;
 LDI REG2, $6;
 STA REG2, @8;
@@ -34,7 +34,7 @@ LDI REG2, $2;
 STA REG2, @12;
 LDI REG2, $9;
 STA REG2, @13;
-LDI REG3, $3
+LDI REG3, $3; REG3 IRÁ guardar somente a váriavel 3
 STA REG3, @15;
 LDI REG2, $7
 STA REG2, @16;
@@ -66,26 +66,26 @@ RET
 
 Troca_Horario:
 STA @511 ; limpa leitura key 0
-LDI REG2, $18; 
+LDI REG2, $18; Apaga LEDS
 STA REG2, @293;
 STA REG2, @292;
 STA REG0, @291;
 STA REG0, @290;
 STA REG0, @289;
 STA REG0, @288;
-STA REG0, @0;
+STA REG0, @0; Reinicia Segundos
 STA REG0, @1;
 
 Troca_Horario_Minuto_Unidade_1:
-LDA REG2, @320;
-AND REG2, @9;
-CLT REG2, @7;
+LDA REG2, @320; Lê as chaves
+AND REG2, @9; Limita pra uso das 4 primeiras chaves
+CLT REG2, @7; Pula se menor que 10
 JLT Pulo_M_Uni1
-SUBI REG2, $9;
+SUBI REG2, $9; Subtrai o valor para manter entre 0 e 9
 Pulo_M_Uni1:
-STA REG2, @2;
-STA REG2, @288;
-LDA REG2, @352; 	
+STA REG2, @2; Salva na Memória
+STA REG2, @288; Guarda no 7seg
+LDA REG2, @352; Checa se KEY0 foi pressionado	
 AND REG2, @10
 CEQ REG2, @10				
 JEQ Troca_Horario_Minuto_Unidade_2
@@ -94,15 +94,15 @@ JMP Troca_Horario_Minuto_Unidade_1
 Troca_Horario_Minuto_Unidade_2:
 STA @511 ; limpa leitura key 0
 Troca_Horario_Minuto_Unidade_22:
-LDA REG2, @320;
-AND REG2, @16;
-CLT REG2, @8;
+LDA REG2, @320; Lê as chaves
+AND REG2, @16; Limita pra uso das 3 primeiras chaves
+CLT REG2, @8; Pula se menor que 6
 JLT Pulo_M_Uni2
-SUBI REG2, $2;
+SUBI REG2, $2; Subtrai o valor para manter entre 0 e 5
 Pulo_M_Uni2:
-STA REG2, @3;
-STA REG2, @289;
-LDA REG2, @352; 	
+STA REG2, @3; Salva na Memória
+STA REG2, @289;  Guarda no 7seg
+LDA REG2, @352; Checa se KEY0 foi pressionado
 AND REG2, @10
 CEQ REG2, @10				
 JEQ Troca_Horario_Hora_Unidade_1
@@ -111,15 +111,15 @@ JMP Troca_Horario_Minuto_Unidade_22
 Troca_Horario_Hora_Unidade_1:
 STA @511 ; limpa leitura key 0
 Troca_Horario_Hora_Unidade_11:
-LDA REG2, @320;
-AND REG2, @9;
-CLT REG2, @7;
+LDA REG2, @320;Lê as chaves
+AND REG2, @9; Limita pra uso das 4 primeiras chaves
+CLT REG2, @7; Pula se menor que 10
 JLT Pulo_H_Uni1
-SUBI REG2, $9;
+SUBI REG2, $9; Subtrai o valor para manter entre 0 e 9
 Pulo_H_Uni1:
-STA REG2, @4;
-STA REG2, @290;
-LDA REG2, @352; 	
+STA REG2, @4; Salva na Memória
+STA REG2, @290; Guarda no 7seg
+LDA REG2, @352; 	Checa se KEY0 foi pressionado
 AND REG2, @10
 CEQ REG2, @10				
 JEQ Troca_Horario_Hora_Unidade_2
@@ -129,28 +129,28 @@ Troca_Horario_Hora_Unidade_2:
 STA @511 ; limpa leitura key 0
 Troca_Horario_Hora_Unidade_22:
 LDA REG2, @4
-CLT REG2, @11;
+CLT REG2, @11;Checa se a Unidade 1 de hora é menor que 4
 JLT MENOR_QUE_4
-LDA REG2, @320;
-AND REG2, @10
-STA REG2, @5;
-STA REG2, @291;
-LDA REG2, @352; 	
+LDA REG2, @320; Le as Chaves
+AND REG2, @10 Limita para uso da primeira Chave
+STA REG2, @5; Salva valor na Memória
+STA REG2, @291; Guarda no 7seg
+LDA REG2, @352; 	Checa se KEY0 foi pressionado	
 AND REG2, @10
 CEQ REG2, @10				
 JEQ FINAL_Altera
 JMP Troca_Horario_Hora_Unidade_22
 
 MENOR_QUE_4:
-LDA REG2, @320;
-AND REG2, @15
-CLT REG2, @15;
+LDA REG2, @320; Lê as chaves
+AND REG2, @15 Limita para uso das 2 primeiras Chaves
+CLT REG2, @15; Checa se valor maior que 2
 JLT Pulo_H_Uni2
-SUBI REG2, $1;
+SUBI REG2, $1; Subtrai pra ficar entre 0 e 2
 Pulo_H_Uni2:
-STA REG2, @5;
-STA REG2, @291;
-LDA REG2, @352; 	
+STA REG2, @5; Salva valor na Memória
+STA REG2, @291;  Guarda no 7seg
+LDA REG2, @352; 	 Checa se KEY0 foi pressionado
 AND REG2, @10
 CEQ REG2, @10				
 JEQ FINAL_Altera
@@ -190,14 +190,14 @@ JEQ SETUP
 RET
 
 ATUALIZA_DISPLAY:
-CEQ REG0, @14
+CEQ REG0, @14  Checa se a flag é zero
 JEQ Base_Normal
-CEQ REG1, @14
-JEQ Base_Hora_Minuto
+CEQ REG1, @14 Checa se a flag é um
+JEQ Base_Hora_Minuto 
 JMP Base_Hora
 
 Base_Normal:
-LDA REG2, @0
+LDA REG2, @0 Salva H:M:S nos 7segs
 STA REG2, @288
 LDA REG2, @1
 STA REG2, @289
@@ -212,7 +212,7 @@ STA REG2, @293
 RET
 
 Base_Hora_Minuto:
-LDA REG2, @2
+LDA REG2, @2 Salva H:M nos 7segs
 STA REG2, @288
 LDA REG2, @3
 STA REG2, @289
@@ -220,17 +220,17 @@ LDA REG2, @4
 STA REG2, @290
 LDA REG2, @5
 STA REG2, @291
-LDI REG2, $18
+LDI REG2, $18 Apaga Leds Restantes
 STA REG2, @292
 STA REG2, @293
 RET
 
 Base_Hora:
-LDA REG2, @4
+LDA REG2, @4 Salva H nos 7segs
 STA REG2, @288
 LDA REG2, @5
 STA REG2, @289
-LDI REG2, $18
+LDI REG2, $18 Apaga Leds Restantes
 STA REG2, @290
 STA REG2, @291
 STA REG2, @292
