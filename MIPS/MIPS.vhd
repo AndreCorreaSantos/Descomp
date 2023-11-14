@@ -3,12 +3,17 @@ use ieee.std_logic_1164.all;
 
 entity MIPS is
   -- Total de bits das entradas e saidas
---   generic ( 
---         simulacao : boolean := FALSE -- para gravar na placa, altere de TRUE para FALSE
---   );
+  generic ( 
+        simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
+  );
   port   (
-    -- KEY: in std_logic_vector(3 downto 0)
-    CLOCK_50 : in std_logic
+    KEY: in std_logic_vector(3 downto 0);
+    CLOCK_50 : in std_logic;
+    saidaULAOUT : out std_logic_vector(31 downto 0);
+    entradaAOUT : out std_logic_vector(31 downto 0);
+    entradaBOUT : out std_logic_vector(31 downto 0);
+    saidaPCOUT :  out std_logic_vector(31 downto 0);
+    saidaInstrucao :  out std_logic_vector(31 downto 0)
   );
 end entity;
 
@@ -46,7 +51,7 @@ SomaPC : entity work.somaConstante
 
 
 -- ROM
-ROM1: entity work.romMIF generic map(dataWidth => 32)
+ROM1: entity work.ROMMIPS
             port map(
                 Endereco => saidaPC,
                 Dado => instrucao
@@ -87,7 +92,12 @@ enderecoRd <= instrucao(15 downto 11);
 
 funct <= instrucao(5 downto 0);
 
--- CLK <= KEY(0);
-CLK <= CLOCK_50;
+CLK <= KEY(0);
+-- CLK <= CLOCK_50;
+saidaULAOUT <= saidaULA;
+entradaAOUT <= saidaA;
+entradaBOUT <= saidaB;
+saidaPCOUT <= saidaPC;
+saidaInstrucao <= instrucao;
 
 end architecture;
