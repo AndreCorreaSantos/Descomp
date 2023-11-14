@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "11/14/2023 14:12:18"
+-- DATE "11/14/2023 20:44:39"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -242,198 +242,214 @@ SIGNAL \SomaPC|Add0~18\ : std_logic;
 SIGNAL \SomaPC|Add0~13_sumout\ : std_logic;
 SIGNAL \ROM1|memROM~0_combout\ : std_logic;
 SIGNAL \ROM1|memROM~1_combout\ : std_logic;
-SIGNAL \Banco|registrador~38_q\ : std_logic;
 SIGNAL \Banco|registrador~294_q\ : std_logic;
-SIGNAL \Banco|registrador~1062_combout\ : std_logic;
-SIGNAL \ULA|Add1~130_cout\ : std_logic;
-SIGNAL \ULA|Add1~1_sumout\ : std_logic;
+SIGNAL \Banco|saidaA[0]~0_combout\ : std_logic;
+SIGNAL \Banco|registrador~38_q\ : std_logic;
+SIGNAL \Banco|registrador~1064_combout\ : std_logic;
+SIGNAL \ULA|Add0~130_cout\ : std_logic;
+SIGNAL \ULA|Add0~1_sumout\ : std_logic;
+SIGNAL \ULA|Add0~5_wirecell_combout\ : std_logic;
 SIGNAL \Banco|registrador~39_q\ : std_logic;
 SIGNAL \Banco|registrador~295_q\ : std_logic;
-SIGNAL \Banco|registrador~1063_combout\ : std_logic;
-SIGNAL \ULA|Add1~2\ : std_logic;
-SIGNAL \ULA|Add1~5_sumout\ : std_logic;
-SIGNAL \Banco|registrador~40_q\ : std_logic;
+SIGNAL \Banco|registrador~1062_combout\ : std_logic;
+SIGNAL \ULA|Add0~2\ : std_logic;
+SIGNAL \ULA|Add0~5_sumout\ : std_logic;
 SIGNAL \Banco|registrador~296_q\ : std_logic;
-SIGNAL \Banco|registrador~1064_combout\ : std_logic;
-SIGNAL \ULA|Add1~6\ : std_logic;
-SIGNAL \ULA|Add1~9_sumout\ : std_logic;
+SIGNAL \Banco|saidaA[2]~2_combout\ : std_logic;
+SIGNAL \Banco|registrador~40_q\ : std_logic;
+SIGNAL \Banco|registrador~1065_combout\ : std_logic;
+SIGNAL \ULA|Add0~6\ : std_logic;
+SIGNAL \ULA|Add0~9_sumout\ : std_logic;
+SIGNAL \ULA|Add0~13_wirecell_combout\ : std_logic;
 SIGNAL \Banco|registrador~41_q\ : std_logic;
 SIGNAL \Banco|registrador~297_q\ : std_logic;
-SIGNAL \Banco|registrador~1065_combout\ : std_logic;
-SIGNAL \ULA|Add1~10\ : std_logic;
-SIGNAL \ULA|Add1~13_sumout\ : std_logic;
-SIGNAL \Banco|registrador~42_q\ : std_logic;
+SIGNAL \Banco|registrador~1063_combout\ : std_logic;
+SIGNAL \ULA|Add0~10\ : std_logic;
+SIGNAL \ULA|Add0~13_sumout\ : std_logic;
 SIGNAL \Banco|registrador~298_q\ : std_logic;
-SIGNAL \Banco|registrador~1066_combout\ : std_logic;
-SIGNAL \ULA|Add1~14\ : std_logic;
-SIGNAL \ULA|Add1~17_sumout\ : std_logic;
-SIGNAL \Banco|registrador~43_q\ : std_logic;
-SIGNAL \Banco|registrador~299_q\ : std_logic;
-SIGNAL \Banco|registrador~1067_combout\ : std_logic;
-SIGNAL \ULA|Add1~18\ : std_logic;
-SIGNAL \ULA|Add1~21_sumout\ : std_logic;
-SIGNAL \Banco|registrador~44_q\ : std_logic;
-SIGNAL \Banco|registrador~300_q\ : std_logic;
-SIGNAL \Banco|registrador~1068_combout\ : std_logic;
-SIGNAL \ULA|Add1~22\ : std_logic;
-SIGNAL \ULA|Add1~25_sumout\ : std_logic;
-SIGNAL \Banco|registrador~45_q\ : std_logic;
-SIGNAL \Banco|registrador~301_q\ : std_logic;
-SIGNAL \Banco|registrador~1069_combout\ : std_logic;
-SIGNAL \ULA|Add1~26\ : std_logic;
-SIGNAL \ULA|Add1~29_sumout\ : std_logic;
-SIGNAL \Banco|registrador~46_q\ : std_logic;
-SIGNAL \Banco|registrador~302_q\ : std_logic;
-SIGNAL \Banco|registrador~1070_combout\ : std_logic;
-SIGNAL \ULA|Add1~30\ : std_logic;
-SIGNAL \ULA|Add1~33_sumout\ : std_logic;
-SIGNAL \Banco|registrador~47_q\ : std_logic;
-SIGNAL \Banco|registrador~303_q\ : std_logic;
-SIGNAL \Banco|registrador~1071_combout\ : std_logic;
-SIGNAL \ULA|Add1~34\ : std_logic;
-SIGNAL \ULA|Add1~37_sumout\ : std_logic;
-SIGNAL \Banco|registrador~48_q\ : std_logic;
-SIGNAL \Banco|registrador~304_q\ : std_logic;
-SIGNAL \Banco|registrador~1072_combout\ : std_logic;
-SIGNAL \ULA|Add1~38\ : std_logic;
-SIGNAL \ULA|Add1~41_sumout\ : std_logic;
-SIGNAL \Banco|registrador~49_q\ : std_logic;
-SIGNAL \Banco|registrador~305_q\ : std_logic;
-SIGNAL \Banco|registrador~1073_combout\ : std_logic;
-SIGNAL \ULA|Add1~42\ : std_logic;
-SIGNAL \ULA|Add1~45_sumout\ : std_logic;
-SIGNAL \Banco|registrador~50_q\ : std_logic;
-SIGNAL \Banco|registrador~306_q\ : std_logic;
-SIGNAL \Banco|registrador~1074_combout\ : std_logic;
-SIGNAL \ULA|Add1~46\ : std_logic;
-SIGNAL \ULA|Add1~49_sumout\ : std_logic;
-SIGNAL \Banco|registrador~51_q\ : std_logic;
-SIGNAL \Banco|registrador~307_q\ : std_logic;
-SIGNAL \Banco|registrador~1075_combout\ : std_logic;
-SIGNAL \ULA|Add1~50\ : std_logic;
-SIGNAL \ULA|Add1~53_sumout\ : std_logic;
-SIGNAL \Banco|registrador~52_q\ : std_logic;
-SIGNAL \Banco|registrador~308_q\ : std_logic;
-SIGNAL \Banco|registrador~1076_combout\ : std_logic;
-SIGNAL \ULA|Add1~54\ : std_logic;
-SIGNAL \ULA|Add1~57_sumout\ : std_logic;
-SIGNAL \Banco|registrador~53_q\ : std_logic;
-SIGNAL \Banco|registrador~309_q\ : std_logic;
-SIGNAL \Banco|registrador~1077_combout\ : std_logic;
-SIGNAL \ULA|Add1~58\ : std_logic;
-SIGNAL \ULA|Add1~61_sumout\ : std_logic;
-SIGNAL \Banco|registrador~54_q\ : std_logic;
-SIGNAL \Banco|registrador~310_q\ : std_logic;
-SIGNAL \Banco|registrador~1078_combout\ : std_logic;
-SIGNAL \ULA|Add1~62\ : std_logic;
-SIGNAL \ULA|Add1~65_sumout\ : std_logic;
-SIGNAL \Banco|registrador~55_q\ : std_logic;
-SIGNAL \Banco|registrador~311_q\ : std_logic;
-SIGNAL \Banco|registrador~1079_combout\ : std_logic;
-SIGNAL \ULA|Add1~66\ : std_logic;
-SIGNAL \ULA|Add1~69_sumout\ : std_logic;
-SIGNAL \Banco|registrador~56_q\ : std_logic;
-SIGNAL \Banco|registrador~312_q\ : std_logic;
-SIGNAL \Banco|registrador~1080_combout\ : std_logic;
-SIGNAL \ULA|Add1~70\ : std_logic;
-SIGNAL \ULA|Add1~73_sumout\ : std_logic;
-SIGNAL \Banco|registrador~57_q\ : std_logic;
-SIGNAL \Banco|registrador~313_q\ : std_logic;
-SIGNAL \Banco|registrador~1081_combout\ : std_logic;
-SIGNAL \ULA|Add1~74\ : std_logic;
-SIGNAL \ULA|Add1~77_sumout\ : std_logic;
-SIGNAL \Banco|registrador~58_q\ : std_logic;
-SIGNAL \Banco|registrador~314_q\ : std_logic;
-SIGNAL \Banco|registrador~1082_combout\ : std_logic;
-SIGNAL \ULA|Add1~78\ : std_logic;
-SIGNAL \ULA|Add1~81_sumout\ : std_logic;
-SIGNAL \Banco|registrador~59_q\ : std_logic;
-SIGNAL \Banco|registrador~315_q\ : std_logic;
-SIGNAL \Banco|registrador~1083_combout\ : std_logic;
-SIGNAL \ULA|Add1~82\ : std_logic;
-SIGNAL \ULA|Add1~85_sumout\ : std_logic;
-SIGNAL \Banco|registrador~60_q\ : std_logic;
-SIGNAL \Banco|registrador~316_q\ : std_logic;
-SIGNAL \Banco|registrador~1084_combout\ : std_logic;
-SIGNAL \ULA|Add1~86\ : std_logic;
-SIGNAL \ULA|Add1~89_sumout\ : std_logic;
-SIGNAL \Banco|registrador~61_q\ : std_logic;
-SIGNAL \Banco|registrador~317_q\ : std_logic;
-SIGNAL \Banco|registrador~1085_combout\ : std_logic;
-SIGNAL \ULA|Add1~90\ : std_logic;
-SIGNAL \ULA|Add1~93_sumout\ : std_logic;
-SIGNAL \Banco|registrador~62_q\ : std_logic;
-SIGNAL \Banco|registrador~318_q\ : std_logic;
-SIGNAL \Banco|registrador~1086_combout\ : std_logic;
-SIGNAL \ULA|Add1~94\ : std_logic;
-SIGNAL \ULA|Add1~97_sumout\ : std_logic;
-SIGNAL \Banco|registrador~63_q\ : std_logic;
-SIGNAL \Banco|registrador~319_q\ : std_logic;
-SIGNAL \Banco|registrador~1087_combout\ : std_logic;
-SIGNAL \ULA|Add1~98\ : std_logic;
-SIGNAL \ULA|Add1~101_sumout\ : std_logic;
-SIGNAL \Banco|registrador~64_q\ : std_logic;
-SIGNAL \Banco|registrador~320_q\ : std_logic;
-SIGNAL \Banco|registrador~1088_combout\ : std_logic;
-SIGNAL \ULA|Add1~102\ : std_logic;
-SIGNAL \ULA|Add1~105_sumout\ : std_logic;
-SIGNAL \Banco|registrador~65_q\ : std_logic;
-SIGNAL \Banco|registrador~321_q\ : std_logic;
-SIGNAL \Banco|registrador~1089_combout\ : std_logic;
-SIGNAL \ULA|Add1~106\ : std_logic;
-SIGNAL \ULA|Add1~109_sumout\ : std_logic;
-SIGNAL \Banco|registrador~66_q\ : std_logic;
-SIGNAL \Banco|registrador~322_q\ : std_logic;
-SIGNAL \Banco|registrador~1090_combout\ : std_logic;
-SIGNAL \ULA|Add1~110\ : std_logic;
-SIGNAL \ULA|Add1~113_sumout\ : std_logic;
-SIGNAL \Banco|registrador~67_q\ : std_logic;
-SIGNAL \Banco|registrador~323_q\ : std_logic;
-SIGNAL \Banco|registrador~1091_combout\ : std_logic;
-SIGNAL \ULA|Add1~114\ : std_logic;
-SIGNAL \ULA|Add1~117_sumout\ : std_logic;
-SIGNAL \Banco|registrador~68_q\ : std_logic;
-SIGNAL \Banco|registrador~324_q\ : std_logic;
-SIGNAL \Banco|registrador~1092_combout\ : std_logic;
-SIGNAL \ULA|Add1~118\ : std_logic;
-SIGNAL \ULA|Add1~121_sumout\ : std_logic;
-SIGNAL \Banco|registrador~69_q\ : std_logic;
-SIGNAL \Banco|registrador~325_q\ : std_logic;
-SIGNAL \Banco|registrador~1093_combout\ : std_logic;
-SIGNAL \ULA|Add1~122\ : std_logic;
-SIGNAL \ULA|Add1~125_sumout\ : std_logic;
-SIGNAL \Banco|saidaA[0]~0_combout\ : std_logic;
-SIGNAL \Banco|saidaA[1]~1_combout\ : std_logic;
-SIGNAL \Banco|saidaA[2]~2_combout\ : std_logic;
-SIGNAL \Banco|saidaA[3]~3_combout\ : std_logic;
 SIGNAL \Banco|saidaA[4]~4_combout\ : std_logic;
+SIGNAL \Banco|registrador~42_q\ : std_logic;
+SIGNAL \Banco|registrador~1066_combout\ : std_logic;
+SIGNAL \ULA|Add0~14\ : std_logic;
+SIGNAL \ULA|Add0~17_sumout\ : std_logic;
+SIGNAL \Banco|registrador~299_q\ : std_logic;
 SIGNAL \Banco|saidaA[5]~5_combout\ : std_logic;
+SIGNAL \ULA|Add0~21_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~43_q\ : std_logic;
+SIGNAL \Banco|registrador~1067_combout\ : std_logic;
+SIGNAL \ULA|Add0~18\ : std_logic;
+SIGNAL \ULA|Add0~21_sumout\ : std_logic;
+SIGNAL \Banco|registrador~300_q\ : std_logic;
 SIGNAL \Banco|saidaA[6]~6_combout\ : std_logic;
+SIGNAL \Banco|registrador~44_q\ : std_logic;
+SIGNAL \Banco|registrador~1068_combout\ : std_logic;
+SIGNAL \ULA|Add0~22\ : std_logic;
+SIGNAL \ULA|Add0~25_sumout\ : std_logic;
+SIGNAL \Banco|registrador~301_q\ : std_logic;
 SIGNAL \Banco|saidaA[7]~7_combout\ : std_logic;
+SIGNAL \ULA|Add0~29_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~45_q\ : std_logic;
+SIGNAL \Banco|registrador~1069_combout\ : std_logic;
+SIGNAL \ULA|Add0~26\ : std_logic;
+SIGNAL \ULA|Add0~29_sumout\ : std_logic;
+SIGNAL \Banco|registrador~302_q\ : std_logic;
 SIGNAL \Banco|saidaA[8]~8_combout\ : std_logic;
+SIGNAL \Banco|registrador~46_q\ : std_logic;
+SIGNAL \Banco|registrador~1070_combout\ : std_logic;
+SIGNAL \ULA|Add0~30\ : std_logic;
+SIGNAL \ULA|Add0~33_sumout\ : std_logic;
+SIGNAL \Banco|registrador~303_q\ : std_logic;
 SIGNAL \Banco|saidaA[9]~9_combout\ : std_logic;
+SIGNAL \ULA|Add0~37_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~47_q\ : std_logic;
+SIGNAL \Banco|registrador~1071_combout\ : std_logic;
+SIGNAL \ULA|Add0~34\ : std_logic;
+SIGNAL \ULA|Add0~37_sumout\ : std_logic;
+SIGNAL \Banco|registrador~304_q\ : std_logic;
 SIGNAL \Banco|saidaA[10]~10_combout\ : std_logic;
+SIGNAL \Banco|registrador~48_q\ : std_logic;
+SIGNAL \Banco|registrador~1072_combout\ : std_logic;
+SIGNAL \ULA|Add0~38\ : std_logic;
+SIGNAL \ULA|Add0~41_sumout\ : std_logic;
+SIGNAL \Banco|registrador~305_q\ : std_logic;
 SIGNAL \Banco|saidaA[11]~11_combout\ : std_logic;
+SIGNAL \ULA|Add0~45_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~49_q\ : std_logic;
+SIGNAL \Banco|registrador~1073_combout\ : std_logic;
+SIGNAL \ULA|Add0~42\ : std_logic;
+SIGNAL \ULA|Add0~45_sumout\ : std_logic;
+SIGNAL \Banco|registrador~306_q\ : std_logic;
 SIGNAL \Banco|saidaA[12]~12_combout\ : std_logic;
+SIGNAL \Banco|registrador~50_q\ : std_logic;
+SIGNAL \Banco|registrador~1074_combout\ : std_logic;
+SIGNAL \ULA|Add0~46\ : std_logic;
+SIGNAL \ULA|Add0~49_sumout\ : std_logic;
+SIGNAL \Banco|registrador~307_q\ : std_logic;
 SIGNAL \Banco|saidaA[13]~13_combout\ : std_logic;
+SIGNAL \ULA|Add0~53_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~51_q\ : std_logic;
+SIGNAL \Banco|registrador~1075_combout\ : std_logic;
+SIGNAL \ULA|Add0~50\ : std_logic;
+SIGNAL \ULA|Add0~53_sumout\ : std_logic;
+SIGNAL \Banco|registrador~308_q\ : std_logic;
 SIGNAL \Banco|saidaA[14]~14_combout\ : std_logic;
+SIGNAL \Banco|registrador~52_q\ : std_logic;
+SIGNAL \Banco|registrador~1076_combout\ : std_logic;
+SIGNAL \ULA|Add0~54\ : std_logic;
+SIGNAL \ULA|Add0~57_sumout\ : std_logic;
+SIGNAL \Banco|registrador~309_q\ : std_logic;
 SIGNAL \Banco|saidaA[15]~15_combout\ : std_logic;
+SIGNAL \ULA|Add0~61_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~53_q\ : std_logic;
+SIGNAL \Banco|registrador~1077_combout\ : std_logic;
+SIGNAL \ULA|Add0~58\ : std_logic;
+SIGNAL \ULA|Add0~61_sumout\ : std_logic;
+SIGNAL \Banco|registrador~310_q\ : std_logic;
 SIGNAL \Banco|saidaA[16]~16_combout\ : std_logic;
+SIGNAL \Banco|registrador~54_q\ : std_logic;
+SIGNAL \Banco|registrador~1078_combout\ : std_logic;
+SIGNAL \ULA|Add0~62\ : std_logic;
+SIGNAL \ULA|Add0~65_sumout\ : std_logic;
+SIGNAL \Banco|registrador~311_q\ : std_logic;
 SIGNAL \Banco|saidaA[17]~17_combout\ : std_logic;
+SIGNAL \ULA|Add0~69_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~55_q\ : std_logic;
+SIGNAL \Banco|registrador~1079_combout\ : std_logic;
+SIGNAL \ULA|Add0~66\ : std_logic;
+SIGNAL \ULA|Add0~69_sumout\ : std_logic;
+SIGNAL \Banco|registrador~312_q\ : std_logic;
 SIGNAL \Banco|saidaA[18]~18_combout\ : std_logic;
+SIGNAL \Banco|registrador~56_q\ : std_logic;
+SIGNAL \Banco|registrador~1080_combout\ : std_logic;
+SIGNAL \ULA|Add0~70\ : std_logic;
+SIGNAL \ULA|Add0~73_sumout\ : std_logic;
+SIGNAL \Banco|registrador~313_q\ : std_logic;
 SIGNAL \Banco|saidaA[19]~19_combout\ : std_logic;
+SIGNAL \ULA|Add0~77_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~57_q\ : std_logic;
+SIGNAL \Banco|registrador~1081_combout\ : std_logic;
+SIGNAL \ULA|Add0~74\ : std_logic;
+SIGNAL \ULA|Add0~77_sumout\ : std_logic;
+SIGNAL \Banco|registrador~314_q\ : std_logic;
 SIGNAL \Banco|saidaA[20]~20_combout\ : std_logic;
+SIGNAL \Banco|registrador~58_q\ : std_logic;
+SIGNAL \Banco|registrador~1082_combout\ : std_logic;
+SIGNAL \ULA|Add0~78\ : std_logic;
+SIGNAL \ULA|Add0~81_sumout\ : std_logic;
+SIGNAL \Banco|registrador~315_q\ : std_logic;
 SIGNAL \Banco|saidaA[21]~21_combout\ : std_logic;
+SIGNAL \ULA|Add0~85_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~59_q\ : std_logic;
+SIGNAL \Banco|registrador~1083_combout\ : std_logic;
+SIGNAL \ULA|Add0~82\ : std_logic;
+SIGNAL \ULA|Add0~85_sumout\ : std_logic;
+SIGNAL \Banco|registrador~316_q\ : std_logic;
 SIGNAL \Banco|saidaA[22]~22_combout\ : std_logic;
+SIGNAL \Banco|registrador~60_q\ : std_logic;
+SIGNAL \Banco|registrador~1084_combout\ : std_logic;
+SIGNAL \ULA|Add0~86\ : std_logic;
+SIGNAL \ULA|Add0~89_sumout\ : std_logic;
+SIGNAL \Banco|registrador~317_q\ : std_logic;
 SIGNAL \Banco|saidaA[23]~23_combout\ : std_logic;
+SIGNAL \ULA|Add0~93_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~61_q\ : std_logic;
+SIGNAL \Banco|registrador~1085_combout\ : std_logic;
+SIGNAL \ULA|Add0~90\ : std_logic;
+SIGNAL \ULA|Add0~93_sumout\ : std_logic;
+SIGNAL \Banco|registrador~318_q\ : std_logic;
 SIGNAL \Banco|saidaA[24]~24_combout\ : std_logic;
+SIGNAL \Banco|registrador~62_q\ : std_logic;
+SIGNAL \Banco|registrador~1086_combout\ : std_logic;
+SIGNAL \ULA|Add0~94\ : std_logic;
+SIGNAL \ULA|Add0~97_sumout\ : std_logic;
+SIGNAL \Banco|registrador~319_q\ : std_logic;
 SIGNAL \Banco|saidaA[25]~25_combout\ : std_logic;
+SIGNAL \ULA|Add0~101_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~63_q\ : std_logic;
+SIGNAL \Banco|registrador~1087_combout\ : std_logic;
+SIGNAL \ULA|Add0~98\ : std_logic;
+SIGNAL \ULA|Add0~101_sumout\ : std_logic;
+SIGNAL \Banco|registrador~320_q\ : std_logic;
 SIGNAL \Banco|saidaA[26]~26_combout\ : std_logic;
+SIGNAL \Banco|registrador~64_q\ : std_logic;
+SIGNAL \Banco|registrador~1088_combout\ : std_logic;
+SIGNAL \ULA|Add0~102\ : std_logic;
+SIGNAL \ULA|Add0~105_sumout\ : std_logic;
+SIGNAL \Banco|registrador~321_q\ : std_logic;
 SIGNAL \Banco|saidaA[27]~27_combout\ : std_logic;
+SIGNAL \ULA|Add0~109_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~65_q\ : std_logic;
+SIGNAL \Banco|registrador~1089_combout\ : std_logic;
+SIGNAL \ULA|Add0~106\ : std_logic;
+SIGNAL \ULA|Add0~109_sumout\ : std_logic;
+SIGNAL \Banco|registrador~322_q\ : std_logic;
 SIGNAL \Banco|saidaA[28]~28_combout\ : std_logic;
+SIGNAL \Banco|registrador~66_q\ : std_logic;
+SIGNAL \Banco|registrador~1090_combout\ : std_logic;
+SIGNAL \ULA|Add0~110\ : std_logic;
+SIGNAL \ULA|Add0~113_sumout\ : std_logic;
+SIGNAL \Banco|registrador~323_q\ : std_logic;
 SIGNAL \Banco|saidaA[29]~29_combout\ : std_logic;
+SIGNAL \ULA|Add0~117_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~67_q\ : std_logic;
+SIGNAL \Banco|registrador~1091_combout\ : std_logic;
+SIGNAL \ULA|Add0~114\ : std_logic;
+SIGNAL \ULA|Add0~117_sumout\ : std_logic;
+SIGNAL \Banco|registrador~324_q\ : std_logic;
 SIGNAL \Banco|saidaA[30]~30_combout\ : std_logic;
+SIGNAL \Banco|registrador~68_q\ : std_logic;
+SIGNAL \Banco|registrador~1092_combout\ : std_logic;
+SIGNAL \ULA|Add0~118\ : std_logic;
+SIGNAL \ULA|Add0~121_sumout\ : std_logic;
+SIGNAL \Banco|registrador~325_q\ : std_logic;
 SIGNAL \Banco|saidaA[31]~31_combout\ : std_logic;
+SIGNAL \ULA|Add0~125_wirecell_combout\ : std_logic;
+SIGNAL \Banco|registrador~69_q\ : std_logic;
+SIGNAL \Banco|registrador~1093_combout\ : std_logic;
+SIGNAL \ULA|Add0~122\ : std_logic;
+SIGNAL \ULA|Add0~125_sumout\ : std_logic;
+SIGNAL \Banco|saidaA[1]~1_combout\ : std_logic;
+SIGNAL \Banco|saidaA[3]~3_combout\ : std_logic;
 SIGNAL \SomaPC|Add0~14\ : std_logic;
 SIGNAL \SomaPC|Add0~21_sumout\ : std_logic;
 SIGNAL \SomaPC|Add0~22\ : std_logic;
@@ -483,137 +499,151 @@ SIGNAL \SomaPC|Add0~109_sumout\ : std_logic;
 SIGNAL \SomaPC|Add0~110\ : std_logic;
 SIGNAL \SomaPC|Add0~113_sumout\ : std_logic;
 SIGNAL \ProgramCounter|DOUT\ : std_logic_vector(31 DOWNTO 0);
-SIGNAL \ULA|ALT_INV_Add1~9_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~5_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~1_sumout\ : std_logic;
-SIGNAL \ProgramCounter|ALT_INV_DOUT\ : std_logic_vector(31 DOWNTO 2);
-SIGNAL \ROM1|ALT_INV_memROM~0_combout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~125_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~121_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~117_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~113_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~109_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~105_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~101_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~97_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~93_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~89_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~85_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~81_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~77_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~73_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~69_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~65_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~61_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~57_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~53_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~49_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~45_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~41_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~37_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~33_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~29_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~25_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~21_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~17_sumout\ : std_logic;
-SIGNAL \ULA|ALT_INV_Add1~13_sumout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~311_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~54_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~310_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~53_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1076_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~308_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~309_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~52_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1075_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~307_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~308_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~51_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1074_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~306_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~307_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~50_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1073_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~305_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~306_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~49_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1072_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~304_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~305_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~48_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1071_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~303_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~304_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~47_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1070_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~302_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~303_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~46_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1069_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~301_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~302_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~45_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1068_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~300_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~301_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~44_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1067_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~299_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~300_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~43_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1066_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~298_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~299_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~42_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1065_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~298_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~297_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~41_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1064_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~296_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~40_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1063_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~296_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~295_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~39_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1062_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~294_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~38_q\ : std_logic;
-SIGNAL \ROM1|ALT_INV_memROM~1_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1093_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~325_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~294_q\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~125_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~117_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~109_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~101_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~93_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~85_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~77_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~69_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~61_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~53_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~45_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~37_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~29_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~21_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~13_sumout\ : std_logic;
+SIGNAL \ULA|ALT_INV_Add0~5_sumout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[5]~5_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[4]~4_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1063_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[2]~2_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1062_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[0]~0_combout\ : std_logic;
+SIGNAL \ProgramCounter|ALT_INV_DOUT\ : std_logic_vector(31 DOWNTO 2);
+SIGNAL \ROM1|ALT_INV_memROM~0_combout\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~69_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1092_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~324_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~325_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~68_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1091_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~323_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~324_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~67_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1090_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~322_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~323_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~66_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1089_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~321_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~322_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~65_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1088_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~320_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~321_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~64_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1087_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~319_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~320_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~63_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1086_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~318_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~319_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~62_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1085_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~317_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~318_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~61_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1084_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~316_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~317_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~60_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1083_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~315_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~316_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~59_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1082_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~314_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~315_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~58_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1081_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~313_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~314_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~57_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1080_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~312_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~313_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~56_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~1079_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~311_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~312_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~55_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1093_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1092_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1091_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1090_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1089_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1088_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1087_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1086_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1085_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1084_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1083_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1082_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1081_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1080_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1079_combout\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~1078_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~310_q\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~54_q\ : std_logic;
 SIGNAL \Banco|ALT_INV_registrador~1077_combout\ : std_logic;
-SIGNAL \Banco|ALT_INV_registrador~309_q\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1076_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1075_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1074_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1073_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1072_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1071_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1070_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1069_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1068_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1067_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1066_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1065_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_registrador~1064_combout\ : std_logic;
+SIGNAL \ROM1|ALT_INV_memROM~1_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[31]~31_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[30]~30_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[29]~29_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[28]~28_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[27]~27_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[26]~26_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[25]~25_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[24]~24_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[23]~23_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[22]~22_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[21]~21_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[20]~20_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[19]~19_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[18]~18_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[17]~17_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[16]~16_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[15]~15_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[14]~14_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[13]~13_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[12]~12_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[11]~11_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[10]~10_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[9]~9_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[8]~8_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[7]~7_combout\ : std_logic;
+SIGNAL \Banco|ALT_INV_saidaA[6]~6_combout\ : std_logic;
 
 BEGIN
 
@@ -627,9 +657,63 @@ saidaInstrucao <= ww_saidaInstrucao;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\ULA|ALT_INV_Add1~9_sumout\ <= NOT \ULA|Add1~9_sumout\;
-\ULA|ALT_INV_Add1~5_sumout\ <= NOT \ULA|Add1~5_sumout\;
-\ULA|ALT_INV_Add1~1_sumout\ <= NOT \ULA|Add1~1_sumout\;
+\Banco|ALT_INV_registrador~311_q\ <= NOT \Banco|registrador~311_q\;
+\Banco|ALT_INV_registrador~54_q\ <= NOT \Banco|registrador~54_q\;
+\Banco|ALT_INV_registrador~310_q\ <= NOT \Banco|registrador~310_q\;
+\Banco|ALT_INV_registrador~53_q\ <= NOT \Banco|registrador~53_q\;
+\Banco|ALT_INV_registrador~309_q\ <= NOT \Banco|registrador~309_q\;
+\Banco|ALT_INV_registrador~52_q\ <= NOT \Banco|registrador~52_q\;
+\Banco|ALT_INV_registrador~308_q\ <= NOT \Banco|registrador~308_q\;
+\Banco|ALT_INV_registrador~51_q\ <= NOT \Banco|registrador~51_q\;
+\Banco|ALT_INV_registrador~307_q\ <= NOT \Banco|registrador~307_q\;
+\Banco|ALT_INV_registrador~50_q\ <= NOT \Banco|registrador~50_q\;
+\Banco|ALT_INV_registrador~306_q\ <= NOT \Banco|registrador~306_q\;
+\Banco|ALT_INV_registrador~49_q\ <= NOT \Banco|registrador~49_q\;
+\Banco|ALT_INV_registrador~305_q\ <= NOT \Banco|registrador~305_q\;
+\Banco|ALT_INV_registrador~48_q\ <= NOT \Banco|registrador~48_q\;
+\Banco|ALT_INV_registrador~304_q\ <= NOT \Banco|registrador~304_q\;
+\Banco|ALT_INV_registrador~47_q\ <= NOT \Banco|registrador~47_q\;
+\Banco|ALT_INV_registrador~303_q\ <= NOT \Banco|registrador~303_q\;
+\Banco|ALT_INV_registrador~46_q\ <= NOT \Banco|registrador~46_q\;
+\Banco|ALT_INV_registrador~302_q\ <= NOT \Banco|registrador~302_q\;
+\Banco|ALT_INV_registrador~45_q\ <= NOT \Banco|registrador~45_q\;
+\Banco|ALT_INV_registrador~301_q\ <= NOT \Banco|registrador~301_q\;
+\Banco|ALT_INV_registrador~44_q\ <= NOT \Banco|registrador~44_q\;
+\Banco|ALT_INV_registrador~300_q\ <= NOT \Banco|registrador~300_q\;
+\Banco|ALT_INV_registrador~43_q\ <= NOT \Banco|registrador~43_q\;
+\Banco|ALT_INV_registrador~299_q\ <= NOT \Banco|registrador~299_q\;
+\Banco|ALT_INV_registrador~42_q\ <= NOT \Banco|registrador~42_q\;
+\Banco|ALT_INV_registrador~298_q\ <= NOT \Banco|registrador~298_q\;
+\Banco|ALT_INV_registrador~297_q\ <= NOT \Banco|registrador~297_q\;
+\Banco|ALT_INV_registrador~41_q\ <= NOT \Banco|registrador~41_q\;
+\Banco|ALT_INV_registrador~40_q\ <= NOT \Banco|registrador~40_q\;
+\Banco|ALT_INV_registrador~296_q\ <= NOT \Banco|registrador~296_q\;
+\Banco|ALT_INV_registrador~295_q\ <= NOT \Banco|registrador~295_q\;
+\Banco|ALT_INV_registrador~39_q\ <= NOT \Banco|registrador~39_q\;
+\Banco|ALT_INV_registrador~38_q\ <= NOT \Banco|registrador~38_q\;
+\Banco|ALT_INV_registrador~294_q\ <= NOT \Banco|registrador~294_q\;
+\ULA|ALT_INV_Add0~125_sumout\ <= NOT \ULA|Add0~125_sumout\;
+\ULA|ALT_INV_Add0~117_sumout\ <= NOT \ULA|Add0~117_sumout\;
+\ULA|ALT_INV_Add0~109_sumout\ <= NOT \ULA|Add0~109_sumout\;
+\ULA|ALT_INV_Add0~101_sumout\ <= NOT \ULA|Add0~101_sumout\;
+\ULA|ALT_INV_Add0~93_sumout\ <= NOT \ULA|Add0~93_sumout\;
+\ULA|ALT_INV_Add0~85_sumout\ <= NOT \ULA|Add0~85_sumout\;
+\ULA|ALT_INV_Add0~77_sumout\ <= NOT \ULA|Add0~77_sumout\;
+\ULA|ALT_INV_Add0~69_sumout\ <= NOT \ULA|Add0~69_sumout\;
+\ULA|ALT_INV_Add0~61_sumout\ <= NOT \ULA|Add0~61_sumout\;
+\ULA|ALT_INV_Add0~53_sumout\ <= NOT \ULA|Add0~53_sumout\;
+\ULA|ALT_INV_Add0~45_sumout\ <= NOT \ULA|Add0~45_sumout\;
+\ULA|ALT_INV_Add0~37_sumout\ <= NOT \ULA|Add0~37_sumout\;
+\ULA|ALT_INV_Add0~29_sumout\ <= NOT \ULA|Add0~29_sumout\;
+\ULA|ALT_INV_Add0~21_sumout\ <= NOT \ULA|Add0~21_sumout\;
+\ULA|ALT_INV_Add0~13_sumout\ <= NOT \ULA|Add0~13_sumout\;
+\ULA|ALT_INV_Add0~5_sumout\ <= NOT \ULA|Add0~5_sumout\;
+\Banco|ALT_INV_saidaA[5]~5_combout\ <= NOT \Banco|saidaA[5]~5_combout\;
+\Banco|ALT_INV_saidaA[4]~4_combout\ <= NOT \Banco|saidaA[4]~4_combout\;
+\Banco|ALT_INV_registrador~1063_combout\ <= NOT \Banco|registrador~1063_combout\;
+\Banco|ALT_INV_saidaA[2]~2_combout\ <= NOT \Banco|saidaA[2]~2_combout\;
+\Banco|ALT_INV_registrador~1062_combout\ <= NOT \Banco|registrador~1062_combout\;
+\Banco|ALT_INV_saidaA[0]~0_combout\ <= NOT \Banco|saidaA[0]~0_combout\;
 \ProgramCounter|ALT_INV_DOUT\(2) <= NOT \ProgramCounter|DOUT\(2);
 \ROM1|ALT_INV_memROM~0_combout\ <= NOT \ROM1|memROM~0_combout\;
 \ProgramCounter|ALT_INV_DOUT\(6) <= NOT \ProgramCounter|DOUT\(6);
@@ -637,81 +721,65 @@ ww_devpor <= devpor;
 \ProgramCounter|ALT_INV_DOUT\(5) <= NOT \ProgramCounter|DOUT\(5);
 \ProgramCounter|ALT_INV_DOUT\(4) <= NOT \ProgramCounter|DOUT\(4);
 \ProgramCounter|ALT_INV_DOUT\(3) <= NOT \ProgramCounter|DOUT\(3);
-\ULA|ALT_INV_Add1~125_sumout\ <= NOT \ULA|Add1~125_sumout\;
-\ULA|ALT_INV_Add1~121_sumout\ <= NOT \ULA|Add1~121_sumout\;
-\ULA|ALT_INV_Add1~117_sumout\ <= NOT \ULA|Add1~117_sumout\;
-\ULA|ALT_INV_Add1~113_sumout\ <= NOT \ULA|Add1~113_sumout\;
-\ULA|ALT_INV_Add1~109_sumout\ <= NOT \ULA|Add1~109_sumout\;
-\ULA|ALT_INV_Add1~105_sumout\ <= NOT \ULA|Add1~105_sumout\;
-\ULA|ALT_INV_Add1~101_sumout\ <= NOT \ULA|Add1~101_sumout\;
-\ULA|ALT_INV_Add1~97_sumout\ <= NOT \ULA|Add1~97_sumout\;
-\ULA|ALT_INV_Add1~93_sumout\ <= NOT \ULA|Add1~93_sumout\;
-\ULA|ALT_INV_Add1~89_sumout\ <= NOT \ULA|Add1~89_sumout\;
-\ULA|ALT_INV_Add1~85_sumout\ <= NOT \ULA|Add1~85_sumout\;
-\ULA|ALT_INV_Add1~81_sumout\ <= NOT \ULA|Add1~81_sumout\;
-\ULA|ALT_INV_Add1~77_sumout\ <= NOT \ULA|Add1~77_sumout\;
-\ULA|ALT_INV_Add1~73_sumout\ <= NOT \ULA|Add1~73_sumout\;
-\ULA|ALT_INV_Add1~69_sumout\ <= NOT \ULA|Add1~69_sumout\;
-\ULA|ALT_INV_Add1~65_sumout\ <= NOT \ULA|Add1~65_sumout\;
-\ULA|ALT_INV_Add1~61_sumout\ <= NOT \ULA|Add1~61_sumout\;
-\ULA|ALT_INV_Add1~57_sumout\ <= NOT \ULA|Add1~57_sumout\;
-\ULA|ALT_INV_Add1~53_sumout\ <= NOT \ULA|Add1~53_sumout\;
-\ULA|ALT_INV_Add1~49_sumout\ <= NOT \ULA|Add1~49_sumout\;
-\ULA|ALT_INV_Add1~45_sumout\ <= NOT \ULA|Add1~45_sumout\;
-\ULA|ALT_INV_Add1~41_sumout\ <= NOT \ULA|Add1~41_sumout\;
-\ULA|ALT_INV_Add1~37_sumout\ <= NOT \ULA|Add1~37_sumout\;
-\ULA|ALT_INV_Add1~33_sumout\ <= NOT \ULA|Add1~33_sumout\;
-\ULA|ALT_INV_Add1~29_sumout\ <= NOT \ULA|Add1~29_sumout\;
-\ULA|ALT_INV_Add1~25_sumout\ <= NOT \ULA|Add1~25_sumout\;
-\ULA|ALT_INV_Add1~21_sumout\ <= NOT \ULA|Add1~21_sumout\;
-\ULA|ALT_INV_Add1~17_sumout\ <= NOT \ULA|Add1~17_sumout\;
-\ULA|ALT_INV_Add1~13_sumout\ <= NOT \ULA|Add1~13_sumout\;
-\Banco|ALT_INV_registrador~53_q\ <= NOT \Banco|registrador~53_q\;
+\Banco|ALT_INV_registrador~69_q\ <= NOT \Banco|registrador~69_q\;
+\Banco|ALT_INV_registrador~325_q\ <= NOT \Banco|registrador~325_q\;
+\Banco|ALT_INV_registrador~68_q\ <= NOT \Banco|registrador~68_q\;
+\Banco|ALT_INV_registrador~324_q\ <= NOT \Banco|registrador~324_q\;
+\Banco|ALT_INV_registrador~67_q\ <= NOT \Banco|registrador~67_q\;
+\Banco|ALT_INV_registrador~323_q\ <= NOT \Banco|registrador~323_q\;
+\Banco|ALT_INV_registrador~66_q\ <= NOT \Banco|registrador~66_q\;
+\Banco|ALT_INV_registrador~322_q\ <= NOT \Banco|registrador~322_q\;
+\Banco|ALT_INV_registrador~65_q\ <= NOT \Banco|registrador~65_q\;
+\Banco|ALT_INV_registrador~321_q\ <= NOT \Banco|registrador~321_q\;
+\Banco|ALT_INV_registrador~64_q\ <= NOT \Banco|registrador~64_q\;
+\Banco|ALT_INV_registrador~320_q\ <= NOT \Banco|registrador~320_q\;
+\Banco|ALT_INV_registrador~63_q\ <= NOT \Banco|registrador~63_q\;
+\Banco|ALT_INV_registrador~319_q\ <= NOT \Banco|registrador~319_q\;
+\Banco|ALT_INV_registrador~62_q\ <= NOT \Banco|registrador~62_q\;
+\Banco|ALT_INV_registrador~318_q\ <= NOT \Banco|registrador~318_q\;
+\Banco|ALT_INV_registrador~61_q\ <= NOT \Banco|registrador~61_q\;
+\Banco|ALT_INV_registrador~317_q\ <= NOT \Banco|registrador~317_q\;
+\Banco|ALT_INV_registrador~60_q\ <= NOT \Banco|registrador~60_q\;
+\Banco|ALT_INV_registrador~316_q\ <= NOT \Banco|registrador~316_q\;
+\Banco|ALT_INV_registrador~59_q\ <= NOT \Banco|registrador~59_q\;
+\Banco|ALT_INV_registrador~315_q\ <= NOT \Banco|registrador~315_q\;
+\Banco|ALT_INV_registrador~58_q\ <= NOT \Banco|registrador~58_q\;
+\Banco|ALT_INV_registrador~314_q\ <= NOT \Banco|registrador~314_q\;
+\Banco|ALT_INV_registrador~57_q\ <= NOT \Banco|registrador~57_q\;
+\Banco|ALT_INV_registrador~313_q\ <= NOT \Banco|registrador~313_q\;
+\Banco|ALT_INV_registrador~56_q\ <= NOT \Banco|registrador~56_q\;
+\Banco|ALT_INV_registrador~312_q\ <= NOT \Banco|registrador~312_q\;
+\Banco|ALT_INV_registrador~55_q\ <= NOT \Banco|registrador~55_q\;
+\Banco|ALT_INV_registrador~1093_combout\ <= NOT \Banco|registrador~1093_combout\;
+\Banco|ALT_INV_registrador~1092_combout\ <= NOT \Banco|registrador~1092_combout\;
+\Banco|ALT_INV_registrador~1091_combout\ <= NOT \Banco|registrador~1091_combout\;
+\Banco|ALT_INV_registrador~1090_combout\ <= NOT \Banco|registrador~1090_combout\;
+\Banco|ALT_INV_registrador~1089_combout\ <= NOT \Banco|registrador~1089_combout\;
+\Banco|ALT_INV_registrador~1088_combout\ <= NOT \Banco|registrador~1088_combout\;
+\Banco|ALT_INV_registrador~1087_combout\ <= NOT \Banco|registrador~1087_combout\;
+\Banco|ALT_INV_registrador~1086_combout\ <= NOT \Banco|registrador~1086_combout\;
+\Banco|ALT_INV_registrador~1085_combout\ <= NOT \Banco|registrador~1085_combout\;
+\Banco|ALT_INV_registrador~1084_combout\ <= NOT \Banco|registrador~1084_combout\;
+\Banco|ALT_INV_registrador~1083_combout\ <= NOT \Banco|registrador~1083_combout\;
+\Banco|ALT_INV_registrador~1082_combout\ <= NOT \Banco|registrador~1082_combout\;
+\Banco|ALT_INV_registrador~1081_combout\ <= NOT \Banco|registrador~1081_combout\;
+\Banco|ALT_INV_registrador~1080_combout\ <= NOT \Banco|registrador~1080_combout\;
+\Banco|ALT_INV_registrador~1079_combout\ <= NOT \Banco|registrador~1079_combout\;
+\Banco|ALT_INV_registrador~1078_combout\ <= NOT \Banco|registrador~1078_combout\;
+\Banco|ALT_INV_registrador~1077_combout\ <= NOT \Banco|registrador~1077_combout\;
 \Banco|ALT_INV_registrador~1076_combout\ <= NOT \Banco|registrador~1076_combout\;
-\Banco|ALT_INV_registrador~308_q\ <= NOT \Banco|registrador~308_q\;
-\Banco|ALT_INV_registrador~52_q\ <= NOT \Banco|registrador~52_q\;
 \Banco|ALT_INV_registrador~1075_combout\ <= NOT \Banco|registrador~1075_combout\;
-\Banco|ALT_INV_registrador~307_q\ <= NOT \Banco|registrador~307_q\;
-\Banco|ALT_INV_registrador~51_q\ <= NOT \Banco|registrador~51_q\;
 \Banco|ALT_INV_registrador~1074_combout\ <= NOT \Banco|registrador~1074_combout\;
-\Banco|ALT_INV_registrador~306_q\ <= NOT \Banco|registrador~306_q\;
-\Banco|ALT_INV_registrador~50_q\ <= NOT \Banco|registrador~50_q\;
 \Banco|ALT_INV_registrador~1073_combout\ <= NOT \Banco|registrador~1073_combout\;
-\Banco|ALT_INV_registrador~305_q\ <= NOT \Banco|registrador~305_q\;
-\Banco|ALT_INV_registrador~49_q\ <= NOT \Banco|registrador~49_q\;
 \Banco|ALT_INV_registrador~1072_combout\ <= NOT \Banco|registrador~1072_combout\;
-\Banco|ALT_INV_registrador~304_q\ <= NOT \Banco|registrador~304_q\;
-\Banco|ALT_INV_registrador~48_q\ <= NOT \Banco|registrador~48_q\;
 \Banco|ALT_INV_registrador~1071_combout\ <= NOT \Banco|registrador~1071_combout\;
-\Banco|ALT_INV_registrador~303_q\ <= NOT \Banco|registrador~303_q\;
-\Banco|ALT_INV_registrador~47_q\ <= NOT \Banco|registrador~47_q\;
 \Banco|ALT_INV_registrador~1070_combout\ <= NOT \Banco|registrador~1070_combout\;
-\Banco|ALT_INV_registrador~302_q\ <= NOT \Banco|registrador~302_q\;
-\Banco|ALT_INV_registrador~46_q\ <= NOT \Banco|registrador~46_q\;
 \Banco|ALT_INV_registrador~1069_combout\ <= NOT \Banco|registrador~1069_combout\;
-\Banco|ALT_INV_registrador~301_q\ <= NOT \Banco|registrador~301_q\;
-\Banco|ALT_INV_registrador~45_q\ <= NOT \Banco|registrador~45_q\;
 \Banco|ALT_INV_registrador~1068_combout\ <= NOT \Banco|registrador~1068_combout\;
-\Banco|ALT_INV_registrador~300_q\ <= NOT \Banco|registrador~300_q\;
-\Banco|ALT_INV_registrador~44_q\ <= NOT \Banco|registrador~44_q\;
 \Banco|ALT_INV_registrador~1067_combout\ <= NOT \Banco|registrador~1067_combout\;
-\Banco|ALT_INV_registrador~299_q\ <= NOT \Banco|registrador~299_q\;
-\Banco|ALT_INV_registrador~43_q\ <= NOT \Banco|registrador~43_q\;
 \Banco|ALT_INV_registrador~1066_combout\ <= NOT \Banco|registrador~1066_combout\;
-\Banco|ALT_INV_registrador~298_q\ <= NOT \Banco|registrador~298_q\;
-\Banco|ALT_INV_registrador~42_q\ <= NOT \Banco|registrador~42_q\;
 \Banco|ALT_INV_registrador~1065_combout\ <= NOT \Banco|registrador~1065_combout\;
-\Banco|ALT_INV_registrador~297_q\ <= NOT \Banco|registrador~297_q\;
-\Banco|ALT_INV_registrador~41_q\ <= NOT \Banco|registrador~41_q\;
 \Banco|ALT_INV_registrador~1064_combout\ <= NOT \Banco|registrador~1064_combout\;
-\Banco|ALT_INV_registrador~296_q\ <= NOT \Banco|registrador~296_q\;
-\Banco|ALT_INV_registrador~40_q\ <= NOT \Banco|registrador~40_q\;
-\Banco|ALT_INV_registrador~1063_combout\ <= NOT \Banco|registrador~1063_combout\;
-\Banco|ALT_INV_registrador~295_q\ <= NOT \Banco|registrador~295_q\;
-\Banco|ALT_INV_registrador~39_q\ <= NOT \Banco|registrador~39_q\;
-\Banco|ALT_INV_registrador~1062_combout\ <= NOT \Banco|registrador~1062_combout\;
-\Banco|ALT_INV_registrador~294_q\ <= NOT \Banco|registrador~294_q\;
-\Banco|ALT_INV_registrador~38_q\ <= NOT \Banco|registrador~38_q\;
 \ROM1|ALT_INV_memROM~1_combout\ <= NOT \ROM1|memROM~1_combout\;
 \ProgramCounter|ALT_INV_DOUT\(31) <= NOT \ProgramCounter|DOUT\(31);
 \ProgramCounter|ALT_INV_DOUT\(30) <= NOT \ProgramCounter|DOUT\(30);
@@ -737,56 +805,32 @@ ww_devpor <= devpor;
 \ProgramCounter|ALT_INV_DOUT\(10) <= NOT \ProgramCounter|DOUT\(10);
 \ProgramCounter|ALT_INV_DOUT\(9) <= NOT \ProgramCounter|DOUT\(9);
 \ProgramCounter|ALT_INV_DOUT\(8) <= NOT \ProgramCounter|DOUT\(8);
-\Banco|ALT_INV_registrador~1093_combout\ <= NOT \Banco|registrador~1093_combout\;
-\Banco|ALT_INV_registrador~325_q\ <= NOT \Banco|registrador~325_q\;
-\Banco|ALT_INV_registrador~69_q\ <= NOT \Banco|registrador~69_q\;
-\Banco|ALT_INV_registrador~1092_combout\ <= NOT \Banco|registrador~1092_combout\;
-\Banco|ALT_INV_registrador~324_q\ <= NOT \Banco|registrador~324_q\;
-\Banco|ALT_INV_registrador~68_q\ <= NOT \Banco|registrador~68_q\;
-\Banco|ALT_INV_registrador~1091_combout\ <= NOT \Banco|registrador~1091_combout\;
-\Banco|ALT_INV_registrador~323_q\ <= NOT \Banco|registrador~323_q\;
-\Banco|ALT_INV_registrador~67_q\ <= NOT \Banco|registrador~67_q\;
-\Banco|ALT_INV_registrador~1090_combout\ <= NOT \Banco|registrador~1090_combout\;
-\Banco|ALT_INV_registrador~322_q\ <= NOT \Banco|registrador~322_q\;
-\Banco|ALT_INV_registrador~66_q\ <= NOT \Banco|registrador~66_q\;
-\Banco|ALT_INV_registrador~1089_combout\ <= NOT \Banco|registrador~1089_combout\;
-\Banco|ALT_INV_registrador~321_q\ <= NOT \Banco|registrador~321_q\;
-\Banco|ALT_INV_registrador~65_q\ <= NOT \Banco|registrador~65_q\;
-\Banco|ALT_INV_registrador~1088_combout\ <= NOT \Banco|registrador~1088_combout\;
-\Banco|ALT_INV_registrador~320_q\ <= NOT \Banco|registrador~320_q\;
-\Banco|ALT_INV_registrador~64_q\ <= NOT \Banco|registrador~64_q\;
-\Banco|ALT_INV_registrador~1087_combout\ <= NOT \Banco|registrador~1087_combout\;
-\Banco|ALT_INV_registrador~319_q\ <= NOT \Banco|registrador~319_q\;
-\Banco|ALT_INV_registrador~63_q\ <= NOT \Banco|registrador~63_q\;
-\Banco|ALT_INV_registrador~1086_combout\ <= NOT \Banco|registrador~1086_combout\;
-\Banco|ALT_INV_registrador~318_q\ <= NOT \Banco|registrador~318_q\;
-\Banco|ALT_INV_registrador~62_q\ <= NOT \Banco|registrador~62_q\;
-\Banco|ALT_INV_registrador~1085_combout\ <= NOT \Banco|registrador~1085_combout\;
-\Banco|ALT_INV_registrador~317_q\ <= NOT \Banco|registrador~317_q\;
-\Banco|ALT_INV_registrador~61_q\ <= NOT \Banco|registrador~61_q\;
-\Banco|ALT_INV_registrador~1084_combout\ <= NOT \Banco|registrador~1084_combout\;
-\Banco|ALT_INV_registrador~316_q\ <= NOT \Banco|registrador~316_q\;
-\Banco|ALT_INV_registrador~60_q\ <= NOT \Banco|registrador~60_q\;
-\Banco|ALT_INV_registrador~1083_combout\ <= NOT \Banco|registrador~1083_combout\;
-\Banco|ALT_INV_registrador~315_q\ <= NOT \Banco|registrador~315_q\;
-\Banco|ALT_INV_registrador~59_q\ <= NOT \Banco|registrador~59_q\;
-\Banco|ALT_INV_registrador~1082_combout\ <= NOT \Banco|registrador~1082_combout\;
-\Banco|ALT_INV_registrador~314_q\ <= NOT \Banco|registrador~314_q\;
-\Banco|ALT_INV_registrador~58_q\ <= NOT \Banco|registrador~58_q\;
-\Banco|ALT_INV_registrador~1081_combout\ <= NOT \Banco|registrador~1081_combout\;
-\Banco|ALT_INV_registrador~313_q\ <= NOT \Banco|registrador~313_q\;
-\Banco|ALT_INV_registrador~57_q\ <= NOT \Banco|registrador~57_q\;
-\Banco|ALT_INV_registrador~1080_combout\ <= NOT \Banco|registrador~1080_combout\;
-\Banco|ALT_INV_registrador~312_q\ <= NOT \Banco|registrador~312_q\;
-\Banco|ALT_INV_registrador~56_q\ <= NOT \Banco|registrador~56_q\;
-\Banco|ALT_INV_registrador~1079_combout\ <= NOT \Banco|registrador~1079_combout\;
-\Banco|ALT_INV_registrador~311_q\ <= NOT \Banco|registrador~311_q\;
-\Banco|ALT_INV_registrador~55_q\ <= NOT \Banco|registrador~55_q\;
-\Banco|ALT_INV_registrador~1078_combout\ <= NOT \Banco|registrador~1078_combout\;
-\Banco|ALT_INV_registrador~310_q\ <= NOT \Banco|registrador~310_q\;
-\Banco|ALT_INV_registrador~54_q\ <= NOT \Banco|registrador~54_q\;
-\Banco|ALT_INV_registrador~1077_combout\ <= NOT \Banco|registrador~1077_combout\;
-\Banco|ALT_INV_registrador~309_q\ <= NOT \Banco|registrador~309_q\;
+\Banco|ALT_INV_saidaA[31]~31_combout\ <= NOT \Banco|saidaA[31]~31_combout\;
+\Banco|ALT_INV_saidaA[30]~30_combout\ <= NOT \Banco|saidaA[30]~30_combout\;
+\Banco|ALT_INV_saidaA[29]~29_combout\ <= NOT \Banco|saidaA[29]~29_combout\;
+\Banco|ALT_INV_saidaA[28]~28_combout\ <= NOT \Banco|saidaA[28]~28_combout\;
+\Banco|ALT_INV_saidaA[27]~27_combout\ <= NOT \Banco|saidaA[27]~27_combout\;
+\Banco|ALT_INV_saidaA[26]~26_combout\ <= NOT \Banco|saidaA[26]~26_combout\;
+\Banco|ALT_INV_saidaA[25]~25_combout\ <= NOT \Banco|saidaA[25]~25_combout\;
+\Banco|ALT_INV_saidaA[24]~24_combout\ <= NOT \Banco|saidaA[24]~24_combout\;
+\Banco|ALT_INV_saidaA[23]~23_combout\ <= NOT \Banco|saidaA[23]~23_combout\;
+\Banco|ALT_INV_saidaA[22]~22_combout\ <= NOT \Banco|saidaA[22]~22_combout\;
+\Banco|ALT_INV_saidaA[21]~21_combout\ <= NOT \Banco|saidaA[21]~21_combout\;
+\Banco|ALT_INV_saidaA[20]~20_combout\ <= NOT \Banco|saidaA[20]~20_combout\;
+\Banco|ALT_INV_saidaA[19]~19_combout\ <= NOT \Banco|saidaA[19]~19_combout\;
+\Banco|ALT_INV_saidaA[18]~18_combout\ <= NOT \Banco|saidaA[18]~18_combout\;
+\Banco|ALT_INV_saidaA[17]~17_combout\ <= NOT \Banco|saidaA[17]~17_combout\;
+\Banco|ALT_INV_saidaA[16]~16_combout\ <= NOT \Banco|saidaA[16]~16_combout\;
+\Banco|ALT_INV_saidaA[15]~15_combout\ <= NOT \Banco|saidaA[15]~15_combout\;
+\Banco|ALT_INV_saidaA[14]~14_combout\ <= NOT \Banco|saidaA[14]~14_combout\;
+\Banco|ALT_INV_saidaA[13]~13_combout\ <= NOT \Banco|saidaA[13]~13_combout\;
+\Banco|ALT_INV_saidaA[12]~12_combout\ <= NOT \Banco|saidaA[12]~12_combout\;
+\Banco|ALT_INV_saidaA[11]~11_combout\ <= NOT \Banco|saidaA[11]~11_combout\;
+\Banco|ALT_INV_saidaA[10]~10_combout\ <= NOT \Banco|saidaA[10]~10_combout\;
+\Banco|ALT_INV_saidaA[9]~9_combout\ <= NOT \Banco|saidaA[9]~9_combout\;
+\Banco|ALT_INV_saidaA[8]~8_combout\ <= NOT \Banco|saidaA[8]~8_combout\;
+\Banco|ALT_INV_saidaA[7]~7_combout\ <= NOT \Banco|saidaA[7]~7_combout\;
+\Banco|ALT_INV_saidaA[6]~6_combout\ <= NOT \Banco|saidaA[6]~6_combout\;
 
 \saidaULAOUT[0]~output\ : cyclonev_io_obuf
 -- pragma translate_off
@@ -796,7 +840,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~1_sumout\,
+	i => \ULA|Add0~1_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[0]~output_o\);
 
@@ -808,7 +852,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~5_sumout\,
+	i => \ULA|Add0~5_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[1]~output_o\);
 
@@ -820,7 +864,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~9_sumout\,
+	i => \ULA|Add0~9_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[2]~output_o\);
 
@@ -832,7 +876,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~13_sumout\,
+	i => \ULA|Add0~13_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[3]~output_o\);
 
@@ -844,7 +888,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~17_sumout\,
+	i => \ULA|Add0~17_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[4]~output_o\);
 
@@ -856,7 +900,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~21_sumout\,
+	i => \ULA|Add0~21_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[5]~output_o\);
 
@@ -868,7 +912,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~25_sumout\,
+	i => \ULA|Add0~25_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[6]~output_o\);
 
@@ -880,7 +924,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~29_sumout\,
+	i => \ULA|Add0~29_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[7]~output_o\);
 
@@ -892,7 +936,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~33_sumout\,
+	i => \ULA|Add0~33_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[8]~output_o\);
 
@@ -904,7 +948,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~37_sumout\,
+	i => \ULA|Add0~37_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[9]~output_o\);
 
@@ -916,7 +960,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~41_sumout\,
+	i => \ULA|Add0~41_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[10]~output_o\);
 
@@ -928,7 +972,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~45_sumout\,
+	i => \ULA|Add0~45_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[11]~output_o\);
 
@@ -940,7 +984,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~49_sumout\,
+	i => \ULA|Add0~49_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[12]~output_o\);
 
@@ -952,7 +996,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~53_sumout\,
+	i => \ULA|Add0~53_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[13]~output_o\);
 
@@ -964,7 +1008,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~57_sumout\,
+	i => \ULA|Add0~57_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[14]~output_o\);
 
@@ -976,7 +1020,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~61_sumout\,
+	i => \ULA|Add0~61_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[15]~output_o\);
 
@@ -988,7 +1032,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~65_sumout\,
+	i => \ULA|Add0~65_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[16]~output_o\);
 
@@ -1000,7 +1044,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~69_sumout\,
+	i => \ULA|Add0~69_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[17]~output_o\);
 
@@ -1012,7 +1056,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~73_sumout\,
+	i => \ULA|Add0~73_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[18]~output_o\);
 
@@ -1024,7 +1068,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~77_sumout\,
+	i => \ULA|Add0~77_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[19]~output_o\);
 
@@ -1036,7 +1080,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~81_sumout\,
+	i => \ULA|Add0~81_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[20]~output_o\);
 
@@ -1048,7 +1092,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~85_sumout\,
+	i => \ULA|Add0~85_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[21]~output_o\);
 
@@ -1060,7 +1104,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~89_sumout\,
+	i => \ULA|Add0~89_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[22]~output_o\);
 
@@ -1072,7 +1116,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~93_sumout\,
+	i => \ULA|Add0~93_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[23]~output_o\);
 
@@ -1084,7 +1128,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~97_sumout\,
+	i => \ULA|Add0~97_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[24]~output_o\);
 
@@ -1096,7 +1140,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~101_sumout\,
+	i => \ULA|Add0~101_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[25]~output_o\);
 
@@ -1108,7 +1152,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~105_sumout\,
+	i => \ULA|Add0~105_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[26]~output_o\);
 
@@ -1120,7 +1164,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~109_sumout\,
+	i => \ULA|Add0~109_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[27]~output_o\);
 
@@ -1132,7 +1176,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~113_sumout\,
+	i => \ULA|Add0~113_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[28]~output_o\);
 
@@ -1144,7 +1188,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~117_sumout\,
+	i => \ULA|Add0~117_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[29]~output_o\);
 
@@ -1156,7 +1200,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~121_sumout\,
+	i => \ULA|Add0~121_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[30]~output_o\);
 
@@ -1168,7 +1212,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ULA|Add1~125_sumout\,
+	i => \ULA|Add0~125_sumout\,
 	devoe => ww_devoe,
 	o => \saidaULAOUT[31]~output_o\);
 
@@ -1564,7 +1608,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \ROM1|memROM~0_combout\,
 	devoe => ww_devoe,
 	o => \entradaBOUT[0]~output_o\);
 
@@ -1576,7 +1620,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \ROM1|memROM~0_combout\,
 	devoe => ww_devoe,
 	o => \entradaBOUT[1]~output_o\);
 
@@ -1600,7 +1644,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => GND,
+	i => \ROM1|memROM~0_combout\,
 	devoe => ww_devoe,
 	o => \entradaBOUT[3]~output_o\);
 
@@ -2933,20 +2977,6 @@ PORT MAP (
 	dataf => \ProgramCounter|ALT_INV_DOUT\(2),
 	combout => \ROM1|memROM~1_combout\);
 
-\Banco|registrador~38\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~1_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \Banco|registrador~38_q\);
-
 \Banco|registrador~294\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -2955,32 +2985,67 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~1_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~1_sumout\,
+	asdata => \Banco|registrador~294_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~294_q\);
 
-\Banco|registrador~1062\ : cyclonev_lcell_comb
+\Banco|saidaA[0]~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1062_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~38_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~294_q\))))
+-- \Banco|saidaA[0]~0_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~294_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~38_q\,
-	datad => \Banco|ALT_INV_registrador~294_q\,
-	combout => \Banco|registrador~1062_combout\);
+	datac => \Banco|ALT_INV_registrador~294_q\,
+	combout => \Banco|saidaA[0]~0_combout\);
 
-\ULA|Add1~130\ : cyclonev_lcell_comb
+\Banco|registrador~38\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \KEY[0]~input_o\,
+	d => \Banco|registrador~38_q\,
+	asdata => \ULA|Add0~1_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \Banco|registrador~38_q\);
+
+\Banco|registrador~1064\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~130_cout\ = CARRY(( VCC ) + ( VCC ) + ( !VCC ))
+-- \Banco|registrador~1064_combout\ = ( \ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~38_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~38_q\ ) ) ) # ( \ProgramCounter|DOUT\(7) & ( 
+-- !\ProgramCounter|DOUT\(6) & ( \Banco|registrador~38_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( !\ProgramCounter|DOUT\(6) & ( (\Banco|registrador~38_q\ & (((\ProgramCounter|DOUT\(5)) # (\ProgramCounter|DOUT\(4))) # (\ProgramCounter|DOUT\(3)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001010101010101010101010101010101010101010101010101010101010101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Banco|ALT_INV_registrador~38_q\,
+	datab => \ProgramCounter|ALT_INV_DOUT\(3),
+	datac => \ProgramCounter|ALT_INV_DOUT\(4),
+	datad => \ProgramCounter|ALT_INV_DOUT\(5),
+	datae => \ProgramCounter|ALT_INV_DOUT\(7),
+	dataf => \ProgramCounter|ALT_INV_DOUT\(6),
+	combout => \Banco|registrador~1064_combout\);
+
+\ULA|Add0~130\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~130_cout\ = CARRY(( VCC ) + ( VCC ) + ( !VCC ))
 
 -- pragma translate_off
 GENERIC MAP (
@@ -2990,27 +3055,43 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	cin => GND,
-	cout => \ULA|Add1~130_cout\);
+	cout => \ULA|Add0~130_cout\);
 
-\ULA|Add1~1\ : cyclonev_lcell_comb
+\ULA|Add0~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~1_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~1_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1062_combout\)))) ) + ( \ULA|Add1~130_cout\ ))
--- \ULA|Add1~2\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~1_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1062_combout\)))) ) + ( \ULA|Add1~130_cout\ ))
+-- \ULA|Add0~1_sumout\ = SUM(( !\ROM1|memROM~0_combout\ ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1064_combout\) # (\Banco|saidaA[0]~0_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1064_combout\) # 
+-- (\Banco|saidaA[0]~0_combout\)))) ) + ( \ULA|Add0~130_cout\ ))
+-- \ULA|Add0~2\ = CARRY(( !\ROM1|memROM~0_combout\ ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1064_combout\) # (\Banco|saidaA[0]~0_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1064_combout\) # 
+-- (\Banco|saidaA[0]~0_combout\)))) ) + ( \ULA|Add0~130_cout\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "0000000000000000111110001000100000000000000000001010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~1_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1062_combout\,
-	cin => \ULA|Add1~130_cout\,
-	sumout => \ULA|Add1~1_sumout\,
-	cout => \ULA|Add1~2\);
+	datac => \Banco|ALT_INV_saidaA[0]~0_combout\,
+	dataf => \Banco|ALT_INV_registrador~1064_combout\,
+	cin => \ULA|Add0~130_cout\,
+	sumout => \ULA|Add0~1_sumout\,
+	cout => \ULA|Add0~2\);
+
+\ULA|Add0~5_wirecell\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~5_wirecell_combout\ = !\ULA|Add0~5_sumout\
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ULA|ALT_INV_Add0~5_sumout\,
+	combout => \ULA|Add0~5_wirecell_combout\);
 
 \Banco|registrador~39\ : dffeas
 -- pragma translate_off
@@ -3020,8 +3101,9 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~5_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~39_q\,
+	asdata => \ULA|Add0~5_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~39_q\);
@@ -3034,20 +3116,21 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~5_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~5_sumout\,
+	asdata => \Banco|registrador~295_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~295_q\);
 
-\Banco|registrador~1063\ : cyclonev_lcell_comb
+\Banco|registrador~1062\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1063_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~39_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~295_q\))))
+-- \Banco|registrador~1062_combout\ = (!\ROM1|memROM~0_combout\ & (((!\Banco|registrador~39_q\)))) # (\ROM1|memROM~0_combout\ & ((!\ProgramCounter|DOUT\(2)) # ((\Banco|registrador~295_q\))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "1110010011110101111001001111010111100100111101011110010011110101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -3055,41 +3138,26 @@ PORT MAP (
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
 	datac => \Banco|ALT_INV_registrador~39_q\,
 	datad => \Banco|ALT_INV_registrador~295_q\,
-	combout => \Banco|registrador~1063_combout\);
+	combout => \Banco|registrador~1062_combout\);
 
-\ULA|Add1~5\ : cyclonev_lcell_comb
+\ULA|Add0~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~5_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~5_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1063_combout\)))) ) + ( \ULA|Add1~2\ ))
--- \ULA|Add1~6\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~5_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1063_combout\)))) ) + ( \ULA|Add1~2\ ))
+-- \ULA|Add0~5_sumout\ = SUM(( !\ROM1|memROM~0_combout\ ) + ( (\Banco|registrador~1062_combout\ & ((\ROM1|memROM~1_combout\) # (\ROM1|memROM~0_combout\))) ) + ( \ULA|Add0~2\ ))
+-- \ULA|Add0~6\ = CARRY(( !\ROM1|memROM~0_combout\ ) + ( (\Banco|registrador~1062_combout\ & ((\ROM1|memROM~1_combout\) # (\ROM1|memROM~0_combout\))) ) + ( \ULA|Add0~2\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "0000000000000000111111111000100000000000000000001010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~5_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1063_combout\,
-	cin => \ULA|Add1~2\,
-	sumout => \ULA|Add1~5_sumout\,
-	cout => \ULA|Add1~6\);
-
-\Banco|registrador~40\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~9_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \Banco|registrador~40_q\);
+	dataf => \Banco|ALT_INV_registrador~1062_combout\,
+	cin => \ULA|Add0~2\,
+	sumout => \ULA|Add0~5_sumout\,
+	cout => \ULA|Add0~6\);
 
 \Banco|registrador~296\ : dffeas
 -- pragma translate_off
@@ -3099,48 +3167,99 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~9_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~9_sumout\,
+	asdata => \Banco|registrador~296_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~296_q\);
 
-\Banco|registrador~1064\ : cyclonev_lcell_comb
+\Banco|saidaA[2]~2\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1064_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~40_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~296_q\))))
+-- \Banco|saidaA[2]~2_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~296_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~40_q\,
-	datad => \Banco|ALT_INV_registrador~296_q\,
-	combout => \Banco|registrador~1064_combout\);
+	datac => \Banco|ALT_INV_registrador~296_q\,
+	combout => \Banco|saidaA[2]~2_combout\);
 
-\ULA|Add1~9\ : cyclonev_lcell_comb
+\Banco|registrador~40\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \KEY[0]~input_o\,
+	d => \Banco|registrador~40_q\,
+	asdata => \ULA|Add0~9_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \Banco|registrador~40_q\);
+
+\Banco|registrador~1065\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~9_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~9_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1064_combout\)))) ) + ( \ULA|Add1~6\ ))
--- \ULA|Add1~10\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~9_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1064_combout\)))) ) + ( \ULA|Add1~6\ ))
+-- \Banco|registrador~1065_combout\ = ( \ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~40_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~40_q\ ) ) ) # ( \ProgramCounter|DOUT\(7) & ( 
+-- !\ProgramCounter|DOUT\(6) & ( \Banco|registrador~40_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( !\ProgramCounter|DOUT\(6) & ( (\Banco|registrador~40_q\ & (((\ProgramCounter|DOUT\(5)) # (\ProgramCounter|DOUT\(4))) # (\ProgramCounter|DOUT\(3)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "0001010101010101010101010101010101010101010101010101010101010101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Banco|ALT_INV_registrador~40_q\,
+	datab => \ProgramCounter|ALT_INV_DOUT\(3),
+	datac => \ProgramCounter|ALT_INV_DOUT\(4),
+	datad => \ProgramCounter|ALT_INV_DOUT\(5),
+	datae => \ProgramCounter|ALT_INV_DOUT\(7),
+	dataf => \ProgramCounter|ALT_INV_DOUT\(6),
+	combout => \Banco|registrador~1065_combout\);
+
+\ULA|Add0~9\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~9_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1065_combout\) # (\Banco|saidaA[2]~2_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1065_combout\) # 
+-- (\Banco|saidaA[2]~2_combout\)))) ) + ( \ULA|Add0~6\ ))
+-- \ULA|Add0~10\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1065_combout\) # (\Banco|saidaA[2]~2_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1065_combout\) # 
+-- (\Banco|saidaA[2]~2_combout\)))) ) + ( \ULA|Add0~6\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~9_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1064_combout\,
-	cin => \ULA|Add1~6\,
-	sumout => \ULA|Add1~9_sumout\,
-	cout => \ULA|Add1~10\);
+	datac => \Banco|ALT_INV_saidaA[2]~2_combout\,
+	dataf => \Banco|ALT_INV_registrador~1065_combout\,
+	cin => \ULA|Add0~6\,
+	sumout => \ULA|Add0~9_sumout\,
+	cout => \ULA|Add0~10\);
+
+\ULA|Add0~13_wirecell\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~13_wirecell_combout\ = !\ULA|Add0~13_sumout\
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ULA|ALT_INV_Add0~13_sumout\,
+	combout => \ULA|Add0~13_wirecell_combout\);
 
 \Banco|registrador~41\ : dffeas
 -- pragma translate_off
@@ -3150,8 +3269,9 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~13_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~41_q\,
+	asdata => \ULA|Add0~13_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~41_q\);
@@ -3164,20 +3284,21 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~13_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~13_sumout\,
+	asdata => \Banco|registrador~297_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~297_q\);
 
-\Banco|registrador~1065\ : cyclonev_lcell_comb
+\Banco|registrador~1063\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1065_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~41_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~297_q\))))
+-- \Banco|registrador~1063_combout\ = (!\ROM1|memROM~0_combout\ & (((!\Banco|registrador~41_q\)))) # (\ROM1|memROM~0_combout\ & ((!\ProgramCounter|DOUT\(2)) # ((\Banco|registrador~297_q\))))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "1110010011110101111001001111010111100100111101011110010011110101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
@@ -3185,41 +3306,26 @@ PORT MAP (
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
 	datac => \Banco|ALT_INV_registrador~41_q\,
 	datad => \Banco|ALT_INV_registrador~297_q\,
-	combout => \Banco|registrador~1065_combout\);
+	combout => \Banco|registrador~1063_combout\);
 
-\ULA|Add1~13\ : cyclonev_lcell_comb
+\ULA|Add0~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~13_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~13_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1065_combout\)))) ) + ( \ULA|Add1~10\ ))
--- \ULA|Add1~14\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~13_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1065_combout\)))) ) + ( \ULA|Add1~10\ ))
+-- \ULA|Add0~13_sumout\ = SUM(( !\ROM1|memROM~0_combout\ ) + ( (\Banco|registrador~1063_combout\ & ((\ROM1|memROM~1_combout\) # (\ROM1|memROM~0_combout\))) ) + ( \ULA|Add0~10\ ))
+-- \ULA|Add0~14\ = CARRY(( !\ROM1|memROM~0_combout\ ) + ( (\Banco|registrador~1063_combout\ & ((\ROM1|memROM~1_combout\) # (\ROM1|memROM~0_combout\))) ) + ( \ULA|Add0~10\ ))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "0000000000000000111111111000100000000000000000001010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~13_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1065_combout\,
-	cin => \ULA|Add1~10\,
-	sumout => \ULA|Add1~13_sumout\,
-	cout => \ULA|Add1~14\);
-
-\Banco|registrador~42\ : dffeas
--- pragma translate_off
-GENERIC MAP (
-	is_wysiwyg => "true",
-	power_up => "low")
--- pragma translate_on
-PORT MAP (
-	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~17_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor,
-	q => \Banco|registrador~42_q\);
+	dataf => \Banco|ALT_INV_registrador~1063_combout\,
+	cin => \ULA|Add0~10\,
+	sumout => \ULA|Add0~13_sumout\,
+	cout => \ULA|Add0~14\);
 
 \Banco|registrador~298\ : dffeas
 -- pragma translate_off
@@ -3229,50 +3335,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~17_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~17_sumout\,
+	asdata => \Banco|registrador~298_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~298_q\);
 
-\Banco|registrador~1066\ : cyclonev_lcell_comb
+\Banco|saidaA[4]~4\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1066_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~42_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~298_q\))))
+-- \Banco|saidaA[4]~4_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~298_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~42_q\,
-	datad => \Banco|ALT_INV_registrador~298_q\,
-	combout => \Banco|registrador~1066_combout\);
+	datac => \Banco|ALT_INV_registrador~298_q\,
+	combout => \Banco|saidaA[4]~4_combout\);
 
-\ULA|Add1~17\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~17_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~17_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1066_combout\)))) ) + ( \ULA|Add1~14\ ))
--- \ULA|Add1~18\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~17_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1066_combout\)))) ) + ( \ULA|Add1~14\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~17_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1066_combout\,
-	cin => \ULA|Add1~14\,
-	sumout => \ULA|Add1~17_sumout\,
-	cout => \ULA|Add1~18\);
-
-\Banco|registrador~43\ : dffeas
+\Banco|registrador~42\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3280,11 +3366,54 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~21_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~42_q\,
+	asdata => \ULA|Add0~17_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~43_q\);
+	q => \Banco|registrador~42_q\);
+
+\Banco|registrador~1066\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1066_combout\ = ( \ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~42_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~42_q\ ) ) ) # ( \ProgramCounter|DOUT\(7) & ( 
+-- !\ProgramCounter|DOUT\(6) & ( \Banco|registrador~42_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( !\ProgramCounter|DOUT\(6) & ( (\Banco|registrador~42_q\ & (((\ProgramCounter|DOUT\(5)) # (\ProgramCounter|DOUT\(4))) # (\ProgramCounter|DOUT\(3)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001010101010101010101010101010101010101010101010101010101010101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Banco|ALT_INV_registrador~42_q\,
+	datab => \ProgramCounter|ALT_INV_DOUT\(3),
+	datac => \ProgramCounter|ALT_INV_DOUT\(4),
+	datad => \ProgramCounter|ALT_INV_DOUT\(5),
+	datae => \ProgramCounter|ALT_INV_DOUT\(7),
+	dataf => \ProgramCounter|ALT_INV_DOUT\(6),
+	combout => \Banco|registrador~1066_combout\);
+
+\ULA|Add0~17\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~17_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1066_combout\) # (\Banco|saidaA[4]~4_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1066_combout\) # 
+-- (\Banco|saidaA[4]~4_combout\)))) ) + ( \ULA|Add0~14\ ))
+-- \ULA|Add0~18\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1066_combout\) # (\Banco|saidaA[4]~4_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1066_combout\) # 
+-- (\Banco|saidaA[4]~4_combout\)))) ) + ( \ULA|Add0~14\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[4]~4_combout\,
+	dataf => \Banco|ALT_INV_registrador~1066_combout\,
+	cin => \ULA|Add0~14\,
+	sumout => \ULA|Add0~17_sumout\,
+	cout => \ULA|Add0~18\);
 
 \Banco|registrador~299\ : dffeas
 -- pragma translate_off
@@ -3294,50 +3423,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~21_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~21_sumout\,
+	asdata => \Banco|registrador~299_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~299_q\);
 
-\Banco|registrador~1067\ : cyclonev_lcell_comb
+\Banco|saidaA[5]~5\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1067_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~43_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~299_q\))))
+-- \Banco|saidaA[5]~5_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~299_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~43_q\,
-	datad => \Banco|ALT_INV_registrador~299_q\,
-	combout => \Banco|registrador~1067_combout\);
+	datac => \Banco|ALT_INV_registrador~299_q\,
+	combout => \Banco|saidaA[5]~5_combout\);
 
-\ULA|Add1~21\ : cyclonev_lcell_comb
+\ULA|Add0~21_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~21_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~21_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1067_combout\)))) ) + ( \ULA|Add1~18\ ))
--- \ULA|Add1~22\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~21_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1067_combout\)))) ) + ( \ULA|Add1~18\ ))
+-- \ULA|Add0~21_wirecell_combout\ = !\ULA|Add0~21_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~21_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1067_combout\,
-	cin => \ULA|Add1~18\,
-	sumout => \ULA|Add1~21_sumout\,
-	cout => \ULA|Add1~22\);
+	dataa => \ULA|ALT_INV_Add0~21_sumout\,
+	combout => \ULA|Add0~21_wirecell_combout\);
 
-\Banco|registrador~44\ : dffeas
+\Banco|registrador~43\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3345,11 +3468,54 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~25_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~43_q\,
+	asdata => \ULA|Add0~21_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~44_q\);
+	q => \Banco|registrador~43_q\);
+
+\Banco|registrador~1067\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1067_combout\ = ( \ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( !\Banco|registrador~43_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( !\Banco|registrador~43_q\ ) ) ) # ( \ProgramCounter|DOUT\(7) & ( 
+-- !\ProgramCounter|DOUT\(6) & ( !\Banco|registrador~43_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( !\ProgramCounter|DOUT\(6) & ( (!\Banco|registrador~43_q\ & (((\ProgramCounter|DOUT\(5)) # (\ProgramCounter|DOUT\(4))) # (\ProgramCounter|DOUT\(3)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0010101010101010101010101010101010101010101010101010101010101010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Banco|ALT_INV_registrador~43_q\,
+	datab => \ProgramCounter|ALT_INV_DOUT\(3),
+	datac => \ProgramCounter|ALT_INV_DOUT\(4),
+	datad => \ProgramCounter|ALT_INV_DOUT\(5),
+	datae => \ProgramCounter|ALT_INV_DOUT\(7),
+	dataf => \ProgramCounter|ALT_INV_DOUT\(6),
+	combout => \Banco|registrador~1067_combout\);
+
+\ULA|Add0~21\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~21_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1067_combout\) # (\Banco|saidaA[5]~5_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1067_combout\) # 
+-- (\Banco|saidaA[5]~5_combout\)))) ) + ( \ULA|Add0~18\ ))
+-- \ULA|Add0~22\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1067_combout\) # (\Banco|saidaA[5]~5_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1067_combout\) # 
+-- (\Banco|saidaA[5]~5_combout\)))) ) + ( \ULA|Add0~18\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[5]~5_combout\,
+	dataf => \Banco|ALT_INV_registrador~1067_combout\,
+	cin => \ULA|Add0~18\,
+	sumout => \ULA|Add0~21_sumout\,
+	cout => \ULA|Add0~22\);
 
 \Banco|registrador~300\ : dffeas
 -- pragma translate_off
@@ -3359,50 +3525,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~25_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~25_sumout\,
+	asdata => \Banco|registrador~300_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~300_q\);
 
-\Banco|registrador~1068\ : cyclonev_lcell_comb
+\Banco|saidaA[6]~6\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1068_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~44_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~300_q\))))
+-- \Banco|saidaA[6]~6_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~300_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~44_q\,
-	datad => \Banco|ALT_INV_registrador~300_q\,
-	combout => \Banco|registrador~1068_combout\);
+	datac => \Banco|ALT_INV_registrador~300_q\,
+	combout => \Banco|saidaA[6]~6_combout\);
 
-\ULA|Add1~25\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~25_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~25_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1068_combout\)))) ) + ( \ULA|Add1~22\ ))
--- \ULA|Add1~26\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~25_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1068_combout\)))) ) + ( \ULA|Add1~22\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~25_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1068_combout\,
-	cin => \ULA|Add1~22\,
-	sumout => \ULA|Add1~25_sumout\,
-	cout => \ULA|Add1~26\);
-
-\Banco|registrador~45\ : dffeas
+\Banco|registrador~44\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3410,11 +3556,54 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~29_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~44_q\,
+	asdata => \ULA|Add0~25_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~45_q\);
+	q => \Banco|registrador~44_q\);
+
+\Banco|registrador~1068\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1068_combout\ = ( \ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~44_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~44_q\ ) ) ) # ( \ProgramCounter|DOUT\(7) & ( 
+-- !\ProgramCounter|DOUT\(6) & ( \Banco|registrador~44_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( !\ProgramCounter|DOUT\(6) & ( (\Banco|registrador~44_q\ & (((\ProgramCounter|DOUT\(5)) # (\ProgramCounter|DOUT\(4))) # (\ProgramCounter|DOUT\(3)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001010101010101010101010101010101010101010101010101010101010101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Banco|ALT_INV_registrador~44_q\,
+	datab => \ProgramCounter|ALT_INV_DOUT\(3),
+	datac => \ProgramCounter|ALT_INV_DOUT\(4),
+	datad => \ProgramCounter|ALT_INV_DOUT\(5),
+	datae => \ProgramCounter|ALT_INV_DOUT\(7),
+	dataf => \ProgramCounter|ALT_INV_DOUT\(6),
+	combout => \Banco|registrador~1068_combout\);
+
+\ULA|Add0~25\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~25_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1068_combout\) # (\Banco|saidaA[6]~6_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1068_combout\) # 
+-- (\Banco|saidaA[6]~6_combout\)))) ) + ( \ULA|Add0~22\ ))
+-- \ULA|Add0~26\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1068_combout\) # (\Banco|saidaA[6]~6_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1068_combout\) # 
+-- (\Banco|saidaA[6]~6_combout\)))) ) + ( \ULA|Add0~22\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[6]~6_combout\,
+	dataf => \Banco|ALT_INV_registrador~1068_combout\,
+	cin => \ULA|Add0~22\,
+	sumout => \ULA|Add0~25_sumout\,
+	cout => \ULA|Add0~26\);
 
 \Banco|registrador~301\ : dffeas
 -- pragma translate_off
@@ -3424,50 +3613,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~29_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~29_sumout\,
+	asdata => \Banco|registrador~301_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~301_q\);
 
-\Banco|registrador~1069\ : cyclonev_lcell_comb
+\Banco|saidaA[7]~7\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1069_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~45_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~301_q\))))
+-- \Banco|saidaA[7]~7_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~301_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~45_q\,
-	datad => \Banco|ALT_INV_registrador~301_q\,
-	combout => \Banco|registrador~1069_combout\);
+	datac => \Banco|ALT_INV_registrador~301_q\,
+	combout => \Banco|saidaA[7]~7_combout\);
 
-\ULA|Add1~29\ : cyclonev_lcell_comb
+\ULA|Add0~29_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~29_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~29_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1069_combout\)))) ) + ( \ULA|Add1~26\ ))
--- \ULA|Add1~30\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~29_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1069_combout\)))) ) + ( \ULA|Add1~26\ ))
+-- \ULA|Add0~29_wirecell_combout\ = !\ULA|Add0~29_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~29_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1069_combout\,
-	cin => \ULA|Add1~26\,
-	sumout => \ULA|Add1~29_sumout\,
-	cout => \ULA|Add1~30\);
+	dataa => \ULA|ALT_INV_Add0~29_sumout\,
+	combout => \ULA|Add0~29_wirecell_combout\);
 
-\Banco|registrador~46\ : dffeas
+\Banco|registrador~45\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3475,11 +3658,54 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~33_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~45_q\,
+	asdata => \ULA|Add0~29_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~46_q\);
+	q => \Banco|registrador~45_q\);
+
+\Banco|registrador~1069\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1069_combout\ = ( \ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( !\Banco|registrador~45_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( !\Banco|registrador~45_q\ ) ) ) # ( \ProgramCounter|DOUT\(7) & ( 
+-- !\ProgramCounter|DOUT\(6) & ( !\Banco|registrador~45_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( !\ProgramCounter|DOUT\(6) & ( (!\Banco|registrador~45_q\ & (((\ProgramCounter|DOUT\(5)) # (\ProgramCounter|DOUT\(4))) # (\ProgramCounter|DOUT\(3)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0010101010101010101010101010101010101010101010101010101010101010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Banco|ALT_INV_registrador~45_q\,
+	datab => \ProgramCounter|ALT_INV_DOUT\(3),
+	datac => \ProgramCounter|ALT_INV_DOUT\(4),
+	datad => \ProgramCounter|ALT_INV_DOUT\(5),
+	datae => \ProgramCounter|ALT_INV_DOUT\(7),
+	dataf => \ProgramCounter|ALT_INV_DOUT\(6),
+	combout => \Banco|registrador~1069_combout\);
+
+\ULA|Add0~29\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~29_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1069_combout\) # (\Banco|saidaA[7]~7_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1069_combout\) # 
+-- (\Banco|saidaA[7]~7_combout\)))) ) + ( \ULA|Add0~26\ ))
+-- \ULA|Add0~30\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1069_combout\) # (\Banco|saidaA[7]~7_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1069_combout\) # 
+-- (\Banco|saidaA[7]~7_combout\)))) ) + ( \ULA|Add0~26\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[7]~7_combout\,
+	dataf => \Banco|ALT_INV_registrador~1069_combout\,
+	cin => \ULA|Add0~26\,
+	sumout => \ULA|Add0~29_sumout\,
+	cout => \ULA|Add0~30\);
 
 \Banco|registrador~302\ : dffeas
 -- pragma translate_off
@@ -3489,50 +3715,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~33_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~33_sumout\,
+	asdata => \Banco|registrador~302_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~302_q\);
 
-\Banco|registrador~1070\ : cyclonev_lcell_comb
+\Banco|saidaA[8]~8\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1070_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~46_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~302_q\))))
+-- \Banco|saidaA[8]~8_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~302_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~46_q\,
-	datad => \Banco|ALT_INV_registrador~302_q\,
-	combout => \Banco|registrador~1070_combout\);
+	datac => \Banco|ALT_INV_registrador~302_q\,
+	combout => \Banco|saidaA[8]~8_combout\);
 
-\ULA|Add1~33\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~33_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~33_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1070_combout\)))) ) + ( \ULA|Add1~30\ ))
--- \ULA|Add1~34\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~33_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1070_combout\)))) ) + ( \ULA|Add1~30\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~33_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1070_combout\,
-	cin => \ULA|Add1~30\,
-	sumout => \ULA|Add1~33_sumout\,
-	cout => \ULA|Add1~34\);
-
-\Banco|registrador~47\ : dffeas
+\Banco|registrador~46\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3540,11 +3746,54 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~37_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~46_q\,
+	asdata => \ULA|Add0~33_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~47_q\);
+	q => \Banco|registrador~46_q\);
+
+\Banco|registrador~1070\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1070_combout\ = ( \ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~46_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~46_q\ ) ) ) # ( \ProgramCounter|DOUT\(7) & ( 
+-- !\ProgramCounter|DOUT\(6) & ( \Banco|registrador~46_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( !\ProgramCounter|DOUT\(6) & ( (\Banco|registrador~46_q\ & (((\ProgramCounter|DOUT\(5)) # (\ProgramCounter|DOUT\(4))) # (\ProgramCounter|DOUT\(3)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001010101010101010101010101010101010101010101010101010101010101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Banco|ALT_INV_registrador~46_q\,
+	datab => \ProgramCounter|ALT_INV_DOUT\(3),
+	datac => \ProgramCounter|ALT_INV_DOUT\(4),
+	datad => \ProgramCounter|ALT_INV_DOUT\(5),
+	datae => \ProgramCounter|ALT_INV_DOUT\(7),
+	dataf => \ProgramCounter|ALT_INV_DOUT\(6),
+	combout => \Banco|registrador~1070_combout\);
+
+\ULA|Add0~33\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~33_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1070_combout\) # (\Banco|saidaA[8]~8_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1070_combout\) # 
+-- (\Banco|saidaA[8]~8_combout\)))) ) + ( \ULA|Add0~30\ ))
+-- \ULA|Add0~34\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1070_combout\) # (\Banco|saidaA[8]~8_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1070_combout\) # 
+-- (\Banco|saidaA[8]~8_combout\)))) ) + ( \ULA|Add0~30\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[8]~8_combout\,
+	dataf => \Banco|ALT_INV_registrador~1070_combout\,
+	cin => \ULA|Add0~30\,
+	sumout => \ULA|Add0~33_sumout\,
+	cout => \ULA|Add0~34\);
 
 \Banco|registrador~303\ : dffeas
 -- pragma translate_off
@@ -3554,50 +3803,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~37_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~37_sumout\,
+	asdata => \Banco|registrador~303_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~303_q\);
 
-\Banco|registrador~1071\ : cyclonev_lcell_comb
+\Banco|saidaA[9]~9\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1071_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~47_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~303_q\))))
+-- \Banco|saidaA[9]~9_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~303_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~47_q\,
-	datad => \Banco|ALT_INV_registrador~303_q\,
-	combout => \Banco|registrador~1071_combout\);
+	datac => \Banco|ALT_INV_registrador~303_q\,
+	combout => \Banco|saidaA[9]~9_combout\);
 
-\ULA|Add1~37\ : cyclonev_lcell_comb
+\ULA|Add0~37_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~37_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~37_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1071_combout\)))) ) + ( \ULA|Add1~34\ ))
--- \ULA|Add1~38\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~37_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1071_combout\)))) ) + ( \ULA|Add1~34\ ))
+-- \ULA|Add0~37_wirecell_combout\ = !\ULA|Add0~37_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~37_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1071_combout\,
-	cin => \ULA|Add1~34\,
-	sumout => \ULA|Add1~37_sumout\,
-	cout => \ULA|Add1~38\);
+	dataa => \ULA|ALT_INV_Add0~37_sumout\,
+	combout => \ULA|Add0~37_wirecell_combout\);
 
-\Banco|registrador~48\ : dffeas
+\Banco|registrador~47\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3605,11 +3848,54 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~41_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~47_q\,
+	asdata => \ULA|Add0~37_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~48_q\);
+	q => \Banco|registrador~47_q\);
+
+\Banco|registrador~1071\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1071_combout\ = ( \ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( !\Banco|registrador~47_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( !\Banco|registrador~47_q\ ) ) ) # ( \ProgramCounter|DOUT\(7) & ( 
+-- !\ProgramCounter|DOUT\(6) & ( !\Banco|registrador~47_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( !\ProgramCounter|DOUT\(6) & ( (!\Banco|registrador~47_q\ & (((\ProgramCounter|DOUT\(5)) # (\ProgramCounter|DOUT\(4))) # (\ProgramCounter|DOUT\(3)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0010101010101010101010101010101010101010101010101010101010101010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Banco|ALT_INV_registrador~47_q\,
+	datab => \ProgramCounter|ALT_INV_DOUT\(3),
+	datac => \ProgramCounter|ALT_INV_DOUT\(4),
+	datad => \ProgramCounter|ALT_INV_DOUT\(5),
+	datae => \ProgramCounter|ALT_INV_DOUT\(7),
+	dataf => \ProgramCounter|ALT_INV_DOUT\(6),
+	combout => \Banco|registrador~1071_combout\);
+
+\ULA|Add0~37\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~37_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1071_combout\) # (\Banco|saidaA[9]~9_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1071_combout\) # 
+-- (\Banco|saidaA[9]~9_combout\)))) ) + ( \ULA|Add0~34\ ))
+-- \ULA|Add0~38\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1071_combout\) # (\Banco|saidaA[9]~9_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1071_combout\) # 
+-- (\Banco|saidaA[9]~9_combout\)))) ) + ( \ULA|Add0~34\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[9]~9_combout\,
+	dataf => \Banco|ALT_INV_registrador~1071_combout\,
+	cin => \ULA|Add0~34\,
+	sumout => \ULA|Add0~37_sumout\,
+	cout => \ULA|Add0~38\);
 
 \Banco|registrador~304\ : dffeas
 -- pragma translate_off
@@ -3619,50 +3905,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~41_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~41_sumout\,
+	asdata => \Banco|registrador~304_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~304_q\);
 
-\Banco|registrador~1072\ : cyclonev_lcell_comb
+\Banco|saidaA[10]~10\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1072_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~48_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~304_q\))))
+-- \Banco|saidaA[10]~10_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~304_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~48_q\,
-	datad => \Banco|ALT_INV_registrador~304_q\,
-	combout => \Banco|registrador~1072_combout\);
+	datac => \Banco|ALT_INV_registrador~304_q\,
+	combout => \Banco|saidaA[10]~10_combout\);
 
-\ULA|Add1~41\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~41_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~41_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1072_combout\)))) ) + ( \ULA|Add1~38\ ))
--- \ULA|Add1~42\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~41_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1072_combout\)))) ) + ( \ULA|Add1~38\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~41_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1072_combout\,
-	cin => \ULA|Add1~38\,
-	sumout => \ULA|Add1~41_sumout\,
-	cout => \ULA|Add1~42\);
-
-\Banco|registrador~49\ : dffeas
+\Banco|registrador~48\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3670,11 +3936,54 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~45_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~48_q\,
+	asdata => \ULA|Add0~41_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~49_q\);
+	q => \Banco|registrador~48_q\);
+
+\Banco|registrador~1072\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1072_combout\ = ( \ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~48_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( \Banco|registrador~48_q\ ) ) ) # ( \ProgramCounter|DOUT\(7) & ( 
+-- !\ProgramCounter|DOUT\(6) & ( \Banco|registrador~48_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( !\ProgramCounter|DOUT\(6) & ( (\Banco|registrador~48_q\ & (((\ProgramCounter|DOUT\(5)) # (\ProgramCounter|DOUT\(4))) # (\ProgramCounter|DOUT\(3)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0001010101010101010101010101010101010101010101010101010101010101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Banco|ALT_INV_registrador~48_q\,
+	datab => \ProgramCounter|ALT_INV_DOUT\(3),
+	datac => \ProgramCounter|ALT_INV_DOUT\(4),
+	datad => \ProgramCounter|ALT_INV_DOUT\(5),
+	datae => \ProgramCounter|ALT_INV_DOUT\(7),
+	dataf => \ProgramCounter|ALT_INV_DOUT\(6),
+	combout => \Banco|registrador~1072_combout\);
+
+\ULA|Add0~41\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~41_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1072_combout\) # (\Banco|saidaA[10]~10_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1072_combout\) # 
+-- (\Banco|saidaA[10]~10_combout\)))) ) + ( \ULA|Add0~38\ ))
+-- \ULA|Add0~42\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1072_combout\) # (\Banco|saidaA[10]~10_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1072_combout\) # 
+-- (\Banco|saidaA[10]~10_combout\)))) ) + ( \ULA|Add0~38\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[10]~10_combout\,
+	dataf => \Banco|ALT_INV_registrador~1072_combout\,
+	cin => \ULA|Add0~38\,
+	sumout => \ULA|Add0~41_sumout\,
+	cout => \ULA|Add0~42\);
 
 \Banco|registrador~305\ : dffeas
 -- pragma translate_off
@@ -3684,50 +3993,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~45_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~45_sumout\,
+	asdata => \Banco|registrador~305_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~305_q\);
 
-\Banco|registrador~1073\ : cyclonev_lcell_comb
+\Banco|saidaA[11]~11\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1073_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~49_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~305_q\))))
+-- \Banco|saidaA[11]~11_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~305_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~49_q\,
-	datad => \Banco|ALT_INV_registrador~305_q\,
-	combout => \Banco|registrador~1073_combout\);
+	datac => \Banco|ALT_INV_registrador~305_q\,
+	combout => \Banco|saidaA[11]~11_combout\);
 
-\ULA|Add1~45\ : cyclonev_lcell_comb
+\ULA|Add0~45_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~45_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~45_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1073_combout\)))) ) + ( \ULA|Add1~42\ ))
--- \ULA|Add1~46\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~45_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1073_combout\)))) ) + ( \ULA|Add1~42\ ))
+-- \ULA|Add0~45_wirecell_combout\ = !\ULA|Add0~45_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~45_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1073_combout\,
-	cin => \ULA|Add1~42\,
-	sumout => \ULA|Add1~45_sumout\,
-	cout => \ULA|Add1~46\);
+	dataa => \ULA|ALT_INV_Add0~45_sumout\,
+	combout => \ULA|Add0~45_wirecell_combout\);
 
-\Banco|registrador~50\ : dffeas
+\Banco|registrador~49\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3735,11 +4038,54 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~49_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~49_q\,
+	asdata => \ULA|Add0~45_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~50_q\);
+	q => \Banco|registrador~49_q\);
+
+\Banco|registrador~1073\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1073_combout\ = ( \ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( !\Banco|registrador~49_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( \ProgramCounter|DOUT\(6) & ( !\Banco|registrador~49_q\ ) ) ) # ( \ProgramCounter|DOUT\(7) & ( 
+-- !\ProgramCounter|DOUT\(6) & ( !\Banco|registrador~49_q\ ) ) ) # ( !\ProgramCounter|DOUT\(7) & ( !\ProgramCounter|DOUT\(6) & ( (!\Banco|registrador~49_q\ & (((\ProgramCounter|DOUT\(5)) # (\ProgramCounter|DOUT\(4))) # (\ProgramCounter|DOUT\(3)))) ) ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0010101010101010101010101010101010101010101010101010101010101010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \Banco|ALT_INV_registrador~49_q\,
+	datab => \ProgramCounter|ALT_INV_DOUT\(3),
+	datac => \ProgramCounter|ALT_INV_DOUT\(4),
+	datad => \ProgramCounter|ALT_INV_DOUT\(5),
+	datae => \ProgramCounter|ALT_INV_DOUT\(7),
+	dataf => \ProgramCounter|ALT_INV_DOUT\(6),
+	combout => \Banco|registrador~1073_combout\);
+
+\ULA|Add0~45\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~45_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1073_combout\) # (\Banco|saidaA[11]~11_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1073_combout\) # 
+-- (\Banco|saidaA[11]~11_combout\)))) ) + ( \ULA|Add0~42\ ))
+-- \ULA|Add0~46\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1073_combout\) # (\Banco|saidaA[11]~11_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1073_combout\) # 
+-- (\Banco|saidaA[11]~11_combout\)))) ) + ( \ULA|Add0~42\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[11]~11_combout\,
+	dataf => \Banco|ALT_INV_registrador~1073_combout\,
+	cin => \ULA|Add0~42\,
+	sumout => \ULA|Add0~45_sumout\,
+	cout => \ULA|Add0~46\);
 
 \Banco|registrador~306\ : dffeas
 -- pragma translate_off
@@ -3749,50 +4095,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~49_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~49_sumout\,
+	asdata => \Banco|registrador~306_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~306_q\);
 
-\Banco|registrador~1074\ : cyclonev_lcell_comb
+\Banco|saidaA[12]~12\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1074_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~50_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~306_q\))))
+-- \Banco|saidaA[12]~12_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~306_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~50_q\,
-	datad => \Banco|ALT_INV_registrador~306_q\,
-	combout => \Banco|registrador~1074_combout\);
+	datac => \Banco|ALT_INV_registrador~306_q\,
+	combout => \Banco|saidaA[12]~12_combout\);
 
-\ULA|Add1~49\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~49_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~49_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1074_combout\)))) ) + ( \ULA|Add1~46\ ))
--- \ULA|Add1~50\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~49_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1074_combout\)))) ) + ( \ULA|Add1~46\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~49_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1074_combout\,
-	cin => \ULA|Add1~46\,
-	sumout => \ULA|Add1~49_sumout\,
-	cout => \ULA|Add1~50\);
-
-\Banco|registrador~51\ : dffeas
+\Banco|registrador~50\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3800,11 +4126,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~53_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~50_q\,
+	asdata => \ULA|Add0~49_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~51_q\);
+	q => \Banco|registrador~50_q\);
+
+\Banco|registrador~1074\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1074_combout\ = (!\ROM1|memROM~0_combout\ & \Banco|registrador~50_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000101000001010000010100000101000001010000010100000101000001010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~50_q\,
+	combout => \Banco|registrador~1074_combout\);
+
+\ULA|Add0~49\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~49_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1074_combout\) # (\Banco|saidaA[12]~12_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1074_combout\) # 
+-- (\Banco|saidaA[12]~12_combout\)))) ) + ( \ULA|Add0~46\ ))
+-- \ULA|Add0~50\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1074_combout\) # (\Banco|saidaA[12]~12_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1074_combout\) # 
+-- (\Banco|saidaA[12]~12_combout\)))) ) + ( \ULA|Add0~46\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[12]~12_combout\,
+	dataf => \Banco|ALT_INV_registrador~1074_combout\,
+	cin => \ULA|Add0~46\,
+	sumout => \ULA|Add0~49_sumout\,
+	cout => \ULA|Add0~50\);
 
 \Banco|registrador~307\ : dffeas
 -- pragma translate_off
@@ -3814,50 +4178,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~53_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~53_sumout\,
+	asdata => \Banco|registrador~307_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~307_q\);
 
-\Banco|registrador~1075\ : cyclonev_lcell_comb
+\Banco|saidaA[13]~13\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1075_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~51_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~307_q\))))
+-- \Banco|saidaA[13]~13_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~307_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~51_q\,
-	datad => \Banco|ALT_INV_registrador~307_q\,
-	combout => \Banco|registrador~1075_combout\);
+	datac => \Banco|ALT_INV_registrador~307_q\,
+	combout => \Banco|saidaA[13]~13_combout\);
 
-\ULA|Add1~53\ : cyclonev_lcell_comb
+\ULA|Add0~53_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~53_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~53_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1075_combout\)))) ) + ( \ULA|Add1~50\ ))
--- \ULA|Add1~54\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~53_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1075_combout\)))) ) + ( \ULA|Add1~50\ ))
+-- \ULA|Add0~53_wirecell_combout\ = !\ULA|Add0~53_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~53_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1075_combout\,
-	cin => \ULA|Add1~50\,
-	sumout => \ULA|Add1~53_sumout\,
-	cout => \ULA|Add1~54\);
+	dataa => \ULA|ALT_INV_Add0~53_sumout\,
+	combout => \ULA|Add0~53_wirecell_combout\);
 
-\Banco|registrador~52\ : dffeas
+\Banco|registrador~51\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3865,11 +4223,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~57_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~51_q\,
+	asdata => \ULA|Add0~53_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~52_q\);
+	q => \Banco|registrador~51_q\);
+
+\Banco|registrador~1075\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1075_combout\ = (!\ROM1|memROM~0_combout\ & !\Banco|registrador~51_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010000010100000101000001010000010100000101000001010000010100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~51_q\,
+	combout => \Banco|registrador~1075_combout\);
+
+\ULA|Add0~53\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~53_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1075_combout\) # (\Banco|saidaA[13]~13_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1075_combout\) # 
+-- (\Banco|saidaA[13]~13_combout\)))) ) + ( \ULA|Add0~50\ ))
+-- \ULA|Add0~54\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1075_combout\) # (\Banco|saidaA[13]~13_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1075_combout\) # 
+-- (\Banco|saidaA[13]~13_combout\)))) ) + ( \ULA|Add0~50\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[13]~13_combout\,
+	dataf => \Banco|ALT_INV_registrador~1075_combout\,
+	cin => \ULA|Add0~50\,
+	sumout => \ULA|Add0~53_sumout\,
+	cout => \ULA|Add0~54\);
 
 \Banco|registrador~308\ : dffeas
 -- pragma translate_off
@@ -3879,50 +4275,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~57_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~57_sumout\,
+	asdata => \Banco|registrador~308_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~308_q\);
 
-\Banco|registrador~1076\ : cyclonev_lcell_comb
+\Banco|saidaA[14]~14\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1076_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~52_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~308_q\))))
+-- \Banco|saidaA[14]~14_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~308_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~52_q\,
-	datad => \Banco|ALT_INV_registrador~308_q\,
-	combout => \Banco|registrador~1076_combout\);
+	datac => \Banco|ALT_INV_registrador~308_q\,
+	combout => \Banco|saidaA[14]~14_combout\);
 
-\ULA|Add1~57\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~57_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~57_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1076_combout\)))) ) + ( \ULA|Add1~54\ ))
--- \ULA|Add1~58\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~57_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1076_combout\)))) ) + ( \ULA|Add1~54\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~57_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1076_combout\,
-	cin => \ULA|Add1~54\,
-	sumout => \ULA|Add1~57_sumout\,
-	cout => \ULA|Add1~58\);
-
-\Banco|registrador~53\ : dffeas
+\Banco|registrador~52\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3930,11 +4306,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~61_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~52_q\,
+	asdata => \ULA|Add0~57_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~53_q\);
+	q => \Banco|registrador~52_q\);
+
+\Banco|registrador~1076\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1076_combout\ = (!\ROM1|memROM~0_combout\ & \Banco|registrador~52_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000101000001010000010100000101000001010000010100000101000001010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~52_q\,
+	combout => \Banco|registrador~1076_combout\);
+
+\ULA|Add0~57\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~57_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1076_combout\) # (\Banco|saidaA[14]~14_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1076_combout\) # 
+-- (\Banco|saidaA[14]~14_combout\)))) ) + ( \ULA|Add0~54\ ))
+-- \ULA|Add0~58\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1076_combout\) # (\Banco|saidaA[14]~14_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1076_combout\) # 
+-- (\Banco|saidaA[14]~14_combout\)))) ) + ( \ULA|Add0~54\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[14]~14_combout\,
+	dataf => \Banco|ALT_INV_registrador~1076_combout\,
+	cin => \ULA|Add0~54\,
+	sumout => \ULA|Add0~57_sumout\,
+	cout => \ULA|Add0~58\);
 
 \Banco|registrador~309\ : dffeas
 -- pragma translate_off
@@ -3944,50 +4358,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~61_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~61_sumout\,
+	asdata => \Banco|registrador~309_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~309_q\);
 
-\Banco|registrador~1077\ : cyclonev_lcell_comb
+\Banco|saidaA[15]~15\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1077_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~53_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~309_q\))))
+-- \Banco|saidaA[15]~15_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~309_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~53_q\,
-	datad => \Banco|ALT_INV_registrador~309_q\,
-	combout => \Banco|registrador~1077_combout\);
+	datac => \Banco|ALT_INV_registrador~309_q\,
+	combout => \Banco|saidaA[15]~15_combout\);
 
-\ULA|Add1~61\ : cyclonev_lcell_comb
+\ULA|Add0~61_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~61_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~61_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1077_combout\)))) ) + ( \ULA|Add1~58\ ))
--- \ULA|Add1~62\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~61_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1077_combout\)))) ) + ( \ULA|Add1~58\ ))
+-- \ULA|Add0~61_wirecell_combout\ = !\ULA|Add0~61_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~61_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1077_combout\,
-	cin => \ULA|Add1~58\,
-	sumout => \ULA|Add1~61_sumout\,
-	cout => \ULA|Add1~62\);
+	dataa => \ULA|ALT_INV_Add0~61_sumout\,
+	combout => \ULA|Add0~61_wirecell_combout\);
 
-\Banco|registrador~54\ : dffeas
+\Banco|registrador~53\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -3995,11 +4403,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~65_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~53_q\,
+	asdata => \ULA|Add0~61_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~54_q\);
+	q => \Banco|registrador~53_q\);
+
+\Banco|registrador~1077\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1077_combout\ = (!\ROM1|memROM~0_combout\ & !\Banco|registrador~53_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010000010100000101000001010000010100000101000001010000010100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~53_q\,
+	combout => \Banco|registrador~1077_combout\);
+
+\ULA|Add0~61\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~61_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1077_combout\) # (\Banco|saidaA[15]~15_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1077_combout\) # 
+-- (\Banco|saidaA[15]~15_combout\)))) ) + ( \ULA|Add0~58\ ))
+-- \ULA|Add0~62\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1077_combout\) # (\Banco|saidaA[15]~15_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1077_combout\) # 
+-- (\Banco|saidaA[15]~15_combout\)))) ) + ( \ULA|Add0~58\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[15]~15_combout\,
+	dataf => \Banco|ALT_INV_registrador~1077_combout\,
+	cin => \ULA|Add0~58\,
+	sumout => \ULA|Add0~61_sumout\,
+	cout => \ULA|Add0~62\);
 
 \Banco|registrador~310\ : dffeas
 -- pragma translate_off
@@ -4009,50 +4455,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~65_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~65_sumout\,
+	asdata => \Banco|registrador~310_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~310_q\);
 
-\Banco|registrador~1078\ : cyclonev_lcell_comb
+\Banco|saidaA[16]~16\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1078_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~54_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~310_q\))))
+-- \Banco|saidaA[16]~16_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~310_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~54_q\,
-	datad => \Banco|ALT_INV_registrador~310_q\,
-	combout => \Banco|registrador~1078_combout\);
+	datac => \Banco|ALT_INV_registrador~310_q\,
+	combout => \Banco|saidaA[16]~16_combout\);
 
-\ULA|Add1~65\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~65_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~65_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1078_combout\)))) ) + ( \ULA|Add1~62\ ))
--- \ULA|Add1~66\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~65_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1078_combout\)))) ) + ( \ULA|Add1~62\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~65_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1078_combout\,
-	cin => \ULA|Add1~62\,
-	sumout => \ULA|Add1~65_sumout\,
-	cout => \ULA|Add1~66\);
-
-\Banco|registrador~55\ : dffeas
+\Banco|registrador~54\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4060,11 +4486,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~69_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~54_q\,
+	asdata => \ULA|Add0~65_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~55_q\);
+	q => \Banco|registrador~54_q\);
+
+\Banco|registrador~1078\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1078_combout\ = (!\ROM1|memROM~0_combout\ & \Banco|registrador~54_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000101000001010000010100000101000001010000010100000101000001010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~54_q\,
+	combout => \Banco|registrador~1078_combout\);
+
+\ULA|Add0~65\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~65_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1078_combout\) # (\Banco|saidaA[16]~16_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1078_combout\) # 
+-- (\Banco|saidaA[16]~16_combout\)))) ) + ( \ULA|Add0~62\ ))
+-- \ULA|Add0~66\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1078_combout\) # (\Banco|saidaA[16]~16_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1078_combout\) # 
+-- (\Banco|saidaA[16]~16_combout\)))) ) + ( \ULA|Add0~62\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[16]~16_combout\,
+	dataf => \Banco|ALT_INV_registrador~1078_combout\,
+	cin => \ULA|Add0~62\,
+	sumout => \ULA|Add0~65_sumout\,
+	cout => \ULA|Add0~66\);
 
 \Banco|registrador~311\ : dffeas
 -- pragma translate_off
@@ -4074,50 +4538,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~69_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~69_sumout\,
+	asdata => \Banco|registrador~311_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~311_q\);
 
-\Banco|registrador~1079\ : cyclonev_lcell_comb
+\Banco|saidaA[17]~17\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1079_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~55_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~311_q\))))
+-- \Banco|saidaA[17]~17_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~311_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~55_q\,
-	datad => \Banco|ALT_INV_registrador~311_q\,
-	combout => \Banco|registrador~1079_combout\);
+	datac => \Banco|ALT_INV_registrador~311_q\,
+	combout => \Banco|saidaA[17]~17_combout\);
 
-\ULA|Add1~69\ : cyclonev_lcell_comb
+\ULA|Add0~69_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~69_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~69_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1079_combout\)))) ) + ( \ULA|Add1~66\ ))
--- \ULA|Add1~70\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~69_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1079_combout\)))) ) + ( \ULA|Add1~66\ ))
+-- \ULA|Add0~69_wirecell_combout\ = !\ULA|Add0~69_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~69_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1079_combout\,
-	cin => \ULA|Add1~66\,
-	sumout => \ULA|Add1~69_sumout\,
-	cout => \ULA|Add1~70\);
+	dataa => \ULA|ALT_INV_Add0~69_sumout\,
+	combout => \ULA|Add0~69_wirecell_combout\);
 
-\Banco|registrador~56\ : dffeas
+\Banco|registrador~55\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4125,11 +4583,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~73_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~55_q\,
+	asdata => \ULA|Add0~69_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~56_q\);
+	q => \Banco|registrador~55_q\);
+
+\Banco|registrador~1079\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1079_combout\ = (!\ROM1|memROM~0_combout\ & !\Banco|registrador~55_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010000010100000101000001010000010100000101000001010000010100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~55_q\,
+	combout => \Banco|registrador~1079_combout\);
+
+\ULA|Add0~69\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~69_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1079_combout\) # (\Banco|saidaA[17]~17_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1079_combout\) # 
+-- (\Banco|saidaA[17]~17_combout\)))) ) + ( \ULA|Add0~66\ ))
+-- \ULA|Add0~70\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1079_combout\) # (\Banco|saidaA[17]~17_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1079_combout\) # 
+-- (\Banco|saidaA[17]~17_combout\)))) ) + ( \ULA|Add0~66\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[17]~17_combout\,
+	dataf => \Banco|ALT_INV_registrador~1079_combout\,
+	cin => \ULA|Add0~66\,
+	sumout => \ULA|Add0~69_sumout\,
+	cout => \ULA|Add0~70\);
 
 \Banco|registrador~312\ : dffeas
 -- pragma translate_off
@@ -4139,50 +4635,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~73_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~73_sumout\,
+	asdata => \Banco|registrador~312_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~312_q\);
 
-\Banco|registrador~1080\ : cyclonev_lcell_comb
+\Banco|saidaA[18]~18\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1080_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~56_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~312_q\))))
+-- \Banco|saidaA[18]~18_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~312_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~56_q\,
-	datad => \Banco|ALT_INV_registrador~312_q\,
-	combout => \Banco|registrador~1080_combout\);
+	datac => \Banco|ALT_INV_registrador~312_q\,
+	combout => \Banco|saidaA[18]~18_combout\);
 
-\ULA|Add1~73\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~73_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~73_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1080_combout\)))) ) + ( \ULA|Add1~70\ ))
--- \ULA|Add1~74\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~73_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1080_combout\)))) ) + ( \ULA|Add1~70\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~73_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1080_combout\,
-	cin => \ULA|Add1~70\,
-	sumout => \ULA|Add1~73_sumout\,
-	cout => \ULA|Add1~74\);
-
-\Banco|registrador~57\ : dffeas
+\Banco|registrador~56\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4190,11 +4666,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~77_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~56_q\,
+	asdata => \ULA|Add0~73_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~57_q\);
+	q => \Banco|registrador~56_q\);
+
+\Banco|registrador~1080\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1080_combout\ = (!\ROM1|memROM~0_combout\ & \Banco|registrador~56_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000101000001010000010100000101000001010000010100000101000001010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~56_q\,
+	combout => \Banco|registrador~1080_combout\);
+
+\ULA|Add0~73\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~73_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1080_combout\) # (\Banco|saidaA[18]~18_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1080_combout\) # 
+-- (\Banco|saidaA[18]~18_combout\)))) ) + ( \ULA|Add0~70\ ))
+-- \ULA|Add0~74\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1080_combout\) # (\Banco|saidaA[18]~18_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1080_combout\) # 
+-- (\Banco|saidaA[18]~18_combout\)))) ) + ( \ULA|Add0~70\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[18]~18_combout\,
+	dataf => \Banco|ALT_INV_registrador~1080_combout\,
+	cin => \ULA|Add0~70\,
+	sumout => \ULA|Add0~73_sumout\,
+	cout => \ULA|Add0~74\);
 
 \Banco|registrador~313\ : dffeas
 -- pragma translate_off
@@ -4204,50 +4718,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~77_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~77_sumout\,
+	asdata => \Banco|registrador~313_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~313_q\);
 
-\Banco|registrador~1081\ : cyclonev_lcell_comb
+\Banco|saidaA[19]~19\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1081_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~57_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~313_q\))))
+-- \Banco|saidaA[19]~19_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~313_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~57_q\,
-	datad => \Banco|ALT_INV_registrador~313_q\,
-	combout => \Banco|registrador~1081_combout\);
+	datac => \Banco|ALT_INV_registrador~313_q\,
+	combout => \Banco|saidaA[19]~19_combout\);
 
-\ULA|Add1~77\ : cyclonev_lcell_comb
+\ULA|Add0~77_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~77_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~77_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1081_combout\)))) ) + ( \ULA|Add1~74\ ))
--- \ULA|Add1~78\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~77_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1081_combout\)))) ) + ( \ULA|Add1~74\ ))
+-- \ULA|Add0~77_wirecell_combout\ = !\ULA|Add0~77_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~77_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1081_combout\,
-	cin => \ULA|Add1~74\,
-	sumout => \ULA|Add1~77_sumout\,
-	cout => \ULA|Add1~78\);
+	dataa => \ULA|ALT_INV_Add0~77_sumout\,
+	combout => \ULA|Add0~77_wirecell_combout\);
 
-\Banco|registrador~58\ : dffeas
+\Banco|registrador~57\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4255,11 +4763,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~81_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~57_q\,
+	asdata => \ULA|Add0~77_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~58_q\);
+	q => \Banco|registrador~57_q\);
+
+\Banco|registrador~1081\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1081_combout\ = (!\ROM1|memROM~0_combout\ & !\Banco|registrador~57_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010000010100000101000001010000010100000101000001010000010100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~57_q\,
+	combout => \Banco|registrador~1081_combout\);
+
+\ULA|Add0~77\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~77_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1081_combout\) # (\Banco|saidaA[19]~19_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1081_combout\) # 
+-- (\Banco|saidaA[19]~19_combout\)))) ) + ( \ULA|Add0~74\ ))
+-- \ULA|Add0~78\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1081_combout\) # (\Banco|saidaA[19]~19_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1081_combout\) # 
+-- (\Banco|saidaA[19]~19_combout\)))) ) + ( \ULA|Add0~74\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[19]~19_combout\,
+	dataf => \Banco|ALT_INV_registrador~1081_combout\,
+	cin => \ULA|Add0~74\,
+	sumout => \ULA|Add0~77_sumout\,
+	cout => \ULA|Add0~78\);
 
 \Banco|registrador~314\ : dffeas
 -- pragma translate_off
@@ -4269,50 +4815,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~81_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~81_sumout\,
+	asdata => \Banco|registrador~314_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~314_q\);
 
-\Banco|registrador~1082\ : cyclonev_lcell_comb
+\Banco|saidaA[20]~20\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1082_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~58_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~314_q\))))
+-- \Banco|saidaA[20]~20_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~314_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~58_q\,
-	datad => \Banco|ALT_INV_registrador~314_q\,
-	combout => \Banco|registrador~1082_combout\);
+	datac => \Banco|ALT_INV_registrador~314_q\,
+	combout => \Banco|saidaA[20]~20_combout\);
 
-\ULA|Add1~81\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~81_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~81_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1082_combout\)))) ) + ( \ULA|Add1~78\ ))
--- \ULA|Add1~82\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~81_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1082_combout\)))) ) + ( \ULA|Add1~78\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~81_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1082_combout\,
-	cin => \ULA|Add1~78\,
-	sumout => \ULA|Add1~81_sumout\,
-	cout => \ULA|Add1~82\);
-
-\Banco|registrador~59\ : dffeas
+\Banco|registrador~58\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4320,11 +4846,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~85_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~58_q\,
+	asdata => \ULA|Add0~81_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~59_q\);
+	q => \Banco|registrador~58_q\);
+
+\Banco|registrador~1082\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1082_combout\ = (!\ROM1|memROM~0_combout\ & \Banco|registrador~58_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000101000001010000010100000101000001010000010100000101000001010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~58_q\,
+	combout => \Banco|registrador~1082_combout\);
+
+\ULA|Add0~81\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~81_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1082_combout\) # (\Banco|saidaA[20]~20_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1082_combout\) # 
+-- (\Banco|saidaA[20]~20_combout\)))) ) + ( \ULA|Add0~78\ ))
+-- \ULA|Add0~82\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1082_combout\) # (\Banco|saidaA[20]~20_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1082_combout\) # 
+-- (\Banco|saidaA[20]~20_combout\)))) ) + ( \ULA|Add0~78\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[20]~20_combout\,
+	dataf => \Banco|ALT_INV_registrador~1082_combout\,
+	cin => \ULA|Add0~78\,
+	sumout => \ULA|Add0~81_sumout\,
+	cout => \ULA|Add0~82\);
 
 \Banco|registrador~315\ : dffeas
 -- pragma translate_off
@@ -4334,50 +4898,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~85_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~85_sumout\,
+	asdata => \Banco|registrador~315_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~315_q\);
 
-\Banco|registrador~1083\ : cyclonev_lcell_comb
+\Banco|saidaA[21]~21\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1083_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~59_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~315_q\))))
+-- \Banco|saidaA[21]~21_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~315_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~59_q\,
-	datad => \Banco|ALT_INV_registrador~315_q\,
-	combout => \Banco|registrador~1083_combout\);
+	datac => \Banco|ALT_INV_registrador~315_q\,
+	combout => \Banco|saidaA[21]~21_combout\);
 
-\ULA|Add1~85\ : cyclonev_lcell_comb
+\ULA|Add0~85_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~85_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~85_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1083_combout\)))) ) + ( \ULA|Add1~82\ ))
--- \ULA|Add1~86\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~85_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1083_combout\)))) ) + ( \ULA|Add1~82\ ))
+-- \ULA|Add0~85_wirecell_combout\ = !\ULA|Add0~85_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~85_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1083_combout\,
-	cin => \ULA|Add1~82\,
-	sumout => \ULA|Add1~85_sumout\,
-	cout => \ULA|Add1~86\);
+	dataa => \ULA|ALT_INV_Add0~85_sumout\,
+	combout => \ULA|Add0~85_wirecell_combout\);
 
-\Banco|registrador~60\ : dffeas
+\Banco|registrador~59\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4385,11 +4943,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~89_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~59_q\,
+	asdata => \ULA|Add0~85_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~60_q\);
+	q => \Banco|registrador~59_q\);
+
+\Banco|registrador~1083\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1083_combout\ = (!\ROM1|memROM~0_combout\ & !\Banco|registrador~59_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010000010100000101000001010000010100000101000001010000010100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~59_q\,
+	combout => \Banco|registrador~1083_combout\);
+
+\ULA|Add0~85\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~85_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1083_combout\) # (\Banco|saidaA[21]~21_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1083_combout\) # 
+-- (\Banco|saidaA[21]~21_combout\)))) ) + ( \ULA|Add0~82\ ))
+-- \ULA|Add0~86\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1083_combout\) # (\Banco|saidaA[21]~21_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1083_combout\) # 
+-- (\Banco|saidaA[21]~21_combout\)))) ) + ( \ULA|Add0~82\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[21]~21_combout\,
+	dataf => \Banco|ALT_INV_registrador~1083_combout\,
+	cin => \ULA|Add0~82\,
+	sumout => \ULA|Add0~85_sumout\,
+	cout => \ULA|Add0~86\);
 
 \Banco|registrador~316\ : dffeas
 -- pragma translate_off
@@ -4399,50 +4995,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~89_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~89_sumout\,
+	asdata => \Banco|registrador~316_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~316_q\);
 
-\Banco|registrador~1084\ : cyclonev_lcell_comb
+\Banco|saidaA[22]~22\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1084_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~60_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~316_q\))))
+-- \Banco|saidaA[22]~22_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~316_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~60_q\,
-	datad => \Banco|ALT_INV_registrador~316_q\,
-	combout => \Banco|registrador~1084_combout\);
+	datac => \Banco|ALT_INV_registrador~316_q\,
+	combout => \Banco|saidaA[22]~22_combout\);
 
-\ULA|Add1~89\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~89_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~89_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1084_combout\)))) ) + ( \ULA|Add1~86\ ))
--- \ULA|Add1~90\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~89_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1084_combout\)))) ) + ( \ULA|Add1~86\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~89_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1084_combout\,
-	cin => \ULA|Add1~86\,
-	sumout => \ULA|Add1~89_sumout\,
-	cout => \ULA|Add1~90\);
-
-\Banco|registrador~61\ : dffeas
+\Banco|registrador~60\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4450,11 +5026,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~93_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~60_q\,
+	asdata => \ULA|Add0~89_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~61_q\);
+	q => \Banco|registrador~60_q\);
+
+\Banco|registrador~1084\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1084_combout\ = (!\ROM1|memROM~0_combout\ & \Banco|registrador~60_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000101000001010000010100000101000001010000010100000101000001010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~60_q\,
+	combout => \Banco|registrador~1084_combout\);
+
+\ULA|Add0~89\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~89_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1084_combout\) # (\Banco|saidaA[22]~22_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1084_combout\) # 
+-- (\Banco|saidaA[22]~22_combout\)))) ) + ( \ULA|Add0~86\ ))
+-- \ULA|Add0~90\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1084_combout\) # (\Banco|saidaA[22]~22_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1084_combout\) # 
+-- (\Banco|saidaA[22]~22_combout\)))) ) + ( \ULA|Add0~86\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[22]~22_combout\,
+	dataf => \Banco|ALT_INV_registrador~1084_combout\,
+	cin => \ULA|Add0~86\,
+	sumout => \ULA|Add0~89_sumout\,
+	cout => \ULA|Add0~90\);
 
 \Banco|registrador~317\ : dffeas
 -- pragma translate_off
@@ -4464,50 +5078,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~93_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~93_sumout\,
+	asdata => \Banco|registrador~317_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~317_q\);
 
-\Banco|registrador~1085\ : cyclonev_lcell_comb
+\Banco|saidaA[23]~23\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1085_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~61_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~317_q\))))
+-- \Banco|saidaA[23]~23_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~317_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~61_q\,
-	datad => \Banco|ALT_INV_registrador~317_q\,
-	combout => \Banco|registrador~1085_combout\);
+	datac => \Banco|ALT_INV_registrador~317_q\,
+	combout => \Banco|saidaA[23]~23_combout\);
 
-\ULA|Add1~93\ : cyclonev_lcell_comb
+\ULA|Add0~93_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~93_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~93_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1085_combout\)))) ) + ( \ULA|Add1~90\ ))
--- \ULA|Add1~94\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~93_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1085_combout\)))) ) + ( \ULA|Add1~90\ ))
+-- \ULA|Add0~93_wirecell_combout\ = !\ULA|Add0~93_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~93_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1085_combout\,
-	cin => \ULA|Add1~90\,
-	sumout => \ULA|Add1~93_sumout\,
-	cout => \ULA|Add1~94\);
+	dataa => \ULA|ALT_INV_Add0~93_sumout\,
+	combout => \ULA|Add0~93_wirecell_combout\);
 
-\Banco|registrador~62\ : dffeas
+\Banco|registrador~61\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4515,11 +5123,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~97_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~61_q\,
+	asdata => \ULA|Add0~93_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~62_q\);
+	q => \Banco|registrador~61_q\);
+
+\Banco|registrador~1085\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1085_combout\ = (!\ROM1|memROM~0_combout\ & !\Banco|registrador~61_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010000010100000101000001010000010100000101000001010000010100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~61_q\,
+	combout => \Banco|registrador~1085_combout\);
+
+\ULA|Add0~93\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~93_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1085_combout\) # (\Banco|saidaA[23]~23_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1085_combout\) # 
+-- (\Banco|saidaA[23]~23_combout\)))) ) + ( \ULA|Add0~90\ ))
+-- \ULA|Add0~94\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1085_combout\) # (\Banco|saidaA[23]~23_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1085_combout\) # 
+-- (\Banco|saidaA[23]~23_combout\)))) ) + ( \ULA|Add0~90\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[23]~23_combout\,
+	dataf => \Banco|ALT_INV_registrador~1085_combout\,
+	cin => \ULA|Add0~90\,
+	sumout => \ULA|Add0~93_sumout\,
+	cout => \ULA|Add0~94\);
 
 \Banco|registrador~318\ : dffeas
 -- pragma translate_off
@@ -4529,50 +5175,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~97_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~97_sumout\,
+	asdata => \Banco|registrador~318_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~318_q\);
 
-\Banco|registrador~1086\ : cyclonev_lcell_comb
+\Banco|saidaA[24]~24\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1086_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~62_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~318_q\))))
+-- \Banco|saidaA[24]~24_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~318_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~62_q\,
-	datad => \Banco|ALT_INV_registrador~318_q\,
-	combout => \Banco|registrador~1086_combout\);
+	datac => \Banco|ALT_INV_registrador~318_q\,
+	combout => \Banco|saidaA[24]~24_combout\);
 
-\ULA|Add1~97\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~97_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~97_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1086_combout\)))) ) + ( \ULA|Add1~94\ ))
--- \ULA|Add1~98\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~97_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1086_combout\)))) ) + ( \ULA|Add1~94\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~97_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1086_combout\,
-	cin => \ULA|Add1~94\,
-	sumout => \ULA|Add1~97_sumout\,
-	cout => \ULA|Add1~98\);
-
-\Banco|registrador~63\ : dffeas
+\Banco|registrador~62\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4580,11 +5206,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~101_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~62_q\,
+	asdata => \ULA|Add0~97_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~63_q\);
+	q => \Banco|registrador~62_q\);
+
+\Banco|registrador~1086\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1086_combout\ = (!\ROM1|memROM~0_combout\ & \Banco|registrador~62_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000101000001010000010100000101000001010000010100000101000001010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~62_q\,
+	combout => \Banco|registrador~1086_combout\);
+
+\ULA|Add0~97\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~97_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1086_combout\) # (\Banco|saidaA[24]~24_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1086_combout\) # 
+-- (\Banco|saidaA[24]~24_combout\)))) ) + ( \ULA|Add0~94\ ))
+-- \ULA|Add0~98\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1086_combout\) # (\Banco|saidaA[24]~24_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1086_combout\) # 
+-- (\Banco|saidaA[24]~24_combout\)))) ) + ( \ULA|Add0~94\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[24]~24_combout\,
+	dataf => \Banco|ALT_INV_registrador~1086_combout\,
+	cin => \ULA|Add0~94\,
+	sumout => \ULA|Add0~97_sumout\,
+	cout => \ULA|Add0~98\);
 
 \Banco|registrador~319\ : dffeas
 -- pragma translate_off
@@ -4594,50 +5258,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~101_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~101_sumout\,
+	asdata => \Banco|registrador~319_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~319_q\);
 
-\Banco|registrador~1087\ : cyclonev_lcell_comb
+\Banco|saidaA[25]~25\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1087_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~63_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~319_q\))))
+-- \Banco|saidaA[25]~25_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~319_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~63_q\,
-	datad => \Banco|ALT_INV_registrador~319_q\,
-	combout => \Banco|registrador~1087_combout\);
+	datac => \Banco|ALT_INV_registrador~319_q\,
+	combout => \Banco|saidaA[25]~25_combout\);
 
-\ULA|Add1~101\ : cyclonev_lcell_comb
+\ULA|Add0~101_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~101_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~101_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1087_combout\)))) ) + ( \ULA|Add1~98\ ))
--- \ULA|Add1~102\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~101_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1087_combout\)))) ) + ( \ULA|Add1~98\ ))
+-- \ULA|Add0~101_wirecell_combout\ = !\ULA|Add0~101_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~101_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1087_combout\,
-	cin => \ULA|Add1~98\,
-	sumout => \ULA|Add1~101_sumout\,
-	cout => \ULA|Add1~102\);
+	dataa => \ULA|ALT_INV_Add0~101_sumout\,
+	combout => \ULA|Add0~101_wirecell_combout\);
 
-\Banco|registrador~64\ : dffeas
+\Banco|registrador~63\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4645,11 +5303,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~105_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~63_q\,
+	asdata => \ULA|Add0~101_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~64_q\);
+	q => \Banco|registrador~63_q\);
+
+\Banco|registrador~1087\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1087_combout\ = (!\ROM1|memROM~0_combout\ & !\Banco|registrador~63_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010000010100000101000001010000010100000101000001010000010100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~63_q\,
+	combout => \Banco|registrador~1087_combout\);
+
+\ULA|Add0~101\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~101_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1087_combout\) # (\Banco|saidaA[25]~25_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1087_combout\) # 
+-- (\Banco|saidaA[25]~25_combout\)))) ) + ( \ULA|Add0~98\ ))
+-- \ULA|Add0~102\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1087_combout\) # (\Banco|saidaA[25]~25_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1087_combout\) # 
+-- (\Banco|saidaA[25]~25_combout\)))) ) + ( \ULA|Add0~98\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[25]~25_combout\,
+	dataf => \Banco|ALT_INV_registrador~1087_combout\,
+	cin => \ULA|Add0~98\,
+	sumout => \ULA|Add0~101_sumout\,
+	cout => \ULA|Add0~102\);
 
 \Banco|registrador~320\ : dffeas
 -- pragma translate_off
@@ -4659,50 +5355,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~105_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~105_sumout\,
+	asdata => \Banco|registrador~320_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~320_q\);
 
-\Banco|registrador~1088\ : cyclonev_lcell_comb
+\Banco|saidaA[26]~26\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1088_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~64_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~320_q\))))
+-- \Banco|saidaA[26]~26_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~320_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~64_q\,
-	datad => \Banco|ALT_INV_registrador~320_q\,
-	combout => \Banco|registrador~1088_combout\);
+	datac => \Banco|ALT_INV_registrador~320_q\,
+	combout => \Banco|saidaA[26]~26_combout\);
 
-\ULA|Add1~105\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~105_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~105_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1088_combout\)))) ) + ( \ULA|Add1~102\ ))
--- \ULA|Add1~106\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~105_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1088_combout\)))) ) + ( \ULA|Add1~102\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~105_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1088_combout\,
-	cin => \ULA|Add1~102\,
-	sumout => \ULA|Add1~105_sumout\,
-	cout => \ULA|Add1~106\);
-
-\Banco|registrador~65\ : dffeas
+\Banco|registrador~64\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4710,11 +5386,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~109_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~64_q\,
+	asdata => \ULA|Add0~105_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~65_q\);
+	q => \Banco|registrador~64_q\);
+
+\Banco|registrador~1088\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1088_combout\ = (!\ROM1|memROM~0_combout\ & \Banco|registrador~64_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000101000001010000010100000101000001010000010100000101000001010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~64_q\,
+	combout => \Banco|registrador~1088_combout\);
+
+\ULA|Add0~105\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~105_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1088_combout\) # (\Banco|saidaA[26]~26_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1088_combout\) # 
+-- (\Banco|saidaA[26]~26_combout\)))) ) + ( \ULA|Add0~102\ ))
+-- \ULA|Add0~106\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1088_combout\) # (\Banco|saidaA[26]~26_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1088_combout\) # 
+-- (\Banco|saidaA[26]~26_combout\)))) ) + ( \ULA|Add0~102\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[26]~26_combout\,
+	dataf => \Banco|ALT_INV_registrador~1088_combout\,
+	cin => \ULA|Add0~102\,
+	sumout => \ULA|Add0~105_sumout\,
+	cout => \ULA|Add0~106\);
 
 \Banco|registrador~321\ : dffeas
 -- pragma translate_off
@@ -4724,50 +5438,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~109_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~109_sumout\,
+	asdata => \Banco|registrador~321_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~321_q\);
 
-\Banco|registrador~1089\ : cyclonev_lcell_comb
+\Banco|saidaA[27]~27\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1089_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~65_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~321_q\))))
+-- \Banco|saidaA[27]~27_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~321_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~65_q\,
-	datad => \Banco|ALT_INV_registrador~321_q\,
-	combout => \Banco|registrador~1089_combout\);
+	datac => \Banco|ALT_INV_registrador~321_q\,
+	combout => \Banco|saidaA[27]~27_combout\);
 
-\ULA|Add1~109\ : cyclonev_lcell_comb
+\ULA|Add0~109_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~109_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~109_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1089_combout\)))) ) + ( \ULA|Add1~106\ ))
--- \ULA|Add1~110\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~109_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1089_combout\)))) ) + ( \ULA|Add1~106\ ))
+-- \ULA|Add0~109_wirecell_combout\ = !\ULA|Add0~109_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~109_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1089_combout\,
-	cin => \ULA|Add1~106\,
-	sumout => \ULA|Add1~109_sumout\,
-	cout => \ULA|Add1~110\);
+	dataa => \ULA|ALT_INV_Add0~109_sumout\,
+	combout => \ULA|Add0~109_wirecell_combout\);
 
-\Banco|registrador~66\ : dffeas
+\Banco|registrador~65\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4775,11 +5483,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~113_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~65_q\,
+	asdata => \ULA|Add0~109_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~66_q\);
+	q => \Banco|registrador~65_q\);
+
+\Banco|registrador~1089\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1089_combout\ = (!\ROM1|memROM~0_combout\ & !\Banco|registrador~65_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010000010100000101000001010000010100000101000001010000010100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~65_q\,
+	combout => \Banco|registrador~1089_combout\);
+
+\ULA|Add0~109\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~109_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1089_combout\) # (\Banco|saidaA[27]~27_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1089_combout\) # 
+-- (\Banco|saidaA[27]~27_combout\)))) ) + ( \ULA|Add0~106\ ))
+-- \ULA|Add0~110\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1089_combout\) # (\Banco|saidaA[27]~27_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1089_combout\) # 
+-- (\Banco|saidaA[27]~27_combout\)))) ) + ( \ULA|Add0~106\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[27]~27_combout\,
+	dataf => \Banco|ALT_INV_registrador~1089_combout\,
+	cin => \ULA|Add0~106\,
+	sumout => \ULA|Add0~109_sumout\,
+	cout => \ULA|Add0~110\);
 
 \Banco|registrador~322\ : dffeas
 -- pragma translate_off
@@ -4789,50 +5535,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~113_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~113_sumout\,
+	asdata => \Banco|registrador~322_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~322_q\);
 
-\Banco|registrador~1090\ : cyclonev_lcell_comb
+\Banco|saidaA[28]~28\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1090_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~66_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~322_q\))))
+-- \Banco|saidaA[28]~28_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~322_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~66_q\,
-	datad => \Banco|ALT_INV_registrador~322_q\,
-	combout => \Banco|registrador~1090_combout\);
+	datac => \Banco|ALT_INV_registrador~322_q\,
+	combout => \Banco|saidaA[28]~28_combout\);
 
-\ULA|Add1~113\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~113_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~113_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1090_combout\)))) ) + ( \ULA|Add1~110\ ))
--- \ULA|Add1~114\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~113_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1090_combout\)))) ) + ( \ULA|Add1~110\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~113_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1090_combout\,
-	cin => \ULA|Add1~110\,
-	sumout => \ULA|Add1~113_sumout\,
-	cout => \ULA|Add1~114\);
-
-\Banco|registrador~67\ : dffeas
+\Banco|registrador~66\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4840,11 +5566,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~117_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~66_q\,
+	asdata => \ULA|Add0~113_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~67_q\);
+	q => \Banco|registrador~66_q\);
+
+\Banco|registrador~1090\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1090_combout\ = (!\ROM1|memROM~0_combout\ & \Banco|registrador~66_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000101000001010000010100000101000001010000010100000101000001010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~66_q\,
+	combout => \Banco|registrador~1090_combout\);
+
+\ULA|Add0~113\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~113_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1090_combout\) # (\Banco|saidaA[28]~28_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1090_combout\) # 
+-- (\Banco|saidaA[28]~28_combout\)))) ) + ( \ULA|Add0~110\ ))
+-- \ULA|Add0~114\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1090_combout\) # (\Banco|saidaA[28]~28_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1090_combout\) # 
+-- (\Banco|saidaA[28]~28_combout\)))) ) + ( \ULA|Add0~110\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[28]~28_combout\,
+	dataf => \Banco|ALT_INV_registrador~1090_combout\,
+	cin => \ULA|Add0~110\,
+	sumout => \ULA|Add0~113_sumout\,
+	cout => \ULA|Add0~114\);
 
 \Banco|registrador~323\ : dffeas
 -- pragma translate_off
@@ -4854,50 +5618,44 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~117_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~117_sumout\,
+	asdata => \Banco|registrador~323_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~323_q\);
 
-\Banco|registrador~1091\ : cyclonev_lcell_comb
+\Banco|saidaA[29]~29\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1091_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~67_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~323_q\))))
+-- \Banco|saidaA[29]~29_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~323_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~67_q\,
-	datad => \Banco|ALT_INV_registrador~323_q\,
-	combout => \Banco|registrador~1091_combout\);
+	datac => \Banco|ALT_INV_registrador~323_q\,
+	combout => \Banco|saidaA[29]~29_combout\);
 
-\ULA|Add1~117\ : cyclonev_lcell_comb
+\ULA|Add0~117_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~117_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~117_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1091_combout\)))) ) + ( \ULA|Add1~114\ ))
--- \ULA|Add1~118\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~117_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1091_combout\)))) ) + ( \ULA|Add1~114\ ))
+-- \ULA|Add0~117_wirecell_combout\ = !\ULA|Add0~117_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~117_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1091_combout\,
-	cin => \ULA|Add1~114\,
-	sumout => \ULA|Add1~117_sumout\,
-	cout => \ULA|Add1~118\);
+	dataa => \ULA|ALT_INV_Add0~117_sumout\,
+	combout => \ULA|Add0~117_wirecell_combout\);
 
-\Banco|registrador~68\ : dffeas
+\Banco|registrador~67\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4905,11 +5663,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~121_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~67_q\,
+	asdata => \ULA|Add0~117_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~68_q\);
+	q => \Banco|registrador~67_q\);
+
+\Banco|registrador~1091\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1091_combout\ = (!\ROM1|memROM~0_combout\ & !\Banco|registrador~67_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010000010100000101000001010000010100000101000001010000010100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~67_q\,
+	combout => \Banco|registrador~1091_combout\);
+
+\ULA|Add0~117\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~117_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1091_combout\) # (\Banco|saidaA[29]~29_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1091_combout\) # 
+-- (\Banco|saidaA[29]~29_combout\)))) ) + ( \ULA|Add0~114\ ))
+-- \ULA|Add0~118\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1091_combout\) # (\Banco|saidaA[29]~29_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1091_combout\) # 
+-- (\Banco|saidaA[29]~29_combout\)))) ) + ( \ULA|Add0~114\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[29]~29_combout\,
+	dataf => \Banco|ALT_INV_registrador~1091_combout\,
+	cin => \ULA|Add0~114\,
+	sumout => \ULA|Add0~117_sumout\,
+	cout => \ULA|Add0~118\);
 
 \Banco|registrador~324\ : dffeas
 -- pragma translate_off
@@ -4919,50 +5715,30 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~121_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~121_sumout\,
+	asdata => \Banco|registrador~324_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~324_q\);
 
-\Banco|registrador~1092\ : cyclonev_lcell_comb
+\Banco|saidaA[30]~30\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1092_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~68_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~324_q\))))
+-- \Banco|saidaA[30]~30_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~324_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~68_q\,
-	datad => \Banco|ALT_INV_registrador~324_q\,
-	combout => \Banco|registrador~1092_combout\);
+	datac => \Banco|ALT_INV_registrador~324_q\,
+	combout => \Banco|saidaA[30]~30_combout\);
 
-\ULA|Add1~121\ : cyclonev_lcell_comb
--- Equation(s):
--- \ULA|Add1~121_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~121_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1092_combout\)))) ) + ( \ULA|Add1~118\ ))
--- \ULA|Add1~122\ = CARRY(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~121_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1092_combout\)))) ) + ( \ULA|Add1~118\ ))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~121_sumout\,
-	dataf => \Banco|ALT_INV_registrador~1092_combout\,
-	cin => \ULA|Add1~118\,
-	sumout => \ULA|Add1~121_sumout\,
-	cout => \ULA|Add1~122\);
-
-\Banco|registrador~69\ : dffeas
+\Banco|registrador~68\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -4970,11 +5746,49 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~125_sumout\,
-	ena => \ROM1|ALT_INV_memROM~0_combout\,
+	d => \Banco|registrador~68_q\,
+	asdata => \ULA|Add0~121_sumout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \Banco|registrador~69_q\);
+	q => \Banco|registrador~68_q\);
+
+\Banco|registrador~1092\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1092_combout\ = (!\ROM1|memROM~0_combout\ & \Banco|registrador~68_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000101000001010000010100000101000001010000010100000101000001010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~68_q\,
+	combout => \Banco|registrador~1092_combout\);
+
+\ULA|Add0~121\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~121_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1092_combout\) # (\Banco|saidaA[30]~30_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1092_combout\) # 
+-- (\Banco|saidaA[30]~30_combout\)))) ) + ( \ULA|Add0~118\ ))
+-- \ULA|Add0~122\ = CARRY(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1092_combout\) # (\Banco|saidaA[30]~30_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1092_combout\) # 
+-- (\Banco|saidaA[30]~30_combout\)))) ) + ( \ULA|Add0~118\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datab => \ROM1|ALT_INV_memROM~1_combout\,
+	datac => \Banco|ALT_INV_saidaA[30]~30_combout\,
+	dataf => \Banco|ALT_INV_registrador~1092_combout\,
+	cin => \ULA|Add0~118\,
+	sumout => \ULA|Add0~121_sumout\,
+	cout => \ULA|Add0~122\);
 
 \Banco|registrador~325\ : dffeas
 -- pragma translate_off
@@ -4984,558 +5798,121 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \KEY[0]~input_o\,
-	d => \ULA|Add1~125_sumout\,
-	ena => \ROM1|memROM~0_combout\,
+	d => \ULA|Add0~125_sumout\,
+	asdata => \Banco|registrador~325_q\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \Banco|registrador~325_q\);
 
-\Banco|registrador~1093\ : cyclonev_lcell_comb
+\Banco|saidaA[31]~31\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|registrador~1093_combout\ = (!\ROM1|memROM~0_combout\ & (((\Banco|registrador~69_q\)))) # (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & ((\Banco|registrador~325_q\))))
+-- \Banco|saidaA[31]~31_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \Banco|registrador~325_q\))
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000101000011011000010100001101100001010000110110000101000011011",
+	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \Banco|ALT_INV_registrador~69_q\,
-	datad => \Banco|ALT_INV_registrador~325_q\,
-	combout => \Banco|registrador~1093_combout\);
+	datac => \Banco|ALT_INV_registrador~325_q\,
+	combout => \Banco|saidaA[31]~31_combout\);
 
-\ULA|Add1~125\ : cyclonev_lcell_comb
+\ULA|Add0~125_wirecell\ : cyclonev_lcell_comb
 -- Equation(s):
--- \ULA|Add1~125_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~1_combout\ & (\ROM1|memROM~0_combout\ & (\ULA|Add1~125_sumout\))) # (\ROM1|memROM~1_combout\ & (((\Banco|registrador~1093_combout\)))) ) + ( \ULA|Add1~122\ ))
+-- \ULA|Add0~125_wirecell_combout\ = !\ULA|Add0~125_sumout\
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000000000000111110111100100000000000000000001111111111111111",
+	lut_mask => "1010101010101010101010101010101010101010101010101010101010101010",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ULA|ALT_INV_Add0~125_sumout\,
+	combout => \ULA|Add0~125_wirecell_combout\);
+
+\Banco|registrador~69\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \KEY[0]~input_o\,
+	d => \Banco|registrador~69_q\,
+	asdata => \ULA|Add0~125_wirecell_combout\,
+	sload => \ROM1|ALT_INV_memROM~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \Banco|registrador~69_q\);
+
+\Banco|registrador~1093\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \Banco|registrador~1093_combout\ = (!\ROM1|memROM~0_combout\ & !\Banco|registrador~69_q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "1010000010100000101000001010000010100000101000001010000010100000",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ROM1|ALT_INV_memROM~0_combout\,
+	datac => \Banco|ALT_INV_registrador~69_q\,
+	combout => \Banco|registrador~1093_combout\);
+
+\ULA|Add0~125\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \ULA|Add0~125_sumout\ = SUM(( VCC ) + ( (!\ROM1|memROM~0_combout\ & (\ROM1|memROM~1_combout\ & ((\Banco|registrador~1093_combout\) # (\Banco|saidaA[31]~31_combout\)))) # (\ROM1|memROM~0_combout\ & (((\Banco|registrador~1093_combout\) # 
+-- (\Banco|saidaA[31]~31_combout\)))) ) + ( \ULA|Add0~122\ ))
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000111110001000100000000000000000001111111111111111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
 	datab => \ROM1|ALT_INV_memROM~1_combout\,
-	datac => \ULA|ALT_INV_Add1~125_sumout\,
+	datac => \Banco|ALT_INV_saidaA[31]~31_combout\,
 	dataf => \Banco|ALT_INV_registrador~1093_combout\,
-	cin => \ULA|Add1~122\,
-	sumout => \ULA|Add1~125_sumout\);
-
-\Banco|saidaA[0]~0\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[0]~0_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~1_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~1_sumout\,
-	combout => \Banco|saidaA[0]~0_combout\);
+	cin => \ULA|Add0~122\,
+	sumout => \ULA|Add0~125_sumout\);
 
 \Banco|saidaA[1]~1\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|saidaA[1]~1_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~5_sumout\))
+-- \Banco|saidaA[1]~1_combout\ = (\ROM1|memROM~0_combout\ & \Banco|registrador~1062_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
+	lut_mask => "0000010100000101000001010000010100000101000001010000010100000101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~5_sumout\,
+	datac => \Banco|ALT_INV_registrador~1062_combout\,
 	combout => \Banco|saidaA[1]~1_combout\);
-
-\Banco|saidaA[2]~2\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[2]~2_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~9_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~9_sumout\,
-	combout => \Banco|saidaA[2]~2_combout\);
 
 \Banco|saidaA[3]~3\ : cyclonev_lcell_comb
 -- Equation(s):
--- \Banco|saidaA[3]~3_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~13_sumout\))
+-- \Banco|saidaA[3]~3_combout\ = (\ROM1|memROM~0_combout\ & \Banco|registrador~1063_combout\)
 
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
+	lut_mask => "0000010100000101000001010000010100000101000001010000010100000101",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
 	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~13_sumout\,
+	datac => \Banco|ALT_INV_registrador~1063_combout\,
 	combout => \Banco|saidaA[3]~3_combout\);
-
-\Banco|saidaA[4]~4\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[4]~4_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~17_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~17_sumout\,
-	combout => \Banco|saidaA[4]~4_combout\);
-
-\Banco|saidaA[5]~5\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[5]~5_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~21_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~21_sumout\,
-	combout => \Banco|saidaA[5]~5_combout\);
-
-\Banco|saidaA[6]~6\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[6]~6_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~25_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~25_sumout\,
-	combout => \Banco|saidaA[6]~6_combout\);
-
-\Banco|saidaA[7]~7\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[7]~7_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~29_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~29_sumout\,
-	combout => \Banco|saidaA[7]~7_combout\);
-
-\Banco|saidaA[8]~8\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[8]~8_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~33_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~33_sumout\,
-	combout => \Banco|saidaA[8]~8_combout\);
-
-\Banco|saidaA[9]~9\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[9]~9_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~37_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~37_sumout\,
-	combout => \Banco|saidaA[9]~9_combout\);
-
-\Banco|saidaA[10]~10\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[10]~10_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~41_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~41_sumout\,
-	combout => \Banco|saidaA[10]~10_combout\);
-
-\Banco|saidaA[11]~11\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[11]~11_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~45_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~45_sumout\,
-	combout => \Banco|saidaA[11]~11_combout\);
-
-\Banco|saidaA[12]~12\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[12]~12_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~49_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~49_sumout\,
-	combout => \Banco|saidaA[12]~12_combout\);
-
-\Banco|saidaA[13]~13\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[13]~13_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~53_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~53_sumout\,
-	combout => \Banco|saidaA[13]~13_combout\);
-
-\Banco|saidaA[14]~14\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[14]~14_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~57_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~57_sumout\,
-	combout => \Banco|saidaA[14]~14_combout\);
-
-\Banco|saidaA[15]~15\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[15]~15_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~61_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~61_sumout\,
-	combout => \Banco|saidaA[15]~15_combout\);
-
-\Banco|saidaA[16]~16\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[16]~16_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~65_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~65_sumout\,
-	combout => \Banco|saidaA[16]~16_combout\);
-
-\Banco|saidaA[17]~17\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[17]~17_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~69_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~69_sumout\,
-	combout => \Banco|saidaA[17]~17_combout\);
-
-\Banco|saidaA[18]~18\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[18]~18_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~73_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~73_sumout\,
-	combout => \Banco|saidaA[18]~18_combout\);
-
-\Banco|saidaA[19]~19\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[19]~19_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~77_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~77_sumout\,
-	combout => \Banco|saidaA[19]~19_combout\);
-
-\Banco|saidaA[20]~20\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[20]~20_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~81_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~81_sumout\,
-	combout => \Banco|saidaA[20]~20_combout\);
-
-\Banco|saidaA[21]~21\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[21]~21_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~85_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~85_sumout\,
-	combout => \Banco|saidaA[21]~21_combout\);
-
-\Banco|saidaA[22]~22\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[22]~22_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~89_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~89_sumout\,
-	combout => \Banco|saidaA[22]~22_combout\);
-
-\Banco|saidaA[23]~23\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[23]~23_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~93_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~93_sumout\,
-	combout => \Banco|saidaA[23]~23_combout\);
-
-\Banco|saidaA[24]~24\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[24]~24_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~97_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~97_sumout\,
-	combout => \Banco|saidaA[24]~24_combout\);
-
-\Banco|saidaA[25]~25\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[25]~25_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~101_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~101_sumout\,
-	combout => \Banco|saidaA[25]~25_combout\);
-
-\Banco|saidaA[26]~26\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[26]~26_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~105_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~105_sumout\,
-	combout => \Banco|saidaA[26]~26_combout\);
-
-\Banco|saidaA[27]~27\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[27]~27_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~109_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~109_sumout\,
-	combout => \Banco|saidaA[27]~27_combout\);
-
-\Banco|saidaA[28]~28\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[28]~28_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~113_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~113_sumout\,
-	combout => \Banco|saidaA[28]~28_combout\);
-
-\Banco|saidaA[29]~29\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[29]~29_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~117_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~117_sumout\,
-	combout => \Banco|saidaA[29]~29_combout\);
-
-\Banco|saidaA[30]~30\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[30]~30_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~121_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~121_sumout\,
-	combout => \Banco|saidaA[30]~30_combout\);
-
-\Banco|saidaA[31]~31\ : cyclonev_lcell_comb
--- Equation(s):
--- \Banco|saidaA[31]~31_combout\ = (\ROM1|memROM~0_combout\ & (\ProgramCounter|DOUT\(2) & \ULA|Add1~125_sumout\))
-
--- pragma translate_off
-GENERIC MAP (
-	extended_lut => "off",
-	lut_mask => "0000000100000001000000010000000100000001000000010000000100000001",
-	shared_arith => "off")
--- pragma translate_on
-PORT MAP (
-	dataa => \ROM1|ALT_INV_memROM~0_combout\,
-	datab => \ProgramCounter|ALT_INV_DOUT\(2),
-	datac => \ULA|ALT_INV_Add1~125_sumout\,
-	combout => \Banco|saidaA[31]~31_combout\);
 
 \SomaPC|Add0~21\ : cyclonev_lcell_comb
 -- Equation(s):

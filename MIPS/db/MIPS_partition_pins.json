@@ -260,6 +260,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "entradaBOUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "entradaBOUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "entradaBOUT[3]",
+					"strict" : false
+				},
+				{
 					"name" : "saidaPCOUT[2]",
 					"strict" : false
 				},

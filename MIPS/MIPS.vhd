@@ -62,7 +62,7 @@ ROM1: entity work.ROMMIPS
 -- banco REGS
 
 
-Banco : entity work.bancoRegistradores
+Banco : entity work.bancoReg
                 port map(
                     clk => CLK,
                     enderecoA => enderecoRs,
