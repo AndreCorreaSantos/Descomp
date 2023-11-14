@@ -236,7 +236,7 @@ STA REG2, @293
 RET
 
 TRATA_Temporizador:
-LDA REG2, @357; Checa se KEY0 foi pressionado, caso verdade pula para a sub-rotina de incremento		
+LDA REG2, @357; Checa se CLOCK de 1hz  foi acionado, caso verdade pula para a sub-rotina de incremento		
 AND REG2, @10
 CEQ REG2, @10				
 JEQ INCREMENTO_Seg_Uni_1

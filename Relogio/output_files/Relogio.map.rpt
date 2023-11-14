@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Relogio
-Mon Oct 30 18:07:45 2023
+Sun Nov 12 12:31:25 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -112,7 +112,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 30 18:07:45 2023       ;
+; Analysis & Synthesis Status     ; Successful - Sun Nov 12 12:31:25 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Relogio                                     ;
 ; Top-level Entity Name           ; Relogio                                     ;
@@ -233,71 +233,76 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
 ;     Processor 7            ;   0.0%      ;
 ;     Processor 8            ;   0.0%      ;
-;     Processors 9-16        ;   0.0%      ;
+;     Processor 9            ;   0.0%      ;
+;     Processor 10           ;   0.0%      ;
+;     Processor 11           ;   0.0%      ;
+;     Processor 12           ;   0.0%      ;
+;     Processor 13           ;   0.0%      ;
+;     Processors 14-16       ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                     ;
-+------------------------------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                 ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                        ; Library ;
-+------------------------------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------+---------+
-; (MaquinaEstado)VGA_Tile_32x32_restored/somadorGenerico.vhd       ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/somadorGenerico.vhd       ;         ;
-; (MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd         ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd         ;         ;
-; (MaquinaEstado)VGA_Tile_32x32_restored/muxGenerico.vhd           ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/muxGenerico.vhd           ;         ;
-; (MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd          ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd          ;         ;
-; (MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd     ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd     ;         ;
-; (MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd             ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd             ;         ;
-; (MaquinaEstado)VGA_Tile_32x32_restored/controladorVGA.vhd        ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/controladorVGA.vhd        ;         ;
-; (MaquinaEstado)VGA_Tile_32x32_restored/calcMemAddr.vhd           ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/calcMemAddr.vhd           ;         ;
-; simple_dual_port_ram_dual_clock.vhd                              ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/simple_dual_port_ram_dual_clock.vhd                              ;         ;
-; memoriaROMVGA.vhd                                                ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/memoriaROMVGA.vhd                                                ;         ;
-; Relogio.vhd                                                      ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/Relogio.vhd                                                      ;         ;
-; romMIF.vhd                                                       ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/romMIF.vhd                                                       ;         ;
-; Processador.vhd                                                  ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/Processador.vhd                                                  ;         ;
-; decoderInstru.vhd                                                ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/decoderInstru.vhd                                                ;         ;
-; registradorGenerico.vhd                                          ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/registradorGenerico.vhd                                          ;         ;
-; bancoRegistradoresArqRegMem.vhd                                  ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/bancoRegistradoresArqRegMem.vhd                                  ;         ;
-; somaConstante.vhd                                                ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/somaConstante.vhd                                                ;         ;
-; muxGenerico2x1.vhd                                               ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/muxGenerico2x1.vhd                                               ;         ;
-; muxGenerico4x1.vhd                                               ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/muxGenerico4x1.vhd                                               ;         ;
-; ULASomaSub.vhd                                                   ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/ULASomaSub.vhd                                                   ;         ;
-; FlipFlop.vhd                                                     ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/FlipFlop.vhd                                                     ;         ;
-; edgeDetector.vhd                                                 ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/edgeDetector.vhd                                                 ;         ;
-; logicaDesvio.vhd                                                 ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/logicaDesvio.vhd                                                 ;         ;
-; memoriaRAM.vhd                                                   ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/memoriaRAM.vhd                                                   ;         ;
-; decoderToHabilita.vhd                                            ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/decoderToHabilita.vhd                                            ;         ;
-; decoder3x8.vhd                                                   ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/decoder3x8.vhd                                                   ;         ;
-; LEDS.vhd                                                         ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/LEDS.vhd                                                         ;         ;
-; SWITCHES.vhd                                                     ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/SWITCHES.vhd                                                     ;         ;
-; buffer_3_state_1porta.vhd                                        ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/buffer_3_state_1porta.vhd                                        ;         ;
-; buffer_3_state_8portas.vhd                                       ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/buffer_3_state_8portas.vhd                                       ;         ;
-; KEYS.vhd                                                         ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/KEYS.vhd                                                         ;         ;
-; Detector_Keys.vhd                                                ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/Detector_Keys.vhd                                                ;         ;
-; HEXES.vhd                                                        ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/HEXES.vhd                                                        ;         ;
-; conversorHex7Seg.vhd                                             ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/conversorHex7Seg.vhd                                             ;         ;
-; divisorGenerico.vhd                                              ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/divisorGenerico.vhd                                              ;         ;
-; divisorGenerico_e_Interface.vhd                                  ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/divisorGenerico_e_Interface.vhd                                  ;         ;
-; muxGenerico2x1_simples.vhd                                       ; yes             ; User VHDL File                                        ; C:/Descomp/Relogio/muxGenerico2x1_simples.vhd                                       ;         ;
-; altsyncram.tdf                                                   ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf               ;         ;
-; stratix_ram_block.inc                                            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc        ;         ;
-; lpm_mux.inc                                                      ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                  ;         ;
-; lpm_decode.inc                                                   ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc               ;         ;
-; aglobal201.inc                                                   ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc               ;         ;
-; a_rdenreg.inc                                                    ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                ;         ;
-; altrom.inc                                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                   ;         ;
-; altram.inc                                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                   ;         ;
-; altdpram.inc                                                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
-; db/altsyncram_udq1.tdf                                           ; yes             ; Auto-Generated Megafunction                           ; C:/Descomp/Relogio/db/altsyncram_udq1.tdf                                           ;         ;
-; db/relogio.ram0_simple_dual_port_ram_dual_clock_e4fadce2.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Descomp/Relogio/db/relogio.ram0_simple_dual_port_ram_dual_clock_e4fadce2.hdl.mif ;         ;
-+------------------------------------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                               ;
++------------------------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                 ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                  ; Library ;
++------------------------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
+; (MaquinaEstado)VGA_Tile_32x32_restored/somadorGenerico.vhd       ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/somadorGenerico.vhd       ;         ;
+; (MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd         ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd         ;         ;
+; (MaquinaEstado)VGA_Tile_32x32_restored/muxGenerico.vhd           ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/muxGenerico.vhd           ;         ;
+; (MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd          ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd          ;         ;
+; (MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd     ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd     ;         ;
+; (MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd             ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd             ;         ;
+; (MaquinaEstado)VGA_Tile_32x32_restored/controladorVGA.vhd        ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/controladorVGA.vhd        ;         ;
+; (MaquinaEstado)VGA_Tile_32x32_restored/calcMemAddr.vhd           ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/calcMemAddr.vhd           ;         ;
+; simple_dual_port_ram_dual_clock.vhd                              ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/simple_dual_port_ram_dual_clock.vhd                              ;         ;
+; memoriaROMVGA.vhd                                                ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/memoriaROMVGA.vhd                                                ;         ;
+; Relogio.vhd                                                      ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd                                                      ;         ;
+; romMIF.vhd                                                       ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/romMIF.vhd                                                       ;         ;
+; Processador.vhd                                                  ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd                                                  ;         ;
+; decoderInstru.vhd                                                ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/decoderInstru.vhd                                                ;         ;
+; registradorGenerico.vhd                                          ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/registradorGenerico.vhd                                          ;         ;
+; bancoRegistradoresArqRegMem.vhd                                  ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/bancoRegistradoresArqRegMem.vhd                                  ;         ;
+; somaConstante.vhd                                                ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/somaConstante.vhd                                                ;         ;
+; muxGenerico2x1.vhd                                               ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1.vhd                                               ;         ;
+; muxGenerico4x1.vhd                                               ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico4x1.vhd                                               ;         ;
+; ULASomaSub.vhd                                                   ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/ULASomaSub.vhd                                                   ;         ;
+; FlipFlop.vhd                                                     ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/FlipFlop.vhd                                                     ;         ;
+; edgeDetector.vhd                                                 ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/edgeDetector.vhd                                                 ;         ;
+; logicaDesvio.vhd                                                 ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/logicaDesvio.vhd                                                 ;         ;
+; memoriaRAM.vhd                                                   ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/memoriaRAM.vhd                                                   ;         ;
+; decoderToHabilita.vhd                                            ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/decoderToHabilita.vhd                                            ;         ;
+; decoder3x8.vhd                                                   ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/decoder3x8.vhd                                                   ;         ;
+; LEDS.vhd                                                         ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/LEDS.vhd                                                         ;         ;
+; SWITCHES.vhd                                                     ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/SWITCHES.vhd                                                     ;         ;
+; buffer_3_state_1porta.vhd                                        ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/buffer_3_state_1porta.vhd                                        ;         ;
+; buffer_3_state_8portas.vhd                                       ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/buffer_3_state_8portas.vhd                                       ;         ;
+; KEYS.vhd                                                         ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/KEYS.vhd                                                         ;         ;
+; Detector_Keys.vhd                                                ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/Detector_Keys.vhd                                                ;         ;
+; HEXES.vhd                                                        ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/HEXES.vhd                                                        ;         ;
+; conversorHex7Seg.vhd                                             ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/conversorHex7Seg.vhd                                             ;         ;
+; divisorGenerico.vhd                                              ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/divisorGenerico.vhd                                              ;         ;
+; divisorGenerico_e_Interface.vhd                                  ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/divisorGenerico_e_Interface.vhd                                  ;         ;
+; muxGenerico2x1_simples.vhd                                       ; yes             ; User VHDL File                                        ; /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1_simples.vhd                                       ;         ;
+; altsyncram.tdf                                                   ; yes             ; Megafunction                                          ; /home/andre/Insper/6semestre/softwareDescomp/quartus/libraries/megafunctions/altsyncram.tdf                   ;         ;
+; stratix_ram_block.inc                                            ; yes             ; Megafunction                                          ; /home/andre/Insper/6semestre/softwareDescomp/quartus/libraries/megafunctions/stratix_ram_block.inc            ;         ;
+; lpm_mux.inc                                                      ; yes             ; Megafunction                                          ; /home/andre/Insper/6semestre/softwareDescomp/quartus/libraries/megafunctions/lpm_mux.inc                      ;         ;
+; lpm_decode.inc                                                   ; yes             ; Megafunction                                          ; /home/andre/Insper/6semestre/softwareDescomp/quartus/libraries/megafunctions/lpm_decode.inc                   ;         ;
+; aglobal201.inc                                                   ; yes             ; Megafunction                                          ; /home/andre/Insper/6semestre/softwareDescomp/quartus/libraries/megafunctions/aglobal201.inc                   ;         ;
+; a_rdenreg.inc                                                    ; yes             ; Megafunction                                          ; /home/andre/Insper/6semestre/softwareDescomp/quartus/libraries/megafunctions/a_rdenreg.inc                    ;         ;
+; altrom.inc                                                       ; yes             ; Megafunction                                          ; /home/andre/Insper/6semestre/softwareDescomp/quartus/libraries/megafunctions/altrom.inc                       ;         ;
+; altram.inc                                                       ; yes             ; Megafunction                                          ; /home/andre/Insper/6semestre/softwareDescomp/quartus/libraries/megafunctions/altram.inc                       ;         ;
+; altdpram.inc                                                     ; yes             ; Megafunction                                          ; /home/andre/Insper/6semestre/softwareDescomp/quartus/libraries/megafunctions/altdpram.inc                     ;         ;
+; db/altsyncram_udq1.tdf                                           ; yes             ; Auto-Generated Megafunction                           ; /home/andre/Insper/6semestre/Descomp/Relogio/db/altsyncram_udq1.tdf                                           ;         ;
+; db/Relogio.ram0_simple_dual_port_ram_dual_clock_e4fadce2.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; /home/andre/Insper/6semestre/Descomp/Relogio/db/Relogio.ram0_simple_dual_port_ram_dual_clock_e4fadce2.hdl.mif ;         ;
++------------------------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------+
@@ -465,33 +470,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Relogio|driverVGA:driverVGA|interfaceVGA:interface|controladorVGA:ctrl|vert_count[1]                     ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Relogio|Processador:Processor|registradorGenerico:PC|DOUT[7]                                             ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |Relogio|driverVGA:driverVGA|interfaceVGA:interface|controladorVGA:ctrl|hor_Active_Window_Pixel_Count[10] ;
-; 5:1                ; 11 bits   ; 33 LEs        ; 22 LEs               ; 11 LEs                 ; Yes        ; |Relogio|driverVGA:driverVGA|interfaceVGA:interface|controladorVGA:ctrl|vert_Active_Window_Line_Count[4]  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Relogio|driverVGA:driverVGA|interfaceVGA:interface|controladorVGA:ctrl|vert_count                        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Relogio|driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|blue                        ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[6]                                           ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:Processor|ULASomaSub:ULA1|saida[3]                                                   ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:Processor|decoderInstru:DECODER|saida[8]                                             ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor0|rascSaida7seg[1]                                   ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor1|rascSaida7seg[5]                                   ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor2|rascSaida7seg[0]                                   ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor3|rascSaida7seg[1]                                   ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor4|rascSaida7seg[2]                                   ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor5|rascSaida7seg[0]                                   ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor0|rascSaida7seg[4]                                   ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor1|rascSaida7seg[6]                                   ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor2|rascSaida7seg[4]                                   ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor3|rascSaida7seg[6]                                   ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor4|rascSaida7seg[6]                                   ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor5|rascSaida7seg[6]                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Relogio|driverVGA:driverVGA|interfaceVGA:interface|controladorVGA:ctrl|vert_count[0]                    ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |Relogio|Processador:Processor|registradorGenerico:PC|DOUT[2]                                            ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |Relogio|driverVGA:driverVGA|interfaceVGA:interface|controladorVGA:ctrl|hor_Active_Window_Pixel_Count[3] ;
+; 5:1                ; 11 bits   ; 33 LEs        ; 22 LEs               ; 11 LEs                 ; Yes        ; |Relogio|driverVGA:driverVGA|interfaceVGA:interface|controladorVGA:ctrl|vert_Active_Window_Line_Count[7] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Relogio|driverVGA:driverVGA|interfaceVGA:interface|controladorVGA:ctrl|vert_count                       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Relogio|driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|blue                       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:Processor|muxGenerico2x1:MUX1|saida_MUX[4]                                          ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:Processor|ULASomaSub:ULA1|nf                                                        ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:Processor|decoderInstru:DECODER|saida[8]                                            ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor0|rascSaida7seg[0]                                  ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor1|rascSaida7seg[5]                                  ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor2|rascSaida7seg[5]                                  ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor3|rascSaida7seg[5]                                  ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor4|rascSaida7seg[1]                                  ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor5|rascSaida7seg[2]                                  ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor0|rascSaida7seg[4]                                  ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor1|rascSaida7seg[6]                                  ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor2|rascSaida7seg[4]                                  ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor3|rascSaida7seg[4]                                  ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor4|rascSaida7seg[4]                                  ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |Relogio|HEXES:Hexes_Unity|conversorHex7Seg:Conversor5|rascSaida7seg[4]                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1258,7 +1263,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1268,199 +1273,199 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Oct 30 18:07:33 2023
+    Info: Processing started: Sun Nov 12 12:31:16 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Relogio -c Relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file (maquinaestado)vga_tile_32x32_restored/somadorgenerico.vhd
-    Info (12022): Found design unit 1: somadorGenerico-comportamento File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/somadorGenerico.vhd Line: 18
-    Info (12023): Found entity 1: somadorGenerico File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/somadorGenerico.vhd Line: 6
-Info (12021): Found 4 design units, including 1 entities, in source file (maquinaestado)vga_tile_32x32_restored/romcaracteres.vhd
-    Info (12022): Found design unit 1: ROMcaracteres-size8x8 File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd Line: 13
-    Info (12022): Found design unit 2: ROMcaracteres-size16x16 File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd Line: 34
-    Info (12022): Found design unit 3: ROMcaracteres-size32x32 File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd Line: 44
-    Info (12023): Found entity 1: ROMcaracteres File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file (maquinaestado)vga_tile_32x32_restored/muxgenerico.vhd
-    Info (12022): Found design unit 1: muxGenerico-Behavioral File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/muxGenerico.vhd Line: 16
-    Info (12023): Found entity 1: muxGenerico File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/muxGenerico.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file (maquinaestado)vga_tile_32x32_restored/memoriaramvga.vhd
-    Info (12022): Found design unit 1: memoriaRAMVGA-rtl File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/memoriaRAMVGA.vhd Line: 20
-    Info (12023): Found entity 1: memoriaRAMVGA File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/memoriaRAMVGA.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file (maquinaestado)vga_tile_32x32_restored/interfacevga.vhd
-    Info (12022): Found design unit 1: interfaceVGA-behavior File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd Line: 25
-    Info (12023): Found entity 1: interfaceVGA File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file (maquinaestado)vga_tile_32x32_restored/geradorcaracteres.vhd
-    Info (12022): Found design unit 1: geradorCaracteres-behavior File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 41
-    Info (12023): Found entity 1: geradorCaracteres File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file (maquinaestado)vga_tile_32x32_restored/dual_port_ram.vhd
-    Info (12022): Found design unit 1: dual_port_ram-rtl File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/dual_port_ram.vhd Line: 24
-    Info (12023): Found entity 1: dual_port_ram File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/dual_port_ram.vhd Line: 9
-Info (12021): Found 2 design units, including 1 entities, in source file (maquinaestado)vga_tile_32x32_restored/drivervga.vhd
-    Info (12022): Found design unit 1: driverVGA-arc File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd Line: 37
-    Info (12023): Found entity 1: driverVGA File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file (maquinaestado)vga_tile_32x32_restored/controladorvga.vhd
-    Info (12022): Found design unit 1: controladorVGA-behavior File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/controladorVGA.vhd Line: 31
-    Info (12023): Found entity 1: controladorVGA File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/controladorVGA.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file (maquinaestado)vga_tile_32x32_restored/calcmemaddr.vhd
-    Info (12022): Found design unit 1: calcMemAddr-arc File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/calcMemAddr.vhd Line: 15
-    Info (12023): Found entity 1: calcMemAddr File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/calcMemAddr.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file (MaquinaEstado)VGA_Tile_32x32_restored/somadorGenerico.vhd
+    Info (12022): Found design unit 1: somadorGenerico-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/somadorGenerico.vhd Line: 18
+    Info (12023): Found entity 1: somadorGenerico File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/somadorGenerico.vhd Line: 6
+Info (12021): Found 4 design units, including 1 entities, in source file (MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd
+    Info (12022): Found design unit 1: ROMcaracteres-size8x8 File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd Line: 13
+    Info (12022): Found design unit 2: ROMcaracteres-size16x16 File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd Line: 34
+    Info (12022): Found design unit 3: ROMcaracteres-size32x32 File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd Line: 44
+    Info (12023): Found entity 1: ROMcaracteres File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file (MaquinaEstado)VGA_Tile_32x32_restored/muxGenerico.vhd
+    Info (12022): Found design unit 1: muxGenerico-Behavioral File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/muxGenerico.vhd Line: 16
+    Info (12023): Found entity 1: muxGenerico File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/muxGenerico.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file (MaquinaEstado)VGA_Tile_32x32_restored/memoriaRAMVGA.vhd
+    Info (12022): Found design unit 1: memoriaRAMVGA-rtl File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/memoriaRAMVGA.vhd Line: 20
+    Info (12023): Found entity 1: memoriaRAMVGA File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/memoriaRAMVGA.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file (MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd
+    Info (12022): Found design unit 1: interfaceVGA-behavior File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd Line: 25
+    Info (12023): Found entity 1: interfaceVGA File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file (MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd
+    Info (12022): Found design unit 1: geradorCaracteres-behavior File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 41
+    Info (12023): Found entity 1: geradorCaracteres File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file (MaquinaEstado)VGA_Tile_32x32_restored/dual_port_ram.vhd
+    Info (12022): Found design unit 1: dual_port_ram-rtl File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/dual_port_ram.vhd Line: 24
+    Info (12023): Found entity 1: dual_port_ram File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/dual_port_ram.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file (MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd
+    Info (12022): Found design unit 1: driverVGA-arc File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd Line: 37
+    Info (12023): Found entity 1: driverVGA File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file (MaquinaEstado)VGA_Tile_32x32_restored/controladorVGA.vhd
+    Info (12022): Found design unit 1: controladorVGA-behavior File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/controladorVGA.vhd Line: 31
+    Info (12023): Found entity 1: controladorVGA File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/controladorVGA.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file (MaquinaEstado)VGA_Tile_32x32_restored/calcMemAddr.vhd
+    Info (12022): Found design unit 1: calcMemAddr-arc File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/calcMemAddr.vhd Line: 15
+    Info (12023): Found entity 1: calcMemAddr File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/calcMemAddr.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file simple_dual_port_ram_dual_clock.vhd
-    Info (12022): Found design unit 1: simple_dual_port_ram_dual_clock-rtl File: C:/Descomp/Relogio/simple_dual_port_ram_dual_clock.vhd Line: 30
-    Info (12023): Found entity 1: simple_dual_port_ram_dual_clock File: C:/Descomp/Relogio/simple_dual_port_ram_dual_clock.vhd Line: 9
-Info (12021): Found 2 design units, including 1 entities, in source file memoriaromvga.vhd
-    Info (12022): Found design unit 1: memoriaROMVGA-assincrona File: C:/Descomp/Relogio/memoriaROMVGA.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROMVGA File: C:/Descomp/Relogio/memoriaROMVGA.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file relogio.vhd
-    Info (12022): Found design unit 1: Relogio-arquitetura File: C:/Descomp/Relogio/Relogio.vhd Line: 31
-    Info (12023): Found entity 1: Relogio File: C:/Descomp/Relogio/Relogio.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file rommif.vhd
-    Info (12022): Found design unit 1: romMif-initFileROM File: C:/Descomp/Relogio/romMIF.vhd Line: 19
-    Info (12023): Found entity 1: romMif File: C:/Descomp/Relogio/romMIF.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
-    Info (12022): Found design unit 1: Processador-arquitetura File: C:/Descomp/Relogio/Processador.vhd Line: 19
-    Info (12023): Found entity 1: Processador File: C:/Descomp/Relogio/Processador.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file decoderinstru.vhd
-    Info (12022): Found design unit 1: decoderInstru-comportamento File: C:/Descomp/Relogio/decoderInstru.vhd Line: 10
-    Info (12023): Found entity 1: decoderInstru File: C:/Descomp/Relogio/decoderInstru.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Descomp/Relogio/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/Descomp/Relogio/registradorGenerico.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradoresarqregmem.vhd
-    Info (12022): Found design unit 1: bancoRegistradoresArqRegMem-comportamento File: C:/Descomp/Relogio/bancoRegistradoresArqRegMem.vhd Line: 23
-    Info (12023): Found entity 1: bancoRegistradoresArqRegMem File: C:/Descomp/Relogio/bancoRegistradoresArqRegMem.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Descomp/Relogio/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Descomp/Relogio/somaConstante.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Descomp/Relogio/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Descomp/Relogio/muxGenerico2x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
-    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Descomp/Relogio/muxGenerico4x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Descomp/Relogio/muxGenerico4x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Descomp/Relogio/ULASomaSub.vhd Line: 16
-    Info (12023): Found entity 1: ULASomaSub File: C:/Descomp/Relogio/ULASomaSub.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file flipflop.vhd
-    Info (12022): Found design unit 1: FlipFlop-comportamento File: C:/Descomp/Relogio/FlipFlop.vhd Line: 12
-    Info (12023): Found entity 1: FlipFlop File: C:/Descomp/Relogio/FlipFlop.vhd Line: 4
-Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Descomp/Relogio/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Descomp/Relogio/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/Descomp/Relogio/edgeDetector.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file logicadesvio.vhd
-    Info (12022): Found design unit 1: logicaDesvio-comportamento File: C:/Descomp/Relogio/logicaDesvio.vhd Line: 11
-    Info (12023): Found entity 1: logicaDesvio File: C:/Descomp/Relogio/logicaDesvio.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Descomp/Relogio/memoriaRAM.vhd Line: 21
-    Info (12023): Found entity 1: memoriaRAM File: C:/Descomp/Relogio/memoriaRAM.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file decodertohabilita.vhd
-    Info (12022): Found design unit 1: decoderToHabilita-comportamento File: C:/Descomp/Relogio/decoderToHabilita.vhd Line: 22
-    Info (12023): Found entity 1: decoderToHabilita File: C:/Descomp/Relogio/decoderToHabilita.vhd Line: 4
+    Info (12022): Found design unit 1: simple_dual_port_ram_dual_clock-rtl File: /home/andre/Insper/6semestre/Descomp/Relogio/simple_dual_port_ram_dual_clock.vhd Line: 30
+    Info (12023): Found entity 1: simple_dual_port_ram_dual_clock File: /home/andre/Insper/6semestre/Descomp/Relogio/simple_dual_port_ram_dual_clock.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file memoriaROMVGA.vhd
+    Info (12022): Found design unit 1: memoriaROMVGA-assincrona File: /home/andre/Insper/6semestre/Descomp/Relogio/memoriaROMVGA.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROMVGA File: /home/andre/Insper/6semestre/Descomp/Relogio/memoriaROMVGA.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file Relogio.vhd
+    Info (12022): Found design unit 1: Relogio-arquitetura File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 31
+    Info (12023): Found entity 1: Relogio File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file romMIF.vhd
+    Info (12022): Found design unit 1: romMif-initFileROM File: /home/andre/Insper/6semestre/Descomp/Relogio/romMIF.vhd Line: 19
+    Info (12023): Found entity 1: romMif File: /home/andre/Insper/6semestre/Descomp/Relogio/romMIF.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file Processador.vhd
+    Info (12022): Found design unit 1: Processador-arquitetura File: /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd Line: 19
+    Info (12023): Found entity 1: Processador File: /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file decoderInstru.vhd
+    Info (12022): Found design unit 1: decoderInstru-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/decoderInstru.vhd Line: 10
+    Info (12023): Found entity 1: decoderInstru File: /home/andre/Insper/6semestre/Descomp/Relogio/decoderInstru.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file registradorGenerico.vhd
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: /home/andre/Insper/6semestre/Descomp/Relogio/registradorGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file bancoRegistradoresArqRegMem.vhd
+    Info (12022): Found design unit 1: bancoRegistradoresArqRegMem-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/bancoRegistradoresArqRegMem.vhd Line: 23
+    Info (12023): Found entity 1: bancoRegistradoresArqRegMem File: /home/andre/Insper/6semestre/Descomp/Relogio/bancoRegistradoresArqRegMem.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file somaConstante.vhd
+    Info (12022): Found design unit 1: somaConstante-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: /home/andre/Insper/6semestre/Descomp/Relogio/somaConstante.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file muxGenerico2x1.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file muxGenerico4x1.vhd
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico4x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico4x1 File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico4x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file ULASomaSub.vhd
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/ULASomaSub.vhd Line: 16
+    Info (12023): Found entity 1: ULASomaSub File: /home/andre/Insper/6semestre/Descomp/Relogio/ULASomaSub.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file FlipFlop.vhd
+    Info (12022): Found design unit 1: FlipFlop-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/FlipFlop.vhd Line: 12
+    Info (12023): Found entity 1: FlipFlop File: /home/andre/Insper/6semestre/Descomp/Relogio/FlipFlop.vhd Line: 4
+Info (12021): Found 3 design units, including 1 entities, in source file edgeDetector.vhd
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: /home/andre/Insper/6semestre/Descomp/Relogio/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: /home/andre/Insper/6semestre/Descomp/Relogio/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: /home/andre/Insper/6semestre/Descomp/Relogio/edgeDetector.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file logicaDesvio.vhd
+    Info (12022): Found design unit 1: logicaDesvio-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/logicaDesvio.vhd Line: 11
+    Info (12023): Found entity 1: logicaDesvio File: /home/andre/Insper/6semestre/Descomp/Relogio/logicaDesvio.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file memoriaRAM.vhd
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: /home/andre/Insper/6semestre/Descomp/Relogio/memoriaRAM.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM File: /home/andre/Insper/6semestre/Descomp/Relogio/memoriaRAM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file decoderToHabilita.vhd
+    Info (12022): Found design unit 1: decoderToHabilita-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/decoderToHabilita.vhd Line: 22
+    Info (12023): Found entity 1: decoderToHabilita File: /home/andre/Insper/6semestre/Descomp/Relogio/decoderToHabilita.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decoder3x8.vhd
-    Info (12022): Found design unit 1: decoder3x8-comportamento File: C:/Descomp/Relogio/decoder3x8.vhd Line: 11
-    Info (12023): Found entity 1: decoder3x8 File: C:/Descomp/Relogio/decoder3x8.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file leds.vhd
-    Info (12022): Found design unit 1: LEDS-comportamento File: C:/Descomp/Relogio/LEDS.vhd Line: 13
-    Info (12023): Found entity 1: LEDS File: C:/Descomp/Relogio/LEDS.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file switches.vhd
-    Info (12022): Found design unit 1: SWITCHES-comportamento File: C:/Descomp/Relogio/SWITCHES.vhd Line: 12
-    Info (12023): Found entity 1: SWITCHES File: C:/Descomp/Relogio/SWITCHES.vhd Line: 4
+    Info (12022): Found design unit 1: decoder3x8-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/decoder3x8.vhd Line: 11
+    Info (12023): Found entity 1: decoder3x8 File: /home/andre/Insper/6semestre/Descomp/Relogio/decoder3x8.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file LEDS.vhd
+    Info (12022): Found design unit 1: LEDS-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/LEDS.vhd Line: 13
+    Info (12023): Found entity 1: LEDS File: /home/andre/Insper/6semestre/Descomp/Relogio/LEDS.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file SWITCHES.vhd
+    Info (12022): Found design unit 1: SWITCHES-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/SWITCHES.vhd Line: 12
+    Info (12023): Found entity 1: SWITCHES File: /home/andre/Insper/6semestre/Descomp/Relogio/SWITCHES.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buffer_3_state_1porta.vhd
-    Info (12022): Found design unit 1: buffer_3_state_1porta-comportamento File: C:/Descomp/Relogio/buffer_3_state_1porta.vhd Line: 12
-    Info (12023): Found entity 1: buffer_3_state_1porta File: C:/Descomp/Relogio/buffer_3_state_1porta.vhd Line: 4
+    Info (12022): Found design unit 1: buffer_3_state_1porta-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/buffer_3_state_1porta.vhd Line: 12
+    Info (12023): Found entity 1: buffer_3_state_1porta File: /home/andre/Insper/6semestre/Descomp/Relogio/buffer_3_state_1porta.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buffer_3_state_8portas.vhd
-    Info (12022): Found design unit 1: buffer_3_state_8portas-comportamento File: C:/Descomp/Relogio/buffer_3_state_8portas.vhd Line: 11
-    Info (12023): Found entity 1: buffer_3_state_8portas File: C:/Descomp/Relogio/buffer_3_state_8portas.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file keys.vhd
-    Info (12022): Found design unit 1: KEYS-comportamento File: C:/Descomp/Relogio/KEYS.vhd Line: 16
-    Info (12023): Found entity 1: KEYS File: C:/Descomp/Relogio/KEYS.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file detector_keys.vhd
-    Info (12022): Found design unit 1: Detector_Keys-comportamento File: C:/Descomp/Relogio/Detector_Keys.vhd Line: 12
-    Info (12023): Found entity 1: Detector_Keys File: C:/Descomp/Relogio/Detector_Keys.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file hexes.vhd
-    Info (12022): Found design unit 1: HEXES-comportamento File: C:/Descomp/Relogio/HEXES.vhd Line: 15
-    Info (12023): Found entity 1: HEXES File: C:/Descomp/Relogio/HEXES.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Descomp/Relogio/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/Descomp/Relogio/conversorHex7Seg.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file divisorgenerico.vhd
-    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: C:/Descomp/Relogio/divisorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: divisorGenerico File: C:/Descomp/Relogio/divisorGenerico.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file divisorgenerico_e_interface.vhd
-    Info (12022): Found design unit 1: divisorGenerico_e_Interface-interface File: C:/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 14
-    Info (12023): Found entity 1: divisorGenerico_e_Interface File: C:/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_simples.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1_simples-comportamento File: C:/Descomp/Relogio/muxGenerico2x1_simples.vhd Line: 12
-    Info (12023): Found entity 1: muxGenerico2x1_simples File: C:/Descomp/Relogio/muxGenerico2x1_simples.vhd Line: 4
+    Info (12022): Found design unit 1: buffer_3_state_8portas-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/buffer_3_state_8portas.vhd Line: 11
+    Info (12023): Found entity 1: buffer_3_state_8portas File: /home/andre/Insper/6semestre/Descomp/Relogio/buffer_3_state_8portas.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file KEYS.vhd
+    Info (12022): Found design unit 1: KEYS-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/KEYS.vhd Line: 16
+    Info (12023): Found entity 1: KEYS File: /home/andre/Insper/6semestre/Descomp/Relogio/KEYS.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file Detector_Keys.vhd
+    Info (12022): Found design unit 1: Detector_Keys-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/Detector_Keys.vhd Line: 12
+    Info (12023): Found entity 1: Detector_Keys File: /home/andre/Insper/6semestre/Descomp/Relogio/Detector_Keys.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file HEXES.vhd
+    Info (12022): Found design unit 1: HEXES-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/HEXES.vhd Line: 15
+    Info (12023): Found entity 1: HEXES File: /home/andre/Insper/6semestre/Descomp/Relogio/HEXES.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file conversorHex7Seg.vhd
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: /home/andre/Insper/6semestre/Descomp/Relogio/conversorHex7Seg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file divisorGenerico.vhd
+    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: /home/andre/Insper/6semestre/Descomp/Relogio/divisorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: divisorGenerico File: /home/andre/Insper/6semestre/Descomp/Relogio/divisorGenerico.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file divisorGenerico_e_Interface.vhd
+    Info (12022): Found design unit 1: divisorGenerico_e_Interface-interface File: /home/andre/Insper/6semestre/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 14
+    Info (12023): Found entity 1: divisorGenerico_e_Interface File: /home/andre/Insper/6semestre/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file muxGenerico2x1_simples.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1_simples-comportamento File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1_simples.vhd Line: 12
+    Info (12023): Found entity 1: muxGenerico2x1_simples File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1_simples.vhd Line: 4
 Info (12127): Elaborating entity "Relogio" for the top level hierarchy
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Descomp/Relogio/Relogio.vhd Line: 70
-Info (12128): Elaborating entity "Processador" for hierarchy "Processador:Processor" File: C:/Descomp/Relogio/Relogio.vhd Line: 76
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:PC" File: C:/Descomp/Relogio/Processador.vhd Line: 65
-Info (12128): Elaborating entity "somaConstante" for hierarchy "Processador:Processor|somaConstante:incrementaPC" File: C:/Descomp/Relogio/Processador.vhd Line: 68
-Info (12128): Elaborating entity "decoderInstru" for hierarchy "Processador:Processor|decoderInstru:DECODER" File: C:/Descomp/Relogio/Processador.vhd Line: 72
-Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "Processador:Processor|bancoRegistradoresArqRegMem:REGS" File: C:/Descomp/Relogio/Processador.vhd Line: 75
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Processador:Processor|muxGenerico2x1:MUX1" File: C:/Descomp/Relogio/Processador.vhd Line: 84
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "Processador:Processor|muxGenerico4x1:MUXProxPC" File: C:/Descomp/Relogio/Processador.vhd Line: 90
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "Processador:Processor|ULASomaSub:ULA1" File: C:/Descomp/Relogio/Processador.vhd Line: 98
-Info (12128): Elaborating entity "FlipFlop" for hierarchy "Processador:Processor|FlipFlop:FlagZero" File: C:/Descomp/Relogio/Processador.vhd Line: 106
-Info (12128): Elaborating entity "logicaDesvio" for hierarchy "Processador:Processor|logicaDesvio:logicaDesvio1" File: C:/Descomp/Relogio/Processador.vhd Line: 120
-Info (12128): Elaborating entity "romMif" for hierarchy "romMif:ROM1" File: C:/Descomp/Relogio/Relogio.vhd Line: 89
-Warning (10541): VHDL Signal Declaration warning at romMIF.vhd(22): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/Relogio/romMIF.vhd Line: 22
-Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM1" File: C:/Descomp/Relogio/Relogio.vhd Line: 96
-Info (12128): Elaborating entity "decoderToHabilita" for hierarchy "decoderToHabilita:DECODIFICADOR" File: C:/Descomp/Relogio/Relogio.vhd Line: 108
-Info (12128): Elaborating entity "decoder3x8" for hierarchy "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER1" File: C:/Descomp/Relogio/decoderToHabilita.vhd Line: 28
-Info (10041): Inferred latch for "saida[0]" at decoder3x8.vhd(13) File: C:/Descomp/Relogio/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[1]" at decoder3x8.vhd(13) File: C:/Descomp/Relogio/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[2]" at decoder3x8.vhd(13) File: C:/Descomp/Relogio/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[3]" at decoder3x8.vhd(13) File: C:/Descomp/Relogio/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[4]" at decoder3x8.vhd(13) File: C:/Descomp/Relogio/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[5]" at decoder3x8.vhd(13) File: C:/Descomp/Relogio/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[6]" at decoder3x8.vhd(13) File: C:/Descomp/Relogio/decoder3x8.vhd Line: 13
-Info (10041): Inferred latch for "saida[7]" at decoder3x8.vhd(13) File: C:/Descomp/Relogio/decoder3x8.vhd Line: 13
-Info (12128): Elaborating entity "LEDS" for hierarchy "LEDS:LED_UNITY" File: C:/Descomp/Relogio/Relogio.vhd Line: 139
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "LEDS:LED_UNITY|registradorGenerico:REG_LEDS" File: C:/Descomp/Relogio/LEDS.vhd Line: 15
-Info (12128): Elaborating entity "SWITCHES" for hierarchy "SWITCHES:Switch_Unity" File: C:/Descomp/Relogio/Relogio.vhd Line: 152
-Info (12128): Elaborating entity "buffer_3_state_8portas" for hierarchy "SWITCHES:Switch_Unity|buffer_3_state_8portas:tri_state_8_1" File: C:/Descomp/Relogio/SWITCHES.vhd Line: 15
-Info (12128): Elaborating entity "buffer_3_state_1porta" for hierarchy "SWITCHES:Switch_Unity|buffer_3_state_1porta:tri_state_1_1" File: C:/Descomp/Relogio/SWITCHES.vhd Line: 22
-Info (12128): Elaborating entity "KEYS" for hierarchy "KEYS:Keys_Unity" File: C:/Descomp/Relogio/Relogio.vhd Line: 162
-Info (12128): Elaborating entity "divisorGenerico_e_Interface" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo" File: C:/Descomp/Relogio/Relogio.vhd Line: 177
-Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo" File: C:/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 22
-Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo2" File: C:/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 26
-Info (12128): Elaborating entity "muxGenerico2x1_simples" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|muxGenerico2x1_simples:MUX4" File: C:/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 31
-Info (12128): Elaborating entity "Detector_Keys" for hierarchy "Detector_Keys:Detect_KEY0" File: C:/Descomp/Relogio/Relogio.vhd Line: 185
-Info (12128): Elaborating entity "HEXES" for hierarchy "HEXES:Hexes_Unity" File: C:/Descomp/Relogio/Relogio.vhd Line: 213
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0" File: C:/Descomp/Relogio/HEXES.vhd Line: 19
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "HEXES:Hexes_Unity|conversorHex7Seg:Conversor0" File: C:/Descomp/Relogio/HEXES.vhd Line: 27
-Info (12128): Elaborating entity "driverVGA" for hierarchy "driverVGA:driverVGA" File: C:/Descomp/Relogio/Relogio.vhd Line: 316
-Info (12128): Elaborating entity "interfaceVGA" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface" File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd Line: 61
-Info (12128): Elaborating entity "controladorVGA" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|controladorVGA:ctrl" File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd Line: 31
-Info (12128): Elaborating entity "geradorCaracteres" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen" File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd Line: 36
-Info (12128): Elaborating entity "simple_dual_port_ram_dual_clock" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|simple_dual_port_ram_dual_clock:caracRAM" File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 82
-Warning (10542): VHDL Variable Declaration warning at simple_dual_port_ram_dual_clock.vhd(37): used initial value expression for variable "tmp" because variable was never assigned a value File: C:/Descomp/Relogio/simple_dual_port_ram_dual_clock.vhd Line: 37
-Info (12128): Elaborating entity "memoriaROMVGA" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|memoriaROMVGA:colorRAM" File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 88
-Info (12129): Elaborating entity "ROMcaracteres" using architecture "A:size32x32" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|ROMcaracteres:\tipoROM:caracROM" File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 104
-Warning (10541): VHDL Signal Declaration warning at ROMCaracteres.vhd(46): used implicit default value for signal "charRom" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd Line: 46
-Info (12128): Elaborating entity "muxGenerico" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|muxGenerico:muxPixel" File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 114
-Info (12128): Elaborating entity "calcMemAddr" for hierarchy "driverVGA:driverVGA|calcMemAddr:CalcMemAddr" File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd Line: 71
-Info (12128): Elaborating entity "somadorGenerico" for hierarchy "driverVGA:driverVGA|calcMemAddr:CalcMemAddr|somadorGenerico:CalcPosVIDEO_A" File: C:/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/calcMemAddr.vhd Line: 41
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 70
+Info (12128): Elaborating entity "Processador" for hierarchy "Processador:Processor" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 76
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:Processor|registradorGenerico:PC" File: /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd Line: 65
+Info (12128): Elaborating entity "somaConstante" for hierarchy "Processador:Processor|somaConstante:incrementaPC" File: /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd Line: 68
+Info (12128): Elaborating entity "decoderInstru" for hierarchy "Processador:Processor|decoderInstru:DECODER" File: /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd Line: 72
+Info (12128): Elaborating entity "bancoRegistradoresArqRegMem" for hierarchy "Processador:Processor|bancoRegistradoresArqRegMem:REGS" File: /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd Line: 75
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Processador:Processor|muxGenerico2x1:MUX1" File: /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd Line: 84
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "Processador:Processor|muxGenerico4x1:MUXProxPC" File: /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd Line: 90
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "Processador:Processor|ULASomaSub:ULA1" File: /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd Line: 98
+Info (12128): Elaborating entity "FlipFlop" for hierarchy "Processador:Processor|FlipFlop:FlagZero" File: /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd Line: 106
+Info (12128): Elaborating entity "logicaDesvio" for hierarchy "Processador:Processor|logicaDesvio:logicaDesvio1" File: /home/andre/Insper/6semestre/Descomp/Relogio/Processador.vhd Line: 120
+Info (12128): Elaborating entity "romMif" for hierarchy "romMif:ROM1" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 89
+Warning (10541): VHDL Signal Declaration warning at romMIF.vhd(22): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/andre/Insper/6semestre/Descomp/Relogio/romMIF.vhd Line: 22
+Info (12128): Elaborating entity "memoriaRAM" for hierarchy "memoriaRAM:RAM1" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 96
+Info (12128): Elaborating entity "decoderToHabilita" for hierarchy "decoderToHabilita:DECODIFICADOR" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 108
+Info (12128): Elaborating entity "decoder3x8" for hierarchy "decoderToHabilita:DECODIFICADOR|decoder3x8:DECODER1" File: /home/andre/Insper/6semestre/Descomp/Relogio/decoderToHabilita.vhd Line: 28
+Info (10041): Inferred latch for "saida[0]" at decoder3x8.vhd(13) File: /home/andre/Insper/6semestre/Descomp/Relogio/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[1]" at decoder3x8.vhd(13) File: /home/andre/Insper/6semestre/Descomp/Relogio/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[2]" at decoder3x8.vhd(13) File: /home/andre/Insper/6semestre/Descomp/Relogio/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[3]" at decoder3x8.vhd(13) File: /home/andre/Insper/6semestre/Descomp/Relogio/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[4]" at decoder3x8.vhd(13) File: /home/andre/Insper/6semestre/Descomp/Relogio/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[5]" at decoder3x8.vhd(13) File: /home/andre/Insper/6semestre/Descomp/Relogio/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[6]" at decoder3x8.vhd(13) File: /home/andre/Insper/6semestre/Descomp/Relogio/decoder3x8.vhd Line: 13
+Info (10041): Inferred latch for "saida[7]" at decoder3x8.vhd(13) File: /home/andre/Insper/6semestre/Descomp/Relogio/decoder3x8.vhd Line: 13
+Info (12128): Elaborating entity "LEDS" for hierarchy "LEDS:LED_UNITY" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 139
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "LEDS:LED_UNITY|registradorGenerico:REG_LEDS" File: /home/andre/Insper/6semestre/Descomp/Relogio/LEDS.vhd Line: 15
+Info (12128): Elaborating entity "SWITCHES" for hierarchy "SWITCHES:Switch_Unity" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 152
+Info (12128): Elaborating entity "buffer_3_state_8portas" for hierarchy "SWITCHES:Switch_Unity|buffer_3_state_8portas:tri_state_8_1" File: /home/andre/Insper/6semestre/Descomp/Relogio/SWITCHES.vhd Line: 15
+Info (12128): Elaborating entity "buffer_3_state_1porta" for hierarchy "SWITCHES:Switch_Unity|buffer_3_state_1porta:tri_state_1_1" File: /home/andre/Insper/6semestre/Descomp/Relogio/SWITCHES.vhd Line: 22
+Info (12128): Elaborating entity "KEYS" for hierarchy "KEYS:Keys_Unity" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 162
+Info (12128): Elaborating entity "divisorGenerico_e_Interface" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 177
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo" File: /home/andre/Insper/6semestre/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 22
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo2" File: /home/andre/Insper/6semestre/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 26
+Info (12128): Elaborating entity "muxGenerico2x1_simples" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|muxGenerico2x1_simples:MUX4" File: /home/andre/Insper/6semestre/Descomp/Relogio/divisorGenerico_e_Interface.vhd Line: 31
+Info (12128): Elaborating entity "Detector_Keys" for hierarchy "Detector_Keys:Detect_KEY0" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 185
+Info (12128): Elaborating entity "HEXES" for hierarchy "HEXES:Hexes_Unity" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 213
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "HEXES:Hexes_Unity|registradorGenerico:REGISTRADOR_HEX0" File: /home/andre/Insper/6semestre/Descomp/Relogio/HEXES.vhd Line: 19
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "HEXES:Hexes_Unity|conversorHex7Seg:Conversor0" File: /home/andre/Insper/6semestre/Descomp/Relogio/HEXES.vhd Line: 27
+Info (12128): Elaborating entity "driverVGA" for hierarchy "driverVGA:driverVGA" File: /home/andre/Insper/6semestre/Descomp/Relogio/Relogio.vhd Line: 316
+Info (12128): Elaborating entity "interfaceVGA" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface" File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd Line: 61
+Info (12128): Elaborating entity "controladorVGA" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|controladorVGA:ctrl" File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd Line: 31
+Info (12128): Elaborating entity "geradorCaracteres" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen" File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/interfaceVGA.vhd Line: 36
+Info (12128): Elaborating entity "simple_dual_port_ram_dual_clock" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|simple_dual_port_ram_dual_clock:caracRAM" File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 82
+Warning (10542): VHDL Variable Declaration warning at simple_dual_port_ram_dual_clock.vhd(37): used initial value expression for variable "tmp" because variable was never assigned a value File: /home/andre/Insper/6semestre/Descomp/Relogio/simple_dual_port_ram_dual_clock.vhd Line: 37
+Info (12128): Elaborating entity "memoriaROMVGA" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|memoriaROMVGA:colorRAM" File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 88
+Info (12129): Elaborating entity "ROMcaracteres" using architecture "A:size32x32" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|ROMcaracteres:\tipoROM:caracROM" File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 104
+Warning (10541): VHDL Signal Declaration warning at ROMCaracteres.vhd(46): used implicit default value for signal "charRom" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/ROMCaracteres.vhd Line: 46
+Info (12128): Elaborating entity "muxGenerico" for hierarchy "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|muxGenerico:muxPixel" File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/geradorCaracteres.vhd Line: 114
+Info (12128): Elaborating entity "calcMemAddr" for hierarchy "driverVGA:driverVGA|calcMemAddr:CalcMemAddr" File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/driverVGA.vhd Line: 71
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "driverVGA:driverVGA|calcMemAddr:CalcMemAddr|somadorGenerico:CalcPosVIDEO_A" File: /home/andre/Insper/6semestre/Descomp/Relogio/(MaquinaEstado)VGA_Tile_32x32_restored/calcMemAddr.vhd Line: 41
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer divisorGenerico_e_Interface:interfaceBaseTempo|muxGenerico2x1_simples:MUX4|saida_MUX File: C:/Descomp/Relogio/muxGenerico2x1_simples.vhd Line: 8
+    Warning (19017): Found clock multiplexer divisorGenerico_e_Interface:interfaceBaseTempo|muxGenerico2x1_simples:MUX4|saida_MUX File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1_simples.vhd Line: 8
 Warning (276027): Inferred dual-clock RAM node "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|simple_dual_port_ram_dual_clock:caracRAM|ram_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Info (276014): Found 3 instances of uninferred RAM logic
-    Info (276004): RAM logic "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|memoriaROMVGA:colorRAM|memROM" is uninferred due to inappropriate RAM size File: C:/Descomp/Relogio/memoriaROMVGA.vhd Line: 31
-    Info (276007): RAM logic "memoriaRAM:RAM1|ram" is uninferred due to asynchronous read logic File: C:/Descomp/Relogio/memoriaRAM.vhd Line: 27
-    Info (276004): RAM logic "Processador:Processor|bancoRegistradoresArqRegMem:REGS|registrador" is uninferred due to inappropriate RAM size File: C:/Descomp/Relogio/bancoRegistradoresArqRegMem.vhd Line: 29
-Warning (113028): 209 out of 512 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Descomp/Relogio/rom.mif Line: 1
-    Warning (113027): Addresses ranging from 303 to 511 are not initialized File: C:/Descomp/Relogio/rom.mif Line: 1
+    Info (276004): RAM logic "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|memoriaROMVGA:colorRAM|memROM" is uninferred due to inappropriate RAM size File: /home/andre/Insper/6semestre/Descomp/Relogio/memoriaROMVGA.vhd Line: 31
+    Info (276007): RAM logic "memoriaRAM:RAM1|ram" is uninferred due to asynchronous read logic File: /home/andre/Insper/6semestre/Descomp/Relogio/memoriaRAM.vhd Line: 27
+    Info (276004): RAM logic "Processador:Processor|bancoRegistradoresArqRegMem:REGS|registrador" is uninferred due to inappropriate RAM size File: /home/andre/Insper/6semestre/Descomp/Relogio/bancoRegistradoresArqRegMem.vhd Line: 29
+Warning (113028): 209 out of 512 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: /home/andre/Insper/6semestre/Descomp/Relogio/rom.mif Line: 1
+    Warning (113027): Addresses ranging from 303 to 511 are not initialized File: /home/andre/Insper/6semestre/Descomp/Relogio/rom.mif Line: 1
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "entrada_DATA[7]" into a selector File: C:/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[6]" into a selector File: C:/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[5]" into a selector File: C:/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[4]" into a selector File: C:/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[3]" into a selector File: C:/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[2]" into a selector File: C:/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[1]" into a selector File: C:/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "entrada_DATA[0]" into a selector File: C:/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[7]" into a selector File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[6]" into a selector File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[5]" into a selector File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[4]" into a selector File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[3]" into a selector File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[2]" into a selector File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[1]" into a selector File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "entrada_DATA[0]" into a selector File: /home/andre/Insper/6semestre/Descomp/Relogio/muxGenerico2x1.vhd Line: 10
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "driverVGA:driverVGA|interfaceVGA:interface|geradorCaracteres:charGen|simple_dual_port_ram_dual_clock:caracRAM|ram_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -1496,7 +1501,7 @@ Info (12133): Instantiated megafunction "driverVGA:driverVGA|interfaceVGA:interf
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "INIT_FILE" = "db/Relogio.ram0_simple_dual_port_ram_dual_clock_e4fadce2.hdl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_udq1.tdf
-    Info (12023): Found entity 1: altsyncram_udq1 File: C:/Descomp/Relogio/db/altsyncram_udq1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_udq1 File: /home/andre/Insper/6semestre/Descomp/Relogio/db/altsyncram_udq1.tdf Line: 28
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -1507,9 +1512,9 @@ Info (21057): Implemented 1748 device resources after synthesis - the final reso
     Info (21061): Implemented 1658 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4938 megabytes
-    Info: Processing ended: Mon Oct 30 18:07:45 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 573 megabytes
+    Info: Processing ended: Sun Nov 12 12:31:25 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
 
 
