@@ -3,7 +3,7 @@ $comment
 		vcd file MIPS.msim.vcd -direction
 $end
 $date
-	Tue Nov 14 12:17:20 2023
+	Tue Nov 14 14:12:19 2023
 $end
 $version
 	ModelSim Version 2020.1
@@ -803,166 +803,166 @@ $var wire 1 A( \ProgramCounter|DOUT\ [3] $end
 $var wire 1 B( \ProgramCounter|DOUT\ [2] $end
 $var wire 1 C( \ProgramCounter|DOUT\ [1] $end
 $var wire 1 D( \ProgramCounter|DOUT\ [0] $end
-$var wire 1 E( \Banco|ALT_INV_registrador~60_q\ $end
-$var wire 1 F( \Banco|ALT_INV_registrador~1083_combout\ $end
-$var wire 1 G( \Banco|ALT_INV_registrador~315_q\ $end
-$var wire 1 H( \Banco|ALT_INV_registrador~59_q\ $end
-$var wire 1 I( \Banco|ALT_INV_registrador~1082_combout\ $end
-$var wire 1 J( \Banco|ALT_INV_registrador~314_q\ $end
-$var wire 1 K( \Banco|ALT_INV_registrador~58_q\ $end
-$var wire 1 L( \Banco|ALT_INV_registrador~1081_combout\ $end
-$var wire 1 M( \Banco|ALT_INV_registrador~313_q\ $end
-$var wire 1 N( \Banco|ALT_INV_registrador~57_q\ $end
-$var wire 1 O( \Banco|ALT_INV_registrador~1080_combout\ $end
-$var wire 1 P( \Banco|ALT_INV_registrador~312_q\ $end
-$var wire 1 Q( \Banco|ALT_INV_registrador~56_q\ $end
-$var wire 1 R( \Banco|ALT_INV_registrador~1079_combout\ $end
-$var wire 1 S( \Banco|ALT_INV_registrador~311_q\ $end
-$var wire 1 T( \Banco|ALT_INV_registrador~55_q\ $end
-$var wire 1 U( \Banco|ALT_INV_registrador~1078_combout\ $end
-$var wire 1 V( \Banco|ALT_INV_registrador~310_q\ $end
-$var wire 1 W( \Banco|ALT_INV_registrador~54_q\ $end
-$var wire 1 X( \Banco|ALT_INV_registrador~1077_combout\ $end
-$var wire 1 Y( \Banco|ALT_INV_registrador~309_q\ $end
-$var wire 1 Z( \Banco|ALT_INV_registrador~53_q\ $end
-$var wire 1 [( \Banco|ALT_INV_registrador~1076_combout\ $end
-$var wire 1 \( \Banco|ALT_INV_registrador~308_q\ $end
-$var wire 1 ]( \Banco|ALT_INV_registrador~52_q\ $end
-$var wire 1 ^( \Banco|ALT_INV_registrador~1075_combout\ $end
-$var wire 1 _( \Banco|ALT_INV_registrador~307_q\ $end
-$var wire 1 `( \Banco|ALT_INV_registrador~51_q\ $end
-$var wire 1 a( \Banco|ALT_INV_registrador~1074_combout\ $end
-$var wire 1 b( \Banco|ALT_INV_registrador~306_q\ $end
-$var wire 1 c( \Banco|ALT_INV_registrador~50_q\ $end
-$var wire 1 d( \Banco|ALT_INV_registrador~1073_combout\ $end
-$var wire 1 e( \Banco|ALT_INV_registrador~305_q\ $end
-$var wire 1 f( \Banco|ALT_INV_registrador~49_q\ $end
-$var wire 1 g( \Banco|ALT_INV_registrador~1072_combout\ $end
-$var wire 1 h( \Banco|ALT_INV_registrador~304_q\ $end
-$var wire 1 i( \Banco|ALT_INV_registrador~48_q\ $end
-$var wire 1 j( \Banco|ALT_INV_registrador~1071_combout\ $end
-$var wire 1 k( \Banco|ALT_INV_registrador~303_q\ $end
-$var wire 1 l( \Banco|ALT_INV_registrador~47_q\ $end
-$var wire 1 m( \Banco|ALT_INV_registrador~1070_combout\ $end
-$var wire 1 n( \Banco|ALT_INV_registrador~302_q\ $end
-$var wire 1 o( \Banco|ALT_INV_registrador~46_q\ $end
-$var wire 1 p( \Banco|ALT_INV_registrador~1069_combout\ $end
-$var wire 1 q( \Banco|ALT_INV_registrador~301_q\ $end
-$var wire 1 r( \Banco|ALT_INV_registrador~45_q\ $end
-$var wire 1 s( \Banco|ALT_INV_registrador~1068_combout\ $end
-$var wire 1 t( \Banco|ALT_INV_registrador~300_q\ $end
-$var wire 1 u( \Banco|ALT_INV_registrador~44_q\ $end
-$var wire 1 v( \Banco|ALT_INV_registrador~1067_combout\ $end
-$var wire 1 w( \Banco|ALT_INV_registrador~299_q\ $end
-$var wire 1 x( \Banco|ALT_INV_registrador~43_q\ $end
-$var wire 1 y( \Banco|ALT_INV_registrador~1066_combout\ $end
-$var wire 1 z( \Banco|ALT_INV_registrador~298_q\ $end
-$var wire 1 {( \Banco|ALT_INV_registrador~42_q\ $end
-$var wire 1 |( \Banco|ALT_INV_registrador~1065_combout\ $end
-$var wire 1 }( \Banco|ALT_INV_registrador~297_q\ $end
-$var wire 1 ~( \Banco|ALT_INV_registrador~41_q\ $end
-$var wire 1 !) \Banco|ALT_INV_registrador~1064_combout\ $end
-$var wire 1 ") \Banco|ALT_INV_registrador~296_q\ $end
-$var wire 1 #) \Banco|ALT_INV_registrador~40_q\ $end
-$var wire 1 $) \Banco|ALT_INV_registrador~1063_combout\ $end
-$var wire 1 %) \Banco|ALT_INV_registrador~295_q\ $end
-$var wire 1 &) \Banco|ALT_INV_registrador~39_q\ $end
-$var wire 1 ') \Banco|ALT_INV_registrador~1062_combout\ $end
-$var wire 1 () \Banco|ALT_INV_registrador~294_q\ $end
-$var wire 1 )) \Banco|ALT_INV_registrador~38_q\ $end
-$var wire 1 *) \ROM1|ALT_INV_memROM~1_combout\ $end
-$var wire 1 +) \ProgramCounter|ALT_INV_DOUT\ [31] $end
-$var wire 1 ,) \ProgramCounter|ALT_INV_DOUT\ [30] $end
-$var wire 1 -) \ProgramCounter|ALT_INV_DOUT\ [29] $end
-$var wire 1 .) \ProgramCounter|ALT_INV_DOUT\ [28] $end
-$var wire 1 /) \ProgramCounter|ALT_INV_DOUT\ [27] $end
-$var wire 1 0) \ProgramCounter|ALT_INV_DOUT\ [26] $end
-$var wire 1 1) \ProgramCounter|ALT_INV_DOUT\ [25] $end
-$var wire 1 2) \ProgramCounter|ALT_INV_DOUT\ [24] $end
-$var wire 1 3) \ProgramCounter|ALT_INV_DOUT\ [23] $end
-$var wire 1 4) \ProgramCounter|ALT_INV_DOUT\ [22] $end
-$var wire 1 5) \ProgramCounter|ALT_INV_DOUT\ [21] $end
-$var wire 1 6) \ProgramCounter|ALT_INV_DOUT\ [20] $end
-$var wire 1 7) \ProgramCounter|ALT_INV_DOUT\ [19] $end
-$var wire 1 8) \ProgramCounter|ALT_INV_DOUT\ [18] $end
-$var wire 1 9) \ProgramCounter|ALT_INV_DOUT\ [17] $end
-$var wire 1 :) \ProgramCounter|ALT_INV_DOUT\ [16] $end
-$var wire 1 ;) \ProgramCounter|ALT_INV_DOUT\ [15] $end
-$var wire 1 <) \ProgramCounter|ALT_INV_DOUT\ [14] $end
-$var wire 1 =) \ProgramCounter|ALT_INV_DOUT\ [13] $end
-$var wire 1 >) \ProgramCounter|ALT_INV_DOUT\ [12] $end
-$var wire 1 ?) \ProgramCounter|ALT_INV_DOUT\ [11] $end
-$var wire 1 @) \ProgramCounter|ALT_INV_DOUT\ [10] $end
-$var wire 1 A) \ProgramCounter|ALT_INV_DOUT\ [9] $end
-$var wire 1 B) \ProgramCounter|ALT_INV_DOUT\ [8] $end
-$var wire 1 C) \ProgramCounter|ALT_INV_DOUT\ [7] $end
-$var wire 1 D) \ProgramCounter|ALT_INV_DOUT\ [6] $end
-$var wire 1 E) \ProgramCounter|ALT_INV_DOUT\ [5] $end
-$var wire 1 F) \ProgramCounter|ALT_INV_DOUT\ [4] $end
-$var wire 1 G) \ProgramCounter|ALT_INV_DOUT\ [3] $end
-$var wire 1 H) \ProgramCounter|ALT_INV_DOUT\ [2] $end
-$var wire 1 I) \ROM1|ALT_INV_memROM~0_combout\ $end
-$var wire 1 J) \Banco|ALT_INV_registrador~1093_combout\ $end
-$var wire 1 K) \Banco|ALT_INV_registrador~325_q\ $end
-$var wire 1 L) \Banco|ALT_INV_registrador~69_q\ $end
-$var wire 1 M) \Banco|ALT_INV_registrador~1092_combout\ $end
-$var wire 1 N) \Banco|ALT_INV_registrador~324_q\ $end
-$var wire 1 O) \Banco|ALT_INV_registrador~68_q\ $end
-$var wire 1 P) \Banco|ALT_INV_registrador~1091_combout\ $end
-$var wire 1 Q) \Banco|ALT_INV_registrador~323_q\ $end
-$var wire 1 R) \Banco|ALT_INV_registrador~67_q\ $end
-$var wire 1 S) \Banco|ALT_INV_registrador~1090_combout\ $end
-$var wire 1 T) \Banco|ALT_INV_registrador~322_q\ $end
-$var wire 1 U) \Banco|ALT_INV_registrador~66_q\ $end
-$var wire 1 V) \Banco|ALT_INV_registrador~1089_combout\ $end
-$var wire 1 W) \Banco|ALT_INV_registrador~321_q\ $end
-$var wire 1 X) \Banco|ALT_INV_registrador~65_q\ $end
-$var wire 1 Y) \Banco|ALT_INV_registrador~1088_combout\ $end
-$var wire 1 Z) \Banco|ALT_INV_registrador~320_q\ $end
-$var wire 1 [) \Banco|ALT_INV_registrador~64_q\ $end
-$var wire 1 \) \Banco|ALT_INV_registrador~1087_combout\ $end
-$var wire 1 ]) \Banco|ALT_INV_registrador~319_q\ $end
-$var wire 1 ^) \Banco|ALT_INV_registrador~63_q\ $end
-$var wire 1 _) \Banco|ALT_INV_registrador~1086_combout\ $end
-$var wire 1 `) \Banco|ALT_INV_registrador~318_q\ $end
-$var wire 1 a) \Banco|ALT_INV_registrador~62_q\ $end
-$var wire 1 b) \Banco|ALT_INV_registrador~1085_combout\ $end
-$var wire 1 c) \Banco|ALT_INV_registrador~317_q\ $end
-$var wire 1 d) \Banco|ALT_INV_registrador~61_q\ $end
-$var wire 1 e) \Banco|ALT_INV_registrador~1084_combout\ $end
-$var wire 1 f) \Banco|ALT_INV_registrador~316_q\ $end
-$var wire 1 g) \ULA|ALT_INV_Add1~125_sumout\ $end
-$var wire 1 h) \ULA|ALT_INV_Add1~121_sumout\ $end
-$var wire 1 i) \ULA|ALT_INV_Add1~117_sumout\ $end
-$var wire 1 j) \ULA|ALT_INV_Add1~113_sumout\ $end
-$var wire 1 k) \ULA|ALT_INV_Add1~109_sumout\ $end
-$var wire 1 l) \ULA|ALT_INV_Add1~105_sumout\ $end
-$var wire 1 m) \ULA|ALT_INV_Add1~101_sumout\ $end
-$var wire 1 n) \ULA|ALT_INV_Add1~97_sumout\ $end
-$var wire 1 o) \ULA|ALT_INV_Add1~93_sumout\ $end
-$var wire 1 p) \ULA|ALT_INV_Add1~89_sumout\ $end
-$var wire 1 q) \ULA|ALT_INV_Add1~85_sumout\ $end
-$var wire 1 r) \ULA|ALT_INV_Add1~81_sumout\ $end
-$var wire 1 s) \ULA|ALT_INV_Add1~77_sumout\ $end
-$var wire 1 t) \ULA|ALT_INV_Add1~73_sumout\ $end
-$var wire 1 u) \ULA|ALT_INV_Add1~69_sumout\ $end
-$var wire 1 v) \ULA|ALT_INV_Add1~65_sumout\ $end
-$var wire 1 w) \ULA|ALT_INV_Add1~61_sumout\ $end
-$var wire 1 x) \ULA|ALT_INV_Add1~57_sumout\ $end
-$var wire 1 y) \ULA|ALT_INV_Add1~53_sumout\ $end
-$var wire 1 z) \ULA|ALT_INV_Add1~49_sumout\ $end
-$var wire 1 {) \ULA|ALT_INV_Add1~45_sumout\ $end
-$var wire 1 |) \ULA|ALT_INV_Add1~41_sumout\ $end
-$var wire 1 }) \ULA|ALT_INV_Add1~37_sumout\ $end
-$var wire 1 ~) \ULA|ALT_INV_Add1~33_sumout\ $end
-$var wire 1 !* \ULA|ALT_INV_Add1~29_sumout\ $end
-$var wire 1 "* \ULA|ALT_INV_Add1~25_sumout\ $end
-$var wire 1 #* \ULA|ALT_INV_Add1~21_sumout\ $end
-$var wire 1 $* \ULA|ALT_INV_Add1~17_sumout\ $end
-$var wire 1 %* \ULA|ALT_INV_Add1~13_sumout\ $end
-$var wire 1 &* \ULA|ALT_INV_Add1~9_sumout\ $end
-$var wire 1 '* \ULA|ALT_INV_Add1~5_sumout\ $end
-$var wire 1 (* \ULA|ALT_INV_Add1~1_sumout\ $end
+$var wire 1 E( \ULA|ALT_INV_Add1~9_sumout\ $end
+$var wire 1 F( \ULA|ALT_INV_Add1~5_sumout\ $end
+$var wire 1 G( \ULA|ALT_INV_Add1~1_sumout\ $end
+$var wire 1 H( \ProgramCounter|ALT_INV_DOUT\ [31] $end
+$var wire 1 I( \ProgramCounter|ALT_INV_DOUT\ [30] $end
+$var wire 1 J( \ProgramCounter|ALT_INV_DOUT\ [29] $end
+$var wire 1 K( \ProgramCounter|ALT_INV_DOUT\ [28] $end
+$var wire 1 L( \ProgramCounter|ALT_INV_DOUT\ [27] $end
+$var wire 1 M( \ProgramCounter|ALT_INV_DOUT\ [26] $end
+$var wire 1 N( \ProgramCounter|ALT_INV_DOUT\ [25] $end
+$var wire 1 O( \ProgramCounter|ALT_INV_DOUT\ [24] $end
+$var wire 1 P( \ProgramCounter|ALT_INV_DOUT\ [23] $end
+$var wire 1 Q( \ProgramCounter|ALT_INV_DOUT\ [22] $end
+$var wire 1 R( \ProgramCounter|ALT_INV_DOUT\ [21] $end
+$var wire 1 S( \ProgramCounter|ALT_INV_DOUT\ [20] $end
+$var wire 1 T( \ProgramCounter|ALT_INV_DOUT\ [19] $end
+$var wire 1 U( \ProgramCounter|ALT_INV_DOUT\ [18] $end
+$var wire 1 V( \ProgramCounter|ALT_INV_DOUT\ [17] $end
+$var wire 1 W( \ProgramCounter|ALT_INV_DOUT\ [16] $end
+$var wire 1 X( \ProgramCounter|ALT_INV_DOUT\ [15] $end
+$var wire 1 Y( \ProgramCounter|ALT_INV_DOUT\ [14] $end
+$var wire 1 Z( \ProgramCounter|ALT_INV_DOUT\ [13] $end
+$var wire 1 [( \ProgramCounter|ALT_INV_DOUT\ [12] $end
+$var wire 1 \( \ProgramCounter|ALT_INV_DOUT\ [11] $end
+$var wire 1 ]( \ProgramCounter|ALT_INV_DOUT\ [10] $end
+$var wire 1 ^( \ProgramCounter|ALT_INV_DOUT\ [9] $end
+$var wire 1 _( \ProgramCounter|ALT_INV_DOUT\ [8] $end
+$var wire 1 `( \ProgramCounter|ALT_INV_DOUT\ [7] $end
+$var wire 1 a( \ProgramCounter|ALT_INV_DOUT\ [6] $end
+$var wire 1 b( \ProgramCounter|ALT_INV_DOUT\ [5] $end
+$var wire 1 c( \ProgramCounter|ALT_INV_DOUT\ [4] $end
+$var wire 1 d( \ProgramCounter|ALT_INV_DOUT\ [3] $end
+$var wire 1 e( \ProgramCounter|ALT_INV_DOUT\ [2] $end
+$var wire 1 f( \ROM1|ALT_INV_memROM~0_combout\ $end
+$var wire 1 g( \ULA|ALT_INV_Add1~125_sumout\ $end
+$var wire 1 h( \ULA|ALT_INV_Add1~121_sumout\ $end
+$var wire 1 i( \ULA|ALT_INV_Add1~117_sumout\ $end
+$var wire 1 j( \ULA|ALT_INV_Add1~113_sumout\ $end
+$var wire 1 k( \ULA|ALT_INV_Add1~109_sumout\ $end
+$var wire 1 l( \ULA|ALT_INV_Add1~105_sumout\ $end
+$var wire 1 m( \ULA|ALT_INV_Add1~101_sumout\ $end
+$var wire 1 n( \ULA|ALT_INV_Add1~97_sumout\ $end
+$var wire 1 o( \ULA|ALT_INV_Add1~93_sumout\ $end
+$var wire 1 p( \ULA|ALT_INV_Add1~89_sumout\ $end
+$var wire 1 q( \ULA|ALT_INV_Add1~85_sumout\ $end
+$var wire 1 r( \ULA|ALT_INV_Add1~81_sumout\ $end
+$var wire 1 s( \ULA|ALT_INV_Add1~77_sumout\ $end
+$var wire 1 t( \ULA|ALT_INV_Add1~73_sumout\ $end
+$var wire 1 u( \ULA|ALT_INV_Add1~69_sumout\ $end
+$var wire 1 v( \ULA|ALT_INV_Add1~65_sumout\ $end
+$var wire 1 w( \ULA|ALT_INV_Add1~61_sumout\ $end
+$var wire 1 x( \ULA|ALT_INV_Add1~57_sumout\ $end
+$var wire 1 y( \ULA|ALT_INV_Add1~53_sumout\ $end
+$var wire 1 z( \ULA|ALT_INV_Add1~49_sumout\ $end
+$var wire 1 {( \ULA|ALT_INV_Add1~45_sumout\ $end
+$var wire 1 |( \ULA|ALT_INV_Add1~41_sumout\ $end
+$var wire 1 }( \ULA|ALT_INV_Add1~37_sumout\ $end
+$var wire 1 ~( \ULA|ALT_INV_Add1~33_sumout\ $end
+$var wire 1 !) \ULA|ALT_INV_Add1~29_sumout\ $end
+$var wire 1 ") \ULA|ALT_INV_Add1~25_sumout\ $end
+$var wire 1 #) \ULA|ALT_INV_Add1~21_sumout\ $end
+$var wire 1 $) \ULA|ALT_INV_Add1~17_sumout\ $end
+$var wire 1 %) \ULA|ALT_INV_Add1~13_sumout\ $end
+$var wire 1 &) \Banco|ALT_INV_registrador~53_q\ $end
+$var wire 1 ') \Banco|ALT_INV_registrador~1076_combout\ $end
+$var wire 1 () \Banco|ALT_INV_registrador~308_q\ $end
+$var wire 1 )) \Banco|ALT_INV_registrador~52_q\ $end
+$var wire 1 *) \Banco|ALT_INV_registrador~1075_combout\ $end
+$var wire 1 +) \Banco|ALT_INV_registrador~307_q\ $end
+$var wire 1 ,) \Banco|ALT_INV_registrador~51_q\ $end
+$var wire 1 -) \Banco|ALT_INV_registrador~1074_combout\ $end
+$var wire 1 .) \Banco|ALT_INV_registrador~306_q\ $end
+$var wire 1 /) \Banco|ALT_INV_registrador~50_q\ $end
+$var wire 1 0) \Banco|ALT_INV_registrador~1073_combout\ $end
+$var wire 1 1) \Banco|ALT_INV_registrador~305_q\ $end
+$var wire 1 2) \Banco|ALT_INV_registrador~49_q\ $end
+$var wire 1 3) \Banco|ALT_INV_registrador~1072_combout\ $end
+$var wire 1 4) \Banco|ALT_INV_registrador~304_q\ $end
+$var wire 1 5) \Banco|ALT_INV_registrador~48_q\ $end
+$var wire 1 6) \Banco|ALT_INV_registrador~1071_combout\ $end
+$var wire 1 7) \Banco|ALT_INV_registrador~303_q\ $end
+$var wire 1 8) \Banco|ALT_INV_registrador~47_q\ $end
+$var wire 1 9) \Banco|ALT_INV_registrador~1070_combout\ $end
+$var wire 1 :) \Banco|ALT_INV_registrador~302_q\ $end
+$var wire 1 ;) \Banco|ALT_INV_registrador~46_q\ $end
+$var wire 1 <) \Banco|ALT_INV_registrador~1069_combout\ $end
+$var wire 1 =) \Banco|ALT_INV_registrador~301_q\ $end
+$var wire 1 >) \Banco|ALT_INV_registrador~45_q\ $end
+$var wire 1 ?) \Banco|ALT_INV_registrador~1068_combout\ $end
+$var wire 1 @) \Banco|ALT_INV_registrador~300_q\ $end
+$var wire 1 A) \Banco|ALT_INV_registrador~44_q\ $end
+$var wire 1 B) \Banco|ALT_INV_registrador~1067_combout\ $end
+$var wire 1 C) \Banco|ALT_INV_registrador~299_q\ $end
+$var wire 1 D) \Banco|ALT_INV_registrador~43_q\ $end
+$var wire 1 E) \Banco|ALT_INV_registrador~1066_combout\ $end
+$var wire 1 F) \Banco|ALT_INV_registrador~298_q\ $end
+$var wire 1 G) \Banco|ALT_INV_registrador~42_q\ $end
+$var wire 1 H) \Banco|ALT_INV_registrador~1065_combout\ $end
+$var wire 1 I) \Banco|ALT_INV_registrador~297_q\ $end
+$var wire 1 J) \Banco|ALT_INV_registrador~41_q\ $end
+$var wire 1 K) \Banco|ALT_INV_registrador~1064_combout\ $end
+$var wire 1 L) \Banco|ALT_INV_registrador~296_q\ $end
+$var wire 1 M) \Banco|ALT_INV_registrador~40_q\ $end
+$var wire 1 N) \Banco|ALT_INV_registrador~1063_combout\ $end
+$var wire 1 O) \Banco|ALT_INV_registrador~295_q\ $end
+$var wire 1 P) \Banco|ALT_INV_registrador~39_q\ $end
+$var wire 1 Q) \Banco|ALT_INV_registrador~1062_combout\ $end
+$var wire 1 R) \Banco|ALT_INV_registrador~294_q\ $end
+$var wire 1 S) \Banco|ALT_INV_registrador~38_q\ $end
+$var wire 1 T) \ROM1|ALT_INV_memROM~1_combout\ $end
+$var wire 1 U) \Banco|ALT_INV_registrador~1093_combout\ $end
+$var wire 1 V) \Banco|ALT_INV_registrador~325_q\ $end
+$var wire 1 W) \Banco|ALT_INV_registrador~69_q\ $end
+$var wire 1 X) \Banco|ALT_INV_registrador~1092_combout\ $end
+$var wire 1 Y) \Banco|ALT_INV_registrador~324_q\ $end
+$var wire 1 Z) \Banco|ALT_INV_registrador~68_q\ $end
+$var wire 1 [) \Banco|ALT_INV_registrador~1091_combout\ $end
+$var wire 1 \) \Banco|ALT_INV_registrador~323_q\ $end
+$var wire 1 ]) \Banco|ALT_INV_registrador~67_q\ $end
+$var wire 1 ^) \Banco|ALT_INV_registrador~1090_combout\ $end
+$var wire 1 _) \Banco|ALT_INV_registrador~322_q\ $end
+$var wire 1 `) \Banco|ALT_INV_registrador~66_q\ $end
+$var wire 1 a) \Banco|ALT_INV_registrador~1089_combout\ $end
+$var wire 1 b) \Banco|ALT_INV_registrador~321_q\ $end
+$var wire 1 c) \Banco|ALT_INV_registrador~65_q\ $end
+$var wire 1 d) \Banco|ALT_INV_registrador~1088_combout\ $end
+$var wire 1 e) \Banco|ALT_INV_registrador~320_q\ $end
+$var wire 1 f) \Banco|ALT_INV_registrador~64_q\ $end
+$var wire 1 g) \Banco|ALT_INV_registrador~1087_combout\ $end
+$var wire 1 h) \Banco|ALT_INV_registrador~319_q\ $end
+$var wire 1 i) \Banco|ALT_INV_registrador~63_q\ $end
+$var wire 1 j) \Banco|ALT_INV_registrador~1086_combout\ $end
+$var wire 1 k) \Banco|ALT_INV_registrador~318_q\ $end
+$var wire 1 l) \Banco|ALT_INV_registrador~62_q\ $end
+$var wire 1 m) \Banco|ALT_INV_registrador~1085_combout\ $end
+$var wire 1 n) \Banco|ALT_INV_registrador~317_q\ $end
+$var wire 1 o) \Banco|ALT_INV_registrador~61_q\ $end
+$var wire 1 p) \Banco|ALT_INV_registrador~1084_combout\ $end
+$var wire 1 q) \Banco|ALT_INV_registrador~316_q\ $end
+$var wire 1 r) \Banco|ALT_INV_registrador~60_q\ $end
+$var wire 1 s) \Banco|ALT_INV_registrador~1083_combout\ $end
+$var wire 1 t) \Banco|ALT_INV_registrador~315_q\ $end
+$var wire 1 u) \Banco|ALT_INV_registrador~59_q\ $end
+$var wire 1 v) \Banco|ALT_INV_registrador~1082_combout\ $end
+$var wire 1 w) \Banco|ALT_INV_registrador~314_q\ $end
+$var wire 1 x) \Banco|ALT_INV_registrador~58_q\ $end
+$var wire 1 y) \Banco|ALT_INV_registrador~1081_combout\ $end
+$var wire 1 z) \Banco|ALT_INV_registrador~313_q\ $end
+$var wire 1 {) \Banco|ALT_INV_registrador~57_q\ $end
+$var wire 1 |) \Banco|ALT_INV_registrador~1080_combout\ $end
+$var wire 1 }) \Banco|ALT_INV_registrador~312_q\ $end
+$var wire 1 ~) \Banco|ALT_INV_registrador~56_q\ $end
+$var wire 1 !* \Banco|ALT_INV_registrador~1079_combout\ $end
+$var wire 1 "* \Banco|ALT_INV_registrador~311_q\ $end
+$var wire 1 #* \Banco|ALT_INV_registrador~55_q\ $end
+$var wire 1 $* \Banco|ALT_INV_registrador~1078_combout\ $end
+$var wire 1 %* \Banco|ALT_INV_registrador~310_q\ $end
+$var wire 1 &* \Banco|ALT_INV_registrador~54_q\ $end
+$var wire 1 '* \Banco|ALT_INV_registrador~1077_combout\ $end
+$var wire 1 (* \Banco|ALT_INV_registrador~309_q\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -1399,37 +1399,7 @@ x]#
 1E(
 1F(
 1G(
-1H(
-1I(
-1J(
-1K(
-1L(
-1M(
-1N(
-1O(
-1P(
-1Q(
-1R(
-1S(
-1T(
-1U(
-1V(
-1W(
-1X(
-1Y(
-1Z(
-1[(
-1\(
-1](
-1^(
-1_(
-1`(
-1a(
-1b(
-1c(
-1d(
-1e(
-1f(
+0f(
 1g(
 1h(
 1i(
@@ -1463,8 +1433,38 @@ x]#
 1')
 1()
 1))
-0*)
-0I)
+1*)
+1+)
+1,)
+1-)
+1.)
+1/)
+10)
+11)
+12)
+13)
+14)
+15)
+16)
+17)
+18)
+19)
+1:)
+1;)
+1<)
+1=)
+1>)
+1?)
+1@)
+1A)
+1B)
+1C)
+1D)
+1E)
+1F)
+1G)
+1H)
+1I)
 1J)
 1K)
 1L)
@@ -1475,7 +1475,7 @@ x]#
 1Q)
 1R)
 1S)
-1T)
+0T)
 1U)
 1V)
 1W)
@@ -1726,36 +1726,36 @@ xs!
 0B(
 xC(
 xD(
-1+)
-1,)
-1-)
-1.)
-1/)
-10)
-11)
-12)
-13)
-14)
-15)
-16)
-17)
-18)
-19)
-1:)
-1;)
-1<)
-1=)
-1>)
-1?)
-1@)
-1A)
-1B)
-1C)
-1D)
-1E)
-1F)
-1G)
-1H)
+1H(
+1I(
+1J(
+1K(
+1L(
+1M(
+1N(
+1O(
+1P(
+1Q(
+1R(
+1S(
+1T(
+1U(
+1V(
+1W(
+1X(
+1Y(
+1Z(
+1[(
+1\(
+1](
+1^(
+1_(
+1`(
+1a(
+1b(
+1c(
+1d(
+1e(
 0"
 0#
 0$
@@ -1926,11 +1926,11 @@ $end
 1t!
 1B%
 1B(
-0H)
+0e(
 0C%
 1D%
 0N%
-1*)
+1T)
 1b$
 17#
 1E!
@@ -1950,11 +1950,11 @@ $end
 1B%
 0B(
 1A(
-0G)
-1H)
+0d(
+1e(
 1C%
 0M%
-1I)
+1f(
 1c$
 0b$
 16#
@@ -1985,7 +1985,7 @@ $end
 1t!
 1B%
 1B(
-0H)
+0e(
 0C%
 0D%
 1E%
@@ -2004,9 +2004,9 @@ $end
 0B(
 0A(
 1@(
-0F)
-1G)
-1H)
+0c(
+1d(
+1e(
 1C%
 0E%
 0F%
@@ -2033,7 +2033,7 @@ $end
 1t!
 1B%
 1B(
-0H)
+0e(
 0C%
 1D%
 1b$
@@ -2049,8 +2049,8 @@ $end
 1B%
 0B(
 1A(
-0G)
-1H)
+0d(
+1e(
 1C%
 1c$
 0b$
@@ -2067,7 +2067,7 @@ $end
 1t!
 1B%
 1B(
-0H)
+0e(
 0C%
 0D%
 1E%
@@ -2089,10 +2089,10 @@ $end
 0A(
 0@(
 1?(
-0E)
-1F)
-1G)
-1H)
+0b(
+1c(
+1d(
+1e(
 1C%
 0E%
 1F%
@@ -2125,7 +2125,7 @@ $end
 1t!
 1B%
 1B(
-0H)
+0e(
 0C%
 1D%
 1b$
@@ -2141,8 +2141,8 @@ $end
 1B%
 0B(
 1A(
-0G)
-1H)
+0d(
+1e(
 1C%
 1c$
 0b$
@@ -2159,7 +2159,7 @@ $end
 1t!
 1B%
 1B(
-0H)
+0e(
 0C%
 0D%
 1E%
@@ -2178,9 +2178,9 @@ $end
 0B(
 0A(
 1@(
-0F)
-1G)
-1H)
+0c(
+1d(
+1e(
 1C%
 0E%
 0F%

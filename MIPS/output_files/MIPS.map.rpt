@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Tue Nov 14 12:22:26 2023
+Tue Nov 14 14:08:14 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -54,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 14 12:22:26 2023       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 14 14:08:14 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; MIPS                                        ;
 ; Top-level Entity Name           ; MIPS                                        ;
@@ -178,18 +178,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                   ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path            ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------+---------+
-; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; C:/Descomp/MIPS/ROMMIPS.vhd             ;         ;
-; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; C:/Descomp/MIPS/ULASomaSub.vhd          ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Descomp/MIPS/somaConstante.vhd       ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Descomp/MIPS/registradorGenerico.vhd ;         ;
-; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; C:/Descomp/MIPS/bancoRegistradores.vhd  ;         ;
-; MIPS.vhd                         ; yes             ; User VHDL File  ; C:/Descomp/MIPS/MIPS.vhd                ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd             ;         ;
+; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/ULASomaSub.vhd          ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/somaConstante.vhd       ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/registradorGenerico.vhd ;         ;
+; bancoRegistradores.vhd           ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/bancoRegistradores.vhd  ;         ;
+; MIPS.vhd                         ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd                ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------+
@@ -1262,13 +1262,13 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS|bancoRegistradores:Banco|saidaA[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS|bancoRegistradores:Banco|saidaA[16] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -1387,7 +1387,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1397,119 +1397,119 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 14 12:22:18 2023
+    Info: Processing started: Tue Nov 14 14:08:07 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file rommips.vhd
-    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Descomp/MIPS/ROMMIPS.vhd Line: 15
-    Info (12023): Found entity 1: ROMMIPS File: C:/Descomp/MIPS/ROMMIPS.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file ulasomasub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: C:/Descomp/MIPS/ULASomaSub.vhd Line: 14
-    Info (12023): Found entity 1: ULASomaSub File: C:/Descomp/MIPS/ULASomaSub.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Descomp/MIPS/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Descomp/MIPS/somaConstante.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ROMMIPS.vhd
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd Line: 15
+    Info (12023): Found entity 1: ROMMIPS File: /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ULASomaSub.vhd
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/ULASomaSub.vhd Line: 14
+    Info (12023): Found entity 1: ULASomaSub File: /home/andre/Insper/6semestre/Descomp/MIPS/ULASomaSub.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file somaConstante.vhd
+    Info (12022): Found design unit 1: somaConstante-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: /home/andre/Insper/6semestre/Descomp/MIPS/somaConstante.vhd Line: 5
 Warning (12019): Can't analyze file -- file romMIF.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Descomp/MIPS/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/Descomp/MIPS/registradorGenerico.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradores.vhd
-    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: C:/Descomp/MIPS/bancoRegistradores.vhd Line: 30
-    Info (12023): Found entity 1: bancoRegistradores File: C:/Descomp/MIPS/bancoRegistradores.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file mips.vhd
-    Info (12022): Found design unit 1: MIPS-arquitetura File: C:/Descomp/MIPS/MIPS.vhd Line: 20
-    Info (12023): Found entity 1: MIPS File: C:/Descomp/MIPS/MIPS.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Descomp/MIPS/memoriaRAM.vhd Line: 21
-    Info (12023): Found entity 1: memoriaRAM File: C:/Descomp/MIPS/memoriaRAM.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file registradorGenerico.vhd
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: /home/andre/Insper/6semestre/Descomp/MIPS/registradorGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file bancoRegistradores.vhd
+    Info (12022): Found design unit 1: bancoRegistradores-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/bancoRegistradores.vhd Line: 30
+    Info (12023): Found entity 1: bancoRegistradores File: /home/andre/Insper/6semestre/Descomp/MIPS/bancoRegistradores.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file MIPS.vhd
+    Info (12022): Found design unit 1: MIPS-arquitetura File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 20
+    Info (12023): Found entity 1: MIPS File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file memoriaRAM.vhd
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: /home/andre/Insper/6semestre/Descomp/MIPS/memoriaRAM.vhd Line: 21
+    Info (12023): Found entity 1: memoriaRAM File: /home/andre/Insper/6semestre/Descomp/MIPS/memoriaRAM.vhd Line: 5
 Info (12127): Elaborating entity "MIPS" for the top level hierarchy
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: C:/Descomp/MIPS/MIPS.vhd Line: 38
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:SomaPC" File: C:/Descomp/MIPS/MIPS.vhd Line: 46
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM1" File: C:/Descomp/MIPS/MIPS.vhd Line: 54
-Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Descomp/MIPS/ROMMIPS.vhd Line: 18
-Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:Banco" File: C:/Descomp/MIPS/MIPS.vhd Line: 65
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "ULASomaSub:ULA" File: C:/Descomp/MIPS/MIPS.vhd Line: 80
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 38
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:SomaPC" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 46
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM1" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 54
+Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd Line: 18
+Info (12128): Elaborating entity "bancoRegistradores" for hierarchy "bancoRegistradores:Banco" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 65
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "ULASomaSub:ULA" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 80
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "bancoRegistradores:Banco|registrador" is uninferred due to asynchronous read logic File: C:/Descomp/MIPS/bancoRegistradores.vhd Line: 36
-    Info (276004): RAM logic "ROMMIPS:ROM1|memROM" is uninferred due to inappropriate RAM size File: C:/Descomp/MIPS/ROMMIPS.vhd Line: 18
+    Info (276007): RAM logic "bancoRegistradores:Banco|registrador" is uninferred due to asynchronous read logic File: /home/andre/Insper/6semestre/Descomp/MIPS/bancoRegistradores.vhd Line: 36
+    Info (276004): RAM logic "ROMMIPS:ROM1|memROM" is uninferred due to inappropriate RAM size File: /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd Line: 18
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "entradaBOUT[0]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[1]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[2]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[3]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[4]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[5]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[6]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[7]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[8]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[9]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[10]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[11]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[12]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[13]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[14]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[15]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[16]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[17]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[18]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[19]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[20]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[21]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[22]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[23]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[24]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[25]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[26]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[27]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[28]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[29]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[30]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[31]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "saidaPCOUT[0]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 15
-    Warning (13410): Pin "saidaPCOUT[1]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 15
-    Warning (13410): Pin "saidaInstrucao[0]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[2]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[3]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[4]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[6]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[7]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[8]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[9]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[10]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[11]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[12]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[13]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[15]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[16]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[18]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[20]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[22]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[23]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[25]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[26]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[27]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[28]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[29]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[30]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
-    Warning (13410): Pin "saidaInstrucao[31]" is stuck at GND File: C:/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "entradaBOUT[0]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[1]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[2]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[3]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[4]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[5]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[6]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[7]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[8]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[9]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[10]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[11]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[12]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[13]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[14]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[15]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[16]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[17]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[18]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[19]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[20]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[21]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[22]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[23]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[24]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[25]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[26]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[27]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[28]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[29]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[30]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaBOUT[31]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "saidaPCOUT[0]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 15
+    Warning (13410): Pin "saidaPCOUT[1]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 15
+    Warning (13410): Pin "saidaInstrucao[0]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[2]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[3]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[4]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[6]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[7]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[8]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[9]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[10]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[11]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[12]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[13]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[15]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[16]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[18]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[20]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[22]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[23]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[25]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[26]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[27]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[28]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[29]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[30]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
+    Warning (13410): Pin "saidaInstrucao[31]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 832 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Descomp/MIPS/MIPS.vhd Line: 10
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Descomp/MIPS/MIPS.vhd Line: 10
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Descomp/MIPS/MIPS.vhd Line: 10
-    Warning (15610): No output dependent on input pin "CLOCK_50" File: C:/Descomp/MIPS/MIPS.vhd Line: 11
+    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 10
+    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 10
+    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 10
+    Warning (15610): No output dependent on input pin "CLOCK_50" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 11
 Info (21057): Implemented 358 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 160 output pins
     Info (21061): Implemented 193 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 68 warnings
-    Info: Peak virtual memory: 4911 megabytes
-    Info: Processing ended: Tue Nov 14 12:22:26 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 561 megabytes
+    Info: Processing ended: Tue Nov 14 14:08:14 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:17
 
 
