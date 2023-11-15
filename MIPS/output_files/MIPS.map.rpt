@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Tue Nov 14 20:43:17 2023
+Wed Nov 15 13:33:55 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,18 +14,29 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS
- 11. Parameter Settings for User Entity Instance: registradorGenerico:ProgramCounter
- 12. Parameter Settings for User Entity Instance: somaConstante:SomaPC
- 13. Parameter Settings for User Entity Instance: ROMMIPS:ROM1
- 14. Parameter Settings for User Entity Instance: bancoReg:Banco
- 15. Parameter Settings for User Entity Instance: ULASomaSub:ULA
- 16. Port Connectivity Checks: "bancoReg:Banco"
- 17. Port Connectivity Checks: "registradorGenerico:ProgramCounter"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS
+ 12. Parameter Settings for User Entity Instance: registradorGenerico:ProgramCounter
+ 13. Parameter Settings for User Entity Instance: somaConstante:SomaPC
+ 14. Parameter Settings for User Entity Instance: ROMMIPS:ROM1
+ 15. Parameter Settings for User Entity Instance: bancoReg:Banco
+ 16. Parameter Settings for User Entity Instance: ULASomaSub:ULA
+ 17. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXRTIME
+ 18. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXRTRD
+ 19. Parameter Settings for User Entity Instance: RAMMIPS:RAM
+ 20. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXULAMEM
+ 21. Parameter Settings for User Entity Instance: estendeSinalGenerico:Extensor
+ 22. Parameter Settings for User Entity Instance: somadorGenerico:Somador
+ 23. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXBEQ
+ 24. Port Connectivity Checks: "DecoderInstru:DecINSTRU"
+ 25. Port Connectivity Checks: "somadorGenerico:Somador"
+ 26. Port Connectivity Checks: "RAMMIPS:RAM"
+ 27. Port Connectivity Checks: "bancoReg:Banco"
+ 28. Port Connectivity Checks: "registradorGenerico:ProgramCounter"
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
 
 
 
@@ -52,13 +63,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 14 20:43:17 2023       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 15 13:33:55 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; MIPS                                        ;
 ; Top-level Entity Name           ; MIPS                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 94                                          ;
+; Total registers                 ; 64                                          ;
 ; Total pins                      ; 165                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -173,22 +184,28 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; bancoReg.vhd                     ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/bancoReg.vhd            ;         ;
-; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd             ;         ;
-; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/ULASomaSub.vhd          ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/somaConstante.vhd       ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/registradorGenerico.vhd ;         ;
-; MIPS.vhd                         ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd                ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1.vhd       ;         ;
+; estendeSinalGenerico.vhd         ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/estendeSinalGenerico.vhd ;         ;
+; somadorGenerico.vhd              ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/somadorGenerico.vhd      ;         ;
+; RAMMIPS.vhd                      ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/RAMMIPS.vhd              ;         ;
+; DecoderInstru.vhd                ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/DecoderInstru.vhd        ;         ;
+; bancoReg.vhd                     ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/bancoReg.vhd             ;         ;
+; ROMMIPS.vhd                      ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd              ;         ;
+; ULASomaSub.vhd                   ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/ULASomaSub.vhd           ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/somaConstante.vhd        ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/registradorGenerico.vhd  ;         ;
+; MIPS.vhd                         ; yes             ; User VHDL File  ; /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd                 ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------+
@@ -196,25 +213,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Estimate of Logic utilization (ALMs needed) ; 94                    ;
+; Estimate of Logic utilization (ALMs needed) ; 54                    ;
 ;                                             ;                       ;
-; Combinational ALUT usage for logic          ; 145                   ;
+; Combinational ALUT usage for logic          ; 105                   ;
 ;     -- 7 input functions                    ; 0                     ;
-;     -- 6 input functions                    ; 11                    ;
+;     -- 6 input functions                    ; 3                     ;
 ;     -- 5 input functions                    ; 1                     ;
-;     -- 4 input functions                    ; 32                    ;
-;     -- <=3 input functions                  ; 101                   ;
+;     -- 4 input functions                    ; 2                     ;
+;     -- <=3 input functions                  ; 99                    ;
 ;                                             ;                       ;
-; Dedicated logic registers                   ; 94                    ;
+; Dedicated logic registers                   ; 64                    ;
 ;                                             ;                       ;
 ; I/O pins                                    ; 165                   ;
 ;                                             ;                       ;
 ; Total DSP Blocks                            ; 0                     ;
 ;                                             ;                       ;
 ; Maximum fan-out node                        ; ROMMIPS:ROM1|memROM~0 ;
-; Maximum fan-out                             ; 158                   ;
-; Total fan-out                               ; 1031                  ;
-; Average fan-out                             ; 1.81                  ;
+; Maximum fan-out                             ; 104                   ;
+; Total fan-out                               ; 683                   ;
+; Average fan-out                             ; 1.37                  ;
 +---------------------------------------------+-----------------------+
 
 
@@ -223,10 +240,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Entity Name         ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------+---------------------+--------------+
-; |MIPS                                   ; 145 (0)             ; 94 (0)                    ; 0                 ; 0          ; 165  ; 0            ; |MIPS                                    ; MIPS                ; work         ;
+; |MIPS                                   ; 105 (0)             ; 64 (0)                    ; 0                 ; 0          ; 165  ; 0            ; |MIPS                                    ; MIPS                ; work         ;
 ;    |ROMMIPS:ROM1|                       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ROMMIPS:ROM1                       ; ROMMIPS             ; work         ;
-;    |ULASomaSub:ULA|                     ; 49 (49)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULASomaSub:ULA                     ; ULASomaSub          ; work         ;
-;    |bancoReg:Banco|                     ; 64 (64)             ; 64 (64)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS|bancoReg:Banco                     ; bancoReg            ; work         ;
+;    |ULASomaSub:ULA|                     ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULASomaSub:ULA                     ; ULASomaSub          ; work         ;
+;    |bancoReg:Banco|                     ; 40 (40)             ; 34 (34)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS|bancoReg:Banco                     ; bancoReg            ; work         ;
 ;    |registradorGenerico:ProgramCounter| ; 1 (1)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS|registradorGenerico:ProgramCounter ; registradorGenerico ; work         ;
 ;    |somaConstante:SomaPC|               ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|somaConstante:SomaPC               ; somaConstante       ; work         ;
 +-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------+---------------------+--------------+
@@ -1073,135 +1090,225 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoReg:Banco|registrador~1060            ; Lost fanout                                            ;
 ; bancoReg:Banco|registrador~1061            ; Lost fanout                                            ;
 ; bancoReg:Banco|registrador~70              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~294             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~326             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~102             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~358             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~71              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~295             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~327             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~103             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~359             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~72              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~296             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~328             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~104             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~360             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~73              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~297             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~329             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~105             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~361             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~74              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~298             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~330             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~106             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~362             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~75              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~299             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~331             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~107             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~363             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~76              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~300             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~332             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~108             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~364             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~77              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~301             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~333             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~109             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~365             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~78              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~302             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~334             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~110             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~366             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~79              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~303             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~335             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~111             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~367             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~80              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~304             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~336             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~112             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~368             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~81              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~305             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~337             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~113             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~369             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~82              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~306             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~338             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~114             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~370             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~83              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~307             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~339             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~115             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~371             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~84              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~308             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~340             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~116             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~372             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~85              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~309             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~341             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~117             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~373             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~86              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~310             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~342             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~118             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~374             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~87              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~311             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~343             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~119             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~375             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~88              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~312             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~344             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~120             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~376             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~89              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~313             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~345             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~121             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~377             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~90              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~314             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~346             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~122             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~378             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~91              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~315             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~347             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~123             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~379             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~92              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~316             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~348             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~124             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~380             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~93              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~317             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~349             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~125             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~381             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~94              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~318             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~350             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~126             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~382             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~95              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~319             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~351             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~127             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~383             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~96              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~320             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~352             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~128             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~384             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~97              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~321             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~353             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~129             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~385             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~98              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~322             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~354             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~130             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~386             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~99              ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~323             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~355             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~131             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~387             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~100             ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~324             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~356             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~132             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~388             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~101             ; Stuck at GND due to stuck port data_in                 ;
+; bancoReg:Banco|registrador~325             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~357             ; Stuck at GND due to stuck port data_in                 ;
 ; bancoReg:Banco|registrador~133             ; Stuck at GND due to stuck port data_in                 ;
-; bancoReg:Banco|registrador~389             ; Stuck at GND due to stuck port data_in                 ;
-; Total Number of Removed Registers = 962    ;                                                        ;
+; bancoReg:Banco|registrador~38              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~40              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~42              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~43              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~44              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~45              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~46              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~47              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~48              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~49              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~50              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~51              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~52              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~53              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~54              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~55              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~56              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~57              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~58              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~59              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~60              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~61              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~62              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~63              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~64              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~65              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~66              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~67              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~68              ; Lost fanout                                            ;
+; bancoReg:Banco|registrador~69              ; Lost fanout                                            ;
+; Total Number of Removed Registers = 992    ;                                                        ;
 +--------------------------------------------+--------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                         ;
++--------------------------------+---------------------------+----------------------------------------+
+; Register name                  ; Reason for Removal        ; Registers Removed due to This Register ;
++--------------------------------+---------------------------+----------------------------------------+
+; bancoReg:Banco|registrador~89  ; Stuck at GND              ; bancoReg:Banco|registrador~57          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~101 ; Stuck at GND              ; bancoReg:Banco|registrador~69          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~100 ; Stuck at GND              ; bancoReg:Banco|registrador~68          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~99  ; Stuck at GND              ; bancoReg:Banco|registrador~67          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~98  ; Stuck at GND              ; bancoReg:Banco|registrador~66          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~97  ; Stuck at GND              ; bancoReg:Banco|registrador~65          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~96  ; Stuck at GND              ; bancoReg:Banco|registrador~64          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~95  ; Stuck at GND              ; bancoReg:Banco|registrador~63          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~94  ; Stuck at GND              ; bancoReg:Banco|registrador~62          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~93  ; Stuck at GND              ; bancoReg:Banco|registrador~61          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~92  ; Stuck at GND              ; bancoReg:Banco|registrador~60          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~91  ; Stuck at GND              ; bancoReg:Banco|registrador~59          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~90  ; Stuck at GND              ; bancoReg:Banco|registrador~58          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~76  ; Stuck at GND              ; bancoReg:Banco|registrador~44          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~88  ; Stuck at GND              ; bancoReg:Banco|registrador~56          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~87  ; Stuck at GND              ; bancoReg:Banco|registrador~55          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~86  ; Stuck at GND              ; bancoReg:Banco|registrador~54          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~85  ; Stuck at GND              ; bancoReg:Banco|registrador~53          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~84  ; Stuck at GND              ; bancoReg:Banco|registrador~52          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~83  ; Stuck at GND              ; bancoReg:Banco|registrador~51          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~82  ; Stuck at GND              ; bancoReg:Banco|registrador~50          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~81  ; Stuck at GND              ; bancoReg:Banco|registrador~49          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~80  ; Stuck at GND              ; bancoReg:Banco|registrador~48          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~79  ; Stuck at GND              ; bancoReg:Banco|registrador~47          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~78  ; Stuck at GND              ; bancoReg:Banco|registrador~46          ;
+;                                ; due to stuck port data_in ;                                        ;
+; bancoReg:Banco|registrador~77  ; Stuck at GND              ; bancoReg:Banco|registrador~45          ;
+;                                ; due to stuck port data_in ;                                        ;
++--------------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1209,12 +1316,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 94    ;
+; Total registers                              ; 64    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 64    ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 34    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1283,6 +1390,107 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUXRTIME ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUXRTRD ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; larguradados   ; 5     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RAMMIPS:RAM ;
++-----------------+-------+--------------------------------+
+; Parameter Name  ; Value ; Type                           ;
++-----------------+-------+--------------------------------+
+; datawidth       ; 32    ; Signed Integer                 ;
+; addrwidth       ; 32    ; Signed Integer                 ;
+; memoryaddrwidth ; 6     ; Signed Integer                 ;
++-----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUXULAMEM ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: estendeSinalGenerico:Extensor ;
++--------------------+-------+-----------------------------------------------+
+; Parameter Name     ; Value ; Type                                          ;
++--------------------+-------+-----------------------------------------------+
+; larguradadoentrada ; 16    ; Signed Integer                                ;
+; larguradadosaida   ; 32    ; Signed Integer                                ;
++--------------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somadorGenerico:Somador ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUXBEQ ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DecoderInstru:DecINSTRU"                                                                   ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; saida[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; saida[9]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "somadorGenerico:Somador" ;
++----------------+-------+----------+-----------------+
+; Port           ; Type  ; Severity ; Details         ;
++----------------+-------+----------+-----------------+
+; entradab[1..0] ; Input ; Info     ; Stuck at GND    ;
++----------------+-------+----------+-----------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "RAMMIPS:RAM"    ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; habilita ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
+
+
 +--------------------------------------------+
 ; Port Connectivity Checks: "bancoReg:Banco" ;
 +----------+-------+----------+--------------+
@@ -1307,28 +1515,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 94                          ;
-;     SLD               ; 64                          ;
+; arriav_ff             ; 64                          ;
+;     ENA               ; 34                          ;
 ;     plain             ; 30                          ;
-; arriav_lcell_comb     ; 146                         ;
+; arriav_lcell_comb     ; 106                         ;
 ;     arith             ; 62                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 28                          ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 30                          ;
-;     normal            ; 84                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 17                          ;
-;         2 data inputs ; 22                          ;
-;         3 data inputs ; 30                          ;
+;         2 data inputs ; 31                          ;
 ;         4 data inputs ; 2                           ;
+;     normal            ; 44                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 33                          ;
 ;         5 data inputs ; 1                           ;
-;         6 data inputs ; 11                          ;
+;         6 data inputs ; 3                           ;
 ; boundary_port         ; 165                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.10                        ;
-; Average LUT depth     ; 4.63                        ;
+; Max LUT depth         ; 5.10                        ;
+; Average LUT depth     ; 3.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1347,10 +1552,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Nov 14 20:43:10 2023
+    Info: Processing started: Wed Nov 15 13:33:48 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file muxGenerico2x1.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file estendeSinalGenerico.vhd
+    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/estendeSinalGenerico.vhd Line: 19
+    Info (12023): Found entity 1: estendeSinalGenerico File: /home/andre/Insper/6semestre/Descomp/MIPS/estendeSinalGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file somadorGenerico.vhd
+    Info (12022): Found design unit 1: somadorGenerico-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/somadorGenerico.vhd Line: 17
+    Info (12023): Found entity 1: somadorGenerico File: /home/andre/Insper/6semestre/Descomp/MIPS/somadorGenerico.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file RAMMIPS.vhd
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: /home/andre/Insper/6semestre/Descomp/MIPS/RAMMIPS.vhd Line: 18
+    Info (12023): Found entity 1: RAMMIPS File: /home/andre/Insper/6semestre/Descomp/MIPS/RAMMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file DecoderInstru.vhd
+    Info (12022): Found design unit 1: DecoderInstru-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/DecoderInstru.vhd Line: 15
+    Info (12023): Found entity 1: DecoderInstru File: /home/andre/Insper/6semestre/Descomp/MIPS/DecoderInstru.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file bancoReg.vhd
     Info (12022): Found design unit 1: bancoReg-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/bancoReg.vhd Line: 30
     Info (12023): Found entity 1: bancoReg File: /home/andre/Insper/6semestre/Descomp/MIPS/bancoReg.vhd Line: 7
@@ -1358,7 +1578,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file ROMMIPS
     Info (12022): Found design unit 1: ROMMIPS-assincrona File: /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd Line: 15
     Info (12023): Found entity 1: ROMMIPS File: /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ULASomaSub.vhd
-    Info (12022): Found design unit 1: ULASomaSub-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/ULASomaSub.vhd Line: 14
+    Info (12022): Found design unit 1: ULASomaSub-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/ULASomaSub.vhd Line: 15
     Info (12023): Found entity 1: ULASomaSub File: /home/andre/Insper/6semestre/Descomp/MIPS/ULASomaSub.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somaConstante.vhd
     Info (12022): Found design unit 1: somaConstante-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/somaConstante.vhd Line: 18
@@ -1371,49 +1591,57 @@ Warning (12019): Can't analyze file -- file bancoRegistradores.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file MIPS.vhd
     Info (12022): Found design unit 1: MIPS-arquitetura File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 20
     Info (12023): Found entity 1: MIPS File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file memoriaRAM.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: /home/andre/Insper/6semestre/Descomp/MIPS/memoriaRAM.vhd Line: 21
-    Info (12023): Found entity 1: memoriaRAM File: /home/andre/Insper/6semestre/Descomp/MIPS/memoriaRAM.vhd Line: 5
+Warning (12019): Can't analyze file -- file memoriaRAM.vhd is missing
 Info (12127): Elaborating entity "MIPS" for the top level hierarchy
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 38
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:SomaPC" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 46
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM1" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 54
+Warning (10036): Verilog HDL or VHDL warning at MIPS.vhd(41): object "habEscritaR3" assigned a value but never read File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 41
+Warning (10036): Verilog HDL or VHDL warning at MIPS.vhd(43): object "OpULA" assigned a value but never read File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 43
+Warning (10541): VHDL Signal Declaration warning at MIPS.vhd(52): used implicit default value for signal "opcode" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 52
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 57
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:SomaPC" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 65
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM1" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 73
 Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd Line: 18
-Info (12128): Elaborating entity "bancoReg" for hierarchy "bancoReg:Banco" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 65
-Info (12128): Elaborating entity "ULASomaSub" for hierarchy "ULASomaSub:ULA" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 80
+Info (12128): Elaborating entity "bancoReg" for hierarchy "bancoReg:Banco" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 84
+Info (12128): Elaborating entity "ULASomaSub" for hierarchy "ULASomaSub:ULA" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 99
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUXRTIME" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 111
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUXRTRD" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 123
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 136
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:Extensor" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 158
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:Somador" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 164
+Info (12128): Elaborating entity "DecoderInstru" for hierarchy "DecoderInstru:DecINSTRU" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 180
 Info (276014): Found 2 instances of uninferred RAM logic
     Info (276007): RAM logic "bancoReg:Banco|registrador" is uninferred due to asynchronous read logic File: /home/andre/Insper/6semestre/Descomp/MIPS/bancoReg.vhd Line: 50
     Info (276004): RAM logic "ROMMIPS:ROM1|memROM" is uninferred due to inappropriate RAM size File: /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd Line: 18
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "entradaBOUT[2]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[4]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[5]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[6]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[7]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[8]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[9]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[10]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[11]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[12]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[13]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[14]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[15]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[16]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[17]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[18]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[19]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[20]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[21]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[22]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[23]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[24]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[25]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[26]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[27]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[28]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[29]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[30]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
-    Warning (13410): Pin "entradaBOUT[31]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 14
+    Warning (13410): Pin "entradaAOUT[0]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[2]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[4]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[5]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[6]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[7]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[8]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[9]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[10]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[11]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[12]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[13]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[14]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[15]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[16]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[17]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[18]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[19]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[20]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[21]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[22]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[23]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[24]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[25]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[26]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[27]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[28]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[29]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[30]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
+    Warning (13410): Pin "entradaAOUT[31]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 13
     Warning (13410): Pin "saidaPCOUT[0]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 15
     Warning (13410): Pin "saidaPCOUT[1]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 15
     Warning (13410): Pin "saidaInstrucao[0]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
@@ -1442,7 +1670,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "saidaInstrucao[30]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
     Warning (13410): Pin "saidaInstrucao[31]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 16
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 832 registers lost all their fanouts during netlist optimizations.
+Info (17049): 862 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
@@ -1450,14 +1678,14 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 10
     Warning (15610): No output dependent on input pin "KEY[3]" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 10
     Warning (15610): No output dependent on input pin "CLOCK_50" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 11
-Info (21057): Implemented 374 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 299 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 160 output pins
-    Info (21061): Implemented 209 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
-    Info: Peak virtual memory: 556 megabytes
-    Info: Processing ended: Tue Nov 14 20:43:17 2023
+    Info (21061): Implemented 134 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 71 warnings
+    Info: Peak virtual memory: 562 megabytes
+    Info: Processing ended: Wed Nov 15 13:33:55 2023
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:18
 
 
