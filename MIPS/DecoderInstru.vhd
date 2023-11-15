@@ -8,13 +8,13 @@ entity DecoderInstru is
     (   
         opcode : in std_logic_vector(5 downto 0);
         funct : in std_logic_vector(5 downto 0);
-        saida : out std_logic_vector(10 downto 0)
+        saida : out std_logic_vector(11 downto 0)
     );
 end entity;
 
 architecture comportamento of DecoderInstru is
 begin
 
- saida <= "00000000000";
+ saida <= "000000000000";
 
 end architecture;

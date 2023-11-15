@@ -36,7 +36,7 @@ architecture arquitetura of MIPS is
   signal saidaSomadorPC : std_logic_vector(31 downto 0);
   signal saidaPC_imediato : std_logic_vector(31 downto 0);
   signal zeroULA : std_logic;
-  signal saidaDecoder : std_logic_vector(10 downto 0);
+  signal saidaDecoder : std_logic_vector(11 downto 0);
   signal selMuxRTRD : std_logic;
   signal habEscritaR3 : std_logic;
   signal selMuxRtIme : std_logic;
@@ -50,6 +50,11 @@ architecture arquitetura of MIPS is
   signal saidaRAM : std_logic_vector(31 downto 0);
   signal saidaMUXULAMem : std_logic_vector(31 downto 0);
   signal opcode : std_logic_vector(5 downto 0);
+
+  signal selmux_PCJMP : std_logic;
+
+  signal entradaA_MUXJMP : std_logic_vector(31 downto 0);
+  signal entradaB_MUXJMP : std_logic_vector(31 downto 0);
 begin
 
 
@@ -173,6 +178,14 @@ MUXBEQ : entity work.muxGenerico2x1
                     entradaA_MUX => saidaSomadorPC,
                     entradaB_MUX => saidaPC_imediato,
                     seletor_MUX => zeroULA AND BEQ,
+                    saida_MUX => entradaA_MUXJMP
+                 );
+
+MUXPROXPC : entity work.muxGenerico2x1
+                 port map(
+                    entradaA_MUX => entradaA_MUXJMP,
+                    entradaB_MUX => entradaB_MUXJMP,
+                    seletor_MUX => selmux_PCJMP,
                     saida_MUX => entradaPC
                  );
 
@@ -196,8 +209,11 @@ imediato <= instrucao(15 downto 0);
 imediatoShift <= imediatoExt(29 downto 0) & "00"; -- SHIFT LEFT 2 BITS
 
 
+entradaB_MUXJMP <= saidaSomadorPC(31 downto 28) & instrucao(25 downto 0) & "00";
+
 --sinais de controle
 
+selmux_PCJMP  <= saidaDecoder(11);
 selMuxRTRD <= saidaDecoder(10);
 habEscritaR3 <= saidaDecoder(9);
 selMuxRtIme <= saidaDecoder(8);
