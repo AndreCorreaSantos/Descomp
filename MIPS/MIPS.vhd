@@ -107,12 +107,12 @@ Banco : entity work.bancoReg
 
 -- ULA
 
-ULA : entity work.ULASomaSub
+ULA : entity work.ULAMIPS
                 port map(
                     entradaA => saidaA_banco,
                     entradaB => saidaMUXRTIme,
-                    seletor => funct(0),
-                    saida => saidaULA,
+                    seletor => funct(3 downto 0),
+                    resultado => saidaULA,
                     zero => zeroULA
                 );
 

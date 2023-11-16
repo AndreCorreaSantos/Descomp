@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity somaBit IS
+entity somaBit31 IS
    port (
           entradaA : in std_logic;
           entradaB : in std_logic;
@@ -12,13 +12,13 @@ entity somaBit IS
           seletor : in std_logic_vector(1 downto 0);
           resultado : out std_logic;
           carryOut : out std_logic;
+          saidaSomaBit : out std_logic;
           SLT : in std_logic
    );
 end entity;
 
-architecture comportamento OF somaBit IS
+architecture comportamento OF somaBit31 IS
     signal saidaMux : std_logic;
-    signal saidaSomaBit : std_logic;
     signal out0 : std_logic;
     signal out1 : std_logic;
     signal out2 : std_logic;

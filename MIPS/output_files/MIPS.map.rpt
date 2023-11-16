@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Wed Nov 15 22:39:28 2023
+Thu Nov 16 12:44:58 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -10,7 +10,57 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS
+  6. Parameter Settings for User Entity Instance: registradorGenerico:ProgramCounter
+  7. Parameter Settings for User Entity Instance: somaConstante:SomaPC
+  8. Parameter Settings for User Entity Instance: ROMMIPS:ROM1
+  9. Parameter Settings for User Entity Instance: bancoReg:Banco
+ 10. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXRTIME
+ 11. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXRTRD
+ 12. Parameter Settings for User Entity Instance: RAMMIPS:RAM
+ 13. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXULAMEM
+ 14. Parameter Settings for User Entity Instance: estendeSinalGenerico:Extensor
+ 15. Parameter Settings for User Entity Instance: somadorGenerico:Somador
+ 16. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXBEQ
+ 17. Parameter Settings for User Entity Instance: muxGenerico2x1:MUXPROXPC
+ 18. Port Connectivity Checks: "DecoderInstru:DecINSTRU"
+ 19. Port Connectivity Checks: "muxGenerico2x1:MUXPROXPC"
+ 20. Port Connectivity Checks: "somadorGenerico:Somador"
+ 21. Port Connectivity Checks: "RAMMIPS:RAM"
+ 22. Port Connectivity Checks: "ULAMIPS:ULA|somaBit31:SOMABIT31"
+ 23. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT30"
+ 24. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT29"
+ 25. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT28"
+ 26. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT27"
+ 27. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT26"
+ 28. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT25"
+ 29. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT24"
+ 30. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT23"
+ 31. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT22"
+ 32. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT21"
+ 33. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT20"
+ 34. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT19"
+ 35. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT18"
+ 36. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT17"
+ 37. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT16"
+ 38. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT15"
+ 39. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT14"
+ 40. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT13"
+ 41. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT12"
+ 42. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT11"
+ 43. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT10"
+ 44. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT9"
+ 45. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT8"
+ 46. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT7"
+ 47. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT6"
+ 48. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT5"
+ 49. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT4"
+ 50. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT3"
+ 51. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT2"
+ 52. Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT1"
+ 53. Port Connectivity Checks: "bancoReg:Banco"
+ 54. Port Connectivity Checks: "registradorGenerico:ProgramCounter"
+ 55. Analysis & Synthesis Messages
 
 
 
@@ -37,7 +87,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Nov 15 22:39:28 2023           ;
+; Analysis & Synthesis Status ; Failed - Thu Nov 16 12:44:58 2023           ;
 ; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name               ; MIPS                                        ;
 ; Top-level Entity Name       ; MIPS                                        ;
@@ -156,16 +206,495 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |MIPS ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; simulacao      ; true  ; Enumerated                                  ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico:ProgramCounter ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somaConstante:SomaPC ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                           ;
+; constante      ; 4     ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROMMIPS:ROM1 ;
++-----------------+-------+---------------------------------+
+; Parameter Name  ; Value ; Type                            ;
++-----------------+-------+---------------------------------+
+; datawidth       ; 32    ; Signed Integer                  ;
+; addrwidth       ; 32    ; Signed Integer                  ;
+; memoryaddrwidth ; 6     ; Signed Integer                  ;
++-----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoReg:Banco ;
++---------------------+-------+-------------------------------+
+; Parameter Name      ; Value ; Type                          ;
++---------------------+-------+-------------------------------+
+; larguradados        ; 32    ; Signed Integer                ;
+; larguraendbancoregs ; 5     ; Signed Integer                ;
++---------------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUXRTIME ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUXRTRD ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; larguradados   ; 5     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RAMMIPS:RAM ;
++-----------------+-------+--------------------------------+
+; Parameter Name  ; Value ; Type                           ;
++-----------------+-------+--------------------------------+
+; datawidth       ; 32    ; Signed Integer                 ;
+; addrwidth       ; 32    ; Signed Integer                 ;
+; memoryaddrwidth ; 6     ; Signed Integer                 ;
++-----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUXULAMEM ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: estendeSinalGenerico:Extensor ;
++--------------------+-------+-----------------------------------------------+
+; Parameter Name     ; Value ; Type                                          ;
++--------------------+-------+-----------------------------------------------+
+; larguradadoentrada ; 16    ; Signed Integer                                ;
+; larguradadosaida   ; 32    ; Signed Integer                                ;
++--------------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somadorGenerico:Somador ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUXBEQ ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:MUXPROXPC ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DecoderInstru:DecINSTRU"                                                                   ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; saida[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; saida[9]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "muxGenerico2x1:MUXPROXPC" ;
++--------------------+-------+----------+--------------+
+; Port               ; Type  ; Severity ; Details      ;
++--------------------+-------+----------+--------------+
+; entradab_mux[1..0] ; Input ; Info     ; Stuck at GND ;
++--------------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "somadorGenerico:Somador" ;
++----------------+-------+----------+-----------------+
+; Port           ; Type  ; Severity ; Details         ;
++----------------+-------+----------+-----------------+
+; entradab[1..0] ; Input ; Info     ; Stuck at GND    ;
++----------------+-------+----------+-----------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "RAMMIPS:RAM"    ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; habilita ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit31:SOMABIT31" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                      ;
++------+-------+----------+-----------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT30" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT29" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT28" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT27" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT26" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT25" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT24" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT23" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT22" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT21" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT20" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT19" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT18" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT17" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT16" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT15" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT14" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT13" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT12" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT11" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT10" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT9" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT8" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT7" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT6" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT5" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT4" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT3" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT2" ;
++------+-------+----------+--------------------------------+
+; Port ; Type  ; Severity ; Details                        ;
++------+-------+----------+--------------------------------+
+; slt  ; Input ; Info     ; Stuck at GND                   ;
++------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "ULAMIPS:ULA|somaBit:SOMABIT1" ;
++---------+-------+----------+-----------------------------+
+; Port    ; Type  ; Severity ; Details                     ;
++---------+-------+----------+-----------------------------+
+; carryin ; Input ; Info     ; Stuck at GND                ;
+; slt     ; Input ; Info     ; Stuck at GND                ;
++---------+-------+----------+-----------------------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "bancoReg:Banco" ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; escrevec ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenerico:ProgramCounter" ;
++--------+-------+----------+------------------------------------+
+; Port   ; Type  ; Severity ; Details                            ;
++--------+-------+----------+------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                       ;
+; rst    ; Input ; Info     ; Stuck at GND                       ;
++--------+-------+----------+------------------------------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Nov 15 22:39:22 2023
+    Info: Processing started: Thu Nov 16 12:44:51 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file somaBit31.vhd
+    Info (12022): Found design unit 1: somaBit31-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit31.vhd Line: 20
+    Info (12023): Found entity 1: somaBit31 File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit31.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file muxGenerico2x1bit.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1bit-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 12
+    Info (12023): Found entity 1: muxGenerico2x1bit File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somadorCarry.vhd
     Info (12022): Found design unit 1: somadorCarry-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/somadorCarry.vhd Line: 15
     Info (12023): Found entity 1: somadorCarry File: /home/andre/Insper/6semestre/Descomp/MIPS/somadorCarry.vhd Line: 5
@@ -173,7 +702,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file ULAMIPS
     Info (12022): Found design unit 1: ULAMIPS-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/ULAMIPS.vhd Line: 18
     Info (12023): Found entity 1: ULAMIPS File: /home/andre/Insper/6semestre/Descomp/MIPS/ULAMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somaBit.vhd
-    Info (12022): Found design unit 1: somaBit-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 17
+    Info (12022): Found design unit 1: somaBit-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 19
     Info (12023): Found entity 1: somaBit File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxGenerico2x1.vhd
     Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1.vhd Line: 14
@@ -206,17 +735,137 @@ Info (12021): Found 2 design units, including 1 entities, in source file registr
     Info (12023): Found entity 1: registradorGenerico File: /home/andre/Insper/6semestre/Descomp/MIPS/registradorGenerico.vhd Line: 4
 Warning (12019): Can't analyze file -- file bancoRegistradores.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file MIPS.vhd
-    Info (12022): Found design unit 1: MIPS-arquitetura File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 20
-    Info (12023): Found entity 1: MIPS File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 4
+    Info (12022): Found design unit 1: MIPS-arquitetura File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 26
+    Info (12023): Found entity 1: MIPS File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 10
 Warning (12019): Can't analyze file -- file memoriaRAM.vhd is missing
-Error (10476): VHDL error at somaBit.vhd(32): type of identifier "entradaB" does not agree with its usage as "std_logic_vector" type File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 32
-Error (10476): VHDL error at somaBit.vhd(33): type of identifier "entradaB" does not agree with its usage as "std_logic_vector" type File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 33
-Error (10476): VHDL error at somaBit.vhd(35): type of identifier "saidaMux" does not agree with its usage as "std_logic_vector" type File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 35
-Error (10558): VHDL error at somaBit.vhd(35): cannot associate formal port "saida_MUX" of mode "out" with an expression File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 35
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 5 warnings
-    Error: Peak virtual memory: 469 megabytes
-    Error: Processing ended: Wed Nov 15 22:39:28 2023
-    Error: Elapsed time: 00:00:06
-    Error: Total CPU time (on all processors): 00:00:16
+Info (12127): Elaborating entity "MIPS" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at MIPS.vhd(47): object "habEscritaR3" assigned a value but never read File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 47
+Warning (10036): Verilog HDL or VHDL warning at MIPS.vhd(49): object "OpULA" assigned a value but never read File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 49
+Warning (10541): VHDL Signal Declaration warning at MIPS.vhd(58): used implicit default value for signal "opcode" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 58
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:ProgramCounter" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 68
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:SomaPC" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 76
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM1" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 84
+Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(18): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/andre/Insper/6semestre/Descomp/MIPS/ROMMIPS.vhd Line: 18
+Info (12128): Elaborating entity "bancoReg" for hierarchy "bancoReg:Banco" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 95
+Info (12128): Elaborating entity "ULAMIPS" for hierarchy "ULAMIPS:ULA" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 110
+Warning (10873): Using initial value X (don't care) for net "resultado[0]" at ULAMIPS.vhd(10) File: /home/andre/Insper/6semestre/Descomp/MIPS/ULAMIPS.vhd Line: 10
+Warning (10873): Using initial value X (don't care) for net "carryOut[0]" at ULAMIPS.vhd(19) File: /home/andre/Insper/6semestre/Descomp/MIPS/ULAMIPS.vhd Line: 19
+Info (12128): Elaborating entity "somaBit" for hierarchy "ULAMIPS:ULA|somaBit:SOMABIT0" File: /home/andre/Insper/6semestre/Descomp/MIPS/ULAMIPS.vhd Line: 46
+Info (12128): Elaborating entity "muxGenerico2x1bit" for hierarchy "ULAMIPS:ULA|somaBit:SOMABIT0|muxGenerico2x1bit:MUXA" File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 30
+Info (12128): Elaborating entity "somadorCarry" for hierarchy "ULAMIPS:ULA|somaBit:SOMABIT0|somadorCarry:SOMADOR" File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 46
+Info (12128): Elaborating entity "somaBit31" for hierarchy "ULAMIPS:ULA|somaBit31:SOMABIT31" File: /home/andre/Insper/6semestre/Descomp/MIPS/ULAMIPS.vhd Line: 509
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUXRTIME" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 122
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:MUXRTRD" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 134
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 147
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:Extensor" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 169
+Info (12128): Elaborating entity "somadorGenerico" for hierarchy "somadorGenerico:Somador" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 175
+Info (12128): Elaborating entity "DecoderInstru" for hierarchy "DecoderInstru:DecINSTRU" File: /home/andre/Insper/6semestre/Descomp/MIPS/MIPS.vhd Line: 199
+Error (12014): Net "ULAMIPS:ULA|resultado[1]", which fans out to "ULAMIPS:ULA|zero", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/ULAMIPS.vhd Line: 10
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT0|resultado" File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 13
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT1|resultado" File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 13
+Error (12014): Net "ULAMIPS:ULA|carryOut[1]", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT2|carryIn", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/ULAMIPS.vhd Line: 19
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT0|carryOut" File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 14
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT1|carryOut" File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 14
+Error (12014): Net "ULAMIPS:ULA|somaBit31:SOMABIT31|saidaMux", which fans out to "ULAMIPS:ULA|somaBit31:SOMABIT31|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit31.vhd Line: 21
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit31:SOMABIT31|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit31:SOMABIT31|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT30|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT30|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT30|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT30|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT29|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT29|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT29|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT29|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT28|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT28|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT28|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT28|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT27|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT27|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT27|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT27|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT26|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT26|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT26|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT26|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT25|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT25|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT25|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT25|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT24|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT24|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT24|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT24|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT23|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT23|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT23|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT23|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT22|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT22|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT22|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT22|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT21|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT21|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT21|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT21|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT20|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT20|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT20|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT20|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT19|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT19|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT19|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT19|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT18|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT18|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT18|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT18|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT17|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT17|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT17|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT17|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT16|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT16|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT16|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT16|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT15|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT15|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT15|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT15|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT14|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT14|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT14|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT14|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT13|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT13|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT13|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT13|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT12|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT12|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT12|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT12|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT11|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT11|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT11|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT11|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT10|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT10|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT10|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT10|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT9|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT9|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT9|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT9|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT8|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT8|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT8|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT8|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT7|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT7|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT7|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT7|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT6|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT6|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT6|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT6|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT5|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT5|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT5|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT5|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT4|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT4|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT4|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT4|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT3|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT3|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT3|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT3|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT2|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT2|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT2|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT2|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT1|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT1|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT1|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT1|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error (12014): Net "ULAMIPS:ULA|somaBit:SOMABIT0|saidaMux", which fans out to "ULAMIPS:ULA|somaBit:SOMABIT0|out1", cannot be assigned more than one value File: /home/andre/Insper/6semestre/Descomp/MIPS/somaBit.vhd Line: 20
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT0|muxGenerico2x1bit:MUXA|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+    Error (12015): Net is fed by "ULAMIPS:ULA|somaBit:SOMABIT0|muxGenerico2x1bit:MUXB|saida_MUX" File: /home/andre/Insper/6semestre/Descomp/MIPS/muxGenerico2x1bit.vhd Line: 8
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 102 errors, 11 warnings
+    Error: Peak virtual memory: 475 megabytes
+    Error: Processing ended: Thu Nov 16 12:44:58 2023
+    Error: Elapsed time: 00:00:07
+    Error: Total CPU time (on all processors): 00:00:17
 
 
