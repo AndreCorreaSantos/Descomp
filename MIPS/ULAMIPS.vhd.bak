@@ -1,0 +1,428 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;    -- Biblioteca IEEE para funções aritméticas
+
+entity ULAMIPS is
+
+    port (
+      entradaA, entradaB:  in STD_LOGIC_VECTOR(31 downto 0);
+      seletor:  in std_logic_vector(3 downto 0);
+      saida:    out STD_LOGIC_VECTOR(31 downto 0);
+      zero : out std_logic
+    );
+end entity;
+
+
+
+
+architecture comportamento of ULAMIPS is
+    signal carryOut :std_logic(31 downto 0);
+begin
+-- first bit
+
+
+---second bit
+
+-- port (
+--   entradaA : in std_logic;
+--   entradaB : in std_logic;
+--   inverteB : in std_logic;
+--   carryIn : in std_logic;
+--   seletor : in std_logic_vector(1 downto 0);
+--   resultado : out std_logic;
+--   carryOut : out std_logic;
+-- );
+
+
+SOMABIT1: entity work.SOMABIT
+port map (
+    entradaA => entradaA1,
+    entradaB => entradaB1,
+    inverteB => inverteB,
+    carryIn => carryOut(0),
+    seletor => seletor(2 downto 0),
+    resultado => resultado1,
+    carryOut => carryOut1
+);
+
+
+
+SOMABIT2: entity work.SOMABIT
+port map (
+    entradaA => entradaA2,
+    entradaB => entradaB2,
+    inverteB => inverteB,
+    carryIn => carryOut(1),
+    seletor => seletor(2 downto 0),
+    resultado => resultado2,
+    carryOut => carryOut2
+);
+
+
+
+SOMABIT3: entity work.SOMABIT
+port map (
+    entradaA => entradaA3,
+    entradaB => entradaB3,
+    inverteB => inverteB,
+    carryIn => carryOut(2),
+    seletor => seletor(2 downto 0),
+    resultado => resultado3,
+    carryOut => carryOut3
+);
+
+
+
+SOMABIT4: entity work.SOMABIT
+port map (
+    entradaA => entradaA4,
+    entradaB => entradaB4,
+    inverteB => inverteB,
+    carryIn => carryOut(3),
+    seletor => seletor(2 downto 0),
+    resultado => resultado4,
+    carryOut => carryOut4
+);
+
+
+
+SOMABIT5: entity work.SOMABIT
+port map (
+    entradaA => entradaA5,
+    entradaB => entradaB5,
+    inverteB => inverteB,
+    carryIn => carryOut(4),
+    seletor => seletor(2 downto 0),
+    resultado => resultado5,
+    carryOut => carryOut5
+);
+
+
+
+SOMABIT6: entity work.SOMABIT
+port map (
+    entradaA => entradaA6,
+    entradaB => entradaB6,
+    inverteB => inverteB,
+    carryIn => carryOut(5),
+    seletor => seletor(2 downto 0),
+    resultado => resultado6,
+    carryOut => carryOut6
+);
+
+
+
+SOMABIT7: entity work.SOMABIT
+port map (
+    entradaA => entradaA7,
+    entradaB => entradaB7,
+    inverteB => inverteB,
+    carryIn => carryOut(6),
+    seletor => seletor(2 downto 0),
+    resultado => resultado7,
+    carryOut => carryOut7
+);
+
+
+
+SOMABIT8: entity work.SOMABIT
+port map (
+    entradaA => entradaA8,
+    entradaB => entradaB8,
+    inverteB => inverteB,
+    carryIn => carryOut(7),
+    seletor => seletor(2 downto 0),
+    resultado => resultado8,
+    carryOut => carryOut8
+);
+
+
+
+SOMABIT9: entity work.SOMABIT
+port map (
+    entradaA => entradaA9,
+    entradaB => entradaB9,
+    inverteB => inverteB,
+    carryIn => carryOut(8),
+    seletor => seletor(2 downto 0),
+    resultado => resultado9,
+    carryOut => carryOut9
+);
+
+
+
+SOMABIT10: entity work.SOMABIT
+port map (
+    entradaA => entradaA10,
+    entradaB => entradaB10,
+    inverteB => inverteB,
+    carryIn => carryOut(9),
+    seletor => seletor(2 downto 0),
+    resultado => resultado10,
+    carryOut => carryOut10
+);
+
+
+
+SOMABIT11: entity work.SOMABIT
+port map (
+    entradaA => entradaA11,
+    entradaB => entradaB11,
+    inverteB => inverteB,
+    carryIn => carryOut(10),
+    seletor => seletor(2 downto 0),
+    resultado => resultado11,
+    carryOut => carryOut11
+);
+
+
+
+SOMABIT12: entity work.SOMABIT
+port map (
+    entradaA => entradaA12,
+    entradaB => entradaB12,
+    inverteB => inverteB,
+    carryIn => carryOut(11),
+    seletor => seletor(2 downto 0),
+    resultado => resultado12,
+    carryOut => carryOut12
+);
+
+
+
+SOMABIT13: entity work.SOMABIT
+port map (
+    entradaA => entradaA13,
+    entradaB => entradaB13,
+    inverteB => inverteB,
+    carryIn => carryOut(12),
+    seletor => seletor(2 downto 0),
+    resultado => resultado13,
+    carryOut => carryOut13
+);
+
+
+
+SOMABIT14: entity work.SOMABIT
+port map (
+    entradaA => entradaA14,
+    entradaB => entradaB14,
+    inverteB => inverteB,
+    carryIn => carryOut(13),
+    seletor => seletor(2 downto 0),
+    resultado => resultado14,
+    carryOut => carryOut14
+);
+
+
+
+SOMABIT15: entity work.SOMABIT
+port map (
+    entradaA => entradaA15,
+    entradaB => entradaB15,
+    inverteB => inverteB,
+    carryIn => carryOut(14),
+    seletor => seletor(2 downto 0),
+    resultado => resultado15,
+    carryOut => carryOut15
+);
+
+
+
+SOMABIT16: entity work.SOMABIT
+port map (
+    entradaA => entradaA16,
+    entradaB => entradaB16,
+    inverteB => inverteB,
+    carryIn => carryOut(15),
+    seletor => seletor(2 downto 0),
+    resultado => resultado16,
+    carryOut => carryOut16
+);
+
+
+
+SOMABIT17: entity work.SOMABIT
+port map (
+    entradaA => entradaA17,
+    entradaB => entradaB17,
+    inverteB => inverteB,
+    carryIn => carryOut(16),
+    seletor => seletor(2 downto 0),
+    resultado => resultado17,
+    carryOut => carryOut17
+);
+
+
+
+SOMABIT18: entity work.SOMABIT
+port map (
+    entradaA => entradaA18,
+    entradaB => entradaB18,
+    inverteB => inverteB,
+    carryIn => carryOut(17),
+    seletor => seletor(2 downto 0),
+    resultado => resultado18,
+    carryOut => carryOut18
+);
+
+
+
+SOMABIT19: entity work.SOMABIT
+port map (
+    entradaA => entradaA19,
+    entradaB => entradaB19,
+    inverteB => inverteB,
+    carryIn => carryOut(18),
+    seletor => seletor(2 downto 0),
+    resultado => resultado19,
+    carryOut => carryOut19
+);
+
+
+
+SOMABIT20: entity work.SOMABIT
+port map (
+    entradaA => entradaA20,
+    entradaB => entradaB20,
+    inverteB => inverteB,
+    carryIn => carryOut(19),
+    seletor => seletor(2 downto 0),
+    resultado => resultado20,
+    carryOut => carryOut20
+);
+
+
+
+SOMABIT21: entity work.SOMABIT
+port map (
+    entradaA => entradaA21,
+    entradaB => entradaB21,
+    inverteB => inverteB,
+    carryIn => carryOut(20),
+    seletor => seletor(2 downto 0),
+    resultado => resultado21,
+    carryOut => carryOut21
+);
+
+
+
+SOMABIT22: entity work.SOMABIT
+port map (
+    entradaA => entradaA22,
+    entradaB => entradaB22,
+    inverteB => inverteB,
+    carryIn => carryOut(21),
+    seletor => seletor(2 downto 0),
+    resultado => resultado22,
+    carryOut => carryOut22
+);
+
+
+
+SOMABIT23: entity work.SOMABIT
+port map (
+    entradaA => entradaA23,
+    entradaB => entradaB23,
+    inverteB => inverteB,
+    carryIn => carryOut(22),
+    seletor => seletor(2 downto 0),
+    resultado => resultado23,
+    carryOut => carryOut23
+);
+
+
+
+SOMABIT24: entity work.SOMABIT
+port map (
+    entradaA => entradaA24,
+    entradaB => entradaB24,
+    inverteB => inverteB,
+    carryIn => carryOut(23),
+    seletor => seletor(2 downto 0),
+    resultado => resultado24,
+    carryOut => carryOut24
+);
+
+
+
+SOMABIT25: entity work.SOMABIT
+port map (
+    entradaA => entradaA25,
+    entradaB => entradaB25,
+    inverteB => inverteB,
+    carryIn => carryOut(24),
+    seletor => seletor(2 downto 0),
+    resultado => resultado25,
+    carryOut => carryOut25
+);
+
+
+
+SOMABIT26: entity work.SOMABIT
+port map (
+    entradaA => entradaA26,
+    entradaB => entradaB26,
+    inverteB => inverteB,
+    carryIn => carryOut(25),
+    seletor => seletor(2 downto 0),
+    resultado => resultado26,
+    carryOut => carryOut26
+);
+
+
+
+SOMABIT27: entity work.SOMABIT
+port map (
+    entradaA => entradaA27,
+    entradaB => entradaB27,
+    inverteB => inverteB,
+    carryIn => carryOut(26),
+    seletor => seletor(2 downto 0),
+    resultado => resultado27,
+    carryOut => carryOut27
+);
+
+
+
+SOMABIT28: entity work.SOMABIT
+port map (
+    entradaA => entradaA28,
+    entradaB => entradaB28,
+    inverteB => inverteB,
+    carryIn => carryOut(27),
+    seletor => seletor(2 downto 0),
+    resultado => resultado28,
+    carryOut => carryOut28
+);
+
+
+
+SOMABIT29: entity work.SOMABIT
+port map (
+    entradaA => entradaA29,
+    entradaB => entradaB29,
+    inverteB => inverteB,
+    carryIn => carryOut(28),
+    seletor => seletor(2 downto 0),
+    resultado => resultado29,
+    carryOut => carryOut29
+);
+
+
+
+SOMABIT30: entity work.SOMABIT
+port map (
+    entradaA => entradaA30,
+    entradaB => entradaB30,
+    inverteB => inverteB,
+    carryIn => carryOut(29),
+    seletor => seletor(2 downto 0),
+    resultado => resultado30,
+    carryOut => carryOut30
+);
+
+
+--last bit
+
+end architecture;

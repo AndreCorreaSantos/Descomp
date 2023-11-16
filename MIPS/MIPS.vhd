@@ -1,6 +1,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+
+
+
+--- O QUE FALTA FAZER!! --> CONSERTAR ERROS NA ULA, FAZER ULTIMO BIT E PRIMEIRO BIT, ENTENDER O SELETOR DIREITO
+--- DECODER DE INSTRUCOES COMPLETO (TUDO)
+
 entity MIPS is
   -- Total de bits das entradas e saidas
   generic ( 
