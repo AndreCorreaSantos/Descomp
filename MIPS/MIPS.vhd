@@ -42,7 +42,7 @@ architecture arquitetura of MIPS is
   signal saidaSomadorPC : std_logic_vector(31 downto 0);
   signal saidaPC_imediato : std_logic_vector(31 downto 0);
   signal zeroULA : std_logic;
-  signal saidaDecoder : std_logic_vector(11 downto 0);
+  signal pControle : std_logic_vector(7 downto 0);
   signal selMuxRTRD : std_logic;
   signal habEscritaR3 : std_logic;
   signal selMuxRtIme : std_logic;
@@ -200,7 +200,8 @@ DecINSTRU : entity work.DecoderInstru
                 port map(
                     opcode => opcode,
                     funct => funct,
-                    saida => saidaDecoder
+                    pControle => pControle,
+                    ctrlULA => OpULA
                 );
 
 
@@ -219,15 +220,14 @@ entradaB_MUXJMP <= saidaSomadorPC(31 downto 28) & instrucao(25 downto 0) & "00";
 
 --sinais de controle
 
-selmux_PCJMP  <= saidaDecoder(11);
-selMuxRTRD <= saidaDecoder(10);
-habEscritaR3 <= saidaDecoder(9);
-selMuxRtIme <= saidaDecoder(8);
-OpULA <= saidaDecoder(7 downto 4);
-selmuxULAMem <= saidaDecoder(3);
-BEQ <= saidaDecoder(2);
-habLeituraMem <= saidaDecoder(1);
-habEscritaMem <= saidaDecoder(0);
+selmux_PCJMP  <= pControle(7); -- CONFERIR PONTOS DE CONTROLE
+selMuxRTRD <= pControle(6);
+habEscritaR3 <= pControle(5);
+selMuxRtIme <= pControle(4);
+selmuxULAMem <= pControle(3);
+BEQ <= pControle(2);
+habLeituraMem <= pControle(1);
+habEscritaMem <= pControle(0);
 
 
 

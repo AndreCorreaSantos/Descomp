@@ -51,8 +51,8 @@ port map (
     inverteB => inverteB,
     carryIn => inverteB, --CARRY IN DO BIT 0 é o inverteB
     seletor => seletor(1 downto 0),
-    resultado => resultado(1),
-    carryOut => carryOut(1),
+    resultado => resultado(0),
+    carryOut => carryOut(0),
     SLT => SLT0 -- SLT DO BIT 0 
 );
 

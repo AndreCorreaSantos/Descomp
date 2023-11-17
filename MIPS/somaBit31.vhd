@@ -18,7 +18,8 @@ entity somaBit31 IS
 end entity;
 
 architecture comportamento OF somaBit31 IS
-    signal saidaMux : std_logic;
+    signal saidaMuxA : std_logic;
+	 signal saidaMuxB : std_logic;
     signal out0 : std_logic;
     signal out1 : std_logic;
     signal out2 : std_logic;
@@ -32,7 +33,7 @@ begin
                 entradaA_MUX => entradaA,
                 entradaB_MUX => not entradaA,
                 seletor_MUX => inverteA,
-                saida_MUX => saidaMux
+                saida_MUX => saidaMuxA 
             );
 
     MUXB : entity work.muxGenerico2x1bit
@@ -40,21 +41,22 @@ begin
                 entradaA_MUX => entradaB,
                 entradaB_MUX => not entradaB,
                 seletor_MUX => inverteB,
-                saida_MUX => saidaMux
+                saida_MUX => saidaMuxB
             );
 
     SOMADOR : entity work.somadorCarry
             port map(
-                entradaA => entradaA,
-                entradaB => entradaB,
+                entradaA => saidaMuxA,
+                entradaB => saidaMuxB,
                 carryIn => carryIn,
                 saida => saidaSomaBit,
                 carryOut => carryOut
             );
                 
     
-    out0 <= entradaA and entradaB;
-    out1 <= entradaA or saidaMux;   
+    
+    out0 <= saidaMuxA and saidaMuxB;
+    out1 <= saidaMuxA or saidaMuxB;   
     out2 <= saidaSomaBit;
     out3 <= SLT;
 

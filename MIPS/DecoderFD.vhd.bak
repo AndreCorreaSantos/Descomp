@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity DecoderFD is
+
+    port 
+        (
+        opcode : in std_logic_vector(5 downto 0);
+        pControle => out std_logic_vector(7 downto 0);
+        R => out std_logic;
+        );
+end entity;
+
+architecture comportamento of DecoderFD is
+begin
+
+--define constants
+constant R : std_logic_vector(5 downto 0) := "000000";
+constant LW : std_logic_vector(5 downto 0) := "100011";
+constant SW : std_logic_vector(5 downto 0) := "101011";
+constant BEQ : std_logic_vector(5 downto 0) := "000100";
+
+pControle <= "011010000" when (opcode = R) else
+             "001101010" when (opcode = LW) else
+             "001101001" when (opcode = SW) else
+             "000100100" when (opcode = BEQ) else
+             "100000000"; -- ELSE JMP
+R <= '1' when (opcode = R) else
+     '0';
+
+end architecture;
