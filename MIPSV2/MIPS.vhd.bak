@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MIPS is
+	  -- Total de bits das entradas e saidas
+	generic ( larguraDados : natural := 32;
+	simulacao : boolean := TRUE -- para gravar na placa, altere de TRUE para FALSE
+);
+	  port   (
+		 CLOCK_50 : in std_logic;
+		 ULA_OUT: out std_logic_vector(larguraDados-1 downto 0);
+		 ULA_A: in std_logic_vector(larguraDados-1 downto 0);
+		 ULA_B: in std_logic_vector(larguraDados-1 downto 0);
+		 SELETOR: in std_logic_vector(2 downto 0)
+	  );
+	end entity;
+
+
+architecture arquitetura of MIPS is
+
+begin
+
+gravar:  if simulacao generate
+CLK <= KEY(0);
+else generate
+detectorSub0: work.edgeDetector(bordaSubida)
+        port map (clk => CLOCK_50, entrada => (not KEY(0)), saida => CLK);
+end generate;
+
+	ULA : entity work.ULASomaSub  
+          port map (entradaA => ULA_A, 
+			           entradaB =>  ULA_B, 
+						  saida => ULA_OUT, 
+						  seletor => SELETOR);
+
+	end architecture;

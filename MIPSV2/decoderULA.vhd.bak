@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity decoderULA is
+    Port (
+        funct : in  STD_LOGIC_VECTOR(5 downto 0);
+        output : out  STD_LOGIC_VECTOR(3 downto 0)
+    );
+end decoderInstru;
+
+architecture Behavioral of decoderInstru is
+  constant OP_And  : std_logic_vector(5 downto 0) := x"24";
+  constant OP_Nor  : std_logic_vector(5 downto 0) := x"27";
+  constant OP_Or: std_logic_vector(5 downto 0) := x"25";
+  constant OP_Add: std_logic_vector(5 downto 0) := x"20";
+  constant OP_Sub: std_logic_vector(5 downto 0) := x"22";
+  constant OP_Slt: std_logic_vector(5 downto 0) := x"2A";
+begin
+
+output <= "0000" when funct = OP_And else
+			 "0001" when funct = OP_Or else
+			 "0010" when funct = OP_Add else
+			 "0110" when funct = OP_Sub else
+			 "0111" when funct = OP_Slt else
+			 "1000" when funt = OP_Nor else
+			 "0000";
+
+end Behavioral;

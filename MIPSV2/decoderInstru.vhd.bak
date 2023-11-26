@@ -1,0 +1,16 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity decoderInstru is
+    Port (
+        op_code : in  STD_LOGIC_VECTOR(5 downto 0);
+        output : out  STD_LOGIc
+    );
+end decoderInstru;
+
+architecture Behavioral of decoderInstru is
+begin
+
+output <= '1' when opcode = "000000";
+
+end Behavioral;
