@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Sun Nov 26 17:17:27 2023
+Mon Nov 27 15:44:19 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,69 +14,70 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS
- 12. Parameter Settings for User Entity Instance: somaConstante:SOMA_PC
- 13. Parameter Settings for User Entity Instance: registradorGenerico:REG_PC
- 14. Parameter Settings for User Entity Instance: muxGenerico2x1:MULTIPLEXADOR_JUMP
- 15. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR_BEQ
- 16. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_PC
- 17. Parameter Settings for User Entity Instance: ROMMIPS:ROM
- 18. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_Rt_Rd
- 19. Parameter Settings for User Entity Instance: bancoReg:REGS_UNITY
- 20. Parameter Settings for User Entity Instance: estendeSinalGenerico:Extensor
- 21. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_Rt_Imed
- 22. Parameter Settings for User Entity Instance: ULA_MIPS:ULA
- 23. Parameter Settings for User Entity Instance: RAMMIPS:RAM_MIPS
- 24. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_ULAMEM
- 25. Parameter Settings for User Entity Instance: decoderULA:DECODER_ULA|muxGenerico2x1:MUX
- 26. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_PERIFERICOS
- 27. Port Connectivity Checks: "conversorHex7Seg:Conversor5"
- 28. Port Connectivity Checks: "conversorHex7Seg:Conversor4"
- 29. Port Connectivity Checks: "conversorHex7Seg:Conversor3"
- 30. Port Connectivity Checks: "conversorHex7Seg:Conversor2"
- 31. Port Connectivity Checks: "conversorHex7Seg:Conversor1"
- 32. Port Connectivity Checks: "conversorHex7Seg:Conversor0"
- 33. Port Connectivity Checks: "decoderULA:DECODER_ULA|muxGenerico2x1:MUX"
- 34. Port Connectivity Checks: "RAMMIPS:RAM_MIPS"
- 35. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_FINAL:BIT31"
- 36. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT30"
- 37. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT29"
- 38. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT28"
- 39. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT27"
- 40. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT26"
- 41. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT25"
- 42. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT24"
- 43. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT23"
- 44. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT22"
- 45. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT21"
- 46. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT20"
- 47. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT19"
- 48. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT18"
- 49. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT17"
- 50. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT16"
- 51. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT15"
- 52. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT14"
- 53. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT13"
- 54. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT12"
- 55. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT11"
- 56. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT10"
- 57. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT9"
- 58. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT8"
- 59. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT7"
- 60. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT6"
- 61. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT5"
- 62. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT4"
- 63. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT3"
- 64. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT2"
- 65. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT1"
- 66. Port Connectivity Checks: "somadorGenerico:SOMADOR_BEQ"
- 67. Port Connectivity Checks: "muxGenerico2x1:MULTIPLEXADOR_JUMP"
- 68. Port Connectivity Checks: "registradorGenerico:REG_PC"
- 69. Post-Synthesis Netlist Statistics for Top Partition
- 70. Elapsed Time Per Partition
- 71. Analysis & Synthesis Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS
+ 13. Parameter Settings for User Entity Instance: somaConstante:SOMA_PC
+ 14. Parameter Settings for User Entity Instance: registradorGenerico:REG_PC
+ 15. Parameter Settings for User Entity Instance: muxGenerico2x1:MULTIPLEXADOR_JUMP
+ 16. Parameter Settings for User Entity Instance: somadorGenerico:SOMADOR_BEQ
+ 17. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_PC
+ 18. Parameter Settings for User Entity Instance: ROMMIPS:ROM
+ 19. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_Rt_Rd
+ 20. Parameter Settings for User Entity Instance: bancoReg:REGS_UNITY
+ 21. Parameter Settings for User Entity Instance: estendeSinalGenerico:Extensor
+ 22. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_Rt_Imed
+ 23. Parameter Settings for User Entity Instance: ULA_MIPS:ULA
+ 24. Parameter Settings for User Entity Instance: RAMMIPS:RAM_MIPS
+ 25. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_ULAMEM
+ 26. Parameter Settings for User Entity Instance: decoderULA:DECODER_ULA|muxGenerico2x1:MUX
+ 27. Parameter Settings for User Entity Instance: muxGenerico2x1:MUX_PERIFERICOS
+ 28. Port Connectivity Checks: "conversorHex7Seg:Conversor5"
+ 29. Port Connectivity Checks: "conversorHex7Seg:Conversor4"
+ 30. Port Connectivity Checks: "conversorHex7Seg:Conversor3"
+ 31. Port Connectivity Checks: "conversorHex7Seg:Conversor2"
+ 32. Port Connectivity Checks: "conversorHex7Seg:Conversor1"
+ 33. Port Connectivity Checks: "conversorHex7Seg:Conversor0"
+ 34. Port Connectivity Checks: "decoderULA:DECODER_ULA|muxGenerico2x1:MUX"
+ 35. Port Connectivity Checks: "RAMMIPS:RAM_MIPS"
+ 36. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_FINAL:BIT31"
+ 37. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT30"
+ 38. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT29"
+ 39. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT28"
+ 40. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT27"
+ 41. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT26"
+ 42. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT25"
+ 43. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT24"
+ 44. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT23"
+ 45. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT22"
+ 46. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT21"
+ 47. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT20"
+ 48. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT19"
+ 49. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT18"
+ 50. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT17"
+ 51. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT16"
+ 52. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT15"
+ 53. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT14"
+ 54. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT13"
+ 55. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT12"
+ 56. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT11"
+ 57. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT10"
+ 58. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT9"
+ 59. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT8"
+ 60. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT7"
+ 61. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT6"
+ 62. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT5"
+ 63. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT4"
+ 64. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT3"
+ 65. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT2"
+ 66. Port Connectivity Checks: "ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT1"
+ 67. Port Connectivity Checks: "somadorGenerico:SOMADOR_BEQ"
+ 68. Port Connectivity Checks: "muxGenerico2x1:MULTIPLEXADOR_JUMP"
+ 69. Port Connectivity Checks: "registradorGenerico:REG_PC"
+ 70. Post-Synthesis Netlist Statistics for Top Partition
+ 71. Elapsed Time Per Partition
+ 72. Analysis & Synthesis Messages
 
 
 
@@ -103,13 +104,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Nov 26 17:17:27 2023       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 27 15:44:19 2023       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; MIPS                                        ;
 ; Top-level Entity Name           ; MIPS                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 2239                                        ;
+; Total registers                 ; 2207                                        ;
 ; Total pins                      ; 67                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -235,9 +236,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 9            ;   0.0%      ;
 ;     Processor 10           ;   0.0%      ;
 ;     Processor 11           ;   0.0%      ;
-;     Processor 12           ;   0.0%      ;
-;     Processor 13           ;   0.0%      ;
-;     Processors 14-16       ;   0.0%      ;
+;     Processors 12-16       ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -275,25 +274,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------+
 ; Resource                                    ; Usage                                   ;
 +---------------------------------------------+-----------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1640                                    ;
+; Estimate of Logic utilization (ALMs needed) ; 1624                                    ;
 ;                                             ;                                         ;
-; Combinational ALUT usage for logic          ; 1334                                    ;
-;     -- 7 input functions                    ; 32                                      ;
-;     -- 6 input functions                    ; 841                                     ;
-;     -- 5 input functions                    ; 63                                      ;
-;     -- 4 input functions                    ; 132                                     ;
-;     -- <=3 input functions                  ; 266                                     ;
+; Combinational ALUT usage for logic          ; 1400                                    ;
+;     -- 7 input functions                    ; 0                                       ;
+;     -- 6 input functions                    ; 882                                     ;
+;     -- 5 input functions                    ; 80                                      ;
+;     -- 4 input functions                    ; 187                                     ;
+;     -- <=3 input functions                  ; 251                                     ;
 ;                                             ;                                         ;
-; Dedicated logic registers                   ; 2239                                    ;
+; Dedicated logic registers                   ; 2207                                    ;
 ;                                             ;                                         ;
 ; I/O pins                                    ; 67                                      ;
 ;                                             ;                                         ;
 ; Total DSP Blocks                            ; 0                                       ;
 ;                                             ;                                         ;
 ; Maximum fan-out node                        ; edgeDetector:\gravar:detectorSub0|saida ;
-; Maximum fan-out                             ; 2238                                    ;
-; Total fan-out                               ; 13526                                   ;
-; Average fan-out                             ; 3.65                                    ;
+; Maximum fan-out                             ; 2206                                    ;
+; Total fan-out                               ; 13763                                   ;
+; Average fan-out                             ; 3.68                                    ;
 +---------------------------------------------+-----------------------------------------+
 
 
@@ -302,172 +301,175 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                 ; Entity Name             ; Library Name ;
 +--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |MIPS                                      ; 1334 (9)            ; 2239 (0)                  ; 0                 ; 0          ; 67   ; 0            ; |MIPS                                                                                               ; MIPS                    ; work         ;
+; |MIPS                                      ; 1400 (8)            ; 2207 (0)                  ; 0                 ; 0          ; 67   ; 0            ; |MIPS                                                                                               ; MIPS                    ; work         ;
 ;    |RAMMIPS:RAM_MIPS|                      ; 800 (800)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |MIPS|RAMMIPS:RAM_MIPS                                                                              ; RAMMIPS                 ; work         ;
-;    |ROMMIPS:ROM|                           ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ROMMIPS:ROM                                                                                   ; ROMMIPS                 ; work         ;
-;    |ULA_MIPS:ULA|                          ; 179 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA                                                                                  ; ULA_MIPS                ; work         ;
-;       |ULA_UNITY:ULA_UNIDADE|              ; 179 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE                                                            ; ULA_UNITY               ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT10|   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT10                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT10|full_adder:Adder             ; full_adder              ; work         ;
+;    |ROMMIPS:ROM|                           ; 20 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ROMMIPS:ROM                                                                                   ; ROMMIPS                 ; work         ;
+;    |ULA_MIPS:ULA|                          ; 176 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA                                                                                  ; ULA_MIPS                ; work         ;
+;       |ULA_UNITY:ULA_UNIDADE|              ; 176 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE                                                            ; ULA_UNITY               ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT10|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT10                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT10|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT10|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT10|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT11|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT11                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT10|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT11|   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT11                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT11|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT11|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT11|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT11|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT11|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
 ;          |ULA_BITS_INTERMEDIARIOS:BIT12|   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT12                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT12|full_adder:Adder             ; full_adder              ; work         ;
+;             |full_adder:Adder|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT12|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT12|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT12|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT12|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT13|   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT13                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT13|full_adder:Adder             ; full_adder              ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT12|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT13|   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT13                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT13|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT13|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT13|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
 ;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT13|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT14|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT14                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT14|   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT14                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT14|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT14|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT14|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
 ;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT14|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT15|   ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT15                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT15|full_adder:Adder             ; full_adder              ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT15|   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT15                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT15|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT15|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT15|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT16|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT16                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT15|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT16|   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT16                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT16|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT16|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT16|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT16|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT16|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
 ;          |ULA_BITS_INTERMEDIARIOS:BIT17|   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT17                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT17|full_adder:Adder             ; full_adder              ; work         ;
+;             |full_adder:Adder|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT17|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT17|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT17|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT17|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT18|   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT18                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT18|full_adder:Adder             ; full_adder              ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT17|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT18|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT18                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT18|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT18|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
 ;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT18|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT19|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT19                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT19|   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT19                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT19|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT19|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT19|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT19|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT1|    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT1                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT19|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT1|    ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT1                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT1|full_adder:Adder              ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT1|muxGenerico2x1_binario:MUX_A  ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT1|muxGenerico2x1_binario:MUX_B  ; muxGenerico2x1_binario  ; work         ;
 ;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT1|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT20|   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT20                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT20|full_adder:Adder             ; full_adder              ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT20|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT20                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT20|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT20|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT20|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT21|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT21                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT20|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT21|   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT21                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT21|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT21|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT21|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT21|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT22|   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT22                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT21|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT22|   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT22                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT22|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT22|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT22|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT22|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT23|   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT23                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT23|full_adder:Adder             ; full_adder              ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT22|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT23|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT23                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT23|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT23|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT23|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT24|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT24                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT23|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT24|   ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT24                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT24|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT24|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT24|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT24|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT25|   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT25                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT25|full_adder:Adder             ; full_adder              ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT24|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT25|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT25                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT25|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT25|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT25|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT26|   ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT26                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT25|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT26|   ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT26                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT26|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT26|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT26|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT27|   ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT27                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT27|full_adder:Adder             ; full_adder              ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT26|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT27|   ; 8 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT27                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT27|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT27|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT27|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT27|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT28|   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT28                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT28|full_adder:Adder             ; full_adder              ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT27|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT28|   ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT28                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT28|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT28|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT28|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT28|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT29|   ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT29                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT29|full_adder:Adder             ; full_adder              ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT28|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT29|   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT29                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT29|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT29|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT29|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT29|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT29|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
 ;          |ULA_BITS_INTERMEDIARIOS:BIT2|    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT2                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT2|full_adder:Adder              ; full_adder              ; work         ;
+;             |full_adder:Adder|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT2|full_adder:Adder              ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT2|muxGenerico2x1_binario:MUX_A  ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT2|muxGenerico2x1_binario:MUX_B  ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT2|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT30|   ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT30                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT30|full_adder:Adder             ; full_adder              ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT2|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT30|   ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT30                              ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT30|full_adder:Adder             ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT30|muxGenerico2x1_binario:MUX_A ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT30|muxGenerico2x1_binario:MUX_B ; muxGenerico2x1_binario  ; work         ;
 ;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT30|mux_4x1_binario:MUX_Soma     ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT3|    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT3                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT3|full_adder:Adder              ; full_adder              ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT3|    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT3                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT3|muxGenerico2x1_binario:MUX_A  ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT3|muxGenerico2x1_binario:MUX_B  ; muxGenerico2x1_binario  ; work         ;
 ;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT3|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT4|    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT4                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT4|    ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT4                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT4|full_adder:Adder              ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT4|muxGenerico2x1_binario:MUX_A  ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT4|muxGenerico2x1_binario:MUX_B  ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT4|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT5|    ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT5                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT5|full_adder:Adder              ; full_adder              ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT4|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT5|    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT5                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT5|muxGenerico2x1_binario:MUX_A  ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT5|muxGenerico2x1_binario:MUX_B  ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT5|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT6|    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT6                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT5|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT6|    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT6                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT6|full_adder:Adder              ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT6|muxGenerico2x1_binario:MUX_A  ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT6|muxGenerico2x1_binario:MUX_B  ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT6|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT6|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
 ;          |ULA_BITS_INTERMEDIARIOS:BIT7|    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT7                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT7|full_adder:Adder              ; full_adder              ; work         ;
+;             |full_adder:Adder|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT7|full_adder:Adder              ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT7|muxGenerico2x1_binario:MUX_A  ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT7|muxGenerico2x1_binario:MUX_B  ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT7|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT8|    ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT8                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
-;             |full_adder:Adder|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT8|full_adder:Adder              ; full_adder              ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT7|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT8|    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT8                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT8|muxGenerico2x1_binario:MUX_A  ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT8|muxGenerico2x1_binario:MUX_B  ; muxGenerico2x1_binario  ; work         ;
 ;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT8|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
-;          |ULA_BITS_INTERMEDIARIOS:BIT9|    ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT9                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;          |ULA_BITS_INTERMEDIARIOS:BIT9|    ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT9                               ; ULA_BITS_INTERMEDIARIOS ; work         ;
+;             |full_adder:Adder|             ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT9|full_adder:Adder              ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT9|muxGenerico2x1_binario:MUX_A  ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT9|muxGenerico2x1_binario:MUX_B  ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT9|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
-;          |ULA_BIT_FINAL:BIT31|             ; 10 (3)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_FINAL:BIT31                                        ; ULA_BIT_FINAL           ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT9|mux_4x1_binario:MUX_Soma      ; mux_4x1_binario         ; work         ;
+;          |ULA_BIT_FINAL:BIT31|             ; 8 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_FINAL:BIT31                                        ; ULA_BIT_FINAL           ; work         ;
 ;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_FINAL:BIT31|full_adder:Adder                       ; full_adder              ; work         ;
 ;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_FINAL:BIT31|muxGenerico2x1_binario:MUX_A           ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_FINAL:BIT31|muxGenerico2x1_binario:MUX_B           ; muxGenerico2x1_binario  ; work         ;
-;             |mux_4x1_binario:MUX_Soma|     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_FINAL:BIT31|mux_4x1_binario:MUX_Soma               ; mux_4x1_binario         ; work         ;
-;          |ULA_BIT_INICIAL:BIT0|            ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_INICIAL:BIT0                                       ; ULA_BIT_INICIAL         ; work         ;
+;             |mux_4x1_binario:MUX_Soma|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_FINAL:BIT31|mux_4x1_binario:MUX_Soma               ; mux_4x1_binario         ; work         ;
+;          |ULA_BIT_INICIAL:BIT0|            ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_INICIAL:BIT0                                       ; ULA_BIT_INICIAL         ; work         ;
 ;             |full_adder:Adder|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_INICIAL:BIT0|full_adder:Adder                      ; full_adder              ; work         ;
-;             |muxGenerico2x1_binario:MUX_A| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_INICIAL:BIT0|muxGenerico2x1_binario:MUX_A          ; muxGenerico2x1_binario  ; work         ;
+;             |muxGenerico2x1_binario:MUX_A| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_INICIAL:BIT0|muxGenerico2x1_binario:MUX_A          ; muxGenerico2x1_binario  ; work         ;
 ;             |muxGenerico2x1_binario:MUX_B| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_INICIAL:BIT0|muxGenerico2x1_binario:MUX_B          ; muxGenerico2x1_binario  ; work         ;
 ;             |mux_4x1_binario:MUX_Soma|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BIT_INICIAL:BIT0|mux_4x1_binario:MUX_Soma              ; mux_4x1_binario         ; work         ;
-;    |bancoReg:REGS_UNITY|                   ; 126 (126)           ; 160 (160)                 ; 0                 ; 0          ; 0    ; 0            ; |MIPS|bancoReg:REGS_UNITY                                                                           ; bancoReg                ; work         ;
+;    |bancoReg:REGS_UNITY|                   ; 166 (166)           ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |MIPS|bancoReg:REGS_UNITY                                                                           ; bancoReg                ; work         ;
 ;    |conversorHex7Seg:Conversor0|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|conversorHex7Seg:Conversor0                                                                   ; conversorHex7Seg        ; work         ;
 ;    |conversorHex7Seg:Conversor1|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|conversorHex7Seg:Conversor1                                                                   ; conversorHex7Seg        ; work         ;
 ;    |conversorHex7Seg:Conversor2|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|conversorHex7Seg:Conversor2                                                                   ; conversorHex7Seg        ; work         ;
 ;    |conversorHex7Seg:Conversor3|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|conversorHex7Seg:Conversor3                                                                   ; conversorHex7Seg        ; work         ;
 ;    |conversorHex7Seg:Conversor4|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|conversorHex7Seg:Conversor4                                                                   ; conversorHex7Seg        ; work         ;
 ;    |conversorHex7Seg:Conversor5|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|conversorHex7Seg:Conversor5                                                                   ; conversorHex7Seg        ; work         ;
-;    |decoderInstru:DECODER_INSTRU|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|decoderInstru:DECODER_INSTRU                                                                  ; decoderInstru           ; work         ;
-;    |decoderULA:DECODER_ULA|                ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|decoderULA:DECODER_ULA                                                                        ; decoderULA              ; work         ;
-;       |muxGenerico2x1:MUX|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|decoderULA:DECODER_ULA|muxGenerico2x1:MUX                                                     ; muxGenerico2x1          ; work         ;
+;    |decoderInstru:DECODER_INSTRU|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|decoderInstru:DECODER_INSTRU                                                                  ; decoderInstru           ; work         ;
+;    |decoderULA:DECODER_ULA|                ; 7 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|decoderULA:DECODER_ULA                                                                        ; decoderULA              ; work         ;
+;       |muxGenerico2x1:MUX|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|decoderULA:DECODER_ULA|muxGenerico2x1:MUX                                                     ; muxGenerico2x1          ; work         ;
 ;    |edgeDetector:\gravar:detectorSub0|     ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|edgeDetector:\gravar:detectorSub0                                                             ; edgeDetector            ; work         ;
-;    |muxGenerico2x1:MULTIPLEXADOR_JUMP|     ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|muxGenerico2x1:MULTIPLEXADOR_JUMP                                                             ; muxGenerico2x1          ; work         ;
-;    |muxGenerico2x1:MUX_PERIFERICOS|        ; 31 (31)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|muxGenerico2x1:MUX_PERIFERICOS                                                                ; muxGenerico2x1          ; work         ;
+;    |muxGenerico2x1:MULTIPLEXADOR_JUMP|     ; 46 (46)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|muxGenerico2x1:MULTIPLEXADOR_JUMP                                                             ; muxGenerico2x1          ; work         ;
+;    |muxGenerico2x1:MUX_PERIFERICOS|        ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|muxGenerico2x1:MUX_PERIFERICOS                                                                ; muxGenerico2x1          ; work         ;
+;    |muxGenerico2x1:MUX_Rt_Rd|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|muxGenerico2x1:MUX_Rt_Rd                                                                      ; muxGenerico2x1          ; work         ;
 ;    |muxGenerico2x1:MUX_ULAMEM|             ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|muxGenerico2x1:MUX_ULAMEM                                                                     ; muxGenerico2x1          ; work         ;
 ;    |registradorGenerico:REG_PC|            ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |MIPS|registradorGenerico:REG_PC                                                                    ; registradorGenerico     ; work         ;
 ;    |somaConstante:SOMA_PC|                 ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MIPS|somaConstante:SOMA_PC                                                                         ; somaConstante           ; work         ;
@@ -483,262 +485,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+------------------------------------------------+
 ; registradorGenerico:REG_PC|DOUT[0]      ; Merged with registradorGenerico:REG_PC|DOUT[1] ;
 ; registradorGenerico:REG_PC|DOUT[1]      ; Stuck at GND due to stuck port data_in         ;
-; bancoReg:REGS_UNITY|registrador~166     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~167     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~168     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~169     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~170     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~171     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~172     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~173     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~174     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~175     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~176     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~177     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~178     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~179     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~180     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~181     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~182     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~183     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~184     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~185     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~186     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~187     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~188     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~189     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~190     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~191     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~192     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~193     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~194     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~195     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~196     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~197     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~198     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~199     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~200     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~201     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~202     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~203     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~204     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~205     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~206     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~207     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~208     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~209     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~210     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~211     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~212     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~213     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~214     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~215     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~216     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~217     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~218     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~219     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~220     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~221     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~222     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~223     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~224     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~225     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~226     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~227     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~228     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~229     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~230     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~231     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~232     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~233     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~234     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~235     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~236     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~237     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~238     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~239     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~240     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~241     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~242     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~243     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~244     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~245     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~246     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~247     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~248     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~249     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~250     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~251     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~252     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~253     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~254     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~255     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~256     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~257     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~258     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~259     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~260     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~261     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~262     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~263     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~264     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~265     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~266     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~267     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~268     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~269     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~270     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~271     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~272     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~273     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~274     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~275     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~276     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~277     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~278     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~279     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~280     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~281     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~282     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~283     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~284     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~285     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~286     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~287     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~288     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~289     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~290     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~291     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~292     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~293     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~422     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~423     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~424     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~425     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~426     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~427     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~428     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~429     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~430     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~431     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~432     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~433     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~434     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~435     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~436     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~437     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~438     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~439     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~440     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~441     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~442     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~443     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~444     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~445     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~446     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~447     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~448     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~449     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~450     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~451     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~452     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~453     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~454     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~455     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~456     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~457     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~458     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~459     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~460     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~461     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~462     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~463     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~464     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~465     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~466     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~467     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~468     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~469     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~470     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~471     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~472     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~473     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~474     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~475     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~476     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~477     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~478     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~479     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~480     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~481     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~482     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~483     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~484     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~485     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~486     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~487     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~488     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~489     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~490     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~491     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~492     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~493     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~494     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~495     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~496     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~497     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~498     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~499     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~500     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~501     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~502     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~503     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~504     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~505     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~506     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~507     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~508     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~509     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~510     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~511     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~512     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~513     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~514     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~515     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~516     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~517     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~518     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~519     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~520     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~521     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~522     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~523     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~524     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~525     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~526     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~527     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~528     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~529     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~530     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~531     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~532     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~533     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~534     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~535     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~536     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~537     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~538     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~539     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~540     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~541     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~542     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~543     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~544     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~545     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~546     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~547     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~548     ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~549     ; Lost fanout                                    ;
 ; bancoReg:REGS_UNITY|registrador~550     ; Lost fanout                                    ;
 ; bancoReg:REGS_UNITY|registrador~551     ; Lost fanout                                    ;
 ; bancoReg:REGS_UNITY|registrador~552     ; Lost fanout                                    ;
@@ -1251,104 +997,450 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bancoReg:REGS_UNITY|registrador~1059    ; Lost fanout                                    ;
 ; bancoReg:REGS_UNITY|registrador~1060    ; Lost fanout                                    ;
 ; bancoReg:REGS_UNITY|registrador~1061    ; Lost fanout                                    ;
-; bancoReg:REGS_UNITY|registrador~93      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~92      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~91      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~90      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~89      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~88      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~87      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~86      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~85      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~84      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~83      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~82      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~81      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~80      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~79      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~78      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~77      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~76      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~75      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~74      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~73      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~72      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~71      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~70      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~253     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~285     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~509     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~541     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~189     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~445     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~221     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~477     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~252     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~284     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~508     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~540     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~188     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~444     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~220     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~476     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~251     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~283     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~507     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~539     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~187     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~443     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~219     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~475     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~250     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~282     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~506     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~538     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~186     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~442     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~218     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~474     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~249     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~281     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~505     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~537     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~185     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~441     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~217     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~473     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~248     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~280     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~504     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~536     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~184     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~440     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~216     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~472     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~247     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~279     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~503     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~535     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~183     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~439     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~215     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~471     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~246     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~278     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~502     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~534     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~182     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~438     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~214     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~470     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~245     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~277     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~501     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~533     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~181     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~437     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~213     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~469     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~244     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~276     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~500     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~532     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~180     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~436     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~212     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~468     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~243     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~275     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~499     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~531     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~179     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~435     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~211     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~467     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~178     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~210     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~242     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~274     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~434     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~466     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~498     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~530     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~241     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~273     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~497     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~529     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~177     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~433     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~209     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~465     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~240     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~272     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~496     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~528     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~176     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~432     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~208     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~464     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~175     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~207     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~239     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~271     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~431     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~463     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~495     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~527     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~238     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~270     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~494     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~526     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~174     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~430     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~206     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~462     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~237     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~269     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~493     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~525     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~173     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~429     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~205     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~461     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~172     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~204     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~236     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~268     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~428     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~460     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~492     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~524     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~235     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~267     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~491     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~523     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~171     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~427     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~203     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~459     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~234     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~266     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~490     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~522     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~170     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~426     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~202     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~458     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~169     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~201     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~233     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~265     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~425     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~457     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~489     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~521     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~232     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~264     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~488     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~520     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~168     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~424     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~200     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~456     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~231     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~263     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~487     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~519     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~167     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~423     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~199     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~455     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~166     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~198     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~230     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~262     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~422     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~454     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~486     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~518     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~254     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~286     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~510     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~542     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~190     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~446     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~222     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~478     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~255     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~287     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~511     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~543     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~191     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~447     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~223     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~479     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~192     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~224     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~256     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~288     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~448     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~480     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~512     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~544     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~257     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~289     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~513     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~545     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~193     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~449     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~225     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~481     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~258     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~290     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~514     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~546     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~194     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~450     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~226     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~482     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~195     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~227     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~259     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~291     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~451     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~483     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~515     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~547     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~260     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~292     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~516     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~548     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~196     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~452     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~228     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~484     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~261     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~293     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~517     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~549     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~197     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~453     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~229     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~485     ; Stuck at GND due to stuck port clock_enable    ;
 ; bancoReg:REGS_UNITY|registrador~94      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~95      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~96      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~97      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~98      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~99      ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~100     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~101     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~157     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~125     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~156     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~124     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~155     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~123     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~154     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~122     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~153     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~121     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~152     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~120     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~151     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~119     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~150     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~118     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~149     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~117     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~148     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~116     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~147     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~115     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~146     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~114     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~145     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~113     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~144     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~112     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~143     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~111     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~142     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~110     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~141     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~109     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~140     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~108     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~139     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~107     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~138     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~106     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~137     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~105     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~136     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~104     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~135     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~103     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~134     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~102     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~350     ; Stuck at GND due to stuck port clock_enable    ;
 ; bancoReg:REGS_UNITY|registrador~158     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~126     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~414     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~71      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~327     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~135     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~391     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~326     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~390     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~70      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~134     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~72      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~328     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~136     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~392     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~73      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~137     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~329     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~393     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~74      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~330     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~138     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~394     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~75      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~331     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~139     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~395     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~76      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~332     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~140     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~396     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~77      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~333     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~141     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~397     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~78      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~334     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~142     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~398     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~79      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~335     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~143     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~399     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~80      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~336     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~144     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~400     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~81      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~337     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~145     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~401     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~82      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~338     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~146     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~402     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~83      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~339     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~147     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~403     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~84      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~340     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~148     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~404     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~85      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~341     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~149     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~405     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~86      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~342     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~150     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~406     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~87      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~343     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~151     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~407     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~88      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~344     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~152     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~408     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~89      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~345     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~153     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~409     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~90      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~346     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~154     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~410     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~91      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~347     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~155     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~411     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~92      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~348     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~156     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~412     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~93      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~349     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~157     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~413     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~95      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~351     ; Stuck at GND due to stuck port clock_enable    ;
 ; bancoReg:REGS_UNITY|registrador~159     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~127     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~415     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~96      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~352     ; Stuck at GND due to stuck port clock_enable    ;
 ; bancoReg:REGS_UNITY|registrador~160     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~128     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~416     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~97      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~353     ; Stuck at GND due to stuck port clock_enable    ;
 ; bancoReg:REGS_UNITY|registrador~161     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~129     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~417     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~98      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~354     ; Stuck at GND due to stuck port clock_enable    ;
 ; bancoReg:REGS_UNITY|registrador~162     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~130     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~418     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~99      ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~355     ; Stuck at GND due to stuck port clock_enable    ;
 ; bancoReg:REGS_UNITY|registrador~163     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~131     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~419     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~100     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~356     ; Stuck at GND due to stuck port clock_enable    ;
 ; bancoReg:REGS_UNITY|registrador~164     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~132     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~420     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~101     ; Stuck at GND due to stuck port clock_enable    ;
+; bancoReg:REGS_UNITY|registrador~357     ; Stuck at GND due to stuck port clock_enable    ;
 ; bancoReg:REGS_UNITY|registrador~165     ; Stuck at GND due to stuck port clock_enable    ;
-; bancoReg:REGS_UNITY|registrador~133     ; Stuck at GND due to stuck port clock_enable    ;
-; Total Number of Removed Registers = 866 ;                                                ;
+; bancoReg:REGS_UNITY|registrador~421     ; Stuck at GND due to stuck port clock_enable    ;
+; Total Number of Removed Registers = 898 ;                                                ;
 +-----------------------------------------+------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                     ;
++------------------------------------+--------------------------------+---------------------------------------------------------------------------+
+; Register name                      ; Reason for Removal             ; Registers Removed due to This Register                                    ;
++------------------------------------+--------------------------------+---------------------------------------------------------------------------+
+; bancoReg:REGS_UNITY|registrador~72 ; Stuck at GND                   ; bancoReg:REGS_UNITY|registrador~73, bancoReg:REGS_UNITY|registrador~137,  ;
+;                                    ; due to stuck port clock_enable ; bancoReg:REGS_UNITY|registrador~329, bancoReg:REGS_UNITY|registrador~393, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~74, bancoReg:REGS_UNITY|registrador~330,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~138, bancoReg:REGS_UNITY|registrador~394, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~75, bancoReg:REGS_UNITY|registrador~331,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~139, bancoReg:REGS_UNITY|registrador~395, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~76, bancoReg:REGS_UNITY|registrador~332,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~140, bancoReg:REGS_UNITY|registrador~396, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~77, bancoReg:REGS_UNITY|registrador~333,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~141, bancoReg:REGS_UNITY|registrador~397, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~78, bancoReg:REGS_UNITY|registrador~334,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~142, bancoReg:REGS_UNITY|registrador~398, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~79, bancoReg:REGS_UNITY|registrador~335,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~143, bancoReg:REGS_UNITY|registrador~399, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~80, bancoReg:REGS_UNITY|registrador~336,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~144, bancoReg:REGS_UNITY|registrador~400, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~84, bancoReg:REGS_UNITY|registrador~340,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~148, bancoReg:REGS_UNITY|registrador~404, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~85, bancoReg:REGS_UNITY|registrador~341,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~149, bancoReg:REGS_UNITY|registrador~405, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~86, bancoReg:REGS_UNITY|registrador~342,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~150, bancoReg:REGS_UNITY|registrador~406, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~87, bancoReg:REGS_UNITY|registrador~343,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~151, bancoReg:REGS_UNITY|registrador~407, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~88, bancoReg:REGS_UNITY|registrador~344,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~152, bancoReg:REGS_UNITY|registrador~408, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~89, bancoReg:REGS_UNITY|registrador~345,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~153, bancoReg:REGS_UNITY|registrador~409, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~90, bancoReg:REGS_UNITY|registrador~346,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~154, bancoReg:REGS_UNITY|registrador~410, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~91, bancoReg:REGS_UNITY|registrador~347,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~155, bancoReg:REGS_UNITY|registrador~411, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~92, bancoReg:REGS_UNITY|registrador~348,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~156, bancoReg:REGS_UNITY|registrador~412, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~93, bancoReg:REGS_UNITY|registrador~349,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~157, bancoReg:REGS_UNITY|registrador~413, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~95, bancoReg:REGS_UNITY|registrador~351,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~159, bancoReg:REGS_UNITY|registrador~415, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~96, bancoReg:REGS_UNITY|registrador~352,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~160, bancoReg:REGS_UNITY|registrador~416, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~97, bancoReg:REGS_UNITY|registrador~353,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~161, bancoReg:REGS_UNITY|registrador~417, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~98, bancoReg:REGS_UNITY|registrador~354,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~162, bancoReg:REGS_UNITY|registrador~418, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~99, bancoReg:REGS_UNITY|registrador~355,  ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~163, bancoReg:REGS_UNITY|registrador~419, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~100, bancoReg:REGS_UNITY|registrador~356, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~164, bancoReg:REGS_UNITY|registrador~420, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~101, bancoReg:REGS_UNITY|registrador~357, ;
+;                                    ;                                ; bancoReg:REGS_UNITY|registrador~165, bancoReg:REGS_UNITY|registrador~421  ;
++------------------------------------+--------------------------------+---------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1356,12 +1448,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2239  ;
+; Total registers                              ; 2207  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2208  ;
+; Number of registers using Clock Enable       ; 2176  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1371,8 +1463,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |MIPS|registradorGenerico:REG_PC|DOUT[22]                                                                     ;
-; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |MIPS|registradorGenerico:REG_PC|DOUT[8]                                                                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |MIPS|registradorGenerico:REG_PC|DOUT[22]                                                                     ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |MIPS|registradorGenerico:REG_PC|DOUT[15]                                                                     ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT17|muxGenerico2x1_binario:MUX_A|saida_MUX ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |MIPS|decoderInstru:DECODER_INSTRU|output[4]                                                                  ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS|ULA_MIPS:ULA|ULA_UNITY:ULA_UNIDADE|ULA_BITS_INTERMEDIARIOS:BIT22|muxGenerico2x1_binario:MUX_B|saida_MUX ;
@@ -1975,29 +2067,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 2239                        ;
-;     ENA               ; 2208                        ;
+; arriav_ff             ; 2207                        ;
+;     ENA               ; 2176                        ;
 ;     plain             ; 31                          ;
-; arriav_lcell_comb     ; 1336                        ;
+; arriav_lcell_comb     ; 1402                        ;
 ;     arith             ; 60                          ;
 ;         1 data inputs ; 30                          ;
-;         2 data inputs ; 25                          ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 3                           ;
-;     extend            ; 32                          ;
-;         7 data inputs ; 32                          ;
-;     normal            ; 1244                        ;
+;         2 data inputs ; 24                          ;
+;         4 data inputs ; 6                           ;
+;     normal            ; 1342                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 25                          ;
-;         2 data inputs ; 113                         ;
-;         3 data inputs ; 72                          ;
-;         4 data inputs ; 129                         ;
-;         5 data inputs ; 63                          ;
-;         6 data inputs ; 841                         ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 103                         ;
+;         3 data inputs ; 90                          ;
+;         4 data inputs ; 181                         ;
+;         5 data inputs ; 80                          ;
+;         6 data inputs ; 882                         ;
 ; boundary_port         ; 67                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 7.63                        ;
+; Average LUT depth     ; 7.42                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2006,7 +2095,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -2016,7 +2105,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Nov 26 17:17:17 2023
+    Info: Processing started: Mon Nov 27 15:44:09 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file MIPS.vhd
@@ -2111,7 +2200,7 @@ Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "decoderULA:DECO
 Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:Conversor0" File: /home/andre/Insper/6semestre/Descomp/MIPSV2/MIPS.vhd Line: 199
 Info (276014): Found 3 instances of uninferred RAM logic
     Info (276007): RAM logic "RAMMIPS:RAM_MIPS|memRAM" is uninferred due to asynchronous read logic File: /home/andre/Insper/6semestre/Descomp/MIPSV2/RAMMIPS.vhd Line: 22
-    Info (276007): RAM logic "bancoReg:REGS_UNITY|registrador" is uninferred due to asynchronous read logic File: /home/andre/Insper/6semestre/Descomp/MIPSV2/bancoReg.vhd Line: 52
+    Info (276007): RAM logic "bancoReg:REGS_UNITY|registrador" is uninferred due to asynchronous read logic File: /home/andre/Insper/6semestre/Descomp/MIPSV2/bancoReg.vhd Line: 51
     Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: /home/andre/Insper/6semestre/Descomp/MIPSV2/ROMMIPS.vhd Line: 18
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "RAMMIPS:RAM_MIPS|Dado_out[12]" feeding internal logic into a wire File: /home/andre/Insper/6semestre/Descomp/MIPSV2/RAMMIPS.vhd Line: 14
@@ -2150,7 +2239,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPSV2/MIPS.vhd Line: 13
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/andre/Insper/6semestre/Descomp/MIPSV2/MIPS.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 768 registers lost all their fanouts during netlist optimizations.
+Info (17049): 512 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 12 input pin(s) that do not drive logic
@@ -2166,14 +2255,14 @@ Warning (21074): Design contains 12 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: /home/andre/Insper/6semestre/Descomp/MIPSV2/MIPS.vhd Line: 17
     Warning (15610): No output dependent on input pin "SW[8]" File: /home/andre/Insper/6semestre/Descomp/MIPSV2/MIPS.vhd Line: 17
     Warning (15610): No output dependent on input pin "SW[9]" File: /home/andre/Insper/6semestre/Descomp/MIPSV2/MIPS.vhd Line: 17
-Info (21057): Implemented 3586 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3640 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 3519 logic cells
+    Info (21061): Implemented 3573 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
-    Info: Peak virtual memory: 568 megabytes
-    Info: Processing ended: Sun Nov 26 17:17:27 2023
+    Info: Peak virtual memory: 566 megabytes
+    Info: Processing ended: Mon Nov 27 15:44:19 2023
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Total CPU time (on all processors): 00:00:21
 
 

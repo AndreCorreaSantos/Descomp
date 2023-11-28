@@ -263,6 +263,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[9]
 #====================================================================
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name MIF_FILE rom.mif
 set_global_assignment -name VHDL_FILE MIPS.vhd
 set_global_assignment -name VHDL_FILE ULA_MIPS.vhd
 set_global_assignment -name VHDL_FILE ULA_UNITY.vhd

@@ -1,0 +1,38 @@
+Quartus Prime Archive log --	/home/andre/Insper/6semestre/Descomp/MIPSV2/MIPSV2.qarlog
+
+Archive:	/home/andre/Insper/6semestre/Descomp/MIPSV2/MIPSV2.qar
+Date:		Sun Nov 26 17:35:57 2023
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/andre/Insper/6semestre/Descomp/MIPSV2/MIPS.qpf
+/home/andre/Insper/6semestre/Descomp/MIPSV2/MIPS.qsf
+/home/andre/Insper/6semestre/Descomp/MIPSV2/MIPS.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/RAMMIPS.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/ROMMIPS.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/ULA_BITS_INTERMEDIARIOS.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/ULA_BIT_FINAL.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/ULA_BIT_INICIAL.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/ULA_MIPS.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/ULA_UNITY.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/Waveform.vwf
+/home/andre/Insper/6semestre/Descomp/MIPSV2/bancoReg.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/conversorHex7Seg.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/decoderInstru.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/decoderULA.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/edgeDetector.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/estendeSinalGenerico.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/full_adder.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/muxGenerico2x1.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/muxGenerico2x1_binario.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/mux_4x1_binario.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/registradorGenerico.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/rom.mif
+/home/andre/Insper/6semestre/Descomp/MIPSV2/romTesteNOR.mif
+/home/andre/Insper/6semestre/Descomp/MIPSV2/somaConstante.vhd
+/home/andre/Insper/6semestre/Descomp/MIPSV2/somadorGenerico.vhd
+/home/andre/Insper/6semestre/softwareDescomp/quartus/linux64/assignment_defaults.qdf
+	======= Total: 27 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

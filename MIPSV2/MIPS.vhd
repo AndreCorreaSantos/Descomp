@@ -86,7 +86,7 @@ detectorSub0: work.edgeDetector(bordaSubida)
 end generate;
 
 
-
+-- ROM E PC
 
 SOMA_PC :  entity work.somaConstante
         port map( entrada => PC, saida => prox_PC);
@@ -98,6 +98,8 @@ REG_PC : entity work.registradorGenerico
 						  ENABLE => '1', 
 						  CLK => CLK, 
 						  RST => '0');
+
+-- LOGICA DE DESVIO
 						  
 MULTIPLEXADOR_JUMP :  entity work.muxGenerico2x1
         port map( entradaA_MUX => saida_mux_PC,
@@ -126,6 +128,8 @@ MUX_Rt_Rd :  entity work.muxGenerico2x1 generic map (larguraDados => 5)
                  entradaB_MUX =>  Rd,
                  seletor_MUX => mux_RtRd,
                  saida_MUX => saida_MUX_rt_rd);
+
+-- BANCO DE REGISTRADORES
 		  
 REGS_UNITY : entity work.bancoReg
           port map (
@@ -148,6 +152,7 @@ MUX_Rt_Imed :  entity work.muxGenerico2x1
                  seletor_MUX => mux_Rt_Imediato,
                  saida_MUX => entrada_B); 
 		 
+-- ULA de 32 bits, com 4 bits de seletor
 ULA : entity work.ULA_MIPS
           port map (
 						  entradaA => entrada_A,
@@ -173,11 +178,12 @@ MUX_ULAMEM :  entity work.muxGenerico2x1
                  seletor_MUX => mux_ULA_MEM,
                  saida_MUX => entrada_C
 					  );
+-- DECODER PARA PALAVRA DE CONTROLE DO FD
 					  
 DECODER_INSTRU: entity work.decoderInstru
         port map( op_code => op_code, output => palavra_controle);
 		  
-		  
+-- DECODER PARA SELETOR DA ULA
 DECODER_ULA: entity work.decoderULA
 	port map( funct => funct, op_code => op_code, output => seletor);
 	
@@ -185,6 +191,9 @@ DECODER_ULA: entity work.decoderULA
 Saida_ULA <= saida_ULA;
 	
 
+-- PERIFERICOS PARA EXIBIR RESULTADOS NA PLACA---------------------------------------------------
+
+-- MUX PARA TROCAR ENTRE O RESULTADO DA ULA E PROGRAM COUNTER
 MUX_PERIFERICOS :  entity work.muxGenerico2x1
         port map( entradaA_MUX => PC,
                  entradaB_MUX =>  saida_ULA,
@@ -194,7 +203,7 @@ MUX_PERIFERICOS :  entity work.muxGenerico2x1
 		
 		
 		
-
+-- DISPLAY 7SEG
 
 Conversor0 : entity work.conversorHex7Seg
 port map ( 
@@ -238,6 +247,9 @@ port map (
 	
 
 LEDR(7 downto 0)<= output_final(31 downto 24);	
+
+------------------------------------------------------------------------------------
+
 		
 --Instrução BEQ
 sig_Ext_Shiftado <= (sig_Ext(29 downto 0) & "00");
